@@ -85,16 +85,20 @@ export async function GET(request, { params }) {
     
     // GET /api/status
     if (pathString === 'status') {
-      const statusChecks = await database.collection('status_checks').find({}).toArray();
-      const sanitized = statusChecks.map(({ _id, ...rest }) => rest);
-      return NextResponse.json(sanitized, { headers: corsHeaders() });
+      const statusChecks = await database.collection('status_checks')
+        .find({}, { projection: { _id: 0 } })
+        .limit(100)
+        .toArray();
+      return NextResponse.json(statusChecks, { headers: corsHeaders() });
     }
     
     // GET /api/contact
     if (pathString === 'contact') {
-      const submissions = await database.collection('contact_submissions').find({}).toArray();
-      const sanitized = submissions.map(({ _id, ...rest }) => rest);
-      return NextResponse.json(sanitized, { headers: corsHeaders() });
+      const submissions = await database.collection('contact_submissions')
+        .find({}, { projection: { _id: 0 } })
+        .limit(100)
+        .toArray();
+      return NextResponse.json(submissions, { headers: corsHeaders() });
     }
     
     // GET /api/admin/verify
@@ -113,11 +117,11 @@ export async function GET(request, { params }) {
       if (!username) return unauthorizedResponse();
       
       const submissions = await database.collection('contact_submissions')
-        .find({})
+        .find({}, { projection: { _id: 0 } })
         .sort({ created_at: -1 })
+        .limit(500)
         .toArray();
-      const sanitized = submissions.map(({ _id, ...rest }) => rest);
-      return NextResponse.json(sanitized, { headers: corsHeaders() });
+      return NextResponse.json(submissions, { headers: corsHeaders() });
     }
     
     // GET /api/admin/content/{page}
@@ -126,17 +130,21 @@ export async function GET(request, { params }) {
       if (!username) return unauthorizedResponse();
       
       const page = pathString.replace('admin/content/', '');
-      const content = await database.collection('page_content').find({ page }).toArray();
-      const sanitized = content.map(({ _id, ...rest }) => rest);
-      return NextResponse.json(sanitized, { headers: corsHeaders() });
+      const content = await database.collection('page_content')
+        .find({ page }, { projection: { _id: 0 } })
+        .limit(100)
+        .toArray();
+      return NextResponse.json(content, { headers: corsHeaders() });
     }
     
     // GET /api/content/{page} - Public endpoint
     if (pathString.startsWith('content/')) {
       const page = pathString.replace('content/', '');
-      const content = await database.collection('page_content').find({ page }).toArray();
-      const sanitized = content.map(({ _id, ...rest }) => rest);
-      return NextResponse.json(sanitized, { headers: corsHeaders() });
+      const content = await database.collection('page_content')
+        .find({ page }, { projection: { _id: 0 } })
+        .limit(100)
+        .toArray();
+      return NextResponse.json(content, { headers: corsHeaders() });
     }
     
     return NextResponse.json(
