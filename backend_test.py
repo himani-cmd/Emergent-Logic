@@ -11,7 +11,7 @@ import time
 from datetime import datetime
 
 # Configuration
-BASE_URL = "https://app-generator-223.preview.emergentagent.com"
+BASE_URL = "https://logic-agency-v2.preview.emergentagent.com"
 ADMIN_USERNAME = "admin"
 ADMIN_PASSWORD = "emergent2026"
 

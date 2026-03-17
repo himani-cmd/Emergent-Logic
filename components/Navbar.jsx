@@ -12,13 +12,14 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu';
-import { Menu, X, Sparkles } from 'lucide-react';
+import { Menu, X, Sparkles, Database, Zap, Link2, Code, Settings } from 'lucide-react';
 
 const services = [
-  { title: 'CRM Implementation', href: '/crm-implementation', description: 'Salesforce, HubSpot, and 12+ platforms' },
-  { title: 'Marketing Automation', href: '/marketing-automation', description: 'HubSpot, Marketo, Pardot, and more' },
-  { title: 'Web Development', href: '/web-development', description: 'AI-accelerated websites and apps' },
-  { title: 'Digital Marketing', href: '/digital-marketing', description: 'SEO, AEO, GEO, and Google Ads' },
+  { title: 'CRM Implementation', href: '/crm-implementation', icon: Database },
+  { title: 'Marketing Automation', href: '/marketing-automation', icon: Zap },
+  { title: 'Integrations & Automation', href: '/services', icon: Link2 },
+  { title: 'Website + CRM Bundle', href: '/web-development', icon: Code },
+  { title: 'Monthly Retainer', href: '/services', icon: Settings },
 ];
 
 export default function Navbar() {
@@ -33,10 +34,7 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navBackground = scrolled || !isHome 
-    ? 'bg-white/95 backdrop-blur-md shadow-lg' 
-    : 'bg-transparent';
-  
+  const navBackground = scrolled || !isHome ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent';
   const textColor = scrolled || !isHome ? 'text-gray-700' : 'text-white/90';
   const logoColor = scrolled || !isHome ? 'text-gray-900' : 'text-white';
 
@@ -49,8 +47,8 @@ export default function Navbar() {
               <Sparkles className="w-6 h-6 text-white" />
             </div>
             <div className="flex flex-col">
-              <span className={`text-xl font-bold ${logoColor}`}>EmergentLogic</span>
-              <span className={`text-xs ${scrolled || !isHome ? 'text-violet-600' : 'text-violet-300'}`}>AI-Powered</span>
+              <span className={`text-xl font-bold ${logoColor}`}>Emergent Logic</span>
+              <span className={`text-xs ${scrolled || !isHome ? 'text-violet-600' : 'text-violet-300'}`}>AI-Powered CRM</span>
             </div>
           </Link>
 
@@ -63,20 +61,17 @@ export default function Navbar() {
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className={`${scrolled || !isHome ? '' : 'bg-transparent text-white/90 hover:bg-white/10 hover:text-white'}`}>Services</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid w-[500px] gap-3 p-4 md:grid-cols-2">
+                    <ul className="w-[300px] p-4 space-y-2">
                       {services.map((service) => (
-                        <li key={service.href}>
+                        <li key={service.href + service.title}>
                           <NavigationMenuLink asChild>
-                            <Link href={service.href} className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-violet-50 hover:text-violet-900">
-                              <div className="text-sm font-medium leading-none">{service.title}</div>
-                              <p className="line-clamp-2 text-sm leading-snug text-gray-500">{service.description}</p>
+                            <Link href={service.href} className="flex items-center gap-3 p-3 rounded-lg hover:bg-violet-50 transition-colors">
+                              <service.icon className="w-5 h-5 text-violet-600" />
+                              <span className="font-medium text-gray-900">{service.title}</span>
                             </Link>
                           </NavigationMenuLink>
                         </li>
                       ))}
-                      <li className="col-span-2 border-t pt-3 mt-2">
-                        <Link href="/services" className="text-sm text-violet-600 hover:text-violet-800 font-medium">View All Services →</Link>
-                      </li>
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -85,14 +80,12 @@ export default function Navbar() {
 
             <Link href="/pricing" className={`font-medium transition-colors hover:text-violet-600 ${textColor}`}>Pricing</Link>
             <Link href="/blog" className={`font-medium transition-colors hover:text-violet-600 ${textColor}`}>Blog</Link>
-            <Link href="/about" className={`font-medium transition-colors hover:text-violet-600 ${textColor}`}>About Us</Link>
+            <Link href="/about" className={`font-medium transition-colors hover:text-violet-600 ${textColor}`}>About</Link>
             <Link href="/contact" className={`font-medium transition-colors hover:text-violet-600 ${textColor}`}>Contact</Link>
             
-            <Link href="/contact">
-              <Button className="bg-violet-600 hover:bg-violet-700 text-white">
-                <Sparkles className="w-4 h-4 mr-2" />Get Started
-              </Button>
-            </Link>
+            <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-violet-600 hover:bg-violet-700 text-white">Book a Call</Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -104,20 +97,15 @@ export default function Navbar() {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="lg:hidden bg-white rounded-2xl shadow-xl p-6 mb-4">
-            <Link href="/" className="block py-3 text-gray-700 font-medium hover:text-violet-600" onClick={() => setIsOpen(false)}>Home</Link>
-            <Link href="/services" className="block py-3 text-gray-700 font-medium hover:text-violet-600" onClick={() => setIsOpen(false)}>Services</Link>
-            <div className="pl-4 border-l-2 border-violet-100 ml-2">
-              {services.map((service) => (
-                <Link key={service.href} href={service.href} className="block py-2 text-gray-600 text-sm hover:text-violet-600" onClick={() => setIsOpen(false)}>{service.title}</Link>
-              ))}
-            </div>
-            <Link href="/pricing" className="block py-3 text-gray-700 font-medium hover:text-violet-600" onClick={() => setIsOpen(false)}>Pricing</Link>
-            <Link href="/blog" className="block py-3 text-gray-700 font-medium hover:text-violet-600" onClick={() => setIsOpen(false)}>Blog</Link>
-            <Link href="/about" className="block py-3 text-gray-700 font-medium hover:text-violet-600" onClick={() => setIsOpen(false)}>About Us</Link>
-            <Link href="/contact" className="block py-3 text-gray-700 font-medium hover:text-violet-600" onClick={() => setIsOpen(false)}>Contact</Link>
-            <Link href="/contact" className="block mt-4" onClick={() => setIsOpen(false)}>
-              <Button className="w-full bg-violet-600 hover:bg-violet-700">Get Started</Button>
-            </Link>
+            <Link href="/" className="block py-3 text-gray-700 font-medium" onClick={() => setIsOpen(false)}>Home</Link>
+            <Link href="/services" className="block py-3 text-gray-700 font-medium" onClick={() => setIsOpen(false)}>Services</Link>
+            <Link href="/pricing" className="block py-3 text-gray-700 font-medium" onClick={() => setIsOpen(false)}>Pricing</Link>
+            <Link href="/blog" className="block py-3 text-gray-700 font-medium" onClick={() => setIsOpen(false)}>Blog</Link>
+            <Link href="/about" className="block py-3 text-gray-700 font-medium" onClick={() => setIsOpen(false)}>About</Link>
+            <Link href="/contact" className="block py-3 text-gray-700 font-medium" onClick={() => setIsOpen(false)}>Contact</Link>
+            <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer" className="block mt-4">
+              <Button className="w-full bg-violet-600 hover:bg-violet-700">Book a Call</Button>
+            </a>
           </div>
         )}
       </div>

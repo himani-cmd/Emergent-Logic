@@ -8,122 +8,93 @@ import { Button } from '@/components/ui/button';
 import { CheckCircle, Star, ArrowRight } from 'lucide-react';
 
 export const metadata = {
-  title: 'Pricing — CRM & Marketing Automation Packages | Emergent Logic | Surrey BC',
-  description: 'Transparent fixed-price CRM implementation packages for Surrey and Vancouver businesses. Starting at $1,500. Book a free strategy call today.',
+  title: 'Pricing — CRM Implementation Packages | Greater Vancouver BC',
+  description: 'Transparent fixed pricing for CRM implementation in Greater Vancouver BC. Starting from $1,500. Salesforce, HubSpot, Zoho and more. Book a free strategy call.',
   alternates: { canonical: 'https://www.emergent-logic.ca/pricing' },
-  openGraph: {
-    title: 'Pricing — CRM & Marketing Automation Packages | Emergent Logic',
-    description: 'Transparent fixed-price CRM implementation packages for Surrey and Vancouver businesses. Starting at $1,500.',
-    type: 'website',
-  },
 };
 
 const packages = [
   {
     name: 'CRM Starter',
     price: '$1,500',
-    description: 'Perfect for small businesses getting started with CRM',
-    features: [
-      'HubSpot CRM setup',
-      'Up to 500 contacts imported',
-      '1 sales pipeline configured',
-      '5 email templates',
-      '1 hour team training',
-      '30 day email support',
-    ],
+    bestFor: 'Small businesses new to CRM',
+    features: ['HubSpot, Zoho, or Odoo CRM setup', 'Up to 500 contacts imported', '1 sales pipeline configured', '5 email templates created', '1 hour team training session', '30 day email support'],
   },
   {
     name: 'CRM Growth',
     price: '$3,500',
     popular: true,
-    description: 'For growing businesses ready to scale their sales process',
-    features: [
-      'Full CRM setup (HubSpot or Salesforce)',
-      'Complete data migration',
-      '3 automated workflows',
-      'Lead scoring configured',
-      'Reports and dashboards',
-      '2 hour team training',
-      '60 day email support',
-    ],
+    bestFor: 'Growing teams ready to scale',
+    features: ['Salesforce or HubSpot full setup', 'Complete data migration', '3 automated workflows built', 'Lead scoring configured', 'Custom reports and dashboards', '2 hour team training session', '60 day email support'],
   },
   {
     name: 'Website + CRM Bundle',
-    price: '$4,500',
-    description: 'Complete digital presence with integrated CRM',
-    features: [
-      '5 page HubSpot CMS website',
-      'HubSpot CRM connected',
-      'Contact form to CRM',
-      '2 email automation sequences',
-      'Basic SEO setup',
-      '1 month support',
-    ],
+    price: '$3,500',
+    bestFor: 'Businesses needing website + CRM',
+    features: ['HubSpot CMS or WordPress website', 'Up to 5 pages built', 'CRM fully connected to website', 'Contact form feeds CRM automatically', '2 email automation sequences', 'Basic SEO setup', '1 month post-launch support'],
+  },
+  {
+    name: 'Marketing Automation',
+    price: '$1,500',
+    bestFor: 'Businesses with CRM needing automation',
+    features: ['3 automated email sequences', 'Lead nurturing workflow', 'Lead scoring setup', 'Campaign reporting dashboard', '1 hour training session', '30 day support'],
   },
 ];
 
 const retainer = {
   name: 'Monthly Retainer',
-  price: '$1,500',
+  price: '$1,000',
   period: '/month',
-  description: 'Ongoing CRM management and optimization',
-  features: [
-    '8 hours CRM management',
-    'Monthly reporting',
-    'Ongoing automation improvements',
-    'Priority email support',
-  ],
+  bestFor: 'Businesses wanting ongoing expert support',
+  features: ['Monthly CRM management', 'Automation improvements', 'Data quality monitoring', 'Monthly performance report', 'Priority support', 'Quarterly strategy review', 'No long contracts — cancel anytime'],
 };
+
+const addons = [
+  { name: 'Zapier/Make Integration', price: 'from $500' },
+  { name: 'QuickBooks/Xero Integration', price: 'from $800' },
+  { name: 'Shopify + CRM Integration', price: 'from $1,500' },
+  { name: 'SMS Automation (Twilio)', price: 'from $800' },
+  { name: 'CRM Data Migration', price: 'from $1,500' },
+  { name: 'Team Training Session', price: 'from $500' },
+  { name: 'CRM Health Audit', price: 'from $500' },
+  { name: 'Custom Dashboard Build', price: 'from $800' },
+];
 
 export default function PricingPage() {
   return (
     <main className="min-h-screen">
       <Navbar />
       
-      {/* Hero */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-violet-900 via-indigo-900 to-purple-900">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl">
-            <Badge className="mb-4 bg-white/10 text-white border-white/20">Pricing</Badge>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Transparent Pricing. No Surprises.</h1>
-            <p className="text-xl text-white/70">
-              Fixed price packages designed for growing businesses in Surrey and Vancouver. Know exactly what you're paying before we start.
-            </p>
-          </div>
+          <Badge className="mb-4 bg-white/10 text-white border-white/20">Pricing</Badge>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Simple, Transparent Pricing.<br/>No Surprises. No Hidden Fees.</h1>
+          <p className="text-xl text-white/70 max-w-3xl">Every project starts with a free 30-minute strategy call so we can scope your exact needs and confirm the right package for your business.</p>
         </div>
       </section>
 
-      {/* Packages */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {packages.map((pkg, i) => (
               <Card key={i} className={`relative border-0 shadow-lg ${pkg.popular ? 'ring-2 ring-violet-500 scale-105' : ''}`}>
-                {pkg.popular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                    <Badge className="bg-violet-600">
-                      <Star className="w-3 h-3 mr-1" /> Most Popular
-                    </Badge>
-                  </div>
-                )}
-                <CardHeader className="text-center pb-4">
-                  <CardTitle className="text-2xl">{pkg.name}</CardTitle>
-                  <div className="text-5xl font-bold text-violet-600 mt-4">{pkg.price}</div>
-                  <CardDescription className="mt-2">{pkg.description}</CardDescription>
+                {pkg.popular && <div className="absolute -top-3 left-1/2 -translate-x-1/2"><Badge className="bg-violet-600"><Star className="w-3 h-3 mr-1" /> Most Popular</Badge></div>}
+                <CardHeader className="text-center pb-2">
+                  <CardTitle className="text-xl">{pkg.name}</CardTitle>
+                  <div className="text-sm text-gray-500">Starting from</div>
+                  <div className="text-4xl font-bold text-violet-600">{pkg.price}</div>
+                  <CardDescription className="text-sm">Best for: {pkg.bestFor}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-3 mb-6">
+                  <ul className="space-y-2 mb-6">
                     {pkg.features.map((feature, j) => (
-                      <li key={j} className="flex items-start gap-2 text-gray-600">
-                        <CheckCircle className="w-5 h-5 text-violet-500 flex-shrink-0 mt-0.5" />
-                        {feature}
+                      <li key={j} className="flex items-start gap-2 text-gray-600 text-sm">
+                        <CheckCircle className="w-4 h-4 text-violet-500 flex-shrink-0 mt-0.5" />{feature}
                       </li>
                     ))}
                   </ul>
                   <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
-                    <Button className={`w-full ${pkg.popular ? 'bg-violet-600 hover:bg-violet-700' : ''}`} variant={pkg.popular ? 'default' : 'outline'}>
-                      Book Free Strategy Call
-                    </Button>
+                    <Button className={`w-full ${pkg.popular ? 'bg-violet-600 hover:bg-violet-700' : ''}`} variant={pkg.popular ? 'default' : 'outline'}>Book Free Strategy Call</Button>
                   </a>
                 </CardContent>
               </Card>
@@ -140,25 +111,21 @@ export default function PricingPage() {
               <CardHeader className="text-center">
                 <Badge className="w-fit mx-auto mb-4 bg-violet-100 text-violet-700">Ongoing Support</Badge>
                 <CardTitle className="text-2xl">{retainer.name}</CardTitle>
-                <div className="text-5xl font-bold text-violet-600 mt-4">
-                  {retainer.price}<span className="text-xl text-gray-500">{retainer.period}</span>
-                </div>
-                <CardDescription className="mt-2">{retainer.description}</CardDescription>
+                <div className="text-sm text-gray-500">Starting from</div>
+                <div className="text-5xl font-bold text-violet-600">{retainer.price}<span className="text-xl text-gray-500">{retainer.period}</span></div>
+                <CardDescription>Best for: {retainer.bestFor}</CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-3 mb-6 max-w-md mx-auto">
+                <ul className="space-y-2 mb-6 max-w-md mx-auto">
                   {retainer.features.map((feature, j) => (
                     <li key={j} className="flex items-start gap-2 text-gray-600">
-                      <CheckCircle className="w-5 h-5 text-violet-500 flex-shrink-0 mt-0.5" />
-                      {feature}
+                      <CheckCircle className="w-5 h-5 text-violet-500 flex-shrink-0 mt-0.5" />{feature}
                     </li>
                   ))}
                 </ul>
                 <div className="text-center">
                   <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
-                    <Button size="lg" className="bg-violet-600 hover:bg-violet-700">
-                      Book Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
-                    </Button>
+                    <Button size="lg" className="bg-violet-600 hover:bg-violet-700">Book Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button>
                   </a>
                 </div>
               </CardContent>
@@ -167,37 +134,31 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* Add-ons */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Pricing FAQ</h2>
-            <div className="space-y-6">
-              <Card className="border-0 shadow-lg">
-                <CardHeader><CardTitle className="text-lg">What's included in the fixed price?</CardTitle></CardHeader>
-                <CardContent><p className="text-gray-600">Everything listed in the package. No hidden fees, no surprise charges. The price you see is the price you pay.</p></CardContent>
-              </Card>
-              <Card className="border-0 shadow-lg">
-                <CardHeader><CardTitle className="text-lg">What if I need something custom?</CardTitle></CardHeader>
-                <CardContent><p className="text-gray-600">Book a free strategy call and we'll create a custom quote based on your specific needs. Most custom projects fall within 20% of our standard packages.</p></CardContent>
-              </Card>
-              <Card className="border-0 shadow-lg">
-                <CardHeader><CardTitle className="text-lg">Do you offer payment plans?</CardTitle></CardHeader>
-                <CardContent><p className="text-gray-600">Yes. For projects over $3,000, we offer 50% upfront and 50% on completion. Monthly retainers are billed at the start of each month.</p></CardContent>
-              </Card>
-            </div>
+          <div className="text-center mb-12">
+            <Badge className="mb-4 bg-violet-100 text-violet-700">Add-Ons</Badge>
+            <h2 className="text-3xl font-bold text-gray-900">Popular Add-Ons</h2>
           </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-16 bg-gradient-to-br from-violet-600 to-indigo-700">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to get started?</h2>
-          <p className="text-xl text-white/80 mb-8">Book a free 30-minute strategy call. No obligation, no sales pressure.</p>
-          <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button>
-          </a>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            {addons.map((addon, i) => (
+              <Card key={i} className="border-0 shadow-md text-center">
+                <CardHeader className="pb-2">
+                  <CardTitle className="text-sm">{addon.name}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="text-violet-600 font-semibold">{addon.price}</div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          <div className="text-center mt-12 max-w-2xl mx-auto">
+            <p className="text-gray-600 mb-6">Not sure which package is right for you? Book a free 30-minute strategy call. We'll recommend exactly what your business needs — no pressure, no obligation.</p>
+            <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="bg-violet-600 hover:bg-violet-700">Book Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button>
+            </a>
+          </div>
         </div>
       </section>
 

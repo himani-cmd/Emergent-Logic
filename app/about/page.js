@@ -5,32 +5,28 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Lightbulb, Award, Users, Shield, ArrowRight, MapPin, Sparkles, Globe, Calendar } from 'lucide-react';
+import { Zap, Award, DollarSign, MapPin, Link2, RefreshCw, ArrowRight, Sparkles, Globe, Calendar } from 'lucide-react';
 
 export const metadata = {
-  title: 'About Emergent Logic Consulting | Surrey, BC',
-  description: 'Emergent Logic is an AI-powered digital consulting firm in Surrey, BC. Meet Himani, our founder, and learn about our CRM and marketing automation services.',
+  title: 'About Emergent Logic | Greater Vancouver CRM Consulting Firm',
+  description: "Emergent Logic is Greater Vancouver's AI-powered CRM consulting firm. Founded by Himani. Serving Surrey, Abbotsford, Langley, Coquitlam and all of BC. 15+ certifications.",
   alternates: { canonical: 'https://www.emergent-logic.ca/about' },
 };
-
-const values = [
-  { icon: Lightbulb, title: 'Innovation', description: 'We stay ahead of the curve, embracing new technologies and methodologies to deliver cutting-edge solutions.' },
-  { icon: Award, title: 'Excellence', description: 'Quality is non-negotiable. We strive for excellence in every project, every line of code, every campaign.' },
-  { icon: Users, title: 'Collaboration', description: 'We believe in building strong partnerships with our clients, working together towards shared success.' },
-  { icon: Shield, title: 'Integrity', description: 'Transparency and honesty guide our actions. We deliver on our promises and communicate openly.' },
-];
 
 const credentials = [
   { icon: Sparkles, label: 'AI-Powered Consulting' },
   { icon: MapPin, label: 'Surrey, BC Canada' },
-  { icon: Globe, label: 'Serving Canada & US' },
+  { icon: Globe, label: 'Serving Greater Vancouver & Canada' },
   { icon: Calendar, label: 'Founded 2026' },
 ];
 
-const faqs = [
-  { q: 'Who founded Emergent Logic Consulting?', a: 'Emergent Logic Consulting was founded by Himani in Surrey, BC, Canada. The company focuses on helping B2B businesses grow through CRM implementation, marketing automation, and AI-accelerated development.' },
-  { q: 'Where is Emergent Logic based?', a: 'Emergent Logic Consulting is headquartered in Surrey, British Columbia, Canada. We serve clients across Canada and the United States, with all work done in-house by our local team.' },
-  { q: 'What industries does Emergent Logic serve?', a: 'We primarily serve B2B companies, startups, and SMBs across various industries including technology, professional services, manufacturing, and healthcare. Our solutions are adaptable to any industry that needs CRM, marketing automation, or digital presence.' },
+const reasons = [
+  { icon: Zap, title: '2-Week Delivery', description: 'We implement CRM systems in 2-4 weeks. Not months. AI-accelerated delivery means you start seeing results fast.' },
+  { icon: Award, title: '15+ Certifications', description: '6x Salesforce Certified, HubSpot Expert, and more. You get certified expertise — not junior staff learning on your project.' },
+  { icon: DollarSign, title: 'Transparent Pricing', description: 'Fixed packages with clear pricing. No surprise invoices. No scope creep. You know exactly what you are paying before we start.' },
+  { icon: MapPin, title: 'Local Greater Vancouver Team', description: 'We are based in Surrey, BC and serve businesses across Greater Vancouver — Surrey, Abbotsford, Langley, Coquitlam, Port Coquitlam, Burnaby, Richmond and more. We understand the local market, Canadian privacy laws, and BC business needs.' },
+  { icon: Link2, title: 'We Connect Everything', description: 'CRM, automation, website, and integrations — all connected and working together. Not separate projects from separate vendors.' },
+  { icon: RefreshCw, title: 'Ongoing Support', description: 'We do not disappear after launch. Monthly retainers keep your CRM healthy, your automations running, and your data clean — forever.' },
 ];
 
 export default function AboutPage() {
@@ -38,16 +34,11 @@ export default function AboutPage() {
     <main className="min-h-screen">
       <Navbar />
       
-      {/* Hero */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-violet-900 via-indigo-900 to-purple-900">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl">
-            <Badge className="mb-4 bg-white/10 text-white border-white/20">About Us</Badge>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">The story of Emergent Logic</h1>
-            <p className="text-xl text-white/70">
-              Emergent Logic Consulting is a digital consulting firm founded in Surrey, British Columbia, Canada. We provide CRM implementation, marketing automation, web development, and digital marketing services.
-            </p>
-          </div>
+          <Badge className="mb-4 bg-white/10 text-white border-white/20">About Us</Badge>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">About Emergent Logic</h1>
+          <p className="text-xl text-white/70 max-w-3xl">Greater Vancouver's AI-powered CRM consulting firm. We help businesses implement Salesforce, HubSpot, and Zoho — faster and smarter than traditional agencies.</p>
         </div>
       </section>
 
@@ -56,7 +47,6 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8 items-start">
-              {/* Photo Placeholder */}
               <div className="md:col-span-1">
                 <div className="aspect-square rounded-2xl bg-gradient-to-br from-violet-100 to-indigo-100 flex items-center justify-center">
                   <div className="w-32 h-32 rounded-full bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center">
@@ -64,30 +54,20 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
-              
-              {/* Bio */}
               <div className="md:col-span-2">
                 <Badge className="mb-2 bg-violet-100 text-violet-700">Founder & CEO</Badge>
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">Himani</h2>
                 <div className="prose prose-lg text-gray-600 space-y-4">
-                  <p>
-                    Himani is the Founder and CEO of Emergent Logic, a Surrey, BC-based AI-powered digital consulting firm specializing in CRM implementation, marketing automation, and web development.
-                  </p>
-                  <p>
-                    With a vision to make enterprise-quality digital transformation accessible to growing businesses, Himani founded Emergent Logic to deliver results faster and smarter than traditional agencies — using AI-accelerated delivery to implement in weeks what others take months to complete.
-                  </p>
-                  <p>
-                    Under her leadership, Emergent Logic serves B2B companies across Surrey, Vancouver, and Canada — helping them build revenue systems that actually work.
-                  </p>
+                  <p>Himani is the Founder and CEO of Emergent Logic, a Surrey, BC-based AI-powered digital consulting firm specializing in CRM implementation, marketing automation, and web development.</p>
+                  <p>With a vision to make enterprise-quality digital transformation accessible to every growing business — not just large corporations with massive budgets — Himani founded Emergent Logic to deliver results faster and smarter than traditional agencies.</p>
+                  <p>Using AI-accelerated delivery, Emergent Logic implements in weeks what others take months to complete — at a fraction of the traditional cost.</p>
+                  <p>Under her leadership, Emergent Logic serves B2B companies across Greater Vancouver and Canada — including Surrey, Abbotsford, Langley, Coquitlam, Port Coquitlam, Burnaby, and Richmond — helping them build revenue systems that actually work.</p>
                   <p className="text-violet-600 font-medium">Based in Surrey, BC, Canada.</p>
                 </div>
-                
-                {/* Credential Badges */}
                 <div className="flex flex-wrap gap-3 mt-6">
                   {credentials.map((cred, i) => (
                     <div key={i} className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-gray-700">
-                      <cred.icon className="w-4 h-4 text-violet-600" />
-                      {cred.label}
+                      <cred.icon className="w-4 h-4 text-violet-600" />{cred.label}
                     </div>
                   ))}
                 </div>
@@ -97,69 +77,38 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Mission & Vision */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <Card className="border-0 shadow-lg">
-              <CardHeader><CardTitle className="text-2xl">Our Mission</CardTitle></CardHeader>
-              <CardContent><p className="text-gray-600">To empower businesses with innovative digital solutions that drive growth, enhance user experiences, and create lasting value. We believe every business deserves access to world-class digital capabilities.</p></CardContent>
-            </Card>
-            <Card className="border-0 shadow-lg">
-              <CardHeader><CardTitle className="text-2xl">Our Vision</CardTitle></CardHeader>
-              <CardContent><p className="text-gray-600">To become the go-to partner for businesses seeking digital transformation. We envision a future where every organization can harness the power of technology to achieve extraordinary outcomes.</p></CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Values */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <Badge className="mb-4 bg-violet-100 text-violet-700">Our Values</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">What drives us</h2>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {values.map((value, i) => (
-              <Card key={i} className="text-center border-0 shadow-lg">
-                <CardHeader>
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center mx-auto mb-4">
-                    <value.icon className="w-7 h-7 text-white" />
-                  </div>
-                  <CardTitle className="text-lg">{value.title}</CardTitle>
-                </CardHeader>
-                <CardContent><p className="text-gray-600 text-sm">{value.description}</p></CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
+      {/* Why Choose Us */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <Badge className="mb-4 bg-violet-100 text-violet-700">FAQ</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">About Emergent Logic</h2>
+            <Badge className="mb-4 bg-violet-100 text-violet-700">Why Choose Us</Badge>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Why Greater Vancouver Businesses Choose Emergent Logic</h2>
           </div>
-          <div className="max-w-3xl mx-auto space-y-6">
-            {faqs.map((faq, i) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {reasons.map((reason, i) => (
               <Card key={i} className="border-0 shadow-lg">
-                <CardHeader><CardTitle className="text-lg">{faq.q}</CardTitle></CardHeader>
-                <CardContent><p className="text-gray-600">{faq.a}</p></CardContent>
+                <CardHeader>
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center mb-4">
+                    <reason.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <CardTitle className="text-lg">{reason.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-sm">{reason.description}</p>
+                </CardContent>
               </Card>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-16 bg-gradient-to-br from-violet-600 to-indigo-700">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Want to work with us?</h2>
-          <p className="text-xl text-white/80 mb-8">Let's create something amazing together.</p>
-          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Get In Touch <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to work with us?</h2>
+          <p className="text-xl text-white/80 mb-8">Book a free 30-minute strategy call. No obligation, no sales pressure.</p>
+          <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button>
+          </a>
         </div>
       </section>
 
