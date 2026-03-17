@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
@@ -11,13 +11,13 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
-import { Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { Mail, MapPin, Clock, Send, CheckCircle, Calendar } from 'lucide-react';
 
 const faqs = [
   { q: 'How quickly will you respond to my inquiry?', a: 'We respond to all inquiries within 24 hours during business days. For urgent projects, mention it in your message and we\'ll prioritize your request.' },
   { q: 'Do you offer free consultations?', a: 'Yes! We offer a free 30-minute strategy call to understand your business needs and discuss how we can help. No obligation, no pressure—just a conversation about your goals.' },
   { q: 'What information should I include in my message?', a: 'Share your business name, the services you\'re interested in (CRM, marketing automation, web development, etc.), your timeline, and any specific challenges you\'re facing. The more details, the better we can prepare.' },
-  { q: 'Do you work with clients outside of Canada?', a: 'Yes! While we\'re based in Surrey, BC, we serve clients across Canada and internationally. All our work is done remotely, so location is never a barrier.' },
+  { q: 'Do you work with clients outside of Canada?', a: 'Yes! While we\'re based in Surrey, BC, we serve clients across Canada and the United States. All our work is done remotely, so location is never a barrier.' },
 ];
 
 export default function ContactPage() {
@@ -59,8 +59,35 @@ export default function ContactPage() {
             <Badge className="mb-4 bg-white/10 text-white border-white/20">Contact Us</Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Let's start a conversation</h1>
             <p className="text-xl text-white/70">
-              Contact Emergent Logic Consulting for CRM implementation, marketing automation, web development, and digital marketing services. Based in Surrey, BC, Canada, we serve B2B clients across Canada.
+              Contact Emergent Logic Consulting for CRM implementation, marketing automation, web development, and digital marketing services. Based in Surrey, BC, Canada, we serve B2B clients across Canada and the US.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Calendly Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center mx-auto mb-4">
+                <Calendar className="w-8 h-8 text-white" />
+              </div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-2">Book a Free 30-Minute Strategy Call</h2>
+              <p className="text-xl text-gray-600">No obligation. No sales pressure. Just a straight conversation about your goals.</p>
+            </div>
+            
+            {/* Calendly Embed */}
+            <div className="bg-gray-50 rounded-2xl p-4 mb-8">
+              <iframe
+                src="https://calendly.com/himani-emergentlogics/30min?hide_gdpr_banner=1"
+                width="100%"
+                height="700"
+                frameBorder="0"
+                className="rounded-xl"
+                title="Schedule a call with Emergent Logic"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
@@ -68,10 +95,15 @@ export default function ContactPage() {
       {/* Contact Form & Info */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">Or Send Us a Message</h2>
+            <p className="text-gray-600">Prefer email? Fill out the form and we'll get back to you within 24 hours.</p>
+          </div>
+          
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Contact Info */}
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in touch</h2>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Get in touch</h3>
               <p className="text-gray-600 mb-8">Have a project in mind? We're here to help. Reach out through any of the channels below or fill out the contact form.</p>
               
               <div className="space-y-6">
@@ -167,12 +199,8 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {faqs.map((faq, i) => (
               <Card key={i} className="border-0 shadow-lg">
-                <CardHeader>
-                  <CardTitle className="text-lg">{faq.q}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">{faq.a}</p>
-                </CardContent>
+                <CardHeader><CardTitle className="text-lg">{faq.q}</CardTitle></CardHeader>
+                <CardContent><p className="text-gray-600">{faq.a}</p></CardContent>
               </Card>
             ))}
           </div>

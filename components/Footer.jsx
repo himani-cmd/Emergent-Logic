@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Sparkles, Mail, MapPin, Clock, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { Sparkles, Mail, MapPin, Clock, Linkedin, Twitter } from 'lucide-react';
 
 const services = [
   { name: 'CRM Implementation', href: '/crm-implementation' },
@@ -15,6 +15,7 @@ const locations = [
 ];
 
 const resources = [
+  { name: 'Pricing', href: '/pricing' },
   { name: 'Blog', href: '/blog' },
   { name: 'About Us', href: '/about' },
   { name: 'Contact', href: '/contact' },
@@ -42,9 +43,7 @@ export default function Footer() {
             <div className="space-y-3 text-gray-400">
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-violet-400" />
-                <a href="mailto:info@emergent-logic.ca" className="hover:text-violet-400 transition-colors">
-                  info@emergent-logic.ca
-                </a>
+                <a href="mailto:info@emergent-logic.ca" className="hover:text-violet-400 transition-colors">info@emergent-logic.ca</a>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-violet-400" />
@@ -63,9 +62,7 @@ export default function Footer() {
             <ul className="space-y-3 text-gray-400">
               {services.map((service) => (
                 <li key={service.href}>
-                  <Link href={service.href} className="hover:text-violet-400 transition-colors">
-                    {service.name}
-                  </Link>
+                  <Link href={service.href} className="hover:text-violet-400 transition-colors">{service.name}</Link>
                 </li>
               ))}
             </ul>
@@ -77,9 +74,7 @@ export default function Footer() {
             <ul className="space-y-3 text-gray-400">
               {locations.map((location) => (
                 <li key={location.href}>
-                  <Link href={location.href} className="hover:text-violet-400 transition-colors">
-                    {location.name}
-                  </Link>
+                  <Link href={location.href} className="hover:text-violet-400 transition-colors">{location.name}</Link>
                 </li>
               ))}
             </ul>
@@ -91,9 +86,7 @@ export default function Footer() {
             <ul className="space-y-3 text-gray-400">
               {resources.map((resource) => (
                 <li key={resource.href}>
-                  <Link href={resource.href} className="hover:text-violet-400 transition-colors">
-                    {resource.name}
-                  </Link>
+                  <Link href={resource.href} className="hover:text-violet-400 transition-colors">{resource.name}</Link>
                 </li>
               ))}
             </ul>
