@@ -9,9 +9,16 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Clock, MapPin, AlertCircle, XCircle } from 'lucide-react';
 
 export const metadata = {
-  title: 'How to Choose a Digital Marketing Agency in Vancouver, BC',
-  description: 'Looking for a digital marketing agency in Vancouver or Surrey, BC? Here are 7 questions to ask before you hire — and the red flags to watch out for.',
+  title: 'Choose a Marketing Agency Vancouver',
+  description: 'Looking for a digital marketing agency in Vancouver or Surrey BC? 7 questions to ask before you hire and red flags to watch out for.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/how-to-choose-digital-marketing-agency-vancouver' },
+  openGraph: {
+    title: 'Choose a Marketing Agency Vancouver | Emergent Logic',
+    description: 'Looking for a digital marketing agency in Vancouver or Surrey BC? 7 questions to ask before you hire.',
+    url: 'https://www.emergent-logic.ca/blog/how-to-choose-digital-marketing-agency-vancouver',
+    type: 'article',
+    images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
+  },
 };
 
 export default function ChooseDigitalAgency() {

@@ -8,9 +8,15 @@ import Link from 'next/link';
 import { Zap, Award, DollarSign, MapPin, Link2, RefreshCw, ArrowRight, Sparkles, Globe, Calendar } from 'lucide-react';
 
 export const metadata = {
-  title: 'About Emergent Logic | Greater Vancouver CRM Consulting Firm',
-  description: "Emergent Logic is Greater Vancouver's AI-powered CRM consulting firm. Founded by Himani. Serving Surrey, Abbotsford, Langley, Coquitlam and all of BC. 15+ certifications.",
+  title: 'About Us | CRM Consultants Vancouver BC',
+  description: "Vancouver's CRM consulting firm led by Himani. 15+ certifications, 6x Salesforce Certified. Serving Surrey, Langley, Abbotsford.",
   alternates: { canonical: 'https://www.emergent-logic.ca/about' },
+  openGraph: {
+    title: 'About Us | CRM Consultants Vancouver BC | Emergent Logic',
+    description: "Vancouver's CRM consulting firm led by Himani. 15+ certifications, 6x Salesforce Certified.",
+    url: 'https://www.emergent-logic.ca/about',
+    images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
+  },
 };
 
 const credentials = [

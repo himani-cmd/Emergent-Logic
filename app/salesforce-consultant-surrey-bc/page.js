@@ -9,9 +9,15 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, MapPin, Award, Clock, Percent } from 'lucide-react';
 
 export const metadata = {
-  title: 'Salesforce Consultant in Surrey, BC | Emergent Logic',
-  description: "Looking for a Salesforce consultant in Surrey, BC? Emergent Logic is Surrey's only dedicated Salesforce and HubSpot consulting firm. 6x Salesforce Certified. Results in weeks not months.",
+  title: 'Salesforce Consultant Surrey BC',
+  description: "Surrey's dedicated Salesforce consultant. 6x Certified. CRM implementation and optimization. Results in weeks, not months.",
   alternates: { canonical: 'https://www.emergent-logic.ca/salesforce-consultant-surrey-bc' },
+  openGraph: {
+    title: 'Salesforce Consultant Surrey BC | Emergent Logic',
+    description: "Surrey's dedicated Salesforce consultant. 6x Certified. CRM implementation and optimization.",
+    url: 'https://www.emergent-logic.ca/salesforce-consultant-surrey-bc',
+    images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
+  },
 };
 
 const services = [

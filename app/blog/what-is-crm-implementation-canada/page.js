@@ -10,9 +10,16 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Clock, MapPin, AlertCircle } from 'lucide-react';
 
 export const metadata = {
-  title: 'What is CRM Implementation? A Step-by-Step Guide for Canadian SMBs',
-  description: 'Learn what CRM implementation involves, how long it takes, what it costs, and how to avoid the most common mistakes. Written for Canadian small and mid-sized businesses.',
+  title: 'What is CRM Implementation? Guide',
+  description: 'Learn what CRM implementation involves, timelines, costs, and common mistakes. Guide for Canadian small and mid-sized businesses.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/what-is-crm-implementation-canada' },
+  openGraph: {
+    title: 'What is CRM Implementation? Guide | Emergent Logic',
+    description: 'Learn what CRM implementation involves, timelines, costs, and common mistakes for Canadian businesses.',
+    url: 'https://www.emergent-logic.ca/blog/what-is-crm-implementation-canada',
+    type: 'article',
+    images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
+  },
 };
 
 const relatedPosts = [

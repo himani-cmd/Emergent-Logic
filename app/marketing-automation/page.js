@@ -9,9 +9,15 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Zap } from 'lucide-react';
 
 export const metadata = {
-  title: 'Marketing Automation Services | HubSpot, Marketo, Pardot | Emergent Logic',
-  description: 'Expert marketing automation implementation. HubSpot Marketing Hub, Marketo, Pardot, ActiveCampaign, and more. Turn your marketing into a revenue machine.',
+  title: 'Marketing Automation Services',
+  description: 'HubSpot, Marketo, Pardot, ActiveCampaign automation. Turn your marketing into a revenue machine. AI-accelerated delivery.',
   alternates: { canonical: 'https://www.emergent-logic.ca/marketing-automation' },
+  openGraph: {
+    title: 'Marketing Automation Services | Emergent Logic',
+    description: 'HubSpot, Marketo, Pardot, ActiveCampaign automation. Turn your marketing into a revenue machine.',
+    url: 'https://www.emergent-logic.ca/marketing-automation',
+    images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
+  },
 };
 
 const platforms = ['HubSpot Marketing Hub', 'Salesforce Marketing Cloud', 'Marketo Engage', 'Pardot', 'ActiveCampaign', 'Klaviyo', 'Mailchimp', 'Brevo', 'Customer.io', 'Iterable', 'Eloqua', 'Drip'];

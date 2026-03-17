@@ -8,9 +8,13 @@ import { ArrowRight, Clock } from 'lucide-react';
 
 export const metadata = {
   title: 'Blog | CRM & Marketing Insights',
-  description: 'Expert insights on CRM implementation, marketing automation, and digital growth strategies for Canadian businesses.',
-  alternates: {
-    canonical: 'https://www.emergent-logic.ca/blog',
+  description: 'Expert insights on CRM implementation, marketing automation, and digital growth for Canadian businesses.',
+  alternates: { canonical: 'https://www.emergent-logic.ca/blog' },
+  openGraph: {
+    title: 'Blog | CRM & Marketing Insights | Emergent Logic',
+    description: 'Expert insights on CRM implementation, marketing automation, and digital growth for Canadian businesses.',
+    url: 'https://www.emergent-logic.ca/blog',
+    images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
 };
 

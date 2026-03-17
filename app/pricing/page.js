@@ -8,9 +8,15 @@ import { Button } from '@/components/ui/button';
 import { CheckCircle, Star, ArrowRight } from 'lucide-react';
 
 export const metadata = {
-  title: 'Pricing — CRM Implementation Packages | Greater Vancouver BC',
-  description: 'Transparent fixed pricing for CRM implementation in Greater Vancouver BC. Starting from $1,500. Salesforce, HubSpot, Zoho and more. Book a free strategy call.',
+  title: 'CRM Implementation Pricing & Packages',
+  description: 'Fixed pricing for CRM implementation. Starting from $1,500. Salesforce, HubSpot, Zoho and more. Book a free strategy call.',
   alternates: { canonical: 'https://www.emergent-logic.ca/pricing' },
+  openGraph: {
+    title: 'CRM Implementation Pricing & Packages | Emergent Logic',
+    description: 'Fixed pricing for CRM implementation. Starting from $1,500. Salesforce, HubSpot, Zoho and more.',
+    url: 'https://www.emergent-logic.ca/pricing',
+    images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
+  },
 };
 
 const packages = [

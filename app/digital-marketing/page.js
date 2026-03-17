@@ -8,9 +8,15 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, TrendingUp } from 'lucide-react';
 
 export const metadata = {
-  title: 'Digital Marketing Services | SEO, AEO, Google Ads | Emergent Logic | Surrey BC',
-  description: 'Data-driven digital marketing in Surrey, BC. SEO, AEO (Answer Engine Optimization), GEO, Google Ads, and social media marketing. Be found everywhere.',
+  title: 'Digital Marketing & SEO Services',
+  description: 'Data-driven digital marketing in Surrey BC. SEO, AEO, Google Ads, and social media marketing. Be found everywhere.',
   alternates: { canonical: 'https://www.emergent-logic.ca/digital-marketing' },
+  openGraph: {
+    title: 'Digital Marketing & SEO Services | Emergent Logic',
+    description: 'Data-driven digital marketing in Surrey BC. SEO, AEO, Google Ads, and social media marketing.',
+    url: 'https://www.emergent-logic.ca/digital-marketing',
+    images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
+  },
 };
 
 const services = ['SEO (Search Engine Optimization)', 'AEO (Answer Engine Optimization)', 'GEO (Generative Engine Optimization)', 'Google Ads Management', 'Social Media Marketing', 'Content Strategy', 'Email Marketing', 'Analytics & Reporting'];

@@ -9,9 +9,15 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, MapPin, Zap, BarChart3, Globe, Settings } from 'lucide-react';
 
 export const metadata = {
-  title: 'HubSpot Consultant Vancouver BC | Emergent Logic',
-  description: 'Expert HubSpot consultant serving Vancouver and Metro Vancouver. CRM setup, Marketing Hub automation, and HubSpot CMS development. Book a free strategy call.',
+  title: 'HubSpot Consultant Vancouver BC',
+  description: 'Expert HubSpot consulting in Vancouver. CRM setup, Marketing Hub automation, and CMS development. Book a free strategy call.',
   alternates: { canonical: 'https://www.emergent-logic.ca/hubspot-consultant-vancouver' },
+  openGraph: {
+    title: 'HubSpot Consultant Vancouver BC | Emergent Logic',
+    description: 'Expert HubSpot consulting in Vancouver. CRM setup, Marketing Hub automation, and CMS development.',
+    url: 'https://www.emergent-logic.ca/hubspot-consultant-vancouver',
+    images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
+  },
 };
 
 const services = [

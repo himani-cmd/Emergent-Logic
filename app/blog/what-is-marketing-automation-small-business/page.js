@@ -10,9 +10,16 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Clock, MapPin, AlertCircle } from 'lucide-react';
 
 export const metadata = {
-  title: 'What is Marketing Automation and Does Your Business Need It?',
-  description: 'Marketing automation explained for Canadian small businesses. Learn what it is, how it works, which platforms to consider, and whether it is right for your business.',
+  title: 'What is Marketing Automation?',
+  description: 'Marketing automation explained for small businesses. What it is, how it works, which platforms to use, and if it is right for you.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/what-is-marketing-automation-small-business' },
+  openGraph: {
+    title: 'What is Marketing Automation? | Emergent Logic',
+    description: 'Marketing automation explained for small businesses. What it is, how it works, and which platforms to use.',
+    url: 'https://www.emergent-logic.ca/blog/what-is-marketing-automation-small-business',
+    type: 'article',
+    images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
+  },
 };
 
 export default function WhatIsMarketingAutomation() {

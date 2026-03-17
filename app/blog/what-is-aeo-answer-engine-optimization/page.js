@@ -9,9 +9,16 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Clock, MapPin, AlertCircle } from 'lucide-react';
 
 export const metadata = {
-  title: 'What is AEO? Answer Engine Optimization Explained for 2026',
-  description: 'AEO (Answer Engine Optimization) is the new SEO. Learn what it is, how it differs from traditional SEO, and how to optimize your business for AI search in 2026.',
+  title: 'What is AEO? Answer Engine Optimization',
+  description: 'AEO explained: what Answer Engine Optimization is, how it differs from SEO, and how to optimize for AI search engines in 2026.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/what-is-aeo-answer-engine-optimization' },
+  openGraph: {
+    title: 'What is AEO? Answer Engine Optimization | Emergent Logic',
+    description: 'AEO explained: what it is, how it differs from SEO, and how to optimize for AI search in 2026.',
+    url: 'https://www.emergent-logic.ca/blog/what-is-aeo-answer-engine-optimization',
+    type: 'article',
+    images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
+  },
 };
 
 export default function WhatIsAEO() {

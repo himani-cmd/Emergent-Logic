@@ -9,9 +9,15 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, MapPin } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Consultant Surrey BC | Salesforce HubSpot NetSuite',
-  description: 'Professional CRM consulting in Surrey, BC. Salesforce, HubSpot, NetSuite, and Odoo implementation. AI-accelerated delivery. Book a free strategy call today.',
+  title: 'CRM Consultant Surrey BC',
+  description: 'CRM consulting in Surrey BC. Salesforce, HubSpot, NetSuite, Odoo implementation. AI-accelerated delivery. Free strategy call.',
   alternates: { canonical: 'https://www.emergent-logic.ca/crm-consultant-surrey-bc' },
+  openGraph: {
+    title: 'CRM Consultant Surrey BC | Emergent Logic',
+    description: 'CRM consulting in Surrey BC. Salesforce, HubSpot, NetSuite, Odoo implementation. AI-accelerated delivery.',
+    url: 'https://www.emergent-logic.ca/crm-consultant-surrey-bc',
+    images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
+  },
 };
 
 const platforms = ['Salesforce', 'HubSpot', 'NetSuite', 'Odoo', 'Microsoft Dynamics', 'Zoho CRM', 'Pipedrive', 'Freshsales', 'Monday CRM', 'Copper', 'Insightly', 'Close CRM'];

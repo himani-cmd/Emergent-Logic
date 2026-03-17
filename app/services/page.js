@@ -8,9 +8,15 @@ import { Button } from '@/components/ui/button';
 import { Database, Zap, Link2, Code, Settings, ArrowRight, CheckCircle } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM & Marketing Automation Services | Greater Vancouver BC',
-  description: 'CRM implementation, marketing automation, integrations, and website + CRM bundles for Greater Vancouver businesses. Serving Surrey, Abbotsford, Langley, Coquitlam. Starting from $1,500.',
+  title: 'CRM & Marketing Services Vancouver',
+  description: 'CRM implementation, marketing automation, integrations, and website bundles for Vancouver businesses. Starting from $1,500.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services' },
+  openGraph: {
+    title: 'CRM & Marketing Services Vancouver | Emergent Logic',
+    description: 'CRM implementation, marketing automation, integrations, and website bundles for Vancouver businesses. Starting from $1,500.',
+    url: 'https://www.emergent-logic.ca/services',
+    images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
+  },
 };
 
 const services = [

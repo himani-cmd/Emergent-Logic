@@ -8,9 +8,15 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Code } from 'lucide-react';
 
 export const metadata = {
-  title: 'Web Development Services | AI-Accelerated | Emergent Logic | Surrey BC',
-  description: 'AI-accelerated web development in Surrey, BC. Custom websites, web applications, landing pages, and e-commerce. Built to convert, delivered in weeks.',
+  title: 'Web Development Services Surrey BC',
+  description: 'AI-accelerated web development in Surrey BC. Custom websites, web apps, landing pages, and e-commerce. Built to convert, delivered in weeks.',
   alternates: { canonical: 'https://www.emergent-logic.ca/web-development' },
+  openGraph: {
+    title: 'Web Development Services Surrey BC | Emergent Logic',
+    description: 'AI-accelerated web development in Surrey BC. Custom websites, web apps, and e-commerce. Delivered in weeks.',
+    url: 'https://www.emergent-logic.ca/web-development',
+    images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
+  },
 };
 
 const technologies = ['Next.js', 'React', 'HubSpot CMS', 'WordPress', 'Shopify', 'Node.js', 'Tailwind CSS', 'MongoDB', 'PostgreSQL', 'Vercel', 'AWS', 'Cloudflare'];

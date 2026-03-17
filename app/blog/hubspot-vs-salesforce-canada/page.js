@@ -10,15 +10,15 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Clock, MapPin, CheckCircle, AlertCircle } from 'lucide-react';
 
 export const metadata = {
-  title: 'HubSpot vs Salesforce: Which CRM is Right for Your Canadian Business?',
-  description: 'Comparing HubSpot and Salesforce for Canadian SMBs? This guide breaks down cost, features, and implementation time so you can choose the right CRM for your business.',
-  alternates: {
-    canonical: 'https://www.emergent-logic.ca/blog/hubspot-vs-salesforce-canada',
-  },
+  title: 'HubSpot vs Salesforce for Canadian SMBs',
+  description: 'Comparing HubSpot and Salesforce for Canadian SMBs. Cost, features, and implementation time to help you choose the right CRM.',
+  alternates: { canonical: 'https://www.emergent-logic.ca/blog/hubspot-vs-salesforce-canada' },
   openGraph: {
-    title: 'HubSpot vs Salesforce: Which CRM is Right for Your Canadian Business?',
-    description: 'Comparing HubSpot and Salesforce for Canadian SMBs? This guide breaks down cost, features, and implementation time.',
+    title: 'HubSpot vs Salesforce for Canadian SMBs | Emergent Logic',
+    description: 'Comparing HubSpot and Salesforce for Canadian SMBs. Cost, features, and implementation time.',
+    url: 'https://www.emergent-logic.ca/blog/hubspot-vs-salesforce-canada',
     type: 'article',
+    images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
 };
 

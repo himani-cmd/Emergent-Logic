@@ -9,9 +9,15 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, MapPin } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Consultant Langley BC | Salesforce HubSpot Zoho',
-  description: 'Professional CRM consulting in Langley, BC. Salesforce, HubSpot, Zoho, and Odoo implementation. AI-accelerated delivery in 2-4 weeks. Book a free strategy call today.',
+  title: 'CRM Consultant Langley BC',
+  description: 'CRM consulting in Langley BC. Salesforce, HubSpot, Zoho implementation. AI-accelerated delivery in 2-4 weeks. Free strategy call.',
   alternates: { canonical: 'https://www.emergent-logic.ca/crm-consultant-langley' },
+  openGraph: {
+    title: 'CRM Consultant Langley BC | Emergent Logic',
+    description: 'CRM consulting in Langley BC. Salesforce, HubSpot, Zoho implementation. AI-accelerated delivery in 2-4 weeks.',
+    url: 'https://www.emergent-logic.ca/crm-consultant-langley',
+    images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
+  },
 };
 
 const platforms = ['Salesforce', 'HubSpot', 'Zoho CRM', 'Odoo', 'Pipedrive', 'Monday CRM', 'ActiveCampaign', 'Freshsales', 'Copper', 'Close CRM'];
