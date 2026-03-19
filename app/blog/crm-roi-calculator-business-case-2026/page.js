@@ -161,12 +161,16 @@ export default function CrmRoiCalculator() {
             { objection: '"We can just use spreadsheets"', response: 'Spreadsheets break at 10 users, 1,000 contacts, or any need for automation. Calculate the hidden cost of manual operations — hours spent searching for data, duplicating work, missing follow-ups.' },
             { objection: '"It is too expensive"', response: 'Reframe the investment: $56K Year 1 generating $240K incremental revenue = 380% ROI. The real question: "Can we afford NOT to invest in a CRM while competitors do?"' },
             { objection: '"Our team will not use it"', response: 'Valid concern — and solvable. Executive sponsorship, simple initial workflows, clear value proposition for users (not just management), and ongoing training. Budget for adoption, not just implementation.' },
+            { objection: '"We\'ll just hire a freelancer on Upwork"', response: 'This is the most understandable objection — and the most expensive mistake. We scanned over 1,000 active CRM jobs on Upwork and found that 40% were businesses that had already bought a CRM but couldn\'t use it. Many were on their second or third freelancer attempt. A $3,000 freelancer who delivers a CRM your team doesn\'t adopt costs you $3,000 in fees PLUS the ongoing cost of a non-functioning CRM. Multiply that by 2–3 attempts over 12 months, and you\'ve spent $10,000–$25,000 with nothing to show for it. A consulting firm charges more upfront ($13,000–$38,000) but delivers a working system from month 2. The break-even is usually within 6 months, and the ROI compounds from there. Freelancers are excellent for defined, scoped tasks. But if you need strategy, training, adoption, and ongoing optimization — that\'s consulting work.' },
           ].map((item, i) => (
             <div key={i} className="bg-white border rounded-xl p-6 shadow-sm">
               <h3 className="font-bold text-red-700 mb-2">{item.objection}</h3>
               <p className="text-gray-600">{item.response}</p>
             </div>
           ))}
+          <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-4 mt-2">
+            <p className="text-gray-700 text-sm">Read our full breakdown: <Link href="/blog/crm-freelancer-vs-consulting-firm" className="text-[#6366F1] font-medium hover:underline">CRM Freelancer vs Consulting Firm →</Link></p>
+          </div>
         </div>
 
         {/* CTA */}

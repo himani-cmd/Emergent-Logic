@@ -107,6 +107,46 @@ export async function GET() {
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.emergent-logic.ca/blog/salesforce-vs-hubspot-vs-zoho-canada-2026</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.emergent-logic.ca/blog/ai-crm-strategy-guide-2026</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.emergent-logic.ca/blog/crm-pipeda-data-privacy-canada</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.emergent-logic.ca/blog/lead-scoring-model-crm-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.emergent-logic.ca/blog/email-nurture-sequences-crm-automation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.emergent-logic.ca/blog/campaign-attribution-crm-marketing-roi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.emergent-logic.ca/blog/crm-roi-calculator-business-case-2026</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.emergent-logic.ca/blog/crm-freelancer-vs-consulting-firm</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.emergent-logic.ca/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

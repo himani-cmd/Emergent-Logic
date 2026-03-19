@@ -75,6 +75,14 @@ const posts = [
     featured: true,
   },
   {
+    slug: 'crm-freelancer-vs-consulting-firm',
+    title: 'CRM Freelancer vs. CRM Consulting Firm: What Canadian Businesses Need to Know Before Hiring',
+    excerpt: 'We scanned 1,000+ Upwork CRM jobs. 40% were businesses rehiring after a failed implementation. Here\'s when a freelancer works — and when you need a consulting firm.',
+    category: 'Strategy',
+    readTime: '12 min read',
+    featured: true,
+  },
+  {
     slug: 'hubspot-vs-salesforce-canada',
     title: 'HubSpot vs Salesforce: Which CRM is Right for Your Canadian Business?',
     excerpt: 'Comparing HubSpot and Salesforce for Canadian SMBs. Cost, features, and implementation time to help you choose.',
