@@ -40,7 +40,7 @@ const jsonLd = {
   logo: 'https://www.emergent-logic.ca/og-image.png',
   image: 'https://www.emergent-logic.ca/og-image.png',
   description: 'AI-powered CRM implementation and marketing automation for Greater Vancouver businesses.',
-  telephone: '',
+  telephone: '+1-778-652-6271',
   email: 'info@emergent-logic.ca',
   address: {
     '@type': 'PostalAddress',

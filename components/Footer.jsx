@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Sparkles, Mail, MapPin } from 'lucide-react';
+import { Sparkles, Mail, MapPin, Phone } from 'lucide-react';
 
 const servicesLinks = [
   { name: 'CRM Implementation', href: '/crm-implementation' },
@@ -40,6 +40,7 @@ export default function Footer() {
             <div className="space-y-2 text-gray-400 text-sm">
               <div className="flex items-center gap-2"><MapPin className="w-4 h-4 text-violet-400" />Surrey, BC, Canada</div>
               <div className="flex items-center gap-2"><Mail className="w-4 h-4 text-violet-400" /><a href="mailto:info@emergent-logic.ca" className="hover:text-violet-400">info@emergent-logic.ca</a></div>
+              <div className="flex items-center gap-2"><Phone className="w-4 h-4 text-violet-400" /><a href="tel:+17786526271" className="hover:text-violet-400">778-652-6271</a></div>
             </div>
           </div>
 

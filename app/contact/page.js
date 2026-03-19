@@ -11,7 +11,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
-import { Mail, MapPin, Clock, Send, CheckCircle, Calendar, Ear, Target, FileText, DollarSign, ThumbsUp } from 'lucide-react';
+import { Mail, MapPin, Clock, Send, CheckCircle, Calendar, Ear, Target, FileText, DollarSign, ThumbsUp, Phone } from 'lucide-react';
 
 const expectations = [
   { icon: Ear, text: 'We listen to your business challenges' },
@@ -120,6 +120,15 @@ export default function ContactPage() {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
                     <a href="mailto:info@emergent-logic.ca" className="text-violet-600 hover:underline">info@emergent-logic.ca</a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-violet-100 flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-violet-600" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
+                    <a href="tel:+17786526271" className="text-violet-600 hover:underline">778-652-6271</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
