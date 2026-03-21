@@ -1,13 +1,14 @@
 import Link from 'next/link';
-import { Sparkles, Mail, MapPin, Phone } from 'lucide-react';
+import Image from 'next/image';
+import { Mail, MapPin, Phone } from 'lucide-react';
 
 const servicesLinks = [
-  { name: 'CRM Implementation', href: '/crm-implementation' },
-  { name: 'Marketing Automation', href: '/marketing-automation' },
-  { name: 'Integrations & Automation', href: '/services' },
-  { name: 'Website + CRM Bundle', href: '/web-development' },
-  { name: 'Monthly Retainer', href: '/services' },
-  { name: 'CRM Migration', href: '/services' },
+  { name: 'CRM Implementation', href: '/services/crm-implementation' },
+  { name: 'HubSpot Consulting', href: '/services/hubspot-consulting' },
+  { name: 'CRM Cleanup', href: '/services/crm-cleanup' },
+  { name: 'Marketing Automation', href: '/services/marketing-automation' },
+  { name: 'CRM Integration', href: '/services/crm-integration' },
+  { name: 'Salesforce Consulting', href: '/services/salesforce-consulting' },
 ];
 
 const companyLinks = [
@@ -28,9 +29,13 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-600 to-indigo-600 flex items-center justify-center">
-                <Sparkles className="w-6 h-6 text-white" />
-              </div>
+              <Image
+                src="/el-logo-header.png"
+                alt="Emergent Logic"
+                width={40}
+                height={40}
+                className="rounded-xl"
+              />
               <div className="flex flex-col">
                 <span className="text-xl font-bold">Emergent Logic</span>
                 <span className="text-xs text-violet-400">AI-Powered CRM</span>

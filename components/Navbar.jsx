@@ -12,14 +12,16 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu';
-import { Menu, X, Sparkles, Database, Zap, Link2, Code, Settings } from 'lucide-react';
+import Image from 'next/image';
+import { Menu, X, Sparkles, Database, Zap, Link2, Code, Settings, Wrench, TrendingUp } from 'lucide-react';
 
 const services = [
-  { title: 'CRM Implementation', href: '/crm-implementation', icon: Database },
-  { title: 'Marketing Automation', href: '/marketing-automation', icon: Zap },
-  { title: 'Integrations & Automation', href: '/services', icon: Link2 },
-  { title: 'Website + CRM Bundle', href: '/web-development', icon: Code },
-  { title: 'Monthly Retainer', href: '/services', icon: Settings },
+  { title: 'CRM Implementation', href: '/services/crm-implementation', icon: Database },
+  { title: 'HubSpot Consulting', href: '/services/hubspot-consulting', icon: Settings },
+  { title: 'CRM Cleanup', href: '/services/crm-cleanup', icon: Wrench },
+  { title: 'Marketing Automation', href: '/services/marketing-automation', icon: Zap },
+  { title: 'CRM Integration', href: '/services/crm-integration', icon: Link2 },
+  { title: 'Salesforce Consulting', href: '/services/salesforce-consulting', icon: TrendingUp },
 ];
 
 export default function Navbar() {
@@ -43,9 +45,14 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-600 to-indigo-600 flex items-center justify-center">
-              <Sparkles className="w-6 h-6 text-white" />
-            </div>
+            <Image
+              src="/el-logo-header.png"
+              alt="Emergent Logic"
+              width={40}
+              height={40}
+              className="rounded-xl"
+              priority
+            />
             <div className="flex flex-col">
               <span className={`text-xl font-bold ${logoColor}`}>Emergent Logic</span>
               <span className={`text-xs ${scrolled || !isHome ? 'text-violet-600' : 'text-violet-300'}`}>AI-Powered CRM</span>

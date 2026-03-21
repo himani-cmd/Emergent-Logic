@@ -29,6 +29,14 @@ export const metadata = {
   },
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://www.emergent-logic.ca' },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180' },
+    ],
+  },
 };
 
 const jsonLd = {
@@ -37,7 +45,7 @@ const jsonLd = {
   '@id': 'https://www.emergent-logic.ca/#organization',
   name: 'Emergent Logic',
   url: 'https://www.emergent-logic.ca',
-  logo: 'https://www.emergent-logic.ca/og-image.png',
+  logo: 'https://www.emergent-logic.ca/el-logo-512.png',
   image: 'https://www.emergent-logic.ca/og-image.png',
   description: 'AI-powered CRM implementation and marketing automation for Greater Vancouver businesses.',
   telephone: '+1-778-652-6271',
