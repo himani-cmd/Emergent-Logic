@@ -100,7 +100,7 @@ export default function PricingPage() {
                     ))}
                   </ul>
                   <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
-                    <Button className={`w-full ${pkg.popular ? 'bg-violet-600 hover:bg-violet-700' : ''}`} variant={pkg.popular ? 'default' : 'outline'}>Book Free Strategy Call</Button>
+                    <Button className={`w-full ${pkg.popular ? 'bg-violet-600 hover:bg-violet-700' : ''}`} variant={pkg.popular ? 'default' : 'outline'}>Book a Free Strategy Call</Button>
                   </a>
                 </CardContent>
               </Card>
@@ -131,7 +131,7 @@ export default function PricingPage() {
                 </ul>
                 <div className="text-center">
                   <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
-                    <Button size="lg" className="bg-violet-600 hover:bg-violet-700">Book Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button>
+                    <Button size="lg" className="bg-violet-600 hover:bg-violet-700">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button>
                   </a>
                 </div>
               </CardContent>
@@ -162,7 +162,7 @@ export default function PricingPage() {
           <div className="text-center mt-12 max-w-2xl mx-auto">
             <p className="text-gray-600 mb-6">Not sure which package is right for you? Book a free 30-minute strategy call. We'll recommend exactly what your business needs — no pressure, no obligation.</p>
             <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-violet-600 hover:bg-violet-700">Book Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button>
+              <Button size="lg" className="bg-violet-600 hover:bg-violet-700">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button>
             </a>
           </div>
         </div>

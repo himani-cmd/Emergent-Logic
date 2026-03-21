@@ -68,7 +68,7 @@ export default function HubspotConsultantVancouver() {
             Looking for a HubSpot consultant in Vancouver? Emergent Logic is Metro Vancouver's go-to HubSpot implementation partner. We set up your CRM, build your marketing automation, and connect everything into a revenue system that works.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+            <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
             <Link href="/marketing-automation"><Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">Marketing Automation Services</Button></Link>
           </div>
         </div>

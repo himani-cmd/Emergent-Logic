@@ -32,7 +32,7 @@ export default function CRMCleanup() {
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-white text-emerald-900 hover:bg-emerald-100 font-semibold px-8">
-                Book Free CRM Audit <ArrowRight className="w-5 h-5 ml-2" />
+                Get a Free CRM Audit <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </a>
           </div>
@@ -192,7 +192,7 @@ export default function CRMCleanup() {
           </p>
           <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-white text-emerald-900 hover:bg-emerald-100 font-semibold px-8">
-              Book Free CRM Audit <ArrowRight className="w-5 h-5 ml-2" />
+              Get a Free CRM Audit <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </a>
         </div>

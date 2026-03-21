@@ -32,7 +32,7 @@ export default function Footer() {
               <HexLogo size={36} variant="default" className="flex-shrink-0" />
               <div className="flex flex-col leading-tight">
                 <span className="text-lg font-bold">Emergent Logic</span>
-                <span className="text-xs text-violet-400">AI-Powered CRM</span>
+                <span className="text-xs text-violet-400">AI-Accelerated CRM Consulting</span>
               </div>
             </Link>
             <p className="text-gray-400 mb-4">AI-accelerated CRM implementation for Greater Vancouver businesses.</p>

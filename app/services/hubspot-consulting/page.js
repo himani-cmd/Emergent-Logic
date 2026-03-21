@@ -32,7 +32,7 @@ export default function HubSpotConsulting() {
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-white text-orange-900 hover:bg-orange-100 font-semibold px-8">
-                Book Free HubSpot Audit <ArrowRight className="w-5 h-5 ml-2" />
+                Get a Free CRM Audit <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </a>
           </div>

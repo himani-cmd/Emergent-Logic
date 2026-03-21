@@ -250,6 +250,7 @@ function ServicesSection() {
       icon: Zap,
       title: 'Marketing Automation',
       description: 'Lead scoring, email nurture sequences, campaign attribution, and automated follow-ups. We build the automation engine that converts leads into customers while your team focuses on closing.',
+      microcopy: 'Full service page coming soon — book a call to design your automation system.',
       href: 'https://calendly.com/himani-emergentlogics/30min',
       price: 'From $1,500',
       color: 'from-violet-500 to-purple-500',
@@ -259,6 +260,7 @@ function ServicesSection() {
       icon: Link2,
       title: 'CRM Integration',
       description: 'Connect your CRM to every tool your business uses — accounting, email, website, phone, marketing platforms. Zapier, Make, native APIs, and custom integrations that keep your data flowing.',
+      microcopy: 'Custom integrations for your tools — talk to us to map your system.',
       href: 'https://calendly.com/himani-emergentlogics/30min',
       price: 'From $500',
       color: 'from-pink-500 to-rose-500',
@@ -268,6 +270,7 @@ function ServicesSection() {
       icon: TrendingUp,
       title: 'Salesforce Consulting',
       description: 'Salesforce Sales Cloud configuration, custom objects, advanced automation, AppExchange integration, and admin training. Enterprise-grade CRM for businesses that need depth and scale.',
+      microcopy: 'Salesforce experts available — book a strategy call to get started.',
       href: 'https://calendly.com/himani-emergentlogics/30min',
       price: 'From $3,500',
       color: 'from-blue-600 to-indigo-600',
@@ -295,12 +298,15 @@ function ServicesSection() {
                   </div>
                   <CardTitle className="text-xl group-hover:text-violet-600 transition-colors">{service.title}</CardTitle>
                   <p className="text-gray-600 mt-2">{service.description}</p>
+                  {service.microcopy && (
+                    <p className="text-violet-600 text-sm mt-3 italic">{service.microcopy}</p>
+                  )}
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center justify-between">
                     <span className="text-violet-600 font-semibold">{service.price}</span>
                     <span className="text-violet-600 font-medium inline-flex items-center text-sm">
-                      {service.external ? 'Book a call' : 'Learn more'} <ArrowRight className="w-4 h-4 ml-1" />
+                      {service.external ? 'Get a Free Strategy Call' : 'Learn more'} <ArrowRight className="w-4 h-4 ml-1" />
                     </span>
                   </div>
                 </CardContent>
@@ -504,7 +510,7 @@ function FinalCTASection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100 px-8 py-6 text-lg font-semibold">
-              Book Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+              Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </a>
           <Link href="/ai-crm-audit">

@@ -51,7 +51,7 @@ export default function Navbar() {
             <HexLogo size={36} variant={logoVariant} className="flex-shrink-0" />
             <div className="flex flex-col leading-tight">
               <span className={`text-lg font-bold ${logoColor} tracking-tight`}>Emergent Logic</span>
-              <span className={`text-[10px] font-medium ${scrolled || !isHome ? 'text-violet-600' : 'text-violet-300'}`}>AI-Powered CRM</span>
+              <span className={`text-[10px] font-medium ${scrolled || !isHome ? 'text-violet-600' : 'text-violet-300'}`}>AI-Accelerated CRM Consulting</span>
             </div>
           </Link>
 

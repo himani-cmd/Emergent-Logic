@@ -65,7 +65,7 @@ export default function SalesforceConsultantSurrey() {
             Looking for a Salesforce consultant in Surrey, BC? Emergent Logic is Surrey's only dedicated Salesforce and HubSpot consulting firm. We are 6x Salesforce Certified and deliver results in weeks, not months — using AI-accelerated implementation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+            <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
             <Link href="/crm-implementation"><Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">View CRM Services</Button></Link>
           </div>
           <div className="grid grid-cols-3 gap-6 max-w-2xl">

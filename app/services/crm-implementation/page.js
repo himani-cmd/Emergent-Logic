@@ -32,7 +32,7 @@ export default function CRMImplementation() {
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100 font-semibold px-8">
-                Book Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </a>
           </div>
