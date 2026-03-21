@@ -29,14 +29,6 @@ export const metadata = {
   },
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://www.emergent-logic.ca' },
-  icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: '48x48' },
-    ],
-    apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180' },
-    ],
-  },
 };
 
 const jsonLd = {
