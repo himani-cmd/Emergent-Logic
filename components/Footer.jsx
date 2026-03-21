@@ -6,9 +6,9 @@ const servicesLinks = [
   { name: 'CRM Implementation', href: '/services/crm-implementation' },
   { name: 'HubSpot Consulting', href: '/services/hubspot-consulting' },
   { name: 'CRM Cleanup', href: '/services/crm-cleanup' },
-  { name: 'Marketing Automation', href: '/services/marketing-automation' },
-  { name: 'CRM Integration', href: '/services/crm-integration' },
-  { name: 'Salesforce Consulting', href: '/services/salesforce-consulting' },
+  { name: 'Marketing Automation', href: 'https://calendly.com/himani-emergentlogics/30min', external: true },
+  { name: 'CRM Integration', href: 'https://calendly.com/himani-emergentlogics/30min', external: true },
+  { name: 'Salesforce Consulting', href: 'https://calendly.com/himani-emergentlogics/30min', external: true },
 ];
 
 const companyLinks = [
@@ -48,7 +48,13 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               {servicesLinks.map((link) => (
-                <li key={link.href + link.name}><Link href={link.href} className="hover:text-violet-400 transition-colors">{link.name}</Link></li>
+                <li key={link.href + link.name}>
+                  {link.external ? (
+                    <a href={link.href} target="_blank" rel="noopener noreferrer" className="hover:text-violet-400 transition-colors">{link.name}</a>
+                  ) : (
+                    <Link href={link.href} className="hover:text-violet-400 transition-colors">{link.name}</Link>
+                  )}
+                </li>
               ))}
             </ul>
           </div>

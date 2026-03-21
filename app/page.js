@@ -250,25 +250,28 @@ function ServicesSection() {
       icon: Zap,
       title: 'Marketing Automation',
       description: 'Lead scoring, email nurture sequences, campaign attribution, and automated follow-ups. We build the automation engine that converts leads into customers while your team focuses on closing.',
-      href: '/services/marketing-automation',
+      href: 'https://calendly.com/himani-emergentlogics/30min',
       price: 'From $1,500',
       color: 'from-violet-500 to-purple-500',
+      external: true,
     },
     {
       icon: Link2,
       title: 'CRM Integration',
       description: 'Connect your CRM to every tool your business uses — accounting, email, website, phone, marketing platforms. Zapier, Make, native APIs, and custom integrations that keep your data flowing.',
-      href: '/services/crm-integration',
+      href: 'https://calendly.com/himani-emergentlogics/30min',
       price: 'From $500',
       color: 'from-pink-500 to-rose-500',
+      external: true,
     },
     {
       icon: TrendingUp,
       title: 'Salesforce Consulting',
       description: 'Salesforce Sales Cloud configuration, custom objects, advanced automation, AppExchange integration, and admin training. Enterprise-grade CRM for businesses that need depth and scale.',
-      href: '/services/salesforce-consulting',
+      href: 'https://calendly.com/himani-emergentlogics/30min',
       price: 'From $3,500',
       color: 'from-blue-600 to-indigo-600',
+      external: true,
     },
   ];
 
@@ -283,8 +286,8 @@ function ServicesSection() {
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {services.map((service, i) => (
-            <Link key={i} href={service.href}>
+          {services.map((service, i) => {
+            const CardInner = (
               <Card className="h-full group hover:shadow-xl transition-all duration-300 border bg-white cursor-pointer">
                 <CardHeader>
                   <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
@@ -297,13 +300,18 @@ function ServicesSection() {
                   <div className="flex items-center justify-between">
                     <span className="text-violet-600 font-semibold">{service.price}</span>
                     <span className="text-violet-600 font-medium inline-flex items-center text-sm">
-                      Learn more <ArrowRight className="w-4 h-4 ml-1" />
+                      {service.external ? 'Book a call' : 'Learn more'} <ArrowRight className="w-4 h-4 ml-1" />
                     </span>
                   </div>
                 </CardContent>
               </Card>
-            </Link>
-          ))}
+            );
+            return service.external ? (
+              <a key={i} href={service.href} target="_blank" rel="noopener noreferrer">{CardInner}</a>
+            ) : (
+              <Link key={i} href={service.href}>{CardInner}</Link>
+            );
+          })}
         </div>
       </div>
     </section>
