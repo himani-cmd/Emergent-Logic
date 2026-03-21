@@ -32,22 +32,17 @@ export async function GET() {
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.emergent-logic.ca/crm-implementation</loc>
+    <loc>https://www.emergent-logic.ca/services/crm-implementation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.emergent-logic.ca/marketing-automation</loc>
+    <loc>https://www.emergent-logic.ca/services/hubspot-consulting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.emergent-logic.ca/web-development</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/digital-marketing</loc>
+    <loc>https://www.emergent-logic.ca/services/crm-cleanup</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

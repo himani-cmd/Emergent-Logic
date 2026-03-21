@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import ELLogo from '@/components/ELLogo';
+import HexLogo from '@/components/HexLogo';
 import { Mail, MapPin, Phone } from 'lucide-react';
 
 const servicesLinks = [
@@ -28,10 +28,10 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div>
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <ELLogo size={40} className="rounded-xl flex-shrink-0" />
-              <div className="flex flex-col">
-                <span className="text-xl font-bold">Emergent Logic</span>
+            <Link href="/" className="flex items-center gap-2.5 mb-4">
+              <HexLogo size={36} variant="default" className="flex-shrink-0" />
+              <div className="flex flex-col leading-tight">
+                <span className="text-lg font-bold">Emergent Logic</span>
                 <span className="text-xs text-violet-400">AI-Powered CRM</span>
               </div>
             </Link>
