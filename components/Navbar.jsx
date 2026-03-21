@@ -13,6 +13,7 @@ import {
   NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu';
 import Image from 'next/image';
+import ELLogo from '@/components/ELLogo';
 import { Menu, X, Sparkles, Database, Zap, Link2, Code, Settings, Wrench, TrendingUp } from 'lucide-react';
 
 const services = [
@@ -45,14 +46,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2">
-            <Image
-              src="/el-logo-header.png"
-              alt="Emergent Logic"
-              width={40}
-              height={40}
-              className="rounded-xl"
-              priority
-            />
+            <ELLogo size={40} className="rounded-xl flex-shrink-0" />
             <div className="flex flex-col">
               <span className={`text-xl font-bold ${logoColor}`}>Emergent Logic</span>
               <span className={`text-xs ${scrolled || !isHome ? 'text-violet-600' : 'text-violet-300'}`}>AI-Powered CRM</span>

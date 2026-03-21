@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import ELLogo from '@/components/ELLogo';
 import { Mail, MapPin, Phone } from 'lucide-react';
 
 const servicesLinks = [
@@ -29,13 +29,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <Image
-                src="/el-logo-header.png"
-                alt="Emergent Logic"
-                width={40}
-                height={40}
-                className="rounded-xl"
-              />
+              <ELLogo size={40} className="rounded-xl flex-shrink-0" />
               <div className="flex flex-col">
                 <span className="text-xl font-bold">Emergent Logic</span>
                 <span className="text-xs text-violet-400">AI-Powered CRM</span>
