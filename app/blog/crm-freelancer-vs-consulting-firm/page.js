@@ -169,7 +169,7 @@ export default function CrmFreelancerVsConsultingFirm() {
             CRM Freelancer vs. CRM Consulting Firm: What Canadian Businesses Need to Know Before Hiring
           </h1>
           <div className="flex items-center gap-4 text-indigo-200 text-sm flex-wrap">
-            <span>By Bhavuk Sood, Principal Consultant</span>
+            <span>By Emergent Logic Team</span>
             <span>•</span>
             <span>2026</span>
             <span>•</span>
