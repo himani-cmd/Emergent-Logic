@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
+import TrackedCTA from '@/components/TrackedCTA';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Database, Clock, DollarSign, Users, Zap, ShieldCheck, TrendingUp } from 'lucide-react';
 
@@ -30,11 +31,13 @@ export default function CRMImplementation() {
             We set up HubSpot, Salesforce, and Zoho CRM systems for Canadian businesses in 2 to 4 weeks. Not 6 months. Pipelines, automation, dashboards, data migration, and team training — all included.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100 font-semibold px-8">
-                Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-            </a>
+            <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
+              <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100 font-semibold px-8">
+                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </a>
+            </TrackedCTA>
           </div>
         </div>
       </section>

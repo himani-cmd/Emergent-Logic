@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
+import TrackedCTA from '@/components/TrackedCTA';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Wrench, AlertTriangle, Database, Zap, BarChart3, Users, Trash2, Clock, DollarSign } from 'lucide-react';
 
@@ -30,11 +31,13 @@ export default function CRMCleanup() {
             Duplicate contacts, broken workflows, unreliable reports, and fields nobody uses. We audit your CRM, clean the data, rebuild the structure, and turn it into a system your team trusts and actually uses.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-white text-emerald-900 hover:bg-emerald-100 font-semibold px-8">
-                Get a Free CRM Audit <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-            </a>
+            <TrackedCTA ctaName="Get a Free CRM Audit" destination="calendly">
+              <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-white text-emerald-900 hover:bg-emerald-100 font-semibold px-8">
+                  Get a Free CRM Audit <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </a>
+            </TrackedCTA>
           </div>
         </div>
       </section>

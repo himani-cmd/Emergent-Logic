@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
+import TrackedCTA from '@/components/TrackedCTA';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Settings, Zap, BarChart3, Mail, Link2, Users, Layers, Clock, DollarSign } from 'lucide-react';
 
@@ -30,11 +31,13 @@ export default function HubSpotConsulting() {
             We set up HubSpot the way it should have been set up from day one. Portal configuration, pipeline design, workflow automation, custom reporting, and integrations — delivered by certified HubSpot consultants in 2 to 4 weeks.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-white text-orange-900 hover:bg-orange-100 font-semibold px-8">
-                Get a Free CRM Audit <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-            </a>
+            <TrackedCTA ctaName="Get a Free CRM Audit" destination="calendly">
+              <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-white text-orange-900 hover:bg-orange-100 font-semibold px-8">
+                  Get a Free CRM Audit <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </a>
+            </TrackedCTA>
           </div>
         </div>
       </section>

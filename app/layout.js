@@ -1,5 +1,8 @@
 import './globals.css';
+import Script from 'next/script';
 import { Toaster } from 'sonner';
+import AnalyticsProvider from '@/components/AnalyticsProvider';
+import { GA_MEASUREMENT_ID } from '@/lib/analytics';
 
 export const metadata = {
   metadataBase: new URL('https://www.emergent-logic.ca'),
@@ -93,7 +96,26 @@ export default function RootLayout({ children }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
       <body className="antialiased">
-        {children}
+        {/* GA4 Scripts */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}', {
+              page_path: window.location.pathname,
+            });
+            window.gtag = gtag;
+          `}
+        </Script>
+
+        <AnalyticsProvider>
+          {children}
+        </AnalyticsProvider>
         <Toaster position="top-right" richColors />
       </body>
     </html>

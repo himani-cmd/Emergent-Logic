@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
+import { trackLeadGeneration } from '@/lib/analytics';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -37,6 +38,11 @@ export default function ContactPage() {
       });
       if (response.ok) {
         toast.success('Message sent! We\'ll get back to you within 24 hours.');
+        trackLeadGeneration({
+          formName: 'contact_form',
+          location: '/contact',
+          leadSource: 'website_contact_page',
+        });
         setSubmitted(true);
         setFormData({ first_name: '', last_name: '', email: '', phone: '', message: '' });
       } else {

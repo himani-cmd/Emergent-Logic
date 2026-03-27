@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
+import TrackedCTA from '@/components/TrackedCTA';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -43,16 +44,20 @@ function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
-            <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100 px-8 py-6 text-lg font-semibold">
-                Book a Free Strategy Call <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-            </a>
-            <Link href="/ai-crm-audit">
-              <Button size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold">
-                Get a Free CRM Audit
-              </Button>
-            </Link>
+            <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
+              <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100 px-8 py-6 text-lg font-semibold">
+                  Book a Free Strategy Call <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </a>
+            </TrackedCTA>
+            <TrackedCTA ctaName="Get a Free CRM Audit" destination="/ai-crm-audit">
+              <Link href="/ai-crm-audit">
+                <Button size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold">
+                  Get a Free CRM Audit
+                </Button>
+              </Link>
+            </TrackedCTA>
           </div>
 
           {/* Trust Indicators */}
@@ -508,16 +513,20 @@ function FinalCTASection() {
           If we are not the right fit, we will tell you. If a freelancer would serve you better, we will say so. We would rather give you honest advice than win a project that is not right for us.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100 px-8 py-6 text-lg font-semibold">
-              Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
-          </a>
-          <Link href="/ai-crm-audit">
-            <Button size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold">
-              Get a Free CRM Audit
-            </Button>
-          </Link>
+          <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
+            <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100 px-8 py-6 text-lg font-semibold">
+                Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </a>
+          </TrackedCTA>
+          <TrackedCTA ctaName="Get a Free CRM Audit" destination="/ai-crm-audit">
+            <Link href="/ai-crm-audit">
+              <Button size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold">
+                Get a Free CRM Audit
+              </Button>
+            </Link>
+          </TrackedCTA>
         </div>
       </div>
     </section>

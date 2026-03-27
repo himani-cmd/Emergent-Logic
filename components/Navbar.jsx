@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import HexLogo from '@/components/HexLogo';
+import { trackCTAClick } from '@/lib/analytics';
 import { Button } from '@/components/ui/button';
 import { Menu, X, ChevronDown, Database, Settings, Wrench } from 'lucide-react';
 
@@ -85,7 +86,8 @@ export default function Navbar() {
               </Link>
             ))}
 
-            <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer" className="ml-2">
+            <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer" className="ml-2"
+              onClick={() => trackCTAClick({ ctaName: 'Book a Call', location: 'navbar', destination: 'calendly' })}>
               <Button size="sm" className="bg-violet-600 hover:bg-violet-700 text-white font-semibold px-4">
                 Book a Call
               </Button>
@@ -115,7 +117,8 @@ export default function Navbar() {
               <Link key={i} href={link.href} className="block px-3 py-2 rounded-lg text-gray-700 hover:bg-violet-50 font-medium">{link.title}</Link>
             ))}
 
-            <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer" className="block mt-2">
+            <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer" className="block mt-2"
+              onClick={() => trackCTAClick({ ctaName: 'Book a Call', location: 'navbar_mobile', destination: 'calendly' })}>
               <Button className="w-full bg-violet-600 hover:bg-violet-700">Book a Call</Button>
             </a>
           </div>
