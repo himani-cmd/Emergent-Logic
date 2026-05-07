@@ -57,6 +57,16 @@ export async function GET() {
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.emergent-logic.ca/services/crm-integration</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.emergent-logic.ca/services/salesforce-consulting</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.emergent-logic.ca/salesforce-consultant-surrey-bc</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>

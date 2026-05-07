@@ -16,6 +16,7 @@ const services = [
 
 const navLinks = [
   { title: 'Pricing', href: '/pricing' },
+  { title: 'Blog', href: '/blog' },
   { title: 'About', href: '/about' },
   { title: 'Contact', href: '/contact' },
 ];

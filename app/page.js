@@ -262,22 +262,18 @@ function ServicesSection() {
     {
       icon: Link2,
       title: 'CRM Integration',
-      description: 'Connect your CRM to every tool your business uses — accounting, email, website, phone, marketing platforms. Zapier, Make, native APIs, and custom integrations that keep your data flowing.',
-      microcopy: 'Custom integrations for your tools — talk to us to map your system.',
-      href: 'https://calendly.com/himani-emergentlogics/30min',
+      description: 'Connect your CRM to every tool your business uses — accounting, email, website, phone, marketing platforms. Native, Zapier, Make, and custom API integrations that keep your data flowing.',
+      href: '/services/crm-integration',
       price: 'From $500',
       color: 'from-pink-500 to-rose-500',
-      external: true,
     },
     {
       icon: TrendingUp,
       title: 'Salesforce Consulting',
       description: 'Salesforce Sales Cloud configuration, custom objects, advanced automation, AppExchange integration, and admin training. Enterprise-grade CRM for businesses that need depth and scale.',
-      microcopy: 'Salesforce experts available — book a strategy call to get started.',
-      href: 'https://calendly.com/himani-emergentlogics/30min',
+      href: '/services/salesforce-consulting',
       price: 'From $3,500',
       color: 'from-blue-600 to-indigo-600',
-      external: true,
     },
   ];
 
