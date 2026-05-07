@@ -6,10 +6,10 @@ const servicesLinks = [
   { name: 'CRM Implementation', href: '/services/crm-implementation' },
   { name: 'HubSpot Consulting', href: '/services/hubspot-consulting' },
   { name: 'CRM Cleanup', href: '/services/crm-cleanup' },
-  { name: 'Marketing Automation', href: 'https://calendly.com/himani-emergentlogics/30min', external: true },
+  { name: 'Marketing Automation', href: '/services/marketing-automation' },
+  { name: 'Lead Capture Websites', href: '/services/lead-capture-websites' },
   { name: 'CRM Integration', href: 'https://calendly.com/himani-emergentlogics/30min', external: true },
   { name: 'Salesforce Consulting', href: 'https://calendly.com/himani-emergentlogics/30min', external: true },
-  { name: 'Lead Capture Websites', href: 'https://calendly.com/himani-emergentlogics/30min', external: true },
 ];
 
 const companyLinks = [
