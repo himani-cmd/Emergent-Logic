@@ -11,7 +11,7 @@ import time
 from datetime import datetime
 
 # Configuration
-BASE_URL = "https://emergent-rebuild-6.preview.emergentagent.com"
+BASE_URL = "https://blog-index-refresh.preview.emergentagent.com"
 ADMIN_USERNAME = "admin"
 ADMIN_PASSWORD = "emergent2026"
 
