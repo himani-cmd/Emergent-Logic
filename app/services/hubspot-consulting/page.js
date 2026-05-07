@@ -37,10 +37,10 @@ export default function HubSpotConsulting() {
             We set up HubSpot the way it should have been set up from day one. Portal configuration, pipeline design, workflow automation, custom reporting, and integrations — delivered by senior CRM consultants in 2 to 4 weeks. Fixed price, no hourly billing.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <TrackedCTA ctaName="Get a Free CRM Audit" destination="calendly">
+            <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
               <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-orange-900 hover:bg-orange-100 font-semibold px-8">
-                  Get a Free HubSpot Audit <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -70,7 +70,7 @@ export default function HubSpotConsulting() {
             Most businesses sign up for HubSpot, add a few contacts, maybe create a deal or two, and then plateau. The workflows sit empty. The reporting shows vanity metrics. The sales team goes back to spreadsheets because the CRM feels like extra work instead of a tool that helps them sell. The marketing team uses it to send the occasional newsletter and nothing more.
           </p>
           <p className="text-lg text-gray-600 mb-4">
-            That is not a HubSpot problem. That is an implementation problem. HubSpot can automate your entire sales and marketing process — if someone configures it to do so. The platform has lead scoring, sequences, workflows, custom objects, predictive analytics, and dozens of integrations. Most teams use less than 20 percent of what they are paying for.
+            That is not a HubSpot problem. That is an implementation problem. HubSpot can automate your entire sales and marketing process — if someone configures it to do so. The platform has lead scoring, sequences, workflows, custom objects, predictive analytics, and dozens of integrations. Most teams use a small fraction of what they are paying for.
           </p>
           <p className="text-lg text-gray-600">
             Our HubSpot consulting service is built around one outcome: we turn your portal from a contact database into a revenue system. Whether you have just signed up, you have been on HubSpot for years, or you have inherited a portal someone else built and abandoned, we know how to get it working.
@@ -219,13 +219,13 @@ export default function HubSpotConsulting() {
           </p>
           <div className="space-y-3">
             {[
-              'Senior HubSpot consultants with 10+ years of CRM experience',
+              'Senior HubSpot consultants with deep CRM experience',
               'We also work with Salesforce and Zoho — so we give honest recommendations, not vendor-locked advice',
               'AI-powered audit identifies every issue in your portal before we touch anything',
               'Training is built into every engagement — not an upsell',
               'Fixed pricing with no surprises and no hourly billing',
               'Two weeks of post-launch support included in every project',
-              'Based in Surrey, BC — local to Greater Vancouver, serving all of Canada',
+              'Based in Surrey, BC — serving Greater Vancouver and businesses across Canada',
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
@@ -288,10 +288,10 @@ export default function HubSpotConsulting() {
             Book a free HubSpot audit. We will review your portal, identify what is working and what is not, and tell you exactly what it would take to fix it. No obligation, no pitch.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <TrackedCTA ctaName="Book Free HubSpot Audit - Footer" destination="calendly">
+            <TrackedCTA ctaName="Book a Free Strategy Call - HubSpot Footer" destination="calendly">
               <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-orange-900 hover:bg-orange-100 font-semibold px-8">
-                  Book Free HubSpot Audit <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>

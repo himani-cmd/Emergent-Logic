@@ -35,7 +35,7 @@ export default function LeadCaptureWebsites() {
             Websites Built to Feed Your CRM
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
-            We are not a web design agency. We build conversion-focused websites and landing pages whose only job is to capture inquiries properly, route them to the right person, and connect cleanly to your CRM. The page is the front door. The CRM is the rest of the building.
+            We are not a brand or web design agency. We build conversion-focused websites and landing pages whose only job is to capture inquiries properly, route them to the right person, and connect cleanly to your CRM. The page is the front door. The CRM is the rest of the building.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
@@ -80,7 +80,7 @@ export default function LeadCaptureWebsites() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What We Mean by Lead Capture Website</h2>
           <p className="text-lg text-gray-600 mb-4">
-            Most websites have one job: look professional. That is fine, but it does not move revenue. A lead capture website has one job: convert qualified visitors into structured records inside your CRM, with the right context attached, routed to the right person, faster than your competitors can get back to them.
+            Most websites are designed to look professional first. That has its place, but on its own it does not move revenue. A lead capture website has one job: convert qualified visitors into structured records inside your CRM, with the right context attached, routed to the right person, faster than your competitors can get back to them.
           </p>
           <p className="text-lg text-gray-600 mb-4">
             That changes what gets built. Less time on hero animations. More time on form architecture, conditional logic, qualification questions, hidden field mapping to CRM properties, calendar booking flows, lead source tracking, and post-submission automation. The visible website matters, but the invisible plumbing under it is where the revenue lives.
@@ -131,7 +131,7 @@ export default function LeadCaptureWebsites() {
               'eCommerce stores with full product catalog, payment, and inventory management',
               'Web apps, dashboards, or product UI work',
               'Generic small business websites with no CRM connection or lead capture strategy',
-              'Bidding wars to be the cheapest WordPress theme installer in town',
+              'Cheapest-bidder website builds with no integration or follow-through',
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3 bg-gray-50 p-4 rounded-xl border">
                 <AlertTriangle className="w-5 h-5 text-gray-500 flex-shrink-0 mt-0.5" />
@@ -211,6 +211,7 @@ export default function LeadCaptureWebsites() {
               'Bundled with CRM Implementation for clients who want the whole system built together',
               'Honest scope: we will tell you on the first call if you need a different kind of agency',
               'Senior consultants only, fixed pricing, two-week post-launch tuning included',
+              'Based in Surrey, BC — serving Greater Vancouver and businesses across Canada',
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-gray-700 flex-shrink-0 mt-0.5" />
@@ -270,13 +271,13 @@ export default function LeadCaptureWebsites() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Build a Website That Earns Its Keep</h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Book a free 30-minute strategy call. We will look at your current site, your CRM, and your funnel, and tell you whether a new lead capture site would actually move the needle.
+            Book a free 30-minute strategy call. We will look at your current site, your CRM, and your funnel, and give you an honest read on whether a new lead capture site is the right next step.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <TrackedCTA ctaName="Book Free Strategy Call - Lead Capture Footer" destination="calendly">
               <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-200 font-semibold px-8">
-                  Book Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>

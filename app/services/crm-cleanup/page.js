@@ -37,10 +37,10 @@ export default function CRMCleanup() {
             Duplicate contacts, broken workflows, unreliable reports, and fields nobody uses. We audit your CRM, clean the data, rebuild the structure, and turn it back into a system your team trusts and actually uses. HubSpot, Salesforce, and Zoho — delivered in 1 to 2 weeks.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <TrackedCTA ctaName="Get a Free CRM Audit" destination="calendly">
+            <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
               <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-emerald-900 hover:bg-emerald-100 font-semibold px-8">
-                  Get a Free CRM Audit <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -73,7 +73,7 @@ export default function CRMCleanup() {
             Every time someone suggests "just cleaning it up," the task feels so overwhelming that nothing gets done. So the data keeps getting worse, and the gap between what your CRM says and what is actually true keeps widening.
           </p>
           <p className="text-lg text-gray-600 mb-8">
-            We have seen this pattern hundreds of times. It is fixable. And it is faster than you think — because we use AI to identify and resolve issues that would take a human weeks to find manually.
+            We have seen this pattern many times. It is fixable. And it is faster than you think — because we use AI to identify and resolve issues that would take a human weeks to find manually.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -81,7 +81,7 @@ export default function CRMCleanup() {
               { icon: AlertTriangle, title: 'Duplicate Contacts', desc: 'The same person appears 3, 5, or 10 times with slight variations. Every duplicate inflates your metrics, confuses your sales team, and wastes your email credits — and HubSpot charges you per contact.', color: 'red' },
               { icon: Database, title: 'Bad Data Quality', desc: 'Missing fields, outdated information, wrong formats, incomplete records, invalid emails. Your CRM is only as useful as the data inside it — and right now, your data is unreliable.', color: 'orange' },
               { icon: Zap, title: 'Broken Workflows', desc: 'Automations that trigger at the wrong time, send to the wrong people, or do not fire at all. Workflows built on outdated logic that nobody remembers creating, layered on top of each other.', color: 'yellow' },
-              { icon: BarChart3, title: 'Unreliable Reports', desc: 'Dashboards that show numbers nobody trusts. Pipeline forecasts that are wildly inaccurate. Revenue reports that do not match your accounting. If you cannot trust the data, you cannot make decisions.', color: 'purple' },
+              { icon: BarChart3, title: 'Unreliable Reports', desc: 'Dashboards that show numbers nobody trusts. Pipeline forecasts that are well off the mark. Revenue reports that do not match your accounting. If you cannot trust the data, you cannot make decisions.', color: 'purple' },
             ].map((item, i) => {
               const colorMap = {
                 red: 'bg-red-50 border-red-200 text-red-600',
@@ -173,12 +173,12 @@ export default function CRMCleanup() {
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { value: '10x', label: 'Faster than manual cleanup' },
-              { value: '99%', label: 'Duplicate detection accuracy' },
-              { value: '0', label: 'Records lost during cleanup' },
+              { value: 'Hours', label: 'Not weeks of manual review' },
+              { value: 'High', label: 'Fidelity duplicate detection with fuzzy matching' },
+              { value: 'Logged', label: 'Every change tracked and reversible' },
             ].map((stat, i) => (
               <div key={i} className="bg-white rounded-xl p-6 text-center border border-emerald-200">
-                <div className="text-4xl font-bold text-emerald-700 mb-1">{stat.value}</div>
+                <div className="text-3xl font-bold text-emerald-700 mb-1">{stat.value}</div>
                 <div className="text-gray-600 text-sm">{stat.label}</div>
               </div>
             ))}
@@ -251,7 +251,7 @@ export default function CRMCleanup() {
               'Maintenance playbook included so your CRM stays clean',
               'Fixed pricing, no hourly billing',
               'Senior consultants only — no junior offshoring of your data',
-              'Based in Surrey, BC, serving businesses across Canada',
+              'Based in Surrey, BC — serving Greater Vancouver and businesses across Canada',
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
@@ -314,10 +314,10 @@ export default function CRMCleanup() {
             Book a free CRM audit. We will scan your database, identify every issue, and tell you exactly what it would take to fix it. No obligation, no pitch.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <TrackedCTA ctaName="Book Free CRM Audit - Footer" destination="calendly">
+            <TrackedCTA ctaName="Book a Free Strategy Call - Cleanup Footer" destination="calendly">
               <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-emerald-900 hover:bg-emerald-100 font-semibold px-8">
-                  Get a Free CRM Audit <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>

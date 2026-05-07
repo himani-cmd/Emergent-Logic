@@ -120,7 +120,7 @@ export default function MarketingAutomation() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Most Marketing Automation Fails</h2>
           <p className="text-lg text-gray-600 mb-8">
-            We have rebuilt automation for dozens of teams who tried to set it up themselves. The mistakes are predictable.
+            We have rebuilt automation for plenty of teams who tried to set it up themselves. The mistakes are predictable.
           </p>
           <div className="space-y-4">
             {[
@@ -156,7 +156,7 @@ export default function MarketingAutomation() {
             {[
               { icon: Filter, title: 'Lead Scoring Model', desc: 'Fit and engagement scoring tied to your ideal customer profile, with thresholds for marketing-qualified and sales-qualified leads. Built natively in HubSpot, Salesforce, or Zoho.' },
               { icon: Send, title: 'Nurture Sequences', desc: 'Three to five core sequences: welcome, educational nurture, sales-assist, re-engagement, and customer onboarding. Each fully written, segmented, and tested before launch.' },
-              { icon: Workflow, title: 'Routing & Handoff Workflows', desc: 'Lead assignment by territory, account size, or product interest. SLA timers, escalation paths, and notifications so no MQL waits more than 15 minutes.' },
+              { icon: Workflow, title: 'Routing & Handoff Workflows', desc: 'Lead assignment by territory, account size, or product interest. SLA timers, escalation paths, and notifications so MQL handoff happens in minutes, not days.' },
               { icon: BarChart3, title: 'Attribution Setup', desc: 'UTM strategy, source tracking, attribution model selection, and reporting dashboards. We close the loop between marketing and revenue once and for all.' },
               { icon: Mail, title: 'Email Templates & Sequences', desc: 'Sales-assist email templates and meeting booking flows for reps. Every touchpoint branded, tested for deliverability, and tracked.' },
               { icon: Target, title: 'Segmentation & Lists', desc: 'Smart list architecture, suppression rules, and re-engagement segments. Your list stays clean and your sender reputation stays high.' },
@@ -235,7 +235,7 @@ export default function MarketingAutomation() {
               'Attribution reporting that survives executive scrutiny — numbers reps and CFOs can both trust',
               'Multi-platform: HubSpot, Salesforce, Zoho — we recommend the right tool for your business',
               'Fixed pricing, two-week post-launch tuning included',
-              'Based in Surrey, BC, serving Canadian businesses end to end',
+              'Based in Surrey, BC — serving Greater Vancouver and businesses across Canada',
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" />
@@ -256,8 +256,8 @@ export default function MarketingAutomation() {
               { q: 'What CRMs do you build automation in?', a: 'HubSpot, Salesforce, and Zoho. HubSpot is where most of our automation work lives because the platform is purpose-built for it. Salesforce automation usually involves Pardot, Marketing Cloud, or Account Engagement. Zoho automation runs through Zoho Marketing Automation or CRM workflows.' },
               { q: 'How is this different from hiring a marketing agency?', a: 'A traditional marketing agency runs campaigns. We build the system underneath the campaigns — the scoring, sequences, attribution, and handoff workflows that turn campaigns into closed deals. We work alongside your existing agency or in-house marketing team, not as a replacement.' },
               { q: 'Do you write the email copy?', a: 'Yes. Email copy for nurture sequences and sales templates is included. We work with your subject matter experts to capture voice and positioning, then write, format, and test every email before launch.' },
-              { q: 'What about ad campaigns and SEO?', a: 'We do not run paid media or SEO campaigns ourselves. We build the infrastructure that makes those campaigns measurable: UTM strategy, attribution, conversion tracking, and lead routing. Our work makes your existing marketing investment 2 to 5 times more measurable.' },
-              { q: 'How quickly do you see results?', a: 'Operational results (faster lead handoff, higher engagement rates) usually show in the first 30 days. Revenue impact (higher conversion to closed-won) typically becomes visible in 60 to 90 days as the scoring model and sequences accumulate data and the sales cycle plays out.' },
+              { q: 'What about ad campaigns and SEO?', a: 'We do not run paid media or SEO campaigns ourselves. We build the infrastructure that makes those campaigns measurable: UTM strategy, attribution, conversion tracking, and lead routing. Our work makes your existing marketing investment substantially more measurable and easier to optimize.' },
+              { q: 'How quickly do you see results?', a: 'Operational results (faster lead handoff, higher engagement rates) usually start to show in the first month. Revenue impact (higher conversion to closed-won) typically becomes visible over the following quarter as the scoring model and sequences accumulate data and the sales cycle plays out.' },
               { q: 'Is this a substitute for hiring a marketer?', a: 'No. We build the automation system. Someone in your business still needs to plan campaigns, create content, and review performance. We can recommend marketers and content partners we trust if you do not have those resources in-house.' },
             ].map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-xl border">
@@ -295,13 +295,13 @@ export default function MarketingAutomation() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Build Automation That Closes Deals</h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Book a free 30-minute strategy call. We will look at your CRM, your funnel, and your current automation, and tell you exactly what would move the needle.
+            Book a free 30-minute strategy call. We will look at your CRM, your funnel, and your current automation, and walk you through exactly where the highest-leverage improvements are.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <TrackedCTA ctaName="Book Free Strategy Call - Marketing Automation Footer" destination="calendly">
               <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-purple-900 hover:bg-purple-100 font-semibold px-8">
-                  Book Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>

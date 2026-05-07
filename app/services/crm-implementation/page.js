@@ -46,7 +46,7 @@ export default function CRMImplementation() {
             </TrackedCTA>
             <Link href="/ai-crm-audit">
               <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
-                Get a Free AI CRM Audit
+                Try Our AI CRM Audit
               </Button>
             </Link>
           </div>
@@ -113,7 +113,7 @@ export default function CRMImplementation() {
         <div className="container mx-auto px-4 max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Industries We Serve</h2>
           <p className="text-lg text-gray-600 mb-8">
-            We have implemented CRMs across most of the sectors that drive the Canadian SMB economy. Every industry has its own pipeline shape, compliance requirements, and reporting needs — we know what those look like.
+            We have implemented CRMs across many of the sectors active in the Canadian SMB economy. Every industry has its own pipeline shape, compliance requirements, and reporting needs — and we have seen most of them.
           </p>
           <div className="grid md:grid-cols-3 gap-4">
             {[
@@ -144,7 +144,7 @@ export default function CRMImplementation() {
           <div className="space-y-4">
             {[
               { title: 'Starting with features instead of process', desc: 'Most implementations fail because they start by configuring software features instead of mapping the actual sales process. If your CRM does not match how your team sells, they will not use it. Process first, software second — every time.' },
-              { title: 'Skipping data cleanup before migration', desc: 'Migrating dirty data into a new CRM just moves the problem. Duplicates, missing fields, outdated contacts, dead leads — they all need to be cleaned before migration, not after. Otherwise, your shiny new CRM looks like your old one in 30 days.' },
+              { title: 'Skipping data cleanup before migration', desc: 'Migrating dirty data into a new CRM just moves the problem. Duplicates, missing fields, outdated contacts, dead leads — they all need to be cleaned before migration, not after. Otherwise, the new system inherits the same issues within weeks.' },
               { title: 'No training plan or weak adoption strategy', desc: 'Installing a CRM is not the same as implementing it. If your team does not know how to use the system efficiently, adoption drops to zero within the first month and never recovers. Training is not optional.' },
               { title: 'Generic configuration', desc: 'Using default templates and out-of-the-box pipeline stages means your CRM does not reflect your business. Every company has a unique sales process — your CRM should match it exactly, not the other way around.' },
               { title: 'No automation strategy', desc: 'A CRM without automation is just a database with extra steps. Lead assignment, follow-up reminders, email sequences, deal stage updates, internal notifications — these should be automated from day one, not added six months later.' },
@@ -228,7 +228,7 @@ export default function CRMImplementation() {
             <div className="bg-gray-50 p-8 rounded-2xl border shadow-sm">
               <Clock className="w-10 h-10 text-violet-600 mb-4" />
               <h3 className="text-2xl font-bold text-gray-900 mb-2">2 to 4 Weeks</h3>
-              <p className="text-gray-600">From kickoff to launch. Our AI-accelerated methodology compresses what traditional agencies take 3 to 6 months to deliver. You see a working pipeline by the end of week two.</p>
+              <p className="text-gray-600">From kickoff to launch. Our AI-accelerated methodology compresses timelines that traditional agencies typically deliver in 3 to 6 months. Most clients see a working pipeline by the end of week two.</p>
             </div>
             <div className="bg-gray-50 p-8 rounded-2xl border shadow-sm">
               <DollarSign className="w-10 h-10 text-violet-600 mb-4" />
@@ -285,12 +285,12 @@ export default function CRMImplementation() {
           <div className="space-y-3">
             {[
               'Multi-platform expertise: HubSpot, Salesforce, and Zoho — we recommend based on your business, not our vendor partnerships',
-              'AI-accelerated delivery: faster audits, structured configuration, and 70 to 80 percent faster than traditional agencies',
+              'AI-accelerated delivery: faster audits, tighter configuration, and substantially shorter timelines than traditional agencies',
               'Senior consultants only: the person on your strategy call is the person building your CRM',
               'Fixed pricing: no hourly rates, no scope creep, no surprise invoices',
               'Training built in: we do not consider an implementation complete until your team is using the system unprompted',
               'Vendor-neutral: we have no kickback deals with any CRM platform — we recommend what fits your business',
-              'Based in Surrey, BC: local to Greater Vancouver and serving businesses across all of Canada',
+              'Based in Surrey, BC — serving Greater Vancouver and businesses across Canada',
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-violet-600 flex-shrink-0 mt-0.5" />
@@ -356,13 +356,13 @@ export default function CRMImplementation() {
             <TrackedCTA ctaName="Book Free Strategy Call - Footer" destination="calendly">
               <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100 font-semibold px-8">
-                  Book Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
             <Link href="/ai-crm-audit">
               <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
-                Get a Free AI CRM Audit
+                Try Our AI CRM Audit
               </Button>
             </Link>
           </div>
