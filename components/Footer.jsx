@@ -9,6 +9,7 @@ const servicesLinks = [
   { name: 'Marketing Automation', href: 'https://calendly.com/himani-emergentlogics/30min', external: true },
   { name: 'CRM Integration', href: 'https://calendly.com/himani-emergentlogics/30min', external: true },
   { name: 'Salesforce Consulting', href: 'https://calendly.com/himani-emergentlogics/30min', external: true },
+  { name: 'Lead Capture Websites', href: 'https://calendly.com/himani-emergentlogics/30min', external: true },
 ];
 
 const companyLinks = [
