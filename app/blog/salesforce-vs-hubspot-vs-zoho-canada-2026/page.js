@@ -324,7 +324,7 @@ export default function SalesforceVsHubspotVsZoho() {
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Not sure which CRM is right for your business?</h2>
           <p className="text-indigo-200 mb-8 max-w-2xl mx-auto">Book a free 30-minute strategy call. We will assess your needs and recommend the right platform — no obligation, no sales pitch.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
+            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-white text-[#1E3A5F] hover:bg-indigo-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button>
             </a>
           </div>

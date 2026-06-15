@@ -64,7 +64,7 @@ export default function CrmConsultantCoquitlam() {
             Professional CRM consulting for Coquitlam and Tri-Cities businesses. We implement Salesforce, HubSpot, Zoho, and more using AI-accelerated delivery — so your CRM is live in weeks, not months. Fixed pricing. No surprises.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
+            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
             <Link href="/services"><Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">View All Services</Button></Link>
           </div>
         </div>
@@ -116,7 +116,7 @@ export default function CrmConsultantCoquitlam() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to find the right CRM for your Coquitlam business?</h2>
           <p className="text-xl text-white/80 mb-8">Book a free 30-minute strategy call. We will assess your needs and recommend the right CRM platform — no obligation, no sales pitch.</p>
-          <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
+          <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
         </div>
       </section>
 

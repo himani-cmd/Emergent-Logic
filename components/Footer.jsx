@@ -17,7 +17,7 @@ const companyLinks = [
   { name: 'Pricing', href: '/pricing' },
   { name: 'Blog', href: '/blog' },
   { name: 'Contact', href: '/contact' },
-  { name: 'Book a Call', href: 'https://calendly.com/himani-emergentlogics/30min', external: true },
+  { name: 'Book a Call', href: 'https://calendly.com/emergent-logic/30min', external: true },
 ];
 
 const locations = ['Surrey', 'Abbotsford', 'Langley', 'Coquitlam', 'Port Coquitlam', 'Burnaby', 'Richmond', 'Vancouver'];

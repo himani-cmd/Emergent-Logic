@@ -112,7 +112,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to work with us?</h2>
           <p className="text-xl text-white/80 mb-8">Book a free 30-minute strategy call. No obligation, no sales pressure.</p>
-          <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
+          <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button>
           </a>
         </div>

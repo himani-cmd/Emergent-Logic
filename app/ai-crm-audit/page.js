@@ -31,7 +31,7 @@ export default function AICRMAudit() {
             We use AI to analyze your CRM in hours — not weeks. Get a detailed report showing exactly what is working, what is broken, and what you are missing. HubSpot, Salesforce, or Zoho.
           </p>
           <TrackedCTA ctaName="Book Your Free CRM Audit" destination="calendly">
-            <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
+            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100 px-8 py-6 text-lg font-semibold">
                 Book Your Free CRM Audit <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
@@ -155,7 +155,7 @@ export default function AICRMAudit() {
             Available for businesses using HubSpot, Salesforce, or Zoho with 10 or more employees.
           </p>
           <TrackedCTA ctaName="Book Your Free CRM Audit" destination="calendly">
-            <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
+            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100 px-8 py-6 text-lg font-semibold">
                 Book Your Free CRM Audit <ArrowRight className="w-5 h-5 ml-2" />
               </Button>

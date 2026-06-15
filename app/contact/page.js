@@ -95,7 +95,7 @@ export default function ContactPage() {
             {/* Calendly Embed */}
             <div className="bg-gray-50 rounded-2xl p-4">
               <iframe
-                src="https://calendly.com/himani-emergentlogics/30min?hide_gdpr_banner=1"
+                src="https://calendly.com/emergent-logic/30min?hide_gdpr_banner=1"
                 width="100%"
                 height="700"
                 frameBorder="0"

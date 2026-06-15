@@ -423,7 +423,7 @@ export default function CrmFreelancerVsConsultingFirm() {
           <p className="text-indigo-200 mb-8 max-w-2xl mx-auto">
             No pitch, no pressure. We&apos;ll assess your current situation and tell you honestly whether you need a consulting firm, a freelancer, or nothing at all.
           </p>
-          <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
+          <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-white text-[#1E3A5F] hover:bg-indigo-100 font-semibold">
               Book Your Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
             </Button>

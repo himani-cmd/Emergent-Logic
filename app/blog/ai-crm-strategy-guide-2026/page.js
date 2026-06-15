@@ -182,7 +182,7 @@ export default function AiCrmStrategyGuide() {
         <div className="bg-gradient-to-br from-[#1E3A5F] to-[#6366F1] rounded-2xl p-8 md:p-12 text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Ready to add AI to your CRM the right way?</h2>
           <p className="text-indigo-200 mb-8 max-w-2xl mx-auto">Book a free 30-minute strategy call. We will assess your data readiness and recommend the right AI approach for your CRM.</p>
-          <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
+          <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-white text-[#1E3A5F] hover:bg-indigo-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button>
           </a>
         </div>

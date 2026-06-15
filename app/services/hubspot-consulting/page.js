@@ -38,7 +38,7 @@ export default function HubSpotConsulting() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
-              <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-orange-900 hover:bg-orange-100 font-semibold px-8">
                   Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
@@ -289,7 +289,7 @@ export default function HubSpotConsulting() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <TrackedCTA ctaName="Book a Free Strategy Call - HubSpot Footer" destination="calendly">
-              <a href="https://calendly.com/himani-emergentlogics/30min" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-orange-900 hover:bg-orange-100 font-semibold px-8">
                   Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
