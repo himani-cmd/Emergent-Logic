@@ -20,6 +20,12 @@ export const metadata = {
     type: 'article',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'CRM Cleanup Before Marketing Automation: What SMBs Need First | Emergent Logic',
+    description: 'Marketing automation fails when the CRM underneath it is messy. Learn why CRM cleanup should come first and what to fix before automating.',
+    images: ['https://www.emergent-logic.ca/og-image.png'],
+  },
 };
 
 const relatedPosts = [
