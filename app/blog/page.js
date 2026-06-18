@@ -20,6 +20,27 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'hubspot-consultant-vancouver',
+    title: 'Why Businesses Search for a HubSpot Consultant in Vancouver',
+    excerpt: 'What a HubSpot consultant should actually help with, when to hire one, and how to avoid a messy setup. The Vancouver context, and what Canadian SMBs should look for.',
+    category: 'HubSpot',
+    readTime: '8 min read',
+  },
+  {
+    slug: 'marketing-automation-needs-crm-cleanup',
+    title: 'Why Marketing Automation Fails Without CRM Cleanup First',
+    excerpt: 'Automation multiplies whatever is already there. The five cleanup gaps that sink automation, and how to know whether your CRM is ready to automate.',
+    category: 'Automation',
+    readTime: '8 min read',
+  },
+  {
+    slug: 'crm-consultant-vs-implementation-partner-canada',
+    title: 'CRM Consultant vs CRM Implementation Partner: What Canadian SMBs Actually Need',
+    excerpt: 'The honest read on the two roles, when each makes sense, and why most Canadian SMBs need both from the same team. What to look for before you hire.',
+    category: 'Strategy',
+    readTime: '9 min read',
+  },
+  {
     slug: 'salesforce-vs-hubspot-vs-zoho-canada-2026',
     title: 'Salesforce vs. HubSpot vs. Zoho: An Honest Comparison for Canadian Businesses (2026)',
     excerpt: 'Vendor-neutral CRM comparison. Pricing in CAD, AI features, data residency, and total cost of ownership for Salesforce, HubSpot, and Zoho.',

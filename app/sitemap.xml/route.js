@@ -162,6 +162,21 @@ export async function GET() {
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.emergent-logic.ca/blog/hubspot-consultant-vancouver</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.emergent-logic.ca/blog/marketing-automation-needs-crm-cleanup</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.emergent-logic.ca/blog/crm-consultant-vs-implementation-partner-canada</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.emergent-logic.ca/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

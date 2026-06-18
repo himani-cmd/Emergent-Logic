@@ -23,7 +23,7 @@ const expectations = [
 ];
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({ first_name: '', last_name: '', email: '', phone: '', message: '' });
+  const [formData, setFormData] = useState({ first_name: '', last_name: '', email: '', phone: '', message: '', hp_field: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
@@ -37,6 +37,7 @@ export default function ContactPage() {
         body: JSON.stringify(formData)
       });
       if (response.ok) {
+        // Confirmed server-side success — only now fire GA4 lead event
         toast.success('Message sent! We\'ll get back to you within 24 hours.');
         trackLeadGeneration({
           formName: 'contact_form',
@@ -44,7 +45,7 @@ export default function ContactPage() {
           leadSource: 'website_contact_page',
         });
         setSubmitted(true);
-        setFormData({ first_name: '', last_name: '', email: '', phone: '', message: '' });
+        setFormData({ first_name: '', last_name: '', email: '', phone: '', message: '', hp_field: '' });
       } else {
         toast.error('Failed to send message. Please try again.');
       }
@@ -175,6 +176,11 @@ export default function ContactPage() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-4">
+                    {/* Honeypot — hidden from humans, visible to bots. Do not remove. */}
+                    <div aria-hidden="true" style={{ position: 'absolute', left: '-10000px', top: 'auto', width: '1px', height: '1px', overflow: 'hidden' }}>
+                      <label htmlFor="hp_field">Leave this field blank</label>
+                      <input type="text" id="hp_field" name="hp_field" tabIndex={-1} autoComplete="off" value={formData.hp_field} onChange={(e) => setFormData({ ...formData, hp_field: e.target.value })} />
+                    </div>
                     <div className="grid grid-cols-2 gap-4">
                       <div><Label htmlFor="first_name">First Name</Label><Input id="first_name" value={formData.first_name} onChange={(e) => setFormData({ ...formData, first_name: e.target.value })} required className="mt-1" /></div>
                       <div><Label htmlFor="last_name">Last Name</Label><Input id="last_name" value={formData.last_name} onChange={(e) => setFormData({ ...formData, last_name: e.target.value })} required className="mt-1" /></div>

@@ -259,6 +259,23 @@ export default function HubSpotConsulting() {
         </div>
       </section>
 
+      {/* Related Reading */}
+      <section className="py-12 bg-white border-t border-gray-100">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h3 className="text-xl font-bold text-gray-800 mb-4">Related Reading</h3>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link href="/blog/hubspot-consultant-vancouver" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Why Businesses Search for a HubSpot Consultant in Vancouver</p>
+              <p className="text-gray-600 text-sm">What a consultant should actually help with, and how to avoid a messy setup.</p>
+            </Link>
+            <Link href="/blog/crm-consultant-vs-implementation-partner-canada" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">CRM Consultant vs Implementation Partner</p>
+              <p className="text-gray-600 text-sm">When each role makes sense, and why most SMBs need both from the same team.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Related Services */}
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">

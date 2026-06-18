@@ -92,13 +92,13 @@ export async function GET(request, { params }) {
       return NextResponse.json(statusChecks, { headers: corsHeaders() });
     }
     
-    // GET /api/contact
+    // GET /api/contact — DISABLED (public exposure of stored submissions)
+    // Retrieval requires admin auth via GET /api/admin/contacts
     if (pathString === 'contact') {
-      const submissions = await database.collection('contact_submissions')
-        .find({}, { projection: { _id: 0 } })
-        .limit(100)
-        .toArray();
-      return NextResponse.json(submissions, { headers: corsHeaders() });
+      return NextResponse.json(
+        { error: 'Not found' },
+        { status: 404, headers: corsHeaders() }
+      );
     }
     
     // GET /api/admin/verify
@@ -181,18 +181,80 @@ export async function POST(request, { params }) {
       return NextResponse.json(sanitized, { status: 201, headers: corsHeaders() });
     }
     
-    // POST /api/contact
+    // POST /api/contact — server-side validation, honeypot, n8n forward, GA4 fires only on 2xx
     if (pathString === 'contact') {
+      // 1) Honeypot — silently accept and discard bot submissions
+      // Field names: "website" (legacy) or "hp_field" (current). If filled, treat as bot.
+      if ((body.website && body.website.trim() !== '') || (body.hp_field && body.hp_field.trim() !== '')) {
+        // Return success-looking response to avoid signaling honeypot trip to bots
+        return NextResponse.json(
+          { id: uuidv4(), accepted: true },
+          { status: 201, headers: corsHeaders() }
+        );
+      }
+
+      // 2) Required field + format validation
+      const firstName = (body.first_name || '').toString().trim();
+      const lastName = (body.last_name || '').toString().trim();
+      const email = (body.email || '').toString().trim();
+      const phone = (body.phone || '').toString().trim();
+      const message = (body.message || '').toString().trim();
+
+      const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const errors = [];
+      if (!firstName || firstName.length > 100) errors.push('first_name');
+      if (!lastName || lastName.length > 100) errors.push('last_name');
+      if (!email || !emailRe.test(email) || email.length > 200) errors.push('email');
+      if (phone && phone.length > 50) errors.push('phone');
+      if (message.length > 5000) errors.push('message');
+
+      if (errors.length > 0) {
+        return NextResponse.json(
+          { error: 'Validation failed', fields: errors },
+          { status: 400, headers: corsHeaders() }
+        );
+      }
+
+      // 3) Persist locally as backup (admin-only retrieval going forward)
       const contactSubmission = {
         id: uuidv4(),
-        first_name: body.first_name,
-        last_name: body.last_name,
-        email: body.email,
-        phone: body.phone,
-        message: body.message || '',
+        first_name: firstName,
+        last_name: lastName,
+        email,
+        phone,
+        message,
+        source: 'website_contact_form',
         created_at: new Date().toISOString()
       };
       await database.collection('contact_submissions').insertOne(contactSubmission);
+
+      // 4) Server-to-server forward to n8n -> HubSpot (env-gated)
+      const n8nUrl = process.env.N8N_CONTACT_WEBHOOK_URL;
+      if (n8nUrl) {
+        try {
+          const forwardHeaders = { 'Content-Type': 'application/json' };
+          if (process.env.N8N_WEBHOOK_TOKEN) {
+            forwardHeaders['Authorization'] = `Bearer ${process.env.N8N_WEBHOOK_TOKEN}`;
+          }
+          // Fire-and-forget but await briefly so we can capture failure
+          const controller = new AbortController();
+          const timeout = setTimeout(() => controller.abort(), 5000);
+          const n8nRes = await fetch(n8nUrl, {
+            method: 'POST',
+            headers: forwardHeaders,
+            body: JSON.stringify(contactSubmission),
+            signal: controller.signal,
+          });
+          clearTimeout(timeout);
+          if (!n8nRes.ok) {
+            console.error('n8n forward non-2xx:', n8nRes.status);
+          }
+        } catch (n8nErr) {
+          // Do not fail the user request if n8n is briefly unreachable; submission is persisted locally
+          console.error('n8n forward error:', n8nErr.message);
+        }
+      }
+
       const { _id, ...sanitized } = contactSubmission;
       return NextResponse.json(sanitized, { status: 201, headers: corsHeaders() });
     }
