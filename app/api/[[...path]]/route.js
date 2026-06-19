@@ -10,18 +10,33 @@ let client = null;
 let db = null;
 
 async function getDb() {
-  if (!client) {
-    client = new MongoClient(mongoUrl, {
-      serverApi: {
-        version: ServerApiVersion.v1,
-        strict: true,
-        deprecationErrors: true,
-      }
-    });
-    await client.connect();
-    db = client.db(dbName);
+  if (db) {
+    return db;
   }
-  return db;
+
+  if (!mongoUrl) {
+    throw new Error('MONGO_URL is not configured');
+  }
+
+  const nextClient = new MongoClient(mongoUrl, {
+    serverApi: {
+      version: ServerApiVersion.v1,
+      strict: true,
+      deprecationErrors: true,
+    }
+  });
+
+  try {
+    await nextClient.connect();
+    client = nextClient;
+    db = client.db(dbName);
+    return db;
+  } catch (error) {
+    db = null;
+    client = null;
+    await nextClient.close().catch(() => {});
+    throw error;
+  }
 }
 
 // Admin credentials (in production, store hashed in DB)
@@ -73,8 +88,6 @@ export async function GET(request, { params }) {
   const pathString = path.join('/');
   
   try {
-    const database = await getDb();
-    
     // Root endpoint
     if (pathString === '' || pathString === '/') {
       return NextResponse.json(
@@ -85,6 +98,7 @@ export async function GET(request, { params }) {
     
     // GET /api/status
     if (pathString === 'status') {
+      const database = await getDb();
       const statusChecks = await database.collection('status_checks')
         .find({}, { projection: { _id: 0 } })
         .limit(100)
@@ -116,6 +130,7 @@ export async function GET(request, { params }) {
       const username = verifyAdmin(request);
       if (!username) return unauthorizedResponse();
       
+      const database = await getDb();
       const submissions = await database.collection('contact_submissions')
         .find({}, { projection: { _id: 0 } })
         .sort({ created_at: -1 })
@@ -130,6 +145,7 @@ export async function GET(request, { params }) {
       if (!username) return unauthorizedResponse();
       
       const page = pathString.replace('admin/content/', '');
+      const database = await getDb();
       const content = await database.collection('page_content')
         .find({ page }, { projection: { _id: 0 } })
         .limit(100)
@@ -140,6 +156,7 @@ export async function GET(request, { params }) {
     // GET /api/content/{page} - Public endpoint
     if (pathString.startsWith('content/')) {
       const page = pathString.replace('content/', '');
+      const database = await getDb();
       const content = await database.collection('page_content')
         .find({ page }, { projection: { _id: 0 } })
         .limit(100)
@@ -166,11 +183,11 @@ export async function POST(request, { params }) {
   const pathString = path.join('/');
   
   try {
-    const database = await getDb();
     const body = await request.json();
     
     // POST /api/status
     if (pathString === 'status') {
+      const database = await getDb();
       const statusCheck = {
         id: uuidv4(),
         client_name: body.client_name,
@@ -226,11 +243,21 @@ export async function POST(request, { params }) {
         source: 'website_contact_form',
         created_at: new Date().toISOString()
       };
-      await database.collection('contact_submissions').insertOne(contactSubmission);
+      let persistedLocally = false;
+      let forwardedToN8n = false;
+
+      try {
+        const database = await getDb();
+        await database.collection('contact_submissions').insertOne(contactSubmission);
+        persistedLocally = true;
+      } catch (mongoErr) {
+        console.error('Local contact persistence failed:', mongoErr);
+      }
 
       // 4) Server-to-server forward to n8n -> HubSpot (env-gated)
       const n8nUrl = process.env.N8N_CONTACT_WEBHOOK_URL;
       if (n8nUrl) {
+        let timeout;
         try {
           const forwardHeaders = { 'Content-Type': 'application/json' };
           if (process.env.N8N_WEBHOOK_TOKEN) {
@@ -238,21 +265,30 @@ export async function POST(request, { params }) {
           }
           // Fire-and-forget but await briefly so we can capture failure
           const controller = new AbortController();
-          const timeout = setTimeout(() => controller.abort(), 5000);
+          timeout = setTimeout(() => controller.abort(), 5000);
           const n8nRes = await fetch(n8nUrl, {
             method: 'POST',
             headers: forwardHeaders,
             body: JSON.stringify(contactSubmission),
             signal: controller.signal,
           });
-          clearTimeout(timeout);
           if (!n8nRes.ok) {
             console.error('n8n forward non-2xx:', n8nRes.status);
+          } else {
+            forwardedToN8n = true;
           }
         } catch (n8nErr) {
-          // Do not fail the user request if n8n is briefly unreachable; submission is persisted locally
           console.error('n8n forward error:', n8nErr.message);
+        } finally {
+          clearTimeout(timeout);
         }
+      }
+
+      if (!persistedLocally && !forwardedToN8n) {
+        return NextResponse.json(
+          { error: 'Submission temporarily unavailable. Please try again shortly.' },
+          { status: 503, headers: corsHeaders() }
+        );
       }
 
       const { _id, ...sanitized } = contactSubmission;
@@ -265,6 +301,7 @@ export async function POST(request, { params }) {
       if (!username) return unauthorizedResponse();
       
       const { page, section, content } = body;
+      const database = await getDb();
       const existing = await database.collection('page_content').findOne({ page, section });
       
       const doc = {
@@ -309,14 +346,13 @@ export async function DELETE(request, { params }) {
   const pathString = path.join('/');
   
   try {
-    const database = await getDb();
-    
     // DELETE /api/admin/contacts/{contact_id}
     if (pathString.startsWith('admin/contacts/')) {
       const username = verifyAdmin(request);
       if (!username) return unauthorizedResponse();
       
       const contactId = pathString.replace('admin/contacts/', '');
+      const database = await getDb();
       const result = await database.collection('contact_submissions').deleteOne({ id: contactId });
       
       if (result.deletedCount === 0) {
