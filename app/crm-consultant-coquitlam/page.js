@@ -112,6 +112,26 @@ export default function CrmConsultantCoquitlam() {
         </div>
       </section>
 
+      <section className="py-12 bg-white border-t border-gray-100">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h3 className="text-xl font-bold text-gray-800 mb-4">Related Resources</h3>
+          <div className="grid md:grid-cols-3 gap-4">
+            <Link href="/services/crm-implementation" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">CRM Implementation</p>
+              <p className="text-gray-600 text-sm">How we deliver in 2 to 4 weeks</p>
+            </Link>
+            <Link href="/blog/marketing-automation-needs-crm-cleanup" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Marketing Automation Needs Cleanup First</p>
+              <p className="text-gray-600 text-sm">Why automation fails without a clean CRM underneath</p>
+            </Link>
+            <Link href="/contact" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Get in Touch</p>
+              <p className="text-gray-600 text-sm">Prefer email? Send us a message.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-gradient-to-br from-violet-600 to-indigo-700">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to find the right CRM for your Coquitlam business?</h2>

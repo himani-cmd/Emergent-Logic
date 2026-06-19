@@ -328,6 +328,7 @@ export default function MarketingAutomation() {
               </Button>
             </Link>
           </div>
+          <p className="text-white/60 text-sm mt-6">Prefer email? <Link href="/contact" className="underline hover:text-white">Send us a message</Link> and we will get back to you within 24 hours.</p>
         </div>
       </section>
 

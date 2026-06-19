@@ -168,7 +168,7 @@ export default function Post() {
               </p>
 
               <p>
-                For most Canadian SMBs, the right shape of engagement is a team that does both — consulting and implementation as one continuous project. That is how we work, and it is why this site is structured the way it is.
+                For most Canadian SMBs, the right shape of engagement is a team that does both — consulting and implementation as one continuous project. That is how we work, and it is why this site is structured the way it is. If your business is in the Greater Vancouver area, our <Link href="/crm-consultant-coquitlam" className="text-violet-600 hover:underline">CRM consultant Coquitlam</Link> page walks through what local engagements look like.
               </p>
             </div>
 

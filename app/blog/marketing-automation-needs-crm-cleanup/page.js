@@ -142,6 +142,9 @@ export default function Post() {
               <p>
                 If you suspect cleanup needs to come first, our <Link href="/services/crm-cleanup" className="text-violet-600 hover:underline">CRM cleanup</Link> page details what we audit, what we fix, and what timelines look like. If your CRM is not yet implemented and you are trying to do everything at once, the <Link href="/services/crm-implementation" className="text-violet-600 hover:underline">CRM implementation</Link> overview is a better starting point. And if integrations across your stack are part of the problem — incomplete source data, broken handoffs between tools — the <Link href="/services/crm-integration" className="text-violet-600 hover:underline">CRM integration</Link> page covers that work.
               </p>
+              <p>
+                For Fraser Valley teams specifically, the way we work with <Link href="/crm-consultant-langley" className="text-violet-600 hover:underline">CRM consulting clients in Langley</Link> follows the same pattern: clean the data first, then build the automation layer on top.
+              </p>
             </div>
 
             <div className="mt-12 p-8 bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl text-white">
