@@ -4,24 +4,76 @@ import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import TrackedCTA from '@/components/TrackedCTA';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle, Cloud, Layers, Zap, BarChart3, Shield, Code2, Users, Briefcase, Clock, DollarSign, Check, AlertTriangle, Database } from 'lucide-react';
+import { ArrowRight, CheckCircle, Cloud, Layers, Zap, BarChart3, Shield, Code2, Users, Briefcase, Clock, DollarSign, Check, AlertTriangle } from 'lucide-react';
 
 export const metadata = {
-  title: 'Salesforce Consulting Canada | Sales Cloud Setup, Customization & Admin',
-  description: 'Senior Salesforce consulting for Canadian businesses. Sales Cloud configuration, custom objects, advanced automation, AppExchange integration, admin training, and managed services. From $3,500.',
+  title: 'Salesforce Consultant Canada | Surrey & Vancouver Sales Cloud Help',
+  description: 'Salesforce consultant for Canadian businesses, including Surrey and Vancouver. Sales Cloud setup, Flow automation, reporting, cleanup, training, and managed admin support. From $3,500.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/salesforce-consulting' },
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'Salesforce Consulting | Emergent Logic',
-    description: 'Salesforce consulting for Canadian businesses: Sales Cloud, custom objects, automation, AppExchange, and managed admin support.',
+    title: 'Salesforce Consultant Canada | Emergent Logic',
+    description: 'Salesforce consulting for Canadian businesses: Sales Cloud setup, Flow automation, reporting, cleanup, training, and managed admin support.',
     url: 'https://www.emergent-logic.ca/services/salesforce-consulting',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
 };
 
+const faqItems = [
+  { q: 'Do I need Salesforce, or would HubSpot or Zoho work?', a: 'For many SMBs under 25 reps, HubSpot or Zoho can provide faster time-to-value at a lower cost. Salesforce is usually the right call when you need deep customization, large-team governance, complex territory management, or compliance-heavy reporting. We help you make the call honestly during the discovery audit.' },
+  { q: 'Which Salesforce edition do I need?', a: 'Many SMB sales teams are well served by Sales Cloud Professional. Enterprise becomes more relevant when you need advanced approval processes, territory management, custom permission sets, or higher API limits. We walk through the trade-offs before you sign anything.' },
+  { q: 'Can you migrate us to Salesforce from another CRM?', a: 'Yes. We migrate from HubSpot, Pipedrive, Zoho, Monday, Excel, Google Sheets, and many legacy CRMs. Migration includes deduplication, field mapping, association preservation, and historical activity import where the source supports it.' },
+  { q: 'Are you a Salesforce Consulting Partner?', a: 'We work in the Salesforce ecosystem with senior, certified consultants and the technical depth of a partner-tier agency. We deliberately stay multi-platform so we can also recommend HubSpot or Zoho when those fit better. You get senior expertise without partner-tier vendor bias.' },
+  { q: 'Do you do ongoing Salesforce admin work?', a: 'Yes. We offer managed admin retainers from $1,500 / month for clients who do not need a full-time admin but want a senior consultant on call for new requests, automation tuning, and quarterly health checks.' },
+  { q: 'How do you handle Apex code in projects?', a: 'We default to declarative tools such as Flow, validation rules, and formulas, and only write Apex or Lightning Web Components when business requirements truly need them. Code is reviewed, tested, and documented like any production deployment.' },
+  { q: 'What about PIPEDA and Canadian data residency?', a: 'Salesforce offers Canadian data residency through specific instances. We help you select the right instance, configure permission sets and field-level security, and document the compliance posture. Our CRM and PIPEDA guide explains the topic in more detail.' },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://www.emergent-logic.ca/services/salesforce-consulting#service',
+      name: 'Salesforce Consulting',
+      serviceType: 'Salesforce consulting, Sales Cloud setup, Salesforce Flow automation, CRM cleanup, and managed Salesforce admin support',
+      provider: { '@id': 'https://www.emergent-logic.ca/#organization' },
+      url: 'https://www.emergent-logic.ca/services/salesforce-consulting',
+      areaServed: [
+        { '@type': 'Country', name: 'Canada' },
+        { '@type': 'AdministrativeArea', name: 'British Columbia' },
+        { '@type': 'City', name: 'Surrey' },
+        { '@type': 'City', name: 'Vancouver' },
+        { '@type': 'City', name: 'Burnaby' },
+        { '@type': 'City', name: 'Langley' },
+      ],
+      offers: {
+        '@type': 'Offer',
+        priceCurrency: 'CAD',
+        price: '3500',
+        url: 'https://www.emergent-logic.ca/services/salesforce-consulting',
+        availability: 'https://schema.org/InStock',
+      },
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': 'https://www.emergent-logic.ca/services/salesforce-consulting#faq',
+      mainEntity: faqItems.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.a,
+        },
+      })),
+    },
+  ],
+};
+
 export default function SalesforceConsulting() {
   return (
     <main className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
 
       {/* Hero */}
@@ -31,10 +83,10 @@ export default function SalesforceConsulting() {
             <Link href="/" className="hover:text-white">Home</Link> / <Link href="/#services" className="hover:text-white">Services</Link> / <span className="text-white">Salesforce Consulting</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Salesforce Consulting for Canadian Businesses
+            Salesforce Consultant for Canadian Businesses
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
-            Sales Cloud configuration, custom objects, advanced automation, AppExchange integration, and admin training &mdash; delivered by senior Salesforce consultants who also work in HubSpot and Zoho. Vendor-neutral advice. Fixed pricing. Senior delivery.
+            Sales Cloud configuration, custom objects, Salesforce Flow automation, AppExchange integration, and admin training for teams in Surrey, Vancouver, and across Canada &mdash; delivered by senior Salesforce consultants who also work in HubSpot and Zoho. Vendor-neutral advice. Fixed pricing. Senior delivery.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
@@ -54,7 +106,7 @@ export default function SalesforceConsulting() {
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> 3 to 8 week delivery</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> Fixed pricing from $3,500</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> Sales, Service, and Marketing Cloud</div>
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> Senior Salesforce consultants</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> Based in Surrey, serving Greater Vancouver</div>
           </div>
         </div>
       </section>
@@ -71,6 +123,9 @@ export default function SalesforceConsulting() {
           </p>
           <p className="text-lg text-gray-600">
             It is usually not the right choice when your sales process is straightforward, your team is under 25 reps, and you are looking for fast time-to-value. In those cases HubSpot or Zoho will give you 80% of the capability at a fraction of the cost and complexity. We will tell you that on the discovery call rather than push you toward the bigger ticket.
+          </p>
+          <p className="text-lg text-gray-600 mt-4">
+            If you are comparing local options, our <Link href="/salesforce-consultant-surrey-bc" className="text-blue-700 hover:underline">Salesforce consultant Surrey, BC</Link> page explains how we support nearby teams with implementation, cleanup, and training.
           </p>
         </div>
       </section>
@@ -236,13 +291,7 @@ export default function SalesforceConsulting() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
           <div className="space-y-6">
             {[
-              { q: 'Do I need Salesforce, or would HubSpot or Zoho work?', a: 'For most SMBs under 25 reps, HubSpot or Zoho will give you faster time-to-value at a lower cost. Salesforce is the right call when you need deep customization, large-team governance, complex territory management, or compliance-heavy reporting. We help you make the call honestly during the discovery audit.' },
-              { q: 'Which Salesforce edition do I need?', a: 'Most SMB sales teams are well served by Sales Cloud Professional. You move up to Enterprise when you need things like advanced approval processes, territory management, custom permission sets, or higher API limits. We walk you through the trade-offs before you sign anything.' },
-              { q: 'Can you migrate us to Salesforce from another CRM?', a: 'Yes. We migrate from HubSpot, Pipedrive, Zoho, Monday, Excel, Google Sheets, and most legacy CRMs. Migration includes deduplication, field mapping, association preservation, and historical activity import where the source supports it.' },
-              { q: 'Are you a Salesforce Consulting Partner?', a: 'We work in the Salesforce ecosystem with senior, certified consultants and the technical depth of a partner-tier agency. We deliberately stay multi-platform so we can also recommend HubSpot or Zoho when those fit better. You get senior expertise without partner-tier vendor bias.' },
-              { q: 'Do you do ongoing Salesforce admin work?', a: 'Yes. We offer managed admin retainers from $1,500 / month for clients who do not need a full-time admin but want a senior consultant on call for new requests, automation tuning, and quarterly health checks.' },
-              { q: 'How do you handle Apex code in projects?', a: 'We default to declarative tools (Flow, validation rules, formulas) and only write Apex or Lightning Web Components when business requirements truly need them. Code is reviewed, tested, and documented like any production deployment, with deployment via change sets or DevOps tools.' },
-              { q: 'What about PIPEDA and Canadian data residency?', a: 'Salesforce offers Canadian data residency through specific instances. We help you select the right instance, configure permission sets and field-level security, and document the compliance posture. We have a separate blog post on CRM and PIPEDA that goes deeper.' },
+              ...faqItems,
             ].map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-xl border">
                 <h3 className="font-bold text-gray-900 mb-2">{item.q}</h3>
@@ -269,6 +318,18 @@ export default function SalesforceConsulting() {
             <Link href="/blog/salesforce-vs-hubspot-vs-zoho-canada-2026" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM Comparison</p>
               <p className="text-gray-600 text-sm">Salesforce vs HubSpot vs Zoho (2026)</p>
+            </Link>
+            <Link href="/salesforce-consultant-surrey-bc" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Local Salesforce Consultant</p>
+              <p className="text-gray-600 text-sm">Salesforce consulting for Surrey and Greater Vancouver</p>
+            </Link>
+            <Link href="/blog/crm-pipeda-data-privacy-canada" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">CRM & PIPEDA</p>
+              <p className="text-gray-600 text-sm">What Canadian teams should know about CRM privacy</p>
+            </Link>
+            <Link href="/contact" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Contact Emergent Logic</p>
+              <p className="text-gray-600 text-sm">Prefer email? Send us a message about your Salesforce org</p>
             </Link>
           </div>
         </div>
