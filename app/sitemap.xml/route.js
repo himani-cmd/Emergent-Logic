@@ -1,191 +1,62 @@
+const baseUrl = 'https://www.emergent-logic.ca';
+const lastmod = '2026-06-20';
+
+const urls = [
+  ['', 'weekly', '1.0'],
+  ['/services', 'monthly', '0.9'],
+  ['/pricing', 'monthly', '0.9'],
+  ['/about', 'monthly', '0.8'],
+  ['/contact', 'monthly', '0.9'],
+  ['/ai-crm-audit', 'monthly', '0.8'],
+  ['/blog', 'weekly', '0.9'],
+  ['/services/crm-implementation', 'monthly', '0.9'],
+  ['/services/hubspot-consulting', 'monthly', '0.9'],
+  ['/services/crm-cleanup', 'monthly', '0.9'],
+  ['/services/marketing-automation', 'monthly', '0.8'],
+  ['/services/lead-capture-websites', 'monthly', '0.8'],
+  ['/services/crm-integration', 'monthly', '0.8'],
+  ['/services/salesforce-consulting', 'monthly', '0.9'],
+  ['/crm-implementation', 'monthly', '0.7'],
+  ['/marketing-automation', 'monthly', '0.7'],
+  ['/web-development', 'monthly', '0.7'],
+  ['/digital-marketing', 'monthly', '0.7'],
+  ['/salesforce-consultant-surrey-bc', 'monthly', '0.9'],
+  ['/hubspot-consultant-vancouver', 'monthly', '0.9'],
+  ['/crm-consultant-surrey-bc', 'monthly', '0.9'],
+  ['/crm-consultant-abbotsford', 'monthly', '0.9'],
+  ['/crm-consultant-langley', 'monthly', '0.9'],
+  ['/crm-consultant-coquitlam', 'monthly', '0.9'],
+  ['/blog/hubspot-vs-salesforce-canada', 'monthly', '0.8'],
+  ['/blog/what-is-crm-implementation-canada', 'monthly', '0.8'],
+  ['/blog/what-is-marketing-automation-small-business', 'monthly', '0.8'],
+  ['/blog/what-is-aeo-answer-engine-optimization', 'monthly', '0.8'],
+  ['/blog/how-to-choose-digital-marketing-agency-vancouver', 'monthly', '0.8'],
+  ['/blog/salesforce-vs-hubspot-vs-zoho-canada-2026', 'monthly', '0.8'],
+  ['/blog/ai-crm-strategy-guide-2026', 'monthly', '0.8'],
+  ['/blog/crm-pipeda-data-privacy-canada', 'monthly', '0.8'],
+  ['/blog/lead-scoring-model-crm-guide', 'monthly', '0.8'],
+  ['/blog/email-nurture-sequences-crm-automation', 'monthly', '0.8'],
+  ['/blog/campaign-attribution-crm-marketing-roi', 'monthly', '0.8'],
+  ['/blog/crm-roi-calculator-business-case-2026', 'monthly', '0.8'],
+  ['/blog/crm-freelancer-vs-consulting-firm', 'monthly', '0.8'],
+  ['/blog/hubspot-consultant-vancouver', 'monthly', '0.8'],
+  ['/blog/marketing-automation-needs-crm-cleanup', 'monthly', '0.8'],
+  ['/blog/crm-consultant-vs-implementation-partner-canada', 'monthly', '0.8'],
+  ['/privacy', 'yearly', '0.3'],
+  ['/terms', 'yearly', '0.3'],
+];
+
 export async function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.emergent-logic.ca</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/services</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/pricing</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/about</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/contact</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/blog</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/services/crm-implementation</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/services/hubspot-consulting</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/services/crm-cleanup</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/services/marketing-automation</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/services/lead-capture-websites</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/services/crm-integration</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/services/salesforce-consulting</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/salesforce-consultant-surrey-bc</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/hubspot-consultant-vancouver</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/crm-consultant-surrey-bc</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/crm-consultant-abbotsford</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/crm-consultant-langley</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/crm-consultant-coquitlam</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/blog/hubspot-vs-salesforce-canada</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/blog/what-is-crm-implementation-canada</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/blog/what-is-marketing-automation-small-business</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/blog/what-is-aeo-answer-engine-optimization</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/blog/how-to-choose-digital-marketing-agency-vancouver</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/blog/salesforce-vs-hubspot-vs-zoho-canada-2026</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/blog/ai-crm-strategy-guide-2026</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/blog/crm-pipeda-data-privacy-canada</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/blog/lead-scoring-model-crm-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/blog/email-nurture-sequences-crm-automation</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/blog/campaign-attribution-crm-marketing-roi</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/blog/crm-roi-calculator-business-case-2026</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/blog/crm-freelancer-vs-consulting-firm</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/blog/hubspot-consultant-vancouver</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/blog/marketing-automation-needs-crm-cleanup</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/blog/crm-consultant-vs-implementation-partner-canada</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/privacy</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://www.emergent-logic.ca/terms</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
+${urls
+  .map(([path, changefreq, priority]) => `  <url>
+    <loc>${baseUrl}${path}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>
+  </url>`)
+  .join('\n')}
 </urlset>`;
 
   return new Response(xml, {
