@@ -1,0 +1,38 @@
+# Emergent Logic
+
+Emergent Logic is an AI-accelerated CRM consulting company based in Surrey, British Columbia, serving Greater Vancouver and businesses across Canada.
+
+## Core services
+
+- CRM implementation
+- CRM cleanup and data hygiene
+- HubSpot consulting
+- Salesforce consulting
+- CRM integration
+- Marketing automation
+- Lead capture websites and landing pages
+
+## Ideal customers
+
+Emergent Logic works with small and mid-sized businesses that need cleaner CRM data, faster follow-up, better pipeline visibility, and practical sales or marketing workflows.
+
+## Key pages
+
+- Homepage: https://www.emergent-logic.ca/
+- Services: https://www.emergent-logic.ca/services
+- CRM implementation: https://www.emergent-logic.ca/services/crm-implementation
+- HubSpot consulting: https://www.emergent-logic.ca/services/hubspot-consulting
+- CRM cleanup: https://www.emergent-logic.ca/services/crm-cleanup
+- Marketing automation: https://www.emergent-logic.ca/services/marketing-automation
+- Lead capture websites: https://www.emergent-logic.ca/services/lead-capture-websites
+- Blog: https://www.emergent-logic.ca/blog
+- Contact: https://www.emergent-logic.ca/contact
+
+## Positioning
+
+Emergent Logic is not a generic digital agency. The company focuses on CRM-first revenue systems: implementation, cleanup, automation, reporting, and lead capture infrastructure.
+
+## Contact
+
+- Website: https://www.emergent-logic.ca/
+- Email: info@emergent-logic.ca
