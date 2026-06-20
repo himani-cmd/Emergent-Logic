@@ -79,6 +79,20 @@ function corsHeaders() {
   };
 }
 
+async function withTimeout(promise, ms, label) {
+  let timeout;
+  try {
+    return await Promise.race([
+      promise,
+      new Promise((_, reject) => {
+        timeout = setTimeout(() => reject(new Error(`${label} timed out after ${ms}ms`)), ms);
+      })
+    ]);
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
 export async function OPTIONS() {
   return NextResponse.json({}, { headers: corsHeaders() });
 }
@@ -246,15 +260,8 @@ export async function POST(request, { params }) {
       let persistedLocally = false;
       let forwardedToN8n = false;
 
-      try {
-        const database = await getDb();
-        await database.collection('contact_submissions').insertOne(contactSubmission);
-        persistedLocally = true;
-      } catch (mongoErr) {
-        console.error('Local contact persistence failed:', mongoErr);
-      }
-
       // 4) Server-to-server forward to n8n -> HubSpot (env-gated)
+      // HubSpot is the primary lead destination, so do this before the backup DB write.
       const n8nUrl = process.env.N8N_CONTACT_WEBHOOK_URL;
       if (n8nUrl) {
         let timeout;
@@ -282,6 +289,20 @@ export async function POST(request, { params }) {
         } finally {
           clearTimeout(timeout);
         }
+      }
+
+      try {
+        await withTimeout(
+          (async () => {
+            const database = await getDb();
+            await database.collection('contact_submissions').insertOne(contactSubmission);
+          })(),
+          1500,
+          'Local contact persistence'
+        );
+        persistedLocally = true;
+      } catch (mongoErr) {
+        console.error('Local contact persistence failed:', mongoErr);
       }
 
       if (!persistedLocally && !forwardedToN8n) {
