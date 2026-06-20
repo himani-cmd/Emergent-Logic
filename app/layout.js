@@ -34,57 +34,132 @@ export const metadata = {
   alternates: { canonical: 'https://www.emergent-logic.ca' },
 };
 
+const organizationId = 'https://www.emergent-logic.ca/#organization';
+
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  '@id': 'https://www.emergent-logic.ca/#organization',
-  name: 'Emergent Logic',
-  url: 'https://www.emergent-logic.ca',
-  logo: 'https://www.emergent-logic.ca/el-logo-512.png',
-  image: 'https://www.emergent-logic.ca/og-image.png',
-  description: 'AI-powered CRM implementation and marketing automation for Greater Vancouver businesses.',
-  telephone: '+1-778-652-6271',
-  email: 'info@emergent-logic.ca',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Surrey',
-    addressRegion: 'BC',
-    postalCode: '',
-    addressCountry: 'CA',
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 49.1913,
-    longitude: -122.8490,
-  },
-  openingHoursSpecification: {
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-    opens: '09:00',
-    closes: '17:00',
-  },
-  sameAs: [],
-  areaServed: [
-    { '@type': 'City', name: 'Surrey' },
-    { '@type': 'City', name: 'Vancouver' },
-    { '@type': 'City', name: 'Abbotsford' },
-    { '@type': 'City', name: 'Langley' },
-    { '@type': 'City', name: 'Coquitlam' },
-    { '@type': 'City', name: 'Port Coquitlam' },
-    { '@type': 'City', name: 'Burnaby' },
-    { '@type': 'City', name: 'Richmond' },
+  '@graph': [
+    {
+      '@type': ['Organization', 'ProfessionalService', 'LocalBusiness'],
+      '@id': organizationId,
+      name: 'Emergent Logic',
+      url: 'https://www.emergent-logic.ca',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.emergent-logic.ca/el-logo-512.png',
+        width: 512,
+        height: 512,
+      },
+      image: 'https://www.emergent-logic.ca/og-image.png',
+      description: 'AI-accelerated CRM implementation, cleanup, automation, and lead capture systems for Canadian businesses.',
+      telephone: '+1-778-652-6271',
+      email: 'info@emergent-logic.ca',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Surrey',
+        addressRegion: 'BC',
+        addressCountry: 'CA',
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 49.1913,
+        longitude: -122.8490,
+      },
+      openingHoursSpecification: {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '09:00',
+        closes: '17:00',
+      },
+      areaServed: [
+        { '@type': 'City', name: 'Surrey' },
+        { '@type': 'City', name: 'Vancouver' },
+        { '@type': 'City', name: 'Burnaby' },
+        { '@type': 'City', name: 'Richmond' },
+        { '@type': 'City', name: 'Langley' },
+        { '@type': 'City', name: 'Coquitlam' },
+        { '@type': 'City', name: 'Abbotsford' },
+        { '@type': 'AdministrativeArea', name: 'British Columbia' },
+        { '@type': 'Country', name: 'Canada' },
+      ],
+      priceRange: '$$',
+      knowsAbout: [
+        'CRM implementation',
+        'CRM cleanup',
+        'HubSpot consulting',
+        'Salesforce consulting',
+        'Zoho CRM',
+        'Marketing automation',
+        'Lead capture systems',
+        'Sales operations',
+      ],
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'CRM Consulting Services',
+        itemListElement: [
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'CRM Implementation',
+              url: 'https://www.emergent-logic.ca/services/crm-implementation',
+              serviceType: 'CRM implementation',
+              provider: { '@id': organizationId },
+            },
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'HubSpot Consulting',
+              url: 'https://www.emergent-logic.ca/services/hubspot-consulting',
+              serviceType: 'HubSpot consulting',
+              provider: { '@id': organizationId },
+            },
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'CRM Cleanup',
+              url: 'https://www.emergent-logic.ca/services/crm-cleanup',
+              serviceType: 'CRM cleanup and data hygiene',
+              provider: { '@id': organizationId },
+            },
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Marketing Automation',
+              url: 'https://www.emergent-logic.ca/services/marketing-automation',
+              serviceType: 'Marketing automation',
+              provider: { '@id': organizationId },
+            },
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Lead Capture Websites',
+              url: 'https://www.emergent-logic.ca/services/lead-capture-websites',
+              serviceType: 'Lead capture website development',
+              provider: { '@id': organizationId },
+            },
+          },
+        ],
+      },
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://www.emergent-logic.ca/#website',
+      url: 'https://www.emergent-logic.ca',
+      name: 'Emergent Logic',
+      publisher: { '@id': organizationId },
+      inLanguage: 'en-CA',
+      about: { '@id': organizationId },
+    },
   ],
-  priceRange: '$$',
-  hasOfferCatalog: {
-    '@type': 'OfferCatalog',
-    name: 'CRM Consulting Services',
-    itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'CRM Implementation' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Marketing Automation' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Salesforce Consulting' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'HubSpot Consulting' } },
-    ],
-  },
 };
 
 export default function RootLayout({ children }) {
