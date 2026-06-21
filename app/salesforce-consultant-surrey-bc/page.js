@@ -10,11 +10,11 @@ import { ArrowRight, CheckCircle, MapPin, Award, Clock, Percent } from 'lucide-r
 
 export const metadata = {
   title: 'Salesforce Consultant Surrey BC',
-  description: "Surrey's dedicated Salesforce consultant. 6x Certified. CRM implementation and optimization. Results in weeks, not months.",
+  description: "Salesforce consultant in Surrey, BC. CRM implementation, cleanup, workflow automation, reporting, and optimization for Canadian and US small businesses.",
   alternates: { canonical: 'https://www.emergent-logic.ca/salesforce-consultant-surrey-bc' },
   openGraph: {
     title: 'Salesforce Consultant Surrey BC | Emergent Logic',
-    description: "Surrey's dedicated Salesforce consultant. 6x Certified. CRM implementation and optimization.",
+    description: 'Salesforce consulting in Surrey, BC: implementation, cleanup, workflow automation, reporting, and optimization.',
     url: 'https://www.emergent-logic.ca/salesforce-consultant-surrey-bc',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -30,17 +30,17 @@ const services = [
 ];
 
 const reasons = [
-  'We are based in Surrey — not a remote agency on the other side of the country',
-  '6x Salesforce Certified with real implementation experience',
-  'AI-accelerated methodology delivers in weeks, not months',
+  'We are based in Surrey — with remote delivery for Canadian and US teams',
+  'Senior CRM implementation experience across Salesforce, HubSpot, and Zoho',
+  'AI-accelerated delivery helps shorten implementation and cleanup timelines',
   'We implement both Salesforce AND HubSpot — we recommend what fits, not what pays us more',
-  '40-60% lower cost than traditional Salesforce consulting partners',
+  'Clear fixed-scope projects instead of open-ended agency retainers',
   'Free 30-minute strategy call with no obligation or sales pressure',
 ];
 
 const faqs = [
-  { q: 'How much does a Salesforce consultant cost in Surrey, BC?', a: "Emergent Logic's AI-accelerated Salesforce implementations cost 40-60% less than traditional consultants. We offer free 30-minute strategy calls to scope your project and provide a transparent quote." },
-  { q: 'How long does Salesforce implementation take?', a: 'With our AI-accelerated approach, small business Salesforce implementations take 2-4 weeks. Mid-market implementations take 4-8 weeks — significantly faster than the industry average of 3-6 months.' },
+  { q: 'How much does a Salesforce consultant cost in Surrey, BC?', a: 'Salesforce consulting costs depend on whether you need cleanup, optimization, migration, or a new implementation. Emergent Logic scopes projects up front so you understand the likely budget before work begins.' },
+  { q: 'How long does Salesforce implementation take?', a: 'Focused Salesforce cleanup and optimization projects can often move in weeks. New implementations usually take longer depending on data migration, custom objects, automation, and integrations.' },
   { q: 'Do you also implement HubSpot?', a: 'Yes. Emergent Logic implements both Salesforce and HubSpot. We recommend the right platform based on your business needs, not our preferences. Many Surrey businesses choose HubSpot for its ease of use and integrated marketing tools.' },
 ];
 
@@ -60,18 +60,18 @@ export default function SalesforceConsultantSurrey() {
             <MapPin className="w-5 h-5" />
             <span>Surrey, BC</span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Surrey's Dedicated Salesforce & HubSpot Consultant</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Salesforce & HubSpot Consultant in Surrey, BC</h1>
           <p className="text-xl text-white/70 max-w-3xl mb-8">
-            Looking for a Salesforce consultant in Surrey, BC? Emergent Logic is Surrey's only dedicated Salesforce and HubSpot consulting firm. We are 6x Salesforce Certified and deliver results in weeks, not months — using AI-accelerated implementation.
+            Looking for a Salesforce consultant in Surrey, BC? Emergent Logic helps growing teams clean up, implement, and improve CRM systems across Salesforce, HubSpot, and Zoho. We use AI-assisted delivery to move faster while keeping the strategy and quality control human-led.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
             <Link href="/crm-implementation"><Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">View CRM Services</Button></Link>
           </div>
           <div className="grid grid-cols-3 gap-6 max-w-2xl">
-            <div className="text-center"><div className="flex items-center justify-center gap-2 text-white mb-1"><Award className="w-5 h-5 text-violet-400" /><span className="text-3xl font-bold">6x</span></div><div className="text-white/60 text-sm">Salesforce Certified</div></div>
-            <div className="text-center"><div className="flex items-center justify-center gap-2 text-white mb-1"><Clock className="w-5 h-5 text-violet-400" /><span className="text-3xl font-bold">2-4 wk</span></div><div className="text-white/60 text-sm">Avg. Implementation</div></div>
-            <div className="text-center"><div className="flex items-center justify-center gap-2 text-white mb-1"><Percent className="w-5 h-5 text-violet-400" /><span className="text-3xl font-bold">40-60%</span></div><div className="text-white/60 text-sm">Less Than Agencies</div></div>
+            <div className="text-center"><div className="flex items-center justify-center gap-2 text-white mb-1"><Award className="w-5 h-5 text-violet-400" /><span className="text-3xl font-bold">3</span></div><div className="text-white/60 text-sm">CRM Platforms</div></div>
+            <div className="text-center"><div className="flex items-center justify-center gap-2 text-white mb-1"><Clock className="w-5 h-5 text-violet-400" /><span className="text-3xl font-bold">Weeks</span></div><div className="text-white/60 text-sm">Focused Sprints</div></div>
+            <div className="text-center"><div className="flex items-center justify-center gap-2 text-white mb-1"><Percent className="w-5 h-5 text-violet-400" /><span className="text-3xl font-bold">Fixed</span></div><div className="text-white/60 text-sm">Scope Options</div></div>
           </div>
         </div>
       </section>
@@ -108,7 +108,7 @@ export default function SalesforceConsultantSurrey() {
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Not sure which CRM is right?</h2>
           <p className="text-gray-600 mb-4">Read our detailed comparison to help you decide: <Link href="/blog/hubspot-vs-salesforce-canada" className="text-violet-600 hover:underline">HubSpot vs Salesforce: Which CRM is Right for Your Canadian Business?</Link></p>
-          <p className="text-gray-600">Or learn more about our full <Link href="/crm-implementation" className="text-violet-600 hover:underline">CRM implementation services</Link>.</p>
+          <p className="text-gray-600">Or learn more about our full <Link href="/services/salesforce-consulting" className="text-violet-600 hover:underline">Salesforce consulting service</Link> and <Link href="/crm-implementation" className="text-violet-600 hover:underline">CRM implementation services</Link>.</p>
         </div>
       </section>
 
