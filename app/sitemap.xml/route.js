@@ -44,6 +44,7 @@ const urls = [
   ['/blog/crm-freelancer-vs-consulting-firm', 'monthly', '0.8'],
   ['/blog/salesforce-consultant-small-business', 'monthly', '0.8'],
   ['/blog/salesforce-cleanup-before-automation', 'monthly', '0.8'],
+  ['/blog/hubspot-salesforce-cleanup-upwork-patterns', 'monthly', '0.8'],
   ['/blog/hubspot-consultant-vancouver', 'monthly', '0.8'],
   ['/blog/marketing-automation-needs-crm-cleanup', 'monthly', '0.8'],
   ['/blog/crm-consultant-vs-implementation-partner-canada', 'monthly', '0.8'],

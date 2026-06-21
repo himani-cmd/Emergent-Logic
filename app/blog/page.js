@@ -35,6 +35,13 @@ const posts = [
     readTime: '8 min read',
   },
   {
+    slug: 'hubspot-salesforce-cleanup-upwork-patterns',
+    title: 'What CRM Jobs Reveal About HubSpot and Salesforce Cleanup Problems',
+    excerpt: 'Repeated CRM job posts reveal the same HubSpot and Salesforce cleanup problems: messy data, failed implementations, weak reporting, and automation gaps.',
+    category: 'CRM Strategy',
+    readTime: '9 min read',
+  },
+  {
     slug: 'hubspot-consultant-vancouver',
     title: 'Why Businesses Search for a HubSpot Consultant in Vancouver',
     excerpt: 'What a HubSpot consultant should actually help with, when to hire one, and how to avoid a messy setup. The Vancouver context, and what Canadian SMBs should look for.',
