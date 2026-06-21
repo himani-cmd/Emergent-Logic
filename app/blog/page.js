@@ -20,6 +20,21 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'salesforce-consultant-small-business',
+    title: 'When Small Businesses Need a Salesforce Consultant',
+    excerpt: 'A practical guide for small businesses deciding when to hire a Salesforce consultant for setup, cleanup, automation, reporting, and admin support.',
+    category: 'Salesforce',
+    readTime: '9 min read',
+    featured: true,
+  },
+  {
+    slug: 'salesforce-cleanup-before-automation',
+    title: 'Why Salesforce Cleanup Matters Before Automation',
+    excerpt: 'Before adding Salesforce Flow automation, clean up duplicate data, fields, stages, ownership rules, and reporting.',
+    category: 'CRM Cleanup',
+    readTime: '8 min read',
+  },
+  {
     slug: 'hubspot-consultant-vancouver',
     title: 'Why Businesses Search for a HubSpot Consultant in Vancouver',
     excerpt: 'What a HubSpot consultant should actually help with, when to hire one, and how to avoid a messy setup. The Vancouver context, and what Canadian SMBs should look for.',
