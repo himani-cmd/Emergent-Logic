@@ -7,13 +7,13 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Cloud, Layers, Zap, BarChart3, Shield, Code2, Users, Briefcase, Clock, DollarSign, Check, AlertTriangle } from 'lucide-react';
 
 export const metadata = {
-  title: 'Salesforce Consultant Canada | Surrey & Vancouver Sales Cloud Help',
-  description: 'Salesforce consultant for Canadian businesses, including Surrey and Vancouver. Sales Cloud setup, Flow automation, reporting, cleanup, training, and managed admin support. From $3,500.',
+  title: 'Salesforce Consultant Canada & US | Sales Cloud Setup Help',
+  description: 'Salesforce consultant for Canadian and US small businesses. Sales Cloud setup, Flow automation, reporting, cleanup, training, and managed admin support. From $3,500 CAD.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/salesforce-consulting' },
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'Salesforce Consultant Canada | Emergent Logic',
-    description: 'Salesforce consulting for Canadian businesses: Sales Cloud setup, Flow automation, reporting, cleanup, training, and managed admin support.',
+    title: 'Salesforce Consultant Canada & US | Emergent Logic',
+    description: 'Salesforce consulting for Canadian and US small businesses: Sales Cloud setup, Flow automation, reporting, cleanup, training, and managed admin support.',
     url: 'https://www.emergent-logic.ca/services/salesforce-consulting',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -41,6 +41,7 @@ const jsonLd = {
       url: 'https://www.emergent-logic.ca/services/salesforce-consulting',
       areaServed: [
         { '@type': 'Country', name: 'Canada' },
+        { '@type': 'Country', name: 'United States' },
         { '@type': 'AdministrativeArea', name: 'British Columbia' },
         { '@type': 'City', name: 'Surrey' },
         { '@type': 'City', name: 'Vancouver' },
@@ -83,10 +84,10 @@ export default function SalesforceConsulting() {
             <Link href="/" className="hover:text-white">Home</Link> / <Link href="/#services" className="hover:text-white">Services</Link> / <span className="text-white">Salesforce Consulting</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Salesforce Consultant for Canadian Businesses
+            Salesforce Consultant for Canadian and US Businesses
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
-            Sales Cloud configuration, custom objects, Salesforce Flow automation, AppExchange integration, and admin training for teams in Surrey, Vancouver, and across Canada &mdash; delivered by senior Salesforce consultants who also work in HubSpot and Zoho. Vendor-neutral advice. Fixed pricing. Senior delivery.
+            Sales Cloud configuration, custom objects, Salesforce Flow automation, AppExchange integration, and admin training for teams in Surrey, Vancouver, across Canada, and the US &mdash; delivered by senior CRM consultants who also work in HubSpot and Zoho. Vendor-neutral advice. Fixed pricing. Senior delivery.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
@@ -106,7 +107,7 @@ export default function SalesforceConsulting() {
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> 3 to 8 week delivery</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> Fixed pricing from $3,500</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> Sales, Service, and Marketing Cloud</div>
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> Based in Surrey, serving Greater Vancouver</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> Based in Surrey, serving Canada and the US remotely</div>
           </div>
         </div>
       </section>
@@ -120,6 +121,9 @@ export default function SalesforceConsulting() {
           </p>
           <p className="text-lg text-gray-600 mb-4">
             Salesforce is usually the right choice when you need deep customization (custom objects, complex relationships, granular permissions), when you have a large or distributed sales team that needs strict process governance, when you sell into regulated industries with heavy reporting requirements, or when you need to scale into thousands of users and complex territory management.
+          </p>
+          <p className="text-lg text-gray-600 mb-4">
+            We also support US-based teams remotely. The work is the same: clean data, clear sales stages, reliable lead routing, Flow automation that is easy to maintain, and reporting that leadership can trust. Local presence matters for Surrey and Vancouver clients, but Salesforce delivery does not need to be limited by geography.
           </p>
           <p className="text-lg text-gray-600">
             It is usually not the right choice when your sales process is straightforward, your team is under 25 reps, and you are looking for fast time-to-value. In those cases HubSpot or Zoho will give you 80% of the capability at a fraction of the cost and complexity. We will tell you that on the discovery call rather than push you toward the bigger ticket.
@@ -267,14 +271,14 @@ export default function SalesforceConsulting() {
           </p>
           <div className="space-y-3">
             {[
-              'Senior Salesforce consultants — 6+ certified across the team, with deep Sales Cloud experience',
+              'Senior CRM consultants with practical Sales Cloud implementation and cleanup experience',
               'Vendor-neutral: we also implement HubSpot and Zoho, so you get honest platform recommendations',
               'Clicks-before-code mindset: we use declarative tools wherever they fit, and write Apex only when needed',
               'Modern automation: every project moves you off legacy Workflow Rules and Process Builder onto Flow',
               'Senior delivery only — the consultant on your strategy call is the one in your org',
               'Fixed pricing on projects, transparent retainer pricing on managed services',
               'Documentation and admin runbook delivered with every engagement',
-              'Based in Surrey, BC — serving Greater Vancouver and businesses across Canada',
+              'Based in Surrey, BC — serving Greater Vancouver, Canada, and US-based businesses remotely',
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
@@ -323,9 +327,9 @@ export default function SalesforceConsulting() {
               <p className="font-medium text-violet-600">Local Salesforce Consultant</p>
               <p className="text-gray-600 text-sm">Salesforce consulting for Surrey and Greater Vancouver</p>
             </Link>
-            <Link href="/blog/crm-pipeda-data-privacy-canada" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-violet-600">CRM & PIPEDA</p>
-              <p className="text-gray-600 text-sm">What Canadian teams should know about CRM privacy</p>
+            <Link href="/blog/salesforce-consultant-small-business" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Salesforce for Small Business</p>
+              <p className="text-gray-600 text-sm">When a small team should hire a Salesforce consultant</p>
             </Link>
             <Link href="/contact" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Contact Emergent Logic</p>
