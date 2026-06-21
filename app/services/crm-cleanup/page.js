@@ -294,9 +294,9 @@ export default function CRMCleanup() {
               <p className="font-medium text-violet-600">Why Marketing Automation Fails Without Cleanup First</p>
               <p className="text-gray-600 text-sm">The five cleanup gaps that sink automation, and how to know if your data is ready.</p>
             </Link>
-            <Link href="/blog/crm-consultant-vs-implementation-partner-canada" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-violet-600">CRM Consultant vs Implementation Partner</p>
-              <p className="text-gray-600 text-sm">When each role makes sense for Canadian SMBs, and what to look for before you hire.</p>
+            <Link href="/blog/salesforce-cleanup-before-automation" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Why Salesforce Cleanup Matters Before Automation</p>
+              <p className="text-gray-600 text-sm">Why Flow automation works better after records, stages, ownership, and reporting are cleaned up.</p>
             </Link>
           </div>
         </div>
@@ -306,7 +306,11 @@ export default function CRMCleanup() {
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Related Services and Resources</h3>
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Link href="/crm-cleanup-canada" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">CRM Cleanup Canada</p>
+              <p className="text-gray-600 text-sm">National cleanup page for HubSpot, Salesforce, and Zoho</p>
+            </Link>
             <Link href="/services/crm-implementation" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM Implementation</p>
               <p className="text-gray-600 text-sm">Full CRM setup from scratch</p>
