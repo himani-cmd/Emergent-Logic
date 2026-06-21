@@ -20,6 +20,13 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'property-management-lead-follow-up-crm',
+    title: 'Property Management Lead Follow-Up: Why CRM Routing Matters',
+    excerpt: 'Property management companies lose owner inquiries when forms, calls, and emails are not routed into a clear CRM follow-up workflow.',
+    category: 'Lead Capture',
+    readTime: '8 min read',
+  },
+  {
     slug: 'salesforce-consultant-small-business',
     title: 'When Small Businesses Need a Salesforce Consultant',
     excerpt: 'A practical guide for small businesses deciding when to hire a Salesforce consultant for setup, cleanup, automation, reporting, and admin support.',
