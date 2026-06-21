@@ -345,7 +345,11 @@ export default function CRMImplementation() {
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Related Services and Resources</h3>
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Link href="/crm-implementation-canada" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">CRM Implementation Canada</p>
+              <p className="text-gray-600 text-sm">National CRM setup page for Canadian SMBs</p>
+            </Link>
             <Link href="/services/hubspot-consulting" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">HubSpot Consulting</p>
               <p className="text-gray-600 text-sm">Expert HubSpot setup and optimization</p>

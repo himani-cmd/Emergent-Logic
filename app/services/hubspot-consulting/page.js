@@ -280,10 +280,14 @@ export default function HubSpotConsulting() {
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Related Services and Resources</h3>
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             <Link href="/services/crm-implementation" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM Implementation</p>
               <p className="text-gray-600 text-sm">Full CRM setup from scratch</p>
+            </Link>
+            <Link href="/hubspot-consultant-surrey-bc" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">HubSpot Consultant Surrey</p>
+              <p className="text-gray-600 text-sm">Local HubSpot help for Surrey and Greater Vancouver</p>
             </Link>
             <Link href="/services/crm-cleanup" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM Cleanup</p>
