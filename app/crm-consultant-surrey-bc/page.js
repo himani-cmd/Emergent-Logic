@@ -109,7 +109,8 @@ export default function CrmConsultantSurrey() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Related resources</h2>
-          <div className="grid md:grid-cols-2 gap-4 max-w-2xl">
+          <div className="grid md:grid-cols-3 gap-4 max-w-4xl">
+            <Link href="/hubspot-consultant-surrey-bc"><Card className="hover:shadow-lg transition-shadow cursor-pointer"><CardHeader><CardTitle className="text-lg">HubSpot Consultant Surrey BC</CardTitle></CardHeader></Card></Link>
             <Link href="/blog/what-is-crm-implementation-canada"><Card className="hover:shadow-lg transition-shadow cursor-pointer"><CardHeader><CardTitle className="text-lg">What is CRM Implementation? A Step-by-Step Guide</CardTitle></CardHeader></Card></Link>
             <Link href="/blog/hubspot-vs-salesforce-canada"><Card className="hover:shadow-lg transition-shadow cursor-pointer"><CardHeader><CardTitle className="text-lg">HubSpot vs Salesforce: Which CRM is Right?</CardTitle></CardHeader></Card></Link>
           </div>
