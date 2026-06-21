@@ -258,9 +258,9 @@ export default function LeadCaptureWebsites() {
               <p className="font-medium text-violet-600">Marketing Automation</p>
               <p className="text-gray-600 text-sm">What happens after the form submits</p>
             </Link>
-            <Link href="/blog/campaign-attribution-crm-marketing-roi" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-violet-600">Campaign Attribution</p>
-              <p className="text-gray-600 text-sm">Connecting traffic to closed deals</p>
+            <Link href="/blog/website-leads-to-crm" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Website Leads to CRM</p>
+              <p className="text-gray-600 text-sm">Why routing and follow-up matter after the form submits</p>
             </Link>
           </div>
         </div>

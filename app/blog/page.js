@@ -42,6 +42,13 @@ const posts = [
     readTime: '9 min read',
   },
   {
+    slug: 'website-leads-to-crm',
+    title: 'Why Website Leads Do Not Turn Into Sales Without CRM Routing',
+    excerpt: 'Website forms do not create revenue by themselves. Lead capture, CRM routing, ownership, and follow-up workflows turn inquiries into pipeline.',
+    category: 'Lead Capture',
+    readTime: '8 min read',
+  },
+  {
     slug: 'hubspot-consultant-vancouver',
     title: 'Why Businesses Search for a HubSpot Consultant in Vancouver',
     excerpt: 'What a HubSpot consultant should actually help with, when to hire one, and how to avoid a messy setup. The Vancouver context, and what Canadian SMBs should look for.',
