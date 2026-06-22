@@ -328,7 +328,7 @@ export default function CRMImplementation() {
       <section className="py-12 bg-white border-t border-gray-100">
         <div className="container mx-auto px-4 max-w-4xl">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Related Reading</h3>
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-3 gap-4">
             <Link href="/blog/crm-consultant-vs-implementation-partner-canada" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM Consultant vs Implementation Partner</p>
               <p className="text-gray-600 text-sm">What Canadian SMBs should look for when choosing how to staff a CRM project.</p>
@@ -336,6 +336,10 @@ export default function CRMImplementation() {
             <Link href="/blog/marketing-automation-needs-crm-cleanup" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Why Marketing Automation Fails Without Cleanup First</p>
               <p className="text-gray-600 text-sm">Why most automation rollouts go sideways, and how to plan the right sequence.</p>
+            </Link>
+            <Link href="/blog/property-management-lead-follow-up-crm" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Property Management Lead Follow-Up</p>
+              <p className="text-gray-600 text-sm">A vertical-specific example of how CRM routing protects new revenue opportunities.</p>
             </Link>
           </div>
         </div>
