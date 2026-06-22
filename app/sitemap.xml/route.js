@@ -26,6 +26,8 @@ const urls = [
   ['/hubspot-consultant-surrey-bc', 'monthly', '0.9'],
   ['/crm-implementation-canada', 'monthly', '0.9'],
   ['/crm-cleanup-canada', 'monthly', '0.9'],
+  ['/property-management-crm-consulting-canada', 'monthly', '0.9'],
+  ['/immigration-consultant-crm-canada', 'monthly', '0.9'],
   ['/hubspot-consultant-vancouver', 'monthly', '0.9'],
   ['/crm-consultant-surrey-bc', 'monthly', '0.9'],
   ['/crm-consultant-abbotsford', 'monthly', '0.9'],

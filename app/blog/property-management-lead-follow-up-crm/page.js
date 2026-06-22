@@ -129,6 +129,10 @@ export default function PropertyManagementLeadFollowUpCrm() {
               </p>
 
               <p>
+                If this is the exact gap your team is trying to fix, our <Link href="/property-management-crm-consulting-canada" className="text-blue-700 hover:underline">property management CRM consulting</Link> page explains the service scope in more detail.
+              </p>
+
+              <p>
                 If someone fills a rental evaluation form, the CRM should show where it came from, who owns it, whether the owner has been contacted, what the next step is, and whether the opportunity is still active.
               </p>
 

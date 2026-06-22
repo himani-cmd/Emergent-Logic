@@ -120,6 +120,10 @@ export default function ImmigrationConsultationFollowUpCrm() {
                 Good intake structure does not need to be complicated. It needs to tell the team what came in, what service the person asked about, who owns the next action, what stage the inquiry is in, and when follow-up should happen.
               </p>
 
+              <p>
+                If your firm needs this built instead of just discussed, our <Link href="/immigration-consultant-crm-canada" className="text-emerald-700 hover:underline">CRM for immigration consultants</Link> page explains how we structure consultation intake and follow-up systems.
+              </p>
+
               <h2>Common Places Immigration Leads Leak</h2>
               <p>
                 In immigration consulting, the lead leak usually looks like small delays and unclear ownership rather than one dramatic mistake.
