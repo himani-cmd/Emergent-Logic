@@ -1,5 +1,5 @@
 const baseUrl = 'https://www.emergent-logic.ca';
-const lastmod = '2026-06-21';
+const lastmod = '2026-06-22';
 
 const urls = [
   ['', 'weekly', '1.0'],
