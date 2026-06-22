@@ -271,7 +271,7 @@ export default function SalesforceConsulting() {
           </p>
           <div className="space-y-3">
             {[
-              'Senior Salesforce consultants — 6+ certified across the team, with deep Sales Cloud experience',
+              'Senior CRM consultants with practical Sales Cloud implementation and cleanup experience',
               'Vendor-neutral: we also implement HubSpot and Zoho, so you get honest platform recommendations',
               'Clicks-before-code mindset: we use declarative tools wherever they fit, and write Apex only when needed',
               'Modern automation: every project moves you off legacy Workflow Rules and Process Builder onto Flow',
