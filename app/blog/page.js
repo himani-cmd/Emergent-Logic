@@ -20,6 +20,13 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'immigration-consultation-follow-up-crm',
+    title: 'Immigration Consultation Follow-Up: Why CRM Intake Matters',
+    excerpt: 'Immigration consultants lose consultation opportunities when forms, calls, WhatsApp, and email are not routed into one clear CRM follow-up workflow.',
+    category: 'Lead Capture',
+    readTime: '8 min read',
+  },
+  {
     slug: 'property-management-lead-follow-up-crm',
     title: 'Property Management Lead Follow-Up: Why CRM Routing Matters',
     excerpt: 'Property management companies lose owner inquiries when forms, calls, and emails are not routed into a clear CRM follow-up workflow.',

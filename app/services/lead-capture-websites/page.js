@@ -249,7 +249,7 @@ export default function LeadCaptureWebsites() {
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Related Services and Resources</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
             <Link href="/services/crm-implementation" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM Implementation</p>
               <p className="text-gray-600 text-sm">The system your website should feed</p>
@@ -265,6 +265,10 @@ export default function LeadCaptureWebsites() {
             <Link href="/blog/property-management-lead-follow-up-crm" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Property Management Follow-Up</p>
               <p className="text-gray-600 text-sm">A practical example of lead capture, routing, and CRM ownership working together</p>
+            </Link>
+            <Link href="/blog/immigration-consultation-follow-up-crm" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Immigration Intake Follow-Up</p>
+              <p className="text-gray-600 text-sm">A practical example of consultation forms, routing, and CRM follow-up working together</p>
             </Link>
           </div>
         </div>

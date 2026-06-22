@@ -289,7 +289,7 @@ export default function CRMCleanup() {
       <section className="py-12 bg-white border-t border-gray-100">
         <div className="container mx-auto px-4 max-w-4xl">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Related Reading</h3>
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             <Link href="/blog/marketing-automation-needs-crm-cleanup" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Why Marketing Automation Fails Without Cleanup First</p>
               <p className="text-gray-600 text-sm">The five cleanup gaps that sink automation, and how to know if your data is ready.</p>
@@ -301,6 +301,10 @@ export default function CRMCleanup() {
             <Link href="/blog/property-management-lead-follow-up-crm" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Property Management Lead Follow-Up</p>
               <p className="text-gray-600 text-sm">How owner inquiries leak when CRM routing, ownership, and follow-up are unclear.</p>
+            </Link>
+            <Link href="/blog/immigration-consultation-follow-up-crm" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Immigration Consultation Follow-Up</p>
+              <p className="text-gray-600 text-sm">How intake gaps appear when forms, inboxes, calls, and WhatsApp are not routed clearly.</p>
             </Link>
           </div>
         </div>
