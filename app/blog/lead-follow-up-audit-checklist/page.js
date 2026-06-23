@@ -36,9 +36,56 @@ const relatedPosts = [
   { title: 'Immigration Consultation Follow-Up: Why CRM Intake Matters', href: '/blog/immigration-consultation-follow-up-crm' },
 ];
 
+const faqItems = [
+  {
+    q: 'What should every website inquiry have in a CRM?',
+    a: 'Every meaningful inquiry should have a source, owner, stage, next follow-up date, and visible status so the team can see whether the lead is still warm, booked, disqualified, or waiting on follow-up.',
+  },
+  {
+    q: 'Should businesses automate follow-up before cleaning their CRM?',
+    a: 'Usually no. The safer order is to clarify source, ownership, stage, next action, and reporting first. Once those basics are stable, automation can make the process faster without amplifying messy data.',
+  },
+  {
+    q: 'Which inquiry path should be audited first?',
+    a: 'Start with the highest-value path, such as a consultation request, home valuation, owner inquiry, quote request, demo request, or contact form that regularly creates sales conversations.',
+  },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      '@id': 'https://www.emergent-logic.ca/blog/lead-follow-up-audit-checklist#article',
+      headline: '5-Point Lead Follow-Up Audit Checklist',
+      description: metadata.description,
+      image: 'https://www.emergent-logic.ca/og-image.png',
+      author: {
+        '@type': 'Organization',
+        name: 'Emergent Logic',
+        url: 'https://www.emergent-logic.ca/',
+      },
+      publisher: { '@id': 'https://www.emergent-logic.ca/#organization' },
+      mainEntityOfPage: 'https://www.emergent-logic.ca/blog/lead-follow-up-audit-checklist',
+      datePublished: '2026-06-22',
+      dateModified: '2026-06-23',
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': 'https://www.emergent-logic.ca/blog/lead-follow-up-audit-checklist#faq',
+      mainEntity: faqItems.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: { '@type': 'Answer', text: item.a },
+      })),
+    },
+  ],
+};
+
 export default function LeadFollowUpAuditChecklist() {
   return (
     <main className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
 
       <article className="pt-32 pb-16">

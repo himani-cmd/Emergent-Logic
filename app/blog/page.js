@@ -20,6 +20,14 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'crm-consultant-near-me',
+    title: 'CRM Consultant Near Me: What Buyers Are Really Looking For',
+    excerpt: 'Searching locally for CRM help usually means the business needs cleanup, implementation judgment, lead routing, automation, reporting, and fast senior support.',
+    category: 'CRM Consulting',
+    readTime: '9 min read',
+    featured: true,
+  },
+  {
     slug: 'lead-follow-up-audit-checklist',
     title: '5-Point Lead Follow-Up Audit Checklist',
     excerpt: 'Use this practical checklist to review what happens after a website inquiry: entry point, owner, CRM stage, next follow-up, and 7-day visibility.',

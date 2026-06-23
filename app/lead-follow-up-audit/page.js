@@ -54,9 +54,66 @@ const fits = [
   'Small service businesses using forms, inboxes, spreadsheets, or an underused CRM',
 ];
 
+const faqs = [
+  {
+    q: 'What is a lead follow-up audit?',
+    a: 'A lead follow-up audit reviews what happens after someone submits a form, requests a consultation, sends an inquiry, or enters your sales process. We check the source, owner, CRM status, next follow-up, and visibility after the first touch.',
+  },
+  {
+    q: 'Do you need access to our CRM?',
+    a: 'No. For the free audit, we start with one visible inquiry path such as a website form, consultation page, valuation request, or contact page. CRM access is only needed if we later help implement fixes.',
+  },
+  {
+    q: 'Who is this audit for?',
+    a: 'It is useful for real estate teams, immigration and legal practices, property management companies, and service businesses that rely on website inquiries, shared inboxes, or CRM follow-up.',
+  },
+  {
+    q: 'What happens after the audit?',
+    a: 'You receive a short practical note on where leads may be getting missed and the first fix we would prioritize. If useful, we can then help with CRM cleanup, routing, automation, and reporting.',
+  },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://www.emergent-logic.ca/lead-follow-up-audit#service',
+      name: 'Free 5-Point Lead Follow-Up Audit',
+      serviceType: 'Lead follow-up audit, CRM routing review, inquiry workflow review, and CRM visibility diagnostic',
+      provider: { '@id': 'https://www.emergent-logic.ca/#organization' },
+      url: 'https://www.emergent-logic.ca/lead-follow-up-audit',
+      areaServed: [
+        { '@type': 'Country', name: 'Canada' },
+        { '@type': 'Country', name: 'United States' },
+        { '@type': 'AdministrativeArea', name: 'British Columbia' },
+        { '@type': 'City', name: 'Surrey' },
+        { '@type': 'City', name: 'Vancouver' },
+      ],
+      offers: {
+        '@type': 'Offer',
+        price: '0',
+        priceCurrency: 'CAD',
+        availability: 'https://schema.org/InStock',
+        url: 'https://www.emergent-logic.ca/lead-follow-up-audit',
+      },
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': 'https://www.emergent-logic.ca/lead-follow-up-audit#faq',
+      mainEntity: faqs.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: { '@type': 'Answer', text: item.a },
+      })),
+    },
+  ],
+};
+
 export default function LeadFollowUpAuditPage() {
   return (
     <main className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
 
       <section className="pt-32 pb-20 bg-gradient-to-br from-slate-950 via-indigo-950 to-violet-900">
