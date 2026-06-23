@@ -52,20 +52,20 @@ export default function CrmConsultantLangley() {
     <main className="min-h-screen">
       <Navbar />
       
-      <section className="pt-32 pb-16 bg-gradient-to-br from-violet-900 via-indigo-900 to-purple-900">
+      <section className="overflow-hidden pt-32 pb-16 bg-gradient-to-br from-violet-900 via-indigo-900 to-purple-900">
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[
             { label: 'Services', href: '/services' },
             { label: 'CRM Consultant Langley', href: '/crm-consultant-langley' },
           ]} />
           <div className="flex items-center gap-2 text-violet-300 mb-4"><MapPin className="w-5 h-5" /><span>Langley, BC</span></div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">CRM Consultant in Langley, BC</h1>
-          <p className="text-xl text-white/70 max-w-3xl mb-8">
+          <h1 className="max-w-4xl break-words text-4xl md:text-5xl font-bold leading-tight text-white mb-4">CRM Consultant in Langley, BC</h1>
+          <p className="text-lg md:text-xl leading-relaxed text-white/75 max-w-3xl mb-8">
             Professional CRM consulting for Langley businesses. We implement Salesforce, HubSpot, Zoho, and more using AI-accelerated delivery — so your CRM is live in weeks, not months. Fixed pricing. No surprises.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
-            <Link href="/services"><Button size="lg" variant="outline" className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white">View All Services</Button></Link>
+          <div className="flex max-w-3xl flex-col gap-4 sm:flex-row sm:flex-wrap">
+            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto"><Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
+            <Link href="/services" className="w-full sm:w-auto"><Button size="lg" variant="outline" className="w-full !border-white/40 !bg-transparent !text-white hover:!bg-white/10 hover:!text-white sm:w-auto">View All Services</Button></Link>
           </div>
         </div>
       </section>
