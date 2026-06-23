@@ -29,6 +29,7 @@ export const metadata = {
 };
 
 const relatedPosts = [
+  { title: 'CRM Consultant Near Me: What Buyers Are Really Looking For', href: '/blog/crm-consultant-near-me' },
   { title: 'What is CRM Implementation? A Step-by-Step Guide', href: '/blog/what-is-crm-implementation-canada' },
   { title: 'CRM Freelancer vs Consulting Firm', href: '/blog/crm-freelancer-vs-consulting-firm' },
 ];
@@ -170,6 +171,10 @@ export default function Post() {
               <p>
                 For most Canadian SMBs, the right shape of engagement is a team that does both — consulting and implementation as one continuous project. That is how we work, and it is why this site is structured the way it is. If your business is in the Greater Vancouver area, our <Link href="/crm-consultant-coquitlam" className="text-violet-600 hover:underline">CRM consultant Coquitlam</Link> page walks through what local engagements look like.
               </p>
+
+              <p>
+                If you are still in the early search stage, the guide to <Link href="/blog/crm-consultant-near-me" className="text-violet-600 hover:underline">what CRM consultant near me buyers are really looking for</Link> breaks down the local-search intent behind cleanup, implementation, lead routing, automation, and reporting support.
+              </p>
             </div>
 
             <div className="mt-12 p-8 bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl text-white">
@@ -180,7 +185,7 @@ export default function Post() {
 
             <div className="mt-12">
               <h3 className="text-xl font-bold mb-6">Related Articles</h3>
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-3 gap-4">
                 {relatedPosts.map((post) => (
                   <Link key={post.href} href={post.href}>
                     <Card className="hover:shadow-lg transition-shadow cursor-pointer">
