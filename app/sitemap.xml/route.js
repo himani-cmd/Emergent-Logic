@@ -8,6 +8,7 @@ const urls = [
   ['/about', 'monthly', '0.8'],
   ['/contact', 'monthly', '0.9'],
   ['/ai-crm-audit', 'monthly', '0.8'],
+  ['/lead-follow-up-audit', 'monthly', '0.8'],
   ['/blog', 'weekly', '0.9'],
   ['/blog/immigration-consultation-follow-up-crm', 'monthly', '0.8'],
   ['/blog/property-management-lead-follow-up-crm', 'monthly', '0.8'],

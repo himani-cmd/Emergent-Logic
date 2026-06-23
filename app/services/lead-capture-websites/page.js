@@ -45,9 +45,9 @@ export default function LeadCaptureWebsites() {
                 </Button>
               </a>
             </TrackedCTA>
-            <Link href="/ai-crm-audit">
+            <Link href="/lead-follow-up-audit">
               <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
-                Try Our AI CRM Audit
+                Get a 5-Point Lead Follow-Up Audit
               </Button>
             </Link>
           </div>
@@ -289,9 +289,9 @@ export default function LeadCaptureWebsites() {
                 </Button>
               </a>
             </TrackedCTA>
-            <Link href="/ai-crm-audit">
+            <Link href="/lead-follow-up-audit">
               <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
-                Try Our AI CRM Audit
+                Get a 5-Point Lead Follow-Up Audit
               </Button>
             </Link>
           </div>
