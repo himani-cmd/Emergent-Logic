@@ -103,7 +103,7 @@ export default function SalesforceConsultantSurrey() {
             <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
             </TrackedCTA>
-            <Link href="/services/crm-implementation"><Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">View CRM Services</Button></Link>
+            <Link href="/services/crm-implementation"><Button size="lg" variant="outline" className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white">View CRM Services</Button></Link>
           </div>
           <div className="grid grid-cols-3 gap-6 max-w-2xl">
             <div className="text-center"><div className="flex items-center justify-center gap-2 text-white mb-1"><Award className="w-5 h-5 text-violet-400" /><span className="text-3xl font-bold">3</span></div><div className="text-white/60 text-sm">CRM Platforms</div></div>

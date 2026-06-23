@@ -77,7 +77,7 @@ export default function CRMCleanupCanada() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-emerald-900 hover:bg-emerald-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
-            <Link href="/ai-crm-audit"><Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">Try Our AI CRM Audit</Button></Link>
+            <Link href="/ai-crm-audit"><Button size="lg" variant="outline" className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white">Try Our AI CRM Audit</Button></Link>
           </div>
         </div>
       </section>

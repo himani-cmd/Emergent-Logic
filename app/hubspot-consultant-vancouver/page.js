@@ -56,20 +56,20 @@ export default function HubspotConsultantVancouver() {
     <main className="min-h-screen">
       <Navbar />
       
-      <section className="pt-32 pb-16 bg-gradient-to-br from-violet-900 via-indigo-900 to-purple-900">
+      <section className="overflow-hidden pt-32 pb-16 bg-gradient-to-br from-violet-900 via-indigo-900 to-purple-900">
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[
             { label: 'Services', href: '/services' },
             { label: 'HubSpot Consultant Vancouver', href: '/hubspot-consultant-vancouver' },
           ]} />
           <div className="flex items-center gap-2 text-violet-300 mb-4"><MapPin className="w-5 h-5" /><span>Vancouver & Metro Vancouver</span></div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Vancouver's HubSpot CRM & Marketing Automation Expert</h1>
-          <p className="text-xl text-white/70 max-w-3xl mb-8">
+          <h1 className="max-w-5xl break-words text-4xl font-bold leading-tight text-white mb-4 md:text-5xl lg:text-6xl">Vancouver's HubSpot CRM & Marketing Automation Expert</h1>
+          <p className="max-w-4xl text-lg leading-relaxed text-white/75 mb-8 md:text-xl">
             Looking for a HubSpot consultant in Vancouver? Emergent Logic is Metro Vancouver's go-to HubSpot implementation partner. We set up your CRM, build your marketing automation, and connect everything into a revenue system that works.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
-            <Link href="/marketing-automation"><Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">Marketing Automation Services</Button></Link>
+          <div className="flex max-w-3xl flex-col gap-4 sm:flex-row sm:flex-wrap">
+            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto"><Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
+            <Link href="/marketing-automation" className="w-full sm:w-auto"><Button size="lg" variant="outline" className="w-full border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white sm:w-auto">Marketing Automation Services</Button></Link>
           </div>
         </div>
       </section>

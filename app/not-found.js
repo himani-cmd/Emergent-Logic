@@ -32,7 +32,7 @@ export default function NotFound() {
             </Button>
           </Link>
           <Link href="/contact">
-            <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
+            <Button size="lg" variant="outline" className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white">
               <Search className="w-5 h-5 mr-2" />
               Contact Us
             </Button>

@@ -101,6 +101,11 @@ export default function PropertyManagementCrmConsultingCanada() {
                 Contact Us
               </Button>
             </Link>
+            <Link href="/lead-follow-up-audit">
+              <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
+                Get a 5-Point Follow-Up Audit
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -154,7 +159,7 @@ export default function PropertyManagementCrmConsultingCanada() {
           <div className="grid md:grid-cols-3 gap-4">
             <Link href="/blog/property-management-lead-follow-up-crm" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-blue-800">Property management follow-up guide</p><p className="text-sm text-gray-600 mt-1">Why CRM routing matters after the inquiry.</p></Link>
             <Link href="/services/crm-implementation" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-blue-800">CRM implementation</p><p className="text-sm text-gray-600 mt-1">Pipelines, automation, dashboards, and training.</p></Link>
-            <Link href="/services/lead-capture-websites" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-blue-800">Lead capture websites</p><p className="text-sm text-gray-600 mt-1">Forms and pages built for CRM follow-up.</p></Link>
+            <Link href="/lead-follow-up-audit" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-blue-800">5-point lead follow-up audit</p><p className="text-sm text-gray-600 mt-1">A practical review of one owner inquiry path.</p></Link>
           </div>
         </div>
       </section>
@@ -182,6 +187,9 @@ export default function PropertyManagementCrmConsultingCanada() {
               <Button size="lg" className="bg-white text-blue-950 hover:bg-blue-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button>
             </a>
           </TrackedCTA>
+          <Link href="/lead-follow-up-audit" className="inline-flex mt-4 text-blue-100 hover:text-white underline underline-offset-4">
+            Or request a free 5-point lead follow-up audit
+          </Link>
         </div>
       </section>
 

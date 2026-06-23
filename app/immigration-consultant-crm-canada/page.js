@@ -102,6 +102,11 @@ export default function ImmigrationConsultantCrmCanada() {
                 Contact Us
               </Button>
             </Link>
+            <Link href="/lead-follow-up-audit">
+              <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
+                Get a 5-Point Intake Audit
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -155,7 +160,7 @@ export default function ImmigrationConsultantCrmCanada() {
           <div className="grid md:grid-cols-3 gap-4">
             <Link href="/blog/immigration-consultation-follow-up-crm" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-emerald-800">Immigration intake guide</p><p className="text-sm text-gray-600 mt-1">Why consultation follow-up needs CRM structure.</p></Link>
             <Link href="/services/crm-implementation" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-emerald-800">CRM implementation</p><p className="text-sm text-gray-600 mt-1">Set up HubSpot, Salesforce, or Zoho properly.</p></Link>
-            <Link href="/services/lead-capture-websites" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-emerald-800">Lead capture websites</p><p className="text-sm text-gray-600 mt-1">Forms and landing pages connected to CRM follow-up.</p></Link>
+            <Link href="/lead-follow-up-audit" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-emerald-800">5-point consultation audit</p><p className="text-sm text-gray-600 mt-1">A practical review of one intake path.</p></Link>
           </div>
         </div>
       </section>
@@ -183,6 +188,9 @@ export default function ImmigrationConsultantCrmCanada() {
               <Button size="lg" className="bg-white text-emerald-950 hover:bg-emerald-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button>
             </a>
           </TrackedCTA>
+          <Link href="/lead-follow-up-audit" className="inline-flex mt-4 text-emerald-100 hover:text-white underline underline-offset-4">
+            Or request a free 5-point consultation follow-up audit
+          </Link>
         </div>
       </section>
 

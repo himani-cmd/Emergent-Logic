@@ -20,6 +20,14 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'lead-follow-up-audit-checklist',
+    title: '5-Point Lead Follow-Up Audit Checklist',
+    excerpt: 'Use this practical checklist to review what happens after a website inquiry: entry point, owner, CRM stage, next follow-up, and 7-day visibility.',
+    category: 'Lead Capture',
+    readTime: '8 min read',
+    featured: true,
+  },
+  {
     slug: 'immigration-consultation-follow-up-crm',
     title: 'Immigration Consultation Follow-Up: Why CRM Intake Matters',
     excerpt: 'Immigration consultants lose consultation opportunities when forms, calls, WhatsApp, and email are not routed into one clear CRM follow-up workflow.',

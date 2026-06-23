@@ -65,7 +65,7 @@ export default function CrmConsultantAbbotsford() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
-            <Link href="/services"><Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">View All Services</Button></Link>
+            <Link href="/services"><Button size="lg" variant="outline" className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white">View All Services</Button></Link>
           </div>
         </div>
       </section>
