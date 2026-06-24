@@ -23,6 +23,7 @@ export const metadata = {
 };
 
 const relatedPosts = [
+  { title: 'Salesforce Consultant Near Me: What to Look For', href: '/blog/salesforce-consultant-near-me' },
   { title: 'HubSpot vs Salesforce: Which CRM is Right?', href: '/blog/hubspot-vs-salesforce-canada' },
   { title: 'CRM Freelancer vs Consulting Firm', href: '/blog/crm-freelancer-vs-consulting-firm' },
 ];
@@ -86,6 +87,9 @@ export default function SalesforceConsultantSmallBusiness() {
               </p>
               <p>
                 If you need help with those decisions, our <Link href="/services/salesforce-consulting" className="text-blue-700 hover:underline">Salesforce consulting service</Link> covers Sales Cloud setup, cleanup, Flow automation, reporting, and managed admin support for Canadian and US small businesses.
+              </p>
+              <p>
+                If your team is still comparing local options, our guide to <Link href="/blog/salesforce-consultant-near-me" className="text-blue-700 hover:underline">what to look for in a Salesforce consultant near me search</Link> breaks down the buying signals, first audit areas, and questions to ask before hiring.
               </p>
 
               <h2>Signs Your Small Business Is Ready for Salesforce Help</h2>
