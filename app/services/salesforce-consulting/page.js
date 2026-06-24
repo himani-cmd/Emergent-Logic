@@ -319,9 +319,9 @@ export default function SalesforceConsulting() {
               <p className="font-medium text-violet-600">HubSpot Consulting</p>
               <p className="text-gray-600 text-sm">Often a better fit for smaller sales teams</p>
             </Link>
-            <Link href="/blog/salesforce-vs-hubspot-vs-zoho-canada-2026" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-violet-600">CRM Comparison</p>
-              <p className="text-gray-600 text-sm">Salesforce vs HubSpot vs Zoho (2026)</p>
+            <Link href="/blog/salesforce-admin-support-small-business" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Salesforce Admin Support</p>
+              <p className="text-gray-600 text-sm">What small businesses should outsource first</p>
             </Link>
             <Link href="/salesforce-consultant-surrey-bc" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Local Salesforce Consultant</p>
