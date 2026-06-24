@@ -20,6 +20,14 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'salesforce-consultant-near-me',
+    title: 'Salesforce Consultant Near Me: What to Look For',
+    excerpt: 'Searching locally for Salesforce help usually means the business needs cleaner data, better reporting, safer automation, and practical admin support.',
+    category: 'Salesforce',
+    readTime: '8 min read',
+    featured: true,
+  },
+  {
     slug: 'crm-consultant-near-me',
     title: 'CRM Consultant Near Me: What Buyers Are Really Looking For',
     excerpt: 'Searching locally for CRM help usually means the business needs cleanup, implementation judgment, lead routing, automation, reporting, and fast senior support.',
