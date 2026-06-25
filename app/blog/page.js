@@ -20,6 +20,14 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'hubspot-admin-support-small-business',
+    title: 'HubSpot Admin Support for Small Businesses',
+    excerpt: 'Small businesses often need HubSpot admin support before they need a full-time RevOps hire. Learn what to outsource, what to keep internal, and when cleanup should come first.',
+    category: 'HubSpot',
+    readTime: '8 min read',
+    featured: true,
+  },
+  {
     slug: 'salesforce-admin-support-small-business',
     title: 'Salesforce Admin Support for Small Businesses',
     excerpt: 'Small businesses often need Salesforce admin support before they need a full-time admin. Learn what to outsource, what to keep internal, and when cleanup should come first.',

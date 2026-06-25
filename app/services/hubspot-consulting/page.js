@@ -264,6 +264,10 @@ export default function HubSpotConsulting() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Related Reading</h3>
           <div className="grid md:grid-cols-2 gap-4">
+            <Link href="/blog/hubspot-admin-support-small-business" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">HubSpot Admin Support for Small Businesses</p>
+              <p className="text-gray-600 text-sm">What to outsource first when HubSpot needs ownership, cleanup, and a steady admin rhythm.</p>
+            </Link>
             <Link href="/blog/hubspot-consultant-vancouver" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Why Businesses Search for a HubSpot Consultant in Vancouver</p>
               <p className="text-gray-600 text-sm">What a consultant should actually help with, and how to avoid a messy setup.</p>
