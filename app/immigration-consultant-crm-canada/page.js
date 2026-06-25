@@ -76,14 +76,14 @@ export default function ImmigrationConsultantCrmCanada() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
 
-      <section className="pt-32 pb-20 bg-gradient-to-br from-emerald-950 via-teal-950 to-slate-950">
+      <section className="overflow-hidden pt-32 pb-20 bg-gradient-to-br from-emerald-950 via-teal-950 to-slate-950">
         <div className="container mx-auto px-4 max-w-4xl">
           <Breadcrumbs items={[
             { label: 'Services', href: '/services/crm-implementation' },
             { label: 'CRM for Immigration Consultants', href: '/immigration-consultant-crm-canada' },
           ]} />
           <div className="text-emerald-200 text-sm mb-4">Immigration consultant CRM systems</div>
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="break-words text-4xl font-bold text-white mb-6 leading-tight md:text-5xl lg:text-6xl">
             CRM Systems for Immigration Consultants
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
@@ -91,19 +91,19 @@ export default function ImmigrationConsultantCrmCanada() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
-              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="bg-white text-emerald-950 hover:bg-emerald-100 font-semibold px-8">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full bg-white text-emerald-950 hover:bg-emerald-100 font-semibold px-8 sm:w-auto">
                   Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
-            <Link href="/contact">
-              <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
+            <Link href="/contact" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8 sm:w-auto">
                 Contact Us
               </Button>
             </Link>
-            <Link href="/lead-follow-up-audit">
-              <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
+            <Link href="/lead-follow-up-audit" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8 sm:w-auto">
                 Get a 5-Point Intake Audit
               </Button>
             </Link>
