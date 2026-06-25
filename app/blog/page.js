@@ -20,6 +20,14 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'real-estate-lead-follow-up-crm',
+    title: 'Real Estate Lead Follow-Up: Why CRM Routing Matters',
+    excerpt: 'A practical CRM guide for real estate teams: buyer and seller inquiry routing, follow-up tasks, long-cycle nurture, and lead ownership.',
+    category: 'Real Estate CRM',
+    readTime: '8 min read',
+    featured: true,
+  },
+  {
     slug: 'crm-automation-for-immigration-consultants',
     title: 'CRM Automation for Immigration Consultants',
     excerpt: 'A practical guide to CRM automation for immigration consultants: consultation intake, lead routing, follow-up tasks, document requests, and reporting.',

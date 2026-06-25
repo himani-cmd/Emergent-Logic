@@ -10,6 +10,7 @@ const urls = [
   ['/ai-crm-audit', 'monthly', '0.8'],
   ['/lead-follow-up-audit', 'monthly', '0.8'],
   ['/blog', 'weekly', '0.9'],
+  ['/blog/real-estate-lead-follow-up-crm', 'monthly', '0.8'],
   ['/blog/hubspot-admin-support-small-business', 'monthly', '0.8'],
   ['/blog/crm-automation-for-immigration-consultants', 'monthly', '0.8'],
   ['/blog/salesforce-admin-support-small-business', 'monthly', '0.8'],
