@@ -20,6 +20,14 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'crm-automation-for-immigration-consultants',
+    title: 'CRM Automation for Immigration Consultants',
+    excerpt: 'A practical guide to CRM automation for immigration consultants: consultation intake, lead routing, follow-up tasks, document requests, and reporting.',
+    category: 'Immigration CRM',
+    readTime: '8 min read',
+    featured: true,
+  },
+  {
     slug: 'hubspot-admin-support-small-business',
     title: 'HubSpot Admin Support for Small Businesses',
     excerpt: 'Small businesses often need HubSpot admin support before they need a full-time RevOps hire. Learn what to outsource, what to keep internal, and when cleanup should come first.',
