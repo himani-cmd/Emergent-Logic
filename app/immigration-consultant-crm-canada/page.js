@@ -158,7 +158,7 @@ export default function ImmigrationConsultantCrmCanada() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Related resources</h2>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/blog/immigration-consultation-follow-up-crm" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-emerald-800">Immigration intake guide</p><p className="text-sm text-gray-600 mt-1">Why consultation follow-up needs CRM structure.</p></Link>
+            <Link href="/blog/crm-automation-for-immigration-consultants" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-emerald-800">Immigration CRM automation guide</p><p className="text-sm text-gray-600 mt-1">How intake, reminders, and follow-up workflows should fit together.</p></Link>
             <Link href="/services/crm-implementation" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-emerald-800">CRM implementation</p><p className="text-sm text-gray-600 mt-1">Set up HubSpot, Salesforce, or Zoho properly.</p></Link>
             <Link href="/lead-follow-up-audit" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-emerald-800">5-point consultation audit</p><p className="text-sm text-gray-600 mt-1">A practical review of one intake path.</p></Link>
           </div>

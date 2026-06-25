@@ -266,8 +266,8 @@ export default function LeadCaptureWebsites() {
               <p className="font-medium text-violet-600">Property Management Follow-Up</p>
               <p className="text-gray-600 text-sm">A practical example of lead capture, routing, and CRM ownership working together</p>
             </Link>
-            <Link href="/blog/immigration-consultation-follow-up-crm" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-violet-600">Immigration Intake Follow-Up</p>
+            <Link href="/blog/crm-automation-for-immigration-consultants" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Immigration CRM Automation</p>
               <p className="text-gray-600 text-sm">A practical example of consultation forms, routing, and CRM follow-up working together</p>
             </Link>
           </div>

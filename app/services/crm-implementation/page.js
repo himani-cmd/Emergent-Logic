@@ -341,8 +341,8 @@ export default function CRMImplementation() {
               <p className="font-medium text-violet-600">Property Management Lead Follow-Up</p>
               <p className="text-gray-600 text-sm">A vertical-specific example of how CRM routing protects new revenue opportunities.</p>
             </Link>
-            <Link href="/blog/immigration-consultation-follow-up-crm" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-violet-600">Immigration Consultation Follow-Up</p>
+            <Link href="/blog/crm-automation-for-immigration-consultants" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">CRM Automation for Immigration Consultants</p>
               <p className="text-gray-600 text-sm">A vertical-specific example of how CRM intake protects consultation opportunities.</p>
             </Link>
           </div>
