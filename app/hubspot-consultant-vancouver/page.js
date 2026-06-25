@@ -62,14 +62,16 @@ export default function HubspotConsultantVancouver() {
             { label: 'Services', href: '/services' },
             { label: 'HubSpot Consultant Vancouver', href: '/hubspot-consultant-vancouver' },
           ]} />
-          <div className="flex items-center gap-2 text-violet-300 mb-4"><MapPin className="w-5 h-5" /><span>Vancouver & Metro Vancouver</span></div>
-          <h1 className="max-w-4xl break-words text-4xl font-bold leading-tight text-white mb-4 md:text-5xl lg:text-5xl xl:text-6xl">Vancouver's HubSpot CRM & Marketing Automation Expert</h1>
-          <p className="max-w-4xl text-lg leading-relaxed text-white/75 mb-8 md:text-xl">
+          <div className="flex items-center gap-2 text-violet-300 mb-4"><MapPin className="w-5 h-5 flex-shrink-0" /><span>Vancouver & Metro Vancouver</span></div>
+          <h1 className="max-w-4xl break-words text-4xl font-bold leading-tight tracking-tight text-white mb-4 md:text-5xl lg:text-6xl">
+            HubSpot CRM consulting for Vancouver teams
+          </h1>
+          <p className="max-w-3xl text-lg leading-relaxed text-white/75 mb-8 md:text-xl">
             Looking for a HubSpot consultant in Vancouver? Emergent Logic is Metro Vancouver's go-to HubSpot implementation partner. We set up your CRM, build your marketing automation, and connect everything into a revenue system that works.
           </p>
           <div className="flex max-w-3xl flex-col gap-4 sm:flex-row sm:flex-wrap">
             <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto"><Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
-            <Link href="/marketing-automation" className="w-full sm:w-auto"><Button size="lg" variant="outline" className="w-full !border-white/40 !bg-transparent !text-white hover:!bg-white/10 hover:!text-white sm:w-auto">Marketing Automation Services</Button></Link>
+            <Link href="/marketing-automation" className="w-full sm:w-auto"><Button size="lg" className="w-full border border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white sm:w-auto">Marketing Automation Services</Button></Link>
           </div>
         </div>
       </section>
