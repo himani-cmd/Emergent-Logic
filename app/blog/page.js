@@ -28,6 +28,14 @@ const posts = [
     featured: true,
   },
   {
+    slug: 'hubspot-salesforce-sync-cleanup',
+    title: 'HubSpot Salesforce Sync Cleanup: Why Data Flow Breaks',
+    excerpt: 'HubSpot Salesforce sync problems usually come from lifecycle stages, ownership, duplicates, source fields, and workflow logic. Learn what to clean first.',
+    category: 'CRM Integration',
+    readTime: '9 min read',
+    featured: true,
+  },
+  {
     slug: 'real-estate-lead-follow-up-crm',
     title: 'Real Estate Lead Follow-Up: Why CRM Routing Matters',
     excerpt: 'A practical CRM guide for real estate teams: buyer and seller inquiry routing, follow-up tasks, long-cycle nurture, and lead ownership.',
