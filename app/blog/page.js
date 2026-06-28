@@ -20,6 +20,14 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'speed-to-lead-crm-follow-up-system',
+    title: 'Speed to Lead: Why Fast Follow-Up Needs a CRM System',
+    excerpt: 'Fast lead response needs more than good intentions. Learn how CRM ownership, routing, tasks, and visibility protect warm inquiries.',
+    category: 'Lead Capture',
+    readTime: '9 min read',
+    featured: true,
+  },
+  {
     slug: 'salesforce-admin-vs-consultant-small-business',
     title: 'Salesforce Admin vs Consultant: What Should a Small Business Hire First?',
     excerpt: 'A practical Canada and US guide to choosing between Salesforce admin support, consulting, cleanup, and managed admin services.',
