@@ -20,6 +20,14 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'salesforce-admin-vs-consultant-small-business',
+    title: 'Salesforce Admin vs Consultant: What Should a Small Business Hire First?',
+    excerpt: 'A practical Canada and US guide to choosing between Salesforce admin support, consulting, cleanup, and managed admin services.',
+    category: 'Salesforce',
+    readTime: '9 min read',
+    featured: true,
+  },
+  {
     slug: 'real-estate-lead-follow-up-crm',
     title: 'Real Estate Lead Follow-Up: Why CRM Routing Matters',
     excerpt: 'A practical CRM guide for real estate teams: buyer and seller inquiry routing, follow-up tasks, long-cycle nurture, and lead ownership.',
