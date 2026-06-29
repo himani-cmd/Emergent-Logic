@@ -35,6 +35,7 @@ const urls = [
   ['/blog/property-management-lead-follow-up-crm', 'monthly', '0.8'],
   ['/services/crm-implementation', 'monthly', '0.9'],
   ['/services/hubspot-consulting', 'monthly', '0.9'],
+  ['/hubspot-workflow-cleanup', 'monthly', '0.9'],
   ['/services/crm-cleanup', 'monthly', '0.9'],
   ['/services/marketing-automation', 'monthly', '0.8'],
   ['/services/lead-capture-websites', 'monthly', '0.8'],
