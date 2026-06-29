@@ -157,6 +157,16 @@ const jsonLd = {
               provider: { '@id': organizationId },
             },
           },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'AI Automation Consulting',
+              url: 'https://www.emergent-logic.ca/services/ai-automation-consulting',
+              serviceType: 'AI workflow automation, n8n automation, and CRM automation consulting',
+              provider: { '@id': organizationId },
+            },
+          },
         ],
       },
     },

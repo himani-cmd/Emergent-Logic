@@ -9,6 +9,7 @@ const servicesLinks = [
   { name: 'Marketing Automation', href: '/services/marketing-automation' },
   { name: 'Lead Capture Websites', href: '/services/lead-capture-websites' },
   { name: 'AI Chatbot Automation', href: '/services/ai-chatbot-automation' },
+  { name: 'AI Automation Consulting', href: '/services/ai-automation-consulting' },
   { name: 'CRM Integration', href: '/services/crm-integration' },
   { name: 'Salesforce Consulting', href: '/services/salesforce-consulting' },
 ];

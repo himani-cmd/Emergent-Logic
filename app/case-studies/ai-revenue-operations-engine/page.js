@@ -200,7 +200,7 @@ export default function AIRevenueOperationsEngineCaseStudy() {
               </p>
 
               <p>
-                That is the principle behind our <Link href="/services/crm-implementation" className="text-blue-700 hover:underline">CRM implementation</Link>, <Link href="/services/crm-cleanup" className="text-blue-700 hover:underline">CRM cleanup</Link>, <Link href="/services/marketing-automation" className="text-blue-700 hover:underline">marketing automation</Link>, and <Link href="/services/crm-integration" className="text-blue-700 hover:underline">CRM integration</Link> work.
+                That is the principle behind our <Link href="/services/ai-automation-consulting" className="text-blue-700 hover:underline">AI automation consulting</Link>, <Link href="/services/crm-implementation" className="text-blue-700 hover:underline">CRM implementation</Link>, <Link href="/services/crm-cleanup" className="text-blue-700 hover:underline">CRM cleanup</Link>, <Link href="/services/marketing-automation" className="text-blue-700 hover:underline">marketing automation</Link>, and <Link href="/services/crm-integration" className="text-blue-700 hover:underline">CRM integration</Link> work.
               </p>
             </div>
 
@@ -211,8 +211,13 @@ export default function AIRevenueOperationsEngineCaseStudy() {
                 We can start with one workflow: website leads into CRM, CRM cleanup, guarded outbound drafts, follow-up automation, or a content operations queue.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
-                <Link href="/contact">
+                <Link href="/services/ai-automation-consulting">
                   <Button size="lg" className="bg-white text-blue-950 hover:bg-blue-100">
+                    View AI Automation Service <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </Link>
+                <Link href="/contact">
+                  <Button size="lg" className="bg-transparent border border-white/40 text-white hover:bg-white/10">
                     Talk to Us <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>
