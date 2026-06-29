@@ -10,7 +10,7 @@ import {
   ArrowRight, CheckCircle, XCircle, Clock, Award, MapPin,
   ChevronDown, Star, Database, Zap, Link2, Wrench,
   AlertTriangle, Search, Settings, TrendingUp, Sparkles,
-  ShieldCheck, DollarSign, Users, Rocket, BarChart3, Globe
+  ShieldCheck, DollarSign, Users, Rocket, BarChart3, Globe, Bot
 } from 'lucide-react';
 
 // ─────────────────────────────────────────────
@@ -320,7 +320,7 @@ function ServicesSection() {
         </div>
 
         {/* Supporting Service — Lead Capture Websites */}
-        <div className="max-w-4xl mx-auto mt-12">
+        <div className="max-w-4xl mx-auto mt-12 space-y-5">
           <Link href="/services/lead-capture-websites" className="block">
             <div className="bg-gray-50 border-2 border-dashed border-gray-200 rounded-2xl p-8 hover:border-violet-300 hover:bg-violet-50/50 transition-all cursor-pointer group">
               <div className="flex flex-col md:flex-row md:items-center gap-6">
@@ -337,6 +337,30 @@ function ServicesSection() {
                 </div>
                 <div className="flex-shrink-0 text-right">
                   <span className="text-violet-600 font-semibold block">From $2,500</span>
+                  <span className="text-violet-600 font-medium inline-flex items-center text-sm mt-1">
+                    Learn more <ArrowRight className="w-4 h-4 ml-1" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </Link>
+
+          <Link href="/services/ai-chatbot-automation" className="block">
+            <div className="bg-cyan-50 border-2 border-dashed border-cyan-200 rounded-2xl p-8 hover:border-cyan-400 hover:bg-cyan-50 transition-all cursor-pointer group">
+              <div className="flex flex-col md:flex-row md:items-center gap-6">
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-600 to-blue-700 flex items-center justify-center flex-shrink-0 group-hover:from-violet-500 group-hover:to-indigo-600 transition-all">
+                  <Bot className="w-7 h-7 text-white" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-1">
+                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-violet-700 transition-colors">AI Chatbot Automation</h3>
+                    <Badge variant="secondary" className="text-xs">Supporting Service</Badge>
+                  </div>
+                  <p className="text-gray-600 mb-2">AI chatbots that qualify website visitors, capture clean lead data, summarize conversations, and route inquiries into your CRM.</p>
+                  <p className="text-gray-500 text-sm">For businesses that want AI on the website without creating another disconnected inbox. CRM-connected routing, owner assignment, follow-up tasks, and guardrails included.</p>
+                </div>
+                <div className="flex-shrink-0 text-right">
+                  <span className="text-violet-600 font-semibold block">From $1,500</span>
                   <span className="text-violet-600 font-medium inline-flex items-center text-sm mt-1">
                     Learn more <ArrowRight className="w-4 h-4 ml-1" />
                   </span>
