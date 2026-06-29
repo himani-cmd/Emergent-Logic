@@ -1,0 +1,21 @@
+priority,company,market,likely_crm_pain,target_role_to_research,outreach_angle,status,blocked
+High,Clio,Legal tech / SaaS,"Sales + customer lifecycle complexity; lead routing; CRM reporting","RevOps; Sales Ops; Marketing Ops","CRM hygiene and lifecycle visibility before automation scale","Research named contact",No
+High,Trulioo,Identity verification / SaaS,"Enterprise lead routing; sales handoff; compliance-heavy process","Revenue Operations; Sales Operations","Clean source tracking and enterprise pipeline handoff","Research named contact",No
+High,Thinkific,Creator platform / SaaS,"Trial/demo funnel; nurture; lifecycle segmentation","Lifecycle Marketing; RevOps; CRM Ops","Lead capture to CRM and lifecycle automation cleanup","Research named contact",No
+High,Later,Social media SaaS,"High-volume inbound; lifecycle nurture; product-led + sales-led handoff","Marketing Ops; RevOps","HubSpot/Salesforce cleanup before more campaigns","Research named contact",No
+High,Jane App,Health practice platform,"Multi-segment sales funnel; onboarding; partner/referral flow","Revenue Operations; Sales Ops","Lead routing and follow-up visibility across segments","Research named contact",No
+High,Jobber,Field service SaaS,"Multiple inbound sources; SMB pipeline; customer handoff","RevOps; Sales Operations","CRM cleanup and attribution consistency","Research named contact",No
+High,AlayaCare,Healthcare SaaS,"Enterprise sales cycle; implementation handoff; account data quality","Sales Ops; RevOps; Customer Ops","Salesforce/CRM admin support and reporting trust","Research named contact",No
+High,Plooto,Fintech / payments,"Partner/inbound lead routing; sales lifecycle; reporting","RevOps; Marketing Ops","CRM follow-up system for partner and inbound leads","Research named contact",No
+High,Float Financial,Fintech / SaaS,"Fast-growth funnel; sales/customer lifecycle; routing","RevOps; Growth Ops","CRM foundation before scaling outbound/inbound automation","Research named contact",No
+Medium,Unbounce,Marketing tech,"Campaign-to-CRM handoff; attribution; lifecycle nurture","Marketing Ops; RevOps","Lead source hygiene and automation cleanup","Research named contact",No
+Medium,Bench Accounting,Accounting services / tech-enabled,"High-volume inbound; lead qualification; advisor assignment","Sales Ops; Growth Ops","Inquiry routing and owner assignment","Research named contact",No
+Medium,TouchBistro,Restaurant SaaS,"Demo requests; SDR routing; multi-channel attribution","Sales Ops; RevOps","Lead routing and CRM source cleanup","Research named contact",No
+Medium,Loopio,RFP software / SaaS,"Enterprise funnel; sales/CS handoff; account data quality","RevOps; Sales Ops","Salesforce/CRM cleanup and reporting trust","Research named contact",No
+Medium,Certn,Screening / SaaS,"B2B inbound; partner channels; sales handoff","RevOps; Growth Ops","CRM ownership and partner lead follow-up","Research named contact",No
+Medium,MaintainX,Operations SaaS,"PLG + sales-led motion; CRM complexity","RevOps; Sales Ops","Lifecycle stage cleanup and routing visibility","Research named contact",No
+Medium,Boast AI,Tax credit / SaaS-enabled services,"Consultation intake; lifecycle tracking; follow-up process","Sales Ops; Marketing Ops","Inquiry-to-CRM follow-up and pipeline visibility","Research named contact",No
+Medium,Wagepoint,Payroll SaaS,"Partner/inbound leads; sales handoff; customer lifecycle","RevOps; Partner Ops","Partner lead routing and follow-up ownership","Research named contact",No
+Medium,Ownr,Business formation / SaaS,"Lead capture; partner/referral flow; lifecycle nurturing","Growth Ops; Lifecycle Marketing","Website lead capture to CRM nurture","Research named contact",No
+Medium,Collage HR,HR software,"Demo funnel; lifecycle campaigns; sales handoff","Sales Ops; Marketing Ops","CRM cleanup before marketing automation","Research named contact",No
+Medium,Coconut Software,Appointment scheduling SaaS,"Enterprise inquiry routing; sales workflow","RevOps; Sales Ops","Lead routing and CRM ownership clarity","Research named contact",No
