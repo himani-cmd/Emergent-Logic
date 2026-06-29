@@ -234,6 +234,49 @@ export default function CaseStudiesPage() {
               </div>
             </div>
           </Card>
+
+          <Card className="border-0 shadow-xl overflow-hidden mt-8">
+            <div className="grid lg:grid-cols-3">
+              <div className="lg:col-span-2 p-8">
+                <Badge className="mb-4 bg-emerald-100 text-emerald-800">Representative Implementation</Badge>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                  Immigration Consultation Intake Automation
+                </h2>
+                <p className="text-gray-600 mb-6">
+                  A vertical-specific case study showing how consultation requests from forms, calls, WhatsApp, email, and referrals can move into one CRM intake workflow with ownership and follow-up visibility.
+                </p>
+                <div className="space-y-3 mb-6">
+                  {[
+                    'Map forms, phone, WhatsApp, email, referrals, and social messages',
+                    'Separate new consultations from active client document requests',
+                    'Track service interest, source, owner, stage, and next follow-up',
+                    'Use automation for routing and reminders, not legal advice',
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-blue-700 flex-shrink-0 mt-0.5" />
+                      <p className="text-gray-700">{item}</p>
+                    </div>
+                  ))}
+                </div>
+                <Link href="/case-studies/immigration-consultation-intake-automation">
+                  <Button className="bg-blue-700 hover:bg-blue-800">
+                    Read Case Study <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </Link>
+              </div>
+              <div className="bg-gradient-to-br from-emerald-800 to-slate-950 p-8 text-white flex flex-col justify-center">
+                <p className="text-sm uppercase tracking-widest text-emerald-200 mb-3">Best for</p>
+                <h3 className="text-2xl font-bold mb-6">Immigration firms managing consultation inquiries across too many channels</h3>
+                <div className="space-y-3 text-white/80">
+                  <p>Consultation intake</p>
+                  <p>CRM follow-up</p>
+                  <p>WhatsApp and email routing</p>
+                  <p>Booked consultation tracking</p>
+                  <p>Lead source reporting</p>
+                </div>
+              </div>
+            </div>
+          </Card>
         </div>
       </section>
 
