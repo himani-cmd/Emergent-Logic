@@ -42,6 +42,7 @@ const urls = [
   ['/services/ai-automation-consulting', 'monthly', '0.8'],
   ['/services/crm-integration', 'monthly', '0.8'],
   ['/services/salesforce-consulting', 'monthly', '0.9'],
+  ['/salesforce-admin-support-canada-us', 'monthly', '0.9'],
   ['/crm-implementation', 'monthly', '0.7'],
   ['/marketing-automation', 'monthly', '0.7'],
   ['/web-development', 'monthly', '0.7'],

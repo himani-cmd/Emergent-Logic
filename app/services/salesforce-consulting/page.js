@@ -323,6 +323,10 @@ export default function SalesforceConsulting() {
               <p className="font-medium text-violet-600">Salesforce Admin Support</p>
               <p className="text-gray-600 text-sm">What small businesses should outsource first</p>
             </Link>
+            <Link href="/salesforce-admin-support-canada-us" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Remote Salesforce Admin Support</p>
+              <p className="text-gray-600 text-sm">Ongoing admin, cleanup, reports, Flow updates, and support for Canada and the US</p>
+            </Link>
             <Link href="/case-studies/salesforce-cleanup-before-automation" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Salesforce Cleanup Case Study</p>
               <p className="text-gray-600 text-sm">A cleanup-first implementation pattern before building more Flow automation</p>
