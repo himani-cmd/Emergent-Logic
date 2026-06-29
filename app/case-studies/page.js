@@ -277,6 +277,49 @@ export default function CaseStudiesPage() {
               </div>
             </div>
           </Card>
+
+          <Card className="border-0 shadow-xl overflow-hidden mt-8">
+            <div className="grid lg:grid-cols-3">
+              <div className="lg:col-span-2 p-8">
+                <Badge className="mb-4 bg-orange-100 text-orange-800">Representative Implementation</Badge>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                  Real Estate Lead Routing and Long-Cycle Nurture
+                </h2>
+                <p className="text-gray-600 mb-6">
+                  A vertical-specific case study showing how buyer, seller, valuation, referral, open house, and past-client leads can move through CRM ownership, follow-up tasks, and nurture views.
+                </p>
+                <div className="space-y-3 mb-6">
+                  {[
+                    'Separate buyer, seller, valuation, referral, and open house leads',
+                    'Track source, timeline, owner, segment, and next follow-up',
+                    'Route high-intent seller requests faster than low-context inquiries',
+                    'Keep long-cycle buyers and past clients visible without generic automation',
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-blue-700 flex-shrink-0 mt-0.5" />
+                      <p className="text-gray-700">{item}</p>
+                    </div>
+                  ))}
+                </div>
+                <Link href="/case-studies/real-estate-lead-routing-long-cycle-nurture">
+                  <Button className="bg-blue-700 hover:bg-blue-800">
+                    Read Case Study <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </Link>
+              </div>
+              <div className="bg-gradient-to-br from-orange-800 to-slate-950 p-8 text-white flex flex-col justify-center">
+                <p className="text-sm uppercase tracking-widest text-orange-200 mb-3">Best for</p>
+                <h3 className="text-2xl font-bold mb-6">Real estate teams with warm leads spread across forms, portals, referrals, and inboxes</h3>
+                <div className="space-y-3 text-white/80">
+                  <p>Buyer and seller routing</p>
+                  <p>Valuation request follow-up</p>
+                  <p>Referral tracking</p>
+                  <p>Long-cycle nurture views</p>
+                  <p>CRM source reporting</p>
+                </div>
+              </div>
+            </div>
+          </Card>
         </div>
       </section>
 

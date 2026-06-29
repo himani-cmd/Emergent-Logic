@@ -13,6 +13,7 @@ const urls = [
   ['/case-studies/website-leads-to-crm-follow-up-system', 'monthly', '0.8'],
   ['/case-studies/salesforce-cleanup-before-automation', 'monthly', '0.8'],
   ['/case-studies/immigration-consultation-intake-automation', 'monthly', '0.8'],
+  ['/case-studies/real-estate-lead-routing-long-cycle-nurture', 'monthly', '0.8'],
   ['/ai-crm-audit', 'monthly', '0.8'],
   ['/lead-follow-up-audit', 'monthly', '0.8'],
   ['/blog', 'weekly', '0.9'],

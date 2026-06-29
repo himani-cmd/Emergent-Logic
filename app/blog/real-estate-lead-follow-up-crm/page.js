@@ -139,6 +139,9 @@ export default function RealEstateLeadFollowUpCrm() {
               <p>
                 This is where <Link href="/services/crm-implementation" className="text-orange-700 hover:underline">CRM implementation</Link>, <Link href="/services/crm-cleanup" className="text-orange-700 hover:underline">CRM cleanup</Link>, and <Link href="/services/lead-capture-websites" className="text-orange-700 hover:underline">lead capture websites</Link> should work together. The website captures the inquiry. The CRM makes sure someone owns the next step.
               </p>
+              <p>
+                We also documented this as a <Link href="/case-studies/real-estate-lead-routing-long-cycle-nurture" className="text-orange-700 hover:underline">representative real estate lead routing case study</Link>, showing how buyer, seller, valuation, referral, and long-cycle leads can move through CRM ownership and follow-up views.
+              </p>
 
               <h2>A Simple Cleanup Sequence</h2>
               <p>

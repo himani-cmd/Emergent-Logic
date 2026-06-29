@@ -345,6 +345,10 @@ export default function CRMImplementation() {
               <p className="font-medium text-violet-600">Real Estate Lead Follow-Up</p>
               <p className="text-gray-600 text-sm">How buyer and seller inquiries need clear CRM routing and ownership.</p>
             </Link>
+            <Link href="/case-studies/real-estate-lead-routing-long-cycle-nurture" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Real Estate Routing Case Study</p>
+              <p className="text-gray-600 text-sm">A practical pattern for buyer, seller, valuation, referral, and long-cycle nurture workflows.</p>
+            </Link>
             <Link href="/blog/crm-automation-for-immigration-consultants" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM Automation for Immigration Consultants</p>
               <p className="text-gray-600 text-sm">A vertical-specific example of how CRM intake protects consultation opportunities.</p>

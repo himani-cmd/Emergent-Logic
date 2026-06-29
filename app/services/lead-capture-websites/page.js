@@ -274,6 +274,10 @@ export default function LeadCaptureWebsites() {
               <p className="font-medium text-violet-600">Real Estate Follow-Up</p>
               <p className="text-gray-600 text-sm">How buyer and seller inquiries should move from website lead to CRM next step</p>
             </Link>
+            <Link href="/case-studies/real-estate-lead-routing-long-cycle-nurture" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Real Estate Routing Case Study</p>
+              <p className="text-gray-600 text-sm">How valuation, buyer, seller, referral, and open house leads can be routed and nurtured</p>
+            </Link>
             <Link href="/blog/crm-automation-for-immigration-consultants" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Immigration CRM Automation</p>
               <p className="text-gray-600 text-sm">A practical example of consultation forms, routing, and CRM follow-up working together</p>
