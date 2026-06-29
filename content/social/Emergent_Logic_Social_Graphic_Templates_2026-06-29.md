@@ -14,7 +14,10 @@ Use: LinkedIn company page, Himani profile, Instagram feed, carousel covers, and
 
 ## Brand Rules
 
-- Keep the hex-node mark visible.
+- Use the navy EL circle mark as the primary brand identifier.
+- Keep the palette restrained: navy, white, light gray, muted blue, and small indigo accents only.
+- Avoid loud gradients, bright SaaS colors, heavy glow effects, or generic "AI startup" styling.
+- Keep the layout spacious and premium; the graphic should feel like CRM consulting, not a social media agency template.
 - Use short headlines with one idea only.
 - Avoid stuffing a full post into the graphic.
 - Graphic headline should create curiosity; caption should explain.
