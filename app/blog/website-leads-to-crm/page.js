@@ -32,6 +32,7 @@ const routingGaps = [
 ];
 
 const relatedPosts = [
+  { title: 'Why HubSpot Workflows Break', href: '/blog/why-hubspot-workflows-break' },
   { title: 'Marketing Automation Needs CRM Cleanup First', href: '/blog/marketing-automation-needs-crm-cleanup' },
   { title: 'Campaign Attribution in Your CRM', href: '/blog/campaign-attribution-crm-marketing-roi' },
 ];

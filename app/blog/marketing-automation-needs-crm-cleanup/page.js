@@ -29,6 +29,7 @@ export const metadata = {
 };
 
 const relatedPosts = [
+  { title: 'Why HubSpot Workflows Break', href: '/blog/why-hubspot-workflows-break' },
   { title: 'How to Build a Lead Scoring Model in Your CRM', href: '/blog/lead-scoring-model-crm-guide' },
   { title: 'Email Nurture Sequences That Convert', href: '/blog/email-nurture-sequences-crm-automation' },
 ];

@@ -231,6 +231,7 @@ export default function HubSpotSalesforceSyncCleanup() {
               <h3 className="text-xl font-bold mb-6">Related Articles</h3>
               <div className="grid md:grid-cols-3 gap-4">
                 {[
+                  { title: 'Why HubSpot Workflows Break', href: '/blog/why-hubspot-workflows-break' },
                   { title: 'Why Marketing Automation Fails Without CRM Cleanup First', href: '/blog/marketing-automation-needs-crm-cleanup' },
                   { title: 'Salesforce Admin vs Consultant', href: '/blog/salesforce-admin-vs-consultant-small-business' },
                   { title: 'Website Leads Need CRM Routing', href: '/blog/website-leads-to-crm' },
