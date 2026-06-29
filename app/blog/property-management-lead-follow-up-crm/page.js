@@ -133,6 +133,10 @@ export default function PropertyManagementLeadFollowUpCrm() {
               </p>
 
               <p>
+                We also documented this as a <Link href="/case-studies/property-management-rental-inquiry-routing" className="text-blue-700 hover:underline">representative property management rental inquiry routing case study</Link>, showing how owner inquiries, rental evaluations, referrals, tenant messages, and proposal follow-up can be separated into cleaner CRM views.
+              </p>
+
+              <p>
                 If someone fills a rental evaluation form, the CRM should show where it came from, who owns it, whether the owner has been contacted, what the next step is, and whether the opportunity is still active.
               </p>
 

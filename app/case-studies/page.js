@@ -320,6 +320,49 @@ export default function CaseStudiesPage() {
               </div>
             </div>
           </Card>
+
+          <Card className="border-0 shadow-xl overflow-hidden mt-8">
+            <div className="grid lg:grid-cols-3">
+              <div className="lg:col-span-2 p-8">
+                <Badge className="mb-4 bg-blue-100 text-blue-800">Representative Implementation</Badge>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                  Property Management Rental Inquiry Routing
+                </h2>
+                <p className="text-gray-600 mb-6">
+                  A vertical-specific case study showing how owner inquiries, rental evaluations, referrals, tenant questions, and website leads can be separated into clean CRM routing and follow-up views.
+                </p>
+                <div className="space-y-3 mb-6">
+                  {[
+                    'Separate owner leads from tenant support, vendors, and general inquiries',
+                    'Track source, property context, owner, stage, and next follow-up',
+                    'Route rental evaluation and referral inquiries faster than low-context messages',
+                    'Keep proposal follow-up and stale owner opportunities visible',
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-blue-700 flex-shrink-0 mt-0.5" />
+                      <p className="text-gray-700">{item}</p>
+                    </div>
+                  ))}
+                </div>
+                <Link href="/case-studies/property-management-rental-inquiry-routing">
+                  <Button className="bg-blue-700 hover:bg-blue-800">
+                    Read Case Study <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </Link>
+              </div>
+              <div className="bg-gradient-to-br from-blue-800 to-slate-950 p-8 text-white flex flex-col justify-center">
+                <p className="text-sm uppercase tracking-widest text-blue-200 mb-3">Best for</p>
+                <h3 className="text-2xl font-bold mb-6">Property management teams with owner leads spread across forms, referrals, calls, and inboxes</h3>
+                <div className="space-y-3 text-white/80">
+                  <p>Owner inquiry routing</p>
+                  <p>Rental evaluation follow-up</p>
+                  <p>Referral tracking</p>
+                  <p>CRM source reporting</p>
+                  <p>Proposal follow-up visibility</p>
+                </div>
+              </div>
+            </div>
+          </Card>
         </div>
       </section>
 
