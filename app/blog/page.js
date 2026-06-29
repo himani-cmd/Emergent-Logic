@@ -20,6 +20,14 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'generative-engine-optimization-b2b-service-businesses',
+    title: 'Generative Engine Optimization for B2B Service Businesses',
+    excerpt: 'A practical GEO guide for B2B service firms: structure expertise, service pages, FAQs, proof, links, and citations so AI search can understand you.',
+    category: 'AEO / GEO',
+    readTime: '10 min read',
+    featured: true,
+  },
+  {
     slug: 'speed-to-lead-crm-follow-up-system',
     title: 'Speed to Lead: Why Fast Follow-Up Needs a CRM System',
     excerpt: 'Fast lead response needs more than good intentions. Learn how CRM ownership, routing, tasks, and visibility protect warm inquiries.',
