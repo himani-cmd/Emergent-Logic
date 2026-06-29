@@ -191,6 +191,49 @@ export default function CaseStudiesPage() {
               </div>
             </div>
           </Card>
+
+          <Card className="border-0 shadow-xl overflow-hidden mt-8">
+            <div className="grid lg:grid-cols-3">
+              <div className="lg:col-span-2 p-8">
+                <Badge className="mb-4 bg-sky-100 text-sky-800">Representative Implementation</Badge>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                  Salesforce Cleanup Before Automation
+                </h2>
+                <p className="text-gray-600 mb-6">
+                  A cleanup-first Salesforce case study showing how we would audit objects, fields, ownership, reports, permissions, and existing automation before building more Flow logic.
+                </p>
+                <div className="space-y-3 mb-6">
+                  {[
+                    'Audit objects, fields, duplicates, ownership, and report definitions first',
+                    'Map existing Flows, legacy rules, validation rules, and integrations',
+                    'Clean revenue-facing records and values before building new automation',
+                    'Use sandbox-first changes and documented handoff where practical',
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-blue-700 flex-shrink-0 mt-0.5" />
+                      <p className="text-gray-700">{item}</p>
+                    </div>
+                  ))}
+                </div>
+                <Link href="/case-studies/salesforce-cleanup-before-automation">
+                  <Button className="bg-blue-700 hover:bg-blue-800">
+                    Read Case Study <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </Link>
+              </div>
+              <div className="bg-gradient-to-br from-sky-800 to-slate-950 p-8 text-white flex flex-col justify-center">
+                <p className="text-sm uppercase tracking-widest text-sky-200 mb-3">Best for</p>
+                <h3 className="text-2xl font-bold mb-6">Teams asking for Salesforce automation on top of a messy org</h3>
+                <div className="space-y-3 text-white/80">
+                  <p>Salesforce cleanup</p>
+                  <p>Flow readiness</p>
+                  <p>Ownership and routing cleanup</p>
+                  <p>Reporting foundation fixes</p>
+                  <p>Admin handoff documentation</p>
+                </div>
+              </div>
+            </div>
+          </Card>
         </div>
       </section>
 
