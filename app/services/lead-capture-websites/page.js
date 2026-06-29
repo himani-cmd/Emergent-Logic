@@ -249,7 +249,7 @@ export default function LeadCaptureWebsites() {
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Related Services and Resources</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             <Link href="/services/crm-implementation" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM Implementation</p>
               <p className="text-gray-600 text-sm">The system your website should feed</p>
@@ -261,6 +261,10 @@ export default function LeadCaptureWebsites() {
             <Link href="/blog/website-leads-to-crm" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Website Leads to CRM</p>
               <p className="text-gray-600 text-sm">Why routing and follow-up matter after the form submits</p>
+            </Link>
+            <Link href="/case-studies/website-leads-to-crm-follow-up-system" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Website Leads Case Study</p>
+              <p className="text-gray-600 text-sm">A practical implementation pattern for form capture, CRM routing, and follow-up</p>
             </Link>
             <Link href="/blog/property-management-lead-follow-up-crm" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Property Management Follow-Up</p>

@@ -148,6 +148,49 @@ export default function CaseStudiesPage() {
               </div>
             </div>
           </Card>
+
+          <Card className="border-0 shadow-xl overflow-hidden mt-8">
+            <div className="grid lg:grid-cols-3">
+              <div className="lg:col-span-2 p-8">
+                <Badge className="mb-4 bg-orange-100 text-orange-800">Representative Implementation</Badge>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                  Website Leads to CRM Follow-Up System
+                </h2>
+                <p className="text-gray-600 mb-6">
+                  A practical case study showing how a website inquiry should move into CRM with source tracking, owner assignment, follow-up tasks, and reporting instead of disappearing in a shared inbox.
+                </p>
+                <div className="space-y-3 mb-6">
+                  {[
+                    'Capture inquiry context beyond name, email, and phone',
+                    'Create or update CRM records with source and campaign data',
+                    'Assign ownership and next follow-up automatically',
+                    'Track whether the lead was contacted, qualified, or still waiting',
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-blue-700 flex-shrink-0 mt-0.5" />
+                      <p className="text-gray-700">{item}</p>
+                    </div>
+                  ))}
+                </div>
+                <Link href="/case-studies/website-leads-to-crm-follow-up-system">
+                  <Button className="bg-blue-700 hover:bg-blue-800">
+                    Read Case Study <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </Link>
+              </div>
+              <div className="bg-gradient-to-br from-orange-700 to-slate-950 p-8 text-white flex flex-col justify-center">
+                <p className="text-sm uppercase tracking-widest text-orange-200 mb-3">Best for</p>
+                <h3 className="text-2xl font-bold mb-6">Businesses getting inquiries but losing momentum after the form</h3>
+                <div className="space-y-3 text-white/80">
+                  <p>Lead capture websites</p>
+                  <p>Website form to CRM routing</p>
+                  <p>Speed-to-lead workflows</p>
+                  <p>Follow-up task automation</p>
+                  <p>Source and response reporting</p>
+                </div>
+              </div>
+            </div>
+          </Card>
         </div>
       </section>
 
