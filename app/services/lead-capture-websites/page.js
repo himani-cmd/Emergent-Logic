@@ -262,6 +262,10 @@ export default function LeadCaptureWebsites() {
               <p className="font-medium text-violet-600">Website Leads to CRM</p>
               <p className="text-gray-600 text-sm">Why routing and follow-up matter after the form submits</p>
             </Link>
+            <Link href="/blog/ai-chatbot-lead-qualification-crm" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">AI Chatbot Lead Qualification</p>
+              <p className="text-gray-600 text-sm">Why chat conversations need CRM routing, ownership, and follow-up</p>
+            </Link>
             <Link href="/case-studies/website-leads-to-crm-follow-up-system" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Website Leads Case Study</p>
               <p className="text-gray-600 text-sm">A practical implementation pattern for form capture, CRM routing, and follow-up</p>

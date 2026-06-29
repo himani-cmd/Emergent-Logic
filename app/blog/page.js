@@ -44,6 +44,14 @@ const posts = [
     featured: true,
   },
   {
+    slug: 'ai-chatbot-lead-qualification-crm',
+    title: 'AI Chatbots for Lead Qualification Need CRM Integration',
+    excerpt: 'AI chatbots can qualify visitors, but only if conversations become clean CRM records with ownership, routing, follow-up, and reporting.',
+    category: 'AI Automation',
+    readTime: '8 min read',
+    featured: true,
+  },
+  {
     slug: 'salesforce-admin-vs-consultant-small-business',
     title: 'Salesforce Admin vs Consultant: What Should a Small Business Hire First?',
     excerpt: 'A practical Canada and US guide to choosing between Salesforce admin support, consulting, cleanup, and managed admin services.',

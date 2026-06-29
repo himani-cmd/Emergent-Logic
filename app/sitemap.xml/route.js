@@ -20,6 +20,7 @@ const urls = [
   ['/blog/why-hubspot-workflows-break', 'monthly', '0.8'],
   ['/blog/generative-engine-optimization-b2b-service-businesses', 'monthly', '0.8'],
   ['/blog/speed-to-lead-crm-follow-up-system', 'monthly', '0.8'],
+  ['/blog/ai-chatbot-lead-qualification-crm', 'monthly', '0.8'],
   ['/blog/salesforce-admin-vs-consultant-small-business', 'monthly', '0.8'],
   ['/blog/hubspot-salesforce-sync-cleanup', 'monthly', '0.8'],
   ['/blog/real-estate-lead-follow-up-crm', 'monthly', '0.8'],
