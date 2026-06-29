@@ -1,0 +1,71 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Emergent Logic lead leak square social template</title>
+  <desc id="desc">A reusable square social media graphic about lead follow-up leaks.</desc>
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="980" y2="1040" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="0.48" stop-color="#312E81"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="white" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <rect width="1080" height="1080" fill="url(#grid)"/>
+  <circle cx="884" cy="142" r="260" fill="#8B5CF6" opacity="0.14"/>
+  <circle cx="116" cy="956" r="310" fill="#22D3EE" opacity="0.1"/>
+
+  <g transform="translate(72 72)">
+    <circle cx="24" cy="24" r="8" fill="#818CF8"/>
+    <circle cx="66" cy="24" r="8" fill="#818CF8"/>
+    <circle cx="45" cy="60" r="8" fill="#818CF8"/>
+    <circle cx="24" cy="96" r="8" fill="#818CF8"/>
+    <circle cx="66" cy="96" r="8" fill="#818CF8"/>
+    <circle cx="45" cy="132" r="8" fill="#818CF8"/>
+    <path d="M24 24L66 24L45 60L24 24ZM45 60L24 96L66 96L45 60ZM24 96L45 132L66 96" stroke="#C7D2FE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="112" y="49" fill="#E0E7FF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="0.06em">EMERGENT LOGIC</text>
+    <text x="112" y="88" fill="#A5B4FC" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" letter-spacing="0.08em">CRM-FIRST REVENUE SYSTEMS</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="72" y="226" width="936" height="688" rx="44" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.14"/>
+  </g>
+
+  <!-- EDITABLE TEXT: headline -->
+  <text x="116" y="342" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" letter-spacing="-0.04em">
+    <tspan x="116" dy="0">Most businesses</tspan>
+    <tspan x="116" dy="82">do not have a</tspan>
+    <tspan x="116" dy="82">lead problem.</tspan>
+  </text>
+
+  <!-- EDITABLE TEXT: subheadline -->
+  <text x="116" y="625" fill="#DDD6FE" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" letter-spacing="-0.02em">
+    <tspan x="116" dy="0">They have a follow-up system problem.</tspan>
+  </text>
+
+  <g transform="translate(112 704)">
+    <rect x="0" y="0" width="856" height="134" rx="30" fill="#020617" fill-opacity="0.38" stroke="#A5B4FC" stroke-opacity="0.28"/>
+    <path d="M54 50H268C295 50 305 84 282 98L221 135" stroke="url(#accent)" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="54" cy="50" r="18" fill="#22D3EE"/>
+    <circle cx="155" cy="50" r="18" fill="#8B5CF6"/>
+    <circle cx="256" cy="50" r="18" fill="#A78BFA"/>
+    <path d="M370 38H788" stroke="#E0E7FF" stroke-opacity="0.25" stroke-width="10" stroke-linecap="round"/>
+    <path d="M370 78H684" stroke="#E0E7FF" stroke-opacity="0.18" stroke-width="10" stroke-linecap="round"/>
+    <path d="M370 118H612" stroke="#E0E7FF" stroke-opacity="0.12" stroke-width="10" stroke-linecap="round"/>
+    <path d="M234 138C238 176 274 194 308 170" stroke="#22D3EE" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 26"/>
+    <text x="370" y="109" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Form submitted. Follow-up unclear.</text>
+  </g>
+
+  <!-- EDITABLE TEXT: footer -->
+  <text x="72" y="986" fill="#C7D2FE" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Cleaner CRM. Faster follow-up.</text>
+  <text x="1008" y="986" fill="#A5B4FC" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="end">emergent-logic.ca</text>
+</svg>
