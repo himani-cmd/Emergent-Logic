@@ -32,6 +32,7 @@ const routingGaps = [
 ];
 
 const relatedPosts = [
+  { title: 'Why HubSpot Workflows Break', href: '/blog/why-hubspot-workflows-break' },
   { title: 'Marketing Automation Needs CRM Cleanup First', href: '/blog/marketing-automation-needs-crm-cleanup' },
   { title: 'Campaign Attribution in Your CRM', href: '/blog/campaign-attribution-crm-marketing-roi' },
 ];
@@ -107,6 +108,9 @@ export default function WebsiteLeadsToCrm() {
               </p>
               <p>
                 Our <Link href="/services/lead-capture-websites" className="text-orange-700 hover:underline">lead capture website service</Link> is built around this idea: the website should support the CRM, not sit beside it as a disconnected brochure.
+              </p>
+              <p>
+                We also documented this as a <Link href="/case-studies/website-leads-to-crm-follow-up-system" className="text-orange-700 hover:underline">representative website leads to CRM case study</Link>, showing how source tracking, owner assignment, follow-up tasks, and reporting fit together after a form submission.
               </p>
 
               <h2>Why Speed-to-Lead Matters</h2>

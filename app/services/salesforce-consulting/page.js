@@ -78,12 +78,12 @@ export default function SalesforceConsulting() {
       <Navbar />
 
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-blue-900 via-indigo-900 to-sky-900">
+      <section className="overflow-hidden pt-32 pb-20 bg-gradient-to-br from-blue-900 via-indigo-900 to-sky-900">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-blue-300 text-sm mb-4">
             <Link href="/" className="hover:text-white">Home</Link> / <Link href="/#services" className="hover:text-white">Services</Link> / <span className="text-white">Salesforce Consulting</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="break-words text-4xl font-bold text-white mb-6 leading-tight md:text-5xl lg:text-6xl">
             Salesforce Consultant for Canadian and US Businesses
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
@@ -91,14 +91,14 @@ export default function SalesforceConsulting() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
-              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-100 font-semibold px-8">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full bg-white text-blue-900 hover:bg-blue-100 font-semibold px-8 sm:w-auto">
                   Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
-            <Link href="/ai-crm-audit">
-              <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
+            <Link href="/ai-crm-audit" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8 sm:w-auto">
                 Try Our AI CRM Audit
               </Button>
             </Link>
@@ -322,6 +322,10 @@ export default function SalesforceConsulting() {
             <Link href="/blog/salesforce-admin-support-small-business" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Salesforce Admin Support</p>
               <p className="text-gray-600 text-sm">What small businesses should outsource first</p>
+            </Link>
+            <Link href="/case-studies/salesforce-cleanup-before-automation" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Salesforce Cleanup Case Study</p>
+              <p className="text-gray-600 text-sm">A cleanup-first implementation pattern before building more Flow automation</p>
             </Link>
             <Link href="/salesforce-consultant-surrey-bc" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Local Salesforce Consultant</p>

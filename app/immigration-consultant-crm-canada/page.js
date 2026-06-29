@@ -76,14 +76,14 @@ export default function ImmigrationConsultantCrmCanada() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
 
-      <section className="pt-32 pb-20 bg-gradient-to-br from-emerald-950 via-teal-950 to-slate-950">
+      <section className="overflow-hidden pt-32 pb-20 bg-gradient-to-br from-emerald-950 via-teal-950 to-slate-950">
         <div className="container mx-auto px-4 max-w-4xl">
           <Breadcrumbs items={[
             { label: 'Services', href: '/services/crm-implementation' },
             { label: 'CRM for Immigration Consultants', href: '/immigration-consultant-crm-canada' },
           ]} />
           <div className="text-emerald-200 text-sm mb-4">Immigration consultant CRM systems</div>
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="break-words text-4xl font-bold text-white mb-6 leading-tight md:text-5xl lg:text-6xl">
             CRM Systems for Immigration Consultants
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
@@ -91,19 +91,19 @@ export default function ImmigrationConsultantCrmCanada() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
-              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="bg-white text-emerald-950 hover:bg-emerald-100 font-semibold px-8">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full bg-white text-emerald-950 hover:bg-emerald-100 font-semibold px-8 sm:w-auto">
                   Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
-            <Link href="/contact">
-              <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
+            <Link href="/contact" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8 sm:w-auto">
                 Contact Us
               </Button>
             </Link>
-            <Link href="/lead-follow-up-audit">
-              <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
+            <Link href="/lead-follow-up-audit" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8 sm:w-auto">
                 Get a 5-Point Intake Audit
               </Button>
             </Link>
@@ -158,7 +158,8 @@ export default function ImmigrationConsultantCrmCanada() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Related resources</h2>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/blog/immigration-consultation-follow-up-crm" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-emerald-800">Immigration intake guide</p><p className="text-sm text-gray-600 mt-1">Why consultation follow-up needs CRM structure.</p></Link>
+            <Link href="/blog/crm-automation-for-immigration-consultants" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-emerald-800">Immigration CRM automation guide</p><p className="text-sm text-gray-600 mt-1">How intake, reminders, and follow-up workflows should fit together.</p></Link>
+            <Link href="/case-studies/immigration-consultation-intake-automation" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-emerald-800">Immigration intake case study</p><p className="text-sm text-gray-600 mt-1">A practical implementation pattern for forms, calls, WhatsApp, CRM routing, and follow-up.</p></Link>
             <Link href="/services/crm-implementation" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-emerald-800">CRM implementation</p><p className="text-sm text-gray-600 mt-1">Set up HubSpot, Salesforce, or Zoho properly.</p></Link>
             <Link href="/lead-follow-up-audit" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-emerald-800">5-point consultation audit</p><p className="text-sm text-gray-600 mt-1">A practical review of one intake path.</p></Link>
           </div>

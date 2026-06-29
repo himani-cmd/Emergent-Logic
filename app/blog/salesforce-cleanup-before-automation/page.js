@@ -122,6 +122,9 @@ export default function SalesforceCleanupBeforeAutomation() {
               <p>
                 These are process questions before they are Salesforce questions. A good <Link href="/services/salesforce-consulting" className="text-blue-700 hover:underline">Salesforce consultant</Link> should help answer them before building the Flow.
               </p>
+              <p>
+                We also documented this approach as a <Link href="/case-studies/salesforce-cleanup-before-automation" className="text-blue-700 hover:underline">representative Salesforce cleanup case study</Link>, showing how objects, fields, ownership, reports, permissions, and Flow readiness fit together before automation work starts.
+              </p>
 
               <h2>Reporting Cleanup Comes Before Dashboard Automation</h2>
               <p>

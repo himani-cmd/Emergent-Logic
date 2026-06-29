@@ -178,6 +178,10 @@ export default function SalesforceAdminSupportSmallBusiness() {
               </p>
 
               <p>
+                If you are still deciding whether the right next step is admin support, consulting, or a hybrid model, read our guide to <Link href="/blog/salesforce-admin-vs-consultant-small-business" className="text-blue-700 hover:underline">Salesforce admin vs consultant for small businesses</Link>. It explains when each model makes sense and when cleanup should come first.
+              </p>
+
+              <p>
                 Emergent Logic offers <Link href="/services/salesforce-consulting" className="text-blue-700 hover:underline">Salesforce consulting and managed admin support</Link> for teams that need senior CRM help without turning every change into a giant agency project. We also stay vendor-neutral, so if your team would be better served by HubSpot or Zoho, we will say that clearly.
               </p>
 

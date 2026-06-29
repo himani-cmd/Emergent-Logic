@@ -49,6 +49,7 @@ const faqItems = [
 ];
 
 const relatedPosts = [
+  { title: 'Why HubSpot Workflows Break', href: '/blog/why-hubspot-workflows-break' },
   { title: 'Why Businesses Search for a HubSpot Consultant in Vancouver', href: '/blog/hubspot-consultant-vancouver' },
   { title: 'Why Marketing Automation Fails Without CRM Cleanup First', href: '/blog/marketing-automation-needs-crm-cleanup' },
   { title: 'Website Leads Need CRM Routing', href: '/blog/website-leads-to-crm' },

@@ -85,7 +85,7 @@ export default function SalesforceConsultantSurrey() {
       <Navbar />
       
       {/* Hero */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-violet-900 via-indigo-900 to-purple-900">
+      <section className="overflow-hidden pt-32 pb-16 bg-gradient-to-br from-violet-900 via-indigo-900 to-purple-900">
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[
             { label: 'Services', href: '/services' },
@@ -95,15 +95,17 @@ export default function SalesforceConsultantSurrey() {
             <MapPin className="w-5 h-5" />
             <span>Surrey, BC</span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Salesforce & HubSpot Consultant in Surrey, BC</h1>
-          <p className="text-xl text-white/70 max-w-3xl mb-8">
+          <h1 className="max-w-4xl break-words text-4xl font-bold leading-tight tracking-tight text-white mb-4 md:text-5xl">
+            Salesforce & HubSpot Consultant in Surrey, BC
+          </h1>
+          <p className="max-w-3xl text-lg leading-relaxed text-white/75 mb-8 md:text-xl">
             Looking for a Salesforce consultant in Surrey, BC? Emergent Logic helps growing teams clean up, implement, and improve CRM systems across Salesforce, HubSpot, and Zoho. We use AI-assisted delivery to move faster while keeping the strategy and quality control human-led.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
-              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto"><Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
             </TrackedCTA>
-            <Link href="/services/crm-implementation"><Button size="lg" variant="outline" className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white">View CRM Services</Button></Link>
+            <Link href="/services/crm-implementation" className="w-full sm:w-auto"><Button size="lg" variant="outline" className="w-full border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white sm:w-auto">View CRM Services</Button></Link>
           </div>
           <div className="grid grid-cols-3 gap-6 max-w-2xl">
             <div className="text-center"><div className="flex items-center justify-center gap-2 text-white mb-1"><Award className="w-5 h-5 text-violet-400" /><span className="text-3xl font-bold">3</span></div><div className="text-white/60 text-sm">CRM Platforms</div></div>

@@ -294,6 +294,10 @@ export default function CRMCleanup() {
               <p className="font-medium text-violet-600">Why Marketing Automation Fails Without Cleanup First</p>
               <p className="text-gray-600 text-sm">The five cleanup gaps that sink automation, and how to know if your data is ready.</p>
             </Link>
+            <Link href="/blog/why-hubspot-workflows-break" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Why HubSpot Workflows Break</p>
+              <p className="text-gray-600 text-sm">Why workflow issues often trace back to CRM data, lifecycle stages, and ownership rules.</p>
+            </Link>
             <Link href="/blog/salesforce-cleanup-before-automation" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Why Salesforce Cleanup Matters Before Automation</p>
               <p className="text-gray-600 text-sm">Why Flow automation works better after records, stages, ownership, and reporting are cleaned up.</p>
@@ -302,8 +306,8 @@ export default function CRMCleanup() {
               <p className="font-medium text-violet-600">Property Management Lead Follow-Up</p>
               <p className="text-gray-600 text-sm">How owner inquiries leak when CRM routing, ownership, and follow-up are unclear.</p>
             </Link>
-            <Link href="/blog/immigration-consultation-follow-up-crm" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-violet-600">Immigration Consultation Follow-Up</p>
+            <Link href="/blog/crm-automation-for-immigration-consultants" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">CRM Automation for Immigration Consultants</p>
               <p className="text-gray-600 text-sm">How intake gaps appear when forms, inboxes, calls, and WhatsApp are not routed clearly.</p>
             </Link>
           </div>
