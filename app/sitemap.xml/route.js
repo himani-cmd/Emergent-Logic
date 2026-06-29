@@ -9,6 +9,7 @@ const urls = [
   ['/contact', 'monthly', '0.9'],
   ['/case-studies', 'monthly', '0.8'],
   ['/case-studies/ai-revenue-operations-engine', 'monthly', '0.8'],
+  ['/case-studies/hubspot-crm-cleanup-safe-implementation', 'monthly', '0.8'],
   ['/ai-crm-audit', 'monthly', '0.8'],
   ['/lead-follow-up-audit', 'monthly', '0.8'],
   ['/blog', 'weekly', '0.9'],
