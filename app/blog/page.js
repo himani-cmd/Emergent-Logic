@@ -20,6 +20,14 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'why-hubspot-workflows-break',
+    title: 'Why HubSpot Workflows Break',
+    excerpt: 'HubSpot workflows usually break because lifecycle stages, ownership, source data, properties, and enrollment logic are unclear. Learn what to audit before rebuilding automation.',
+    category: 'HubSpot Automation',
+    readTime: '9 min read',
+    featured: true,
+  },
+  {
     slug: 'generative-engine-optimization-b2b-service-businesses',
     title: 'Generative Engine Optimization for B2B Service Businesses',
     excerpt: 'A practical GEO guide for B2B service firms: structure expertise, service pages, FAQs, proof, links, and citations so AI search can understand you.',
