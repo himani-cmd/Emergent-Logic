@@ -158,6 +158,7 @@ export default function PropertyManagementCrmConsultingCanada() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Related resources</h2>
           <div className="grid md:grid-cols-3 gap-4">
             <Link href="/blog/property-management-lead-follow-up-crm" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-blue-800">Property management follow-up guide</p><p className="text-sm text-gray-600 mt-1">Why CRM routing matters after the inquiry.</p></Link>
+            <Link href="/case-studies/property-management-rental-inquiry-routing" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-blue-800">Property management routing case study</p><p className="text-sm text-gray-600 mt-1">A practical implementation pattern for owner inquiries, rental evaluations, and referrals.</p></Link>
             <Link href="/services/crm-implementation" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-blue-800">CRM implementation</p><p className="text-sm text-gray-600 mt-1">Pipelines, automation, dashboards, and training.</p></Link>
             <Link href="/lead-follow-up-audit" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-blue-800">5-point lead follow-up audit</p><p className="text-sm text-gray-600 mt-1">A practical review of one owner inquiry path.</p></Link>
           </div>
