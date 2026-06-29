@@ -147,6 +147,16 @@ const jsonLd = {
               provider: { '@id': organizationId },
             },
           },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'AI Chatbot Automation',
+              url: 'https://www.emergent-logic.ca/services/ai-chatbot-automation',
+              serviceType: 'AI chatbot lead qualification and CRM automation',
+              provider: { '@id': organizationId },
+            },
+          },
         ],
       },
     },

@@ -49,6 +49,7 @@ const qualificationFields = [
 ];
 
 const relatedPosts = [
+  { title: 'AI Chatbot Automation Service', href: '/services/ai-chatbot-automation' },
   { title: 'Why Website Leads Do Not Turn Into Sales Without CRM Routing', href: '/blog/website-leads-to-crm' },
   { title: 'Speed to Lead: Why Fast Follow-Up Needs a CRM System', href: '/blog/speed-to-lead-crm-follow-up-system' },
   { title: 'Why HubSpot Workflows Break', href: '/blog/why-hubspot-workflows-break' },
@@ -179,6 +180,10 @@ export default function AIChatbotLeadQualificationCRM() {
 
               <p>
                 This is why AI chatbot projects often become <Link href="/services/crm-integration" className="text-cyan-700 hover:underline">CRM integration</Link> projects. The bot, website, CRM, calendar, email, and reporting stack need to agree on what a qualified inquiry means.
+              </p>
+
+              <p>
+                If you want this built as a practical service, our <Link href="/services/ai-chatbot-automation" className="text-cyan-700 hover:underline">AI chatbot automation</Link> page explains the scope, guardrails, timeline, and CRM handoff in more detail.
               </p>
 
               <h2>Where HubSpot and Salesforce Fit</h2>

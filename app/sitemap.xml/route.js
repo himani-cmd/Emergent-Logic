@@ -38,6 +38,7 @@ const urls = [
   ['/services/crm-cleanup', 'monthly', '0.9'],
   ['/services/marketing-automation', 'monthly', '0.8'],
   ['/services/lead-capture-websites', 'monthly', '0.8'],
+  ['/services/ai-chatbot-automation', 'monthly', '0.8'],
   ['/services/crm-integration', 'monthly', '0.8'],
   ['/services/salesforce-consulting', 'monthly', '0.9'],
   ['/crm-implementation', 'monthly', '0.7'],
