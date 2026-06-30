@@ -11,10 +11,11 @@ This list is intentionally narrow. Each account has at least one public, current
 
 Readiness classification:
 
-- `EMAIL_READY`: Public business email route is available and acceptable for a Gmail draft now. Generic inboxes are used only when the pain signal is very strong and the draft includes a precise routing ask.
+- `PERSON_READY`: Named person with a verified public work email or verified named-person route. This is the only class eligible for Gmail draft creation.
+- `GENERIC_ONLY`: Only a generic company inbox exists. Keep for research, but do not create a Gmail draft unless explicitly approved.
 - `ROUTE_NEEDED`: Named person and strong pain signal are present, but sending still requires LinkedIn outreach, contact-form submission, or manual email verification. Do not guess an email.
 
-Current batch count: 1 `EMAIL_READY`, 19 `ROUTE_NEEDED`.
+Current batch count after correction: 0 `PERSON_READY`, 19 `ROUTE_NEEDED`, 1 `GENERIC_ONLY`.
 
 ## Prospect List
 
@@ -248,8 +249,8 @@ Emergent Logic
 - Website: https://wasabi.com/
 - Named contact: David Friend
 - Role: President, CEO and Co-founder
-- Classification: `EMAIL_READY`
-- Public delivery route: Gmail draft to public company-published inbox `sales@wasabi.com`, written with a precise routing ask to David Friend or the Salesforce/Revenue Operations owner. Generic inbox is acceptable here because the Salesforce CPQ/revenue workflow signal is very strong and the inbox is company-published.
+- Classification: `GENERIC_ONLY`
+- Public delivery route: only generic company-published inbox `sales@wasabi.com` found. Do not create a Gmail draft unless generic inbox outreach is explicitly approved.
 - Source URLs: https://job-boards.greenhouse.io/wasabi/jobs/5153035008 | https://wasabi.com/company/leadership | https://wasabi.com/contact-us
 - Pain signal: Open Senior Salesforce Administrator role focuses on Salesforce CPQ, usage-based billing, revenue workflows, data issues, revenue objects, integrations, manual gaps, and automation.
 - Why high intent: The role describes active Salesforce revenue-system complexity across CPQ, billing, revenue data, and integration reliability.
@@ -258,9 +259,7 @@ Emergent Logic
 
 Subject: Salesforce CPQ cleanup
 
-Hi Wasabi team,
-
-Could you route this to David Friend or the Salesforce/Revenue Operations owner?
+Hi David,
 
 Wasabi's Senior Salesforce Administrator posting caught my eye because it is focused on CPQ, usage-based billing, revenue workflows, data issues, integration reliability, and manual gaps. Those are exactly the areas where a fast-growing cloud business can lose time to quote friction or reporting inconsistencies.
 
@@ -583,7 +582,7 @@ Emergent Logic
 ## Strongest First Five To Work
 
 1. ContactMonkey: strongest fit because the role explicitly names Salesforce, HubSpot, data pipelines, dashboards, Gong, Clay, AI automation, and clean revenue data flows, plus a recent CEO transition.
-2. Wasabi Technologies: only `EMAIL_READY` account in this partial batch; Salesforce administrator role has urgent CPQ, billing, usage-based revenue, integrations, and manual-gap cleanup signals.
+2. Wasabi Technologies: strong Salesforce administrator pain signal, but only a generic company inbox was found. Use LinkedIn/contact-form route unless generic inbox outreach is explicitly approved.
 3. Maze: Senior RevOps posting directly names Salesforce, HubSpot, Clay, Outreach, Gong, AI-first workflows, enrichment, data governance, and automated audits.
 4. Kindsight: Marketing Ops role directly names HubSpot administration, Salesforce objects and fields, UTMs, attribution, enrichment, and data-flow reliability.
 5. CaptivateIQ: Director Marketing Ops role directly names HubSpot, Salesforce, AI automation, BDR workflows, attribution, and prospecting infrastructure.
@@ -591,6 +590,6 @@ Emergent Logic
 ## Blockers And Caveats
 
 - No direct named work emails were found for most prospects without using enrichment tools. I intentionally used LinkedIn/contact-form routes instead of guessing.
-- Only Wasabi is `EMAIL_READY` in this partial batch because the public `sales@wasabi.com` inbox is company-published and the pain signal is strong enough to justify a precise routing ask.
+- No prospect in this partial batch should be treated as Gmail-ready under the named-person-only rule.
 - Some source pages are third-party job mirrors when the official applicant system was surfaced through a job board. The pain signals are still specific enough to qualify, but the BDR should re-check each posting before sending.
 - One public generic inbox is included only where it is published by the company and paired with a strong systems pain signal.

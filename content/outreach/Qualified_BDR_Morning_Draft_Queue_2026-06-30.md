@@ -10,7 +10,8 @@ This is intentionally **not** a bulk scraped list. Each prospect has a visible C
 
 Delivery classes:
 
-- `EMAIL_READY`: public business email route exists. Draft can be created in Gmail after final visual review.
+- `PERSON_READY`: named person with verified public work email or verified named-person route. Only this class can become a Gmail draft.
+- `GENERIC_ONLY`: generic company inbox only. Keep for research, but do not create Gmail draft unless explicitly approved.
 - `ROUTE_NEEDED`: strong named/pain-qualified prospect, but needs LinkedIn/contact form/manual delivery route before sending.
 - `HOLD`: do not send yet.
 
@@ -18,7 +19,7 @@ Important: Do not invent emails. Do not contact BigBang360, `@bigbang360.com`, D
 
 ## Morning Priority
 
-Start with the `EMAIL_READY` rows, then handle `ROUTE_NEEDED` via LinkedIn or contact forms. If we cannot verify a proper route, do not force it.
+Start with `PERSON_READY` only. Handle `ROUTE_NEEDED` via LinkedIn or contact forms. If we cannot verify a named route, do not force it.
 
 ## Prospects + Drafts
 
@@ -47,7 +48,7 @@ Bhavuk
 
 ### 2. MuniBilling
 
-Delivery class: `EMAIL_READY`  
+Delivery class: `GENERIC_ONLY`
 Route: `support@munibilling.com` with routing request to RevOps / sales operations  
 Source: https://revpath.dealhub.io/jobs/502805538-revenue-operations-specialist  
 Pain signal: Revenue Operations Specialist role references CRM admin, data quality, reporting accuracy, Salesforce/HubSpot workflow maintenance, dashboards, CRM hygiene, and adoption.  
@@ -93,7 +94,7 @@ Bhavuk
 
 ### 4. ChargeLab
 
-Delivery class: `EMAIL_READY`  
+Delivery class: `GENERIC_ONLY`
 Route: `sales@chargelab.co` or `hello@chargelab.co`  
 Source: https://jobsatventurestudios.com/discover/companies/chargelab/jobs/62445607-revenue-operations-specialist  
 Pain signal: Revenue Operations Specialist role references CRM management, data integrity, acquisition, cross-functional alignment, and revenue performance.  
@@ -496,4 +497,3 @@ Do not send all 20 blindly. Send in this order:
 8. Popl via LinkedIn to CRO/RevOps hiring owner
 
 After that, continue only if the delivery route is clean.
-
