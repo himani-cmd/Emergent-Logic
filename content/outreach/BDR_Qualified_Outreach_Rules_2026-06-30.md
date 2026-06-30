@@ -31,8 +31,11 @@ A prospect is qualified only if it has all four:
    - If no named person exists, the row must explain why a team inbox is still worth using.
 
 3. **Delivery route**
-   - `EMAIL_READY`: public business email route available and acceptable for a Gmail draft.
+   - `PERSON_READY`: named person + public work email or a verified named-person contact route.
+   - `LINKEDIN_READY`: named person + LinkedIn profile route; do not create Gmail draft.
+   - `FORM_READY`: named person + company contact form where the message can ask to route to that person/team; do not create Gmail draft.
    - `ROUTE_NEEDED`: named contact found, but needs LinkedIn/contact-form/manual verification.
+   - `GENERIC_ONLY`: only a generic address like `info@`, `sales@`, `support@`, `contact@`, `hello@`, or `wecare@` exists. Do not create Gmail draft unless the user explicitly approves generic inbox outreach.
    - `HOLD`: interesting company but not enough proof or route yet.
 
 4. **Pain-led email angle**
@@ -58,12 +61,12 @@ A prospect is qualified only if it has all four:
 
 Minimum target:
 
-- 20 sendable drafts.
-- At least 12 should be `EMAIL_READY`.
-- At least 8 should be named-contact or named-role specific.
+- 20 qualified contacts.
+- At least 12 should be named-person routes.
+- Gmail drafts should only be created for `PERSON_READY`.
+- `GENERIC_ONLY` rows can be kept for research, but they are not send-ready.
 - Zero blocked domains.
 - Zero guessed emails.
 - Every draft must include the company-specific pain signal.
 
-If the BDR agent cannot safely create 20 high-quality drafts, it should stop at the number that passes the gate rather than fill with low-quality prospects.
-
+If the BDR agent cannot safely create 20 high-quality named-person contacts, it should stop at the number that passes the gate rather than fill with low-quality prospects or generic inboxes.

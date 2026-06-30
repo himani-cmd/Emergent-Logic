@@ -6,6 +6,8 @@ Workflow ID: `hxm8vJxBkOqCCjOE`
 n8n execution: `446`  
 Status: Success. Gmail drafts created. No emails sent.
 
+Important correction: these drafts were created to official company-published addresses, but several are still generic inboxes. User preference is now clarified: **do not create Gmail drafts from generic inboxes**. Treat these as created-but-not-approved drafts unless manually reviewed.
+
 ## Drafts Created
 
 | Company | Recipient | Subject | Gmail draft ID | Gmail message ID |
@@ -24,4 +26,6 @@ Status: Success. Gmail drafts created. No emails sent.
 - First run execution `446` created 3 drafts.
 - Second run execution `447` created 3 additional drafts after verifying official company routes for Clio, Wagepoint, and Lightspeed.
 - Current qualified draft count from this log: 6.
+- These drafts should not be sent automatically.
+- Delete or ignore generic-inbox drafts if the current named-person-only rule is being enforced.
 - Do not duplicate these drafts tomorrow.
