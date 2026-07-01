@@ -10,7 +10,7 @@ The contact-enrichment layer has been created in n8n.
 - Workflow ID: `WAYqMRuWsfF7mqyi`
 - Workflow URL: `https://emergent-logic.app.n8n.cloud/workflow/WAYqMRuWsfF7mqyi`
 - n8n project: `Himani <himani@emergent-logic.ca>`
-- Active: `false`
+- Active: `true`
 - Schedule configured: daily at 07:10
 - Source table: `bdr_prospect_queue_v2`
 - Source table ID: `Qc2A6KWlV1LNjF06`
@@ -59,31 +59,22 @@ Cleanup was also completed.
 - Result: fake `Jane Smith` test row was deleted from `bdr_contact_queue_v2`
 - Cleanup workflow was archived after successful deletion.
 
+## Live Run Result
+
+The Apify bearer credential was added in n8n and the live workflow run succeeded.
+
+- Live execution ID: `468`
+- Status: `success`
+- Active version ID: `e3db443d-5d7d-4853-a9de-55c891f9a5e3`
+- Result: named LinkedIn buyer routes were saved into `bdr_contact_queue_v2`
+
+Example saved routes included RevOps / CRM-adjacent people from high-intent account signals. These rows remain `Needs Work Email Verification` because the workflow intentionally does not guess emails or create Gmail drafts.
+
 ## Current Blocker
 
-n8n MCP created and validated the workflow, but n8n did not auto-bind the Apify bearer credential to the HTTP Request node.
+There is no n8n execution blocker now.
 
-MCP attempt to bind credential failed with:
-
-`node type 'n8n-nodes-base.httpRequest' does not accept credential 'httpBearerAuth'`
-
-Chrome fallback also hit a login screen for n8n, so the credential could not be selected through the UI in this run.
-
-## Exact Unblock Step
-
-Open:
-
-`https://emergent-logic.app.n8n.cloud/workflow/WAYqMRuWsfF7mqyi`
-
-Then:
-
-1. Open node `Run Apify Contact Search`.
-2. In `Authentication`, keep `Generic Credential Type`.
-3. In `Generic Auth Type`, keep `Bearer Auth`.
-4. Select the existing Apify bearer credential.
-5. Save the node.
-6. Run `Manual Contact Enrichment Test`.
-7. If the run succeeds, publish/activate the workflow.
+The next operational blocker is email verification. The system can find named LinkedIn routes, but it should not create Gmail drafts until a public work email or approved contact route is verified.
 
 ## Revenue Use
 
