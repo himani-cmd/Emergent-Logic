@@ -110,6 +110,9 @@ export default function WebsiteLeadsToCrm() {
                 Our <Link href="/services/lead-capture-websites" className="text-orange-700 hover:underline">lead capture website service</Link> is built around this idea: the website should support the CRM, not sit beside it as a disconnected brochure.
               </p>
               <p>
+                If you are looking for the implementation side, see our <Link href="/website-leads-to-crm-implementation" className="text-orange-700 hover:underline">website leads to CRM implementation service page</Link>, which explains how forms, booking flows, owner assignment, tasks, and reporting should connect.
+              </p>
+              <p>
                 We also documented this as a <Link href="/case-studies/website-leads-to-crm-follow-up-system" className="text-orange-700 hover:underline">representative website leads to CRM case study</Link>, showing how source tracking, owner assignment, follow-up tasks, and reporting fit together after a form submission.
               </p>
 
