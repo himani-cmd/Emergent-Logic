@@ -100,7 +100,10 @@ https://help.salesforce.com/s/articleView?id=005321563&type=1
 - Post Himani version first from her profile.
 - Post company version 2-4 hours later or next morning.
 - Use the founder graphic with Himani's post:
-  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_founder_square.png`
+  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_founder_creative_v2.png`
 - Use the company graphic with the company page post:
-  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_company_square.png`
-- Both graphics follow the approved Emergent Logic visual system: clean white field, indigo accent, navy headline, structured checklist, and approved icon.
+  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_company_creative_v2.png`
+- Use the vertical creative if posting to Instagram or as a LinkedIn document/carousel cover:
+  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_vertical_creative_v2.png`
+- The original clean quote-card versions remain available in the same folder, but the creative v2 files are the recommended assets.
+- The creative v2 direction uses stronger visual metaphors: Salesforce admin access map, MFA gate, and access/auth/fallback path.
