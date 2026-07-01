@@ -99,11 +99,11 @@ https://help.salesforce.com/s/articleView?id=005321563&type=1
 
 - Post Himani version first from her profile.
 - Post company version 2-4 hours later or next morning.
-- Use the founder graphic with Himani's post:
-  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_founder_creative_v2.png`
-- Use the company graphic with the company page post:
-  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_company_creative_v2.png`
-- Use the vertical creative if posting to Instagram or as a LinkedIn document/carousel cover:
-  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_vertical_creative_v2.png`
-- The original clean quote-card versions remain available in the same folder, but the creative v2 files are the recommended assets.
-- The creative v2 direction uses stronger visual metaphors: Salesforce admin access map, MFA gate, and access/auth/fallback path.
+- Use the dark founder graphic with Himani's post:
+  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_blast_radius_v3.png`
+- Use the white company graphic with the company page post:
+  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_who_has_keys_v3.png`
+- Use the vertical creative for Instagram, story, or carousel cover:
+  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_vertical_story_v3.png`
+- The v3 direction is now the recommended set. It uses stronger B2B memory hooks: admin blast radius, who has the keys, and login is not the whole risk.
+- The v2 files remain available as fallback assets if a quieter visual is needed.
