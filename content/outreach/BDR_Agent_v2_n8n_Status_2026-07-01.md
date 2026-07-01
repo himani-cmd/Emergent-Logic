@@ -13,6 +13,14 @@ BDR Agent v2 has been created in n8n.
 - Data table: `bdr_prospect_queue_v2`
 - Data table ID: `Qc2A6KWlV1LNjF06`
 
+## Fix Log
+
+2026-07-01:
+
+- Fixed Apify actor input error: `input.queries must be string`.
+- Root cause: workflow originally sent `queries` as an array.
+- Current body now sends `queries: $json.query` as a string.
+
 ## What It Does
 
 The workflow runs a daily prospect discovery scan at 06:30 and can also be run manually.
@@ -96,4 +104,3 @@ That second workflow should only process rows upgraded to `PERSON_READY`:
 Sender must remain:
 
 - `bhavuk.sood@emergent-logic.ca`
-
