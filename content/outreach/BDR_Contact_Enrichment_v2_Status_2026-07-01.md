@@ -76,6 +76,27 @@ There is no n8n execution blocker now.
 
 The next operational blocker is email verification. The system can find named LinkedIn routes, but it should not create Gmail drafts until a public work email or approved contact route is verified.
 
+## 2026-07-01 Quality Gate Update
+
+After live execution `471`, the enrichment workflow was too loose. It saved some routes that matched a company name but were not clearly CRM, RevOps, HubSpot, Salesforce, GTM, Sales Ops, or Marketing Ops buyers.
+
+The enrichment logic was tightened and republished.
+
+- Final active version ID: `a9c3b2e8-a734-4f32-8add-209bf4a7f805`
+- Verification execution ID: `473`
+- Verification status: `success`
+- Verification result: 1 high-confidence buyer route saved
+
+Saved high-confidence route:
+
+- Company: CaptivateIQ
+- Contact: Johnathan Warren
+- Role: 3x Head of Revenue Operations
+- LinkedIn: `https://www.linkedin.com/in/johnathanwarren`
+- Status: `Needs Work Email Verification`
+
+Rows created before execution `473` should be treated as `Needs QA`, not send-ready.
+
 ## Revenue Use
 
 This workflow is the bridge between account discovery and actual outbound.
