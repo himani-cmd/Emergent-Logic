@@ -4,68 +4,82 @@ Prepared: 2026-07-01
 
 Source context:
 - Salesforce Admin published guidance on June 22, 2026 about upcoming MFA enforcement and phishing-resistant MFA for privileged users.
-- Salesforce Help notes phishing-resistant MFA enforcement for privileged users including admins, with July 1, 2026 sandbox enforcement referenced in Salesforce security-related platform updates.
+- Salesforce Admin guidance says MFA will be enforced for all users and phishing-resistant MFA will be enforced for privileged users.
+- Privileged users include System Administrators and users with permissions such as Modify All Data, View All Data, Customize Application, or Author Apex.
+- Phishing-resistant options include physical security keys and biometric/built-in authenticators. Passkeys are also referenced in Salesforce setup guidance.
 
 ## Himani Founder Post
 
-Starting today, July 1, Salesforce begins enforcing stronger MFA requirements for privileged users in affected orgs.
+Salesforce security is changing.
 
-If you are a Salesforce admin, RevOps lead, or business owner with admin access, this is not just a security setting to ignore until later.
+If you have admin access, this is not a setting to ignore until something breaks.
 
-Privileged users can include:
+Salesforce is enforcing MFA more directly, and privileged users need phishing-resistant MFA.
+
+That includes people with access like:
+
 - System Administrators
-- users with Modify All Data
-- users with View All Data
-- users with Customize Application
-- users with Author Apex
+- Modify All Data
+- View All Data
+- Customize Application
+- Author Apex
 
 The important part:
 
-Standard MFA methods may not be enough for privileged access.
+Standard MFA is not always enough for privileged access.
 
-Salesforce is moving privileged users toward phishing-resistant MFA methods like:
+For admins and other high-permission users, Salesforce is moving toward methods like:
+
 - passkeys
 - built-in device authenticators
 - FIDO2 security keys
 
-This matters because one admin login can expose far more than one user account.
+This matters because one admin login is not just one login.
 
-It can expose customer data, workflows, reporting, automation, integrations, and business-critical operations.
+It can expose data, reports, automations, integrations, permissions, and the workflows your team depends on.
 
 If I were reviewing a Salesforce org this week, I would check:
-- who has admin or elevated permissions
-- whether those permissions are still needed
-- which MFA methods are enrolled
-- whether SSO is passing the right authentication signals
-- whether there is a backup access plan if an admin gets locked out
+
+1. Who has elevated permissions?
+2. Do they still need those permissions?
+3. Are phishing-resistant methods enabled?
+4. Is SSO passing the right authentication signal?
+5. Is there a backup plan if an admin gets locked out?
 
 Security work is not separate from CRM operations.
 
-It is part of making the system reliable.
+It is part of keeping the system reliable.
 
-If your team has not reviewed privileged Salesforce access recently, this is a good week to do it.
+If your team has not reviewed privileged Salesforce access recently, this is a good moment to do it.
 
 ## Company Page Post
 
-Salesforce security requirements are getting stricter for privileged users.
+Salesforce security requirements are becoming stricter.
 
-Starting July 1, 2026, Salesforce begins enforcing phishing-resistant MFA requirements for admins and other privileged users in affected environments.
+For businesses using Salesforce, this is a good time to review admin access and privileged-user security.
 
-For businesses using Salesforce, this is a good moment to review more than just the MFA setting.
+MFA enforcement is one part of the change.
+
+The bigger operational question is:
+
+Do the right people have the right level of access, with the right authentication method, and a backup plan if access is interrupted?
 
 Review:
+
 - who has admin access
 - who has View All Data or Modify All Data
 - whether elevated permissions are still needed
 - whether privileged users have phishing-resistant MFA methods enrolled
 - whether SSO and identity settings are configured correctly
-- whether there is an admin backup plan
+- whether there is a backup plan for admin lockout
 
 This is not just an IT checklist.
 
 It is CRM risk management.
 
-If the wrong user has too much access, or the right user gets locked out at the wrong time, business operations can be affected quickly.
+If the wrong user has too much access, risk increases.
+
+If the right admin gets locked out at the wrong time, business operations can be affected quickly.
 
 Emergent Logic helps businesses review CRM access, cleanup, automation, and operational workflows so the system is not only functional, but safer and easier to manage.
 
