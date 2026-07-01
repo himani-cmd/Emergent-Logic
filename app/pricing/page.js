@@ -17,15 +17,15 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Consulting Pricing | HubSpot, Salesforce & Automation Costs',
+  title: 'CRM Consulting Pricing Approach | HubSpot, Salesforce & Automation',
   description:
-    'Transparent CRM consulting pricing for HubSpot, Salesforce, CRM cleanup, automation, and website leads to CRM implementation. Fixed-scope and hourly options.',
+    'How Emergent Logic scopes CRM consulting work for HubSpot, Salesforce, CRM cleanup, automation, and website leads to CRM implementation.',
   alternates: { canonical: 'https://www.emergent-logic.ca/pricing' },
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'CRM Consulting Pricing | Emergent Logic',
+    title: 'CRM Consulting Pricing Approach | Emergent Logic',
     description:
-      'How Emergent Logic prices CRM cleanup, implementation, HubSpot, Salesforce, automation, and lead capture work.',
+      'How Emergent Logic scopes CRM cleanup, implementation, HubSpot, Salesforce, automation, and lead capture work.',
     url: 'https://www.emergent-logic.ca/pricing',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -35,7 +35,7 @@ const pricingModels = [
   {
     icon: FileSearch,
     name: 'Free Strategy Call',
-    price: '$0',
+    price: 'No-cost fit check',
     bestFor: 'Quick fit check before any paid work',
     description:
       'A short call to understand your CRM, lead capture, automation, or cleanup problem and decide whether there is a practical next step.',
@@ -44,7 +44,7 @@ const pricingModels = [
   {
     icon: SlidersHorizontal,
     name: 'Fixed-Scope Sprint',
-    price: 'From $750',
+    price: 'Scoped after review',
     bestFor: 'Clear, contained work',
     description:
       'Best when the outcome is specific: clean a list, fix a workflow, connect a form, build a dashboard, or repair one lead handoff.',
@@ -53,7 +53,7 @@ const pricingModels = [
   {
     icon: Clock,
     name: 'Implementation Hours',
-    price: '$75-$125/hr',
+    price: 'Hourly when scope is variable',
     bestFor: 'Variable CRM implementation work',
     description:
       'Best when the project needs discovery, data review, workflow decisions, stakeholder feedback, or phased implementation.',
@@ -64,37 +64,37 @@ const pricingModels = [
 const typicalRanges = [
   {
     service: 'CRM cleanup or deduplication',
-    range: '$750-$3,500',
+    range: 'Small to medium scope',
     detail: 'Depends on record volume, duplicate rules, field quality, and how much human review is needed.',
     href: '/services/crm-cleanup',
   },
   {
     service: 'HubSpot or Salesforce implementation',
-    range: '$2,500-$8,500+',
+    range: 'Scoped after discovery',
     detail: 'Pipelines, properties, migration, automation, dashboards, forms, reporting, and team training vary by scope.',
     href: '/services/crm-implementation',
   },
   {
     service: 'HubSpot workflow cleanup',
-    range: '$1,000-$4,500',
+    range: 'Fixed sprint or phased',
     detail: 'Good fit when workflows exist but are breaking, duplicating tasks, or creating confusing lifecycle changes.',
     href: '/hubspot-workflow-cleanup',
   },
   {
     service: 'Website leads to CRM implementation',
-    range: '$1,000-$5,000',
+    range: 'Usually fixed-scope',
     detail: 'Forms, booking flows, source tracking, routing, owner assignment, alerts, tasks, and reporting.',
     href: '/website-leads-to-crm-implementation',
   },
   {
     service: 'Marketing automation buildout',
-    range: '$1,500-$6,500+',
+    range: 'Phased by complexity',
     detail: 'Email sequences, nurture logic, segmentation, lead scoring, campaign reporting, and CRM handoff.',
     href: '/services/marketing-automation',
   },
   {
     service: 'Monthly CRM and automation support',
-    range: '$1,000-$3,000/mo',
+    range: 'Ongoing support plan',
     detail: 'Ongoing improvements, cleanup, reporting, workflow support, and practical RevOps help without a full-time hire.',
     href: '/contact',
   },
@@ -102,7 +102,7 @@ const typicalRanges = [
 
 const pricingRules = [
   'If the scope is clear, we can quote a fixed price.',
-  'If the CRM is messy or the outcome is still being discovered, hourly is safer and more honest.',
+  'If the CRM is messy or the outcome is still being discovered, phased or hourly work is safer and more honest.',
   'We do not run hours without visibility. You know what we are working on and why.',
   'We can start small, prove value, then expand only if the next phase makes sense.',
 ];
@@ -113,8 +113,8 @@ const faqs = [
     a: 'Both. Clear, contained work can be fixed-scope. Messier CRM implementation, cleanup, migration, and automation work is often better as hourly or phased delivery because the real scope becomes clear after reviewing the system.',
   },
   {
-    q: 'Is $75 to $125 per hour too high for a small business?',
-    a: 'For CRM work, it is a practical professional range. The real risk is not the hourly rate; it is paying fewer dollars for unclear work that creates duplicate data, broken automation, or a system the team does not use.',
+    q: 'Why not show one public hourly rate?',
+    a: 'Because the right model depends on the work. Some projects are best quoted as a fixed sprint. Some are safer as phased or hourly work after we review the system. We prefer giving a realistic estimate instead of publishing a rate that may not fit the problem.',
   },
   {
     q: 'Can we start with a smaller project first?',
@@ -122,7 +122,7 @@ const faqs = [
   },
   {
     q: 'Why not publish one exact price for every implementation?',
-    a: 'Because every CRM has different data quality, users, integrations, pipelines, automations, and reporting needs. We publish realistic ranges so you can budget, then scope the work properly before starting.',
+    a: 'Because every CRM has different data quality, users, integrations, pipelines, automations, and reporting needs. We explain the pricing approach publicly, then scope the work properly before giving a practical estimate.',
   },
 ];
 
@@ -141,15 +141,6 @@ const jsonLd = {
         { '@type': 'Country', name: 'Canada' },
         { '@type': 'Country', name: 'United States' },
       ],
-      offers: pricingModels.map((model) => ({
-        '@type': 'Offer',
-        name: model.name,
-        priceSpecification: {
-          '@type': 'PriceSpecification',
-          priceCurrency: 'CAD',
-          description: model.price,
-        },
-      })),
     },
     {
       '@type': 'FAQPage',
@@ -179,7 +170,7 @@ export default function PricingPage() {
             CRM Consulting Pricing Without the Guesswork
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-relaxed text-white/75 md:text-xl">
-            Some CRM work should be fixed-price. Some should be hourly. The right model depends on how clear the scope is, how messy the data is, and how many decisions need to be made before the system works properly.
+            We do not believe every CRM project should be forced into a public package. Some work is clean and fixed-scope. Some work needs discovery first. The right model depends on your data, workflows, integrations, and how clear the outcome is.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <TrackedCTA ctaName="Book a Free Strategy Call - Pricing Hero" destination="calendly">
@@ -197,7 +188,7 @@ export default function PricingPage() {
           </div>
           <div className="mt-10 grid gap-4 text-sm text-white/75 md:grid-cols-3">
             <div className="rounded-2xl border border-white/10 bg-white/5 p-4">Fixed scope when the outcome is clear</div>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4">$75-$125/hr for variable implementation work</div>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-4">Hourly only when scope is genuinely variable</div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-4">Start small, prove value, expand carefully</div>
           </div>
         </div>
@@ -206,7 +197,7 @@ export default function PricingPage() {
       <section className="bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl font-bold text-gray-900 md:text-4xl">How We Price CRM Work</h2>
+            <h2 className="text-3xl font-bold text-gray-900 md:text-4xl">How We Scope CRM Work</h2>
             <p className="mt-5 text-lg leading-relaxed text-gray-600">
               We keep pricing practical because CRM projects are not all the same. A clean HubSpot form routing fix is not the same as a Salesforce cleanup with years of duplicate data and broken automation.
             </p>
@@ -238,11 +229,11 @@ export default function PricingPage() {
           <div className="mx-auto max-w-5xl">
             <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
-                <Badge className="mb-4 bg-indigo-50 text-indigo-700 hover:bg-indigo-50">Typical ranges</Badge>
-                <h2 className="text-3xl font-bold text-gray-900 md:text-4xl">What CRM Projects Usually Cost</h2>
+                <Badge className="mb-4 bg-indigo-50 text-indigo-700 hover:bg-indigo-50">Scope guide</Badge>
+                <h2 className="text-3xl font-bold text-gray-900 md:text-4xl">How Different CRM Projects Are Usually Scoped</h2>
               </div>
               <p className="max-w-xl text-gray-600">
-                These are planning ranges, not surprise invoices. Final scope is confirmed after we understand your data, systems, and workflow complexity.
+                We use this as a scoping guide, not a public price menu. Final recommendations come after we understand your data, systems, workflow complexity, and business priority.
               </p>
             </div>
 
@@ -272,7 +263,7 @@ export default function PricingPage() {
               <HandCoins className="mb-5 h-10 w-10 text-indigo-200" />
               <h2 className="text-3xl font-bold">Our Recommendation</h2>
               <p className="mt-5 text-lg leading-relaxed text-white/80">
-                For most new conversations, start with a free call. If the problem is obvious, we quote a small fixed-scope sprint. If the CRM needs deeper investigation, we start with hourly discovery and cap the first phase.
+                For most new conversations, start with a free call. If the problem is obvious, we quote a small fixed-scope sprint. If the CRM needs deeper investigation, we recommend a phased approach and cap the first phase.
               </p>
             </div>
             <div>
@@ -336,9 +327,9 @@ export default function PricingPage() {
 
       <section className="bg-gradient-to-br from-indigo-700 to-[#1E3A5F] py-20">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white md:text-4xl">Want a realistic number for your CRM project?</h2>
+          <h2 className="text-3xl font-bold text-white md:text-4xl">Want a realistic estimate for your CRM project?</h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-white/80">
-            Send us the situation or book a call. We will tell you whether it should be fixed-scope, hourly, or broken into a small first sprint.
+            Send us the situation or book a call. We will tell you whether it should be fixed-scope, phased, or broken into a small first sprint.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <TrackedCTA ctaName="Book a Free Strategy Call - Pricing Footer" destination="calendly">
