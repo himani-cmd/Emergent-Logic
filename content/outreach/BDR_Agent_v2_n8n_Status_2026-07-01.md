@@ -108,9 +108,25 @@ No blocker for discovery. The workflow is active.
 
 The remaining gap is the downstream research/draft step. The current workflow intentionally does not create Gmail drafts or send emails.
 
+## Downstream Workflow Status
+
+The next layer has been created but is not active yet.
+
+- Workflow name: `BDR Agent v2 - Contact Enrichment`
+- Workflow ID: `WAYqMRuWsfF7mqyi`
+- Workflow URL: `https://emergent-logic.app.n8n.cloud/workflow/WAYqMRuWsfF7mqyi`
+- Destination table: `bdr_contact_queue_v2`
+- Destination table ID: `w7y29k4RfyZGdn1O`
+
+This enrichment workflow reads `ROUTE_NEEDED` account rows and searches for named LinkedIn buyer routes.
+
+Current blocker: n8n MCP cannot attach the Apify bearer credential to the HTTP Request node. The node must be opened in n8n and the existing bearer credential selected manually before publishing.
+
+See: `content/outreach/BDR_Contact_Enrichment_v2_Status_2026-07-01.md`
+
 ## Next Workflow
 
-After this prospect-discovery agent is active, build `BDR Agent v2 - Draft Creator`.
+After contact enrichment is active, build `BDR Agent v2 - Draft Creator`.
 
 That second workflow should only process rows upgraded to `PERSON_READY`:
 
