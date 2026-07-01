@@ -11,7 +11,7 @@ BDR Agent v2 has been created, tested, and activated in n8n.
 - Workflow URL: `https://emergent-logic.app.n8n.cloud/workflow/Gwy2jIFCjroy5xCR`
 - n8n project: `Himani <himani@emergent-logic.ca>`
 - Active: `true`
-- Active version ID: `5d3429c0-614e-4b26-8b69-af341760c4ee`
+- Active version ID: `c070f3a1-ba5b-4cc1-853a-31356b39b31d`
 - Schedule: daily at 06:30
 - Data table: `bdr_prospect_queue_v2`
 - Data table ID: `Qc2A6KWlV1LNjF06`
@@ -31,6 +31,10 @@ BDR Agent v2 has been created, tested, and activated in n8n.
 - Tightened the quality gate so `RESEARCH_NEEDED` and `BLOCKED` rows do not save.
 - Blocked low-quality job boards and generic listing sources from passing through.
 - Final production execution saved route-worthy account signals from direct/semi-direct hiring pages.
+- Ran another production discovery execution and tightened the quality filter.
+- Updated `Keep Qualified Only` so rows must score at least `75`.
+- Added guardrails so `Hubspotjobs` / `Hubspot` self-results do not pass the filter.
+- Removed existing `Hubspotjobs` rows from `bdr_prospect_queue_v2`.
 
 ## What It Does
 
@@ -101,6 +105,21 @@ Final production execution after the quality fixes succeeded.
 - Result: `ROUTE_NEEDED` rows were saved from direct/semi-direct hiring signals.
 - Example accounts: Toast, Upgrade, MongoDB, Hover, Vim, Blackthorn, Embrace, SafeBreach, Aiven.
 - These rows are account signals, not email-ready contacts.
+
+Additional production execution completed after the filter tightening.
+
+- Execution ID: `460`
+- Status: `success`
+- Result: additional `ROUTE_NEEDED` account signals were saved.
+- New examples included GuidePoint Security and Datadog.
+
+HubSpot self-result cleanup completed.
+
+- Cleanup workflow ID: `SGQKUGAEGJUYikJy`
+- Cleanup execution ID: `461`
+- Status: `success`
+- Result: removed existing `Hubspotjobs` rows from `bdr_prospect_queue_v2`.
+- Cleanup workflow was archived after use.
 
 ## Current Blocker
 
