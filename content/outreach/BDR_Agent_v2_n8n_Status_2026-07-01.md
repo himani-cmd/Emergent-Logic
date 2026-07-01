@@ -11,10 +11,11 @@ BDR Agent v2 has been created, tested, and activated in n8n.
 - Workflow URL: `https://emergent-logic.app.n8n.cloud/workflow/Gwy2jIFCjroy5xCR`
 - n8n project: `Himani <himani@emergent-logic.ca>`
 - Active: `true`
-- Active version ID: `04334ad3-4662-4e97-93c5-caa52e1dab89`
+- Active version ID: `5d3429c0-614e-4b26-8b69-af341760c4ee`
 - Schedule: daily at 06:30
 - Data table: `bdr_prospect_queue_v2`
 - Data table ID: `Qc2A6KWlV1LNjF06`
+- Weekly target: 50-70 qualified prospect/account signals
 
 ## Fix Log
 
@@ -25,6 +26,11 @@ BDR Agent v2 has been created, tested, and activated in n8n.
 - Current body now sends `queries: $json.query` as a string.
 - Full manual workflow execution succeeded after the fix.
 - Published the workflow so the daily schedule can run automatically.
+- Added US + Canada searches.
+- Replaced URL/domain parsing with regex parsing after the n8n Code node hit a URL parsing/syntax issue.
+- Tightened the quality gate so `RESEARCH_NEEDED` and `BLOCKED` rows do not save.
+- Blocked low-quality job boards and generic listing sources from passing through.
+- Final production execution saved route-worthy account signals from direct/semi-direct hiring pages.
 
 ## What It Does
 
@@ -86,6 +92,15 @@ Full manual execution also succeeded after the Apify input fix.
 - Result: qualified rows were saved to `bdr_prospect_queue_v2`.
 - Example saved classifications: `LINKEDIN_READY`.
 - Important guardrail: saved LinkedIn rows are not email-ready until a public work email is verified.
+
+Final production execution after the quality fixes succeeded.
+
+- Execution ID: `457`
+- Status: `success`
+- Active version ID: `5d3429c0-614e-4b26-8b69-af341760c4ee`
+- Result: `ROUTE_NEEDED` rows were saved from direct/semi-direct hiring signals.
+- Example accounts: Toast, Upgrade, MongoDB, Hover, Vim, Blackthorn, Embrace, SafeBreach, Aiven.
+- These rows are account signals, not email-ready contacts.
 
 ## Current Blocker
 
