@@ -99,5 +99,8 @@ https://help.salesforce.com/s/articleView?id=005321563&type=1
 
 - Post Himani version first from her profile.
 - Post company version 2-4 hours later or next morning.
-- No graphic required for this one. A timely text post is better.
-- If adding a graphic, use a simple brand-safe quote card: "Salesforce admin access is CRM risk management."
+- Use the founder graphic with Himani's post:
+  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_founder_square.png`
+- Use the company graphic with the company page post:
+  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_company_square.png`
+- Both graphics follow the approved Emergent Logic visual system: clean white field, indigo accent, navy headline, structured checklist, and approved icon.
