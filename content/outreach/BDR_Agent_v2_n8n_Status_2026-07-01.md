@@ -4,12 +4,15 @@ Prepared: 2026-07-01
 
 ## Current State
 
-BDR Agent v2 has been created in n8n.
+BDR Agent v2 has been created, tested, and activated in n8n.
 
 - Workflow name: `BDR Agent v2 - Prospect Discovery`
 - Workflow ID: `Gwy2jIFCjroy5xCR`
 - Workflow URL: `https://emergent-logic.app.n8n.cloud/workflow/Gwy2jIFCjroy5xCR`
 - n8n project: `Himani <himani@emergent-logic.ca>`
+- Active: `true`
+- Active version ID: `04334ad3-4662-4e97-93c5-caa52e1dab89`
+- Schedule: daily at 06:30
 - Data table: `bdr_prospect_queue_v2`
 - Data table ID: `Qc2A6KWlV1LNjF06`
 
@@ -20,6 +23,8 @@ BDR Agent v2 has been created in n8n.
 - Fixed Apify actor input error: `input.queries must be string`.
 - Root cause: workflow originally sent `queries` as an array.
 - Current body now sends `queries: $json.query` as a string.
+- Full manual workflow execution succeeded after the fix.
+- Published the workflow so the daily schedule can run automatically.
 
 ## What It Does
 
@@ -74,20 +79,19 @@ Manual pinned test execution succeeded.
 - The workflow classified it as `BLOCKED`.
 - The filter prevented it from reaching the data table save step.
 
+Full manual execution also succeeded after the Apify input fix.
+
+- Execution ID: `451`
+- Status: `success`
+- Result: qualified rows were saved to `bdr_prospect_queue_v2`.
+- Example saved classifications: `LINKEDIN_READY`.
+- Important guardrail: saved LinkedIn rows are not email-ready until a public work email is verified.
+
 ## Current Blocker
 
-The workflow is not active yet because the Apify credential must be selected manually on the HTTP Request node.
+No blocker for discovery. The workflow is active.
 
-MCP could create the workflow and data table, but n8n rejected programmatic credential attachment for the HTTP Request node.
-
-Manual step:
-
-1. Open `BDR Agent v2 - Prospect Discovery`.
-2. Open node `Run Apify Google Search`.
-3. Under authentication, select credential `Bearer Auth account 2`.
-4. Save the node.
-5. Run a manual test.
-6. If it returns qualified rows, activate/publish the workflow.
+The remaining gap is the downstream research/draft step. The current workflow intentionally does not create Gmail drafts or send emails.
 
 ## Next Workflow
 
