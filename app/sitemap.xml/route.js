@@ -11,6 +11,7 @@ const urls = [
   ['/case-studies/ai-revenue-operations-engine', 'monthly', '0.8'],
   ['/case-studies/hubspot-crm-cleanup-safe-implementation', 'monthly', '0.8'],
   ['/case-studies/website-leads-to-crm-follow-up-system', 'monthly', '0.8'],
+  ['/case-studies/mortgage-lead-follow-up-system', 'monthly', '0.8'],
   ['/case-studies/salesforce-cleanup-before-automation', 'monthly', '0.8'],
   ['/case-studies/immigration-consultation-intake-automation', 'monthly', '0.8'],
   ['/case-studies/real-estate-lead-routing-long-cycle-nurture', 'monthly', '0.8'],

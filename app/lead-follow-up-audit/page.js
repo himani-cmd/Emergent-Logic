@@ -71,6 +71,11 @@ const relatedResources = [
     text: 'A representative pattern for turning website inquiries into structured follow-up.',
   },
   {
+    title: 'Mortgage Lead Follow-Up Case Study',
+    href: '/case-studies/mortgage-lead-follow-up-system',
+    text: 'A representative pattern for applications, renewals, refinances, documents, and follow-up.',
+  },
+  {
     title: 'AI Revenue Operations Engine',
     href: '/case-studies/ai-revenue-operations-engine',
     text: 'How AI-assisted operations can support prospecting, CRM hygiene, and follow-up execution.',
