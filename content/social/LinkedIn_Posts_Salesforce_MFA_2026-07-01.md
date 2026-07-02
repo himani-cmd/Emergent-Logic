@@ -99,11 +99,11 @@ https://help.salesforce.com/s/articleView?id=005321563&type=1
 
 - Post Himani version first from her profile.
 - Post company version 2-4 hours later or next morning.
-- Use the final concept graphic with Himani's post:
-  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_founder_concept_v6.png`
-- Use the final concept graphic with the company page post:
-  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_company_concept_v6.png`
-- Use the final vertical creative for Instagram, story, or carousel cover:
-  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_vertical_concept_v6.png`
-- The v6 direction is now the recommended set. It is more creative while staying professional: admin blast radius, access floor plan, and checkpoint checklist.
-- The v5 files remain available as the clean corporate fallback. The v4 files remain available as a quieter fallback.
+- Use the premium GPT-image-based graphic with Himani's post:
+  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_founder_premium_gpt_image2.png`
+- Use the premium GPT-image-based graphic with the company page post:
+  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_company_premium_gpt_image2.png`
+- Use the premium vertical creative for Instagram, story, or carousel cover:
+  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_vertical_premium_gpt_image2.png`
+- The premium GPT-image-based direction is now the recommended set. It combines a polished 3D CRM access-map visual with exact branded typography overlaid locally.
+- The v6 files remain available as a more conceptual fallback. The v5 files remain available as the clean corporate fallback.
