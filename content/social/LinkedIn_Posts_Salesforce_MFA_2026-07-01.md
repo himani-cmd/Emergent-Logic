@@ -99,11 +99,11 @@ https://help.salesforce.com/s/articleView?id=005321563&type=1
 
 - Post Himani version first from her profile.
 - Post company version 2-4 hours later or next morning.
-- Use the dark founder graphic with Himani's post:
-  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_blast_radius_v3.png`
-- Use the white company graphic with the company page post:
-  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_who_has_keys_v3.png`
-- Use the vertical creative for Instagram, story, or carousel cover:
-  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_vertical_story_v3.png`
-- The v3 direction is now the recommended set. It uses stronger B2B memory hooks: admin blast radius, who has the keys, and login is not the whole risk.
-- The v2 files remain available as fallback assets if a quieter visual is needed.
+- Use the clean founder graphic with Himani's post:
+  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_founder_clean_v4.png`
+- Use the clean company graphic with the company page post:
+  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_company_clean_v4.png`
+- Use the clean vertical creative for Instagram, story, or carousel cover:
+  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_vertical_clean_v4.png`
+- The v4 direction is now the recommended set. It is cleaner, calmer, more executive, and easier to read on mobile.
+- The v3 files remain available as a bolder fallback if a more dramatic visual is needed.
