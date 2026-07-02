@@ -99,11 +99,11 @@ https://help.salesforce.com/s/articleView?id=005321563&type=1
 
 - Post Himani version first from her profile.
 - Post company version 2-4 hours later or next morning.
-- Use the clean founder graphic with Himani's post:
-  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_founder_clean_v4.png`
-- Use the clean company graphic with the company page post:
-  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_company_clean_v4.png`
-- Use the clean vertical creative for Instagram, story, or carousel cover:
-  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_vertical_clean_v4.png`
-- The v4 direction is now the recommended set. It is cleaner, calmer, more executive, and easier to read on mobile.
-- The v3 files remain available as a bolder fallback if a more dramatic visual is needed.
+- Use the final director graphic with Himani's post:
+  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_founder_director_v5.png`
+- Use the final director graphic with the company page post:
+  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_company_director_v5.png`
+- Use the final vertical creative for Instagram, story, or carousel cover:
+  `content/social/assets/salesforce-mfa-2026-07-01/salesforce_mfa_vertical_director_v5.png`
+- The v5 direction is now the recommended set. It is the cleanest content-director version: stronger hierarchy, calmer layout, better mobile readability, and sharper B2B positioning.
+- The v4 files remain available as a quieter fallback. The v3 files remain available as a bolder fallback.
