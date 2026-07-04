@@ -10,7 +10,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, AlertCircle, CheckCircle, Clock, MapPin } from 'lucide-react';
 
 export const metadata = {
-  title: 'When Small Businesses Need a Salesforce Consultant',
+  title: 'Small Business Salesforce Consultant',
   description: 'A practical guide for small businesses deciding when to hire a Salesforce consultant for setup, cleanup, automation, reporting, and admin support.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/salesforce-consultant-small-business' },
   openGraph: {

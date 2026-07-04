@@ -23,7 +23,7 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Case Study: Immigration Consultation Intake Automation',
+  title: 'Immigration Intake Case Study',
   description:
     'How immigration firms can route forms, phone, WhatsApp, email, CRM ownership, follow-up tasks, and reporting into one intake workflow.',
   alternates: {

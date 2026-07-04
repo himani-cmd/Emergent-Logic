@@ -10,7 +10,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, MapPin } from 'lucide-react';
 
 export const metadata = {
-  title: 'Salesforce Consultant Near Me: What to Look For',
+  title: 'Salesforce Consultant Near Me',
   description: 'Learn what to look for before hiring local or remote Salesforce help for setup, cleanup, automation, reporting, and admin support.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/salesforce-consultant-near-me' },
   openGraph: {

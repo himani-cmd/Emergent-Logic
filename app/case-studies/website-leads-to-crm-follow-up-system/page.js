@@ -22,7 +22,7 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Representative Case Study: Website Leads to CRM Follow-Up',
+  title: 'Website Leads to CRM Case Study',
   description:
     'How website forms, lead capture, CRM routing, owner assignment, follow-up tasks, and reporting keep inquiries from disappearing.',
   alternates: {

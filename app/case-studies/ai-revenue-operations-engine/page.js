@@ -10,7 +10,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Bot, CheckCircle, Database, FileText, Mail, Search, ShieldCheck, Workflow } from 'lucide-react';
 
 export const metadata = {
-  title: 'Case Study: AI-Assisted Revenue Operations Engine',
+  title: 'AI Revenue Operations Case Study',
   description: 'How Emergent Logic built an AI-assisted revenue engine for CRM, prospecting, BDR drafts, SEO, social content, and backlinks.',
   alternates: { canonical: 'https://www.emergent-logic.ca/case-studies/ai-revenue-operations-engine' },
   openGraph: {

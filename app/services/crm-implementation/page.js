@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Database, Clock, DollarSign, Users, Zap, ShieldCheck, TrendingUp, Building2, Briefcase, Stethoscope, Hammer, GraduationCap, ShoppingBag, X, Check, MapPin } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Implementation Services Canada | HubSpot & Salesforce',
+  title: 'CRM Implementation Services Canada',
   description: 'CRM implementation for HubSpot, Salesforce, and Zoho: pipelines, automation, dashboards, migration, and training for growing teams.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/crm-implementation' },
   robots: { index: true, follow: true },

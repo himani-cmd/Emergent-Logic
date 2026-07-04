@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Database, Zap, BarChart3, Users, ShieldCheck } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Implementation Canada | HubSpot & Salesforce Setup',
+  title: 'CRM Implementation Canada',
   description: 'CRM implementation for Canadian businesses: HubSpot, Salesforce, Zoho, pipelines, automation, dashboards, migration, and training.',
   alternates: { canonical: 'https://www.emergent-logic.ca/crm-implementation-canada' },
   robots: { index: true, follow: true },

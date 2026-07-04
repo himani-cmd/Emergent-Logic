@@ -8,7 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { ArrowRight, CheckCircle, Clock, FileSearch, MailCheck, Route, Target, Users } from 'lucide-react';
 
 export const metadata = {
-  title: 'Free 5-Point Lead Follow-Up Audit | Emergent Logic',
+  title: 'Free Lead Follow-Up Audit',
   description: 'Get a free 5-point review of one website inquiry path. We check lead source, ownership, CRM stage, follow-up timing, and reporting visibility.',
   alternates: { canonical: 'https://www.emergent-logic.ca/lead-follow-up-audit' },
   openGraph: {

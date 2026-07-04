@@ -19,7 +19,7 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Website Leads to CRM Implementation | Emergent Logic',
+  title: 'Website Leads to CRM',
   description:
     'Connect website forms, landing pages, booking flows, and inquiries into HubSpot or Salesforce with routing, ownership, tasks, and reporting.',
   alternates: { canonical: 'https://www.emergent-logic.ca/website-leads-to-crm-implementation' },

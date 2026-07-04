@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, MapPin } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Consultant Surrey BC | Emergent Logic',
+  title: 'CRM Consultant Surrey BC',
   description: 'CRM consulting in Surrey BC. Salesforce, HubSpot, NetSuite, Odoo implementation. AI-accelerated delivery. Free strategy call.',
   alternates: { canonical: 'https://www.emergent-logic.ca/crm-consultant-surrey-bc' },
   openGraph: {

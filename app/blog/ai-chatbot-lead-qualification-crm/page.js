@@ -10,7 +10,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Bot, CheckCircle, Clock, MessageSquare } from 'lucide-react';
 
 export const metadata = {
-  title: 'AI Chatbots for Lead Qualification Need CRM Integration',
+  title: 'AI Chatbot Lead Qualification',
   description: 'AI chatbots can qualify leads, but only if they capture clean data, route inquiries, and create CRM follow-up. Learn the practical setup.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/ai-chatbot-lead-qualification-crm' },
   openGraph: {

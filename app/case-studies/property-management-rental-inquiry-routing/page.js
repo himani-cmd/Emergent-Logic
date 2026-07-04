@@ -20,7 +20,7 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Case Study: Property Management Inquiry Routing',
+  title: 'Property Management Routing Case Study',
   description:
     'How property managers can route owner inquiries, rental evaluations, referrals, and website leads into a clear CRM follow-up workflow.',
   alternates: {

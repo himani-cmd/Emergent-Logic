@@ -20,7 +20,7 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'AI Chatbot Automation Canada | CRM Lead Qualification',
+  title: 'AI Chatbot Automation Canada',
   description:
     'AI chatbot automation for service businesses. Qualify website visitors, capture clean lead data, route inquiries into your CRM, and trigger follow-up tasks.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/ai-chatbot-automation' },

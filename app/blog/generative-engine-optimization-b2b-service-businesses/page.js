@@ -10,7 +10,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, SearchCheck } from 'lucide-react';
 
 export const metadata = {
-  title: 'Generative Engine Optimization for B2B Service Businesses',
+  title: 'GEO for B2B Service Businesses',
   description: 'A practical GEO guide for B2B service businesses: structure expertise, proof, FAQs, citations, and pages so AI search can understand you.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/generative-engine-optimization-b2b-service-businesses' },
   openGraph: {

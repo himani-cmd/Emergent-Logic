@@ -10,7 +10,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, AlertCircle, CheckCircle, Clock, Search } from 'lucide-react';
 
 export const metadata = {
-  title: 'What CRM Jobs Reveal About HubSpot and Salesforce Cleanup',
+  title: 'HubSpot and Salesforce Cleanup Signals',
   description: 'What repeated CRM job posts reveal about HubSpot cleanup, Salesforce cleanup, failed implementations, reporting issues, and automation gaps.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/hubspot-salesforce-cleanup-upwork-patterns' },
   openGraph: {

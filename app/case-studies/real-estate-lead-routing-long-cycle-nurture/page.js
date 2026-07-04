@@ -23,7 +23,7 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Case Study: Real Estate Lead Routing and Nurture',
+  title: 'Real Estate Lead Routing Case Study',
   description:
     'How real estate teams can route buyer, seller, valuation, referral, and long-cycle leads into a clear CRM follow-up workflow.',
   alternates: {

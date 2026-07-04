@@ -10,7 +10,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, MapPin, Wrench } from 'lucide-react';
 
 export const metadata = {
-  title: 'Salesforce Admin Support for Small Businesses',
+  title: 'Salesforce Admin Support',
   description: 'Learn when to outsource Salesforce admin support for cleanup, reporting, Flow updates, adoption, and day-to-day CRM maintenance.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/salesforce-admin-support-small-business' },
   openGraph: {

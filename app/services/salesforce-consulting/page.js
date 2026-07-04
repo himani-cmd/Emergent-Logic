@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Cloud, Layers, Zap, BarChart3, Shield, Code2, Users, Briefcase, Clock, DollarSign, Check, AlertTriangle } from 'lucide-react';
 
 export const metadata = {
-  title: 'Salesforce Consultant Canada & US | Sales Cloud Setup',
+  title: 'Salesforce Consultant Canada & US',
   description: 'Salesforce consulting for Canada and US teams: Sales Cloud setup, Flow automation, reports, cleanup, training, and admin support.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/salesforce-consulting' },
   robots: { index: true, follow: true },

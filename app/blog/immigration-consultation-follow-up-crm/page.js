@@ -10,7 +10,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, FileText, MapPin } from 'lucide-react';
 
 export const metadata = {
-  title: 'Immigration Consultation Follow-Up: Why CRM Intake Matters',
+  title: 'Immigration CRM Intake Follow-Up',
   description: 'Immigration consultants lose consultation opportunities when forms, calls, WhatsApp, and email are not routed into one clear CRM follow-up workflow.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/immigration-consultation-follow-up-crm' },
   openGraph: {
