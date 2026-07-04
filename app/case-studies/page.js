@@ -238,6 +238,49 @@ export default function CaseStudiesPage() {
           <Card className="border-0 shadow-xl overflow-hidden mt-8">
             <div className="grid lg:grid-cols-3">
               <div className="lg:col-span-2 p-8">
+                <Badge className="mb-4 bg-indigo-100 text-indigo-800">Representative Implementation</Badge>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                  Lead Routing and MQL-to-SQL Handoff Cleanup
+                </h2>
+                <p className="text-gray-600 mb-6">
+                  A practical CRM cleanup case study showing how unclear lifecycle stages, routing rules, ownership, and follow-up visibility can quietly leak qualified leads.
+                </p>
+                <div className="space-y-3 mb-6">
+                  {[
+                    'Define Lead, MQL, SQL, opportunity, disqualified, and recycle stages clearly',
+                    'Add required handoff fields for source, owner, service interest, and next follow-up',
+                    'Rebuild routing rules around how the team actually sells',
+                    'Report on ownerless leads, stale follow-up, and routing exceptions',
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-blue-700 flex-shrink-0 mt-0.5" />
+                      <p className="text-gray-700">{item}</p>
+                    </div>
+                  ))}
+                </div>
+                <Link href="/case-studies/lead-routing-mql-sql-handoff-cleanup">
+                  <Button className="bg-blue-700 hover:bg-blue-800">
+                    Read Case Study <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </Link>
+              </div>
+              <div className="bg-gradient-to-br from-indigo-800 to-slate-950 p-8 text-white flex flex-col justify-center">
+                <p className="text-sm uppercase tracking-widest text-indigo-200 mb-3">Best for</p>
+                <h3 className="text-2xl font-bold mb-6">Teams with leads entering the CRM but unclear ownership after MQL handoff</h3>
+                <div className="space-y-3 text-white/80">
+                  <p>MQL-to-SQL handoff</p>
+                  <p>Lead routing cleanup</p>
+                  <p>Lifecycle stage definitions</p>
+                  <p>Follow-up accountability</p>
+                  <p>CRM reporting health</p>
+                </div>
+              </div>
+            </div>
+          </Card>
+
+          <Card className="border-0 shadow-xl overflow-hidden mt-8">
+            <div className="grid lg:grid-cols-3">
+              <div className="lg:col-span-2 p-8">
                 <Badge className="mb-4 bg-sky-100 text-sky-800">Representative Implementation</Badge>
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">
                   Salesforce Cleanup Before Automation
