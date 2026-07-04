@@ -39,14 +39,33 @@ const hubs = [
 const reasons = [
   'Local presence — we serve Metro Vancouver from our Surrey, BC office',
   'All-in-one expertise: CRM, Marketing Hub, Sales Hub, CMS, and Service Hub',
-  'AI-accelerated delivery: live in 2-4 weeks, not 2-4 months',
+  'AI-accelerated delivery: shorter implementation cycles without skipping process design',
   'We build revenue systems, not just databases',
-  '40-60% lower cost than traditional HubSpot Solutions Partners',
+  'Practical scope and transparent estimates before work starts',
   'Ongoing support and optimization after launch',
 ];
 
+const leakSignals = [
+  {
+    title: 'Lifecycle stages are unclear',
+    description: 'Leads, subscribers, MQLs, SQLs, opportunities, and customers should mean something specific. If each person on the team interprets them differently, reporting becomes unreliable.'
+  },
+  {
+    title: 'Website leads do not create clear next steps',
+    description: 'A form submission should capture source, request type, owner, priority, and next follow-up. If that information stays in email, the CRM is already behind.'
+  },
+  {
+    title: 'Workflows exist, but nobody fully trusts them',
+    description: 'Many HubSpot portals have old workflows still running, duplicated rules, missing suppression logic, or automation that was built around a process the team no longer follows.'
+  },
+  {
+    title: 'Reports show activity, not useful decisions',
+    description: 'Dashboards should answer what is stuck, who owns it, what needs follow-up, and which channel is producing qualified pipeline. Otherwise the CRM becomes a data display, not an operating system.'
+  },
+];
+
 const faqs = [
-  { q: 'How much does HubSpot implementation cost in Vancouver?', a: 'HubSpot CRM is free to start. Professional implementation with Emergent Logic costs 40-60% less than traditional agencies — with faster delivery. Contact us for a custom quote.' },
+  { q: 'How much does HubSpot implementation cost in Vancouver?', a: 'HubSpot CRM is free to start, but a useful implementation depends on the scope: pipelines, properties, workflows, reporting, migration, integrations, and training. We review the setup first, then give a clear estimate before work starts.' },
   { q: 'What HubSpot Hubs do you implement?', a: 'We implement all HubSpot Hubs: CRM, Sales Hub, Marketing Hub, Service Hub, CMS Hub, and Operations Hub. Most Vancouver businesses start with CRM + Marketing Hub.' },
   { q: 'Can you migrate us from Salesforce to HubSpot?', a: 'Yes. We handle Salesforce-to-HubSpot migrations regularly. We clean, map, and migrate your data with zero loss — and train your team on the new platform.' },
 ];
@@ -102,6 +121,33 @@ export default function HubspotConsultantVancouver() {
                 <div className="font-semibold text-gray-900">{hub.name}</div>
                 <div className="text-sm text-gray-500">{hub.desc}</div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mb-10">
+            <Badge className="mb-4 bg-violet-100 text-violet-700 hover:bg-violet-100">HubSpot cleanup signals</Badge>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">When HubSpot looks set up, but still leaks revenue</h2>
+            <p className="text-lg text-gray-600 mb-4">
+              Most Vancouver teams do not need HubSpot rebuilt from scratch. They need the messy middle cleaned up: lifecycle rules, lead ownership, workflow logic, source tracking, and reporting. That is where the lost follow-up usually hides.
+            </p>
+            <p className="text-lg text-gray-600">
+              Before we add more automation, we look for the points where the system stops giving the team a clear next step.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {leakSignals.map((item, i) => (
+              <Card key={i} className="border border-violet-100 shadow-sm">
+                <CardHeader>
+                  <CardTitle className="text-lg text-gray-900">{item.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">{item.description}</p>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
