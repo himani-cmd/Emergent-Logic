@@ -20,6 +20,14 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'crm-lead-routing-mql-sql-handoff',
+    title: 'Why Lead Routing Breaks Between MQL and SQL',
+    excerpt: 'Learn why CRM lead routing breaks between marketing and sales, and how lifecycle stages, ownership rules, and dashboards fix follow-up leaks.',
+    category: 'Lead Routing',
+    readTime: '9 min read',
+    featured: true,
+  },
+  {
     slug: 'ai-automation-consulting-pricing',
     title: 'AI Automation Consulting Pricing: What Small Businesses Pay',
     excerpt: 'A practical pricing guide for small businesses comparing starter automations, workflow builds, CRM-connected automation, and managed support.',

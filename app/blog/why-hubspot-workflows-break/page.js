@@ -62,7 +62,7 @@ const faqItems = [
 ];
 
 const relatedPosts = [
-  { title: 'HubSpot Admin Support for Small Businesses', href: '/blog/hubspot-admin-support-small-business' },
+  { title: 'Why Lead Routing Breaks Between MQL and SQL', href: '/blog/crm-lead-routing-mql-sql-handoff' },
   { title: 'Why Marketing Automation Fails Without CRM Cleanup First', href: '/blog/marketing-automation-needs-crm-cleanup' },
   { title: 'HubSpot Salesforce Sync Cleanup', href: '/blog/hubspot-salesforce-sync-cleanup' },
 ];
@@ -142,6 +142,9 @@ export default function WhyHubSpotWorkflowsBreak() {
 
               <p>
                 A lead-routing workflow might fail because the website form is missing intent data. A nurture workflow might enroll the wrong contacts because lifecycle stages are inconsistent. A notification workflow might alert the wrong person because contact owner and deal owner rules are unclear.
+              </p>
+              <p>
+                If the biggest issue is the handoff from marketing to sales, review our guide on <Link href="/blog/crm-lead-routing-mql-sql-handoff" className="text-orange-700 hover:underline">why lead routing breaks between MQL and SQL</Link> before rebuilding the workflow itself.
               </p>
 
               <div className="bg-orange-50 border-l-4 border-orange-600 p-6 my-8 rounded-r-lg">
