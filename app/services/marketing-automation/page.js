@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Target, Mail, BarChart3, Workflow, Filter, Send, Clock, DollarSign, Check, AlertTriangle, Zap, Database } from 'lucide-react';
 
 export const metadata = {
-  title: 'Marketing Automation Services Canada | CRM-First',
+  title: 'Marketing Automation Services Canada | Emergent Logic',
   description: 'CRM-first marketing automation: lead scoring, nurture sequences, attribution, and sales handoff for HubSpot, Salesforce, and Zoho.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/marketing-automation' },
   robots: { index: true, follow: true },
@@ -18,6 +18,25 @@ export const metadata = {
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
 };
+
+const readinessSignals = [
+  {
+    title: 'Lifecycle stages are trustworthy',
+    desc: 'Leads, MQLs, SQLs, opportunities, and customers are clearly defined and consistently updated. If this field is messy, nurture logic and handoff rules will misfire.',
+  },
+  {
+    title: 'Owners and routing rules are current',
+    desc: 'Every meaningful lead has the right owner, territory, segment, and next step. Automation should route work to a person, not a dead queue or inactive user.',
+  },
+  {
+    title: 'Source and campaign data is captured',
+    desc: 'UTMs, original source, campaign attribution, and form context are preserved before automation starts. Without this, reports show activity without revenue clarity.',
+  },
+  {
+    title: 'Sales agrees with the handoff rules',
+    desc: 'Marketing and sales need the same definition of “ready.” Otherwise automation creates alerts that reps ignore and reports leadership cannot trust.',
+  },
+];
 
 export default function MarketingAutomation() {
   return (
@@ -53,7 +72,7 @@ export default function MarketingAutomation() {
           </div>
           <div className="mt-8 flex flex-wrap gap-6 text-white/70 text-sm">
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-purple-300" /> 2 to 4 week delivery</div>
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-purple-300" /> Fixed pricing from $1,500</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-purple-300" /> Clear scope before build</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-purple-300" /> CRM-native automation</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-purple-300" /> Attribution included</div>
           </div>
@@ -71,6 +90,32 @@ export default function MarketingAutomation() {
                 If your contacts are duplicated, your lifecycle stages are inconsistent, and your sales process is not mapped in your CRM, then automating on top of it just speeds up the chaos. That is why we always start with the CRM. If your CRM is not in good shape, we will tell you that during the discovery call — and we will recommend a <Link href="/services/crm-cleanup" className="underline font-medium">CRM Cleanup</Link> or <Link href="/services/crm-implementation" className="underline font-medium">CRM Implementation</Link> first.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Automation readiness */}
+      <section className="py-20 bg-white border-y border-purple-100">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 text-purple-700 text-sm font-medium mb-4">
+            <Zap className="w-4 h-4" /> Automation readiness
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Before You Automate, Make Sure the CRM Can Be Trusted
+          </h2>
+          <p className="text-lg text-gray-600 mb-5">
+            Most marketing automation problems are not email problems. They are CRM problems wearing an email costume. A workflow can only make good decisions if the contact data, lifecycle stages, owners, sources, and deal context underneath it are reliable.
+          </p>
+          <p className="text-lg text-gray-600 mb-8">
+            This is why our marketing automation projects start with a practical readiness check. If the foundation is clean, we build. If it is not, we recommend a focused <Link href="/services/crm-cleanup" className="text-purple-700 hover:underline font-medium">CRM cleanup</Link> first, or a cleaner <Link href="/services/crm-implementation" className="text-purple-700 hover:underline font-medium">CRM implementation</Link> if the existing setup cannot support the funnel.
+          </p>
+          <div className="grid md:grid-cols-2 gap-5">
+            {readinessSignals.map((item, i) => (
+              <div key={i} className="rounded-2xl border border-purple-100 bg-gradient-to-br from-white to-purple-50 p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-gray-600">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -128,7 +173,7 @@ export default function MarketingAutomation() {
               { title: 'Volume over relevance', desc: 'Sending more emails to more contacts is not a strategy. Tight segmentation, behaviour-based triggers, and ruthless list hygiene beat blast emails every time.' },
               { title: 'No scoring threshold for handoff', desc: 'Leads either go to sales the moment they fill a form (too early, low close rate) or never (lost in the funnel). A scored handoff threshold solves both problems.' },
               { title: 'No attribution model', desc: 'Marketing reports clicks. Sales reports closed deals. Nobody connects the two. Without attribution, every campaign decision is a guess.' },
-              { title: 'No re-engagement plan', desc: 'Most leads are not ready when they first opt in. If you do not have a re-engagement workflow that brings them back at the right moment, you lose 60-80 percent of your pipeline by default.' },
+              { title: 'No re-engagement plan', desc: 'Most leads are not ready when they first opt in. If you do not have a re-engagement workflow that brings them back at the right moment, a large share of pipeline goes quiet by default.' },
               { title: 'Set and forget', desc: 'Automation is not a one-time build. Sequences need to be tested, scoring needs to be tuned, and workflows need to evolve as the business does. Without ongoing review, automation rots.' },
             ].map((item, i) => (
               <div key={i} className="bg-red-50 border border-red-200 rounded-xl p-5">
