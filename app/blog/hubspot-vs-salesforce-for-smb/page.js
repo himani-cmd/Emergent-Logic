@@ -10,7 +10,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, Scale } from 'lucide-react';
 
 export const metadata = {
-  title: 'HubSpot vs Salesforce for SMBs | CRM Comparison',
+  title: 'HubSpot vs Salesforce for SMBs',
   description: 'Compare HubSpot and Salesforce for small businesses: cost, setup, admin needs, automation, reporting, adoption risk, and when each CRM fits.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/hubspot-vs-salesforce-for-smb' },
   openGraph: {

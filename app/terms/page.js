@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 
 export const metadata = {
-  title: 'Terms of Service | Emergent Logic',
+  title: 'Terms of Service',
   description: 'Read the Emergent Logic terms of service for CRM consulting, automation, lead capture, website, and related professional services.',
   alternates: { canonical: 'https://www.emergent-logic.ca/terms' },
   openGraph: {

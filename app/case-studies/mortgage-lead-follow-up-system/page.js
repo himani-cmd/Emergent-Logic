@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Representative Case Study: Mortgage Lead Follow-Up System',
+  title: 'Mortgage Lead Follow-Up Case Study',
   description:
     'How mortgage brokers can connect applications, rate inquiries, renewals, document requests, CRM follow-up, and reporting.',
   alternates: {

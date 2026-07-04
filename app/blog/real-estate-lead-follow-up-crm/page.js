@@ -10,7 +10,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, Home, MapPin } from 'lucide-react';
 
 export const metadata = {
-  title: 'Real Estate Lead Follow-Up: Why CRM Routing Matters',
+  title: 'Real Estate CRM Lead Follow-Up',
   description: 'Real estate teams lose buyer and seller opportunities when forms, calls, referrals, and market evaluation requests are not routed into a clear CRM workflow.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/real-estate-lead-follow-up-crm' },
   openGraph: {

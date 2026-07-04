@@ -10,7 +10,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Bot, CheckCircle, Clock, DollarSign } from 'lucide-react';
 
 export const metadata = {
-  title: 'AI Automation Consulting Pricing | Small Business Guide',
+  title: 'AI Automation Consulting Pricing',
   description: 'Learn what AI automation consulting costs for small businesses, from simple workflows to CRM-connected systems, and what changes project price.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/ai-automation-consulting-pricing' },
   openGraph: {

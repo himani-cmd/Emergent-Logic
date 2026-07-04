@@ -10,7 +10,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, FileSearch } from 'lucide-react';
 
 export const metadata = {
-  title: '5-Point Lead Follow-Up Audit Checklist | Emergent Logic',
+  title: '5-Point Lead Follow-Up Audit',
   description: 'Use this 5-point checklist to review what happens after a website inquiry: entry point, owner, CRM stage, next follow-up, and 7-day visibility.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/lead-follow-up-audit-checklist' },
   openGraph: {

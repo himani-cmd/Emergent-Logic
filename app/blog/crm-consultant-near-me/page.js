@@ -10,7 +10,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, MapPin } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Consultant Near Me: What Buyers Are Really Looking For',
+  title: 'CRM Consultant Near Me Guide',
   description: 'Searching for a CRM consultant near me? Learn what local SMBs actually need: cleanup, implementation, routing, automation, reporting, and fast senior help.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/crm-consultant-near-me' },
   openGraph: {

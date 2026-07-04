@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Link2, Database, Phone, Mail, Calendar, FileText, Globe, Zap, RefreshCw, Clock, DollarSign, Check, AlertTriangle } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Integration Services Canada | HubSpot & Salesforce',
+  title: 'CRM Integration Services Canada',
   description: 'Connect your CRM to website forms, email, phone, accounting, and marketing tools. HubSpot, Salesforce, Zoho, Zapier, Make, and APIs.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/crm-integration' },
   robots: { index: true, follow: true },

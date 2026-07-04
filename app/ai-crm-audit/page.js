@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Search, Database, Zap, BarChart3, ShieldCheck, AlertTriangle } from 'lucide-react';
 
 export const metadata = {
-  title: 'Free AI-Powered CRM Audit | Emergent Logic',
+  title: 'Free AI-Powered CRM Audit',
   description: 'Get a free AI-powered CRM audit for pipelines, workflows, data quality, reporting, automation gaps, and a prioritized action plan.',
   alternates: { canonical: 'https://www.emergent-logic.ca/ai-crm-audit' },
 };

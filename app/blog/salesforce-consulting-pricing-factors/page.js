@@ -10,7 +10,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, DollarSign, ShieldCheck } from 'lucide-react';
 
 export const metadata = {
-  title: 'Salesforce Consulting Pricing Factors | SMB Guide',
+  title: 'Salesforce Consulting Pricing',
   description: 'Understand what affects Salesforce consulting cost for small businesses, from admin support and cleanup to automation, reporting, and integrations.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/salesforce-consulting-pricing-factors' },
   openGraph: {

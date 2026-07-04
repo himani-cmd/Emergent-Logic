@@ -10,7 +10,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Building2, CheckCircle, Clock, MapPin } from 'lucide-react';
 
 export const metadata = {
-  title: 'Property Management Lead Follow-Up: Why CRM Routing Matters',
+  title: 'Property Management CRM Follow-Up',
   description: 'Property management companies lose owner inquiries when forms, calls, and emails are not routed into a clear CRM follow-up workflow.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/property-management-lead-follow-up-crm' },
   openGraph: {

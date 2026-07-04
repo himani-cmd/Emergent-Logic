@@ -10,7 +10,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, MousePointerClick } from 'lucide-react';
 
 export const metadata = {
-  title: 'Why Website Leads Need CRM Routing to Turn Into Sales',
+  title: 'Website Leads Need CRM Routing',
   description: 'Website forms do not create revenue by themselves. Learn why lead capture, CRM routing, ownership, and follow-up workflows matter.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/website-leads-to-crm' },
   openGraph: {

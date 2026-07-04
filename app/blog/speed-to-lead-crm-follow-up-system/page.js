@@ -10,7 +10,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, TimerReset } from 'lucide-react';
 
 export const metadata = {
-  title: 'Speed to Lead: Why Fast Follow-Up Needs a CRM System',
+  title: 'Speed to Lead CRM Follow-Up',
   description: 'Fast lead response is not just about replying quickly. Learn how CRM ownership, routing, tasks, and follow-up visibility protect warm inquiries.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/speed-to-lead-crm-follow-up-system' },
   openGraph: {

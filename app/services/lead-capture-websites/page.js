@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Globe, Layers, Link2, MousePointerClick, FileText, Calendar, Clock, DollarSign, Check, AlertTriangle, Database, Gauge } from 'lucide-react';
 
 export const metadata = {
-  title: 'Lead Capture Websites Canada | CRM-Connected Pages',
+  title: 'Lead Capture Websites Canada',
   description: 'Lead capture websites and landing pages with forms, booking flows, tracking, routing, and CRM handoff built in from day one.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/lead-capture-websites' },
   robots: { index: true, follow: true },

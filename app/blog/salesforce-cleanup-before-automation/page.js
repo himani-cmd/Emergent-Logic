@@ -10,7 +10,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, AlertTriangle, CheckCircle, Clock, MapPin } from 'lucide-react';
 
 export const metadata = {
-  title: 'Why Salesforce Cleanup Matters Before Automation',
+  title: 'Salesforce Cleanup Before Automation',
   description: 'Before adding Salesforce Flow automation, clean up duplicate data, fields, stages, ownership rules, and reporting. A practical guide for small businesses.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/salesforce-cleanup-before-automation' },
   openGraph: {

@@ -22,7 +22,7 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Case Study: Salesforce Cleanup Before Automation',
+  title: 'Salesforce Cleanup Case Study',
   description:
     'How to audit Salesforce data, ownership, reporting, permissions, and automation before building more Flow automation.',
   alternates: {

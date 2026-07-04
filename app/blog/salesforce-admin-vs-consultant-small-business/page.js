@@ -10,7 +10,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, MapPin } from 'lucide-react';
 
 export const metadata = {
-  title: 'Salesforce Admin vs Consultant for Small Business',
+  title: 'Salesforce Admin vs Consultant',
   description: 'A practical guide to choosing between Salesforce admin support, consulting, cleanup, and implementation help for small businesses.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/salesforce-admin-vs-consultant-small-business' },
   openGraph: {

@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Download, Image as ImageIcon } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Automation Diagrams | Free Visual Resources',
+  title: 'CRM Automation Diagrams',
   description: 'Free CRM and automation diagrams covering website lead routing, CRM cleanup, and Salesforce cleanup before automation. Use with attribution.',
   alternates: { canonical: 'https://www.emergent-logic.ca/resources/crm-automation-diagrams' },
   openGraph: {

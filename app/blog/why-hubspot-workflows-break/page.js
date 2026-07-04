@@ -10,7 +10,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { AlertTriangle, ArrowRight, CheckCircle, Clock, MapPin, Workflow } from 'lucide-react';
 
 export const metadata = {
-  title: 'Why HubSpot Workflows Break | HubSpot Automation Cleanup',
+  title: 'Why HubSpot Workflows Break',
   description: 'Learn why HubSpot workflows break and what to audit before rebuilding lifecycle stages, ownership, source data, and enrollment logic.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/why-hubspot-workflows-break' },
   openGraph: {

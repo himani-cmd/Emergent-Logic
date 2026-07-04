@@ -10,7 +10,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, DollarSign, Settings } from 'lucide-react';
 
 export const metadata = {
-  title: 'HubSpot Consulting Cost Guide | Small Business Pricing',
+  title: 'HubSpot Consulting Cost Guide',
   description: 'Learn what HubSpot consulting costs for small businesses, from cleanup and setup to workflows, reporting, migration, and ongoing support.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/hubspot-consulting-cost-guide' },
   openGraph: {

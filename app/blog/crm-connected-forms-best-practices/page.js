@@ -10,7 +10,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, FormInput, Route } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM-Connected Forms Best Practices | Lead Capture',
+  title: 'CRM-Connected Forms Guide',
   description: 'Learn how to connect website forms to your CRM with source tracking, owner routing, tasks, follow-up, and reporting that prevents missed leads.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/crm-connected-forms-best-practices' },
   openGraph: {
