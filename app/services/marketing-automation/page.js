@@ -323,6 +323,10 @@ export default function MarketingAutomation() {
               <p className="font-medium text-violet-600">Why Marketing Automation Fails Without Cleanup First</p>
               <p className="text-gray-600 text-sm">Automation multiplies whatever is already there. How to know whether your CRM is automation-ready.</p>
             </Link>
+            <Link href="/case-studies/lead-routing-mql-sql-handoff-cleanup" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Lead Routing Case Study</p>
+              <p className="text-gray-600 text-sm">A practical MQL-to-SQL handoff pattern for lifecycle stages, owners, and exception dashboards.</p>
+            </Link>
             <Link href="/blog/why-hubspot-workflows-break" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Why HubSpot Workflows Break</p>
               <p className="text-gray-600 text-sm">Workflow automation usually fails when lifecycle stages, owners, and enrollment rules are unclear.</p>
