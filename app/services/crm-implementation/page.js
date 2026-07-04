@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import TrackedCTA from '@/components/TrackedCTA';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle, Database, Clock, DollarSign, Users, Zap, ShieldCheck, TrendingUp, Building2, Briefcase, Stethoscope, Hammer, GraduationCap, ShoppingBag, X, Check } from 'lucide-react';
+import { ArrowRight, CheckCircle, Database, Clock, DollarSign, Users, Zap, ShieldCheck, TrendingUp, Building2, Briefcase, Stethoscope, Hammer, GraduationCap, ShoppingBag, X, Check, MapPin } from 'lucide-react';
 
 export const metadata = {
   title: 'CRM Implementation Services Canada | HubSpot & Salesforce',
@@ -52,7 +52,7 @@ export default function CRMImplementation() {
           </div>
           <div className="mt-8 flex flex-wrap gap-6 text-white/70 text-sm">
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-300" /> 2 to 4 week delivery</div>
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-300" /> Fixed pricing from $1,500</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-300" /> Clear scope before build</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-300" /> HubSpot, Salesforce, or Zoho</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-300" /> Senior consultants only</div>
           </div>
@@ -102,6 +102,36 @@ export default function CRMImplementation() {
                     <p className="text-gray-600">{item.desc}</p>
                   </div>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Local buyer intent */}
+      <section className="py-20 bg-white border-y border-violet-100">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-50 text-violet-700 text-sm font-medium mb-4">
+            <MapPin className="w-4 h-4" /> Local and remote CRM consulting
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Searching for a CRM Consultant Near You?
+          </h2>
+          <p className="text-lg text-gray-600 mb-4">
+            When a business searches for a <Link href="/blog/crm-consultant-near-me" className="text-violet-700 hover:underline font-medium">CRM consultant near me</Link>, the real need is usually not geography. It is trust, senior help, and someone who can understand the sales process quickly without turning the project into a six-month software exercise.
+          </p>
+          <p className="text-lg text-gray-600 mb-6">
+            We are based in Surrey, BC and support businesses across Greater Vancouver, Canada, and remote North American teams. For local companies in <Link href="/crm-consultant-langley" className="text-violet-700 hover:underline font-medium">Langley</Link>, <Link href="/crm-consultant-coquitlam" className="text-violet-700 hover:underline font-medium">Coquitlam</Link>, Abbotsford, Vancouver, Burnaby, and Surrey, most CRM work can be delivered quickly over calls and shared screens while still keeping local context.
+          </p>
+          <div className="grid md:grid-cols-3 gap-4">
+            {[
+              { title: 'Local context', desc: 'Canadian SMB workflows, service-area sales motions, PIPEDA-aware data handling, and Greater Vancouver operating realities.' },
+              { title: 'Remote delivery', desc: 'CRM audits, pipeline design, workflow setup, dashboards, migration, and training can all happen without slowing your team down.' },
+              { title: 'Senior execution', desc: 'You get practical implementation judgment, not just someone clicking through software settings.' },
+            ].map((item) => (
+              <div key={item.title} className="rounded-2xl border bg-violet-50/50 p-5">
+                <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.desc}</p>
               </div>
             ))}
           </div>
