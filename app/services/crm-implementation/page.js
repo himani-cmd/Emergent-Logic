@@ -282,6 +282,9 @@ export default function CRMImplementation() {
           <p className="text-lg text-gray-600 mb-8">
             We are a CRM-first consulting firm, not a generalist marketing agency. Implementation is what we do all day, every day.
           </p>
+          <p className="text-lg text-gray-600 mb-8">
+            For local teams comparing options, we also support nearby businesses looking for a <Link href="/crm-consultant-langley" className="text-violet-700 font-medium hover:text-violet-900 underline underline-offset-4">CRM consultant in Langley</Link>, Surrey, Coquitlam, Abbotsford, and the wider Greater Vancouver region.
+          </p>
           <div className="space-y-3">
             {[
               'Multi-platform expertise: HubSpot, Salesforce, and Zoho — we recommend based on your business, not our vendor partnerships',
