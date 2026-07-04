@@ -54,6 +54,34 @@ const fits = [
   'Small service businesses using forms, inboxes, spreadsheets, or an underused CRM',
 ];
 
+const relatedResources = [
+  {
+    title: 'Website Leads to CRM Implementation',
+    href: '/website-leads-to-crm-implementation',
+    text: 'Connect forms, booking links, source fields, owners, tasks, and CRM reporting.',
+  },
+  {
+    title: 'Speed-to-Lead CRM Follow-Up System',
+    href: '/blog/speed-to-lead-crm-follow-up-system',
+    text: 'Why faster response depends on ownership, workflow, and visibility after inquiry capture.',
+  },
+  {
+    title: 'Website Leads to CRM Case Study',
+    href: '/case-studies/website-leads-to-crm-follow-up-system',
+    text: 'A representative pattern for turning website inquiries into structured follow-up.',
+  },
+  {
+    title: 'Mortgage Lead Follow-Up Case Study',
+    href: '/case-studies/mortgage-lead-follow-up-system',
+    text: 'A representative pattern for applications, renewals, refinances, documents, and follow-up.',
+  },
+  {
+    title: 'AI Revenue Operations Engine',
+    href: '/case-studies/ai-revenue-operations-engine',
+    text: 'How AI-assisted operations can support prospecting, CRM hygiene, and follow-up execution.',
+  },
+];
+
 const faqs = [
   {
     q: 'What is a lead follow-up audit?',
@@ -217,9 +245,47 @@ export default function LeadFollowUpAuditPage() {
                 If the notes are useful, we can help fix the workflow: CRM cleanup, lead routing, follow-up tasks, source tracking, and reporting. If not, you still keep the notes.
               </p>
               <p className="text-gray-600">
-                Based in Surrey, BC. Serving Greater Vancouver and businesses across Canada.
+                Based in Surrey, BC. Serving Greater Vancouver, businesses across Canada, and remote teams in the United States.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-slate-50">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+            <div>
+              <Badge className="mb-4 bg-indigo-100 text-indigo-800 border-indigo-200">Answer-first review</Badge>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                What should a lead follow-up audit include?
+              </h2>
+              <p className="text-lg leading-relaxed text-gray-600">
+                A useful audit should trace one real inquiry from entry point to ownership, CRM status, next action, and reporting. If any of those steps are unclear, the business does not have a complete lead follow-up system yet.
+              </p>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {relatedResources.map((resource) => (
+                <Link key={resource.href} href={resource.href} className="rounded-2xl border bg-white p-5 transition-shadow hover:shadow-md">
+                  <p className="font-semibold text-indigo-700">{resource.title}</p>
+                  <p className="mt-2 text-sm text-gray-600">{resource.text}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Lead Follow-Up Audit FAQ</h2>
+          <div className="space-y-5">
+            {faqs.map((faq) => (
+              <div key={faq.q} className="rounded-2xl border bg-gray-50 p-6">
+                <h3 className="font-bold text-gray-900">{faq.q}</h3>
+                <p className="mt-2 text-gray-600">{faq.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

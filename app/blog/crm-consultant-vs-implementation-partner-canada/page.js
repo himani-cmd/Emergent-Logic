@@ -10,11 +10,11 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Clock, MapPin, AlertCircle } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Consultant vs CRM Implementation Partner for Canadian SMBs | Emergent Logic',
+  title: 'CRM Consultant vs Implementation Partner',
   description: 'Not sure whether you need a CRM consultant or a CRM implementation partner? Here is what Canadian SMBs should look for before they invest.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/crm-consultant-vs-implementation-partner-canada' },
   openGraph: {
-    title: 'CRM Consultant vs CRM Implementation Partner for Canadian SMBs | Emergent Logic',
+    title: 'CRM Consultant vs Implementation Partner | Emergent Logic',
     description: 'Not sure whether you need a CRM consultant or a CRM implementation partner? Here is what Canadian SMBs should look for before they invest.',
     url: 'https://www.emergent-logic.ca/blog/crm-consultant-vs-implementation-partner-canada',
     type: 'article',
@@ -22,7 +22,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CRM Consultant vs CRM Implementation Partner for Canadian SMBs | Emergent Logic',
+    title: 'CRM Consultant vs Implementation Partner | Emergent Logic',
     description: 'Not sure whether you need a CRM consultant or a CRM implementation partner? Here is what Canadian SMBs should look for before they invest.',
     images: ['https://www.emergent-logic.ca/og-image.png'],
   },

@@ -20,9 +20,9 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'AI Automation Consulting Canada | n8n, CRM & Workflow Automation',
+  title: 'AI Automation Consulting Canada | n8n & CRM Workflows',
   description:
-    'AI automation consulting for service businesses. Build n8n workflows, CRM automation, Gmail drafts, approval gates, lead routing, reporting, and human-reviewed AI systems.',
+    'AI automation consulting for n8n, CRM workflows, Gmail drafts, approval gates, lead routing, reporting, and human-reviewed operations.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/ai-automation-consulting' },
   robots: { index: true, follow: true },
   openGraph: {

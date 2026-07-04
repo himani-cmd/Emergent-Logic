@@ -11,7 +11,7 @@ import { ArrowRight, Bot, CheckCircle, Database, FileText, Mail, Search, ShieldC
 
 export const metadata = {
   title: 'Case Study: AI-Assisted Revenue Operations Engine',
-  description: 'How Emergent Logic built its own AI-assisted revenue operations engine across CRM, prospecting, BDR drafts, SEO/AEO/GEO, social content, and backlink operations.',
+  description: 'How Emergent Logic built an AI-assisted revenue engine for CRM, prospecting, BDR drafts, SEO, social content, and backlinks.',
   alternates: { canonical: 'https://www.emergent-logic.ca/case-studies/ai-revenue-operations-engine' },
   openGraph: {
     title: 'Case Study: AI-Assisted Revenue Operations Engine | Emergent Logic',

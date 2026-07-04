@@ -9,8 +9,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Building2, CheckCircle, ClipboardList, MailCheck, Route, BarChart3, Wrench } from 'lucide-react';
 
 export const metadata = {
-  title: 'Property Management CRM Consulting Canada | Lead Routing & Follow-Up',
-  description: 'CRM consulting for property management companies in Canada. Owner inquiry routing, rental evaluation follow-up, HubSpot setup, automation, reporting, and CRM cleanup.',
+  title: 'Property Management CRM Consulting Canada',
+  description: 'CRM consulting for property managers in Canada: owner inquiry routing, rental evaluation follow-up, HubSpot setup, automation, and reporting.',
   alternates: { canonical: 'https://www.emergent-logic.ca/property-management-crm-consulting-canada' },
   robots: { index: true, follow: true },
   openGraph: {

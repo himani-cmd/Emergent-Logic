@@ -11,7 +11,7 @@ import { AlertTriangle, ArrowRight, CheckCircle, Clock, MapPin, Workflow } from 
 
 export const metadata = {
   title: 'Why HubSpot Workflows Break | HubSpot Automation Cleanup',
-  description: 'HubSpot workflows usually break because lifecycle stages, properties, ownership, source data, and enrollment logic are unclear. Learn what to audit before rebuilding automation.',
+  description: 'Learn why HubSpot workflows break and what to audit before rebuilding lifecycle stages, ownership, source data, and enrollment logic.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/why-hubspot-workflows-break' },
   openGraph: {
     title: 'Why HubSpot Workflows Break | Emergent Logic',

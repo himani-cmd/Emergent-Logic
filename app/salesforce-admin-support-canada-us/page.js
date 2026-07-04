@@ -10,7 +10,7 @@ import { ArrowRight, CheckCircle, ClipboardCheck, Database, Gauge, LifeBuoy, Shi
 
 export const metadata = {
   title: 'Salesforce Admin Support Canada & US',
-  description: 'Remote Salesforce admin support for Canadian and US businesses. Cleanup, reports, Flow updates, user support, CRM hygiene, and ongoing Salesforce administration.',
+  description: 'Remote Salesforce admin support for Canada and US teams: cleanup, reports, Flow updates, user support, CRM hygiene, and administration.',
   alternates: { canonical: 'https://www.emergent-logic.ca/salesforce-admin-support-canada-us' },
   robots: { index: true, follow: true },
   openGraph: {

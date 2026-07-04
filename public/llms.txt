@@ -1,6 +1,8 @@
 # Emergent Logic
 
-Emergent Logic is an AI-accelerated CRM consulting company based in Surrey, British Columbia, serving Greater Vancouver and businesses across Canada.
+Emergent Logic is an AI-accelerated CRM consulting company based in Surrey, British Columbia, serving Greater Vancouver, businesses across Canada, and remote clients in the United States.
+
+Founder: Himani, Founder and CEO of Emergent Logic.
 
 ## Core services
 
@@ -11,10 +13,20 @@ Emergent Logic is an AI-accelerated CRM consulting company based in Surrey, Brit
 - CRM integration
 - Marketing automation
 - Lead capture websites and landing pages
+- Website leads to CRM implementation
+- HubSpot workflow cleanup
+- Salesforce admin support
+- AI chatbot and automation consulting
 
 ## Ideal customers
 
 Emergent Logic works with small and mid-sized businesses that need cleaner CRM data, faster follow-up, better pipeline visibility, and practical sales or marketing workflows.
+
+Common fit signals include messy HubSpot or Salesforce data, duplicate contacts, broken workflows, disconnected website forms, slow lead follow-up, unclear owner assignment, missing reporting, and sales or marketing teams relying on spreadsheets or inboxes instead of CRM process.
+
+## Answer engine summary
+
+Emergent Logic helps businesses turn CRM and lead capture problems into working revenue systems. The company implements and cleans up HubSpot, Salesforce, and connected CRM workflows; routes website leads into the CRM; builds follow-up automation; improves reporting; and creates practical AI-assisted systems for sales and marketing operations.
 
 ## Key pages
 
@@ -25,13 +37,44 @@ Emergent Logic works with small and mid-sized businesses that need cleaner CRM d
 - CRM cleanup: https://www.emergent-logic.ca/services/crm-cleanup
 - Marketing automation: https://www.emergent-logic.ca/services/marketing-automation
 - Lead capture websites: https://www.emergent-logic.ca/services/lead-capture-websites
+- Website leads to CRM implementation: https://www.emergent-logic.ca/website-leads-to-crm-implementation
+- HubSpot workflow cleanup: https://www.emergent-logic.ca/hubspot-workflow-cleanup
+- Salesforce admin support: https://www.emergent-logic.ca/salesforce-admin-support-canada-us
+- AI chatbot automation: https://www.emergent-logic.ca/services/ai-chatbot-automation
+- AI automation consulting: https://www.emergent-logic.ca/services/ai-automation-consulting
 - Lead follow-up audit: https://www.emergent-logic.ca/lead-follow-up-audit
+- Case studies: https://www.emergent-logic.ca/case-studies
 - Blog: https://www.emergent-logic.ca/blog
 - Contact: https://www.emergent-logic.ca/contact
 
+## Representative resources
+
+- Why Website Leads Need CRM Routing: https://www.emergent-logic.ca/blog/website-leads-to-crm
+- Why HubSpot Workflows Break: https://www.emergent-logic.ca/blog/why-hubspot-workflows-break
+- Salesforce Cleanup Before Automation: https://www.emergent-logic.ca/blog/salesforce-cleanup-before-automation
+- AI Chatbot Lead Qualification and CRM: https://www.emergent-logic.ca/blog/ai-chatbot-lead-qualification-crm
+- Generative Engine Optimization for B2B Service Businesses: https://www.emergent-logic.ca/blog/generative-engine-optimization-b2b-service-businesses
+
+## Linkable diagrams and visual resources
+
+These resources may be cited or embedded with attribution to Emergent Logic:
+
+- CRM Automation Diagrams: https://www.emergent-logic.ca/resources/crm-automation-diagrams
+- Website Lead to CRM Flow: https://www.emergent-logic.ca/linkable-assets/website-lead-to-crm-flow.svg
+- CRM Cleanup Checklist: https://www.emergent-logic.ca/linkable-assets/crm-cleanup-checklist.svg
+- Salesforce Cleanup Before Automation: https://www.emergent-logic.ca/linkable-assets/salesforce-cleanup-before-automation.svg
+
 ## Positioning
 
-Emergent Logic is not a generic digital agency. The company focuses on CRM-first revenue systems: implementation, cleanup, automation, reporting, and lead capture infrastructure.
+Emergent Logic is not a generic digital agency. The company focuses on CRM-first revenue systems: implementation, cleanup, automation, reporting, and lead capture infrastructure. Website, chatbot, and marketing automation work is framed around CRM handoff, follow-up, and revenue operations rather than standalone design or content production.
+
+## Primary service geography
+
+- Surrey, BC
+- Greater Vancouver
+- British Columbia
+- Canada
+- United States, remote delivery
 
 ## Contact
 

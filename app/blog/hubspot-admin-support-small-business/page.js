@@ -11,7 +11,7 @@ import { ArrowRight, CheckCircle, Clock, MapPin, Settings } from 'lucide-react';
 
 export const metadata = {
   title: 'HubSpot Admin Support for Small Businesses',
-  description: 'Small businesses often need HubSpot admin support before they need a full-time RevOps hire. Learn what to outsource, what to keep internal, and when cleanup should come first.',
+  description: 'Learn when to outsource HubSpot admin support for portal cleanup, workflows, reporting, lifecycle stages, and adoption.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/hubspot-admin-support-small-business' },
   openGraph: {
     title: 'HubSpot Admin Support for Small Businesses | Emergent Logic',

@@ -109,6 +109,49 @@ export default function CaseStudiesPage() {
           <Card className="border-0 shadow-xl overflow-hidden mt-8">
             <div className="grid lg:grid-cols-3">
               <div className="lg:col-span-2 p-8">
+                <Badge className="mb-4 bg-blue-100 text-blue-800">Representative Implementation</Badge>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                  Mortgage Lead Follow-Up System
+                </h2>
+                <p className="text-gray-600 mb-6">
+                  A vertical-specific case study showing how mortgage applications, rate inquiries, renewals, refinances, document requests, and referrals can move through one clean CRM follow-up workflow.
+                </p>
+                <div className="space-y-3 mb-6">
+                  {[
+                    'Separate purchase, refinance, renewal, pre-approval, and document-request paths',
+                    'Create or update CRM records with source, inquiry type, owner, and status',
+                    'Track missing information and next follow-up instead of relying on inbox memory',
+                    'Report on which mortgage lead sources turn into real conversations',
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-blue-700 flex-shrink-0 mt-0.5" />
+                      <p className="text-gray-700">{item}</p>
+                    </div>
+                  ))}
+                </div>
+                <Link href="/case-studies/mortgage-lead-follow-up-system">
+                  <Button className="bg-blue-700 hover:bg-blue-800">
+                    Read Case Study <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </Link>
+              </div>
+              <div className="bg-gradient-to-br from-blue-800 to-slate-950 p-8 text-white flex flex-col justify-center">
+                <p className="text-sm uppercase tracking-widest text-blue-200 mb-3">Best for</p>
+                <h3 className="text-2xl font-bold mb-6">Mortgage brokers with valuable inquiries scattered across forms, email, phone, and referrals</h3>
+                <div className="space-y-3 text-white/80">
+                  <p>Mortgage lead routing</p>
+                  <p>Application follow-up</p>
+                  <p>Renewal and refinance tracking</p>
+                  <p>Document request visibility</p>
+                  <p>CRM source reporting</p>
+                </div>
+              </div>
+            </div>
+          </Card>
+
+          <Card className="border-0 shadow-xl overflow-hidden mt-8">
+            <div className="grid lg:grid-cols-3">
+              <div className="lg:col-span-2 p-8">
                 <Badge className="mb-4 bg-amber-100 text-amber-800">Representative Implementation</Badge>
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">
                   Safe HubSpot CRM Cleanup and Workflow Rebuild

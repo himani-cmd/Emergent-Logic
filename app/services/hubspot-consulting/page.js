@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Settings, Zap, BarChart3, Mail, Link2, Users, Layers, Clock, DollarSign, Check, X, AlertTriangle, RefreshCw } from 'lucide-react';
 
 export const metadata = {
-  title: 'HubSpot Consulting Canada | Setup, Workflows & Optimization',
-  description: 'Expert HubSpot consulting for Canadian businesses. Portal setup, pipeline configuration, workflow automation, custom reporting, and integrations. AI-accelerated delivery in 2 to 4 weeks. Fixed pricing.',
+  title: 'HubSpot Consulting Canada | Setup & Workflows',
+  description: 'HubSpot consulting for setup, pipelines, workflow automation, reporting, integrations, and cleanup for Canadian businesses.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/hubspot-consulting' },
   robots: { index: true, follow: true },
   openGraph: {

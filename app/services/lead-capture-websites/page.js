@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Globe, Layers, Link2, MousePointerClick, FileText, Calendar, Clock, DollarSign, Check, AlertTriangle, Database, Gauge } from 'lucide-react';
 
 export const metadata = {
-  title: 'Lead Capture Websites & Landing Pages Canada | CRM-Connected',
-  description: 'Conversion-focused websites and landing pages that feed your CRM. Forms, lead routing, booking flows, and tracking — wired correctly so no lead falls through the cracks. From $2,500.',
+  title: 'Lead Capture Websites Canada | CRM-Connected Pages',
+  description: 'Lead capture websites and landing pages with forms, booking flows, tracking, routing, and CRM handoff built in from day one.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/lead-capture-websites' },
   robots: { index: true, follow: true },
   openGraph: {
@@ -261,6 +261,10 @@ export default function LeadCaptureWebsites() {
             <Link href="/blog/website-leads-to-crm" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Website Leads to CRM</p>
               <p className="text-gray-600 text-sm">Why routing and follow-up matter after the form submits</p>
+            </Link>
+            <Link href="/website-leads-to-crm-implementation" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Website Leads to CRM Implementation</p>
+              <p className="text-gray-600 text-sm">A service page for connecting forms, bookings, routing, and CRM follow-up</p>
             </Link>
             <Link href="/blog/ai-chatbot-lead-qualification-crm" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">AI Chatbot Lead Qualification</p>

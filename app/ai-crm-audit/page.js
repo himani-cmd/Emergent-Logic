@@ -8,7 +8,7 @@ import { ArrowRight, CheckCircle, Search, Database, Zap, BarChart3, ShieldCheck,
 
 export const metadata = {
   title: 'Free AI-Powered CRM Audit | Emergent Logic',
-  description: 'Get a free AI-powered audit of your CRM. We analyze your pipelines, workflows, data quality, and automation gaps — and deliver a prioritized action plan. HubSpot, Salesforce, Zoho.',
+  description: 'Get a free AI-powered CRM audit for pipelines, workflows, data quality, reporting, automation gaps, and a prioritized action plan.',
   alternates: { canonical: 'https://www.emergent-logic.ca/ai-crm-audit' },
 };
 

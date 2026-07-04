@@ -20,9 +20,9 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Representative Case Study: Safe HubSpot CRM Cleanup',
+  title: 'Case Study: Safe HubSpot CRM Cleanup',
   description:
-    'A representative implementation showing how Emergent Logic safely audits, cleans, and rebuilds HubSpot CRM data, lifecycle stages, workflows, and reporting without breaking sales operations.',
+    'How to safely audit, clean, and rebuild HubSpot CRM data, lifecycle stages, workflows, and reporting without breaking sales operations.',
   alternates: {
     canonical: 'https://www.emergent-logic.ca/case-studies/hubspot-crm-cleanup-safe-implementation',
   },

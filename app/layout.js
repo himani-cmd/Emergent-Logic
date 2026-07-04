@@ -12,7 +12,7 @@ export const metadata = {
   },
   description: "Vancouver's CRM experts. Salesforce, HubSpot, Zoho implementation in 2 weeks. Serving Surrey, Abbotsford, Langley. Free strategy call.",
   keywords: ['CRM Implementation', 'Salesforce Consultant', 'HubSpot Consultant', 'Marketing Automation', 'Surrey', 'Vancouver', 'Abbotsford', 'Langley', 'Coquitlam', 'Greater Vancouver', 'BC', 'Canada'],
-  authors: [{ name: 'Emergent Logic' }],
+  authors: [{ name: 'Himani' }, { name: 'Emergent Logic' }],
   creator: 'Emergent Logic',
   publisher: 'Emergent Logic',
   openGraph: {
@@ -35,10 +35,29 @@ export const metadata = {
 };
 
 const organizationId = 'https://www.emergent-logic.ca/#organization';
+const founderId = 'https://www.emergent-logic.ca/#founder-himani';
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
+    {
+      '@type': 'Person',
+      '@id': founderId,
+      name: 'Himani',
+      jobTitle: 'Founder and CEO',
+      worksFor: { '@id': organizationId },
+      url: 'https://www.emergent-logic.ca/about',
+      description: 'Founder of Emergent Logic, a Surrey, BC CRM consulting firm focused on CRM implementation, cleanup, automation, lead capture systems, and AI-assisted delivery for growing businesses.',
+      knowsAbout: [
+        'CRM implementation',
+        'CRM cleanup',
+        'HubSpot consulting',
+        'Salesforce consulting',
+        'Marketing automation',
+        'Lead capture systems',
+        'AI-assisted business workflows',
+      ],
+    },
     {
       '@type': ['Organization', 'ProfessionalService', 'LocalBusiness'],
       '@id': organizationId,
@@ -52,6 +71,8 @@ const jsonLd = {
       },
       image: 'https://www.emergent-logic.ca/og-image.png',
       description: 'AI-accelerated CRM implementation, cleanup, automation, and lead capture systems for Canadian businesses.',
+      foundingDate: '2026',
+      founder: { '@id': founderId },
       telephone: '+1-778-652-6271',
       email: 'info@emergent-logic.ca',
       address: {

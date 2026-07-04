@@ -24,7 +24,7 @@ import {
 export const metadata = {
   title: 'Representative Case Study: Website Leads to CRM Follow-Up',
   description:
-    'A representative implementation showing how Emergent Logic connects website forms, lead capture, CRM routing, owner assignment, follow-up tasks, and reporting so inquiries do not disappear.',
+    'How website forms, lead capture, CRM routing, owner assignment, follow-up tasks, and reporting keep inquiries from disappearing.',
   alternates: {
     canonical: 'https://www.emergent-logic.ca/case-studies/website-leads-to-crm-follow-up-system',
   },

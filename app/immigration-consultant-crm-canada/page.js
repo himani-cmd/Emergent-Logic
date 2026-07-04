@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, FileText, Languages, MessageSquare, CalendarCheck, Workflow, BarChart3 } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM for Immigration Consultants Canada | Intake & Follow-Up Systems',
+  title: 'CRM for Immigration Consultants Canada | Intake Systems',
   description: 'CRM consulting for immigration consultants in Canada. Consultation intake, form routing, WhatsApp and email follow-up, HubSpot setup, automation, and reporting.',
   alternates: { canonical: 'https://www.emergent-logic.ca/immigration-consultant-crm-canada' },
   robots: { index: true, follow: true },

@@ -6,12 +6,12 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, XCircle, AlertTriangle, DollarSign, Users, ShieldCheck, TrendingUp, ExternalLink } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Freelancer vs Consulting Firm: What to Know Before Hiring',
-  description: 'Thinking of hiring a CRM freelancer on Upwork? Read this first. We break down the real costs, risks, and outcomes of freelancers vs consulting firms for CRM implementation.',
+  title: 'CRM Freelancer vs Consulting Firm Guide',
+  description: 'Compare CRM freelancers and consulting firms before hiring for cleanup, implementation, automation, reporting, and long-term ownership.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/crm-freelancer-vs-consulting-firm' },
   openGraph: {
-    title: 'CRM Freelancer vs Consulting Firm: What to Know Before Hiring | Emergent Logic',
-    description: 'Thinking of hiring a CRM freelancer on Upwork? Read this first. We break down the real costs, risks, and outcomes of freelancers vs consulting firms for CRM implementation.',
+    title: 'CRM Freelancer vs Consulting Firm Guide | Emergent Logic',
+    description: 'Compare CRM freelancers and consulting firms before hiring for cleanup, implementation, automation, reporting, and long-term ownership.',
     url: 'https://www.emergent-logic.ca/blog/crm-freelancer-vs-consulting-firm',
     type: 'article',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
