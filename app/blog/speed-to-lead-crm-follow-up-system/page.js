@@ -40,9 +40,9 @@ const slowFollowUpCauses = [
 ];
 
 const relatedPosts = [
+  { title: 'Why Lead Routing Breaks Between MQL and SQL', href: '/blog/crm-lead-routing-mql-sql-handoff' },
   { title: '5-Point Lead Follow-Up Audit Checklist', href: '/blog/lead-follow-up-audit-checklist' },
   { title: 'Why Website Leads Do Not Turn Into Sales Without CRM Routing', href: '/blog/website-leads-to-crm' },
-  { title: 'Marketing Automation Needs CRM Cleanup First', href: '/blog/marketing-automation-needs-crm-cleanup' },
 ];
 
 const faqItems = [
@@ -182,6 +182,9 @@ export default function SpeedToLeadCrmFollowUpSystem() {
               </p>
               <p>
                 Before building sequences, reminders, and routing workflows, define the basics: what counts as a qualified inquiry, where it should land, who owns it, and what follow-up should happen first.
+              </p>
+              <p>
+                If marketing-qualified leads are entering the CRM but sales does not trust or work them quickly, the issue may be the <Link href="/blog/crm-lead-routing-mql-sql-handoff" className="text-indigo-700 hover:underline">lead routing and MQL-to-SQL handoff layer</Link>, not just response speed.
               </p>
               <p>
                 This is why <Link href="/services/crm-cleanup" className="text-indigo-700 hover:underline">CRM cleanup</Link> and speed-to-lead work often belong together. The workflow can only be trusted if the underlying records and stages are clean enough to use.

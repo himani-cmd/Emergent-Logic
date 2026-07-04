@@ -32,9 +32,9 @@ const routingGaps = [
 ];
 
 const relatedPosts = [
+  { title: 'Why Lead Routing Breaks Between MQL and SQL', href: '/blog/crm-lead-routing-mql-sql-handoff' },
   { title: 'Why HubSpot Workflows Break', href: '/blog/why-hubspot-workflows-break' },
   { title: 'Marketing Automation Needs CRM Cleanup First', href: '/blog/marketing-automation-needs-crm-cleanup' },
-  { title: 'Campaign Attribution in Your CRM', href: '/blog/campaign-attribution-crm-marketing-roi' },
 ];
 
 export default function WebsiteLeadsToCrm() {
@@ -102,6 +102,9 @@ export default function WebsiteLeadsToCrm() {
               <h2>What Good CRM Routing Looks Like</h2>
               <p>
                 Good routing starts with a clear rule: every qualified inquiry should land somewhere reliable. For some businesses, that means a new contact in HubSpot. For others, it means a lead in Salesforce, a deal in a pipeline, or a task assigned to a specific person.
+              </p>
+              <p>
+                The same principle applies after the lead becomes qualified. If marketing and sales disagree on what happens next, the <Link href="/blog/crm-lead-routing-mql-sql-handoff" className="text-orange-700 hover:underline">MQL-to-SQL handoff can break</Link> even when the website form itself is working.
               </p>
               <p>
                 The exact structure depends on the business. A real estate team may need buyer and seller inquiries separated. An immigration consultant may need consultation type and language preference. A service company may need territory, urgency, and project type.
