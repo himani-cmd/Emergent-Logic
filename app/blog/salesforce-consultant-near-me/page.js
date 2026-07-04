@@ -11,7 +11,7 @@ import { ArrowRight, CheckCircle, Clock, MapPin } from 'lucide-react';
 
 export const metadata = {
   title: 'Salesforce Consultant Near Me: What to Look For',
-  description: 'Searching for a Salesforce consultant near me? Learn what small businesses should look for before hiring help for Salesforce setup, cleanup, automation, and reporting.',
+  description: 'Learn what to look for before hiring local or remote Salesforce help for setup, cleanup, automation, reporting, and admin support.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/salesforce-consultant-near-me' },
   openGraph: {
     title: 'Salesforce Consultant Near Me: What to Look For | Emergent Logic',

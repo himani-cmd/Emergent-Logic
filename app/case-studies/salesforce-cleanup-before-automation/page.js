@@ -22,9 +22,9 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Representative Case Study: Salesforce Cleanup Before Automation',
+  title: 'Case Study: Salesforce Cleanup Before Automation',
   description:
-    'A representative implementation showing how Emergent Logic audits Salesforce data, ownership, reporting, permissions, and automation before building more Flow automation.',
+    'How to audit Salesforce data, ownership, reporting, permissions, and automation before building more Flow automation.',
   alternates: {
     canonical: 'https://www.emergent-logic.ca/case-studies/salesforce-cleanup-before-automation',
   },

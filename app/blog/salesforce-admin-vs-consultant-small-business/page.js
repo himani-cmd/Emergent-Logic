@@ -11,7 +11,7 @@ import { ArrowRight, CheckCircle, Clock, MapPin } from 'lucide-react';
 
 export const metadata = {
   title: 'Salesforce Admin vs Consultant for Small Business',
-  description: 'Should a small business hire a Salesforce admin, consultant, or managed admin support? A practical guide for Canada and US teams deciding what help they need first.',
+  description: 'A practical guide to choosing between Salesforce admin support, consulting, cleanup, and implementation help for small businesses.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/salesforce-admin-vs-consultant-small-business' },
   openGraph: {
     title: 'Salesforce Admin vs Consultant for Small Business | Emergent Logic',

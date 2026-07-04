@@ -20,9 +20,9 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Representative Case Study: Property Management Rental Inquiry Routing',
+  title: 'Case Study: Property Management Inquiry Routing',
   description:
-    'A representative implementation showing how property management companies can route owner inquiries, rental evaluation requests, referrals, and website leads into a clear CRM follow-up workflow.',
+    'How property managers can route owner inquiries, rental evaluations, referrals, and website leads into a clear CRM follow-up workflow.',
   alternates: {
     canonical: 'https://www.emergent-logic.ca/case-studies/property-management-rental-inquiry-routing',
   },

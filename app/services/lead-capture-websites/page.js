@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Globe, Layers, Link2, MousePointerClick, FileText, Calendar, Clock, DollarSign, Check, AlertTriangle, Database, Gauge } from 'lucide-react';
 
 export const metadata = {
-  title: 'Lead Capture Websites & Landing Pages Canada | CRM-Connected',
-  description: 'Conversion-focused websites and landing pages that feed your CRM. Forms, lead routing, booking flows, and tracking — wired correctly so no lead falls through the cracks. From $2,500.',
+  title: 'Lead Capture Websites Canada | CRM-Connected Pages',
+  description: 'Lead capture websites and landing pages with forms, booking flows, tracking, routing, and CRM handoff built in from day one.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/lead-capture-websites' },
   robots: { index: true, follow: true },
   openGraph: {

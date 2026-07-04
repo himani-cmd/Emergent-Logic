@@ -8,7 +8,7 @@ import { ArrowRight, Clock } from 'lucide-react';
 
 export const metadata = {
   title: 'Blog | CRM & Marketing Insights',
-  description: 'Expert insights on CRM implementation, marketing automation, and digital growth for Canadian businesses.',
+  description: 'Practical CRM, HubSpot, Salesforce, automation, lead capture, and SEO insights for growing Canadian and US businesses.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog' },
   openGraph: {
     title: 'Blog | CRM & Marketing Insights | Emergent Logic',
@@ -19,6 +19,46 @@ export const metadata = {
 };
 
 const posts = [
+  {
+    slug: 'ai-automation-consulting-pricing',
+    title: 'AI Automation Consulting Pricing: What Small Businesses Pay',
+    excerpt: 'A practical pricing guide for small businesses comparing starter automations, workflow builds, CRM-connected automation, and managed support.',
+    category: 'AI Automation',
+    readTime: '9 min read',
+    featured: true,
+  },
+  {
+    slug: 'hubspot-consulting-cost-guide',
+    title: 'HubSpot Consulting Cost Guide for Small Businesses',
+    excerpt: 'Learn what HubSpot consulting costs for small businesses, from cleanup and implementation to workflows, reporting, migration, and ongoing support.',
+    category: 'HubSpot',
+    readTime: '8 min read',
+    featured: true,
+  },
+  {
+    slug: 'salesforce-consulting-pricing-factors',
+    title: 'Salesforce Consulting Pricing Factors for Small Businesses',
+    excerpt: 'Understand what affects Salesforce consulting cost, from admin support and cleanup to automation, reporting, integrations, and implementation risk.',
+    category: 'Salesforce',
+    readTime: '8 min read',
+    featured: true,
+  },
+  {
+    slug: 'crm-connected-forms-best-practices',
+    title: 'CRM-Connected Forms: Best Practices for Lead Capture',
+    excerpt: 'Learn how to connect website forms to your CRM with source tracking, owner routing, tasks, follow-up, and reporting that prevents missed leads.',
+    category: 'Lead Capture',
+    readTime: '8 min read',
+    featured: true,
+  },
+  {
+    slug: 'hubspot-vs-salesforce-for-smb',
+    title: 'HubSpot vs Salesforce for SMBs: Which CRM Should You Choose?',
+    excerpt: 'Compare HubSpot and Salesforce for small businesses across cost, setup, admin needs, automation, reporting, adoption risk, and platform fit.',
+    category: 'CRM Strategy',
+    readTime: '9 min read',
+    featured: true,
+  },
   {
     slug: 'why-hubspot-workflows-break',
     title: 'Why HubSpot Workflows Break',

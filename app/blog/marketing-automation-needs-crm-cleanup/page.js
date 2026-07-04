@@ -10,11 +10,11 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Clock, MapPin, AlertCircle } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Cleanup Before Marketing Automation: What SMBs Need First | Emergent Logic',
+  title: 'CRM Cleanup Before Marketing Automation',
   description: 'Marketing automation fails when the CRM underneath it is messy. Learn why CRM cleanup should come first and what to fix before automating.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/marketing-automation-needs-crm-cleanup' },
   openGraph: {
-    title: 'CRM Cleanup Before Marketing Automation: What SMBs Need First | Emergent Logic',
+    title: 'CRM Cleanup Before Marketing Automation | Emergent Logic',
     description: 'Marketing automation fails when the CRM underneath it is messy. Learn why CRM cleanup should come first and what to fix before automating.',
     url: 'https://www.emergent-logic.ca/blog/marketing-automation-needs-crm-cleanup',
     type: 'article',
@@ -22,7 +22,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CRM Cleanup Before Marketing Automation: What SMBs Need First | Emergent Logic',
+    title: 'CRM Cleanup Before Marketing Automation | Emergent Logic',
     description: 'Marketing automation fails when the CRM underneath it is messy. Learn why CRM cleanup should come first and what to fix before automating.',
     images: ['https://www.emergent-logic.ca/og-image.png'],
   },

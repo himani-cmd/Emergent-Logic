@@ -23,9 +23,9 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Representative Case Study: Real Estate Lead Routing and Nurture',
+  title: 'Case Study: Real Estate Lead Routing and Nurture',
   description:
-    'A representative implementation showing how Emergent Logic helps real estate teams route buyer, seller, valuation, referral, and long-cycle leads into a clear CRM follow-up workflow.',
+    'How real estate teams can route buyer, seller, valuation, referral, and long-cycle leads into a clear CRM follow-up workflow.',
   alternates: {
     canonical: 'https://www.emergent-logic.ca/case-studies/real-estate-lead-routing-long-cycle-nurture',
   },

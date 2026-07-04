@@ -8,8 +8,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, MapPin, Zap, BarChart3, Settings, RefreshCw } from 'lucide-react';
 
 export const metadata = {
-  title: 'HubSpot Consultant Surrey BC | CRM Setup, Workflows & Reporting',
-  description: 'HubSpot consultant in Surrey, BC for CRM setup, Sales Hub, Marketing Hub, workflows, reporting, data cleanup, and team training. AI-accelerated delivery for Canadian SMBs.',
+  title: 'HubSpot Consultant Surrey BC | CRM Setup & Workflows',
+  description: 'HubSpot consultant in Surrey, BC for CRM setup, Sales Hub, Marketing Hub, workflows, reporting, data cleanup, and team training.',
   alternates: { canonical: 'https://www.emergent-logic.ca/hubspot-consultant-surrey-bc' },
   robots: { index: true, follow: true },
   openGraph: {

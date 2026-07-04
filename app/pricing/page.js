@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Consulting Pricing Approach | HubSpot, Salesforce & Automation',
+  title: 'CRM Consulting Pricing | HubSpot & Salesforce',
   description:
     'How Emergent Logic scopes CRM consulting work for HubSpot, Salesforce, CRM cleanup, automation, and website leads to CRM implementation.',
   alternates: { canonical: 'https://www.emergent-logic.ca/pricing' },

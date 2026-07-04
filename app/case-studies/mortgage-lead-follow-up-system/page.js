@@ -23,7 +23,7 @@ import {
 export const metadata = {
   title: 'Representative Case Study: Mortgage Lead Follow-Up System',
   description:
-    'A representative case study showing how mortgage brokers can connect applications, rate inquiries, renewals, refinances, document requests, CRM follow-up, and reporting.',
+    'How mortgage brokers can connect applications, rate inquiries, renewals, document requests, CRM follow-up, and reporting.',
   alternates: {
     canonical: 'https://www.emergent-logic.ca/case-studies/mortgage-lead-follow-up-system',
   },

@@ -151,6 +151,9 @@ export default function WebsiteLeadsToCrm() {
               <p>
                 That is the difference between a website that looks good and a website that supports revenue.
               </p>
+              <p>
+                For a visual version of this workflow, see our free <Link href="/resources/crm-automation-diagrams" className="text-orange-700 hover:underline">website lead to CRM flow diagram</Link>.
+              </p>
             </div>
 
             <div className="mt-12 p-8 bg-gradient-to-br from-orange-600 to-red-700 rounded-2xl text-white">

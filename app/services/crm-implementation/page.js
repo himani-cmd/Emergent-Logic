@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Database, Clock, DollarSign, Users, Zap, ShieldCheck, TrendingUp, Building2, Briefcase, Stethoscope, Hammer, GraduationCap, ShoppingBag, X, Check } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Implementation Services Canada | HubSpot, Salesforce & Zoho Setup',
-  description: 'Full CRM implementation for Canadian businesses. Pipelines, automation, dashboards, data migration, and training for HubSpot, Salesforce, or Zoho. AI-accelerated delivery in 2 to 4 weeks. From $1,500.',
+  title: 'CRM Implementation Services Canada | HubSpot & Salesforce',
+  description: 'CRM implementation for HubSpot, Salesforce, and Zoho: pipelines, automation, dashboards, migration, and training for growing teams.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/crm-implementation' },
   robots: { index: true, follow: true },
   openGraph: {
@@ -361,10 +361,14 @@ export default function CRMImplementation() {
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Related Services and Resources</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
             <Link href="/crm-implementation-canada" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM Implementation Canada</p>
               <p className="text-gray-600 text-sm">National CRM setup page for Canadian SMBs</p>
+            </Link>
+            <Link href="/crm-consultant-langley" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">CRM Consultant Langley</p>
+              <p className="text-gray-600 text-sm">Local CRM setup and cleanup support for Langley teams</p>
             </Link>
             <Link href="/services/hubspot-consulting" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">HubSpot Consulting</p>

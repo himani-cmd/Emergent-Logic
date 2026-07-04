@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Wrench, AlertTriangle, Database, Zap, BarChart3, Users, Trash2, Clock, DollarSign, Check, X, Search, RefreshCw } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Cleanup & Data Recovery Services Canada | Fix a Messy CRM',
-  description: 'Your CRM is a mess. Duplicate contacts, broken workflows, unreliable reports. We audit, clean, restructure, and rebuild your CRM so it actually works. HubSpot, Salesforce, Zoho. AI-accelerated cleanup. From $1,000.',
+  title: 'CRM Cleanup Services Canada | Fix Messy CRM Data',
+  description: 'Fix duplicate contacts, broken workflows, and unreliable CRM reports across HubSpot, Salesforce, and Zoho. Book a CRM cleanup review.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/crm-cleanup' },
   robots: { index: true, follow: true },
   openGraph: {

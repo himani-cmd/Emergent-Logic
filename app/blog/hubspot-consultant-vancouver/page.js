@@ -10,11 +10,11 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Clock, MapPin, AlertCircle } from 'lucide-react';
 
 export const metadata = {
-  title: 'HubSpot Consultant Vancouver: What Businesses Actually Need | Emergent Logic',
+  title: 'HubSpot Consultant Vancouver Guide',
   description: 'Looking for a HubSpot consultant in Vancouver? Learn what a consultant should actually help with, when to hire one, and how to avoid a messy setup.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/hubspot-consultant-vancouver' },
   openGraph: {
-    title: 'HubSpot Consultant Vancouver: What Businesses Actually Need | Emergent Logic',
+    title: 'HubSpot Consultant Vancouver Guide | Emergent Logic',
     description: 'Looking for a HubSpot consultant in Vancouver? Learn what a consultant should actually help with, when to hire one, and how to avoid a messy setup.',
     url: 'https://www.emergent-logic.ca/blog/hubspot-consultant-vancouver',
     type: 'article',
@@ -22,7 +22,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'HubSpot Consultant Vancouver: What Businesses Actually Need | Emergent Logic',
+    title: 'HubSpot Consultant Vancouver Guide | Emergent Logic',
     description: 'Looking for a HubSpot consultant in Vancouver? Learn what a consultant should actually help with, when to hire one, and how to avoid a messy setup.',
     images: ['https://www.emergent-logic.ca/og-image.png'],
   },

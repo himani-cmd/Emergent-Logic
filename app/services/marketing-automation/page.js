@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Target, Mail, BarChart3, Workflow, Filter, Send, Clock, DollarSign, Check, AlertTriangle, Zap, Database } from 'lucide-react';
 
 export const metadata = {
-  title: 'Marketing Automation Services Canada | Lead Scoring, Nurture & Attribution',
-  description: 'Marketing automation built on a properly implemented CRM. Lead scoring, email nurture sequences, campaign attribution, and lead handoff. HubSpot, Salesforce, Zoho. From $1,500.',
+  title: 'Marketing Automation Services Canada | CRM-First',
+  description: 'CRM-first marketing automation: lead scoring, nurture sequences, attribution, and sales handoff for HubSpot, Salesforce, and Zoho.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/marketing-automation' },
   robots: { index: true, follow: true },
   openGraph: {

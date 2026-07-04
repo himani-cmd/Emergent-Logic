@@ -158,6 +158,9 @@ export default function SalesforceCleanupBeforeAutomation() {
               <p>
                 Clean the system first. Then automate the process you actually want to run.
               </p>
+              <p>
+                If you need to explain this sequence to a team, use our free <Link href="/resources/crm-automation-diagrams" className="text-blue-700 hover:underline">Salesforce cleanup before automation diagram</Link>.
+              </p>
             </div>
 
             <div className="mt-12 p-8 bg-gradient-to-br from-blue-700 to-indigo-800 rounded-2xl text-white">

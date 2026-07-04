@@ -3,8 +3,8 @@ import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 
 export const metadata = {
-  title: 'Privacy Policy',
-  description: 'Emergent Logic privacy policy. How we collect, use, and protect your personal information.',
+  title: 'Privacy Policy | Emergent Logic',
+  description: 'Read the Emergent Logic privacy policy, including how we collect, use, protect, and manage personal information from visitors and clients.',
   alternates: { canonical: 'https://www.emergent-logic.ca/privacy' },
   openGraph: {
     title: 'Privacy Policy | Emergent Logic',

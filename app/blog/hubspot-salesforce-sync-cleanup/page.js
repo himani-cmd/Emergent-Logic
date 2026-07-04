@@ -11,7 +11,7 @@ import { ArrowRight, CheckCircle, Clock, MapPin, Shuffle } from 'lucide-react';
 
 export const metadata = {
   title: 'HubSpot Salesforce Sync Cleanup Guide',
-  description: 'HubSpot Salesforce sync problems usually come from lifecycle stages, ownership, duplicates, source fields, and workflow logic. Learn what to clean before reporting breaks.',
+  description: 'Clean HubSpot Salesforce sync issues around lifecycle stages, ownership, duplicates, source fields, workflow logic, and reporting.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/hubspot-salesforce-sync-cleanup' },
   openGraph: {
     title: 'HubSpot Salesforce Sync Cleanup Guide | Emergent Logic',

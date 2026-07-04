@@ -21,7 +21,7 @@ import {
 export const metadata = {
   title: 'Website Leads to CRM Implementation | Emergent Logic',
   description:
-    'Connect website forms, landing pages, booking flows, and contact inquiries into HubSpot, Salesforce, or your CRM with lead routing, ownership, tasks, and reporting.',
+    'Connect website forms, landing pages, booking flows, and inquiries into HubSpot or Salesforce with routing, ownership, tasks, and reporting.',
   alternates: { canonical: 'https://www.emergent-logic.ca/website-leads-to-crm-implementation' },
   robots: { index: true, follow: true },
   openGraph: {

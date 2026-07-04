@@ -6,6 +6,11 @@ export default function robots() {
         allow: '/',
         disallow: ['/admin', '/api/'],
       },
+      { userAgent: 'GPTBot', allow: '/' },
+      { userAgent: 'ChatGPT-User', allow: '/' },
+      { userAgent: 'PerplexityBot', allow: '/' },
+      { userAgent: 'ClaudeBot', allow: '/' },
+      { userAgent: 'Google-Extended', allow: '/' },
     ],
     sitemap: 'https://www.emergent-logic.ca/sitemap.xml',
   };

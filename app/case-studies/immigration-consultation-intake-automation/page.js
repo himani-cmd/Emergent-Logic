@@ -23,9 +23,9 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Representative Case Study: Immigration Consultation Intake Automation',
+  title: 'Case Study: Immigration Consultation Intake Automation',
   description:
-    'A representative implementation showing how Emergent Logic organizes immigration consultation requests across forms, phone, WhatsApp, email, CRM ownership, follow-up tasks, and reporting.',
+    'How immigration firms can route forms, phone, WhatsApp, email, CRM ownership, follow-up tasks, and reporting into one intake workflow.',
   alternates: {
     canonical: 'https://www.emergent-logic.ca/case-studies/immigration-consultation-intake-automation',
   },

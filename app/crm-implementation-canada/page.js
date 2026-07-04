@@ -8,8 +8,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Database, Zap, BarChart3, Users, ShieldCheck } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Implementation Canada | HubSpot, Salesforce & Zoho Setup',
-  description: 'CRM implementation for Canadian businesses. HubSpot, Salesforce, and Zoho setup with pipelines, automation, dashboards, data migration, training, and fixed-scope delivery.',
+  title: 'CRM Implementation Canada | HubSpot & Salesforce Setup',
+  description: 'CRM implementation for Canadian businesses: HubSpot, Salesforce, Zoho, pipelines, automation, dashboards, migration, and training.',
   alternates: { canonical: 'https://www.emergent-logic.ca/crm-implementation-canada' },
   robots: { index: true, follow: true },
   openGraph: {
