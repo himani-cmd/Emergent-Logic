@@ -9,12 +9,12 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, MapPin, Zap, BarChart3, Globe, Settings } from 'lucide-react';
 
 export const metadata = {
-  title: 'HubSpot Consultant Vancouver BC',
-  description: 'Expert HubSpot consulting in Vancouver. CRM setup, Marketing Hub automation, and CMS development. Book a free strategy call.',
+  title: 'HubSpot Consultant Vancouver | CRM Setup & Cleanup',
+  description: 'HubSpot consulting in Vancouver for CRM setup, cleanup, workflows, reporting, integrations, and practical team adoption.',
   alternates: { canonical: 'https://www.emergent-logic.ca/hubspot-consultant-vancouver' },
   openGraph: {
-    title: 'HubSpot Consultant Vancouver BC | Emergent Logic',
-    description: 'Expert HubSpot consulting in Vancouver. CRM setup, Marketing Hub automation, and CMS development.',
+    title: 'HubSpot Consultant Vancouver | Emergent Logic',
+    description: 'HubSpot consulting in Vancouver for CRM setup, cleanup, workflows, reporting, integrations, and team adoption.',
     url: 'https://www.emergent-logic.ca/hubspot-consultant-vancouver',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -83,10 +83,10 @@ export default function HubspotConsultantVancouver() {
           ]} />
           <div className="flex items-center gap-2 text-violet-300 mb-4"><MapPin className="w-5 h-5 flex-shrink-0" /><span>Vancouver & Metro Vancouver</span></div>
           <h1 className="max-w-4xl break-words text-4xl font-bold leading-tight tracking-tight text-white mb-4 md:text-5xl lg:text-6xl">
-            HubSpot CRM consulting for Vancouver teams
+            HubSpot consultant in Vancouver for CRM setup and cleanup
           </h1>
           <p className="max-w-3xl text-lg leading-relaxed text-white/75 mb-8 md:text-xl">
-            Looking for a HubSpot consultant in Vancouver? Emergent Logic is Metro Vancouver's go-to HubSpot implementation partner. We set up your CRM, build your marketing automation, and connect everything into a revenue system that works.
+            Emergent Logic helps Vancouver and Metro Vancouver teams set up, clean up, and improve HubSpot. We connect pipelines, workflows, reporting, integrations, and lead follow-up into a system the team can use every day.
           </p>
           <div className="flex max-w-3xl flex-col gap-4 sm:flex-row sm:flex-wrap">
             <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto"><Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
