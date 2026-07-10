@@ -167,6 +167,9 @@ export default function CrmConsultantNearMe() {
               <p>
                 That is why the best answer is often local context with remote delivery. You get the trust and relevance of a nearby consultant without limiting yourself to whoever can drive to the office.
               </p>
+              <p>
+                For local service detail, see our <Link href="/crm-consultant-surrey-bc" className="text-indigo-700 hover:underline">CRM consultant in Surrey</Link> and <Link href="/hubspot-consultant-vancouver" className="text-indigo-700 hover:underline">HubSpot consultant in Vancouver</Link> pages.
+              </p>
 
               <h2>The first question should not be “which CRM?”</h2>
               <p>

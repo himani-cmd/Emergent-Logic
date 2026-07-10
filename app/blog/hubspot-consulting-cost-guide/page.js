@@ -151,6 +151,9 @@ export default function HubSpotConsultingCostGuide() {
               <p>
                 A good <Link href="/services/hubspot-consulting" className="text-orange-700 hover:underline">HubSpot consulting</Link> project should define pipeline stages, required fields, lead sources, routing rules, reporting, and what the team needs to do every day.
               </p>
+              <p>
+                If you are comparing local options, our <Link href="/hubspot-consultant-vancouver" className="text-orange-700 hover:underline">HubSpot consultant Vancouver page</Link> explains the scope we provide for Metro Vancouver teams.
+              </p>
 
               <h2>Hourly or Fixed Price?</h2>
               <p>

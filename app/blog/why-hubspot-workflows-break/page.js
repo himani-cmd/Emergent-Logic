@@ -229,6 +229,10 @@ export default function WhyHubSpotWorkflowsBreak() {
                 If the issue is workflow logic, we fix the workflow. If the issue is CRM structure, we clean the foundation first. That keeps the system practical, safer to maintain, and easier for the team to trust.
               </p>
 
+              <p>
+                Teams in British Columbia can also review our <Link href="/hubspot-consultant-vancouver" className="text-orange-700 hover:underline">HubSpot consultant Vancouver service</Link> for local setup, cleanup, workflow, reporting, and integration support.
+              </p>
+
               <h2>Bottom line</h2>
               <p>
                 Broken HubSpot workflows are usually a symptom. The real issue is often unclear process, messy data, or automation that no longer matches the way the business works.

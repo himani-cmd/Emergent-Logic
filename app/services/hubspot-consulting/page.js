@@ -88,7 +88,7 @@ export default function HubSpotConsulting() {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { title: 'New HubSpot subscribers', desc: 'You just signed up for HubSpot Sales Hub, Marketing Hub, or Service Hub and want it set up properly. You do not want to figure out the portal yourself or sit through HubSpot Academy for three weeks.' },
-              { title: 'HubSpot users stuck at 20% adoption', desc: 'You bought HubSpot a year ago. Your team uses it for contact storage but nothing else. You know there is more value in there but you have not had time to unlock it.' },
+              { title: 'HubSpot users with limited adoption', desc: 'You bought HubSpot, but the team mainly uses it for contact storage or basic deal tracking. You know there is more value available, but the next implementation priorities are unclear.' },
               { title: 'Teams migrating to HubSpot', desc: 'You are moving from Salesforce, Pipedrive, Zoho, or spreadsheets to HubSpot. You need clean migration, fresh configuration, and a launch plan that does not disrupt active deals.' },
               { title: 'Inherited portals', desc: 'Someone else built your HubSpot portal — a former employee, a freelancer, an old agency. It is a mess of half-built workflows, abandoned properties, and reports nobody trusts. We rebuild and document.' },
               { title: 'Sales and Marketing alignment', desc: 'Your sales team is in HubSpot. Your marketing team is somewhere else. Lead handoff is broken. We bring everything into one HubSpot portal with clean attribution and shared dashboards.' },

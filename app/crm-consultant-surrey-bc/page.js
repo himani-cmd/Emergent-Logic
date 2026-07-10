@@ -33,18 +33,18 @@ const process = [
 
 const reasons = [
   'Local CRM consultant based right here in Surrey, BC',
-  'Platform-agnostic: we implement 12+ CRM platforms and recommend what fits your business',
-  'AI-accelerated delivery: results in 2-6 weeks, not 3-6 months',
-  '40-60% lower cost than enterprise consulting firms',
-  'Every implementation includes data migration, integration, and hands-on training',
-  'Ongoing support and optimization after go-live',
+  'Platform-aware recommendations based on your process, team, and budget',
+  'Focused delivery plans with scope, milestones, and ownership defined before work begins',
+  'Practical support for data cleanup, migration, workflows, reporting, and integrations',
+  'Role-specific training and clear documentation for the people using the CRM',
+  'Post-launch support available when the team needs additional optimization',
 ];
 
 const faqs = [
-  { q: 'Which CRM is best for small businesses in Surrey, BC?', a: 'For most Surrey SMBs, HubSpot is the best choice — it is fast to implement, easy to use, and includes built-in marketing tools. For businesses needing deep customization, Salesforce is worth the investment.' },
-  { q: 'How much does CRM consulting cost in Surrey?', a: 'Emergent Logic\'s AI-accelerated CRM implementations cost 40-60% less than traditional consulting firms. Small business implementations typically start at $3,000-$8,000 CAD.' },
+  { q: 'Which CRM is best for small businesses in Surrey, BC?', a: 'The right CRM depends on your sales process, number of users, reporting needs, integrations, and internal capacity. HubSpot can suit teams that want an approachable sales and marketing platform, while Salesforce is often considered when deeper customization and governance are required.' },
+  { q: 'How much does CRM consulting cost in Surrey?', a: 'Cost depends on the number of users, data condition, workflows, integrations, and training required. We first identify the specific backlog or implementation scope, then provide a clear estimate before work begins.' },
   { q: 'Do you offer CRM training?', a: 'Yes. Every CRM implementation includes role-specific training for your team. We are local in Surrey, so we can provide in-person training sessions when needed.' },
-  { q: 'Can you help us switch from one CRM to another?', a: 'Yes. We handle CRM migrations regularly — from spreadsheets, legacy systems, or competing platforms. We clean, map, and migrate your data with zero loss.' },
+  { q: 'Can you help us switch from one CRM to another?', a: 'Yes. We can assess data sources, clean and map records, run a controlled migration, and reconcile the result before launch. The migration plan and validation steps are agreed before records are moved.' },
 ];
 
 export default function CrmConsultantSurrey() {
@@ -59,9 +59,9 @@ export default function CrmConsultantSurrey() {
             { label: 'CRM Consultant Surrey', href: '/crm-consultant-surrey-bc' },
           ]} />
           <div className="flex items-center gap-2 text-violet-300 mb-4"><MapPin className="w-5 h-5" /><span>Surrey, BC</span></div>
-          <h1 className="max-w-4xl break-words text-4xl md:text-5xl font-bold leading-tight text-white mb-4">Surrey BC's Top-Rated CRM Consultant</h1>
+          <h1 className="max-w-4xl break-words text-4xl md:text-5xl font-bold leading-tight text-white mb-4">CRM Consultant in Surrey, BC</h1>
           <p className="text-lg md:text-xl leading-relaxed text-white/75 max-w-3xl mb-8">
-            Professional CRM consulting for Surrey businesses. We implement Salesforce, HubSpot, NetSuite, Odoo, and 8 other leading platforms. Our AI-accelerated methodology means your CRM is live in weeks — with full data migration, custom workflows, and team training included.
+            Practical CRM consulting for Surrey businesses that need cleaner data, clearer pipelines, reliable follow-up, useful reporting, or a better implementation plan. We work across leading CRM platforms and define the scope, migration, workflows, integrations, and training before delivery begins.
           </p>
           <div className="flex max-w-3xl flex-col gap-4 sm:flex-row sm:flex-wrap">
             <Link href="/contact" className="w-full sm:w-auto"><Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
@@ -73,7 +73,7 @@ export default function CrmConsultantSurrey() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">CRM platforms we implement in Surrey</h2>
-          <p className="text-gray-600 mb-8">We recommend the right platform for your business — not the one that pays us the highest commission.</p>
+          <p className="text-gray-600 mb-8">We compare platforms against your process, team capacity, integration needs, and budget before recommending a direction.</p>
           <div className="flex flex-wrap gap-4">
             {platforms.map((platform, i) => (<div key={i} className="px-6 py-3 bg-gray-50 rounded-xl border font-medium text-gray-700">{platform}</div>))}
           </div>
@@ -99,7 +99,7 @@ export default function CrmConsultantSurrey() {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Why Surrey businesses trust Emergent Logic</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Why Surrey businesses choose a focused CRM partner</h2>
           <ul className="space-y-4 max-w-3xl">
             {reasons.map((reason, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle className="w-6 h-6 text-violet-500 flex-shrink-0" /><span className="text-gray-700">{reason}</span></li>))}
           </ul>
