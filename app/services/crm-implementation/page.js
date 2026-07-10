@@ -121,7 +121,7 @@ export default function CRMImplementation() {
             When a business searches for a <Link href="/blog/crm-consultant-near-me" className="text-violet-700 hover:underline font-medium">CRM consultant near me</Link>, the real need is usually not geography. It is trust, senior help, and someone who can understand the sales process quickly without turning the project into a six-month software exercise.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            We are based in Surrey, BC and support businesses across Greater Vancouver, Canada, and remote North American teams. For local companies in <Link href="/crm-consultant-langley" className="text-violet-700 hover:underline font-medium">Langley</Link>, <Link href="/crm-consultant-coquitlam" className="text-violet-700 hover:underline font-medium">Coquitlam</Link>, Abbotsford, Vancouver, Burnaby, and Surrey, most CRM work can be delivered quickly over calls and shared screens while still keeping local context.
+            We are based in Surrey, BC and support businesses across Greater Vancouver, Canada, and remote North American teams. For local companies in <Link href="/crm-consultant-langley" className="text-violet-700 hover:underline font-medium">Langley</Link>, <Link href="/crm-consultant-coquitlam" className="text-violet-700 hover:underline font-medium">Coquitlam</Link>, Abbotsford, <Link href="/crm-consultant-vancouver" className="text-violet-700 hover:underline font-medium">Vancouver</Link>, Burnaby, and Surrey, most CRM work can be delivered quickly over calls and shared screens while still keeping local context.
           </p>
           <div className="grid md:grid-cols-3 gap-4">
             {[

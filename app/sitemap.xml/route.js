@@ -1,5 +1,5 @@
 const baseUrl = 'https://www.emergent-logic.ca';
-const lastmod = '2026-07-04';
+const lastmod = '2026-07-10';
 
 const urls = [
   ['', 'weekly', '1.0'],
@@ -65,6 +65,7 @@ const urls = [
   ['/property-management-crm-consulting-canada', 'monthly', '0.9'],
   ['/immigration-consultant-crm-canada', 'monthly', '0.9'],
   ['/hubspot-consultant-vancouver', 'monthly', '0.9'],
+  ['/crm-consultant-vancouver', 'monthly', '0.9'],
   ['/crm-consultant-surrey-bc', 'monthly', '0.9'],
   ['/crm-consultant-abbotsford', 'monthly', '0.9'],
   ['/crm-consultant-langley', 'monthly', '0.9'],
