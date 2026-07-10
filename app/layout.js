@@ -3,6 +3,7 @@ import Script from 'next/script';
 import { Toaster } from 'sonner';
 import AnalyticsProvider from '@/components/AnalyticsProvider';
 import { GA_MEASUREMENT_ID } from '@/lib/analytics';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
   metadataBase: new URL('https://www.emergent-logic.ca'),
@@ -233,6 +234,7 @@ export default function RootLayout({ children }) {
           {children}
         </AnalyticsProvider>
         <Toaster position="top-right" richColors />
+        <SpeedInsights />
       </body>
     </html>
   );
