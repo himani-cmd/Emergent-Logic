@@ -19,6 +19,12 @@ export const metadata = {
     url: 'https://www.emergent-logic.ca/crm-consultant-vancouver',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'CRM Consultant Vancouver | Emergent Logic',
+    description: 'CRM consulting in Vancouver for setup, cleanup, lead routing, reporting, integrations, and team adoption.',
+    images: ['https://www.emergent-logic.ca/og-image.png'],
+  },
 };
 
 const serviceAreas = [
