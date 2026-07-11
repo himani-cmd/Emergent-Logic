@@ -3,10 +3,11 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import TrackedCTA from '@/components/TrackedCTA';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowRight, BarChart3, CheckCircle, Database, GitBranch, MapPin, Workflow } from 'lucide-react';
+import { ArrowRight, BarChart3, CheckCircle, ClipboardCheck, Database, GitBranch, MapPin, Workflow } from 'lucide-react';
 
 export const metadata = {
   title: 'CRM Consultant Vancouver | Setup, Cleanup & Integration',
@@ -70,17 +71,54 @@ const faqs = [
   },
 ];
 
+const auditChecks = [
+  'Where the inquiry enters and whether the source is preserved',
+  'Who should own the lead and what status it should create',
+  'What follow-up should happen next and when',
+  'Where a handoff, inbox, form, or CRM field can break',
+  'What the team should be able to see seven days later',
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://www.emergent-logic.ca/crm-consultant-vancouver#service',
+      name: 'CRM Consulting in Vancouver',
+      serviceType: 'CRM implementation, cleanup, lead routing, reporting, integration, and team adoption consulting',
+      provider: { '@id': 'https://www.emergent-logic.ca/#organization' },
+      url: 'https://www.emergent-logic.ca/crm-consultant-vancouver',
+      areaServed: [
+        { '@type': 'City', name: 'Vancouver' },
+        { '@type': 'AdministrativeArea', name: 'Metro Vancouver' },
+        { '@type': 'AdministrativeArea', name: 'British Columbia' },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': 'https://www.emergent-logic.ca/crm-consultant-vancouver#faq',
+      mainEntity: faqs.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: { '@type': 'Answer', text: item.a },
+      })),
+    },
+  ],
+};
+
 export default function CrmConsultantVancouver() {
   return (
     <main className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
 
-      <section className="overflow-hidden bg-gradient-to-br from-slate-950 via-violet-950 to-indigo-900 pb-16 pt-32">
+      <section className="overflow-hidden bg-gradient-to-br from-slate-950 via-violet-950 to-indigo-900 pb-10 pt-28 md:pb-16 md:pt-32">
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[
             { label: 'Services', href: '/services' },
             { label: 'CRM Consultant Vancouver', href: '/crm-consultant-vancouver' },
-          ]} />
+          ]} tone="dark" />
           <div className="mb-4 flex items-center gap-2 text-violet-300">
             <MapPin className="h-5 w-5 flex-shrink-0" />
             <span>Vancouver & Metro Vancouver</span>
@@ -92,21 +130,25 @@ export default function CrmConsultantVancouver() {
             Emergent Logic helps Vancouver teams clean up, implement, and connect CRM systems so leads, follow-up, reporting, and handoffs are easier to trust. We focus on practical HubSpot, Salesforce, and CRM operations work rather than generic marketing services.
           </p>
           <div className="flex max-w-3xl flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-              <Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">
-                Book a CRM Review <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </a>
-            <Link href="/services/crm-cleanup" className="w-full sm:w-auto">
-              <Button size="lg" className="w-full border border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white sm:w-auto">
-                CRM Cleanup Services
-              </Button>
-            </Link>
+            <TrackedCTA ctaName="Vancouver CRM Free Follow-Up Audit" destination="/lead-follow-up-audit">
+              <Link href="/lead-follow-up-audit" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">
+                  Get a Free 5-Point Audit <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+            </TrackedCTA>
+            <TrackedCTA ctaName="Vancouver CRM Review Call" destination="calendly">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full border border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white sm:w-auto">
+                  Book a CRM Review
+                </Button>
+              </a>
+            </TrackedCTA>
           </div>
         </div>
       </section>
 
-      <section className="bg-white py-16">
+      <section className="bg-white py-12 md:py-16">
         <div className="container mx-auto px-4">
           <div className="mb-10 max-w-4xl">
             <Badge className="mb-4 bg-violet-100 text-violet-700 hover:bg-violet-100">Commercial CRM support</Badge>
@@ -127,6 +169,37 @@ export default function CrmConsultantVancouver() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-violet-100 bg-violet-50 py-16">
+        <div className="container mx-auto grid gap-10 px-4 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div>
+            <Badge className="mb-4 border-violet-200 bg-white text-violet-700 hover:bg-white">Free diagnostic</Badge>
+            <ClipboardCheck className="mb-4 h-10 w-10 text-violet-700" />
+            <h2 className="mb-4 text-3xl font-bold text-gray-900">Start with one lead path, not a large CRM project</h2>
+            <p className="mb-6 text-lg leading-relaxed text-gray-600">
+              Send us one contact form, consultation request, demo flow, or inquiry page. We will review the visible follow-up path and return a practical five-point note. No CRM access is needed for the first review.
+            </p>
+            <TrackedCTA ctaName="Vancouver CRM Audit Section" destination="/lead-follow-up-audit">
+              <Link href="/lead-follow-up-audit">
+                <Button size="lg" className="bg-violet-700 text-white hover:bg-violet-800">
+                  See the Free Audit <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+            </TrackedCTA>
+          </div>
+          <div className="border-l-4 border-violet-600 bg-white px-6 py-7 shadow-sm">
+            <h3 className="mb-5 text-xl font-bold text-gray-900">The five questions we answer</h3>
+            <ul className="space-y-4">
+              {auditChecks.map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-violet-600" />
+                  <span className="text-gray-700">{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
