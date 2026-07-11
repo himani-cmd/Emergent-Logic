@@ -46,6 +46,7 @@ const patterns = [
 ];
 
 const relatedPosts = [
+  { title: '2026 CRM Cleanup Demand Report', href: '/research/2026-crm-cleanup-demand-report' },
   { title: 'CRM Freelancer vs Consulting Firm', href: '/blog/crm-freelancer-vs-consulting-firm' },
   { title: 'Why Salesforce Cleanup Matters Before Automation', href: '/blog/salesforce-cleanup-before-automation' },
 ];
@@ -85,6 +86,10 @@ export default function HubspotSalesforceCleanupUpworkPatterns() {
             <div className="prose prose-lg max-w-none mt-8">
               <p className="lead text-xl text-gray-600">
                 If you read enough CRM job posts, a pattern starts to appear. Businesses are rarely looking for CRM help because they want more software. They are looking because the system they already have is not producing clean follow-up, clear reporting, or reliable accountability.
+              </p>
+
+              <p>
+                For the measured version of this analysis, see the <Link href="/research/2026-crm-cleanup-demand-report" className="font-medium text-violet-700 hover:underline">2026 CRM Cleanup Demand Report</Link>, which codes 100 public HubSpot and Salesforce job and project postings across workflow, reporting, data, routing, integration, and lifecycle requirements.
               </p>
 
               <p>
