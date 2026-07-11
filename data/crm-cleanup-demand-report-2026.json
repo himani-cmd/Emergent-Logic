@@ -1,0 +1,1810 @@
+{
+  "title": "2026 CRM Cleanup Demand Report",
+  "subtitle": "What 100 public HubSpot and Salesforce job and project postings reveal",
+  "published_date": "2026-07-10",
+  "observation_window": "2026-06-30/2026-07-08",
+  "sample_size": 100,
+  "postings": [
+    {
+      "id": 1,
+      "source": "Greenhouse",
+      "title": "Senior GTM Systems and Automation Engineer",
+      "company": "Cobalt.io",
+      "url": "https://job-boards.greenhouse.io/cobaltio/jobs/8603198002",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Integration and sync",
+        "Lifecycle and process design",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Senior GTM Systems and Automation Engineer role owns Salesforce, HubSpot, customer success platforms, enrichment, sequencing, AI, workflow automation, APIs, webhooks, lifecycle management, attribution, routing, renewals, expansion, reporting, forecasting, dedupe, and data governance."
+    },
+    {
+      "id": 2,
+      "source": "Greenhouse",
+      "title": "Senior Marketing Operations Manager",
+      "company": "Nozomi Networks",
+      "url": "https://job-boards.greenhouse.io/nozominetworks/jobs/4681859005",
+      "observed_date": "2026-07-05",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Integration and sync",
+        "Lifecycle and process design",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Senior Marketing Operations Manager role owns global demand-gen operations, executive dashboards, campaign influence, attribution, ROI, lifecycle management, lead scoring, routing, SLAs, UTM governance, HubSpot, Salesforce integrations, ABM, intent, workflow automation, and reporting."
+    },
+    {
+      "id": 3,
+      "source": "Lever",
+      "title": "Senior Director Growth Marketing and Operations",
+      "company": "Cin7",
+      "url": "https://jobs.lever.co/cin7/c4538188-bc98-4006-b5cb-317849babdc8",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Integration and sync",
+        "Lifecycle and process design",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Senior Director Growth Marketing and Operations role reports to Global SVP Marketing and owns global growth engine, demand generation, marketing technology, AI-powered growth systems, HubSpot, Salesforce integrations, analytics, routing, attribution, lifecycle automation, digital conversion, AEO/AI search, executive reporting, and cross-functional revenue execution."
+    },
+    {
+      "id": 4,
+      "source": "Greenhouse",
+      "title": "Marketing Operations Manager",
+      "company": "SafeBreach",
+      "url": "https://job-boards.greenhouse.io/safebreach/jobs/4274586009",
+      "observed_date": "2026-07-05",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Lifecycle and process design",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Temporary Sr. Marketing Operations Manager role requires expert HubSpot lifecycle/workflows/data hygiene, strong Salesforce lead routing/campaign attribution/opportunity/reporting, WordPress/forms, analytics/attribution, ZoomInfo, Dreamdata, and webinar operations."
+    },
+    {
+      "id": 5,
+      "source": "Greenhouse",
+      "title": "Marketing Operations Manager",
+      "company": "Turing",
+      "url": "https://job-boards.greenhouse.io/turing/jobs/6102125004",
+      "observed_date": "2026-07-05",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Integration and sync",
+        "Lifecycle and process design",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Marketing Operations Manager posting says Turing needs HubSpot ownership across workflows, lifecycle stages, lead scoring, forms, lists, integrations, HubSpot-Salesforce sync, clean data routing, attribution, UTM hygiene, dashboards, and campaign operations."
+    },
+    {
+      "id": 6,
+      "source": "Greenhouse",
+      "title": "Director of Marketing Operations",
+      "company": "Runpod",
+      "url": "https://job-boards.greenhouse.io/runpod/jobs/5270922008",
+      "observed_date": "2026-07-05",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Lifecycle and process design",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Director of Marketing Operations role reports to Dan Stotts and owns systems, data, attribution, campaign operations, lifecycle infrastructure, reporting, HubSpot, Salesforce, Webflow, analytics, automation, PQL/MQL definitions, source attribution, routing, scoring, segmentation, and funnel reporting across PLG, sales-assisted, lifecycle, partnerships, events, and content."
+    },
+    {
+      "id": 7,
+      "source": "LinkedIn Jobs",
+      "title": "Business Operations Analyst",
+      "company": "TextUs",
+      "url": "https://www.linkedin.com/jobs/view/business-operations-analyst-at-textus-4436770281",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Integration and sync",
+        "Administration and access"
+      ],
+      "observed_signal": "Business Operations Analyst role reports to Revenue Operations Manager and supports Salesforce, NetSuite, HubSpot, integrations, dashboards, recurring and ad hoc reports, data quality, AI-powered documentation/reporting/workflow automation, onboarding/offboarding access, and cross-functional workflows across Sales, Marketing, Customer Success, Finance, and Operations."
+    },
+    {
+      "id": 8,
+      "source": "Upwork",
+      "title": "HubSpot CRM Setup Salesforce Implementation Specialist Long Term",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/HubSpot-CRM-Setup-Salesforce-Implementation-Specialist-Long-Term_~022073911824210276248",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Integration and sync",
+        "Migration and implementation",
+        "Lifecycle and process design",
+        "Administration and access"
+      ],
+      "observed_signal": "Marketplace demand for lifecycle stages, custom properties, forms, lead capture, workflows, reporting dashboards, integrations, migrations, permissions, documentation, and training."
+    },
+    {
+      "id": 9,
+      "source": "Greenhouse",
+      "title": "Director Revenue Operations",
+      "company": "Xealth",
+      "url": "https://job-boards.greenhouse.io/xealth/jobs/7792041003",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Migration and implementation"
+      ],
+      "observed_signal": "Director Revenue Operations role is the first dedicated RevOps hire and owns Salesforce end to end, HubSpot connectivity, data hygiene, stage definitions, workflow automation, pipeline integrity, GTM tech stack rollout, governance, forecasting, comp plans, and Sales-Marketing-CS-Finance handoffs."
+    },
+    {
+      "id": 10,
+      "source": "Greenhouse",
+      "title": "GTM Systems Manager",
+      "company": "SingleStore",
+      "url": "https://job-boards.greenhouse.io/singlestore/jobs/7642496",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Reporting and forecasting",
+        "Integration and sync",
+        "Lifecycle and process design",
+        "Administration and access"
+      ],
+      "observed_signal": "GTM Systems Manager role owns the end-to-end revenue tech stack, Salesforce administration and integrations, systems roadmap, process improvements, data quality, reporting across marketing spend, lead lifecycle, pipeline and forecasting, HubSpot, Outreach, 6Sense, DocuSign, and ZoomInfo."
+    },
+    {
+      "id": 11,
+      "source": "Upwork",
+      "title": "GTM Engineer Salesforce HubSpot RevOps Hrs Week",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/GTM-Engineer-Salesforce-HubSpot-RevOps-hrs-week_~022061810202468600026",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Integration and sync",
+        "Migration and implementation",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Marketplace demand for workflows, lifecycle stages, lead routing, sync troubleshooting, data cleanup, migration, and API integrations."
+    },
+    {
+      "id": 12,
+      "source": "Upwork",
+      "title": "Salesforce HubSpot Consultant",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Salesforce-Hubspot-Consultant_~022046620164141722264",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Integration and sync",
+        "Lifecycle and process design",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Marketplace demand bundles HubSpot-to-Salesforce lead sync fixes, lifecycle automation, source attribution, dedupe, nurture, and executive dashboards."
+    },
+    {
+      "id": 13,
+      "source": "Greenhouse",
+      "title": "Director Revenue Operations",
+      "company": "Seso",
+      "url": "https://job-boards.greenhouse.io/sesolabor/jobs/4700419005",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Administration and access"
+      ],
+      "observed_signal": "Director Revenue Operations role is the architect and steward of GTM infrastructure and reporting, owning the full tech stack for Sales, Marketing, and Customer Success, managing a RevOps team with Salesforce Admin support, owning Salesforce and HubSpot, revenue intelligence, funnel metrics, Finance partnership, lead routing, handoffs, renewal workflows, territory design, compensation, and AI-enabled GTM adoption."
+    },
+    {
+      "id": 14,
+      "source": "Indeed",
+      "title": "Revenue Strategy and Operations Lead",
+      "company": "Serval",
+      "url": "https://www.indeed.com/viewjob?jk=3dba1cd6a216bd8e",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Revenue Strategy and Operations Lead role is responsible for building Serval's GTM systems and processes for hypergrowth, scaling from 5 AEs to 50+ by EOY26, running pipeline reviews and forecasting, owning sales tools and data foundation, optimizing Salesforce/HubSpot/Salesbricks, lead flow, scoring, SLA handoffs, territory allocation, quota methodology, and data integrity."
+    },
+    {
+      "id": 15,
+      "source": "LinkedIn Jobs",
+      "title": "Marketing Operations Manager Contract Part Time",
+      "company": "",
+      "url": "https://www.linkedin.com/jobs/view/marketing-operations-manager-contract-part-time-at-medbridge-4423272483",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Integration and sync",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Hiring-market signal for HubSpot-Salesforce field mapping, sync errors, data consistency, dedupe, standardization, list cleanup, segmentation, workflows, and lead routing."
+    },
+    {
+      "id": 16,
+      "source": "Greenhouse",
+      "title": "Director, Growth Marketing",
+      "company": "Lightspeed Commerce",
+      "url": "https://job-boards.greenhouse.io/lightspeedhq/jobs/7542764",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Integration and sync",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Director, Growth Marketing role owns Marketing Automation, CRO, Marketing Analytics, Marketing AI, global marketing tech stack and automation strategy, lead generation, lead scoring, conversion funnels, retention, data-driven optimization, Salesforce, HubSpot/Marketo, Google Cloud, BigQuery, Fivetran, Looker, GA4, Clay, and RevOps collaboration."
+    },
+    {
+      "id": 17,
+      "source": "Greenhouse",
+      "title": "VP Revenue Operations",
+      "company": "Later",
+      "url": "https://job-boards.greenhouse.io/later/jobs/8534752002",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Integration and sync"
+      ],
+      "observed_signal": "VP Revenue Operations role owns Sales Ops, Marketing Ops, Customer Ops, Creator Ops, Enablement, Dev & Integrations, pipeline mechanics, forecasting, territory design, lead routing, renewal and expansion operations, Salesforce, HubSpot, marketing automation, AI workflows, and board-level operating cadence."
+    },
+    {
+      "id": 18,
+      "source": "Lever",
+      "title": "Director Revenue Operations",
+      "company": "Findigs",
+      "url": "https://jobs.lever.co/findigs/3c04dc65-3e98-437b-a184-94152b559520",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Integration and sync",
+        "Migration and implementation"
+      ],
+      "observed_signal": "Director Revenue Operations role says Findigs is moving from scrappy startup to world-class revenue organization, scaling from $25M to $100M+ ARR, building RevOps as a function, and owning Salesforce, HubSpot, Salesloft, Nooks, Gong, analytics, planning, forecasting, and implementation handoffs."
+    },
+    {
+      "id": 19,
+      "source": "Upwork",
+      "title": "HubSpot RevOps Specialist Needed CRM Icp Segmentation Scoring And Outreach Architecture",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/HubSpot-RevOps-Specialist-Needed-CRM-ICP-Segmentation-Scoring-and-Outreach-Architecture_~022072576991372565679",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Integration and sync",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Marketplace demand bundles CRM cleanup, scoring, Salesforce sync, website tracking, reporting, lifecycle changes, and workflow maintenance."
+    },
+    {
+      "id": 20,
+      "source": "Greenhouse",
+      "title": "Director GTM Operations",
+      "company": "Finite State",
+      "url": "https://job-boards.greenhouse.io/finitestate/jobs/6013215004",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Integration and sync",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Director GTM Operations role reports to the CRO and owns GTM strategy, process design, tool optimization, forecasting, pipeline health, Salesforce, HubSpot, Clay, Salesloft, Warmly, Sequence, and cross-functional GTM workflows."
+    },
+    {
+      "id": 21,
+      "source": "Greenhouse",
+      "title": "Marketing Programs & Operations Manager",
+      "company": "DoubleVerify",
+      "url": "https://job-boards.greenhouse.io/doubleverify/jobs/8469823002",
+      "observed_date": "2026-07-05",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Integration and sync",
+        "Lifecycle and process design",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Sr. Marketing Programs & Operations Manager role references HubSpot, Salesforce integration, UTM governance, lead lifecycle stages, marketing data, technical integrations, and data discrepancies."
+    },
+    {
+      "id": 22,
+      "source": "Lever",
+      "title": "Director of Marketing Operations",
+      "company": "Trackforce",
+      "url": "https://jobs.lever.co/tracktik/aeb26966-2ec6-47e3-9343-0e5c1203b03b",
+      "observed_date": "2026-07-05",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Lifecycle and process design",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Director of Marketing Operations role owns HubSpot, Salesforce, ZoomInfo, nurture programs, lead scoring, lifecycle automation, lead response time, MQL-to-meeting conversion, attribution accuracy, and data hygiene."
+    },
+    {
+      "id": 23,
+      "source": "Lever",
+      "title": "Marketing Operations Manager",
+      "company": "Leadership Connect",
+      "url": "https://jobs.lever.co/leadershipconnect/7b65023d-23cd-49bf-9a2c-1b00a757e4a4",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Marketing Operations Manager role is Canada-only remote and focuses on HubSpot workflows, lead management, reporting, Salesforce, WordPress, Google Ads, GA4, G2, Jira, multi-touch attribution, closed-loop reporting, paid acquisition, and lead handoff criteria."
+    },
+    {
+      "id": 24,
+      "source": "Lever",
+      "title": "Open Marketing Ops AI Agent Engineer",
+      "company": "Saviynt",
+      "url": "https://jobs.lever.co/saviynt/09afb16e-e868-4369-8989-2c6aa7077154",
+      "observed_date": "2026-06-30",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Integration and sync",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Open Marketing Ops AI Agent Engineer role requires workflows across Salesforce, HubSpot, Clay, Outreach, Gong, LinkedIn Ads, Snowflake, plus understanding of lead routing, SDR workflows, attribution, ABM, pipeline creation, and AI operations."
+    },
+    {
+      "id": 25,
+      "source": "Lever",
+      "title": "Open Senior Marketing Operations Specialist",
+      "company": "Nextech",
+      "url": "https://jobs.lever.co/nextech/f612d19a-8074-4e59-84d1-c3fa6220d0e6",
+      "observed_date": "2026-06-30",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Integration and sync",
+        "Lifecycle and process design",
+        "Administration and access"
+      ],
+      "observed_signal": "Open Senior Marketing Operations Specialist role owns HubSpot, HubSpot-to-Salesforce data flow, lead lifecycle, scoring, qualified lead flow, workflows, system administration, and integrations."
+    },
+    {
+      "id": 26,
+      "source": "LinkedIn Jobs",
+      "title": "Email Marketing Specialist",
+      "company": "",
+      "url": "https://www.linkedin.com/jobs/view/email-marketing-specialist-at-cenegenics-4435521789",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Integration and sync",
+        "Lifecycle and process design",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Hiring-market signal for lead flow and lifecycle movement between HubSpot and Salesforce, sync troubleshooting, duplicate management, lifecycle inconsistencies, ownership, and attribution."
+    },
+    {
+      "id": 27,
+      "source": "Greenhouse",
+      "title": "GTM Engineer",
+      "company": "ContactMonkey",
+      "url": "https://job-boards.greenhouse.io/contactmonkey/jobs/4686097006",
+      "observed_date": "2026-06-30",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Integration and sync"
+      ],
+      "observed_signal": "GTM Engineer role references revenue engine, GTM tools, integrations, automation, data hygiene, lead/account distribution, Salesforce, HubSpot, and revenue visibility"
+    },
+    {
+      "id": 28,
+      "source": "Greenhouse",
+      "title": "Digital Marketing Manager",
+      "company": "Granum",
+      "url": "https://job-boards.greenhouse.io/granum/jobs/8577775002",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Lead routing and follow-up",
+        "Attribution and source tracking",
+        "Administration and access"
+      ],
+      "observed_signal": "Digital Marketing Manager role owns granum.com and paid media across LMN, Greenius, and SingleOps; it names technical SEO/AEO, CRO, HubSpot and WordPress landing page infrastructure, routing logic, attribution, tracking, Salesforce-side configuration, GA4, GTM, Looker Studio, and data-quality flags."
+    },
+    {
+      "id": 29,
+      "source": "Greenhouse",
+      "title": "Head of Marketing Operations",
+      "company": "Fireworks AI",
+      "url": "https://job-boards.greenhouse.io/fireworksai/jobs/4260883009",
+      "observed_date": "2026-07-05",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Reporting and forecasting",
+        "Integration and sync",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Head of Marketing Operations role owns marketing infrastructure, marketing tech stack, data model, lifecycle, analytics, planning rhythms, budget, prioritization, program management, HubSpot or Marketo, Salesforce, and BI tools; role calls out building from scratch or replatforming."
+    },
+    {
+      "id": 30,
+      "source": "LinkedIn Jobs",
+      "title": "Head Of Demand Generation",
+      "company": "Bytown Ventures",
+      "url": "https://www.linkedin.com/jobs/view/head-of-demand-generation-at-bytown-ventures-4299240157",
+      "observed_date": "2026-07-04",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "CRM Salesforce/HubSpot, segmentation, dedupe, data hygiene, workflows, reporting"
+    },
+    {
+      "id": 31,
+      "source": "Upwork",
+      "title": "CRM Systems Contractor HubSpot Salesforce Apollo",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/CRM-Systems-Contractor-HubSpot-Salesforce-Apollo_~022073862692279406924",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Integration and sync",
+        "Administration and access"
+      ],
+      "observed_signal": "Marketplace demand for HubSpot/Salesforce configuration, workflows, pipeline architecture, custom properties, forms, dashboards, and integrations."
+    },
+    {
+      "id": 32,
+      "source": "Greenhouse",
+      "title": "GTM Developer",
+      "company": "Backblaze",
+      "url": "https://job-boards.greenhouse.io/backblaze/jobs/5234051008",
+      "observed_date": "2026-07-05",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Integration and sync"
+      ],
+      "observed_signal": "GTM Developer role says Backblaze is in a GTM transformation, doubling qualified pipeline, rebuilding around signals, automation, AI agents, Salesforce, HubSpot, Gong, Outreach, Gainsight, and routing signals to reps."
+    },
+    {
+      "id": 33,
+      "source": "Greenhouse",
+      "title": "Senior GTM Systems Engineer",
+      "company": "DNSFilter",
+      "url": "https://job-boards.greenhouse.io/dnsfilter/jobs/5128200007",
+      "observed_date": "2026-07-05",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Integration and sync"
+      ],
+      "observed_signal": "Senior GTM Systems Engineer posting says DNSFilter needs technical ownership of Salesforce, HubSpot, Vitally, Zendesk, HubSpot workflows, Salesforce-HubSpot sync logic, GTM integrations, AI workflows, data quality standards, and change management."
+    },
+    {
+      "id": 34,
+      "source": "Greenhouse",
+      "title": "Senior Manager Revenue Operations Analytics",
+      "company": "Dutchie",
+      "url": "https://boards.greenhouse.io/thedutchie/jobs/8597673002",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Reporting and forecasting",
+        "Integration and sync"
+      ],
+      "observed_signal": "Senior Manager Revenue Operations Analytics role covers Salesforce, HubSpot, Looker, Gong, data governance, metric definitions, field hygiene, documentation, change management, and trusted GTM decision reporting."
+    },
+    {
+      "id": 35,
+      "source": "Greenhouse",
+      "title": "VP Revenue Operations",
+      "company": "Avo",
+      "url": "https://job-boards.greenhouse.io/avomdincdbaavo/jobs/4299570009",
+      "observed_date": "2026-07-05",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "VP Revenue Operations role calls for partner-sourced revenue operations, pipeline management, attribution, deal registration, forecasting, territories, compensation, deal desk, contract workflows, and HubSpot/Salesforce optimization."
+    },
+    {
+      "id": 36,
+      "source": "Lever",
+      "title": "Open GTM Systems Administrator",
+      "company": "Samba TV",
+      "url": "https://jobs.lever.co/sambatv/270d759b-efbc-4597-920b-370783862e30",
+      "observed_date": "2026-06-30",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Integration and sync",
+        "Administration and access"
+      ],
+      "observed_signal": "Open GTM Systems Administrator role supports HubSpot and Salesforce, Marketing Operations data flow, GTM system tickets, data loads, adoption, updates, integrations, and automation."
+    },
+    {
+      "id": 37,
+      "source": "Lever",
+    "title": "Senior GTM Analyst",
+      "company": "HHAeXchange",
+      "url": "https://jobs.lever.co/hhaexchange/b4d266dd-fc11-4237-bce2-60c7d8eddae2",
+      "observed_date": "2026-06-30",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Integration and sync"
+      ],
+      "observed_signal": "Role references Salesforce, data governance, reporting, workflows, CPQ, SalesLoft, and HubSpot/sales engagement"
+    },
+    {
+      "id": 38,
+      "source": "LinkedIn Jobs",
+      "title": "Senior HubSpot Consultant",
+      "company": "",
+      "url": "https://www.linkedin.com/jobs/view/senior-hubspot-consultant-at-process-pro-consulting-4426513491",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Migration and implementation",
+        "Lifecycle and process design",
+        "Administration and access"
+      ],
+      "observed_signal": "Hiring-market evidence for migrations, workflows, lead scoring, lifecycle stages, lead routing, properties, permissions, architecture, governance, hygiene, and analytics."
+    },
+    {
+      "id": 39,
+      "source": "Greenhouse",
+      "title": "Senior Demand Generation Manager",
+      "company": "Motus",
+      "url": "https://job-boards.greenhouse.io/motus/jobs/7565908",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Reporting and forecasting",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Senior Demand Generation Manager role reports to VP Demand and owns campaign planning, orchestration, and performance to generate pipeline, with Marketing Ops, Campaign Ops, BDR, Revenue Ops, HubSpot, Salesforce, attribution, reporting, conversion, and velocity in scope."
+    },
+    {
+      "id": 40,
+      "source": "Lever",
+      "title": "Head of Marketing",
+      "company": "Zus Health",
+      "url": "https://jobs.lever.co/zushealth/ebab5c42-a6bd-4669-8e6a-1bcfbb6c1707",
+      "observed_date": "2026-07-05",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Reporting and forecasting"
+      ],
+      "observed_signal": "Head of Marketing role owns product marketing, growth, brand, events, demand gen, content, and marketing operations; role calls for marketing systems and workflows modernization through automation and AI, with HubSpot, Salesforce, Webflow, analytics, and AI-enabled systems."
+    },
+    {
+      "id": 41,
+      "source": "Lever",
+      "title": "VP Global Growth Marketing",
+      "company": "Quantum Metric",
+      "url": "https://jobs.lever.co/quantummetric/2f14c32e-4e3f-4147-91f2-5c2f01881c54",
+      "observed_date": "2026-07-05",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Reporting and forecasting",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "VP Global Growth Marketing role owns demand generation systems, programs, pipeline acceleration, marketing operations, analytics, Salesforce, HubSpot, Qualified, Clay, Tableau, measurement frameworks, attribution, pipeline analysis, and account engagement. A public LinkedIn result says the former CMO closed her chapter six months ago."
+    },
+    {
+      "id": 42,
+      "source": "Upwork",
+      "title": "HubSpot Lead Gen Expert B2B With Advanced Salesforce Integration",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/HubSpot-Lead-Gen-Expert-B2B-with-Advanced-Salesforce-Integration_~022072312016814371661",
+      "observed_date": "2026-07-07",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Lead routing and follow-up",
+        "Integration and sync",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Use as demand signal for HubSpot forms, Salesforce campaign association, assignment rules, and hidden UTM QA."
+    },
+    {
+      "id": 43,
+      "source": "Upwork",
+      "title": "HubSpot Salesforce Admin Immediate Need",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/HubSpot-Salesforce-Admin-Immediate-Need_~022069855136150436020",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Integration and sync",
+        "Administration and access"
+      ],
+      "observed_signal": "Direct marketplace demand for native connector troubleshooting, sync issues, data discrepancies, connector health, field mappings, workflows, and documentation."
+    },
+    {
+      "id": 44,
+      "source": "Lever",
+      "title": "Chief Executive Officer",
+      "company": "HHAeXchange",
+      "url": "https://jobs.lever.co/hhaexchange/f3ef261c-3ef2-4ed4-b0f2-cf2f8b2fa24f",
+      "observed_date": "2026-06-30",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Integration and sync"
+      ],
+      "observed_signal": "Open GTM Engineer and GTM Operations Senior Analyst roles mention CRM/marketing automation platforms, HubSpot, Salesforce, CPQ, SalesLoft, commissions, AI tools, enrichment, and operational friction."
+    },
+    {
+      "id": 45,
+      "source": "Lever",
+      "title": "Director Marketing Operations",
+      "company": "CaptivateIQ",
+      "url": "https://jobs.lever.co/captivateiq/72db91f9-0769-46cd-a3d6-d306e7d2d9cb",
+      "observed_date": "2026-07-05",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Integration and sync"
+      ],
+      "observed_signal": "Director Marketing Operations role owns a complex marketing tech stack including Clay, HubSpot, Salesforce, Revsure, Netline, 6Sense, UserGems, Nooks, Outreach, and data enrichment, plus hygiene, deliverability, and workflow optimization."
+    },
+    {
+      "id": 46,
+      "source": "Greenhouse",
+    "title": "VP of Revenue Operations",
+      "company": "Inspiren",
+      "url": "https://job-boards.greenhouse.io/inspiren/jobs/5139261007",
+      "observed_date": "2026-06-30",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Integration and sync"
+      ],
+      "observed_signal": "Role references HubSpot/Salesforce, data hygiene, enrichment, n8n/Make/Workato, and sales/marketing automation tools"
+    },
+    {
+      "id": 47,
+      "source": "Greenhouse",
+      "title": "Manager Revenue Operations",
+      "company": "Embrace",
+      "url": "https://job-boards.greenhouse.io/embrace/jobs/5732111004",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Reporting and forecasting",
+        "Integration and sync"
+      ],
+      "observed_signal": "Manager Revenue Operations role owns Salesforce, HubSpot, Gong, LeanData, Apollo, Clay, data flow, reporting, forecasting, and process frameworks for GTM efficiency."
+    },
+    {
+      "id": 48,
+      "source": "LinkedIn Jobs",
+      "title": "HubSpot implementation specialist job",
+      "company": "",
+      "url": "https://www.linkedin.com/jobs/view/4395243473",
+      "observed_date": "2026-07-07",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Integration and sync",
+        "Migration and implementation",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Job requires auditing and cleaning CRM data at scale, building lead routing workflows, lifecycle updates, sequences, Zapier work, and documentation."
+    },
+    {
+      "id": 49,
+      "source": "Greenhouse",
+      "title": "Senior Manager Lifecycle Marketing Operations",
+      "company": "Glean",
+      "url": "https://job-boards.greenhouse.io/gleanwork/jobs/4678598005",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Integration and sync",
+        "Lifecycle and process design",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Senior Manager Lifecycle Marketing Operations role owns end-to-end campaign execution, measurement, and quality for high-impact GTM programs, including Marketo and Salesforce program structures, campaign/channel taxonomies, UTMs, statuses, lead lifecycle flows, routing/SLA tweaks, attribution, and AI/automation-led workflows."
+    },
+    {
+      "id": 50,
+      "source": "Lever",
+    "title": "Marketing Operations Manager",
+      "company": "Leadership Connect",
+      "url": "https://jobs.lever.co/leadershipconnect/9519992d-4872-46e6-ad1f-3a6980ae1dc0",
+      "observed_date": "2026-07-04",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Attribution and source tracking",
+        "Administration and access"
+      ],
+      "observed_signal": "HubSpot admin/power-user needs, Salesforce, lead management, data hygiene, attribution"
+    },
+    {
+      "id": 51,
+      "source": "Upwork",
+      "title": "HubSpot RevOps Implementation Specialist Needed Sales Hub Marketing Hub Sdr Workflows",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/HubSpot-RevOps-Implementation-Specialist-Needed-Sales-Hub-Marketing-Hub-SDR-Workflows_~022072069428922788086",
+      "observed_date": "2026-07-07",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Migration and implementation",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Buyer asks for website form field mapping, lead routing workflows, autoresponders, lifecycle automations, dashboards, tracking code guidance, imports, and dedupe rules."
+    },
+    {
+      "id": 52,
+      "source": "Lever",
+    "title": "GTM Engineer",
+      "company": "CaptivateIQ",
+      "url": "https://jobs.lever.co/captivateiq/6174a4e6-aaac-4caf-8534-d24f41bcc878",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Integration and sync"
+      ],
+      "observed_signal": "GTM Engineer and Operations Lead signals mention data pipelines across HubSpot, Salesforce, Outreach, Gong, ChurnZero, AI-powered automations, and Salesforce/GTM systems ownership."
+    },
+    {
+      "id": 53,
+      "source": "Lever",
+      "title": "Head of Marketing",
+      "company": "SpryPoint",
+      "url": "https://jobs.lever.co/sprypointservices/80574d17-7168-4fd3-a4f6-2520e97c60e6",
+      "observed_date": "2026-07-05",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Reporting and forecasting"
+      ],
+      "observed_signal": "Head of Marketing role serves CRO and executive team, builds demand programs, ABM, event-to-pipeline conversion, board-level reporting, AI-assisted outbound, HubSpot/Salesforce fluency, and partner-influenced pipeline."
+    },
+    {
+      "id": 54,
+      "source": "Greenhouse",
+      "title": "Open Marketing Operations Manager",
+      "company": "StackAdapt",
+      "url": "https://job-boards.greenhouse.io/stackadapt/jobs/4282643009",
+      "observed_date": "2026-06-30",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Integration and sync"
+      ],
+      "observed_signal": "Open Marketing Operations Manager role calls for HubSpot and Salesforce expertise, managing data syncs across MAP/CRM, auditing complex processes, and finding process gaps."
+    },
+    {
+      "id": 55,
+      "source": "LinkedIn Jobs",
+      "title": "CRM Administrator HubSpot",
+      "company": "Flowcode",
+      "url": "https://www.linkedin.com/jobs/view/crm-administrator-hubspot-at-flowcode-4403471780",
+      "observed_date": "2026-07-02",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Lifecycle and process design",
+        "Administration and access"
+      ],
+      "observed_signal": "HubSpot admin support: lifecycle cleanup, properties, workflow maintenance, pipeline reporting."
+    },
+    {
+      "id": 56,
+      "source": "LinkedIn Jobs",
+      "title": "CRM workflows, automation, and SLA-driven lead processes across Salesforce, HubSpot, Zoho, or simila",
+      "company": "",
+      "url": "https://www.linkedin.com/jobs/view/4357467411",
+      "observed_date": "2026-07-08",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation"
+      ],
+      "observed_signal": "Job calls for CRM workflows, automation, and SLA-driven lead processes across Salesforce, HubSpot, Zoho, or similar systems."
+    },
+    {
+      "id": 57,
+      "source": "LinkedIn Jobs",
+      "title": "System Specialist HubSpot",
+      "company": "",
+      "url": "https://www.linkedin.com/jobs/view/system-specialist-hubspot-at-talent-scout-4357641323",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Lifecycle and process design",
+        "Administration and access"
+      ],
+      "observed_signal": "Hiring-market evidence for HubSpot administration, workflows, lifecycle stages, reporting, dashboards, data hygiene, documentation, and usage consistency."
+    },
+    {
+      "id": 58,
+      "source": "Upwork",
+      "title": "HubSpot CRM Audit And Optimization Specialist",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/HubSpot-CRM-Audit-and-Optimization-Specialist_~022068491812743684324",
+      "observed_date": "2026-07-07",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Buyer asks for HubSpot CRM audit, cleanup, deduplication, property management, workflow automation, lead routing, lifecycle optimization, dashboards, lead scoring, and segmentation."
+    },
+    {
+      "id": 59,
+      "source": "Lever",
+      "title": "Digital Marketing Manager/Director",
+      "company": "IDMWORKS",
+      "url": "https://jobs.lever.co/idmworks/d9826b70-9c63-45b1-9c80-6884eb5e336b",
+      "observed_date": "2026-07-05",
+      "platforms": [
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Lifecycle and process design",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Digital Marketing Manager/Director posting says IDMWORKS needs ownership of Salesforce Account Engagement/Pardot, segmentation, lead scoring, MQL-to-SQL nurture flows, campaign attribution, website updates, dashboards, contractor SLAs, and quarterly reporting to the CRO."
+    },
+    {
+      "id": 60,
+      "source": "Upwork",
+      "title": "HubSpot CRM Specialist Setup Pipelines Automation",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/HubSpot-CRM-Specialist-Setup-Pipelines-Automation_~022073429219912463888",
+      "observed_date": "2026-07-08",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Migration and implementation",
+        "Administration and access"
+      ],
+      "observed_signal": "Buyer asks for HubSpot setup, pipelines, permissions, lead routing, follow-ups, internal notifications, dashboards, and ticket visibility."
+    },
+    {
+      "id": 61,
+      "source": "Greenhouse",
+    "title": "GTM Systems Lead",
+      "company": "Chowbus",
+      "url": "https://job-boards.greenhouse.io/chowbus/jobs/7797905003",
+      "observed_date": "2026-07-07",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation"
+      ],
+      "observed_signal": "Hiring GTM Systems Lead to own CRM strategy, data model, Salesforce/HubSpot evaluation, marketing automation, sales engagement, support, operations tooling, and vendor/build-vs-buy as North America scale continues"
+    },
+    {
+      "id": 62,
+      "source": "Greenhouse",
+      "title": "GTM Systems Manager",
+      "company": "Harbinger Motors",
+      "url": "https://job-boards.greenhouse.io/harbingermotors/jobs/5142106007",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Lifecycle and process design",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "GTM Systems Manager role states Harbinger is moving away from third-party agency support and bringing CRM/Revenue Operations in-house, with HubSpot source of truth, Clay, AI workflows, attribution, ROI dashboards, quoting, pipeline stage audit, and adoption in scope."
+    },
+    {
+      "id": 63,
+      "source": "Lever",
+      "title": "Senior RevOps",
+      "company": "Osmind",
+      "url": "https://jobs.lever.co/Osmind/f010832a-3b5d-4ff4-b5a4-da0111d74101",
+      "observed_date": "2026-07-05",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Senior RevOps role says Osmind owns revenue architecture across four GTM motions, with HubSpot Operations Hub, pipeline stages, routing logic, handoff workflows, conversion metrics, AI enrichment, CRM hygiene, dashboards, and HIPAA-aware data boundaries."
+    },
+    {
+      "id": 64,
+      "source": "LinkedIn Jobs",
+      "title": "Technical Consultant HubSpot",
+      "company": "",
+      "url": "https://www.linkedin.com/jobs/view/technical-consultant-hubspot-at-amplifyops-4434688855",
+      "observed_date": "2026-07-07",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Integration and sync",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Role asks for lifecycle and lead architecture, pipelines, workflows, reporting, integrations, form and conversion architecture, documentation, training, and full revenue-motion thinking."
+    },
+    {
+      "id": 65,
+      "source": "Greenhouse",
+    "title": "Marketing Operations Manager",
+      "company": "Florence Healthcare",
+      "url": "https://job-boards.greenhouse.io/florencehealthcare/jobs/4679558005",
+      "observed_date": "2026-06-30",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation"
+      ],
+      "observed_signal": "Role references deep HubSpot, Salesforce cross-system processes, Clay workflows, enrichment pipelines, prompt-based automations, and AI tooling"
+    },
+    {
+      "id": 66,
+      "source": "LinkedIn Jobs",
+      "title": "CRM Integration Manager job",
+      "company": "",
+      "url": "https://www.linkedin.com/jobs/view/4374761445",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Reporting and forecasting",
+        "Integration and sync",
+        "Migration and implementation",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Explicitly mentions bidirectional sync rules, ownership logic, lifecycle-stage mapping, documentation, clean handover, Salesforce migration prep, dashboards, and SLA tracking."
+    },
+    {
+      "id": 67,
+      "source": "LinkedIn Jobs",
+      "title": "HubSpot CRM Administrator",
+      "company": "",
+      "url": "https://www.linkedin.com/jobs/view/hubspot-crm-administrator-at-bruntwork-4425780181",
+      "observed_date": "2026-07-07",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Lifecycle and process design",
+        "Administration and access"
+      ],
+      "observed_signal": "Job asks for workflow build, testing, maintenance, lifecycle stages, business processes, accurate routing, segmentation, tagging, and lead management."
+    },
+    {
+      "id": 68,
+      "source": "LinkedIn Jobs",
+      "title": "HubSpot CRM Automations Specialist Dayshift Remote India",
+      "company": "",
+      "url": "https://in.linkedin.com/jobs/view/hubspot-crm-automations-specialist-dayshift-remote-india-at-getmycourse-4423360203",
+      "observed_date": "2026-07-07",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Use as signal for lead capture, nurturing workflows, lead scoring, lifecycle automation, forms, chatbots, assignment, follow-ups, dashboards."
+    },
+    {
+      "id": 69,
+      "source": "LinkedIn Jobs",
+      "title": "HubSpot Systems Administrator CRM Dba",
+      "company": "",
+      "url": "https://www.linkedin.com/jobs/view/hubspot-systems-administrator-crm-dba-at-cardone-training-technologies-inc-4411247654",
+      "observed_date": "2026-07-08",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Lifecycle and process design",
+        "Administration and access"
+      ],
+      "observed_signal": "Job asks for lead routing, assignment, lifecycle progression, speed-to-lead optimization, SLA compliance, real-time funnel monitoring, and dashboards."
+    },
+    {
+      "id": 70,
+      "source": "Upwork",
+      "title": "HubSpot CRM Setup Email Marketing Automation For Accounting Firm",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/HubSpot-CRM-Setup-Email-Marketing-Automation-for-Accounting-Firm_~022063858433351674621",
+      "observed_date": "2026-07-07",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Migration and implementation",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Buyer asks for CRM properties, lead stages, lifecycle stages, pipelines, website inquiry forms, and sequences for new leads, form submissions, consultation requests, follow-ups, and inactive leads."
+    },
+    {
+      "id": 71,
+      "source": "Greenhouse",
+    "title": "Revenue Operations Manager",
+      "company": "Vim",
+      "url": "https://job-boards.greenhouse.io/vim/jobs/7938820",
+      "observed_date": "2026-07-04",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation"
+      ],
+      "observed_signal": "RevOps hiring; HubSpot/Salesforce ownership; production automations"
+    },
+    {
+      "id": 72,
+      "source": "Greenhouse",
+      "title": "Revenue Operations Leader",
+      "company": "Vixxo",
+      "url": "https://job-boards.greenhouse.io/vixxo/jobs/8577245002",
+      "observed_date": "2026-07-05",
+      "platforms": [
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Reporting and forecasting"
+      ],
+      "observed_signal": "Revenue Operations Leader role says Vixxo is building a disciplined, data-driven, AI-enabled commercial operating model across New Sales, Customer Success, Marketing, Finance, and Operations, with Salesforce as source of truth, GTM tech stack, pipeline/forecast governance, scorecards, AI workflows, and operating cadence."
+    },
+    {
+      "id": 73,
+      "source": "Lever",
+    "title": "Sales Operations Associate",
+      "company": "Cents",
+      "url": "https://jobs.lever.co/cents/d5fe064e-3bc7-4e3c-881b-a9cd3837353c",
+      "observed_date": "2026-07-04",
+      "platforms": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Integration and sync"
+      ],
+      "observed_signal": "Salesforce, HubSpot, ChiliPiper, Outreach operations"
+    },
+    {
+      "id": 74,
+      "source": "LinkedIn Jobs",
+      "title": "Marketing Ops Manager",
+      "company": "Tapcart",
+      "url": "https://www.linkedin.com/jobs/view/marketing-ops-manager-at-tapcart-4433568137",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Active Marketing Ops Manager role owns HubSpot infrastructure, conversion optimization, customer marketing, product launches, lifecycle communications, onboarding sequences, expansion campaigns, retention programs, marketing calendar execution, lead scoring, reporting, AI-supported workflows, and cross-functional GTM coordination."
+    },
+    {
+      "id": 75,
+      "source": "Upwork",
+      "title": "HubSpot CRM Setup Sales Automation Expert For Small Business",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/HubSpot-CRM-Setup-Sales-Automation-Expert-for-Small-Business_~022070223961467312599",
+      "observed_date": "2026-07-08",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Buyer wants round-robin lead routing, automatic task creation, deal stage triggers, mandatory fields, dashboards, activity metrics, and reply-rate reports."
+    },
+    {
+      "id": 76,
+      "source": "Greenhouse",
+      "title": "Director GTM Technology",
+      "company": "Tebra",
+      "url": "https://job-boards.greenhouse.io/tebra/jobs/4708633005",
+      "observed_date": "2026-07-05",
+      "platforms": [
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Director GTM Technology role owns acquisition funnel performance, lead quality, routing, speed-to-lead, rep productivity, Salesforce, marketing automation, sales engagement, attribution, and GTM process adoption."
+    },
+    {
+      "id": 77,
+      "source": "Greenhouse",
+      "title": "Director of Revenue Operations",
+      "company": "Practice Better",
+      "url": "https://job-boards.greenhouse.io/practicebetter/jobs/5200757008",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Director of Revenue Operations role audits HubSpot, marketing automation, payments platform, product analytics, BI, lead-to-cash, renewal, expansion workflows, data cleanliness, attribution logic, compensation engines, GTM tool spend, and forecasts."
+    },
+    {
+      "id": 78,
+      "source": "Greenhouse",
+      "title": "Open Senior Salesforce Administrator",
+      "company": "Wasabi Technologies",
+      "url": "https://job-boards.greenhouse.io/wasabi/jobs/5153035008",
+      "observed_date": "2026-06-30",
+      "platforms": [
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Integration and sync",
+        "Administration and access"
+      ],
+      "observed_signal": "Open Senior Salesforce Administrator role focuses on Salesforce CPQ, usage-based billing, revenue workflows, data issues, revenue objects, integrations, manual gaps, and automation."
+    },
+    {
+      "id": 79,
+      "source": "Lever",
+      "title": "Director Revenue Operations",
+      "company": "WorkWave",
+      "url": "https://jobs.lever.co/workwave/6f48cda2-94ec-4ca9-8737-18614e7ce43a",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Lead routing and follow-up",
+        "Reporting and forecasting"
+      ],
+      "observed_signal": "Director Revenue Operations role owns GTM planning, forecasting, pipeline management, CRM data governance, dashboards and KPIs, Salesforce/RevTech stack, CPQ, CLM, BI, Marketing-to-Sales-to-CS handoffs, board reporting, and global sales operations."
+    },
+    {
+      "id": 80,
+      "source": "Lever",
+      "title": "Principal Revenue Operations and GTM Execution",
+      "company": "Coalfire",
+      "url": "https://jobs.lever.co/coalfire/d98ab601-45d9-4311-8426-8b01015a667b",
+      "observed_date": "2026-07-05",
+      "platforms": [
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Reporting and forecasting"
+      ],
+      "observed_signal": "Principal Revenue Operations and GTM Execution role owns MQL-to-opportunity handoff, lead routing, MQL definitions, conversion benchmarks, GTM calendar, outsourced SDR program accountability, pipeline risk visibility, Salesforce, and marketing automation alignment."
+    },
+    {
+      "id": 81,
+      "source": "LinkedIn Jobs",
+      "title": "CRM Revenue Operations Specialist",
+      "company": "Lee Enterprises",
+      "url": "https://www.linkedin.com/jobs/view/crm-revenue-operations-specialist-at-lee-enterprises-4418260481",
+      "observed_date": "2026-06-30",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Administration and access"
+      ],
+      "observed_signal": "Role references HubSpot CRM administration, workflow automation, data management, reporting, and process improvement"
+    },
+    {
+      "id": 82,
+      "source": "LinkedIn Jobs",
+      "title": "RevOps Systems Specialist",
+      "company": "",
+      "url": "https://www.linkedin.com/jobs/view/revops-systems-specialist-at-salesmsg-4406112400",
+      "observed_date": "2026-07-08",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Job asks for HubSpot workflows for lead routing, assignment logic, lifecycle movement, task creation, notifications, and SLA enforcement."
+    },
+    {
+      "id": 83,
+      "source": "LinkedIn Jobs",
+      "title": "Senior Revenue Operations Systems Analyst",
+      "company": "Prophix",
+      "url": "https://www.linkedin.com/jobs/view/senior-revenue-operations-systems-analyst-at-prophix-4407936971",
+      "observed_date": "2026-06-30",
+      "platforms": [
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Administration and access"
+      ],
+      "observed_signal": "Role references revenue tech stack, Salesforce, automation, validation logic, system configuration, reporting, and data infrastructure"
+    },
+    {
+      "id": 84,
+      "source": "Upwork",
+      "title": "HubSpot Data Migration CRM Cleanup Expert",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/HubSpot-Data-Migration-CRM-Cleanup-Expert_~022065424116366422678",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Reporting and forecasting",
+        "Migration and implementation"
+      ],
+      "observed_signal": "Marketplace demand ties deduplication to migration, field mapping, validation, documentation, and reporting integrity."
+    },
+    {
+      "id": 85,
+      "source": "Upwork",
+      "title": "Part Time HubSpot CRM Specialist",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Part-Time-HubSpot-CRM-Specialist_~022072695508109783247",
+      "observed_date": "2026-07-08",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Lead routing and follow-up",
+        "Reporting and forecasting",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Role asks for lead assignment, task creation, deal updates, sales handoffs, support SLA reminders, response-time reports, and lifecycle visibility."
+    },
+    {
+      "id": 86,
+      "source": "Upwork",
+      "title": "Revenue Systems Operator Own The Sales System Behind Sales Teams Ghl Zapier HubSpot",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Revenue-Systems-Operator-own-the-sales-system-behind-sales-teams-GHL-Zapier-HubSpot_~022065944061656623869",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Integration and sync",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Buyer explicitly asks to wire UTM/lead-source for accurate attribution and test new-lead automations."
+    },
+    {
+      "id": 87,
+      "source": "Upwork",
+      "title": "Senior HubSpot CRM Marketing Automation Specialist Ongoing Hourly",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Senior-HubSpot-CRM-Marketing-Automation-Specialist-Ongoing-Hourly_~022054537816075307077",
+      "observed_date": "2026-07-07",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up",
+        "Reporting and forecasting"
+      ],
+      "observed_signal": "Buyer asks for lead routing, task creation, follow-up, nurturing, safe testing, documentation, and reporting dashboards."
+    },
+    {
+      "id": 88,
+      "source": "Upwork",
+      "title": "Senior HubSpot Marketing Operations Specialist",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Senior-HubSpot-Marketing-Operations-Specialist_~022067118655420724435",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Reporting and forecasting",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Buyer asks for attribution tracking, lead source monitoring, dashboards, forms, workflows, and enrollment funnel optimization."
+    },
+    {
+      "id": 89,
+      "source": "Greenhouse",
+      "title": "Open GTM Engineer",
+      "company": "HopSkipDrive",
+      "url": "https://job-boards.greenhouse.io/hopskipdrive/jobs/6011491004",
+      "observed_date": "2026-06-30",
+      "platforms": [
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Reporting and forecasting",
+        "Administration and access"
+      ],
+      "observed_signal": "Open GTM Engineer role requires RevOps Systems/Salesforce Admin experience, Salesforce flows, validation rules, permission sets, custom objects, reporting, and B2B marketplace experience."
+    },
+    {
+      "id": 90,
+      "source": "Upwork",
+      "title": "Senior HubSpot Expert Needed CRM Cleanup Automation Sales Rollout",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Senior-HubSpot-Expert-Needed-CRM-Cleanup-Automation-Sales-Rollout_~022031108154320838487",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Workflow and automation",
+        "Migration and implementation"
+      ],
+      "observed_signal": "Marketplace demand frames cleanup and governance before scaling a sales team."
+    },
+    {
+      "id": 91,
+      "source": "Upwork",
+      "title": "HubSpot N8N Automation Expert Needed Build CRM Workflows",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/HubSpot-n8n-Automation-Expert-Needed-Build-CRM-Workflows_~022064913414104828582",
+      "observed_date": "2026-07-07",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Integration and sync"
+      ],
+      "observed_signal": "Buyer asks for HubSpot contact sync, deal-stage updates based on email replies or form submissions, enrichment before CRM entry, Slack notification, and error handling so workflows do not silently fail."
+    },
+    {
+      "id": 92,
+      "source": "Greenhouse",
+      "title": "Active VP Commercial Strategy",
+      "company": "Fictiv / MISUMI Americas",
+      "url": "https://job-boards.greenhouse.io/fictiv/jobs/8613031002",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance"
+      ],
+      "observed_signal": "Active VP Commercial Strategy role owns Salesforce as the commercial system of record, unified data model, object governance, BI stack, tech stack governance across CPQ, sales engagement, and conversation intelligence, plus a Salesforce unification program with a February 1, 2027 go-live."
+    },
+    {
+      "id": 93,
+      "source": "Upwork",
+      "title": "HubSpot CRM Automation Specialist",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/HubSpot-CRM-Automation-Specialist_~022071654037807018093",
+      "observed_date": "2026-07-08",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Workflow and automation",
+        "Lead routing and follow-up"
+      ],
+      "observed_signal": "Commercial contractor wants follow-up workflows, reminders every 72 hours, CRM tasks, custom deal properties, and tested documentation."
+    },
+    {
+      "id": 94,
+      "source": "Upwork",
+      "title": "HubSpot Expert Needed For CRM Audit Data Cleanup Fixing Our Messy Portal",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/HubSpot-Expert-Needed-for-CRM-Audit-Data-Cleanup-Fixing-Our-Messy-Portal_~022037064261147737012",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance",
+        "Lifecycle and process design"
+      ],
+      "observed_signal": "Marketplace demand bundles duplicate contacts, property misuse, lifecycle-stage mismatch, and leak identification."
+    },
+    {
+      "id": 95,
+      "source": "Upwork",
+      "title": "Part Time Web Developer Wordpress HubSpot",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Part-time-Web-Developer-Wordpress-HubSpot_~022068988313095641392",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Integration and sync",
+        "Attribution and source tracking"
+      ],
+      "observed_signal": "Buyer mentions bespoke lead source attribution powering HubSpot integrations from WordPress forms."
+    },
+    {
+      "id": 96,
+      "source": "Greenhouse",
+      "title": "Open Marketing & BD Operations Manager",
+      "company": "D2L",
+      "url": "https://job-boards.greenhouse.io/d2l/jobs/7967768",
+      "observed_date": "2026-06-30",
+      "platforms": [
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Lead routing and follow-up"
+      ],
+      "observed_signal": "Open Marketing & BD Operations Manager role calls for advanced Salesforce and marketing technology expertise; D2L also has active BDR and sales roles tied to qualified lead handoff."
+    },
+    {
+      "id": 97,
+      "source": "Upwork",
+      "title": "Looking For HubSpot CRM Expert",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Looking-for-HubSpot-CRM-Expert_~022072377040664687437",
+      "observed_date": "2026-07-07",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Workflow and automation"
+      ],
+      "observed_signal": "Buyer asks for a HubSpot contact form, two marketing emails, and an automated workflow that triggers after form submission, sends immediate and delayed emails, updates contact status, and is tested."
+    },
+    {
+      "id": 98,
+      "source": "Upwork",
+      "title": "Ongoing Salesforce Admin Support Needed For Growing Real Estate Tech Startup",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Ongoing-Salesforce-Admin-Support-Needed-for-Growing-Real-Estate-Tech-Startup_~022067739241646297175",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Administration and access"
+      ],
+      "observed_signal": "Marketplace signal that small businesses want ongoing Salesforce admin coverage with quick turnaround."
+    },
+    {
+      "id": 99,
+      "source": "Upwork",
+      "title": "Salesforce CRM Data Cleanup Remove Duplicates Filter Leads From Contact Records",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Salesforce-CRM-Data-Cleanup-Remove-Duplicates-Filter-Leads-from-Contact-Records_~021950013679647307039",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "Salesforce"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance"
+      ],
+      "observed_signal": "Marketplace demand explicitly describes thousands of duplicate leads needing cleanup and merging."
+    },
+    {
+      "id": 100,
+      "source": "Upwork",
+      "title": "HubSpot CRM Data Cleanup Enrichment Engagement Mapping",
+      "company": "",
+      "url": "https://www.upwork.com/freelance-jobs/apply/HubSpot-CRM-Data-Cleanup-Enrichment-engagement-Mapping_~022014164685814480688",
+      "observed_date": "2026-07-06",
+      "platforms": [
+        "HubSpot"
+      ],
+      "problem_categories": [
+        "Data hygiene and governance"
+      ],
+      "observed_signal": "Marketplace demand links cleanup to enrichment and deciding who to re-engage and why."
+    }
+  ]
+}

@@ -269,7 +269,7 @@ export default function CrmConsultantVancouver() {
               If you already know the platform or problem area, these pages go deeper into the specific work.
             </p>
           </div>
-          <div className="grid max-w-5xl gap-4 md:grid-cols-3">
+          <div className="grid max-w-6xl gap-4 md:grid-cols-2 lg:grid-cols-4">
             <Link href="/hubspot-consultant-vancouver" className="block rounded-xl border bg-white p-5 transition-shadow hover:shadow-md">
               <p className="font-semibold text-violet-700">HubSpot Consultant Vancouver</p>
               <p className="mt-2 text-sm text-gray-600">HubSpot setup, cleanup, workflows, and reporting.</p>
@@ -281,6 +281,10 @@ export default function CrmConsultantVancouver() {
             <Link href="/website-leads-to-crm-implementation" className="block rounded-xl border bg-white p-5 transition-shadow hover:shadow-md">
               <p className="font-semibold text-violet-700">Website Leads to CRM</p>
               <p className="mt-2 text-sm text-gray-600">Lead capture, routing, ownership, and follow-up workflows.</p>
+            </Link>
+            <Link href="/research/2026-crm-cleanup-demand-report" className="block rounded-xl border bg-white p-5 transition-shadow hover:shadow-md">
+              <p className="font-semibold text-violet-700">2026 CRM Cleanup Demand Report</p>
+              <p className="mt-2 text-sm text-gray-600">What 100 public HubSpot and Salesforce postings reveal.</p>
             </Link>
           </div>
         </div>

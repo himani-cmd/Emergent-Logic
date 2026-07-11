@@ -69,7 +69,7 @@ export default function CRMCleanupCanada() {
           <Breadcrumbs items={[
             { label: 'Services', href: '/services' },
             { label: 'CRM Cleanup Canada', href: '/crm-cleanup-canada' },
-          ]} />
+          ]} tone="dark" />
           <div className="flex items-center gap-2 text-emerald-200 mb-4"><AlertTriangle className="w-5 h-5" /><span>HubSpot, Salesforce, Zoho</span></div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">CRM Cleanup Services for Canadian Businesses</h1>
           <p className="text-xl text-white/75 max-w-3xl mb-8">
@@ -140,10 +140,10 @@ export default function CRMCleanupCanada() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Related resources</h2>
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid gap-4 md:grid-cols-3">
             <Link href="/services/crm-cleanup" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-emerald-700">CRM Cleanup Service</p><p className="text-sm text-gray-600">Detailed cleanup scope and pricing</p></Link>
             <Link href="/blog/marketing-automation-needs-crm-cleanup" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-emerald-700">Automation Needs Clean Data</p><p className="text-sm text-gray-600">Why cleanup comes before workflows</p></Link>
-            <Link href="/contact" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-emerald-700">Contact Emergent Logic</p><p className="text-sm text-gray-600">Ask about your CRM cleanup</p></Link>
+            <Link href="/research/2026-crm-cleanup-demand-report" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-emerald-700">2026 CRM Cleanup Demand Report</p><p className="text-sm text-gray-600">Original analysis of 100 public CRM postings</p></Link>
           </div>
         </div>
       </section>
