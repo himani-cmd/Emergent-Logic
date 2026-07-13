@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
@@ -22,10 +22,50 @@ const expectations = [
   { icon: ThumbsUp, text: 'You decide if we are the right fit' },
 ];
 
+const voiceSummaryStorageKey = 'emergent_logic_voice_consultation_summary';
+const voiceSummaryEventName = 'emergent-logic-voice-summary-ready';
+
 export default function ContactPage() {
   const [formData, setFormData] = useState({ first_name: '', last_name: '', email: '', phone: '', message: '', hp_field: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    function readVoiceSummary() {
+      try {
+        const stored = sessionStorage.getItem(voiceSummaryStorageKey);
+        if (!stored) return '';
+
+        sessionStorage.removeItem(voiceSummaryStorageKey);
+        const parsed = JSON.parse(stored);
+        return typeof parsed.summary === 'string' ? parsed.summary.trim().slice(0, 5000) : '';
+      } catch {
+        return '';
+      }
+    }
+
+    function applyVoiceSummary() {
+      const summary = readVoiceSummary();
+      if (!summary) return;
+
+      setSubmitted(false);
+      setFormData((current) => ({ ...current, message: summary }));
+
+      window.requestAnimationFrame(() => {
+        const formSection = document.getElementById('contact-form');
+        const messageField = document.getElementById('message');
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        formSection?.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+        window.setTimeout(() => messageField?.focus({ preventScroll: true }), reduceMotion ? 0 : 350);
+      });
+    }
+
+    applyVoiceSummary();
+    window.addEventListener(voiceSummaryEventName, applyVoiceSummary);
+
+    return () => window.removeEventListener(voiceSummaryEventName, applyVoiceSummary);
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -109,7 +149,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16 bg-gray-50">
+      <section id="contact-form" className="py-16 bg-gray-50 scroll-mt-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-2">Or Send Us a Message</h2>

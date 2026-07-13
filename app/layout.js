@@ -2,6 +2,7 @@ import './globals.css';
 import Script from 'next/script';
 import { Toaster } from 'sonner';
 import AnalyticsProvider from '@/components/AnalyticsProvider';
+import VoiceConsultant from '@/components/VoiceConsultant';
 import { GA_MEASUREMENT_ID } from '@/lib/analytics';
 
 export const metadata = {
@@ -204,6 +205,9 @@ const jsonLd = {
 };
 
 export default function RootLayout({ children }) {
+  const voiceAgentEnabled =
+    process.env.VOICE_AGENT_ENABLED === 'true' && Boolean(process.env.OPENAI_API_KEY);
+
   return (
     <html lang="en">
       <head>
@@ -232,6 +236,7 @@ export default function RootLayout({ children }) {
         <AnalyticsProvider>
           {children}
         </AnalyticsProvider>
+        <VoiceConsultant enabled={voiceAgentEnabled} />
         <Toaster position="top-right" richColors />
       </body>
     </html>
