@@ -1,8 +1,8 @@
 # High-Intent Upwork CRM Proposal Queue
 
 Prepared: 2026-07-10
-Public identity: Himani only
-Status: Draft-only. Confirm each listing is still open before applying. Do not submit without explicit approval.
+Public identity: Bhavuk Sood only
+Status: Archived queue. These listings are stale until reverified in Bhavuk's logged-in account. Do not submit from this file.
 
 ## Why This Queue
 
@@ -36,7 +36,7 @@ https://www.emergent-logic.ca/research/2026-crm-cleanup-demand-report
 
 I can begin with the audit and give you a concrete plan before asking you to commit to a larger rebuild.
 
-Himani
+Bhavuk
 
 ## Proposal 2 - HubSpot and Salesforce Immediate Admin Need
 
@@ -50,7 +50,7 @@ This avoids treating every bad record as a one-off and gives your team a repeata
 
 I am available to start with the diagnostic milestone and move into implementation once the failure modes are confirmed.
 
-Himani
+Bhavuk
 
 ## Proposal 3 - Salesforce and HubSpot Consultant
 
@@ -68,7 +68,7 @@ The key is sequencing. Dashboards and nurture cannot become trustworthy while li
 
 I can start with a focused architecture and data audit, then price the implementation as clear milestones.
 
-Himani
+Bhavuk
 
 ## Proposal 4 - HubSpot RevOps Implementation
 
@@ -87,7 +87,7 @@ My first milestone would produce:
 
 Once approved, I can implement the workflows in priority order and document the final operating process for the team.
 
-Himani
+Bhavuk
 
 ## Proposal 5 - Accounting Firm HubSpot Setup
 
@@ -99,11 +99,11 @@ I would configure the project around a simple client journey: website inquiry ->
 
 I recommend starting with one service line and one inquiry path, validating it end to end, then extending the pattern. That gives you a usable system quickly without creating a large, fragile build.
 
-Himani
+Bhavuk
 
 ## Submission Rules
 
-- Confirm the listing is open, the account is Himani's, and the proposal uses Himani's public profile.
+- Confirm the listing is open, the account is Bhavuk's, and the proposal uses Bhavuk's real profile and experience.
 - Tailor the opening two sentences to any new detail visible on the live listing.
 - Do not paste all credentials or a generic company biography into the proposal.
 - Offer a paid diagnostic or first milestone, not unpaid implementation work.
