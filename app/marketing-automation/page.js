@@ -41,7 +41,7 @@ export default function MarketingAutomation() {
           <div className="flex items-center gap-4 mb-6"><div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-violet-500 to-purple-500 flex items-center justify-center"><Zap className="w-8 h-8 text-white" /></div></div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Marketing Automation Services</h1>
           <p className="text-xl text-white/70 max-w-3xl mb-8">Turn your marketing into a machine that runs while you sleep. We design and implement marketing automation systems using HubSpot, Marketo, Pardot, and more. Nurture leads, score prospects, and close deals — automatically.</p>
-          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
         </div>
       </section>
       <section className="py-16 bg-white">
@@ -64,7 +64,7 @@ export default function MarketingAutomation() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to automate your marketing?</h2>
           <p className="text-xl text-white/80 mb-8">Book a free strategy call to discuss your automation needs.</p>
-          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
         </div>
       </section>
       <Footer />

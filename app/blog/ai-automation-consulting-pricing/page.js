@@ -11,36 +11,36 @@ import { ArrowRight, Bot, CheckCircle, Clock, DollarSign } from 'lucide-react';
 
 export const metadata = {
   title: 'AI Automation Consulting Pricing',
-  description: 'Learn what AI automation consulting costs for small businesses, from simple workflows to CRM-connected systems, and what changes project price.',
+  description: 'Learn how AI automation consulting is scoped for small businesses, from simple workflows to CRM-connected systems, and what changes project cost.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/ai-automation-consulting-pricing' },
   openGraph: {
     title: 'AI Automation Consulting Pricing | Small Business Guide',
-    description: 'A practical pricing guide for small businesses comparing simple AI workflows, CRM-connected automations, retainers, and fixed-scope projects.',
+    description: 'A practical scoping guide for small businesses comparing simple AI workflows, CRM-connected automations, ongoing support, and fixed-scope projects.',
     url: 'https://www.emergent-logic.ca/blog/ai-automation-consulting-pricing',
     type: 'article',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
 };
 
-const priceRanges = [
+const engagementShapes = [
   {
     tier: 'Starter automation',
-    range: '$300-$750',
+    scope: 'Narrow workflow',
     fit: 'One narrow workflow, such as form capture, notification, spreadsheet logging, or a simple approval step.',
   },
   {
     tier: 'Workflow build',
-    range: '$1,000-$2,500',
+    scope: 'Multi-system workflow',
     fit: 'A multi-step process across email, forms, calendar, CRM, Slack, Google Sheets, or n8n.',
   },
   {
     tier: 'CRM-connected automation',
-    range: '$1,500-$5,000+',
+    scope: 'Controlled CRM workflow',
     fit: 'Lead routing, CRM updates, tasks, deduplication, reporting, and follow-up workflows.',
   },
   {
     tier: 'Managed support',
-    range: '$300-$1,500/mo',
+    scope: 'Ongoing operating support',
     fit: 'Monitoring, fixes, prompt improvements, reporting updates, and workflow changes after launch.',
   },
 ];
@@ -88,7 +88,7 @@ export default function AiAutomationConsultingPricing() {
 
             <Badge className="mb-4">AI Automation</Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              AI Automation Consulting Pricing: What Small Businesses Pay
+              AI Automation Consulting Pricing: How Scope Is Determined
             </h1>
 
             <div className="flex items-center gap-6 text-gray-600 mb-8 flex-wrap">
@@ -105,33 +105,33 @@ export default function AiAutomationConsultingPricing() {
 
             <ShareButtons
               url="https://www.emergent-logic.ca/blog/ai-automation-consulting-pricing"
-              title="AI Automation Consulting Pricing: What Small Businesses Pay"
+              title="AI Automation Consulting Pricing: How Scope Is Determined"
             />
 
             <div className="prose prose-lg max-w-none mt-8">
               <p className="lead text-xl text-gray-600">
-                Most small business AI automation projects fall between $300 and $5,000+, depending on whether the work is a simple workflow, a multi-step system, or a CRM-connected process.
+                AI automation pricing depends on the workflow, the systems it touches, the controls it needs, and the condition of the underlying data.
               </p>
 
               <p>
-                The important question is not "how much does AI cost?" The better question is: what manual work is being removed, what revenue leakage is being fixed, and how risky is the workflow if it breaks?
+                The important question is not "how much does AI cost?" The better question is: what manual work should change, what operating gap is being addressed, and how risky is the workflow if it breaks?
               </p>
 
               <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8 rounded-r-lg">
                 <h4 className="font-bold text-blue-900 mb-2">Short answer</h4>
                 <p className="text-blue-900 mb-0">
-                  A narrow automation can be a few hundred dollars. A serious lead follow-up, CRM routing, or revenue operations workflow usually needs a fixed-scope build in the $1,000-$2,500+ range.
+                  A responsible estimate follows discovery. A narrow internal workflow needs less design and testing than a customer-facing, CRM-connected process with routing, approvals, and reporting.
                 </p>
               </div>
 
-              <h2>Typical AI Automation Consulting Price Ranges</h2>
+              <h2>Common AI Automation Engagement Shapes</h2>
               <div className="not-prose grid gap-4 my-8">
-                {priceRanges.map((item) => (
+                {engagementShapes.map((item) => (
                   <Card key={item.tier} className="border-gray-200">
                     <CardHeader className="pb-2">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                         <CardTitle className="text-xl">{item.tier}</CardTitle>
-                        <span className="text-2xl font-bold text-blue-700">{item.range}</span>
+                        <span className="text-lg font-bold text-blue-700">{item.scope}</span>
                       </div>
                     </CardHeader>
                     <CardContent>
@@ -189,9 +189,9 @@ export default function AiAutomationConsultingPricing() {
                 That is why many projects eventually touch <Link href="/services/crm-integration" className="text-blue-700 hover:underline">CRM integration</Link>, <Link href="/services/lead-capture-websites" className="text-blue-700 hover:underline">lead capture websites</Link>, or <Link href="/services/ai-automation-consulting" className="text-blue-700 hover:underline">AI automation consulting</Link>. The goal is not to add more tools. The goal is to make the handoff cleaner.
               </p>
 
-              <h2>When a Cheap Automation Is Enough</h2>
+              <h2>When a Narrow Automation Is Enough</h2>
               <p>
-                A low-cost automation can make sense when the process is simple, the data is clean, and the downside of a mistake is low. Examples include internal notifications, spreadsheet logging, simple reminders, and basic lead intake alerts.
+                A narrow automation can make sense when the process is simple, the data is clean, and the downside of a mistake is low. Examples include internal notifications, spreadsheet logging, simple reminders, and basic lead intake alerts.
               </p>
               <p>
                 If the workflow touches customer communication, quoting, compliance, CRM ownership, or revenue reporting, it usually needs more careful design.
@@ -227,7 +227,7 @@ export default function AiAutomationConsultingPricing() {
 
               <h3>How long does a small automation project take?</h3>
               <p>
-                A focused workflow can often be built in a few days. CRM-connected workflows usually take longer because fields, owners, stages, and edge cases need to be checked carefully.
+                Timing depends on access, data readiness, integrations, approval rules, testing, and the number of edge cases. A written delivery plan should be confirmed after those dependencies are understood.
               </p>
 
               <h2>Bottom Line</h2>

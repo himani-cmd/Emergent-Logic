@@ -10,12 +10,12 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Bot, CheckCircle, Database, FileText, Mail, Search, ShieldCheck, Workflow } from 'lucide-react';
 
 export const metadata = {
-  title: 'AI Revenue Operations Case Study',
+  title: 'AI Revenue Operations Internal Build',
   description: 'How Emergent Logic built an AI-assisted revenue engine for CRM, prospecting, BDR drafts, SEO, social content, and backlinks.',
   alternates: { canonical: 'https://www.emergent-logic.ca/case-studies/ai-revenue-operations-engine' },
   openGraph: {
-    title: 'Case Study: AI-Assisted Revenue Operations Engine | Emergent Logic',
-    description: 'A practical internal case study on building a guarded AI automation system for CRM, outbound, content, and lead generation.',
+    title: 'Internal Build: AI-Assisted Revenue Operations Engine | Emergent Logic',
+    description: 'A practical internal build documenting a guarded AI automation system for CRM, outbound, content, and lead generation.',
     url: 'https://www.emergent-logic.ca/case-studies/ai-revenue-operations-engine',
     type: 'article',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
@@ -68,7 +68,7 @@ const safeguards = [
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Case Study: AI-Assisted Revenue Operations Engine',
+  headline: 'Internal Build: AI-Assisted Revenue Operations Engine',
   description: metadata.description,
   image: 'https://www.emergent-logic.ca/og-image.png',
   author: {
@@ -96,7 +96,7 @@ export default function AIRevenueOperationsEngineCaseStudy() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <Breadcrumbs items={[
-              { label: 'Case Studies', href: '/case-studies' },
+              { label: 'Methods and Internal Build', href: '/case-studies' },
               { label: 'AI Revenue Operations Engine', href: '/case-studies/ai-revenue-operations-engine' },
             ]} />
 
@@ -110,7 +110,7 @@ export default function AIRevenueOperationsEngineCaseStudy() {
 
             <ShareButtons
               url="https://www.emergent-logic.ca/case-studies/ai-revenue-operations-engine"
-              title="Case Study: AI-Assisted Revenue Operations Engine"
+              title="Internal Build: AI-Assisted Revenue Operations Engine"
             />
 
             <div className="grid md:grid-cols-3 gap-4 my-10">
@@ -158,13 +158,13 @@ export default function AIRevenueOperationsEngineCaseStudy() {
             </div>
 
             <div className="prose prose-lg max-w-none">
-              <h2>Why this matters for clients</h2>
+              <h2>Why this matters for delivery</h2>
               <p>
-                This same pattern applies to many client systems. A business may not need all of this on day one, but the architecture is reusable. A CRM cleanup project can use the same approval logic. A website lead capture project can use the same routing and follow-up principles. A sales team can use the same draft-first outbound workflow. A marketing team can use the same content queue structure.
+                This pattern can be adapted to many business systems. A business may not need all of it on day one, but the architecture is reusable. A CRM cleanup project can use the same approval logic. A website lead-capture project can use the same routing and follow-up principles. A sales team can use the same draft-first outbound workflow. A marketing team can use the same content queue structure.
               </p>
 
               <p>
-                For a client, the first implementation usually starts smaller: website form into CRM, lead owner assignment, follow-up task creation, duplicate checks, reporting view, and a simple automation status. Once that foundation is trusted, more automation can be layered on safely.
+                A first implementation should usually start smaller: website form into CRM, lead owner assignment, follow-up task creation, duplicate checks, reporting view, and a simple automation status. Once that foundation is trusted, more automation can be layered on safely.
               </p>
 
               <h2>Safeguards we designed in</h2>

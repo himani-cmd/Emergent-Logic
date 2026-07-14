@@ -106,6 +106,8 @@ function mapOpenAIError(status) {
 }
 
 export async function POST(request) {
+  const startedAt = Date.now();
+
   if (process.env.VOICE_AGENT_ENABLED !== 'true') {
     return jsonResponse({ error: 'voice_agent_disabled' }, 404);
   }
@@ -177,14 +179,41 @@ export async function POST(request) {
     });
 
     if (!response.ok) {
-      return jsonResponse({ error: mapOpenAIError(response.status) }, response.status === 429 ? 429 : 502);
+      const reason = mapOpenAIError(response.status);
+      console.warn(JSON.stringify({
+        level: 'warning',
+        msg: 'voice_session',
+        route: '/api/realtime/client-secret',
+        outcome: reason,
+        upstream_status: response.status,
+        ms: Date.now() - startedAt,
+      }));
+      return jsonResponse({ error: reason }, response.status === 429 ? 429 : 502);
     }
 
     const data = await response.json();
 
     if (!data?.value) {
+      console.error(JSON.stringify({
+        level: 'error',
+        msg: 'voice_session',
+        route: '/api/realtime/client-secret',
+        outcome: 'voice_agent_secret_missing',
+        ms: Date.now() - startedAt,
+      }));
       return jsonResponse({ error: 'voice_agent_secret_missing' }, 502);
     }
+
+    console.log(JSON.stringify({
+      level: 'info',
+      msg: 'voice_session',
+      route: '/api/realtime/client-secret',
+      outcome: 'client_secret_minted',
+      model,
+      voice,
+      max_duration_seconds: maxSessionSeconds,
+      ms: Date.now() - startedAt,
+    }));
 
     return jsonResponse(
       {
@@ -197,6 +226,13 @@ export async function POST(request) {
     );
   } catch (error) {
     const reason = error?.name === 'AbortError' ? 'voice_agent_timeout' : 'voice_agent_network_error';
+    console.warn(JSON.stringify({
+      level: 'warning',
+      msg: 'voice_session',
+      route: '/api/realtime/client-secret',
+      outcome: reason,
+      ms: Date.now() - startedAt,
+    }));
     return jsonResponse({ error: reason }, 502);
   } finally {
     clearTimeout(timeout);

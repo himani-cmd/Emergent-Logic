@@ -124,7 +124,7 @@ export default function SalesforceAdminSupportCanadaUs() {
       <section className="overflow-hidden bg-gradient-to-br from-blue-950 via-slate-900 to-indigo-950 pt-32 pb-20">
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[
-            { label: 'Services', href: '/services' },
+            { label: 'Services', href: '/#services' },
             { label: 'Salesforce Admin Support', href: '/salesforce-admin-support-canada-us' },
           ]} />
           <Badge className="mb-5 bg-white/10 text-white hover:bg-white/10">Canada and US remote support</Badge>
@@ -135,10 +135,10 @@ export default function SalesforceAdminSupportCanadaUs() {
             Emergent Logic helps Canadian and US businesses keep Salesforce clean, useful, and trusted through remote admin support, CRM cleanup, Flow updates, reporting, and practical documentation.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <TrackedCTA ctaName="Book a Free Strategy Call - Salesforce Admin Support Hero" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation - Salesforce Admin Support Hero" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                 <Button size="lg" className="w-full bg-white text-blue-950 hover:bg-blue-100 sm:w-auto">
-                  Book a Free Strategy Call <ArrowRight className="ml-2 h-5 w-5" />
+                  Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -282,10 +282,10 @@ export default function SalesforceAdminSupportCanadaUs() {
             Book a free strategy call. We will look at your current Salesforce pain, identify the right first admin or cleanup path, and tell you whether ongoing support makes sense.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-            <TrackedCTA ctaName="Book a Free Strategy Call - Salesforce Admin Support Footer" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation - Salesforce Admin Support Footer" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-100">
-                  Book a Free Strategy Call <ArrowRight className="ml-2 h-5 w-5" />
+                  Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
             </TrackedCTA>

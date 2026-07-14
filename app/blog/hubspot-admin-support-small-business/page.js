@@ -179,7 +179,7 @@ export default function HubSpotAdminSupportSmallBusiness() {
               </p>
 
               <p>
-                Emergent Logic offers <Link href="/services/hubspot-consulting" className="text-orange-700 hover:underline">HubSpot consulting and admin support</Link> for teams that need senior CRM help without turning every change into a large agency project. We also work across Salesforce and Zoho, so if HubSpot is not the best fit, we will say that clearly.
+                Emergent Logic offers <Link href="/services/hubspot-consulting" className="text-orange-700 hover:underline">HubSpot consulting and admin support</Link> for teams that need bounded CRM help without turning every change into a large agency project. We also work across Salesforce and Zoho, so if HubSpot is not the best fit, we will say that clearly.
               </p>
 
               <h2>What a first month can look like</h2>

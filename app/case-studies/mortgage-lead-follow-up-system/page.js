@@ -21,14 +21,14 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Mortgage Lead Follow-Up Case Study',
+  title: 'Mortgage Lead Follow-Up Implementation Pattern',
   description:
     'How mortgage brokers can connect applications, rate inquiries, renewals, document requests, CRM follow-up, and reporting.',
   alternates: {
     canonical: 'https://www.emergent-logic.ca/case-studies/mortgage-lead-follow-up-system',
   },
   openGraph: {
-    title: 'Representative Case Study: Mortgage Lead Follow-Up System | Emergent Logic',
+    title: 'Implementation Pattern: Mortgage Lead Follow-Up System | Emergent Logic',
     description:
       'Mortgage teams do not just need more inquiries. They need every application, renewal, refinance, and document request to have an owner, stage, next task, and follow-up path.',
     url: 'https://www.emergent-logic.ca/case-studies/mortgage-lead-follow-up-system',
@@ -99,7 +99,7 @@ const failureModes = [
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Representative Case Study: Mortgage Lead Follow-Up System',
+  headline: 'Implementation Pattern: Mortgage Lead Follow-Up System',
   description: metadata.description,
   image: 'https://www.emergent-logic.ca/og-image.png',
   author: {
@@ -128,7 +128,7 @@ export default function MortgageLeadFollowUpSystemCaseStudy() {
           <div className="max-w-4xl mx-auto">
             <Breadcrumbs
               items={[
-                { label: 'Case Studies', href: '/case-studies' },
+                { label: 'Implementation Patterns', href: '/case-studies' },
                 {
                   label: 'Mortgage Lead Follow-Up System',
                   href: '/case-studies/mortgage-lead-follow-up-system',
@@ -151,7 +151,7 @@ export default function MortgageLeadFollowUpSystemCaseStudy() {
 
             <ShareButtons
               url="https://www.emergent-logic.ca/case-studies/mortgage-lead-follow-up-system"
-              title="Representative Case Study: Mortgage Lead Follow-Up System"
+              title="Implementation Pattern: Mortgage Lead Follow-Up System"
             />
 
             <div className="grid md:grid-cols-3 gap-4 my-10">

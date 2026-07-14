@@ -10,7 +10,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, BarChart3, CheckCircle, ClipboardCheck, Database, GitBranch, MapPin, Workflow } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Consultant Vancouver | Setup, Cleanup & Integration',
+  title: 'CRM Consultant Vancouver | Cleanup',
   description: 'CRM consultant in Vancouver for HubSpot, Salesforce, CRM cleanup, lead routing, reporting, integrations, and practical team adoption.',
   alternates: { canonical: 'https://www.emergent-logic.ca/crm-consultant-vancouver' },
   robots: { index: true, follow: true },
@@ -59,7 +59,7 @@ const faqs = [
   },
   {
     q: 'Do you work only in Vancouver?',
-    a: 'Emergent Logic is based in Surrey and supports Vancouver, Metro Vancouver, Canadian, and selected US teams. Most CRM work is delivered through calls, shared screens, and documented implementation sprints.',
+    a: 'Emergent Logic is based in Surrey and offers local or remote CRM support across Vancouver, Metro Vancouver, Canada, and selected US engagements. Delivery can use calls, shared screens, and documented implementation sprints.',
   },
   {
     q: 'Should we clean up our CRM before adding automation?',
@@ -67,7 +67,7 @@ const faqs = [
   },
   {
     q: 'Which CRM platforms do you support?',
-    a: 'We work most often with HubSpot and Salesforce, and can support teams using tools such as Zoho CRM, Pipedrive, Microsoft Dynamics, Monday CRM, Odoo, and Close when the fit is right.',
+    a: 'HubSpot and Salesforce are the primary platforms offered. Zoho CRM, Pipedrive, Microsoft Dynamics, Monday CRM, Odoo, Close, and other tools are assessed for fit before a scope is proposed.',
   },
 ];
 
@@ -116,7 +116,7 @@ export default function CrmConsultantVancouver() {
       <section className="overflow-hidden bg-gradient-to-br from-slate-950 via-violet-950 to-indigo-900 pb-10 pt-28 md:pb-16 md:pt-32">
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[
-            { label: 'Services', href: '/services' },
+            { label: 'Services', href: '/#services' },
             { label: 'CRM Consultant Vancouver', href: '/crm-consultant-vancouver' },
           ]} tone="dark" />
           <div className="mb-4 flex items-center gap-2 text-violet-300">
@@ -278,9 +278,9 @@ export default function CrmConsultantVancouver() {
               <p className="font-semibold text-violet-700">Salesforce Consulting</p>
               <p className="mt-2 text-sm text-gray-600">Salesforce admin support, cleanup, and implementation.</p>
             </Link>
-            <Link href="/website-leads-to-crm-implementation" className="block rounded-xl border bg-white p-5 transition-shadow hover:shadow-md">
-              <p className="font-semibold text-violet-700">Website Leads to CRM</p>
-              <p className="mt-2 text-sm text-gray-600">Lead capture, routing, ownership, and follow-up workflows.</p>
+            <Link href="/services/crm-revops-transition-sprint" className="block rounded-xl border bg-white p-5 transition-shadow hover:shadow-md">
+              <p className="font-semibold text-violet-700">CRM/RevOps Transition Sprint</p>
+              <p className="mt-2 text-sm text-gray-600">A bounded backlog and ownership review during a hiring transition.</p>
             </Link>
             <Link href="/research/2026-crm-cleanup-demand-report" className="block rounded-xl border bg-white p-5 transition-shadow hover:shadow-md">
               <p className="font-semibold text-violet-700">2026 CRM Cleanup Demand Report</p>

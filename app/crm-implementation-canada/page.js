@@ -30,7 +30,7 @@ const included = [
 
 const faqs = [
   { q: 'Which CRM should we implement?', a: 'For many Canadian SMBs, HubSpot is the fastest path to value. Salesforce is better for deeper customization, larger teams, or complex governance. Zoho can be a strong budget-conscious option. We recommend based on fit, not vendor preference.' },
-  { q: 'How long does CRM implementation take?', a: 'Focused SMB implementations usually take 2 to 4 weeks. More complex migrations, integrations, and multi-team rollouts can take longer, but we define the timeline before starting.' },
+  { q: 'How long does CRM implementation take?', a: 'Timing depends on data volume, integrations, stakeholder availability, testing, and acceptance criteria. The delivery plan and dependencies are documented before work begins.' },
   { q: 'Do you migrate data from spreadsheets or an old CRM?', a: 'Yes. We migrate from spreadsheets, HubSpot, Salesforce, Zoho, Pipedrive, Monday, and other tools. Cleanup and field mapping are part of the implementation plan.' },
   { q: 'Do you support businesses outside BC?', a: 'Yes. Emergent Logic is based in Surrey, BC and supports businesses across Canada. CRM implementation can be delivered remotely with working sessions, screen shares, and documented handoff.' },
 ];
@@ -68,7 +68,7 @@ export default function CRMImplementationCanada() {
       <section className="pt-32 pb-16 bg-gradient-to-br from-slate-900 via-violet-950 to-indigo-900">
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[
-            { label: 'Services', href: '/services' },
+            { label: 'Services', href: '/#services' },
             { label: 'CRM Implementation Canada', href: '/crm-implementation-canada' },
           ]} />
           <div className="flex items-center gap-2 text-violet-200 mb-4"><CheckCircle className="w-5 h-5" /><span>HubSpot, Salesforce, Zoho</span></div>
@@ -77,7 +77,7 @@ export default function CRMImplementationCanada() {
             We implement HubSpot, Salesforce, and Zoho for Canadian SMBs that need cleaner follow-up, better pipeline visibility, and a system their team will actually use. Strategy, setup, migration, automation, reporting, and training are handled in one fixed-scope project.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
+            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
             <Link href="/services/crm-implementation"><Button size="lg" variant="outline" className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white">View CRM Service</Button></Link>
           </div>
         </div>

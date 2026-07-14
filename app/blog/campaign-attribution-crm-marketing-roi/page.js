@@ -27,7 +27,7 @@ export default function CampaignAttribution() {
           <div className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">Part 3 of 3 — Marketing Automation Playbook</div>
           <div className="flex items-center gap-2 text-indigo-300 text-sm mb-4"><Link href="/blog" className="hover:text-white">Blog</Link><span>/</span><span>Attribution</span></div>
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Campaign Attribution in Your CRM: How to Prove Marketing ROI</h1>
-          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Emergent Logic Team</span><span>•</span><span>July 2026</span><span>•</span><span>9 min read</span></div>
+          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Himani Kharbanda</span><span>•</span><span>July 2026</span><span>•</span><span>9 min read</span></div>
         </div>
       </section>
 
@@ -112,7 +112,7 @@ export default function CampaignAttribution() {
         <div className="bg-gradient-to-br from-[#1E3A5F] to-[#6366F1] rounded-2xl p-8 md:p-12 text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Ready to prove your marketing ROI?</h2>
           <p className="text-indigo-200 mb-8">Book a free 30-minute strategy call and we will help you set up attribution in your CRM.</p>
-          <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-[#1E3A5F] hover:bg-indigo-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
+          <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-[#1E3A5F] hover:bg-indigo-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
         </div>
 
         {/* Series Nav */}

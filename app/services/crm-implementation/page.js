@@ -13,7 +13,7 @@ export const metadata = {
   robots: { index: true, follow: true },
   openGraph: {
     title: 'CRM Implementation Services | Emergent Logic',
-    description: 'AI-accelerated CRM implementation for Canadian businesses. HubSpot, Salesforce, and Zoho — set up properly in 2 to 4 weeks.',
+    description: 'CRM implementation planning for Canadian businesses using HubSpot, Salesforce, and Zoho, with written scope and controlled delivery.',
     url: 'https://www.emergent-logic.ca/services/crm-implementation',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -31,16 +31,16 @@ export default function CRMImplementation() {
             <Link href="/" className="hover:text-white">Home</Link> / <Link href="/#services" className="hover:text-white">Services</Link> / <span className="text-white">CRM Implementation</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            CRM Implementation That Works From Week One
+            CRM Implementation Built Around Your Sales Process
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
-            We set up HubSpot, Salesforce, and Zoho CRM systems for Canadian businesses in 2 to 4 weeks. Not 6 months. Pipelines, automation, dashboards, data migration, and team training — all included, all fixed-priced, and all built around how your team actually sells.
+            We scope HubSpot, Salesforce, and Zoho implementations for Canadian businesses around the sales process, data, reporting, automation, and training requirements. Timing is confirmed after discovery.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100 font-semibold px-8">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -51,10 +51,10 @@ export default function CRMImplementation() {
             </Link>
           </div>
           <div className="mt-8 flex flex-wrap gap-6 text-white/70 text-sm">
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-300" /> 2 to 4 week delivery</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-300" /> Scope-based delivery plan</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-300" /> Clear scope before build</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-300" /> HubSpot, Salesforce, or Zoho</div>
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-300" /> Senior consultants only</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-300" /> Direct delivery, no hidden handoff</div>
           </div>
         </div>
       </section>
@@ -64,13 +64,13 @@ export default function CRMImplementation() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Is CRM Implementation?</h2>
           <p className="text-lg text-gray-600 mb-4">
-            CRM implementation is the process of setting up a customer relationship management system so it actually works for your business. It is not just installing software — it is configuring pipelines to match your sales process, building automation that saves your team hours every week, creating dashboards that show real numbers, and migrating your data without losing anything.
+            CRM implementation is the process of configuring a customer relationship management system around the way a business sells and follows up. It can include pipelines, controlled automation, useful dashboards, and migration procedures with backups, test imports, validation, rollback, and approval.
           </p>
           <p className="text-lg text-gray-600 mb-4">
-            The difference between a CRM that generates revenue and a CRM that collects dust is how it is implemented. Most businesses buy a CRM, configure it generically, and wonder six months later why nobody on the sales team is logging deals. A proper implementation starts with understanding your business and ends with a system your team actually wants to use.
+            CRM implementation affects whether ownership, follow-up, reporting, and exceptions are visible to the team. The work starts by documenting the operating process, then configuring and testing the approved system against that process.
           </p>
           <p className="text-lg text-gray-600 mb-4">
-            We implement HubSpot, Salesforce, and Zoho for businesses with 10 to 200 employees across Canada. Every implementation is customized to your sales process, your team structure, and your growth goals — and every implementation is delivered with a fixed price and a fixed timeline before we start.
+            We offer HubSpot, Salesforce, and Zoho implementation for growing businesses across Canada. Each proposal maps the CRM to the sales process, team structure, scope, price, and delivery plan before work starts.
           </p>
           <p className="text-lg text-gray-600">
             What makes our approach different is that we build the strategy first and the software second. Anyone can drag fields around in HubSpot. Far fewer people can sit down with your sales leader, map out the way your business actually wins deals, and translate that into a CRM that mirrors reality. That is the work that makes a CRM stick.
@@ -83,14 +83,14 @@ export default function CRMImplementation() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Who Needs CRM Implementation?</h2>
           <p className="text-lg text-gray-600 mb-8">
-            We typically work with founders, sales leaders, and operations leads at growing Canadian companies. If you recognize yourself in any of these scenarios, a proper implementation is the right next step.
+            The service is designed for founders, sales leaders, and operations leads at growing Canadian companies. If you recognize these scenarios, an implementation review is a practical next step.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { title: 'New CRM buyers', desc: 'You just purchased HubSpot, Salesforce, or Zoho and want it set up properly from day one. You do not want to spend three months figuring it out yourself, and you do not want to waste your subscription paying for software your team is not actually using.' },
               { title: 'Scaling sales teams', desc: 'Your team is growing past five reps and spreadsheets are no longer cutting it. You need a system that gives every rep the same playbook, lets your sales leader forecast accurately, and shows leadership where revenue is actually coming from.' },
               { title: 'Failed or stalled implementations', desc: 'You already tried setting up your CRM — maybe in-house, maybe with a freelancer — and it stalled. Your data is messy, your team is frustrated, half the workflows are broken. You need someone to take it from where it is and finish the job.' },
-              { title: 'CRM migrations and switches', desc: 'You are moving from one CRM to another, or consolidating multiple tools into one. You need the transition handled cleanly with no lost contacts, no broken integrations, no downtime, and no disruption to active deals.' },
+              { title: 'CRM migrations and switches', desc: 'You are moving from one CRM to another or consolidating multiple tools. You need a controlled plan for backups, field mapping, test imports, integration dependencies, validation, rollback, and final approval.' },
               { title: 'Teams stuck in spreadsheets', desc: 'Your sales process lives in Excel, Google Sheets, and a dozen email threads. You know it is slowing you down, but you have not had time to build the alternative. We build it for you.' },
               { title: 'Founders who want one source of truth', desc: 'You want to open one tool and see exactly where every deal is, who owns it, what is stuck, and what is forecasted to close this quarter. That is what a properly implemented CRM gives you.' },
             ].map((item, i) => (
@@ -118,7 +118,7 @@ export default function CRMImplementation() {
             Searching for a CRM Consultant Near You?
           </h2>
           <p className="text-lg text-gray-600 mb-4">
-            When a business searches for a <Link href="/blog/crm-consultant-near-me" className="text-violet-700 hover:underline font-medium">CRM consultant near me</Link>, the real need is usually not geography. It is trust, senior help, and someone who can understand the sales process quickly without turning the project into a six-month software exercise.
+            When a business searches for a <Link href="/blog/crm-consultant-near-me" className="text-violet-700 hover:underline font-medium">CRM consultant near me</Link>, the real need is usually not geography. It is trust, direct access, and someone who can understand the sales process without turning discovery into an open-ended software exercise.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             We are based in Surrey, BC and support businesses across Greater Vancouver, Canada, and remote North American teams. For local companies in <Link href="/crm-consultant-langley" className="text-violet-700 hover:underline font-medium">Langley</Link>, <Link href="/crm-consultant-coquitlam" className="text-violet-700 hover:underline font-medium">Coquitlam</Link>, Abbotsford, <Link href="/crm-consultant-vancouver" className="text-violet-700 hover:underline font-medium">Vancouver</Link>, Burnaby, and Surrey, most CRM work can be delivered quickly over calls and shared screens while still keeping local context.
@@ -127,7 +127,7 @@ export default function CRMImplementation() {
             {[
               { title: 'Local context', desc: 'Canadian SMB workflows, service-area sales motions, PIPEDA-aware data handling, and Greater Vancouver operating realities.' },
               { title: 'Remote delivery', desc: 'CRM audits, pipeline design, workflow setup, dashboards, migration, and training can all happen without slowing your team down.' },
-              { title: 'Senior execution', desc: 'You get practical implementation judgment, not just someone clicking through software settings.' },
+              { title: 'Direct execution', desc: 'The people diagnosing the system remain accountable through configuration, testing, and handoff.' },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border bg-violet-50/50 p-5">
                 <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
@@ -141,9 +141,9 @@ export default function CRMImplementation() {
       {/* Industries */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Industries We Serve</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Industry-Specific CRM Requirements</h2>
           <p className="text-lg text-gray-600 mb-8">
-            We have implemented CRMs across many of the sectors active in the Canadian SMB economy. Every industry has its own pipeline shape, compliance requirements, and reporting needs — and we have seen most of them.
+            Each sector has a different pipeline shape, compliance context, and reporting need. The implementation starts by mapping those requirements instead of forcing every business into one template.
           </p>
           <div className="grid md:grid-cols-3 gap-4">
             {[
@@ -169,11 +169,11 @@ export default function CRMImplementation() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Common CRM Implementation Mistakes</h2>
           <p className="text-lg text-gray-600 mb-8">
-            Most failed CRM rollouts share the same root causes. We design every project to avoid these from day one.
+            Common CRM rollout risks include weak process mapping, dirty source data, unclear ownership, limited training, and reporting added too late. The delivery plan addresses these risks before build work starts.
           </p>
           <div className="space-y-4">
             {[
-              { title: 'Starting with features instead of process', desc: 'Most implementations fail because they start by configuring software features instead of mapping the actual sales process. If your CRM does not match how your team sells, they will not use it. Process first, software second — every time.' },
+              { title: 'Starting with features instead of process', desc: 'Configuring software before mapping the sales process can produce a CRM that does not match daily work. Process definitions should come before fields, stages, and automation.' },
               { title: 'Skipping data cleanup before migration', desc: 'Migrating dirty data into a new CRM just moves the problem. Duplicates, missing fields, outdated contacts, dead leads — they all need to be cleaned before migration, not after. Otherwise, the new system inherits the same issues within weeks.' },
               { title: 'No training plan or weak adoption strategy', desc: 'Installing a CRM is not the same as implementing it. If your team does not know how to use the system efficiently, adoption drops to zero within the first month and never recovers. Training is not optional.' },
               { title: 'Generic configuration', desc: 'Using default templates and out-of-the-box pipeline stages means your CRM does not reflect your business. Every company has a unique sales process — your CRM should match it exactly, not the other way around.' },
@@ -199,13 +199,13 @@ export default function CRMImplementation() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Is Included in Our CRM Implementation</h2>
           <p className="text-lg text-gray-600 mb-8">
-            Every implementation is customized to your business, but here is what you can expect in every engagement. Nothing on this list is an upsell or an add-on — it is all included in the fixed price.
+            The modules below can be included in a CRM implementation. The written proposal confirms exactly which modules, dependencies, and acceptance criteria are in scope.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { icon: Database, title: 'Pipeline Configuration', desc: 'Custom deal stages, pipeline views, and deal properties that match your exact sales process. Multiple pipelines for different products or services if needed. Win probability, forecasting, and stage entry/exit criteria built in.' },
               { icon: Users, title: 'Contact & Company Setup', desc: 'Custom properties, lifecycle stages, lead status definitions, and segmentation logic. Account hierarchies for businesses that sell into multi-location or parent-subsidiary structures. Contacts organized the way your team actually thinks about them.' },
-              { icon: Zap, title: 'Workflow Automation', desc: 'Lead assignment rules, follow-up sequences, deal stage automation, internal notification triggers, and task creation. We automate every repetitive process so your reps spend their time selling, not updating records.' },
+              { icon: Zap, title: 'Workflow Automation', desc: 'Lead assignment rules, follow-up sequences, deal-stage automation, internal notifications, and task creation. High-impact workflows remain subject to testing and approval.' },
               { icon: TrendingUp, title: 'Dashboards & Reports', desc: 'Revenue dashboards, pipeline reports, activity tracking, and forecasting views built on your real numbers. Sales leaders get a single view of the team. Reps get a personal dashboard that tells them what to do today.' },
               { icon: ShieldCheck, title: 'Data Migration', desc: 'Clean migration from spreadsheets, another CRM, or multiple sources. Deduplication, field mapping, association preservation, and validation included. Activity history is preserved where the source system supports it.' },
               { icon: Clock, title: 'Team Training', desc: 'Role-based training for sales reps, managers, and admins. Not a generic webinar — hands-on sessions with your actual data, your actual workflows, and your actual deals. Recorded and documented for new hires.' },
@@ -225,13 +225,13 @@ export default function CRMImplementation() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Process: Audit, Build, Launch</h2>
           <p className="text-lg text-gray-600 mb-8">
-            We use the same three-phase methodology on every project. It is the reason we can deliver in 2 to 4 weeks instead of 3 to 6 months.
+            The standard proposal uses three controlled phases. The delivery plan is confirmed after data, integrations, stakeholder availability, testing, and acceptance criteria are clear.
           </p>
           <div className="space-y-8">
             {[
-              { step: '01', title: 'Audit (Week 1)', desc: 'We map your sales process, audit your existing data, assess your tech stack, and identify every bottleneck. We use AI to scan your contact and deal data for patterns and quality issues that would take a human days to find. You receive a written audit report with prioritized recommendations and a clear implementation plan. No guessing, no assumptions, no scope changes once we start the build.' },
-              { step: '02', title: 'Build (Week 2-3)', desc: 'We configure your CRM from scratch — pipelines, properties, automation, dashboards, email templates, integrations. Data migration happens here with full deduplication and validation. Everything is built automation-first, so the moment a contact enters the system the right next action is already triggered. You get a working CRM at the end of week three.' },
-              { step: '03', title: 'Launch (Week 3-4)', desc: 'Your team gets hands-on training tailored to their roles. Reps learn the daily workflow, managers learn forecasting and dashboards, admins learn ongoing maintenance. We launch together, monitor adoption for two weeks, and make adjustments based on real usage. Post-launch support is included in every engagement.' },
+              { step: '01', title: 'Audit & Scope', desc: 'We map the sales process, inspect the available data, assess the stack, and use AI-assisted checks to surface patterns and quality risks. You receive prioritized recommendations, dependencies, approval boundaries, and a written implementation plan.' },
+              { step: '02', title: 'Build & Test', desc: 'Approved pipelines, properties, automation, dashboards, templates, integrations, and migration steps are configured and tested. Production changes follow the agreed validation and acceptance process.' },
+              { step: '03', title: 'Launch & Handoff', desc: 'Role-based training, documentation, launch support, and any post-launch monitoring included in the proposal are completed before handoff.' },
             ].map((item, i) => (
               <div key={i} className="flex gap-6">
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center flex-shrink-0">
@@ -247,23 +247,23 @@ export default function CRMImplementation() {
         </div>
       </section>
 
-      {/* Pricing + Timeline */}
+      {/* Scope and delivery */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Timeline and Investment</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Scope and Delivery Plan</h2>
           <p className="text-lg text-gray-600 mb-8">
-            Most CRM implementations are quoted in months and billed by the hour. Ours are quoted in weeks and billed at a fixed price.
+            Timing and commercial terms depend on the agreed scope. The proposal documents phases, dependencies, approval points, acceptance checks, and change control.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gray-50 p-8 rounded-2xl border shadow-sm">
               <Clock className="w-10 h-10 text-violet-600 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">2 to 4 Weeks</h3>
-              <p className="text-gray-600">From kickoff to launch. Our AI-accelerated methodology compresses timelines that traditional agencies typically deliver in 3 to 6 months. Most clients see a working pipeline by the end of week two.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Timing After Discovery</h3>
+              <p className="text-gray-600">The delivery plan is confirmed after the data, integrations, stakeholder availability, testing, migration risk, and acceptance requirements are understood.</p>
             </div>
             <div className="bg-gray-50 p-8 rounded-2xl border shadow-sm">
               <DollarSign className="w-10 h-10 text-violet-600 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">From $1,500 CAD</h3>
-              <p className="text-gray-600">Fixed pricing agreed before we start. No hourly billing, no change orders, no surprises. The scope, timeline, and investment are locked in from day one — you know exactly what you are paying.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Written Commercial Proposal</h3>
+              <p className="text-gray-600">The proposal defines the commercial terms, scope, exclusions, dependencies, and acceptance criteria. Requested changes are discussed and approved before related work begins.</p>
             </div>
           </div>
         </div>
@@ -285,12 +285,12 @@ export default function CRMImplementation() {
               </thead>
               <tbody className="divide-y">
                 {[
-                  { feature: 'Timeline', us: '2 to 4 weeks', f: '6 to 12 weeks', a: '3 to 6 months' },
-                  { feature: 'Pricing model', us: 'Fixed price', f: 'Hourly', a: 'Hourly + retainer' },
-                  { feature: 'Senior consultant on the build', us: 'Yes', f: 'Often', a: 'Rarely' },
-                  { feature: 'Vendor-neutral advice', us: 'Yes', f: 'Sometimes', a: 'No (partner-driven)' },
-                  { feature: 'Training included', us: 'Yes', f: 'Sometimes', a: 'Usually extra' },
-                  { feature: 'Post-launch support', us: '2 weeks included', f: 'Hourly', a: 'Hourly retainer' },
+                  { feature: 'Timeline', us: 'Written delivery plan', f: 'Varies by provider', a: 'Varies by scope' },
+                  { feature: 'Pricing model', us: 'Scope-based fixed price', f: 'Often hourly or fixed', a: 'Often project + retainer' },
+                  { feature: 'Delivery access', us: 'Direct team access', f: 'Usually direct', a: 'Often account-team model' },
+                  { feature: 'Platform stance', us: 'Cross-platform fit review', f: 'Varies', a: 'May reflect partnerships' },
+                  { feature: 'Training', us: 'Included in written scope', f: 'Varies', a: 'May be separate scope' },
+                  { feature: 'Post-launch support', us: 'Defined in proposal', f: 'Varies', a: 'Often contracted support' },
                 ].map((row, i) => (
                   <tr key={i}>
                     <td className="p-4 font-medium text-gray-800">{row.feature}</td>
@@ -310,7 +310,7 @@ export default function CRMImplementation() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Emergent Logic</h2>
           <p className="text-lg text-gray-600 mb-8">
-            We are a CRM-first consulting firm, not a generalist marketing agency. Implementation is what we do all day, every day.
+            Emergent Logic is focused on CRM implementation, cleanup, reporting, and guarded automation rather than general marketing services.
           </p>
           <p className="text-lg text-gray-600 mb-8">
             For local teams comparing options, we also support nearby businesses looking for a <Link href="/crm-consultant-langley" className="text-violet-700 font-medium hover:text-violet-900 underline underline-offset-4">CRM consultant in Langley</Link>, Surrey, Coquitlam, Abbotsford, and the wider Greater Vancouver region.
@@ -318,11 +318,11 @@ export default function CRMImplementation() {
           <div className="space-y-3">
             {[
               'Multi-platform expertise: HubSpot, Salesforce, and Zoho — we recommend based on your business, not our vendor partnerships',
-              'AI-accelerated delivery: faster audits, tighter configuration, and substantially shorter timelines than traditional agencies',
-              'Senior consultants only: the person on your strategy call is the person building your CRM',
-              'Fixed pricing: no hourly rates, no scope creep, no surprise invoices',
-              'Training built in: we do not consider an implementation complete until your team is using the system unprompted',
-              'Vendor-neutral: we have no kickback deals with any CRM platform — we recommend what fits your business',
+              'AI-assisted delivery: structured audits, documentation, and QA with human approval for business decisions and production changes',
+              'Direct delivery: the people diagnosing the system stay accountable through build and handoff',
+              'Clear commercial terms: the proposal lists scope, exclusions, acceptance criteria, and price',
+              'Training and documented handoff are included in the agreed implementation scope',
+              'Cross-platform fit review with relevant partner relationships disclosed',
               'Based in Surrey, BC — serving Greater Vancouver and businesses across Canada',
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
@@ -340,13 +340,13 @@ export default function CRMImplementation() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
           <div className="space-y-6">
             {[
-              { q: 'Which CRM should I choose — HubSpot, Salesforce, or Zoho?', a: 'It depends on your business size, complexity, and budget. HubSpot is excellent for growing SMBs that need marketing and sales in one place. Salesforce is built for complex enterprise sales motions and heavy customization. Zoho is a strong, lower-cost alternative for cost-conscious teams. We do not earn referral fees from any of them, so the recommendation we give you is the honest one. We help you make the call during the first audit.' },
-              { q: 'How long does CRM implementation actually take?', a: 'Most of our implementations are delivered in 2 to 4 weeks from kickoff to launch. Larger or more complex projects (multiple pipelines, heavy integrations, large data migrations) can take up to 6 weeks. The timeline is locked in writing before the project starts, so you know exactly when launch day is.' },
-              { q: 'What does CRM implementation cost in Canada?', a: 'Our fixed-price implementations start at $1,500 CAD for straightforward HubSpot or Zoho setups. Salesforce or complex multi-pipeline projects typically range between $4,000 and $12,000. We provide a fixed quote after the initial discovery call so there are no surprises.' },
-              { q: 'Will my team actually use the CRM after launch?', a: 'Adoption is the entire point. We design every implementation around the daily workflow of the people who will use it, run hands-on training with their real deals and contacts, and monitor usage for the first two weeks after launch. If a rep is not logging activity, we know within days and fix the cause.' },
-              { q: 'Do you migrate data from our old CRM or spreadsheets?', a: 'Yes. Data migration is included in every implementation. We deduplicate, standardize, and validate your data before it lands in the new system. We have migrated from Salesforce, HubSpot, Zoho, Pipedrive, Monday, Excel, Google Sheets, and dozens of legacy systems.' },
-              { q: 'What happens after launch?', a: 'Two weeks of post-launch support is included in every project. After that, you can either run the CRM yourself with the documentation we leave behind, or move into a monthly support plan if you want us to handle ongoing optimization, new workflows, and reporting changes.' },
-              { q: 'Do you work with companies outside of British Columbia?', a: 'Yes. We are based in Surrey, BC, and we work with clients across Canada and select clients in the US. All of our work is delivered remotely, so location is not a constraint.' },
+              { q: 'Which CRM should I choose — HubSpot, Salesforce, or Zoho?', a: 'It depends on process complexity, administration capacity, data, integrations, reporting, and budget. Discovery compares the supported options and discloses relevant partner relationships before a recommendation is made.' },
+              { q: 'How long does CRM implementation actually take?', a: 'Timing depends on the number of pipelines, integrations, migration complexity, stakeholder availability, testing, and acceptance criteria. The proposed delivery plan and dependencies are documented before work starts.' },
+              { q: 'What does CRM implementation cost in Canada?', a: 'Pricing is confirmed after discovery. The written proposal defines the deliverables, exclusions, dependencies, approval points, and commercial terms before work begins.' },
+              { q: 'Will my team actually use the CRM after launch?', a: 'No consultant can guarantee adoption. The implementation is designed around daily user workflows and can include role-based training, usage checks, and a documented adoption plan to reduce avoidable friction.' },
+              { q: 'Do you migrate data from our old CRM or spreadsheets?', a: 'Data migration can be included when scoped. The plan covers export, field mapping, deduplication, validation, test imports, rollback, and final approval before production migration.' },
+              { q: 'What happens after launch?', a: 'The proposal defines any post-launch support, monitoring, documentation, and training included in the engagement. Ongoing administration or additional changes are scoped separately when needed.' },
+              { q: 'Do you work with companies outside of British Columbia?', a: 'Yes. Emergent Logic is based in Surrey, BC, and offers remote delivery across Canada and for selected US engagements when platform, scope, and compliance requirements fit.' },
             ].map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-xl border">
                 <h3 className="font-bold text-gray-900 mb-2">{item.q}</h3>
@@ -379,7 +379,7 @@ export default function CRMImplementation() {
               <p className="text-gray-600 text-sm">How buyer and seller inquiries need clear CRM routing and ownership.</p>
             </Link>
             <Link href="/case-studies/real-estate-lead-routing-long-cycle-nurture" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-violet-600">Real Estate Routing Case Study</p>
+              <p className="font-medium text-violet-600">Real Estate Routing Implementation Pattern</p>
               <p className="text-gray-600 text-sm">A practical pattern for buyer, seller, valuation, referral, and long-cycle nurture workflows.</p>
             </Link>
             <Link href="/blog/crm-automation-for-immigration-consultants" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
@@ -427,10 +427,10 @@ export default function CRMImplementation() {
             Book a free 30-minute strategy call. We will assess your current situation and tell you exactly what a proper implementation would look like for your business — no pitch, no pressure.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <TrackedCTA ctaName="Book Free Strategy Call - Footer" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation - Footer" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100 font-semibold px-8">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -440,7 +440,7 @@ export default function CRMImplementation() {
               </Button>
             </Link>
           </div>
-          <p className="text-white/60 text-sm mt-6">Prefer email? <Link href="/contact" className="underline hover:text-white">Send us a message</Link> and we will get back to you within 24 hours.</p>
+          <p className="text-white/60 text-sm mt-6">Prefer email? <Link href="/contact" className="underline hover:text-white">Send us a message</Link>. Requests are reviewed on business days.</p>
         </div>
       </section>
 

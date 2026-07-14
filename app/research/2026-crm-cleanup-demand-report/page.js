@@ -380,13 +380,22 @@ export default function CrmCleanupDemandReportPage() {
           <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed text-indigo-100">
             Send one form, inquiry path, pipeline, or follow-up problem. Emergent Logic will review the visible path and return a practical five-point note before recommending a larger project.
           </p>
-          <TrackedCTA ctaName="CRM Demand Report Bottom Audit" destination="/lead-follow-up-audit">
-            <Link href="/lead-follow-up-audit">
-              <Button size="lg" className="bg-white text-indigo-800 hover:bg-indigo-50">
-                Request the Free Audit <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-          </TrackedCTA>
+          <div className="flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+            <TrackedCTA ctaName="CRM Demand Report Bottom Transition Sprint" destination="/services/crm-revops-transition-sprint">
+              <Link href="/services/crm-revops-transition-sprint" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full bg-white text-indigo-800 hover:bg-indigo-50 sm:w-auto">
+                  See the Transition Sprint <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+            </TrackedCTA>
+            <TrackedCTA ctaName="CRM Demand Report Bottom Audit" destination="/lead-follow-up-audit">
+              <Link href="/lead-follow-up-audit" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full border border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white sm:w-auto">
+                  Request the Free Audit
+                </Button>
+              </Link>
+            </TrackedCTA>
+          </div>
         </div>
       </section>
 

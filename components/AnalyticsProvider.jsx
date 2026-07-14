@@ -1,11 +1,31 @@
 'use client';
 
-import { useEffect } from 'react';
+import Script from 'next/script';
+import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { trackPhoneClick, trackEmailClick } from '@/lib/analytics';
+import { GA_MEASUREMENT_ID, trackPhoneClick, trackEmailClick } from '@/lib/analytics';
 
 export default function AnalyticsProvider({ children }) {
   const pathname = usePathname();
+  const [analyticsEnabled, setAnalyticsEnabled] = useState(false);
+
+  useEffect(() => {
+    const syncConsent = () => {
+      setAnalyticsEnabled(localStorage.getItem('cookieConsent') === 'accepted');
+    };
+
+    syncConsent();
+    window.addEventListener('cookie-consent-changed', syncConsent);
+    return () => window.removeEventListener('cookie-consent-changed', syncConsent);
+  }, []);
+
+  useEffect(() => {
+    if (!analyticsEnabled || typeof window.gtag !== 'function') return;
+
+    window.gtag('config', GA_MEASUREMENT_ID, {
+      page_path: pathname,
+    });
+  }, [analyticsEnabled, pathname]);
 
   // Track phone and email clicks globally via event delegation
   useEffect(() => {
@@ -17,19 +37,15 @@ export default function AnalyticsProvider({ children }) {
 
       // Phone click
       if (href.startsWith('tel:')) {
-        const phone = href.replace('tel:', '').replace(/[^0-9+\-]/g, '');
         trackPhoneClick({
           location: pathname,
-          phoneNumber: phone,
         });
       }
 
       // Email click
       if (href.startsWith('mailto:')) {
-        const email = href.replace('mailto:', '').split('?')[0];
         trackEmailClick({
           location: pathname,
-          email: email,
         });
       }
     }
@@ -38,5 +54,28 @@ export default function AnalyticsProvider({ children }) {
     return () => document.removeEventListener('click', handleClick);
   }, [pathname]);
 
-  return children;
+  return (
+    <>
+      {analyticsEnabled && (
+        <>
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+            strategy="afterInteractive"
+          />
+          <Script id="ga4-init" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_MEASUREMENT_ID}', {
+                page_path: window.location.pathname,
+              });
+              window.gtag = gtag;
+            `}
+          </Script>
+        </>
+      )}
+      {children}
+    </>
+  );
 }

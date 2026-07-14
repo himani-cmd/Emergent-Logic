@@ -22,14 +22,14 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Salesforce Cleanup Case Study',
+  title: 'Salesforce Cleanup Implementation Pattern',
   description:
     'How to audit Salesforce data, ownership, reporting, permissions, and automation before building more Flow automation.',
   alternates: {
     canonical: 'https://www.emergent-logic.ca/case-studies/salesforce-cleanup-before-automation',
   },
   openGraph: {
-    title: 'Representative Case Study: Salesforce Cleanup Before Automation | Emergent Logic',
+    title: 'Implementation Pattern: Salesforce Cleanup Before Automation | Emergent Logic',
     description:
       'Salesforce automation should not be built on messy data. See the cleanup-first approach for fields, ownership, reports, duplicates, permissions, and Flow design.',
     url: 'https://www.emergent-logic.ca/case-studies/salesforce-cleanup-before-automation',
@@ -88,7 +88,7 @@ const safeguards = [
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Representative Case Study: Salesforce Cleanup Before Automation',
+  headline: 'Implementation Pattern: Salesforce Cleanup Before Automation',
   description: metadata.description,
   image: 'https://www.emergent-logic.ca/og-image.png',
   author: {
@@ -117,7 +117,7 @@ export default function SalesforceCleanupBeforeAutomationCaseStudy() {
           <div className="max-w-4xl mx-auto">
             <Breadcrumbs
               items={[
-                { label: 'Case Studies', href: '/case-studies' },
+                { label: 'Implementation Patterns', href: '/case-studies' },
                 {
                   label: 'Salesforce Cleanup Before Automation',
                   href: '/case-studies/salesforce-cleanup-before-automation',
@@ -132,7 +132,7 @@ export default function SalesforceCleanupBeforeAutomationCaseStudy() {
               Salesforce Cleanup Before Automation
             </h1>
             <p className="text-xl text-gray-600 mb-6">
-              Salesforce automation is powerful, but it can make a messy org harder to manage if the foundation is not clean. This representative case study shows how we would audit and clean Salesforce before building more Flow automation.
+              Salesforce automation is powerful, but it can make a messy org harder to manage if the foundation is not clean. This implementation pattern shows how we would audit and clean Salesforce before building more Flow automation.
             </p>
             <p className="text-sm text-gray-500 mb-8">
               Note: this is a method-based implementation example, not a fabricated client result. It reflects the cleanup-first approach Emergent Logic uses when evaluating Salesforce consulting and automation work.
@@ -140,7 +140,7 @@ export default function SalesforceCleanupBeforeAutomationCaseStudy() {
 
             <ShareButtons
               url="https://www.emergent-logic.ca/case-studies/salesforce-cleanup-before-automation"
-              title="Representative Case Study: Salesforce Cleanup Before Automation"
+              title="Implementation Pattern: Salesforce Cleanup Before Automation"
             />
 
             <div className="grid md:grid-cols-3 gap-4 my-10">

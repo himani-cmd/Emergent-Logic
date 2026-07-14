@@ -23,14 +23,14 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Immigration Intake Case Study',
+  title: 'Immigration Intake Implementation Pattern',
   description:
     'How immigration firms can route forms, phone, WhatsApp, email, CRM ownership, follow-up tasks, and reporting into one intake workflow.',
   alternates: {
     canonical: 'https://www.emergent-logic.ca/case-studies/immigration-consultation-intake-automation',
   },
   openGraph: {
-    title: 'Representative Case Study: Immigration Consultation Intake Automation | Emergent Logic',
+    title: 'Implementation Pattern: Immigration Consultation Intake Automation | Emergent Logic',
     description:
       'How immigration consultants can route consultation inquiries into a CRM workflow with service interest, owner assignment, follow-up tasks, and visibility.',
     url: 'https://www.emergent-logic.ca/case-studies/immigration-consultation-intake-automation',
@@ -96,7 +96,7 @@ const safeguards = [
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Representative Case Study: Immigration Consultation Intake Automation',
+  headline: 'Implementation Pattern: Immigration Consultation Intake Automation',
   description: metadata.description,
   image: 'https://www.emergent-logic.ca/og-image.png',
   author: {
@@ -125,7 +125,7 @@ export default function ImmigrationConsultationIntakeAutomationCaseStudy() {
           <div className="max-w-4xl mx-auto">
             <Breadcrumbs
               items={[
-                { label: 'Case Studies', href: '/case-studies' },
+                { label: 'Implementation Patterns', href: '/case-studies' },
                 {
                   label: 'Immigration Consultation Intake Automation',
                   href: '/case-studies/immigration-consultation-intake-automation',
@@ -140,7 +140,7 @@ export default function ImmigrationConsultationIntakeAutomationCaseStudy() {
               Immigration Consultation Intake Automation
             </h1>
             <p className="text-xl text-gray-600 mb-6">
-              Immigration firms often receive inquiries through website forms, calls, WhatsApp, email, referrals, and social messages. This representative case study shows how those requests can be routed into one CRM intake workflow without replacing human judgment.
+              Immigration firms often receive inquiries through website forms, calls, WhatsApp, email, referrals, and social messages. This implementation pattern shows how those requests can be routed into one CRM intake workflow without replacing human judgment.
             </p>
             <p className="text-sm text-gray-500 mb-8">
               Note: this is a method-based implementation example, not a fabricated client result. It focuses on consultation intake, CRM visibility, and follow-up operations. It is not legal or immigration advice.
@@ -148,7 +148,7 @@ export default function ImmigrationConsultationIntakeAutomationCaseStudy() {
 
             <ShareButtons
               url="https://www.emergent-logic.ca/case-studies/immigration-consultation-intake-automation"
-              title="Representative Case Study: Immigration Consultation Intake Automation"
+              title="Implementation Pattern: Immigration Consultation Intake Automation"
             />
 
             <div className="grid md:grid-cols-3 gap-4 my-10">

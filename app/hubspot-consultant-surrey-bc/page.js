@@ -29,7 +29,7 @@ const services = [
 
 const faqs = [
   { q: 'Do you work with HubSpot businesses in Surrey only?', a: 'We are based in Surrey, BC and work with businesses across Greater Vancouver and Canada. Most HubSpot projects can be delivered remotely, but local teams can also book working sessions when needed.' },
-  { q: 'How much does HubSpot consulting cost?', a: 'HubSpot consulting projects typically start around $1,500 CAD for focused setup or cleanup work. Larger CRM, automation, reporting, and migration projects are scoped at a fixed price after discovery.' },
+  { q: 'How much does HubSpot consulting cost?', a: 'Pricing is confirmed after discovery. The written proposal defines deliverables, exclusions, dependencies, approval points, and commercial terms before work begins.' },
   { q: 'Can you fix an existing HubSpot portal?', a: 'Yes. Many teams come to us after HubSpot was partially set up by an internal team, freelancer, or previous agency. We audit the portal, clean the data, rebuild workflows, and document the system.' },
   { q: 'Do you also support Marketing Hub?', a: 'Yes. We configure Marketing Hub forms, lists, workflows, email campaigns, lead scoring, campaign attribution, and handoff rules so marketing activity connects back to CRM outcomes.' },
 ];
@@ -72,7 +72,7 @@ export default function HubSpotConsultantSurrey() {
       <section className="pt-32 pb-16 bg-gradient-to-br from-orange-900 via-amber-900 to-violet-900">
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[
-            { label: 'Services', href: '/services' },
+            { label: 'Services', href: '/#services' },
             { label: 'HubSpot Consultant Surrey', href: '/hubspot-consultant-surrey-bc' },
           ]} />
           <div className="flex items-center gap-2 text-orange-200 mb-4"><MapPin className="w-5 h-5" /><span>Surrey, BC</span></div>
@@ -81,7 +81,7 @@ export default function HubSpotConsultantSurrey() {
             We help Surrey and Greater Vancouver businesses set up HubSpot properly: CRM structure, Sales Hub, Marketing Hub, workflows, reporting, cleanup, and training. The goal is not more software. The goal is cleaner follow-up, better visibility, and a CRM your team actually uses.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-orange-900 hover:bg-orange-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
+            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-orange-900 hover:bg-orange-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
             <Link href="/services/hubspot-consulting"><Button size="lg" variant="outline" className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white">View HubSpot Services</Button></Link>
           </div>
         </div>
@@ -145,7 +145,7 @@ export default function HubSpotConsultantSurrey() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Related resources</h2>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/services/hubspot-consulting" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-orange-700">HubSpot Consulting</p><p className="text-sm text-gray-600">Full service scope, pricing, and timeline</p></Link>
+            <Link href="/services/hubspot-consulting" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-orange-700">HubSpot Consulting</p><p className="text-sm text-gray-600">Service scope and delivery controls</p></Link>
             <Link href="/blog/hubspot-consultant-vancouver" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-orange-700">HubSpot Consultant Vancouver</p><p className="text-sm text-gray-600">What to look for before hiring</p></Link>
             <Link href="/contact" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-orange-700">Contact Emergent Logic</p><p className="text-sm text-gray-600">Prefer email? Send us a message</p></Link>
           </div>

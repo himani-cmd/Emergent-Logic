@@ -8,12 +8,12 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Bot, CheckCircle, Database, LineChart, ShieldCheck, Workflow } from 'lucide-react';
 
 export const metadata = {
-  title: 'Case Studies | AI Automation & CRM Systems',
-  description: 'Practical case studies showing how Emergent Logic builds AI-assisted CRM, outbound, SEO, social, and automation systems.',
+  title: 'CRM Implementation Patterns & Internal Build',
+  description: 'A documented Emergent Logic internal operating-system build and clearly labelled representative CRM implementation patterns.',
   alternates: { canonical: 'https://www.emergent-logic.ca/case-studies' },
   openGraph: {
-    title: 'Case Studies | Emergent Logic',
-    description: 'See how Emergent Logic builds AI-assisted CRM, outbound, SEO, social, and automation systems.',
+    title: 'CRM Implementation Patterns & Internal Build | Emergent Logic',
+    description: 'Review a documented internal operating-system build and representative CRM implementation patterns without implied client results.',
     url: 'https://www.emergent-logic.ca/case-studies',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -34,16 +34,16 @@ export default function CaseStudiesPage() {
 
       <section className="pt-32 pb-20 bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950">
         <div className="container mx-auto px-4 max-w-5xl">
-          <Badge className="mb-4 bg-white/10 text-white border-white/20">Case Studies</Badge>
+          <Badge className="mb-4 bg-white/10 text-white border-white/20">Methods and Internal Build</Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            AI Automation Case Studies Built Around Real Operations
+            One Internal Build. Practical Implementation Patterns.
           </h1>
           <p className="text-xl text-white/75 max-w-3xl mb-8">
-            We document the systems we build: CRM cleanup, lead capture, outbound workflows, content operations, and AI-assisted automation. No inflated claims, no vague transformation language.
+            This library separates Emergent Logic&apos;s internal operating-system build from representative implementation patterns. Representative pages explain how a scope would be approached; they are not presented as completed client results.
           </p>
           <Link href="/case-studies/ai-revenue-operations-engine">
             <Button size="lg" className="bg-white text-blue-950 hover:bg-blue-100 font-semibold px-8">
-              View the Revenue Engine Case Study <ArrowRight className="w-5 h-5 ml-2" />
+              View the Internal Revenue Engine Build <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </Link>
         </div>
@@ -88,7 +88,7 @@ export default function CaseStudiesPage() {
                 </div>
                 <Link href="/case-studies/ai-revenue-operations-engine">
                   <Button className="bg-blue-700 hover:bg-blue-800">
-                    Read Case Study <ArrowRight className="w-5 h-5 ml-2" />
+                    Read Internal Build <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>
               </div>
@@ -114,7 +114,7 @@ export default function CaseStudiesPage() {
                   Mortgage Lead Follow-Up System
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  A vertical-specific case study showing how mortgage applications, rate inquiries, renewals, refinances, document requests, and referrals can move through one clean CRM follow-up workflow.
+                  A vertical-specific implementation pattern showing how mortgage applications, rate inquiries, renewals, refinances, document requests, and referrals can move through one clean CRM follow-up workflow.
                 </p>
                 <div className="space-y-3 mb-6">
                   {[
@@ -131,7 +131,7 @@ export default function CaseStudiesPage() {
                 </div>
                 <Link href="/case-studies/mortgage-lead-follow-up-system">
                   <Button className="bg-blue-700 hover:bg-blue-800">
-                    Read Case Study <ArrowRight className="w-5 h-5 ml-2" />
+                    Read Implementation Pattern <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>
               </div>
@@ -157,7 +157,7 @@ export default function CaseStudiesPage() {
                   Safe HubSpot CRM Cleanup and Workflow Rebuild
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  A method-based case study showing how we would audit, clean, and rebuild a messy HubSpot portal without blindly deleting records, triggering old workflows, or breaking sales follow-up.
+                  A method-based implementation pattern showing how we would audit, clean, and rebuild a messy HubSpot portal without blindly deleting records, triggering old workflows, or breaking sales follow-up.
                 </p>
                 <div className="space-y-3 mb-6">
                   {[
@@ -174,7 +174,7 @@ export default function CaseStudiesPage() {
                 </div>
                 <Link href="/case-studies/hubspot-crm-cleanup-safe-implementation">
                   <Button className="bg-blue-700 hover:bg-blue-800">
-                    Read Case Study <ArrowRight className="w-5 h-5 ml-2" />
+                    Read Implementation Pattern <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>
               </div>
@@ -200,7 +200,7 @@ export default function CaseStudiesPage() {
                   Website Leads to CRM Follow-Up System
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  A practical case study showing how a website inquiry should move into CRM with source tracking, owner assignment, follow-up tasks, and reporting instead of disappearing in a shared inbox.
+                  A practical implementation pattern showing how a website inquiry should move into CRM with source tracking, owner assignment, follow-up tasks, and reporting instead of disappearing in a shared inbox.
                 </p>
                 <div className="space-y-3 mb-6">
                   {[
@@ -217,7 +217,7 @@ export default function CaseStudiesPage() {
                 </div>
                 <Link href="/case-studies/website-leads-to-crm-follow-up-system">
                   <Button className="bg-blue-700 hover:bg-blue-800">
-                    Read Case Study <ArrowRight className="w-5 h-5 ml-2" />
+                    Read Implementation Pattern <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>
               </div>
@@ -243,7 +243,7 @@ export default function CaseStudiesPage() {
                   Lead Routing and MQL-to-SQL Handoff Cleanup
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  A practical CRM cleanup case study showing how unclear lifecycle stages, routing rules, ownership, and follow-up visibility can quietly leak qualified leads.
+                  A practical CRM cleanup implementation pattern showing how unclear lifecycle stages, routing rules, ownership, and follow-up visibility can quietly leak qualified leads.
                 </p>
                 <div className="space-y-3 mb-6">
                   {[
@@ -260,7 +260,7 @@ export default function CaseStudiesPage() {
                 </div>
                 <Link href="/case-studies/lead-routing-mql-sql-handoff-cleanup">
                   <Button className="bg-blue-700 hover:bg-blue-800">
-                    Read Case Study <ArrowRight className="w-5 h-5 ml-2" />
+                    Read Implementation Pattern <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>
               </div>
@@ -286,7 +286,7 @@ export default function CaseStudiesPage() {
                   Salesforce Cleanup Before Automation
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  A cleanup-first Salesforce case study showing how we would audit objects, fields, ownership, reports, permissions, and existing automation before building more Flow logic.
+                  A cleanup-first Salesforce implementation pattern showing how we would audit objects, fields, ownership, reports, permissions, and existing automation before building more Flow logic.
                 </p>
                 <div className="space-y-3 mb-6">
                   {[
@@ -303,7 +303,7 @@ export default function CaseStudiesPage() {
                 </div>
                 <Link href="/case-studies/salesforce-cleanup-before-automation">
                   <Button className="bg-blue-700 hover:bg-blue-800">
-                    Read Case Study <ArrowRight className="w-5 h-5 ml-2" />
+                    Read Implementation Pattern <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>
               </div>
@@ -329,7 +329,7 @@ export default function CaseStudiesPage() {
                   Immigration Consultation Intake Automation
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  A vertical-specific case study showing how consultation requests from forms, calls, WhatsApp, email, and referrals can move into one CRM intake workflow with ownership and follow-up visibility.
+                  A vertical-specific implementation pattern showing how consultation requests from forms, calls, WhatsApp, email, and referrals can move into one CRM intake workflow with ownership and follow-up visibility.
                 </p>
                 <div className="space-y-3 mb-6">
                   {[
@@ -346,7 +346,7 @@ export default function CaseStudiesPage() {
                 </div>
                 <Link href="/case-studies/immigration-consultation-intake-automation">
                   <Button className="bg-blue-700 hover:bg-blue-800">
-                    Read Case Study <ArrowRight className="w-5 h-5 ml-2" />
+                    Read Implementation Pattern <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>
               </div>
@@ -372,7 +372,7 @@ export default function CaseStudiesPage() {
                   Real Estate Lead Routing and Long-Cycle Nurture
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  A vertical-specific case study showing how buyer, seller, valuation, referral, open house, and past-client leads can move through CRM ownership, follow-up tasks, and nurture views.
+                  A vertical-specific implementation pattern showing how buyer, seller, valuation, referral, open house, and past-client leads can move through CRM ownership, follow-up tasks, and nurture views.
                 </p>
                 <div className="space-y-3 mb-6">
                   {[
@@ -389,7 +389,7 @@ export default function CaseStudiesPage() {
                 </div>
                 <Link href="/case-studies/real-estate-lead-routing-long-cycle-nurture">
                   <Button className="bg-blue-700 hover:bg-blue-800">
-                    Read Case Study <ArrowRight className="w-5 h-5 ml-2" />
+                    Read Implementation Pattern <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>
               </div>
@@ -415,7 +415,7 @@ export default function CaseStudiesPage() {
                   Property Management Rental Inquiry Routing
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  A vertical-specific case study showing how owner inquiries, rental evaluations, referrals, tenant questions, and website leads can be separated into clean CRM routing and follow-up views.
+                  A vertical-specific implementation pattern showing how owner inquiries, rental evaluations, referrals, tenant questions, and website leads can be separated into clean CRM routing and follow-up views.
                 </p>
                 <div className="space-y-3 mb-6">
                   {[
@@ -432,7 +432,7 @@ export default function CaseStudiesPage() {
                 </div>
                 <Link href="/case-studies/property-management-rental-inquiry-routing">
                   <Button className="bg-blue-700 hover:bg-blue-800">
-                    Read Case Study <ArrowRight className="w-5 h-5 ml-2" />
+                    Read Implementation Pattern <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>
               </div>

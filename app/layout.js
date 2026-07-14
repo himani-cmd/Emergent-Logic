@@ -1,9 +1,7 @@
 import './globals.css';
-import Script from 'next/script';
 import { Toaster } from 'sonner';
 import AnalyticsProvider from '@/components/AnalyticsProvider';
 import VoiceConsultant from '@/components/VoiceConsultant';
-import { GA_MEASUREMENT_ID } from '@/lib/analytics';
 
 export const metadata = {
   metadataBase: new URL('https://www.emergent-logic.ca'),
@@ -11,9 +9,9 @@ export const metadata = {
     default: 'CRM Implementation Vancouver BC | Emergent Logic',
     template: '%s | Emergent Logic',
   },
-  description: "Vancouver's CRM experts. Salesforce, HubSpot, Zoho implementation in 2 weeks. Serving Surrey, Abbotsford, Langley. Free strategy call.",
+  description: 'CRM implementation, cleanup, lead routing, and automation for Greater Vancouver businesses. HubSpot, Salesforce, and Zoho support from Surrey, BC.',
   keywords: ['CRM Implementation', 'Salesforce Consultant', 'HubSpot Consultant', 'Marketing Automation', 'Surrey', 'Vancouver', 'Abbotsford', 'Langley', 'Coquitlam', 'Greater Vancouver', 'BC', 'Canada'],
-  authors: [{ name: 'Himani' }, { name: 'Emergent Logic' }],
+  authors: [{ name: 'Himani Kharbanda' }, { name: 'Emergent Logic' }],
   creator: 'Emergent Logic',
   publisher: 'Emergent Logic',
   openGraph: {
@@ -22,13 +20,13 @@ export const metadata = {
     url: 'https://www.emergent-logic.ca',
     siteName: 'Emergent Logic',
     title: 'CRM Implementation Vancouver BC | Emergent Logic',
-    description: "Vancouver's CRM experts. Salesforce, HubSpot, Zoho implementation in 2 weeks.",
+    description: 'Practical CRM implementation, cleanup, lead routing, and automation for Greater Vancouver businesses.',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630, alt: 'Emergent Logic - CRM Implementation Vancouver BC' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'CRM Implementation Vancouver BC | Emergent Logic',
-    description: "Vancouver's CRM experts. Salesforce, HubSpot, Zoho implementation in 2 weeks.",
+    description: 'Practical CRM implementation, cleanup, lead routing, and automation for Greater Vancouver businesses.',
     images: ['https://www.emergent-logic.ca/og-image.png'],
   },
   robots: { index: true, follow: true },
@@ -44,7 +42,7 @@ const jsonLd = {
     {
       '@type': 'Person',
       '@id': founderId,
-      name: 'Himani',
+      name: 'Himani Kharbanda',
       jobTitle: 'Founder and CEO',
       worksFor: { '@id': organizationId },
       url: 'https://www.emergent-logic.ca/about',
@@ -104,7 +102,6 @@ const jsonLd = {
         { '@type': 'AdministrativeArea', name: 'British Columbia' },
         { '@type': 'Country', name: 'Canada' },
       ],
-      priceRange: '$$',
       knowsAbout: [
         'CRM implementation',
         'CRM cleanup',
@@ -216,23 +213,6 @@ export default function RootLayout({ children }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
       <body className="antialiased">
-        {/* GA4 Scripts */}
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script id="ga4-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}', {
-              page_path: window.location.pathname,
-            });
-            window.gtag = gtag;
-          `}
-        </Script>
-
         <AnalyticsProvider>
           {children}
         </AnalyticsProvider>

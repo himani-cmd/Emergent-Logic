@@ -27,7 +27,7 @@ export default function LeadScoringGuide() {
           <div className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">Part 1 of 3 — Marketing Automation Playbook</div>
           <div className="flex items-center gap-2 text-indigo-300 text-sm mb-4"><Link href="/blog" className="hover:text-white">Blog</Link><span>/</span><span>Lead Scoring</span></div>
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">How to Build a Lead Scoring Model in Your CRM (Step-by-Step Guide)</h1>
-          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Emergent Logic Team</span><span>•</span><span>June 2026</span><span>•</span><span>9 min read</span></div>
+          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Himani Kharbanda</span><span>•</span><span>June 2026</span><span>•</span><span>9 min read</span></div>
         </div>
       </section>
 
@@ -91,7 +91,7 @@ export default function LeadScoringGuide() {
         <div className="bg-gray-50 rounded-2xl p-8 mb-12 border">
           <div className="space-y-4">
             {[
-              { label: 'Hot', range: '80+', pct: '~5% of leads', action: 'Route to sales immediately, call within 24 hours', color: 'bg-red-500', width: '100%' },
+              { label: 'Hot', range: '80+', pct: '~5% of leads', action: 'Route to sales immediately and follow the agreed sales SLA', color: 'bg-red-500', width: '100%' },
               { label: 'Warm', range: '50-79', pct: '~15% of leads', action: 'Accelerated nurture, soft sales outreach', color: 'bg-orange-400', width: '75%' },
               { label: 'Cool', range: '25-49', pct: '~20% of leads', action: 'Standard nurture, monitor for engagement spikes', color: 'bg-blue-400', width: '50%' },
               { label: 'Cold', range: '0-24', pct: '~60% of leads', action: 'Awareness content only, do not assign to sales', color: 'bg-gray-300', width: '30%' },
@@ -133,7 +133,7 @@ export default function LeadScoringGuide() {
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Need help building a lead scoring model?</h2>
           <p className="text-indigo-200 mb-8">Book a free 30-minute strategy call and we will help you design a scoring framework for your CRM.</p>
           <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" className="bg-white text-[#1E3A5F] hover:bg-indigo-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button>
+            <Button size="lg" className="bg-white text-[#1E3A5F] hover:bg-indigo-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button>
           </a>
         </div>
 

@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import {
-  ArrowRight, CheckCircle, XCircle, Clock, Award, MapPin,
-  ChevronDown, Star, Database, Zap, Link2, Wrench,
+  ArrowRight, CheckCircle, XCircle, MapPin,
+  ChevronDown, Database, Zap, Link2, Wrench,
   AlertTriangle, Search, Settings, TrendingUp, Sparkles,
   ShieldCheck, DollarSign, Users, Rocket, BarChart3, Globe, Bot, Workflow
 } from 'lucide-react';
@@ -33,28 +33,28 @@ function HeroSection() {
           </Badge>
 
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            CRM Implementation in 2 Weeks.
+            CRM Implementation Built Around
             <span className="block bg-gradient-to-r from-violet-400 via-pink-400 to-indigo-400 bg-clip-text text-transparent">
-              Not 6 Months.
+              Your Actual Sales Process.
             </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-3xl">
-            We help Greater Vancouver businesses implement HubSpot, Salesforce, and CRM systems faster using AI-accelerated delivery. Fixed pricing. Senior expertise only. Results from week one.
+            We help Greater Vancouver businesses clean up and implement HubSpot, Salesforce, and Zoho with clear scope, direct delivery, and practical automation.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
-            <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100 px-8 py-6 text-lg font-semibold">
-                  Book a Free Strategy Call <ArrowRight className="ml-2 w-5 h-5" />
+                  Book a CRM Consultation <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </a>
             </TrackedCTA>
-            <TrackedCTA ctaName="Get a Free CRM Audit" destination="/ai-crm-audit">
+            <TrackedCTA ctaName="Request a CRM Review" destination="/ai-crm-audit">
               <Link href="/ai-crm-audit">
                 <Button size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold">
-                  Get a Free CRM Audit
+                  Request a CRM Review
                 </Button>
               </Link>
             </TrackedCTA>
@@ -63,26 +63,17 @@ function HeroSection() {
           {/* Trust Indicators */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { label: 'Certifications', value: '15+', icon: Award },
-              { label: 'Salesforce Certified', value: '6x', icon: Star },
-              { label: 'Years Experience', value: '10+', icon: Clock },
-              { label: 'Greater Vancouver, BC', value: '', icon: MapPin, isLocation: true },
+              { label: 'HubSpot, Salesforce & Zoho', value: 'Multi-platform', icon: Database },
+              { label: 'Human review before high-impact actions', value: 'Guarded automation', icon: ShieldCheck },
+              { label: 'Methodology and source table published', value: 'Source-linked research', icon: Search },
+              { label: 'Greater Vancouver, BC', value: 'Surrey-based', icon: MapPin },
             ].map((stat, i) => (
               <div key={i} className="text-center">
                 <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mx-auto mb-3">
                   <stat.icon className="w-6 h-6 text-violet-400" />
                 </div>
-                {stat.isLocation ? (
-                  <>
-                    <div className="text-xl font-bold text-white">Greater Vancouver</div>
-                    <div className="text-white/60 text-sm">BC, Canada</div>
-                  </>
-                ) : (
-                  <>
-                    <div className="text-3xl md:text-4xl font-bold text-white mb-1">{stat.value}</div>
-                    <div className="text-white/60 text-sm">{stat.label}</div>
-                  </>
-                )}
+                <div className="text-xl font-bold text-white mb-1">{stat.value}</div>
+                <div className="text-white/60 text-sm">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -106,7 +97,7 @@ function ProblemSection() {
         <div className="max-w-4xl mx-auto">
           <Badge className="mb-4 bg-red-50 text-red-700 border-red-200">The Problem</Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Most CRM Implementations Fail. Here Is Why.
+            Why CRM Implementations Underperform
           </h2>
           <p className="text-xl text-gray-600 mb-12">
             You bought a CRM. Maybe HubSpot, maybe Salesforce, maybe Zoho. It was supposed to organize your sales, automate your follow-ups, and give you visibility into your pipeline. Instead, your team is still working from spreadsheets and your CRM is collecting dust.
@@ -117,14 +108,14 @@ function ProblemSection() {
               {
                 icon: DollarSign,
                 title: 'Expensive Agencies, Slow Delivery',
-                description: 'Traditional CRM agencies charge $50,000 to $150,000 and take 3 to 6 months. For most Canadian SMBs, that timeline kills momentum. By the time the CRM is "ready," your team has already found workarounds and nobody wants to switch.',
+                description: 'Large CRM programs can take months and exceed an SMB budget. When delivery drags, teams build workarounds and adoption gets harder before the system is ready.',
                 color: 'bg-red-50 border-red-200',
                 iconColor: 'text-red-600',
               },
               {
                 icon: AlertTriangle,
                 title: 'Your Team Does Not Use It',
-                description: 'The number one reason CRM implementations fail is adoption. Your CRM was configured by someone who understood the software but did not understand your sales process. The result is a system that works in theory but not in practice. Reps enter data reluctantly or not at all.',
+                description: 'A common failure point is adoption. When configuration does not reflect the real sales process, the system works in theory but creates friction in practice. Reps enter data reluctantly or not at all.',
                 color: 'bg-orange-50 border-orange-200',
                 iconColor: 'text-orange-600',
               },
@@ -178,10 +169,10 @@ function SolutionSection() {
         <div className="max-w-4xl mx-auto">
           <Badge className="mb-4 bg-violet-100 text-violet-700">Our Approach</Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            AI-Accelerated CRM Implementation That Actually Works
+            AI-Accelerated CRM Delivery With Clear Controls
           </h2>
           <p className="text-xl text-gray-600 mb-12">
-            We do not follow the traditional consulting playbook of spending months on discovery, requirements gathering, and committee meetings. We use AI to compress weeks of work into days, so your CRM is generating value from the first week — not the first quarter.
+            We use AI to accelerate structured audits, documentation, and repeatable analysis while keeping approvals, testing, and business decisions with people.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -189,22 +180,22 @@ function SolutionSection() {
               {
                 icon: Search,
                 title: 'AI-Powered Audits',
-                description: 'We analyze your existing CRM data, workflows, and pipeline structure using AI tools that identify problems in hours — not weeks. Duplicate contacts, broken automations, unused fields, misconfigured pipelines — we find everything before writing a single line of configuration.',
+                description: 'We analyze CRM data, workflows, and pipeline structure with repeatable checks for duplicate contacts, broken automation, unused fields, and misconfigured stages before changing the system.',
               },
               {
                 icon: Rocket,
-                title: 'Faster Delivery (2 Weeks, Not 6 Months)',
-                description: 'Our AI-accelerated methodology compresses traditional CRM timelines by 70 to 80 percent. We use structured templates, automation-first design, and AI-assisted configuration to deliver in 2 to 4 weeks what traditional agencies take 3 to 6 months to complete.',
+                title: 'Focused Delivery Plan',
+                description: 'Every proposal defines the delivery phases, dependencies, approval points, and acceptance criteria. Timing is confirmed only after the systems and scope are understood.',
               },
               {
                 icon: DollarSign,
-                title: 'Fixed Pricing, No Surprises',
-                description: 'Every engagement comes with a fixed price agreed before we start. No hourly billing that spirals. No "change orders" that double the budget. You know exactly what you are paying and exactly what you are getting.',
+                title: 'Written Scope Before Work',
+                description: 'Every engagement starts with a written scope and commercial proposal. If the scope changes, the impact is discussed before related work continues.',
               },
               {
                 icon: ShieldCheck,
-                title: 'Senior Expertise Only',
-                description: 'Your project is handled by senior consultants with 10+ years of CRM experience and 15+ certifications across Salesforce, HubSpot, and Zoho. We do not sell you a senior and hand you off to a junior. The person on the strategy call is the person configuring your CRM.',
+                title: 'Direct Delivery',
+                description: 'You work directly with the people responsible for diagnosis, configuration, testing, and documentation. There is no sales-to-junior handoff hidden behind the proposal.',
               },
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 border shadow-sm hover:shadow-md transition-shadow">
@@ -230,9 +221,9 @@ function ServicesSection() {
     {
       icon: Database,
       title: 'CRM Implementation',
-      description: 'Full CRM setup from scratch — pipelines, lifecycle stages, automations, dashboards, data migration, and team training. HubSpot, Salesforce, or Zoho configured for your specific sales process. Delivered in 2 to 4 weeks.',
+      description: 'CRM setup covering pipelines, lifecycle stages, approved automation, dashboards, migration planning, and team handoff. Delivery timing is defined after discovery.',
       href: '/services/crm-implementation',
-      price: 'From $1,500',
+      price: 'Scoped after discovery',
       color: 'from-blue-500 to-cyan-500',
     },
     {
@@ -240,7 +231,7 @@ function ServicesSection() {
       title: 'HubSpot Consulting',
       description: 'Expert HubSpot onboarding, portal configuration, workflow design, custom reporting, and ongoing optimization. We set up HubSpot the way it should have been set up from day one.',
       href: '/services/hubspot-consulting',
-      price: 'From $1,500',
+      price: 'Scoped after discovery',
       color: 'from-orange-500 to-amber-500',
     },
     {
@@ -248,7 +239,7 @@ function ServicesSection() {
       title: 'CRM Cleanup & Recovery',
       description: 'Your CRM is a mess and you know it. Duplicate contacts, broken workflows, unreliable reports, unused fields. We audit, clean, restructure, and rebuild — so your CRM works like it should.',
       href: '/services/crm-cleanup',
-      price: 'From $1,000',
+      price: 'Scoped after discovery',
       color: 'from-emerald-500 to-teal-500',
     },
     {
@@ -256,15 +247,15 @@ function ServicesSection() {
       title: 'Marketing Automation',
       description: 'Lead scoring, email nurture sequences, campaign attribution, and automated follow-ups built directly on top of your CRM. Supporting service — works best alongside a properly implemented CRM.',
       href: '/services/marketing-automation',
-      price: 'From $1,500',
+      price: 'Scoped after discovery',
       color: 'from-violet-500 to-purple-500',
     },
     {
       icon: Link2,
       title: 'CRM Integration',
-      description: 'Connect your CRM to every tool your business uses — accounting, email, website, phone, marketing platforms. Native, Zapier, Make, and custom API integrations that keep your data flowing.',
+      description: 'Connect your CRM to the business tools required by the agreed workflow. Native connectors, Zapier, Make, n8n, and API options are assessed against the data and failure-handling requirements.',
       href: '/services/crm-integration',
-      price: 'From $500',
+      price: 'Scoped after discovery',
       color: 'from-pink-500 to-rose-500',
     },
     {
@@ -272,7 +263,7 @@ function ServicesSection() {
       title: 'Salesforce Consulting',
       description: 'Salesforce Sales Cloud configuration, custom objects, advanced automation, AppExchange integration, and admin training. Enterprise-grade CRM for businesses that need depth and scale.',
       href: '/services/salesforce-consulting',
-      price: 'From $3,500',
+      price: 'Scoped after discovery',
       color: 'from-blue-600 to-indigo-600',
     },
   ];
@@ -284,7 +275,7 @@ function ServicesSection() {
           <Badge className="mb-4 bg-violet-100 text-violet-700">What We Do</Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">CRM & Automation Services</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Everything you need to turn your CRM from a data entry chore into a revenue-generating machine. Every service includes strategy, implementation, training, and support.
+            Focused services for CRM setup, cleanup, automation, reporting, integration, and lead capture. Each proposal defines the strategy, implementation, training, and support included in scope.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -336,7 +327,7 @@ function ServicesSection() {
                   <p className="text-gray-500 text-sm">For businesses that need more than a brochure site — we build web experiences that feed the systems behind your sales process. CRM-connected forms, lead routing, booking flows, and conversion tracking included.</p>
                 </div>
                 <div className="flex-shrink-0 text-right">
-                  <span className="text-violet-600 font-semibold block">From $2,500</span>
+                  <span className="text-violet-600 font-semibold block">Scoped after discovery</span>
                   <span className="text-violet-600 font-medium inline-flex items-center text-sm mt-1">
                     Learn more <ArrowRight className="w-4 h-4 ml-1" />
                   </span>
@@ -360,7 +351,7 @@ function ServicesSection() {
                   <p className="text-gray-500 text-sm">For businesses that want AI on the website without creating another disconnected inbox. CRM-connected routing, owner assignment, follow-up tasks, and guardrails included.</p>
                 </div>
                 <div className="flex-shrink-0 text-right">
-                  <span className="text-violet-600 font-semibold block">From $1,500</span>
+                  <span className="text-violet-600 font-semibold block">Scoped after discovery</span>
                   <span className="text-violet-600 font-medium inline-flex items-center text-sm mt-1">
                     Learn more <ArrowRight className="w-4 h-4 ml-1" />
                   </span>
@@ -384,7 +375,7 @@ function ServicesSection() {
                   <p className="text-gray-500 text-sm">For businesses that want practical automation around lead routing, draft creation, approval gates, CRM updates, reporting, and repeatable operations.</p>
                 </div>
                 <div className="flex-shrink-0 text-right">
-                  <span className="text-violet-600 font-semibold block">From $1,500</span>
+                  <span className="text-violet-600 font-semibold block">Scoped after discovery</span>
                   <span className="text-violet-600 font-medium inline-flex items-center text-sm mt-1">
                     Learn more <ArrowRight className="w-4 h-4 ml-1" />
                   </span>
@@ -403,14 +394,13 @@ function ServicesSection() {
 // ─────────────────────────────────────────────
 function ComparisonSection() {
   const rows = [
-    { category: 'Cost', freelancer: '$2K – $5K (but often repeated)', agency: '$50K – $150K', emergent: '$1.5K – $25K (fixed)' },
-    { category: 'Timeline', freelancer: '2 – 8 weeks (variable)', agency: '3 – 6 months', emergent: '2 – 4 weeks' },
-    { category: 'Expertise', freelancer: 'Single platform', agency: 'Team with mixed experience', emergent: 'Senior consultants, 15+ certifications' },
-    { category: 'Strategy', freelancer: 'Task execution only', agency: 'Included but slow', emergent: 'AI-powered audit + strategy first' },
-    { category: 'Training', freelancer: 'Usually not included', agency: 'Add-on cost', emergent: 'Built into every engagement' },
-    { category: 'Accountability', freelancer: 'Moves on to next gig', agency: 'Account manager (not the builder)', emergent: 'Same person: strategy to delivery' },
-    { category: 'Pricing Model', freelancer: 'Hourly or per-task', agency: 'Hourly + change orders', emergent: 'Fixed price, agreed upfront' },
-    { category: 'AI-Powered', freelancer: 'No', agency: 'Rarely', emergent: 'Yes — audits, config, delivery' },
+    { category: 'Best fit', freelancer: 'Narrow task or temporary capacity', agency: 'Large multi-team program', emergent: 'Focused CRM operations scope' },
+    { category: 'Delivery model', freelancer: 'One independent specialist', agency: 'Account and delivery team', emergent: 'Direct access to the delivery team' },
+    { category: 'Scope', freelancer: 'Defined by individual agreement', agency: 'Defined by agency process', emergent: 'Written deliverables and acceptance criteria' },
+    { category: 'Pricing', freelancer: 'Varies by specialist', agency: 'Varies by program', emergent: 'Written quote before work starts' },
+    { category: 'Evidence', freelancer: 'Varies', agency: 'Varies', emergent: 'Source-linked research and representative builds' },
+    { category: 'Handoff', freelancer: 'Depends on the engagement', agency: 'Depends on the engagement', emergent: 'Testing notes and operating documentation' },
+    { category: 'Automation controls', freelancer: 'Depends on the engagement', agency: 'Depends on the engagement', emergent: 'Human review for high-impact actions' },
   ];
 
   return (
@@ -419,10 +409,10 @@ function ComparisonSection() {
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-violet-100 text-violet-700">Why Us</Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Freelancer vs. Agency vs. Emergent Logic
+            Choose the Delivery Model That Fits
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            You have three options for CRM help. Here is how they compare — honestly.
+            Different models suit different scopes. Here is the operating model Emergent Logic offers.
           </p>
         </div>
         <div className="max-w-5xl mx-auto overflow-x-auto">
@@ -464,7 +454,7 @@ function ProcessSection() {
       number: '01',
       title: 'Audit',
       subtitle: 'Week 1',
-      description: 'We start by understanding your business — not your CRM. We map your sales process, identify bottlenecks, audit your existing data, and assess your tech stack. Our AI-powered audit identifies every problem in your current setup: duplicate records, broken workflows, misconfigured pipelines, unused features, and missing automations. You receive a detailed report with prioritized recommendations and a clear implementation plan. No guessing. No assumptions.',
+      description: 'We start by understanding the sales process, ownership rules, reporting needs, current data, and stack. AI-assisted checks help surface duplicate records, broken automation, unused fields, and pipeline risks. You receive prioritized recommendations, dependencies, and a clear implementation plan before production changes begin.',
       color: 'from-blue-500 to-cyan-500',
     },
     {
@@ -478,7 +468,7 @@ function ProcessSection() {
       number: '03',
       title: 'Launch',
       subtitle: 'Week 3–4',
-      description: 'Your team gets hands-on training tailored to their roles — not a generic webinar. Sales reps learn the workflows that affect their daily work. Managers learn the dashboards and reports that drive decisions. We launch with your team, monitor adoption in the first two weeks, and make adjustments based on real usage data. Post-launch support is included in every engagement because we know the first 30 days determine whether your CRM sticks.',
+      description: 'Role-based training, documentation, launch support, and any post-launch monitoring included in the proposal are completed before handoff. Adoption signals and requested adjustments are reviewed within the agreed support window.',
       color: 'from-emerald-500 to-teal-500',
     },
   ];
@@ -489,10 +479,10 @@ function ProcessSection() {
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-violet-100 text-violet-700">How We Work</Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Three Steps. Two to Four Weeks. Done.
+            Three Controlled Phases. Scope Before Build.
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Every engagement follows the same structured process — because repeatable processes produce reliable results.
+            Focused builds can target two to four weeks. Larger migrations, integrations, or governance requirements receive a phased delivery plan.
           </p>
         </div>
 
@@ -540,7 +530,7 @@ function LocalTrustSection() {
             Based in Surrey, BC. Serving All of Canada.
           </h2>
           <p className="text-xl text-gray-600 mb-8">
-            Emergent Logic is headquartered in Surrey, British Columbia. We work with businesses across Greater Vancouver — Surrey, Abbotsford, Langley, Coquitlam, Burnaby, Richmond, and beyond — as well as clients across Canada and North America. Local when you need us. Remote when it makes sense.
+            Emergent Logic is headquartered in Surrey, British Columbia, and offers local or remote CRM support across Greater Vancouver, Canada, and selected North American engagements.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
             {locations.map((loc, i) => (
@@ -576,23 +566,23 @@ function FinalCTASection() {
           Stop Wasting Money on a CRM That Does Not Work.
         </h2>
         <p className="text-xl text-white/80 mb-4 max-w-3xl mx-auto">
-          Book a free 30-minute CRM strategy call. We will assess your current setup, identify the three biggest problems, and tell you exactly what it would take to fix them. No obligation. No sales pressure. No pitch deck. Just a straight conversation about your business.
+          Use a 30-minute CRM consultation to describe the current process, identify the affected system, and clarify a practical next step.
         </p>
         <p className="text-white/60 mb-10 max-w-2xl mx-auto">
-          If we are not the right fit, we will tell you. If a freelancer would serve you better, we will say so. We would rather give you honest advice than win a project that is not right for us.
+          Discovery is for fit and scope. Production access, credentials, timing, and commercial terms are handled only after a written scope is agreed.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
+          <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
             <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100 px-8 py-6 text-lg font-semibold">
-                Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </a>
           </TrackedCTA>
-          <TrackedCTA ctaName="Get a Free CRM Audit" destination="/ai-crm-audit">
+          <TrackedCTA ctaName="Request a CRM Review" destination="/ai-crm-audit">
             <Link href="/ai-crm-audit">
               <Button size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold">
-                Get a Free CRM Audit
+                Request a CRM Review
               </Button>
             </Link>
           </TrackedCTA>

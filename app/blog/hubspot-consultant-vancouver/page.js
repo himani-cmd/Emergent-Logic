@@ -59,11 +59,11 @@ export default function Post() {
 
             <div className="prose prose-lg max-w-none mt-8">
               <p className="lead text-xl text-gray-600">
-                If you have ever searched for a HubSpot consultant in Vancouver, you have probably noticed the same thing we have. Most of the results are generic agencies that list HubSpot as one of fifteen services. The depth is rarely there. The accountability is rarely there. And the actual sales-and-marketing context that should sit underneath any HubSpot work is almost never there.
+                If you have searched for a HubSpot consultant in Vancouver, the options can be difficult to compare. The useful distinction is not agency size; it is whether the provider can connect HubSpot configuration to sales process, ownership, reporting definitions, adoption, and documented accountability.
               </p>
 
               <p>
-                We work with Greater Vancouver businesses on HubSpot every day, and the same patterns keep showing up. Teams sign up for HubSpot, configure the basics themselves, and plateau within a few months. Or they hire someone who installs a few workflows and disappears. Or they get pulled into a months-long enterprise rollout for a 12-person sales team that did not need any of it.
+                Public HubSpot implementation and cleanup requests show recurring patterns: teams configure the basics and plateau, inherit undocumented workflows, or buy a rollout that is too large for the operating problem. Those signals are useful because they show where process, ownership, and reporting need to be clarified before more automation is added.
               </p>
 
               <p>
@@ -118,12 +118,12 @@ export default function Post() {
               <div className="bg-violet-50 border-l-4 border-violet-500 p-6 my-8 rounded-r-lg">
                 <h4 className="font-bold text-violet-900 mb-2 flex items-center gap-2"><AlertCircle className="w-5 h-5" /> Considering bringing in HubSpot help?</h4>
                 <p className="text-violet-800 mb-3">If you want a straight read on whether outside help would be worth it for your business, we offer a free 30-minute strategy call. No pitch, no pressure. We will look at where you are with HubSpot and tell you honestly whether it is worth our time or yours.</p>
-                <Link href="/contact"><Button className="bg-violet-600 hover:bg-violet-700">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+                <Link href="/contact"><Button className="bg-violet-600 hover:bg-violet-700">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
               </div>
 
               <h2>How to Avoid a Messy Setup</h2>
               <p>
-                The HubSpot rollouts that go sideways usually go sideways for the same five reasons. We have rebuilt enough portals to know the patterns.
+                HubSpot rollouts that go sideways tend to share five patterns visible across public implementation and cleanup requests.
               </p>
 
               <h3>1. Starting with features instead of process</h3>
@@ -163,18 +163,18 @@ export default function Post() {
 
               <h2>Where to Go From Here</h2>
               <p>
-                If you are in the early stages of thinking about HubSpot, our deeper service breakdown on <Link href="/services/hubspot-consulting" className="text-violet-600 hover:underline">HubSpot consulting</Link> covers the full scope, timeline, and pricing. If you suspect your existing portal has accumulated data issues, the <Link href="/services/crm-cleanup" className="text-violet-600 hover:underline">CRM cleanup</Link> page lays out how we approach that. And if you are still weighing whether HubSpot is the right CRM for your business, the <Link href="/services/crm-implementation" className="text-violet-600 hover:underline">CRM implementation</Link> overview walks through how we evaluate platforms.
+                If you are in the early stages of thinking about HubSpot, our deeper service breakdown on <Link href="/services/hubspot-consulting" className="text-violet-600 hover:underline">HubSpot consulting</Link> covers the work areas and discovery approach. Scope, price, and timing are confirmed after discovery. If you suspect your existing portal has accumulated data issues, the <Link href="/services/crm-cleanup" className="text-violet-600 hover:underline">CRM cleanup</Link> page lays out how we approach that. And if you are still weighing whether HubSpot is the right CRM for your business, the <Link href="/services/crm-implementation" className="text-violet-600 hover:underline">CRM implementation</Link> overview walks through how we evaluate platforms.
               </p>
 
               <p>
-                For Vancouver-specific positioning and pricing, our dedicated <Link href="/hubspot-consultant-vancouver" className="text-violet-600 hover:underline">HubSpot consultant Vancouver page</Link> has more detail.
+                For Vancouver-specific context and work areas, our dedicated <Link href="/hubspot-consultant-vancouver" className="text-violet-600 hover:underline">HubSpot consultant Vancouver page</Link> has more detail.
               </p>
             </div>
 
             <div className="mt-12 p-8 bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl text-white">
               <h3 className="text-2xl font-bold mb-4">Want a straight read on your HubSpot setup?</h3>
               <p className="text-white/80 mb-6">Book a free 30-minute strategy call. We will look at where you are, tell you what we would do differently, and you decide if we are the right fit.</p>
-              <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+              <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
             </div>
 
             <div className="mt-12">

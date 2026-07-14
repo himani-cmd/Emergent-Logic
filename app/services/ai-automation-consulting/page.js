@@ -109,7 +109,7 @@ const faqs = [
   },
   {
     q: 'Can you connect this to HubSpot or Salesforce?',
-    a: 'Yes. Most of our automation work connects into CRM because that is where ownership, lifecycle stage, follow-up, reporting, and pipeline visibility need to live.',
+    a: 'Yes. CRM is usually the right system of record for ownership, lifecycle stage, follow-up, reporting, and pipeline visibility, so automation should connect there deliberately.',
   },
   {
     q: 'How do you avoid automation breaking things?',
@@ -153,16 +153,16 @@ export default function AIAutomationConsultingService() {
             We design and build AI-assisted workflows that connect CRM, Gmail, Google Sheets, website forms, n8n, HubSpot, Salesforce, and human review. The goal is not automation theater. The goal is cleaner handoffs, faster follow-up, and fewer manual loops.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <TrackedCTA ctaName="Book a Free Strategy Call - AI Automation Hero" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation - AI Automation Hero" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-violet-950 hover:bg-violet-100 font-semibold px-8">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
             <Link href="/case-studies/ai-revenue-operations-engine">
               <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
-                View AI Revenue Ops Case Study
+                View Internal Revenue Ops Build
               </Button>
             </Link>
           </div>
@@ -170,7 +170,7 @@ export default function AIAutomationConsultingService() {
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-200" /> 1 workflow at a time</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-200" /> n8n, CRM, Gmail, Sheets, APIs</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-200" /> Human approval gates</div>
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-200" /> From $1,500</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-200" /> Written proposal after discovery</div>
           </div>
         </div>
       </section>
@@ -254,26 +254,26 @@ export default function AIAutomationConsultingService() {
 
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Timeline and Investment</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Scope and Delivery Plan</h2>
           <p className="text-lg text-gray-600 mb-8">
-            We scope around one workflow first. That keeps cost controlled and gives you a usable system quickly.
+            We scope around one workflow first so the inputs, approvals, failure handling, and acceptance checks remain bounded and testable.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="border bg-white">
               <CardContent className="p-8">
                 <Clock className="w-10 h-10 text-violet-700 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">1 to 4 Weeks</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Timing After Technical Review</h3>
                 <p className="text-gray-600">
-                  Simple workflows can ship in a few days. CRM-connected, multi-step workflows with testing and documentation typically take 1 to 4 weeks.
+                  The delivery plan is confirmed after tools, access, data volume, review steps, retries, monitoring, testing, and documentation requirements are understood.
                 </p>
               </CardContent>
             </Card>
             <Card className="border bg-white">
               <CardContent className="p-8">
                 <Workflow className="w-10 h-10 text-violet-700 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">From $1,500 CAD</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Written Commercial Proposal</h3>
                 <p className="text-gray-600">
-                  Focused workflow builds start at $1,500. Larger systems involving multiple tools, CRM cleanup, enrichment, and reporting are scoped after discovery.
+                  The proposal confirms the workflow boundary, systems, exclusions, approvals, handoff, acceptance checks, and commercial terms before work begins.
                 </p>
               </CardContent>
             </Card>
@@ -304,7 +304,7 @@ export default function AIAutomationConsultingService() {
           <h3 className="text-xl font-bold text-gray-800 mb-4">Related Services and Resources</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             <Link href="/case-studies/ai-revenue-operations-engine" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-violet-700">AI Revenue Operations Case Study</p>
+              <p className="font-medium text-violet-700">AI Revenue Operations Internal Build</p>
               <p className="text-gray-600 text-sm">How a guarded AI growth system can connect CRM, outbound, SEO, and social</p>
             </Link>
             <Link href="/services/ai-chatbot-automation" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
@@ -341,13 +341,13 @@ export default function AIAutomationConsultingService() {
             <TrackedCTA ctaName="Book Free Strategy Call - AI Automation Footer" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-violet-950 hover:bg-violet-100 font-semibold px-8">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
             <Link href="/case-studies/ai-revenue-operations-engine">
               <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
-                View Case Study
+                View Internal Build
               </Button>
             </Link>
           </div>

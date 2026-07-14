@@ -39,8 +39,8 @@ export default function DigitalMarketing() {
           <Breadcrumbs items={[{ label: 'Services', href: '/services' }, { label: 'Digital Marketing', href: '/digital-marketing' }]} />
           <div className="flex items-center gap-4 mb-6"><div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center"><TrendingUp className="w-8 h-8 text-white" /></div></div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Digital Marketing Services</h1>
-          <p className="text-xl text-white/70 max-w-3xl mb-8">Be found everywhere your customers are searching — including AI. We deliver SEO, AEO for voice assistants, GEO for ChatGPT and Perplexity, Google Ads management, and more. Data-driven marketing that generates revenue.</p>
-          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+          <p className="text-xl text-white/70 max-w-3xl mb-8">Support discoverability across search and AI-assisted research with measurement, content planning, and channel-specific execution defined around the agreed scope.</p>
+          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
         </div>
       </section>
       <section className="py-16 bg-white">
@@ -63,7 +63,7 @@ export default function DigitalMarketing() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to grow your digital presence?</h2>
           <p className="text-xl text-white/80 mb-8">Book a free strategy call to discuss your marketing goals.</p>
-          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
         </div>
       </section>
       <Footer />

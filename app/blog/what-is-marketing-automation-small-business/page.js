@@ -89,13 +89,13 @@ export default function WhatIsMarketingAutomation() {
                 <li>You have no visibility into which marketing activities are generating revenue</li>
               </ul>
               
-              <p>Learn more about our <Link href="/marketing-automation" className="text-violet-600 hover:underline">marketing automation services</Link>.</p>
+              <p>Learn more about our <Link href="/services/marketing-automation" className="text-violet-600 hover:underline">marketing automation services</Link>.</p>
             </div>
             
             <div className="mt-12 p-8 bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl text-white">
               <h3 className="text-2xl font-bold mb-4">Ready to get started?</h3>
               <p className="text-white/80 mb-6">Want to see what marketing automation could do for your business? Book a free 30-minute strategy call.</p>
-              <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+              <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
             </div>
           </div>
         </div>

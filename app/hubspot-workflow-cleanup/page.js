@@ -125,7 +125,7 @@ export default function HubSpotWorkflowCleanup() {
       <section className="overflow-hidden bg-gradient-to-br from-orange-950 via-slate-900 to-amber-950 pt-32 pb-20">
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[
-            { label: 'Services', href: '/services' },
+            { label: 'Services', href: '/#services' },
             { label: 'HubSpot Workflow Cleanup', href: '/hubspot-workflow-cleanup' },
           ]} />
           <Badge className="mb-5 bg-white/10 text-white hover:bg-white/10">HubSpot automation repair</Badge>
@@ -136,10 +136,10 @@ export default function HubSpotWorkflowCleanup() {
             We help teams fix broken HubSpot workflows, unclear lifecycle stage logic, owner routing, forms, lists, source tracking, and reporting dependencies before building more automation.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <TrackedCTA ctaName="Book a Free Strategy Call - HubSpot Workflow Cleanup Hero" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation - HubSpot Workflow Cleanup Hero" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                 <Button size="lg" className="w-full bg-white text-orange-950 hover:bg-orange-100 sm:w-auto">
-                  Book a Free Strategy Call <ArrowRight className="ml-2 h-5 w-5" />
+                  Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -284,10 +284,10 @@ export default function HubSpotWorkflowCleanup() {
             Book a free strategy call. We will review the workflow problem, identify the likely dependencies, and recommend whether to repair, rebuild, or clean the portal first.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-            <TrackedCTA ctaName="Book a Free Strategy Call - HubSpot Workflow Cleanup Footer" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation - HubSpot Workflow Cleanup Footer" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-orange-900 hover:bg-orange-100">
-                  Book a Free Strategy Call <ArrowRight className="ml-2 h-5 w-5" />
+                  Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
             </TrackedCTA>

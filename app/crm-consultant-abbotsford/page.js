@@ -10,11 +10,11 @@ import { ArrowRight, CheckCircle, MapPin } from 'lucide-react';
 
 export const metadata = {
   title: 'CRM Consultant Abbotsford BC',
-  description: 'CRM consulting in Abbotsford BC. Salesforce, HubSpot, Zoho implementation. AI-accelerated delivery in 2-4 weeks. Free strategy call.',
+  description: 'CRM consulting in Abbotsford BC for Salesforce, HubSpot, and Zoho implementation, cleanup, reporting, and automation planning.',
   alternates: { canonical: 'https://www.emergent-logic.ca/crm-consultant-abbotsford' },
   openGraph: {
     title: 'CRM Consultant Abbotsford BC | Emergent Logic',
-    description: 'CRM consulting in Abbotsford BC. Salesforce, HubSpot, Zoho implementation. AI-accelerated delivery in 2-4 weeks.',
+    description: 'CRM consulting in Abbotsford BC for Salesforce, HubSpot, and Zoho implementation, cleanup, reporting, and automation planning.',
     url: 'https://www.emergent-logic.ca/crm-consultant-abbotsford',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -24,26 +24,26 @@ const platforms = ['Salesforce', 'HubSpot', 'Zoho CRM', 'Odoo', 'Pipedrive', 'Mo
 
 const services = [
   { title: 'CRM Implementation', description: 'Full CRM setup including pipelines, custom fields, automations, dashboards, and team training. Tailored for Abbotsford businesses.' },
-  { title: 'Data Migration', description: 'Clean migration from spreadsheets, legacy CRMs, or any other source into your new platform. We validate every record.' },
+  { title: 'Data Migration', description: 'Controlled migration from spreadsheets, legacy CRMs, or other supported sources with mapping, test imports, validation, and approval.' },
   { title: 'Marketing Automation', description: 'Email sequences, lead nurturing workflows, and campaign automation connected directly to your CRM.' },
-  { title: 'Integrations', description: 'Connect your CRM to QuickBooks, Shopify, email, website forms, and every other tool your business uses.' },
-  { title: 'Training & Adoption', description: 'Hands-on, role-specific training so your team actually uses the CRM. We make sure adoption sticks.' },
+  { title: 'Integrations', description: 'Connect supported accounting, commerce, email, website, and scheduling tools to the CRM after technical fit is confirmed.' },
+  { title: 'Training & Adoption', description: 'Hands-on, role-specific training and a documented handoff for the team.' },
   { title: 'Ongoing Support', description: 'Monthly retainer options to keep your CRM healthy, your automations running, and your data clean.' },
 ];
 
 const reasons = [
   'Local CRM consulting firm serving Abbotsford and the Fraser Valley',
-  'Platform-agnostic: we implement 10+ CRM platforms and recommend what fits your business',
-  'AI-accelerated delivery: results in 2-4 weeks, not 3-6 months',
-  '40-60% lower cost than enterprise consulting firms',
-  'Every implementation includes data migration, integration, and hands-on training',
-  'No long contracts — cancel anytime',
+  'Multi-platform planning across HubSpot, Salesforce, and Zoho',
+  'AI-assisted audits and documentation with human approval for production changes',
+  'Written scope, price, dependencies, and acceptance criteria before work starts',
+  'Data migration, integration, and training available when included in the scope',
+  'Project delivery with optional ongoing support',
 ];
 
 const faqs = [
   { q: 'Which CRM is best for Abbotsford businesses?', a: 'For most Abbotsford SMBs, HubSpot or Zoho CRM are excellent choices — fast to implement, easy to use, and affordable. For businesses needing enterprise-level customization, Salesforce is worth the investment. We recommend based on your needs, not ours.' },
-  { q: 'How much does CRM consulting cost in Abbotsford?', a: "Emergent Logic's CRM implementations start from $1,500 for basic setups. Our AI-accelerated approach costs 40-60% less than traditional consulting firms. We provide transparent, fixed pricing — no surprise invoices." },
-  { q: 'How long does a CRM implementation take?', a: 'With our AI-accelerated approach, most small business CRM implementations are completed in 2-4 weeks. Mid-market implementations take 4-8 weeks — significantly faster than the industry average.' },
+  { q: 'How much does CRM consulting cost in Abbotsford?', a: 'Pricing is confirmed after discovery. The written proposal defines deliverables, exclusions, dependencies, approval points, and the commercial terms before work begins.' },
+  { q: 'How long does a CRM implementation take?', a: 'Timing depends on data volume, integrations, stakeholder availability, testing, and acceptance criteria. The delivery plan and dependencies are documented before work begins.' },
   { q: 'Do you offer in-person CRM training in Abbotsford?', a: 'Yes. We serve the entire Fraser Valley including Abbotsford. Every implementation includes role-specific training for your team, and we can arrange in-person sessions when needed.' },
 ];
 
@@ -55,17 +55,17 @@ export default function CrmConsultantAbbotsford() {
       <section className="overflow-hidden pt-32 pb-16 bg-gradient-to-br from-violet-900 via-indigo-900 to-purple-900">
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[
-            { label: 'Services', href: '/services' },
+            { label: 'Services', href: '/#services' },
             { label: 'CRM Consultant Abbotsford', href: '/crm-consultant-abbotsford' },
           ]} />
           <div className="flex items-center gap-2 text-violet-300 mb-4"><MapPin className="w-5 h-5" /><span>Abbotsford, BC</span></div>
           <h1 className="max-w-4xl break-words text-4xl md:text-5xl font-bold leading-tight text-white mb-4">CRM Consultant in Abbotsford, BC</h1>
           <p className="text-lg md:text-xl leading-relaxed text-white/75 max-w-3xl mb-8">
-            Professional CRM consulting for Abbotsford and Fraser Valley businesses. We implement Salesforce, HubSpot, Zoho, and more using AI-accelerated delivery — so your CRM is live in weeks, not months. Fixed pricing. No surprises.
+            CRM implementation, cleanup, and automation planning for Abbotsford and Fraser Valley businesses using HubSpot, Salesforce, or Zoho. Each proposal defines the scope, price, delivery plan, dependencies, and approval boundaries.
           </p>
           <div className="flex max-w-3xl flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto"><Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
-            <Link href="/services" className="w-full sm:w-auto"><Button size="lg" variant="outline" className="w-full !border-white/40 !bg-transparent !text-white hover:!bg-white/10 hover:!text-white sm:w-auto">View All Services</Button></Link>
+            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto"><Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
+            <Link href="/#services" className="w-full sm:w-auto"><Button size="lg" variant="outline" className="w-full !border-white/40 !bg-transparent !text-white hover:!bg-white/10 hover:!text-white sm:w-auto">View All Services</Button></Link>
           </div>
         </div>
       </section>
@@ -73,7 +73,7 @@ export default function CrmConsultantAbbotsford() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">CRM platforms we implement in Abbotsford</h2>
-          <p className="text-gray-600 mb-8">We recommend the right platform for your business — not the one that pays us the highest commission.</p>
+          <p className="text-gray-600 mb-8">We compare platforms against the operating process, data, reporting, administration, budget, and integration requirements discussed during discovery.</p>
           <div className="flex flex-wrap gap-4">
             {platforms.map((platform, i) => (<div key={i} className="px-6 py-3 bg-gray-50 rounded-xl border font-medium text-gray-700">{platform}</div>))}
           </div>
@@ -96,7 +96,7 @@ export default function CrmConsultantAbbotsford() {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Why Abbotsford businesses choose Emergent Logic</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Why Emergent Logic may fit an Abbotsford CRM project</h2>
           <ul className="space-y-4 max-w-3xl">
             {reasons.map((reason, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle className="w-6 h-6 text-violet-500 flex-shrink-0" /><span className="text-gray-700">{reason}</span></li>))}
           </ul>
@@ -118,7 +118,7 @@ export default function CrmConsultantAbbotsford() {
           <div className="grid md:grid-cols-3 gap-4">
             <Link href="/services/crm-implementation" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM Implementation</p>
-              <p className="text-gray-600 text-sm">How we deliver in 2 to 4 weeks</p>
+              <p className="text-gray-600 text-sm">How controlled delivery works</p>
             </Link>
             <Link href="/blog/crm-consultant-vs-implementation-partner-canada" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM Consultant vs Implementation Partner</p>
@@ -136,7 +136,7 @@ export default function CrmConsultantAbbotsford() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to find the right CRM for your Abbotsford business?</h2>
           <p className="text-xl text-white/80 mb-8">Book a free 30-minute strategy call. We will assess your needs and recommend the right CRM platform — no obligation, no sales pitch.</p>
-          <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
+          <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
         </div>
       </section>
 

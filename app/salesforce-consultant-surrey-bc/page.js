@@ -88,7 +88,7 @@ export default function SalesforceConsultantSurrey() {
       <section className="overflow-hidden pt-32 pb-16 bg-gradient-to-br from-violet-900 via-indigo-900 to-purple-900">
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[
-            { label: 'Services', href: '/services' },
+            { label: 'Services', href: '/#services' },
             { label: 'Salesforce Consultant Surrey', href: '/salesforce-consultant-surrey-bc' },
           ]} />
           <div className="flex items-center gap-2 text-violet-300 mb-4">
@@ -102,8 +102,8 @@ export default function SalesforceConsultantSurrey() {
             Looking for a Salesforce consultant in Surrey, BC? Emergent Logic helps growing teams clean up, implement, and improve CRM systems across Salesforce, HubSpot, and Zoho. We use AI-assisted delivery to move faster while keeping the strategy and quality control human-led.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
-              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto"><Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
+            <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto"><Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
             </TrackedCTA>
             <Link href="/services/crm-implementation" className="w-full sm:w-auto"><Button size="lg" variant="outline" className="w-full border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white sm:w-auto">View CRM Services</Button></Link>
           </div>
@@ -133,7 +133,7 @@ export default function SalesforceConsultantSurrey() {
       {/* Why Choose Us */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Why Surrey businesses choose Emergent Logic</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Why Emergent Logic may fit a Surrey Salesforce project</h2>
           <ul className="space-y-4 max-w-3xl">
             {reasons.map((reason, i) => (
               <li key={i} className="flex items-start gap-3"><CheckCircle className="w-6 h-6 text-violet-500 flex-shrink-0" /><span className="text-gray-700">{reason}</span></li>
@@ -171,7 +171,7 @@ export default function SalesforceConsultantSurrey() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to talk Salesforce or HubSpot?</h2>
           <p className="text-xl text-white/80 mb-8">Book a free 30-minute strategy call. We will assess your CRM needs and recommend the right path — no obligation, no sales pitch.</p>
-          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
         </div>
       </section>
 

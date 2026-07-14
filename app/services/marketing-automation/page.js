@@ -54,13 +54,13 @@ export default function MarketingAutomation() {
             Marketing Automation That Closes the Loop on Revenue
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
-            Lead scoring, nurture sequences, campaign attribution, and lead handoff — built directly on top of your CRM. We are CRM consultants first, which is why our automation actually moves deals to closed-won instead of just opens and clicks.
+            Lead scoring, nurture sequences, campaign attribution, and lead handoff built directly on top of your CRM, with clear ownership, testing, and human review for high-impact actions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-purple-900 hover:bg-purple-100 font-semibold px-8">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -71,7 +71,7 @@ export default function MarketingAutomation() {
             </Link>
           </div>
           <div className="mt-8 flex flex-wrap gap-6 text-white/70 text-sm">
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-purple-300" /> 2 to 4 week delivery</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-purple-300" /> Scope-based delivery plan</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-purple-300" /> Clear scope before build</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-purple-300" /> CRM-native automation</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-purple-300" /> Attribution included</div>
@@ -141,7 +141,7 @@ export default function MarketingAutomation() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">The Four Pillars of Marketing Automation</h2>
           <p className="text-lg text-gray-600 mb-8">
-            We build automation around four foundational systems. Most engagements include all four. Some clients only need one or two.
+            The automation framework covers four foundational systems. A scope may include all four or focus on the one or two creating the largest operational gap.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {[
@@ -165,7 +165,7 @@ export default function MarketingAutomation() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Most Marketing Automation Fails</h2>
           <p className="text-lg text-gray-600 mb-8">
-            We have rebuilt automation for plenty of teams who tried to set it up themselves. The mistakes are predictable.
+            Self-built automation often fails in predictable ways when lifecycle stages, ownership, source data, and exception paths are not defined first.
           </p>
           <div className="space-y-4">
             {[
@@ -243,23 +243,23 @@ export default function MarketingAutomation() {
         </div>
       </section>
 
-      {/* Pricing */}
+      {/* Scope */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Timeline and Investment</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Scope and Delivery Plan</h2>
           <p className="text-lg text-gray-600 mb-8">
-            Fixed pricing. No hourly billing. Scope confirmed in writing before we start.
+            Scope, dependencies, approval boundaries, and commercial terms are confirmed in writing before work starts.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-2xl border shadow-sm">
               <Clock className="w-10 h-10 text-purple-600 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">2 to 4 Weeks</h3>
-              <p className="text-gray-600">From discovery to live workflows. Most teams have a working scoring model and at least one nurture sequence by the end of week two.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Timing After Discovery</h3>
+              <p className="text-gray-600">The delivery plan is confirmed after lifecycle rules, data, copy, consent, platform access, testing, and approval requirements are understood.</p>
             </div>
             <div className="bg-white p-8 rounded-2xl border shadow-sm">
               <DollarSign className="w-10 h-10 text-purple-600 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">From $1,500 CAD</h3>
-              <p className="text-gray-600">Single-pillar engagements (e.g., scoring only) start at $1,500. Full four-pillar builds typically range $3,500 to $9,000, all fixed-priced.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Written Commercial Proposal</h3>
+              <p className="text-gray-600">The proposal confirms which workflows, reports, copy, integrations, testing, handoff, and support are included before work begins.</p>
             </div>
           </div>
         </div>
@@ -275,11 +275,11 @@ export default function MarketingAutomation() {
           <div className="space-y-3">
             {[
               'Automation built natively in your CRM — no separate marketing tool that drifts out of sync',
-              'Lead scoring tuned against your actual closed-won data, not a generic template',
+              'Lead scoring designed around approved lifecycle definitions and available evidence, not a generic template',
               'Sales and marketing alignment built in: shared dashboards, agreed handoff thresholds, SLA tracking',
-              'Attribution reporting that survives executive scrutiny — numbers reps and CFOs can both trust',
+              'Attribution reporting with documented sources, definitions, and known limitations',
               'Multi-platform: HubSpot, Salesforce, Zoho — we recommend the right tool for your business',
-              'Fixed pricing, two-week post-launch tuning included',
+              'Post-launch tuning included only when defined in the written scope',
               'Based in Surrey, BC — serving Greater Vancouver and businesses across Canada',
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
@@ -298,7 +298,7 @@ export default function MarketingAutomation() {
           <div className="space-y-6">
             {[
               { q: 'Do I need a CRM in place before we start?', a: 'Yes. Marketing automation only works on a properly configured CRM. If your CRM is not implemented or has serious data issues, we will recommend a CRM Cleanup or Implementation first — otherwise the automation will inherit and amplify those problems.' },
-              { q: 'What CRMs do you build automation in?', a: 'HubSpot, Salesforce, and Zoho. HubSpot is where most of our automation work lives because the platform is purpose-built for it. Salesforce automation usually involves Pardot, Marketing Cloud, or Account Engagement. Zoho automation runs through Zoho Marketing Automation or CRM workflows.' },
+              { q: 'What CRMs do you build automation in?', a: 'HubSpot, Salesforce, and Zoho are the primary platforms offered. The exact approach depends on the products and permissions in your stack, including HubSpot workflows, Salesforce Flow or Account Engagement, and Zoho CRM workflows.' },
               { q: 'How is this different from hiring a marketing agency?', a: 'A traditional marketing agency runs campaigns. We build the system underneath the campaigns — the scoring, sequences, attribution, and handoff workflows that turn campaigns into closed deals. We work alongside your existing agency or in-house marketing team, not as a replacement.' },
               { q: 'Do you write the email copy?', a: 'Yes. Email copy for nurture sequences and sales templates is included. We work with your subject matter experts to capture voice and positioning, then write, format, and test every email before launch.' },
               { q: 'What about ad campaigns and SEO?', a: 'We do not run paid media or SEO campaigns ourselves. We build the infrastructure that makes those campaigns measurable: UTM strategy, attribution, conversion tracking, and lead routing. Our work makes your existing marketing investment substantially more measurable and easier to optimize.' },
@@ -324,7 +324,7 @@ export default function MarketingAutomation() {
               <p className="text-gray-600 text-sm">Automation multiplies whatever is already there. How to know whether your CRM is automation-ready.</p>
             </Link>
             <Link href="/case-studies/lead-routing-mql-sql-handoff-cleanup" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-violet-600">Lead Routing Case Study</p>
+              <p className="font-medium text-violet-600">Lead Routing Implementation Pattern</p>
               <p className="text-gray-600 text-sm">A practical MQL-to-SQL handoff pattern for lifecycle stages, owners, and exception dashboards.</p>
             </Link>
             <Link href="/blog/why-hubspot-workflows-break" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
@@ -371,7 +371,7 @@ export default function MarketingAutomation() {
             <TrackedCTA ctaName="Book Free Strategy Call - Marketing Automation Footer" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-purple-900 hover:bg-purple-100 font-semibold px-8">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -381,7 +381,7 @@ export default function MarketingAutomation() {
               </Button>
             </Link>
           </div>
-          <p className="text-white/60 text-sm mt-6">Prefer email? <Link href="/contact" className="underline hover:text-white">Send us a message</Link> and we will get back to you within 24 hours.</p>
+          <p className="text-white/60 text-sm mt-6">Prefer email? <Link href="/contact" className="underline hover:text-white">Send us a message</Link>. Requests are reviewed on business days.</p>
         </div>
       </section>
 

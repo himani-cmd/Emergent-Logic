@@ -124,7 +124,7 @@ export default function ImmigrationConsultationFollowUpCrm() {
                 If your firm needs this built instead of just discussed, our <Link href="/immigration-consultant-crm-canada" className="text-emerald-700 hover:underline">CRM for immigration consultants</Link> page explains how we structure consultation intake and follow-up systems.
               </p>
               <p>
-                We also documented this as a <Link href="/case-studies/immigration-consultation-intake-automation" className="text-emerald-700 hover:underline">representative immigration consultation intake case study</Link>, showing how forms, calls, WhatsApp, email, service interest, ownership, and follow-up tasks fit together.
+                We also documented this as a <Link href="/case-studies/immigration-consultation-intake-automation" className="text-emerald-700 hover:underline">representative immigration consultation intake pattern</Link>, showing how forms, calls, WhatsApp, email, service interest, ownership, and follow-up tasks fit together.
               </p>
 
               <h2>Common Places Immigration Leads Leak</h2>

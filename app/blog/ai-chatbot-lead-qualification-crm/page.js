@@ -53,7 +53,7 @@ const relatedPosts = [
   { title: 'Why Website Leads Do Not Turn Into Sales Without CRM Routing', href: '/blog/website-leads-to-crm' },
   { title: 'Speed to Lead: Why Fast Follow-Up Needs a CRM System', href: '/blog/speed-to-lead-crm-follow-up-system' },
   { title: 'Why HubSpot Workflows Break', href: '/blog/why-hubspot-workflows-break' },
-  { title: 'AI Revenue Operations Engine Case Study', href: '/case-studies/ai-revenue-operations-engine' },
+  { title: 'AI Revenue Operations Engine Pattern', href: '/case-studies/ai-revenue-operations-engine' },
 ];
 
 const jsonLd = {

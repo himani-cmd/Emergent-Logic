@@ -23,14 +23,14 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Real Estate Lead Routing Case Study',
+  title: 'Real Estate Lead Routing Implementation Pattern',
   description:
     'How real estate teams can route buyer, seller, valuation, referral, and long-cycle leads into a clear CRM follow-up workflow.',
   alternates: {
     canonical: 'https://www.emergent-logic.ca/case-studies/real-estate-lead-routing-long-cycle-nurture',
   },
   openGraph: {
-    title: 'Representative Case Study: Real Estate Lead Routing and Long-Cycle Nurture | Emergent Logic',
+    title: 'Implementation Pattern: Real Estate Lead Routing and Long-Cycle Nurture | Emergent Logic',
     description:
       'How real estate teams can route buyer, seller, valuation, referral, and past-client inquiries into CRM ownership, follow-up tasks, nurture stages, and reporting.',
     url: 'https://www.emergent-logic.ca/case-studies/real-estate-lead-routing-long-cycle-nurture',
@@ -98,7 +98,7 @@ const safeguards = [
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Representative Case Study: Real Estate Lead Routing and Long-Cycle Nurture',
+  headline: 'Implementation Pattern: Real Estate Lead Routing and Long-Cycle Nurture',
   description: metadata.description,
   image: 'https://www.emergent-logic.ca/og-image.png',
   author: {
@@ -127,7 +127,7 @@ export default function RealEstateLeadRoutingLongCycleNurtureCaseStudy() {
           <div className="max-w-4xl mx-auto">
             <Breadcrumbs
               items={[
-                { label: 'Case Studies', href: '/case-studies' },
+                { label: 'Implementation Patterns', href: '/case-studies' },
                 {
                   label: 'Real Estate Lead Routing and Nurture',
                   href: '/case-studies/real-estate-lead-routing-long-cycle-nurture',
@@ -150,7 +150,7 @@ export default function RealEstateLeadRoutingLongCycleNurtureCaseStudy() {
 
             <ShareButtons
               url="https://www.emergent-logic.ca/case-studies/real-estate-lead-routing-long-cycle-nurture"
-              title="Representative Case Study: Real Estate Lead Routing and Long-Cycle Nurture"
+              title="Implementation Pattern: Real Estate Lead Routing and Long-Cycle Nurture"
             />
 
             <div className="grid md:grid-cols-3 gap-4 my-10">

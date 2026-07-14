@@ -18,11 +18,13 @@ export default function CookieConsent() {
 
   const acceptCookies = () => {
     localStorage.setItem('cookieConsent', 'accepted');
+    window.dispatchEvent(new Event('cookie-consent-changed'));
     setShowBanner(false);
   };
 
   const declineCookies = () => {
     localStorage.setItem('cookieConsent', 'declined');
+    window.dispatchEvent(new Event('cookie-consent-changed'));
     setShowBanner(false);
   };
 
@@ -41,8 +43,7 @@ export default function CookieConsent() {
             <div className="flex-grow">
               <h4 className="font-semibold text-gray-900 mb-1">We value your privacy</h4>
               <p className="text-gray-600 text-sm">
-                This site uses cookies for analytics and session recording to improve your experience. 
-                By clicking "Accept", you consent to our use of cookies in accordance with PIPEDA and CASL.
+                Accept enables optional analytics cookies so we can measure site performance. Decline keeps optional analytics disabled.
               </p>
             </div>
             <div className="flex gap-3 flex-shrink-0">

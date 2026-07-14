@@ -22,11 +22,11 @@ export const metadata = {
 const faqItems = [
   { q: 'Do I need Salesforce, or would HubSpot or Zoho work?', a: 'For many SMBs under 25 reps, HubSpot or Zoho can provide faster time-to-value at a lower cost. Salesforce is usually the right call when you need deep customization, large-team governance, complex territory management, or compliance-heavy reporting. We help you make the call honestly during the discovery audit.' },
   { q: 'Which Salesforce edition do I need?', a: 'Many SMB sales teams are well served by Sales Cloud Professional. Enterprise becomes more relevant when you need advanced approval processes, territory management, custom permission sets, or higher API limits. We walk through the trade-offs before you sign anything.' },
-  { q: 'Can you migrate us to Salesforce from another CRM?', a: 'Yes. We migrate from HubSpot, Pipedrive, Zoho, Monday, Excel, Google Sheets, and many legacy CRMs. Migration includes deduplication, field mapping, association preservation, and historical activity import where the source supports it.' },
-  { q: 'Are you a Salesforce Consulting Partner?', a: 'We work in the Salesforce ecosystem with senior, certified consultants and the technical depth of a partner-tier agency. We deliberately stay multi-platform so we can also recommend HubSpot or Zoho when those fit better. You get senior expertise without partner-tier vendor bias.' },
-  { q: 'Do you do ongoing Salesforce admin work?', a: 'Yes. We offer managed admin retainers from $1,500 / month for clients who do not need a full-time admin but want a senior consultant on call for new requests, automation tuning, and quarterly health checks.' },
+  { q: 'Can you migrate us to Salesforce from another CRM?', a: 'A migration scope can cover HubSpot, Pipedrive, Zoho, Monday, spreadsheets, and other exportable sources. The plan depends on available objects, fields, relationships, activities, API access, and validation requirements.' },
+  { q: 'Are you a Salesforce Consulting Partner?', a: 'No. Emergent Logic is not currently presented as a Salesforce Consulting Partner. Salesforce work is scoped only when the requirements fit our documented capability, and no Salesforce endorsement is implied.' },
+  { q: 'Do you do ongoing Salesforce admin work?', a: 'Ongoing Salesforce administration can be considered when the requested work fits the documented capability and access boundaries. Scope, response expectations, approvals, and commercial terms are confirmed in writing.' },
   { q: 'How do you handle Apex code in projects?', a: 'We default to declarative tools such as Flow, validation rules, and formulas, and only write Apex or Lightning Web Components when business requirements truly need them. Code is reviewed, tested, and documented like any production deployment.' },
-  { q: 'What about PIPEDA and Canadian data residency?', a: 'Salesforce offers Canadian data residency through specific instances. We help you select the right instance, configure permission sets and field-level security, and document the compliance posture. Our CRM and PIPEDA guide explains the topic in more detail.' },
+  { q: 'What about PIPEDA and Canadian data residency?', a: 'Residency and compliance requirements depend on your Salesforce edition, architecture, contracts, and data. We can document technical controls such as permissions and field-level security, but legal and residency decisions should be confirmed with Salesforce and qualified privacy counsel.' },
 ];
 
 const jsonLd = {
@@ -87,13 +87,13 @@ export default function SalesforceConsulting() {
             Salesforce Consultant for Canadian and US Businesses
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
-            Sales Cloud configuration, custom objects, Salesforce Flow automation, AppExchange integration, and admin training for teams in Surrey, Vancouver, across Canada, and the US &mdash; delivered by senior CRM consultants who also work in HubSpot and Zoho. Vendor-neutral advice. Fixed pricing. Senior delivery.
+            Sales Cloud configuration, custom objects, Salesforce Flow automation, AppExchange integration, and admin training for teams in Surrey, Vancouver, across Canada, and the US. Cross-platform fit review, written scope, testing, and documented handoff.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                 <Button size="lg" className="w-full bg-white text-blue-900 hover:bg-blue-100 font-semibold px-8 sm:w-auto">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -104,9 +104,9 @@ export default function SalesforceConsulting() {
             </Link>
           </div>
           <div className="mt-8 flex flex-wrap gap-6 text-white/70 text-sm">
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> 3 to 8 week delivery</div>
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> Fixed pricing from $3,500</div>
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> Sales, Service, and Marketing Cloud</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> Scope-based delivery plan</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> Written proposal after discovery</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> Sales Cloud-first; other Clouds fit-checked</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> Based in Surrey, serving Canada and the US remotely</div>
           </div>
         </div>
@@ -117,7 +117,7 @@ export default function SalesforceConsulting() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">When Salesforce Is the Right CRM</h2>
           <p className="text-lg text-gray-600 mb-4">
-            Salesforce is a serious platform for serious sales motions. It is also expensive, complex, and easy to misuse. We are honest about when Salesforce is the right call and when it is not &mdash; because we also implement HubSpot and Zoho, and we get paid the same regardless of which platform we recommend.
+            Salesforce is a serious platform for complex sales motions. It can also add cost and administration when the process does not need that depth. Discovery compares Salesforce with supported alternatives and discloses relevant partner relationships before a recommendation is made.
           </p>
           <p className="text-lg text-gray-600 mb-4">
             Salesforce is usually the right choice when you need deep customization (custom objects, complex relationships, granular permissions), when you have a large or distributed sales team that needs strict process governance, when you sell into regulated industries with heavy reporting requirements, or when you need to scale into thousands of users and complex territory management.
@@ -126,7 +126,7 @@ export default function SalesforceConsulting() {
             We also support US-based teams remotely. The work is the same: clean data, clear sales stages, reliable lead routing, Flow automation that is easy to maintain, and reporting that leadership can trust. Local presence matters for Surrey and Vancouver clients, but Salesforce delivery does not need to be limited by geography.
           </p>
           <p className="text-lg text-gray-600">
-            It is usually not the right choice when your sales process is straightforward, your team is under 25 reps, and you are looking for fast time-to-value. In those cases HubSpot or Zoho will give you 80% of the capability at a fraction of the cost and complexity. We will tell you that on the discovery call rather than push you toward the bigger ticket.
+            It may not be the right choice when the sales process is straightforward, the team is small, and platform depth would add unnecessary administration. In those cases HubSpot or Zoho may be a better fit. Discovery includes that platform-fit discussion before a scope is proposed.
           </p>
           <p className="text-lg text-gray-600 mt-4">
             If you are comparing local options, our <Link href="/salesforce-consultant-surrey-bc" className="text-blue-700 hover:underline">Salesforce consultant Surrey, BC</Link> page explains how we support nearby teams with implementation, cleanup, and training.
@@ -139,7 +139,7 @@ export default function SalesforceConsulting() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Salesforce Consulting Includes</h2>
           <p className="text-lg text-gray-600 mb-8">
-            We cover the full range of Salesforce work for SMB and mid-market companies. The scope is fixed before we start, so you know exactly what is included.
+            A Salesforce scope can cover configuration, data, automation, reporting, integration, and training where the requirements fit documented capability. Deliverables and exclusions are written before work starts.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {[
@@ -167,13 +167,13 @@ export default function SalesforceConsulting() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Engagement Types</h2>
           <p className="text-lg text-gray-600 mb-8">
-            We work with Salesforce clients in three modes, depending on where you are.
+            Salesforce support is available in three modes, depending on the current state of the system.
           </p>
           <div className="space-y-6">
             {[
-              { title: 'New Salesforce Implementation', desc: 'You just bought Salesforce or are considering it. We design and configure the org from scratch, migrate data from your previous system, configure Sales Cloud properly, train the team, and hand over a working CRM. Most new implementations land between 4 and 8 weeks.' },
-              { title: 'Salesforce Optimization & Cleanup', desc: 'You have had Salesforce for years. Adoption is patchy. Reports are unreliable. Workflows are layered on top of legacy logic. We audit, restructure, modernize automation (move from Workflow Rules and Process Builder to Flow), and rebuild reporting on a clean foundation. Typically 3 to 6 weeks.' },
-              { title: 'Managed Salesforce Admin', desc: 'You do not have a full-time Salesforce admin and you do not need one. We provide ongoing admin coverage on a monthly retainer &mdash; user management, new requests, report building, automation tuning, and quarterly health checks. A senior consultant on call without the full-time cost.' },
+              { title: 'New Salesforce Implementation', desc: 'For a new Salesforce org, the scope can include process mapping, configuration, data migration, Sales Cloud setup, training, and documented handoff. Timing is confirmed after dependencies, integrations, and testing requirements are understood.' },
+              { title: 'Salesforce Optimization & Cleanup', desc: 'For an existing org with adoption, reporting, or legacy-automation issues, the scope can cover audit, restructuring, Flow modernization, and reporting. Timing is confirmed after discovery.' },
+              { title: 'Managed Salesforce Admin', desc: 'For teams without a full-time Salesforce administrator, a monthly retainer can provide defined admin capacity for user management, approved requests, report building, automation tuning, and scheduled health checks.' },
             ].map((item, i) => (
               <div key={i} className="bg-gray-50 p-6 rounded-xl border">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
@@ -223,7 +223,7 @@ export default function SalesforceConsulting() {
           <div className="space-y-8">
             {[
               { step: '01', title: 'Audit & Strategy (Week 1-2)', desc: 'We map your sales process, audit your existing org (if you have one), review your data, and identify the highest-leverage changes. You receive a written audit and recommendation document with prioritized work and a clear configuration plan before we touch the org.' },
-              { step: '02', title: 'Build (Week 2-6)', desc: 'We configure Sales Cloud (and Service or Marketing Cloud where needed), build custom objects and schema, modernize automation in Flow, set up reporting and dashboards, and migrate data. Every change is built in a sandbox first and reviewed before promotion.' },
+              { step: '02', title: 'Build & Validate', desc: 'Approved Sales Cloud configuration, objects, Flow automation, reporting, integrations, and migration tasks are built in priority order. Sandbox, test-org, or controlled production methods are selected based on the Salesforce edition and agreed risk plan.' },
               { step: '03', title: 'Train & Launch (Week 6-8)', desc: 'Role-based training for reps, managers, and admins, using your real org and real data. We launch together, monitor adoption for the first two weeks, and adjust based on what we see. Documentation is delivered with the handover.' },
             ].map((item, i) => (
               <div key={i} className="flex gap-6">
@@ -240,23 +240,23 @@ export default function SalesforceConsulting() {
         </div>
       </section>
 
-      {/* Pricing */}
+      {/* Scope */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Timeline and Investment</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Scope and Delivery Plan</h2>
           <p className="text-lg text-gray-600 mb-8">
-            Salesforce projects are larger than HubSpot or Zoho projects. We still scope and price them up front.
+            Salesforce scope varies substantially with data, objects, automation, integrations, and governance. The proposal documents price, dependencies, and acceptance criteria before work starts.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-2xl border shadow-sm">
               <Clock className="w-10 h-10 text-blue-600 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">3 to 8 Weeks</h3>
-              <p className="text-gray-600">Optimization projects typically take 3 to 4 weeks. Full new implementations run 4 to 8 weeks depending on complexity, custom objects, and integrations involved.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Timing After Discovery</h3>
+              <p className="text-gray-600">The delivery plan is confirmed after objects, data, automation, integrations, governance, stakeholder availability, testing, and acceptance criteria are understood.</p>
             </div>
             <div className="bg-white p-8 rounded-2xl border shadow-sm">
               <DollarSign className="w-10 h-10 text-blue-600 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">From $3,500 CAD</h3>
-              <p className="text-gray-600">Optimization engagements start at $3,500. Full new implementations typically range $7,500 to $25,000. Managed admin retainers start at $1,500 / month.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Written Commercial Proposal</h3>
+              <p className="text-gray-600">The proposal confirms the objects, workflows, migration, integrations, support boundaries, exclusions, acceptance checks, and commercial terms.</p>
             </div>
           </div>
         </div>
@@ -267,17 +267,17 @@ export default function SalesforceConsulting() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Emergent Logic for Salesforce</h2>
           <p className="text-lg text-gray-600 mb-8">
-            Most Salesforce partners want to sell you Salesforce. We want to set you up correctly, whether that means Salesforce or something else.
+            Our platform recommendation is based on the operating requirements discussed during discovery. No Salesforce partnership or endorsement is implied.
           </p>
           <div className="space-y-3">
             {[
-              'Senior CRM consultants with practical Sales Cloud implementation and cleanup experience',
-              'Vendor-neutral: we also implement HubSpot and Zoho, so you get honest platform recommendations',
+              'Direct, cross-platform delivery with written scope, testing, and acceptance criteria',
+              'Cross-platform fit review across Salesforce, HubSpot, and Zoho with relevant partner relationships disclosed',
               'Clicks-before-code mindset: we use declarative tools wherever they fit, and write Apex only when needed',
-              'Modern automation: every project moves you off legacy Workflow Rules and Process Builder onto Flow',
-              'Senior delivery only — the consultant on your strategy call is the one in your org',
-              'Fixed pricing on projects, transparent retainer pricing on managed services',
-              'Documentation and admin runbook delivered with every engagement',
+              'Modern automation: legacy Workflow Rules and Process Builder can be mapped to Flow where the scope supports it',
+              'Direct delivery-team access from discovery through documented handoff',
+              'Scope and commercial terms confirmed before project or managed-service work begins',
+              'Documentation and admin runbook included when defined in the written scope',
               'Based in Surrey, BC — serving Greater Vancouver, Canada, and US-based businesses remotely',
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
@@ -313,7 +313,7 @@ export default function SalesforceConsulting() {
           <div className="grid md:grid-cols-3 gap-4">
             <Link href="/services/crm-implementation" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM Implementation</p>
-              <p className="text-gray-600 text-sm">HubSpot, Salesforce, or Zoho — we cover all three</p>
+              <p className="text-gray-600 text-sm">HubSpot, Salesforce, or Zoho fit assessed before scope</p>
             </Link>
             <Link href="/services/hubspot-consulting" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">HubSpot Consulting</p>
@@ -328,7 +328,7 @@ export default function SalesforceConsulting() {
               <p className="text-gray-600 text-sm">Ongoing admin, cleanup, reports, Flow updates, and support for Canada and the US</p>
             </Link>
             <Link href="/case-studies/salesforce-cleanup-before-automation" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-violet-600">Salesforce Cleanup Case Study</p>
+              <p className="font-medium text-violet-600">Salesforce Cleanup Implementation Pattern</p>
               <p className="text-gray-600 text-sm">A cleanup-first implementation pattern before building more Flow automation</p>
             </Link>
             <Link href="/salesforce-consultant-surrey-bc" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
@@ -355,10 +355,10 @@ export default function SalesforceConsulting() {
             Book a free 30-minute strategy call. We will look at your sales motion, your current org if you have one, and tell you honestly whether Salesforce is the right call &mdash; and what a proper engagement would look like.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <TrackedCTA ctaName="Book a Free Strategy Call - Salesforce Footer" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation - Salesforce Footer" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-100 font-semibold px-8">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>

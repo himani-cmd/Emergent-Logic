@@ -257,7 +257,7 @@ export default function CrmLeadRoutingMqlSqlHandoff() {
                 If website forms are part of the problem, review how <Link href="/blog/website-leads-to-crm" className="text-orange-700 hover:underline">website leads should route into CRM</Link>. If HubSpot workflows are overlapping, review why <Link href="/blog/why-hubspot-workflows-break" className="text-orange-700 hover:underline">HubSpot workflows break</Link> before rebuilding the workflow canvas.
               </p>
               <p>
-                For a representative build pattern, see our <Link href="/case-studies/lead-routing-mql-sql-handoff-cleanup" className="text-orange-700 hover:underline">lead routing and MQL-to-SQL handoff cleanup case study</Link>. It shows how lifecycle definitions, owner rules, required fields, and exception dashboards fit together in a practical CRM cleanup.
+                For a representative build pattern, see our <Link href="/case-studies/lead-routing-mql-sql-handoff-cleanup" className="text-orange-700 hover:underline">lead routing and MQL-to-SQL handoff implementation pattern</Link>. It shows how lifecycle definitions, owner rules, required fields, and exception dashboards fit together in a practical CRM cleanup.
               </p>
 
               <h2>How Emergent Logic Approaches Lead Routing</h2>

@@ -137,7 +137,7 @@ export default function WebsiteLeadsToCrmImplementation() {
         <div className="container mx-auto px-4">
           <Breadcrumbs
             items={[
-              { label: 'Services', href: '/services' },
+              { label: 'Services', href: '/#services' },
               { label: 'Website Leads to CRM', href: '/website-leads-to-crm-implementation' },
             ]}
           />
@@ -149,10 +149,10 @@ export default function WebsiteLeadsToCrmImplementation() {
             A website form is not a sales system by itself. Emergent Logic connects website inquiries, booking flows, landing pages, and contact forms into HubSpot, Salesforce, or your CRM so every lead has a source, owner, next step, and follow-up path.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <TrackedCTA ctaName="Book a Free Strategy Call - Website Leads to CRM Hero" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation - Website Leads to CRM Hero" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                 <Button size="lg" className="w-full bg-white text-blue-950 hover:bg-blue-100 sm:w-auto">
-                  Book a Free Strategy Call <ArrowRight className="ml-2 h-5 w-5" />
+                  Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -292,7 +292,7 @@ export default function WebsiteLeadsToCrmImplementation() {
                 <p className="mt-2 text-sm text-gray-600">The problem-aware guide behind this service page.</p>
               </Link>
               <Link href="/case-studies/website-leads-to-crm-follow-up-system" className="rounded-2xl border bg-white p-5 transition-shadow hover:shadow-md">
-                <p className="font-semibold text-blue-700">Website Leads to CRM Case Study</p>
+                <p className="font-semibold text-blue-700">Website Leads to CRM Implementation Pattern</p>
                 <p className="mt-2 text-sm text-gray-600">A representative pattern for source tracking, ownership, tasks, and reporting.</p>
               </Link>
               <Link href="/lead-follow-up-audit" className="rounded-2xl border bg-white p-5 transition-shadow hover:shadow-md">
@@ -328,10 +328,10 @@ export default function WebsiteLeadsToCrmImplementation() {
             Book a free strategy call. We will review the current lead path, identify where inquiries leak, and recommend the smallest practical CRM-connected fix.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-            <TrackedCTA ctaName="Book a Free Strategy Call - Website Leads to CRM Footer" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation - Website Leads to CRM Footer" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-100">
-                  Book a Free Strategy Call <ArrowRight className="ml-2 h-5 w-5" />
+                  Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
             </TrackedCTA>
