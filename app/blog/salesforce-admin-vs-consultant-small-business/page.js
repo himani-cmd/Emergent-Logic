@@ -250,7 +250,7 @@ export default function SalesforceAdminVsConsultantSmallBusiness() {
 
             <div className="mt-10 border-t pt-8">
               <p className="text-sm text-gray-600">
-                Prefer a direct conversation? <Link href="/contact" className="text-blue-700 hover:underline">Send us a message</Link> and we will get back to you within 24 hours.
+                Prefer a direct conversation? <Link href="/contact" className="text-blue-700 hover:underline">Send us a message</Link>. Requests are reviewed on business days.
               </p>
             </div>
           </div>

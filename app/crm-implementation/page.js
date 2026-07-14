@@ -10,7 +10,7 @@ import { ArrowRight, CheckCircle, Database } from 'lucide-react';
 
 export const metadata = {
   title: 'CRM Implementation Services',
-  description: 'Expert CRM implementation in Surrey BC. Salesforce, HubSpot, Odoo and 12+ platforms. AI-accelerated delivery in 2-4 weeks.',
+  description: 'CRM implementation planning in Surrey BC for Salesforce, HubSpot, Zoho, Odoo, and other supported platforms.',
   alternates: { canonical: 'https://www.emergent-logic.ca/crm-implementation' },
   openGraph: {
     title: 'CRM Implementation Services | Emergent Logic',
@@ -40,8 +40,8 @@ export default function CrmImplementation() {
           <Breadcrumbs items={[{ label: 'Services', href: '/services' }, { label: 'CRM Implementation', href: '/crm-implementation' }]} />
           <div className="flex items-center gap-4 mb-6"><div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center"><Database className="w-8 h-8 text-white" /></div></div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">CRM Implementation Services</h1>
-          <p className="text-xl text-white/70 max-w-3xl mb-8">Stop losing leads in spreadsheets. We implement and optimize the CRM that fits your team — Salesforce, HubSpot, Odoo, Microsoft Dynamics, Zoho, and more. AI-accelerated delivery means results in weeks, not months.</p>
-          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+          <p className="text-xl text-white/70 max-w-3xl mb-8">Move lead tracking out of disconnected spreadsheets. We scope and implement HubSpot, Salesforce, or Zoho around the team&apos;s sales process, data, reporting needs, and approval requirements.</p>
+          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
         </div>
       </section>
       <section className="py-16 bg-white">
@@ -64,7 +64,7 @@ export default function CrmImplementation() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to implement your CRM?</h2>
           <p className="text-xl text-white/80 mb-8">Book a free strategy call to discuss your needs.</p>
-          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
         </div>
       </section>
       <Footer />

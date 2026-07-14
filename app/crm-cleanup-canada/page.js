@@ -29,7 +29,7 @@ const cleanupAreas = [
 
 const faqs = [
   { q: 'Which CRMs do you clean up?', a: 'We clean up HubSpot, Salesforce, Zoho, and spreadsheet-based CRM systems. We also help teams prepare data before migrating into a new CRM.' },
-  { q: 'How long does CRM cleanup take?', a: 'Most focused cleanup projects take 1 to 2 weeks. Larger databases or workflow-heavy systems may take longer, but we scope the timeline before work starts.' },
+  { q: 'How long does CRM cleanup take?', a: 'Timing depends on database size, data quality, workflows, integrations, backups, testing, and approval requirements. The delivery plan and dependencies are documented before work starts.' },
   { q: 'Will records be deleted?', a: 'No records are deleted without approval. We start with an audit, show what we found, then clean using a logged and reversible process wherever the platform allows it.' },
   { q: 'Can CRM cleanup improve marketing results?', a: 'Yes. Cleaner data improves segmentation, email deliverability, lead scoring, campaign attribution, and sales handoff. Many automation problems are really data problems first.' },
 ];
@@ -67,7 +67,7 @@ export default function CRMCleanupCanada() {
       <section className="pt-32 pb-16 bg-gradient-to-br from-emerald-900 via-teal-900 to-slate-900">
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[
-            { label: 'Services', href: '/services' },
+            { label: 'Services', href: '/#services' },
             { label: 'CRM Cleanup Canada', href: '/crm-cleanup-canada' },
           ]} tone="dark" />
           <div className="flex items-center gap-2 text-emerald-200 mb-4"><AlertTriangle className="w-5 h-5" /><span>HubSpot, Salesforce, Zoho</span></div>
@@ -76,7 +76,7 @@ export default function CRMCleanupCanada() {
             Duplicate records, stale contacts, broken workflows, unreliable reports, and fields nobody understands. We clean up HubSpot, Salesforce, and Zoho CRMs so sales and marketing teams can trust the system again.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-emerald-900 hover:bg-emerald-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
+            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-emerald-900 hover:bg-emerald-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
             <Link href="/ai-crm-audit"><Button size="lg" variant="outline" className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white">Try Our AI CRM Audit</Button></Link>
           </div>
         </div>

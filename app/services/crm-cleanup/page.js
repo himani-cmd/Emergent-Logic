@@ -31,16 +31,16 @@ export default function CRMCleanup() {
             <Link href="/" className="hover:text-white">Home</Link> / <Link href="/#services" className="hover:text-white">Services</Link> / <span className="text-white">CRM Cleanup</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Your CRM Is a Mess. We Fix That.
+            Turn a Messy CRM Into a Controlled Cleanup Plan
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
-            Duplicate contacts, broken workflows, unreliable reports, and fields nobody uses. We audit your CRM, clean the data, rebuild the structure, and turn it back into a system your team trusts and actually uses. HubSpot, Salesforce, and Zoho — delivered in 1 to 2 weeks.
+            Duplicate contacts, broken workflows, unreliable reports, and fields nobody uses. We audit the CRM, document the risks, and complete approved cleanup work in controlled steps. Timing is confirmed after discovery.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-emerald-900 hover:bg-emerald-100 font-semibold px-8">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -51,8 +51,8 @@ export default function CRMCleanup() {
             </Link>
           </div>
           <div className="mt-8 flex flex-wrap gap-6 text-white/70 text-sm">
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-300" /> 1 to 2 week delivery</div>
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-300" /> Fixed pricing from $1,000</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-300" /> Read-only assessment first</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-300" /> Written proposal after discovery</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-300" /> Full audit report included</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-300" /> Maintenance playbook delivered</div>
           </div>
@@ -73,7 +73,7 @@ export default function CRMCleanup() {
             Every time someone suggests "just cleaning it up," the task feels so overwhelming that nothing gets done. So the data keeps getting worse, and the gap between what your CRM says and what is actually true keeps widening.
           </p>
           <p className="text-lg text-gray-600 mb-8">
-            We have seen this pattern many times. It is fixable. And it is faster than you think — because we use AI to identify and resolve issues that would take a human weeks to find manually.
+            This pattern is common across public CRM work requests and it is fixable. AI-assisted analysis can surface duplicate, field, workflow, and reporting issues efficiently, while a human still approves every high-impact change.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -106,7 +106,7 @@ export default function CRMCleanup() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Does This Sound Like Your CRM?</h2>
           <p className="text-lg text-gray-600 mb-8">
-            If you can tick three or more of these boxes, your CRM is overdue for a cleanup.
+            If several of these signals are present, a structured audit can show whether cleanup is worth prioritizing.
           </p>
           <div className="grid md:grid-cols-2 gap-4">
             {[
@@ -135,15 +135,15 @@ export default function CRMCleanup() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What CRM Cleanup Includes</h2>
           <p className="text-lg text-gray-600 mb-8">
-            This is not a surface-level cleanup. We go deep into your CRM and fix everything — data, structure, automation, and reporting — so the system is trustworthy again.
+            The scope can cover data, structure, automation, and reporting, but only the approved records, fields, workflows, and dashboards are changed.
           </p>
           <div className="space-y-4">
             {[
-              { icon: Search, title: 'Comprehensive Data Audit', desc: 'We analyze every contact, company, and deal in your CRM using AI. Duplicates, missing fields, outdated records, invalid emails, orphaned contacts, broken associations — we identify everything before touching a single record. You see the audit report before any cleanup begins.' },
-              { icon: Users, title: 'Deduplication & Merge', desc: 'We identify and merge duplicate records using fuzzy matching that catches variations like "John Smith" at jsmith@acme.com and "J. Smith" at john@acme.com. Activity history, notes, deals, files, and associations are preserved on the surviving record.' },
-              { icon: RefreshCw, title: 'Data Standardization', desc: 'Phone number formats, address formatting, name capitalization, company name consistency, country codes, lifecycle stage alignment, and deal stage alignment. Every field standardized to a clean, consistent format that reports can actually rely on.' },
+              { icon: Search, title: 'Structured Data Audit', desc: 'AI-assisted checks review the agreed contact, company, and deal scope for duplicates, missing fields, stale values, invalid emails, orphaned records, and broken associations. Findings and limitations are documented before cleanup begins.' },
+              { icon: Users, title: 'Deduplication & Merge', desc: 'Potential duplicates are identified with deterministic and fuzzy rules, reviewed in samples, and merged only after backup and approval. Preservation checks are documented for the fields, activities, deals, files, and associations supported by the platform.' },
+              { icon: RefreshCw, title: 'Data Standardization', desc: 'Approved fields can be standardized for phone, address, name, company, country, lifecycle, and deal-stage formats. Validation rules and exceptions are documented before bulk updates.' },
               { icon: Trash2, title: 'Property Cleanup', desc: 'Remove unused custom properties, consolidate overlapping fields, fix dropdown values, retire abandoned fields, and reorganize property groups. Your CRM should only have fields that serve a purpose, organized in a way that makes sense to whoever uses it next.' },
-              { icon: Wrench, title: 'Workflow Repair', desc: 'Audit every active and inactive workflow. Fix broken triggers, update outdated conditions, remove conflicting automations, document what each workflow does, and rebuild the ones that no longer align with your sales process. We turn a tangled mess into a clean automation map.' },
+              { icon: Wrench, title: 'Workflow Repair', desc: 'The agreed workflow inventory is mapped for triggers, conditions, suppression, conflicts, ownership, and failure handling. Approved repairs are tested before production activation.' },
               { icon: BarChart3, title: 'Report Rebuilding', desc: 'Replace unreliable reports with dashboards built on clean data. Pipeline accuracy, revenue forecasting, rep activity, marketing attribution, and conversion funnels — rebuilt from scratch where needed and verified against your accounting and sales numbers.' },
               { icon: CheckCircle, title: 'Maintenance Playbook', desc: 'You receive a written playbook covering data hygiene rules, deduplication routines, property review cadences, and admin responsibilities. The goal is that your CRM stays clean for the long term, not just for the week we hand it back.' },
             ].map((item, i) => (
@@ -161,21 +161,21 @@ export default function CRMCleanup() {
         </div>
       </section>
 
-      {/* AI Advantage */}
+      {/* AI-assisted review */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">The AI Cleanup Advantage</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">AI-Assisted, Human-Controlled Review</h2>
           <p className="text-lg text-gray-600 mb-4">
-            Traditional CRM cleanup is manual, tedious, and error-prone. A human reviewing 10,000 contacts one by one takes weeks. By the time they finish, the data they cleaned at the beginning is already drifting again. Our AI-powered approach does the same work in hours, not weeks.
+            Large datasets are difficult to review record by record. AI-assisted checks can group patterns, propose duplicate candidates, and flag anomalies so a human can review the highest-risk areas first.
           </p>
           <p className="text-lg text-gray-600 mb-8">
-            We use AI to scan your entire database, identify patterns, flag duplicates with fuzzy matching (catching variations like "John Smith" and "J. Smith" at the same company), detect invalid data, surface broken workflow logic, and prioritize issues by business impact. The result is a cleanup that is faster, more thorough, and more accurate than manual methods — and you get a written audit report you can share with leadership before any changes are made.
+            The approved dataset can be checked for duplicate patterns, invalid values, inconsistent fields, and workflow risks. AI output is treated as a review aid, not permission to change production data; findings, samples, limitations, and approval decisions are recorded in the audit.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { value: 'Hours', label: 'Not weeks of manual review' },
-              { value: 'High', label: 'Fidelity duplicate detection with fuzzy matching' },
-              { value: 'Logged', label: 'Every change tracked and reversible' },
+              { value: 'Scoped', label: 'Only approved data and automation reviewed' },
+              { value: 'Reviewed', label: 'Human approval before high-impact changes' },
+              { value: 'Logged', label: 'Change and rollback approach documented' },
             ].map((stat, i) => (
               <div key={i} className="bg-white rounded-xl p-6 text-center border border-emerald-200">
                 <div className="text-3xl font-bold text-emerald-700 mb-1">{stat.value}</div>
@@ -195,9 +195,9 @@ export default function CRMCleanup() {
           </p>
           <div className="space-y-8">
             {[
-              { step: '01', title: 'AI-Powered Audit', desc: 'We run a comprehensive AI audit on your entire CRM. Every contact, deal, workflow, property, and report is analyzed. You receive a written report showing exactly what is broken and what needs to be fixed, prioritized by business impact. Nothing changes in your CRM until you approve the cleanup plan.' },
-              { step: '02', title: 'Clean & Restructure', desc: 'We deduplicate, standardize, and clean your data. Properties are reorganized and deprecated where needed. Workflows are repaired or rebuilt. Pipelines are restructured to match your current sales process. Every change is logged so you can see exactly what happened.' },
-              { step: '03', title: 'Verify & Train', desc: 'We verify data integrity post-cleanup, rebuild dashboards on clean data, and train your team on data hygiene best practices. You get a written maintenance playbook to keep your CRM clean going forward — including admin responsibilities, review cadences, and import standards.' },
+              { step: '01', title: 'Audit & Risk Map', desc: 'We review the agreed CRM scope and deliver a written issue map with samples, limitations, priorities, and recommended controls. Nothing changes in production until the cleanup plan is approved.' },
+              { step: '02', title: 'Clean & Restructure', desc: 'Approved records, properties, workflows, pipelines, and reports are changed in controlled batches. Each batch follows the documented backup, test, validation, and rollback approach.' },
+              { step: '03', title: 'Verify & Train', desc: 'Post-change validation, dashboard checks, role-based training, and any maintenance playbook included in the proposal are completed before handoff.' },
             ].map((item, i) => (
               <div key={i} className="flex gap-6">
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center flex-shrink-0">
@@ -213,23 +213,23 @@ export default function CRMCleanup() {
         </div>
       </section>
 
-      {/* Pricing */}
+      {/* Scope */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Timeline and Investment</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Scope and Delivery Plan</h2>
           <p className="text-lg text-gray-600 mb-8">
-            CRM cleanup is one of the highest-ROI projects we run. The investment usually pays back within the first month through reduced CRM seat costs, fewer wasted email sends, and a sales team that trusts its own pipeline again.
+            CRM cleanup can reduce wasted sends, duplicate records, manual reconciliation, and reporting disputes. The business case depends on database size, platform costs, workflow complexity, and the value of missed follow-up.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-2xl border shadow-sm">
               <Clock className="w-10 h-10 text-emerald-600 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">1 to 2 Weeks</h3>
-              <p className="text-gray-600">Most CRM cleanups are completed in 1 to 2 weeks, depending on database size, complexity, and how many workflows need rebuilding.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Timing After Assessment</h3>
+              <p className="text-gray-600">The delivery plan is confirmed after database size, data quality, integrations, workflow risk, backups, testing, and approval requirements are understood.</p>
             </div>
             <div className="bg-white p-8 rounded-2xl border shadow-sm">
               <DollarSign className="w-10 h-10 text-emerald-600 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">From $1,000 CAD</h3>
-              <p className="text-gray-600">Fixed pricing based on database size and scope of work. Most cleanups land between $1,500 and $5,000. No hourly billing, no surprises.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Written Commercial Proposal</h3>
+              <p className="text-gray-600">The proposal confirms the approved records and workflows, exclusions, dependencies, rollback approach, acceptance checks, and commercial terms.</p>
             </div>
           </div>
         </div>
@@ -240,17 +240,17 @@ export default function CRMCleanup() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Emergent Logic for CRM Cleanup</h2>
           <p className="text-lg text-gray-600 mb-8">
-            Cleanup is not glamorous, but it is the highest-leverage thing most teams can do for their CRM. We treat it that way.
+            Cleanup should make the system easier to trust without creating new data, automation, or access risks.
           </p>
           <div className="space-y-3">
             {[
-              'AI-accelerated audit catches issues that manual reviews miss',
-              'Full audit report delivered before any changes are made',
-              'Every change logged and reversible',
-              'Multi-platform: HubSpot, Salesforce, Zoho — same rigorous process',
-              'Maintenance playbook included so your CRM stays clean',
-              'Fixed pricing, no hourly billing',
-              'Senior consultants only — no junior offshoring of your data',
+              'AI-assisted checks support pattern finding without replacing human approval',
+              'Written findings and limitations delivered before production changes',
+              'Changes logged with a platform-appropriate rollback approach',
+              'HubSpot, Salesforce, and Zoho fit confirmed before access is requested',
+              'Maintenance responsibilities documented when included in scope',
+              'Scope and commercial terms confirmed before production changes',
+              'Direct access to the people auditing, changing, and verifying your data',
               'Based in Surrey, BC — serving Greater Vancouver and businesses across Canada',
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
@@ -268,12 +268,12 @@ export default function CRMCleanup() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
           <div className="space-y-6">
             {[
-              { q: 'Will I lose any data during cleanup?', a: 'No. Every change is logged, and merges preserve activity history, notes, deals, files, and associations on the surviving record. We also create a backup before the cleanup begins. We have never lost a record on a cleanup project.' },
-              { q: 'How big does my database need to be?', a: 'Cleanup makes sense for any database with more than a few thousand records, or any database where the data quality has eroded enough that the team has stopped trusting it. We have run cleanups on databases ranging from 5,000 to 500,000 records.' },
-              { q: 'Can you do a cleanup without rebuilding my workflows?', a: 'Yes. If you only want a data cleanup (deduplication and standardization) without touching workflows or reporting, we offer a stripped-down scope at a lower fixed price. Most teams choose the full cleanup because the workflow and reporting issues are usually the root cause of the data drift in the first place.' },
-              { q: 'How often should we do a CRM cleanup?', a: 'A full cleanup once every 18 to 24 months is reasonable for most teams. Between cleanups, the maintenance playbook we deliver should keep your data healthy with weekly admin checks and quarterly reviews.' },
-              { q: 'Do you train our team to maintain the CRM?', a: 'Yes. The maintenance playbook includes a training session for your CRM admin and a written guide for ongoing data hygiene. The goal is that you do not need to call us back in 12 months for the same problem.' },
-              { q: 'What CRMs do you clean up?', a: 'HubSpot, Salesforce, and Zoho — these are our primary platforms. We have also done cleanups on Pipedrive and Monday CRM. If you are on another platform, ask us during the discovery call.' },
+              { q: 'Will I lose any data during cleanup?', a: 'Cleanup is designed to minimize that risk. We agree on backup, rollback, merge, test, and approval procedures before changing production data. No deletion or irreversible merge is performed without written confirmation.' },
+              { q: 'How big does my database need to be?', a: 'Database size is only one factor. Cleanup is worth considering when duplicate records, missing owners, inconsistent fields, or unreliable reports are affecting follow-up and decision-making.' },
+              { q: 'Can you do a cleanup without rebuilding my workflows?', a: 'Yes. A data-only scope can cover approved deduplication and standardization without changing workflows or reports. Discovery determines whether automation is contributing to the data problem, but any additional work requires approval.' },
+              { q: 'How often should we do a CRM cleanup?', a: 'The review cadence depends on import volume, integrations, team changes, and governance. The maintenance plan can define weekly admin checks, quarterly reviews, and thresholds for a deeper audit.' },
+              { q: 'Do you train our team to maintain the CRM?', a: 'Training and a written data-hygiene guide can be included for the CRM owner or admin. The proposal defines the audience, materials, and maintenance responsibilities.' },
+              { q: 'What CRMs do you clean up?', a: 'HubSpot, Salesforce, and Zoho are the primary platforms offered. If you use another CRM, we will confirm fit during discovery rather than claim support we cannot verify.' },
               { q: 'How is this different from just hiring a freelancer to dedupe my contacts?', a: 'A freelancer can dedupe contacts. We do that and also fix the workflows, properties, pipelines, and reports that caused the data to get messy in the first place. Without addressing the root causes, the data drifts back within months. Our scope is structural cleanup, not surface-level cleanup.' },
             ].map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-xl border">
@@ -344,13 +344,13 @@ export default function CRMCleanup() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Stop Working Around a Broken CRM</h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Book a free CRM audit. We will scan your database, identify every issue, and tell you exactly what it would take to fix it. No obligation, no pitch.
+            Book a free CRM audit to review the visible symptoms, likely risks, and the information needed for a controlled cleanup plan. No production data is changed during discovery.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <TrackedCTA ctaName="Book a Free Strategy Call - Cleanup Footer" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation - Cleanup Footer" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-emerald-900 hover:bg-emerald-100 font-semibold px-8">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -360,7 +360,7 @@ export default function CRMCleanup() {
               </Button>
             </Link>
           </div>
-          <p className="text-white/60 text-sm mt-6">Prefer email? <Link href="/contact" className="underline hover:text-white">Send us a message</Link> and we will get back to you within 24 hours.</p>
+          <p className="text-white/60 text-sm mt-6">Prefer email? <Link href="/contact" className="underline hover:text-white">Send us a message</Link>. Requests are reviewed on business days.</p>
         </div>
       </section>
 

@@ -56,7 +56,7 @@ export default function WhatIsCrmImplementation() {
                 You have decided to get a CRM. Maybe you are graduating from spreadsheets. Maybe your current system is not working. Whatever the reason, you are now facing the real challenge: implementation.
               </p>
               
-              <p>Picking the CRM platform is the easy part. Getting it set up correctly, adopted by your team, and generating real results — that is where most businesses struggle.</p>
+              <p>Choosing a CRM is only one decision. The larger job is configuring it around a real process, preparing the data, and helping the team use it consistently.</p>
               
               <h2>What is CRM Implementation?</h2>
               <p>CRM implementation is the process of setting up a Customer Relationship Management system for your business. It goes far beyond just creating an account and importing some contacts.</p>
@@ -65,13 +65,13 @@ export default function WhatIsCrmImplementation() {
               <h2>The 6 Stages of a CRM Implementation</h2>
               
               <h3>Stage 1: Discovery and Process Mapping</h3>
-              <p>Before touching any software, a good implementation starts with understanding your business. What does your sales process look like today? Where are leads coming from? This stage typically takes 1 to 2 weeks.</p>
+              <p>Before touching any software, a good implementation starts with understanding your business. What does your sales process look like today? Where are leads coming from? Discovery continues until the decisions and dependencies required for a responsible scope are explicit.</p>
               
               <h3>Stage 2: Platform Selection and Configuration Planning</h3>
               <p>Based on the discovery, your consultant will recommend the right CRM platform and create a configuration plan — the blueprint for how the system will be set up.</p>
               
               <h3>Stage 3: Data Migration</h3>
-              <p>This is often the most time-consuming stage. Your existing data needs to be cleaned, formatted, and imported into the new platform. Poor data migration is one of the top reasons CRM implementations fail.</p>
+              <p>Your existing data needs to be profiled, cleaned, formatted, tested, and imported into the new platform. The effort changes with data volume, source quality, relationships, and validation requirements.</p>
               
               <h3>Stage 4: Configuration and Customization</h3>
               <p>The CRM is configured according to the plan: pipelines, deal stages, custom fields, email templates, automation workflows, dashboards, and reporting.</p>
@@ -80,26 +80,28 @@ export default function WhatIsCrmImplementation() {
               <p>Your CRM needs to talk to your other tools. Email, your website, your marketing platform, your accounting software, and any other systems in your stack.</p>
               
               <h3>Stage 6: Training and Adoption</h3>
-              <p>The most overlooked stage. A perfectly configured CRM is worthless if your team does not use it.</p>
+              <p>Training, ownership, documentation, and feedback are part of implementation because configuration alone does not create consistent use.</p>
               
               <div className="bg-violet-50 border-l-4 border-violet-500 p-6 my-8 rounded-r-lg">
                 <h4 className="font-bold text-violet-900 mb-2 flex items-center gap-2"><AlertCircle className="w-5 h-5" /> Key Takeaway</h4>
-                <p className="text-violet-800 mb-0">The #1 reason CRM implementations fail is not technology — it is adoption. Investing in proper training and change management is just as important as the technical configuration.</p>
+                <p className="text-violet-800 mb-0">Adoption risk deserves the same attention as technical configuration. Define owners, required behaviours, training, and feedback before launch.</p>
               </div>
               
-              <h2>How Long Does CRM Implementation Take?</h2>
+              <h2>What Determines CRM Implementation Timing?</h2>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse">
-                  <thead><tr className="bg-gray-100"><th className="p-3 text-left border">Business Size</th><th className="p-3 text-left border">Traditional Agency</th><th className="p-3 text-left border">Emergent Logic (AI-Accelerated)</th></tr></thead>
+                  <thead><tr className="bg-gray-100"><th className="p-3 text-left border">Scope Variable</th><th className="p-3 text-left border">What Changes the Delivery Plan</th></tr></thead>
                   <tbody>
-                    <tr><td className="p-3 border">Small (2–10 users)</td><td className="p-3 border">6–12 weeks</td><td className="p-3 border">2–3 weeks</td></tr>
-                    <tr><td className="p-3 border">Mid-market (10–50 users)</td><td className="p-3 border">3–6 months</td><td className="p-3 border">3–6 weeks</td></tr>
-                    <tr><td className="p-3 border">Enterprise (50+ users)</td><td className="p-3 border">6–12 months</td><td className="p-3 border">2–4 months</td></tr>
+                    <tr><td className="p-3 border">Data readiness</td><td className="p-3 border">Sources, duplicates, relationships, required cleanup, and validation</td></tr>
+                    <tr><td className="p-3 border">Users and roles</td><td className="p-3 border">Permissions, ownership rules, review cycles, training, and acceptance</td></tr>
+                    <tr><td className="p-3 border">Integrations</td><td className="p-3 border">System access, API limits, mapping, error handling, and testing</td></tr>
+                    <tr><td className="p-3 border">Automation and risk</td><td className="p-3 border">Edge cases, approvals, rollback planning, and customer-facing impact</td></tr>
                   </tbody>
                 </table>
               </div>
+              <p>A written timeline should follow discovery and identify client dependencies, testing gates, and acceptance criteria.</p>
               
-              <h2>The 5 Most Common CRM Implementation Mistakes</h2>
+              <h2>Five CRM Implementation Mistakes to Avoid</h2>
               <ol>
                 <li>Skipping the discovery phase and configuring based on assumptions</li>
                 <li>Migrating dirty data — garbage in, garbage out</li>
@@ -113,8 +115,8 @@ export default function WhatIsCrmImplementation() {
             
             <div className="mt-12 p-8 bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl text-white">
               <h3 className="text-2xl font-bold mb-4">Ready to get started?</h3>
-              <p className="text-white/80 mb-6">Ready to implement a CRM that your team will actually use? Book a free strategy call with Emergent Logic.</p>
-              <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+              <p className="text-white/80 mb-6">Describe the CRM process, data, or adoption problem you need to solve. We will use the consultation to determine the appropriate next step.</p>
+              <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
             </div>
             
             <div className="mt-12">

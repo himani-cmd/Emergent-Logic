@@ -37,10 +37,10 @@ export default function CRMIntegration() {
             Your CRM should not be an island. We connect HubSpot, Salesforce, and Zoho to your accounting software, phone system, website, calendar, email, and marketing tools &mdash; so data flows where it needs to and your team stops copying records between tabs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-pink-900 hover:bg-pink-100 font-semibold px-8">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -51,8 +51,8 @@ export default function CRMIntegration() {
             </Link>
           </div>
           <div className="mt-8 flex flex-wrap gap-6 text-white/70 text-sm">
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-pink-300" /> 1 to 3 week delivery</div>
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-pink-300" /> Fixed pricing from $500</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-pink-300" /> Scope-based delivery plan</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-pink-300" /> Written proposal after discovery</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-pink-300" /> Native, Zapier, Make, or custom API</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-pink-300" /> Documentation included</div>
           </div>
@@ -145,7 +145,7 @@ export default function CRMIntegration() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Where Integrations Go Wrong</h2>
           <p className="text-lg text-gray-600 mb-8">
-            We have rebuilt enough broken integration stacks to know the patterns.
+            Broken integration stacks tend to share a few patterns: unclear ownership, inconsistent identifiers, conflicting updates, and missing exception handling.
           </p>
           <div className="space-y-4">
             {[
@@ -196,23 +196,23 @@ export default function CRMIntegration() {
         </div>
       </section>
 
-      {/* Pricing */}
+      {/* Scope */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Timeline and Investment</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Scope and Delivery Plan</h2>
           <p className="text-lg text-gray-600 mb-8">
-            Fixed pricing per integration. Bundle pricing available when you need several.
+            The plan is based on the systems involved, field mapping, authentication, failure handling, testing, and ownership requirements.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-2xl border shadow-sm">
               <Clock className="w-10 h-10 text-pink-600 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">1 to 3 Weeks</h3>
-              <p className="text-gray-600">A single native or middleware integration usually launches in 5 to 10 business days. Custom API work and multi-system integrations typically run 2 to 3 weeks.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Timing After Technical Review</h3>
+              <p className="text-gray-600">The delivery plan is confirmed after connector limits, API access, data volume, retries, monitoring, and acceptance checks are understood.</p>
             </div>
             <div className="bg-white p-8 rounded-2xl border shadow-sm">
               <DollarSign className="w-10 h-10 text-pink-600 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">From $500 CAD</h3>
-              <p className="text-gray-600">Single native connector setups start at $500. Middleware automations typically range $1,000 to $3,000. Custom API integrations are scoped individually.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Written Commercial Proposal</h3>
+              <p className="text-gray-600">The proposal confirms the scope, exclusions, dependencies, approval points, commercial terms, and change-control process before work begins.</p>
             </div>
           </div>
         </div>
@@ -223,7 +223,7 @@ export default function CRMIntegration() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Emergent Logic for Integrations</h2>
           <p className="text-lg text-gray-600 mb-8">
-            Most agencies treat integrations as glue work. We treat them as part of the CRM build &mdash; because that is what they are.
+            We treat integrations as part of the CRM operating design, with field mapping, error handling, ownership, and runbook requirements included in the scope.
           </p>
           <div className="space-y-3">
             {[
@@ -232,7 +232,7 @@ export default function CRMIntegration() {
               'Production-grade automations with error handling, retries, and logging &mdash; not fragile Zaps',
               'Written architecture and runbook documents handed over with every integration',
               'Multi-platform: HubSpot, Salesforce, Zoho, plus the dozens of systems they connect to',
-              'Fixed pricing, no hourly billing, scope confirmed before we start',
+              'Scope and commercial terms confirmed before work starts',
               'Based in Surrey, BC — serving Greater Vancouver and businesses across Canada',
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
@@ -255,7 +255,7 @@ export default function CRMIntegration() {
               { q: 'Can you fix integrations someone else built?', a: 'Yes. We audit existing Zaps, native connectors, and custom code, identify what is broken or fragile, and rebuild only what needs rebuilding. We do not start over unless the existing setup is structurally beyond repair.' },
               { q: 'How do you handle errors and sync failures?', a: 'Every integration we build includes error handling, retry logic where appropriate, and logging. When a sync fails, the right person gets notified, and the runbook tells them what to check. Sync failures should never be silent.' },
               { q: 'Do you provide ongoing support?', a: 'Two weeks of post-launch support is included. After that, you can either run the integrations yourself with the runbook we leave behind, or engage us monthly for ongoing monitoring, updates, and new connections.' },
-              { q: 'What CRMs and tools do you support?', a: 'HubSpot, Salesforce, and Zoho are our primary CRMs. We work with most major SaaS tools through native connectors, Zapier, Make, n8n, or REST APIs. If you have a system we have not integrated before, we will tell you on the discovery call rather than guess.' },
+              { q: 'What CRMs and tools do you support?', a: 'Integration work can use native connectors, Zapier, Make, n8n, or REST APIs around HubSpot, Salesforce, Zoho, and other business tools. Exact platform fit is confirmed during discovery rather than assumed.' },
               { q: 'Will the integrations break when CRM platforms update their APIs?', a: 'Native and well-built middleware integrations generally survive vendor updates with minor adjustments. Custom integrations may need maintenance when an API version is deprecated. We document API versions and dependencies in the runbook so you know what to watch for.' },
             ].map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-xl border">
@@ -313,10 +313,10 @@ export default function CRMIntegration() {
             Book a free 30-minute strategy call. We will look at your current stack, identify the integration gaps, and tell you exactly what it would take to close them.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <TrackedCTA ctaName="Book a Free Strategy Call - Integration Footer" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation - Integration Footer" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-pink-900 hover:bg-pink-100 font-semibold px-8">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -326,7 +326,7 @@ export default function CRMIntegration() {
               </Button>
             </Link>
           </div>
-          <p className="text-white/60 text-sm mt-6">Prefer email? <Link href="/contact" className="underline hover:text-white">Send us a message</Link> and we will get back to you within 24 hours.</p>
+          <p className="text-white/60 text-sm mt-6">Prefer email? <Link href="/contact" className="underline hover:text-white">Send us a message</Link>. Requests are reviewed on business days.</p>
         </div>
       </section>
 

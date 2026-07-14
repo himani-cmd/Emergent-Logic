@@ -38,10 +38,10 @@ export default function LeadCaptureWebsites() {
             We are not a brand or web design agency. We build conversion-focused websites and landing pages whose only job is to capture inquiries properly, route them to the right person, and connect cleanly to your CRM. The page is the front door. The CRM is the rest of the building.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-200 font-semibold px-8">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -52,8 +52,8 @@ export default function LeadCaptureWebsites() {
             </Link>
           </div>
           <div className="mt-8 flex flex-wrap gap-6 text-white/70 text-sm">
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-gray-300" /> 3 to 6 week delivery</div>
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-gray-300" /> Fixed pricing from $2,500</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-gray-300" /> Scope-based delivery plan</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-gray-300" /> Written proposal after discovery</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-gray-300" /> CRM-connected by default</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-gray-300" /> Conversion tracking included</div>
           </div>
@@ -80,7 +80,7 @@ export default function LeadCaptureWebsites() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What We Mean by Lead Capture Website</h2>
           <p className="text-lg text-gray-600 mb-4">
-            Most websites are designed to look professional first. That has its place, but on its own it does not move revenue. A lead capture website has one job: convert qualified visitors into structured records inside your CRM, with the right context attached, routed to the right person, faster than your competitors can get back to them.
+            A lead-capture website should turn qualified inquiries into structured CRM records with source context, ownership, and a visible next action. The routing design supports timely follow-up without losing the information submitted by the visitor.
           </p>
           <p className="text-lg text-gray-600 mb-4">
             That changes what gets built. Less time on hero animations. More time on form architecture, conditional logic, qualification questions, hidden field mapping to CRM properties, calendar booking flows, lead source tracking, and post-submission automation. The visible website matters, but the invisible plumbing under it is where the revenue lives.
@@ -173,23 +173,23 @@ export default function LeadCaptureWebsites() {
         </div>
       </section>
 
-      {/* Pricing */}
+      {/* Scope */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Timeline and Investment</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Scope and Delivery Plan</h2>
           <p className="text-lg text-gray-600 mb-8">
-            Pricing is fixed and scoped before we start. Most engagements are bundled with a CRM project.
+            The delivery plan and commercial terms depend on page count, content readiness, form logic, CRM mapping, tracking, testing, and approval requirements.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gray-50 p-8 rounded-2xl border">
               <Clock className="w-10 h-10 text-gray-700 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">3 to 6 Weeks</h3>
-              <p className="text-gray-600">Single landing pages typically launch in 2 to 3 weeks. Multi-page service site builds run 4 to 6 weeks including CRM wire-up and testing.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Timing After Discovery</h3>
+              <p className="text-gray-600">The delivery plan is confirmed after the page scope, content, CRM handoff, tracking, integrations, testing, and stakeholder approvals are understood.</p>
             </div>
             <div className="bg-gray-50 p-8 rounded-2xl border">
               <DollarSign className="w-10 h-10 text-gray-700 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">From $2,500 CAD</h3>
-              <p className="text-gray-600">Single landing pages start at $2,500. Multi-page lead capture sites typically range $5,000 to $15,000. Bundled pricing available with CRM Implementation.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Written Commercial Proposal</h3>
+              <p className="text-gray-600">The proposal confirms the pages, content responsibilities, CRM fields, routing, analytics, exclusions, acceptance checks, and commercial terms.</p>
             </div>
           </div>
         </div>
@@ -200,7 +200,7 @@ export default function LeadCaptureWebsites() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Emergent Logic for Lead Capture</h2>
           <p className="text-lg text-gray-600 mb-8">
-            Most agencies build a website and hand it off. We build a website and connect it to the system that turns visits into revenue.
+            This service connects the lead-capture surface to the CRM, routing, attribution, and follow-up process behind it.
           </p>
           <div className="space-y-3">
             {[
@@ -208,9 +208,9 @@ export default function LeadCaptureWebsites() {
               'CRM-native by default — every form, button, and booking flow lands in the right place',
               'Fast, modern web stack: Next.js or HubSpot CMS, not a 50-plugin WordPress build',
               'UTM, attribution, and GA4 tracking configured before launch — not as an afterthought',
-              'Bundled with CRM Implementation for clients who want the whole system built together',
+              'Available alongside CRM implementation for teams that want one connected scope',
               'Honest scope: we will tell you on the first call if you need a different kind of agency',
-              'Senior consultants only, fixed pricing, two-week post-launch tuning included',
+              'Direct delivery, written scope, and two-week post-launch tuning included',
               'Based in Surrey, BC — serving Greater Vancouver and businesses across Canada',
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
@@ -228,10 +228,10 @@ export default function LeadCaptureWebsites() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
           <div className="space-y-6">
             {[
-              { q: 'Do I need to be a CRM client to work with you on a website?', a: 'No, but most of our website clients are also doing CRM work with us — either alongside the build or beforehand. If you do not have a CRM in place, we will recommend implementing one before, alongside, or shortly after the website project. A lead capture website without a working CRM behind it loses most of its value.' },
-              { q: 'What platform do you build on?', a: 'We default to Next.js for fast, conversion-tuned marketing pages, and HubSpot CMS for clients who want everything inside HubSpot. We can also extend or improve existing WordPress sites where appropriate. We will recommend the right platform on the first call.' },
+              { q: 'Do I need to be a CRM client to work with you on a website?', a: 'No. If you do not have a CRM in place, we will recommend an appropriate lead-management plan before, alongside, or shortly after the website project. A lead-capture website needs a reliable follow-up system behind it.' },
+              { q: 'What platform do you build on?', a: 'Next.js is the default for focused lead-capture pages, while HubSpot CMS can fit teams that want the website inside HubSpot. Existing WordPress sites can also be extended where appropriate. The platform recommendation is confirmed during discovery.' },
               { q: 'Will the site be SEO-friendly?', a: 'Yes. Modern stacks, clean metadata, structured data, fast load times, and search-engine-friendly URLs are baseline. We do not run SEO campaigns, but we hand you a site that any SEO partner can work with effectively.' },
-              { q: 'Can you redesign just one page or section?', a: 'Yes. Single landing page redesigns and conversion-focused page launches are common engagements. Some clients start with one high-leverage page (a service page, a lead magnet page, a campaign landing page) and expand from there.' },
+              { q: 'Can you redesign just one page or section?', a: 'Yes. A scope can start with one high-leverage page, such as a service page, lead-magnet page, or campaign landing page, and expand only after the first version is measured.' },
               { q: 'Do you write the website copy?', a: 'Yes. Conversion copy is included. We work with your subject matter experts, then write, format, and test every page before launch. If you have an in-house writer, we collaborate with them — it usually produces better results.' },
               { q: 'How does this compare to hiring a web design agency?', a: 'A typical web design agency optimizes for visual impact and brand storytelling. We optimize for conversion, lead quality, and CRM integration. If your priority is the brand experience, hire a brand agency. If your priority is getting more qualified leads into your CRM, talk to us.' },
               { q: 'What ongoing maintenance do I need after launch?', a: 'Two weeks of post-launch tuning is included. After that, page edits and new pages can be done by anyone on your team using the CMS we set up, or you can engage us monthly for ongoing optimization, A/B testing, and new conversion experiments.' },
@@ -271,7 +271,7 @@ export default function LeadCaptureWebsites() {
               <p className="text-gray-600 text-sm">Why chat conversations need CRM routing, ownership, and follow-up</p>
             </Link>
             <Link href="/case-studies/website-leads-to-crm-follow-up-system" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-violet-600">Website Leads Case Study</p>
+              <p className="font-medium text-violet-600">Website Leads Implementation Pattern</p>
               <p className="text-gray-600 text-sm">A practical implementation pattern for form capture, CRM routing, and follow-up</p>
             </Link>
             <Link href="/blog/property-management-lead-follow-up-crm" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
@@ -283,7 +283,7 @@ export default function LeadCaptureWebsites() {
               <p className="text-gray-600 text-sm">How buyer and seller inquiries should move from website lead to CRM next step</p>
             </Link>
             <Link href="/case-studies/real-estate-lead-routing-long-cycle-nurture" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-violet-600">Real Estate Routing Case Study</p>
+              <p className="font-medium text-violet-600">Real Estate Routing Implementation Pattern</p>
               <p className="text-gray-600 text-sm">How valuation, buyer, seller, referral, and open house leads can be routed and nurtured</p>
             </Link>
             <Link href="/blog/crm-automation-for-immigration-consultants" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
@@ -305,7 +305,7 @@ export default function LeadCaptureWebsites() {
             <TrackedCTA ctaName="Book Free Strategy Call - Lead Capture Footer" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-200 font-semibold px-8">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>

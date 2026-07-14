@@ -5,15 +5,15 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Zap, Award, DollarSign, MapPin, Link2, RefreshCw, ArrowRight, Sparkles, Globe, Calendar } from 'lucide-react';
+import { Zap, Search, DollarSign, MapPin, Link2, RefreshCw, ArrowRight, Sparkles, Globe, Calendar } from 'lucide-react';
 
 export const metadata = {
   title: 'About Us | CRM Consultants Vancouver BC',
-  description: "Vancouver's CRM consulting firm led by Himani. 15+ certifications, 6x Salesforce Certified. Serving Surrey, Langley, Abbotsford.",
+  description: 'Surrey-based CRM consulting firm led by Himani Kharbanda. Practical HubSpot, Salesforce, Zoho, lead-routing, and automation support.',
   alternates: { canonical: 'https://www.emergent-logic.ca/about' },
   openGraph: {
     title: 'About Us | CRM Consultants Vancouver BC | Emergent Logic',
-    description: "Vancouver's CRM consulting firm led by Himani. 15+ certifications, 6x Salesforce Certified.",
+    description: 'Surrey-based CRM consulting firm led by Himani Kharbanda, serving Greater Vancouver and Canadian businesses.',
     url: 'https://www.emergent-logic.ca/about',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -27,12 +27,12 @@ const credentials = [
 ];
 
 const reasons = [
-  { icon: Zap, title: '2-Week Delivery', description: 'We implement CRM systems in 2-4 weeks. Not months. AI-accelerated delivery means you start seeing results fast.' },
-  { icon: Award, title: '15+ Certifications', description: '6x Salesforce Certified, HubSpot Expert, and more. You get certified expertise — not junior staff learning on your project.' },
-  { icon: DollarSign, title: 'Transparent Pricing', description: 'Fixed packages with clear pricing. No surprise invoices. No scope creep. You know exactly what you are paying before we start.' },
+  { icon: Zap, title: 'Focused Delivery', description: 'Clearly scoped SMB work can target delivery in weeks. Larger migrations and integrations receive a phased plan with written dependencies.' },
+  { icon: Search, title: 'Source-Linked Research', description: 'Our public CRM demand report includes its methodology and source table so readers can inspect the evidence behind our point of view.' },
+  { icon: DollarSign, title: 'Transparent Scope and Pricing', description: 'The proposal defines scope, responsibilities, assumptions, price, and acceptance criteria before work starts.' },
   { icon: MapPin, title: 'Local Greater Vancouver Team', description: 'We are based in Surrey, BC and serve businesses across Greater Vancouver — Surrey, Abbotsford, Langley, Coquitlam, Port Coquitlam, Burnaby, Richmond and more. We understand the local market, Canadian privacy laws, and BC business needs.' },
   { icon: Link2, title: 'We Connect Everything', description: 'CRM, automation, website, and integrations — all connected and working together. Not separate projects from separate vendors.' },
-  { icon: RefreshCw, title: 'Ongoing Support', description: 'We do not disappear after launch. Monthly retainers keep your CRM healthy, your automations running, and your data clean — forever.' },
+  { icon: RefreshCw, title: 'Documented Handoff', description: 'Every scoped build includes testing notes and operating documentation. Ongoing support is optional and agreed separately.' },
 ];
 
 export default function AboutPage() {
@@ -44,7 +44,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <Badge className="mb-4 bg-white/10 text-white border-white/20">About Us</Badge>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">About Emergent Logic</h1>
-          <p className="text-xl text-white/70 max-w-3xl">Greater Vancouver's AI-powered CRM consulting firm. We help businesses implement Salesforce, HubSpot, and Zoho — faster and smarter than traditional agencies.</p>
+          <p className="text-xl text-white/70 max-w-3xl">A Surrey-based CRM consulting firm focused on cleanup, implementation, lead routing, reporting, and practical automation.</p>
         </div>
       </section>
 
@@ -62,12 +62,12 @@ export default function AboutPage() {
               </div>
               <div className="md:col-span-2">
                 <Badge className="mb-2 bg-violet-100 text-violet-700">Founder & CEO</Badge>
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">Himani</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">Himani Kharbanda</h2>
                 <div className="prose prose-lg text-gray-600 space-y-4">
-                  <p>Himani is the Founder and CEO of Emergent Logic, a Surrey, BC-based AI-powered digital consulting firm specializing in CRM implementation, marketing automation, and web development.</p>
-                  <p>With a vision to make enterprise-quality digital transformation accessible to every growing business — not just large corporations with massive budgets — Himani founded Emergent Logic to deliver results faster and smarter than traditional agencies.</p>
-                  <p>Using AI-accelerated delivery, Emergent Logic implements in weeks what others take months to complete — at a fraction of the traditional cost.</p>
-                  <p>Under her leadership, Emergent Logic serves B2B companies across Greater Vancouver and Canada — including Surrey, Abbotsford, Langley, Coquitlam, Port Coquitlam, Burnaby, and Richmond — helping them build revenue systems that actually work.</p>
+                  <p>Himani Kharbanda is the Founder and CEO of Emergent Logic, a Surrey, BC-based CRM consulting firm focused on implementation, cleanup, lead routing, reporting, and automation.</p>
+                  <p>She founded Emergent Logic to make structured CRM operations more accessible to growing businesses that need practical scope and direct accountability.</p>
+                  <p>The firm uses AI to accelerate research, analysis, documentation, and repeatable checks while keeping approvals and high-impact decisions with people.</p>
+                  <p>Emergent Logic is building its methods in public through source-linked research, transparent service definitions, representative system designs, and documented guardrails.</p>
                   <p className="text-violet-600 font-medium">Based in Surrey, BC, Canada.</p>
                 </div>
                 <div className="flex flex-wrap gap-3 mt-6">
@@ -88,7 +88,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4 bg-violet-100 text-violet-700">Why Choose Us</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Why Greater Vancouver Businesses Choose Emergent Logic</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">What Emergent Logic Brings to the Work</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {reasons.map((reason, i) => (
@@ -111,9 +111,9 @@ export default function AboutPage() {
       <section className="py-16 bg-gradient-to-br from-violet-600 to-indigo-700">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to work with us?</h2>
-          <p className="text-xl text-white/80 mb-8">Book a free 30-minute strategy call. No obligation, no sales pressure.</p>
+          <p className="text-xl text-white/80 mb-8">Use a 30-minute consultation to clarify the operating problem, the affected system, and a practical next step.</p>
           <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button>
+            <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button>
           </a>
         </div>
       </section>

@@ -34,22 +34,22 @@ const factors = [
 const projectTypes = [
   {
     title: 'Admin support',
-    range: '$500-$2,000/mo',
-    body: 'Best for ongoing changes, user support, reports, permissions, fields, and light automation maintenance.',
+    scope: 'Ongoing operating support',
+    body: 'Useful for ongoing changes, user support, reports, permissions, fields, and light automation maintenance.',
   },
   {
     title: 'Cleanup project',
-    range: '$1,000-$3,500+',
+    scope: 'Bounded remediation',
     body: 'Useful when duplicates, old fields, unclear stages, and messy reports are making the org hard to trust.',
   },
   {
     title: 'Automation or Flow rebuild',
-    range: '$1,500-$5,000+',
+    scope: 'Controlled automation change',
     body: 'Needed when old automations are brittle, undocumented, or risky to change without careful testing.',
   },
   {
     title: 'Implementation or integration',
-    range: '$3,000-$10,000+',
+    scope: 'Cross-system delivery',
     body: 'Usually includes process design, fields, objects, permissions, automation, reporting, data, and handoff.',
   },
 ];
@@ -101,18 +101,18 @@ export default function SalesforceConsultingPricingFactors() {
               <div className="bg-indigo-50 border-l-4 border-indigo-600 p-6 my-8 rounded-r-lg">
                 <h4 className="font-bold text-indigo-900 mb-2">Short answer</h4>
                 <p className="text-indigo-900 mb-0">
-                  Salesforce work can range from $500/month for light admin support to $3,000-$10,000+ for implementation or integration work. Cleanup and automation rebuilds usually sit in the middle.
+                  A responsible estimate follows discovery. Ongoing administration, cleanup, automation rebuilds, and integrations carry different access, testing, governance, and handoff requirements.
                 </p>
               </div>
 
-              <h2>Common Salesforce Pricing Ranges</h2>
+              <h2>Common Salesforce Engagement Shapes</h2>
               <div className="not-prose grid gap-4 my-8">
                 {projectTypes.map((project) => (
                   <Card key={project.title}>
                     <CardHeader className="pb-2">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                         <CardTitle className="text-xl">{project.title}</CardTitle>
-                        <span className="text-2xl font-bold text-indigo-700">{project.range}</span>
+                        <span className="text-lg font-bold text-indigo-700">{project.scope}</span>
                       </div>
                     </CardHeader>
                     <CardContent>

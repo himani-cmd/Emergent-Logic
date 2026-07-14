@@ -13,7 +13,7 @@ export const metadata = {
   robots: { index: true, follow: true },
   openGraph: {
     title: 'HubSpot Consulting | Emergent Logic',
-    description: 'HubSpot consulting for Canadian businesses. Portal setup, workflows, reporting, integrations — done right in 2 to 4 weeks.',
+    description: 'HubSpot consulting for Canadian businesses. Portal setup, workflows, reporting, integrations, training, and controlled handoff.',
     url: 'https://www.emergent-logic.ca/services/hubspot-consulting',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -34,13 +34,13 @@ export default function HubSpotConsulting() {
             HubSpot Consulting for Canadian Businesses
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
-            We set up HubSpot the way it should have been set up from day one. Portal configuration, pipeline design, workflow automation, custom reporting, and integrations — delivered by senior CRM consultants in 2 to 4 weeks. Fixed price, no hourly billing.
+            HubSpot portal configuration, pipeline design, workflow automation, custom reporting, and integrations with direct delivery and written scope. Timing is confirmed after discovery.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-orange-900 hover:bg-orange-100 font-semibold px-8">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -51,10 +51,10 @@ export default function HubSpotConsulting() {
             </Link>
           </div>
           <div className="mt-8 flex flex-wrap gap-6 text-white/70 text-sm">
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-orange-300" /> 2 to 4 week delivery</div>
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-orange-300" /> Fixed pricing from $1,500</div>
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-orange-300" /> All Hubs (Sales, Marketing, Service)</div>
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-orange-300" /> Free 14-day post-launch support</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-orange-300" /> Scope-based delivery plan</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-orange-300" /> Written proposal after discovery</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-orange-300" /> Scope matched to licensed Hubs</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-orange-300" /> Listed HubSpot Solutions Partner</div>
           </div>
         </div>
       </section>
@@ -70,10 +70,10 @@ export default function HubSpotConsulting() {
             Most businesses sign up for HubSpot, add a few contacts, maybe create a deal or two, and then plateau. The workflows sit empty. The reporting shows vanity metrics. The sales team goes back to spreadsheets because the CRM feels like extra work instead of a tool that helps them sell. The marketing team uses it to send the occasional newsletter and nothing more.
           </p>
           <p className="text-lg text-gray-600 mb-4">
-            That is not a HubSpot problem. That is an implementation problem. HubSpot can automate your entire sales and marketing process — if someone configures it to do so. The platform has lead scoring, sequences, workflows, custom objects, predictive analytics, and dozens of integrations. Most teams use a small fraction of what they are paying for.
+            That is usually an implementation and process problem. HubSpot can support lead scoring, sequences, workflows, custom objects, analytics, and integrations, but feature availability depends on the licensed tier and clean operating rules.
           </p>
           <p className="text-lg text-gray-600">
-            Our HubSpot consulting service is built around one outcome: we turn your portal from a contact database into a revenue system. Whether you have just signed up, you have been on HubSpot for years, or you have inherited a portal someone else built and abandoned, we know how to get it working.
+            Our HubSpot consulting service is designed around one outcome: turning a portal from a contact database into a usable revenue system. The scope can cover a new setup, an underused portal, or an inherited configuration that needs to be audited and documented.
           </p>
         </div>
       </section>
@@ -81,9 +81,9 @@ export default function HubSpotConsulting() {
       {/* Who This Is For */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Who We Help</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Who This Service Fits</h2>
           <p className="text-lg text-gray-600 mb-8">
-            HubSpot is the platform we work with most often. Here is who typically calls us in.
+            This service is designed for teams in the following situations.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {[
@@ -91,8 +91,8 @@ export default function HubSpotConsulting() {
               { title: 'HubSpot users with limited adoption', desc: 'You bought HubSpot, but the team mainly uses it for contact storage or basic deal tracking. You know there is more value available, but the next implementation priorities are unclear.' },
               { title: 'Teams migrating to HubSpot', desc: 'You are moving from Salesforce, Pipedrive, Zoho, or spreadsheets to HubSpot. You need clean migration, fresh configuration, and a launch plan that does not disrupt active deals.' },
               { title: 'Inherited portals', desc: 'Someone else built your HubSpot portal — a former employee, a freelancer, an old agency. It is a mess of half-built workflows, abandoned properties, and reports nobody trusts. We rebuild and document.' },
-              { title: 'Sales and Marketing alignment', desc: 'Your sales team is in HubSpot. Your marketing team is somewhere else. Lead handoff is broken. We bring everything into one HubSpot portal with clean attribution and shared dashboards.' },
-              { title: 'HubSpot + integrations', desc: 'You need HubSpot connected to your accounting software, your phone system, your scheduling tool, your website, or your custom platform. We handle native integrations, Zapier, and custom API work.' },
+              { title: 'Sales and Marketing alignment', desc: 'Your sales and marketing teams use different definitions or systems. The scope can map shared lifecycle rules, handoff, attribution, ownership, and dashboards inside HubSpot.' },
+              { title: 'HubSpot + integrations', desc: 'You need HubSpot connected to accounting, calling, scheduling, website, or internal systems. Native, middleware, and API options are assessed against the documented requirements.' },
             ].map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-xl border shadow-sm">
                 <div className="flex items-start gap-3">
@@ -113,18 +113,18 @@ export default function HubSpotConsulting() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our HubSpot Consulting Includes</h2>
           <p className="text-lg text-gray-600 mb-8">
-            We cover every aspect of HubSpot — from initial portal setup to advanced automation and reporting. The list below is the standard scope of a full implementation.
+            A full implementation can cover initial portal setup, automation, reporting, migration, and training. The final scope is written around the team&apos;s actual process and HubSpot tier.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { icon: Settings, title: 'Portal Setup & Onboarding', desc: 'Account configuration, user roles and permissions, team structure, default properties, currency settings, email sending domains, branding, and security. Everything configured properly from day one — including the dozens of small settings most teams never touch.' },
-              { icon: Layers, title: 'Pipeline Design', desc: 'Custom deal pipelines with stages that match your actual sales process. Multiple pipelines for different products, services, or sales channels. Win probability, deal stage entry/exit criteria, required fields per stage, and forecasting categories all built in.' },
-              { icon: Zap, title: 'Workflow Automation', desc: 'Lead assignment, follow-up sequences, deal stage automation, internal notifications, task creation, lifecycle stage transitions, and lead nurturing. We build the workflows that eliminate manual work for sales reps and marketing operators.' },
-              { icon: BarChart3, title: 'Custom Reporting', desc: 'Revenue dashboards, pipeline velocity reports, rep activity tracking, marketing attribution, conversion funnels, and forecasting. Reports that show real business metrics, not HubSpot defaults that sound impressive but mean nothing.' },
-              { icon: Mail, title: 'Email & Sequences', desc: 'Sales email templates, multi-step nurture sequences, re-engagement campaigns, meeting booking flows, and marketing email setup. Every touchpoint automated, branded, and tracked back to revenue.' },
-              { icon: Link2, title: 'Integrations', desc: 'Connect HubSpot to your website, accounting software (QuickBooks, Xero), phone system (Aircall, JustCall), email (Gmail, Outlook), calendar, scheduling tools, and marketing platforms. Native integrations, Zapier, and custom API connections.' },
-              { icon: Users, title: 'Lead Scoring', desc: 'Fit and engagement scoring models that surface the right leads at the right time. Predictive lead scoring (in higher tiers) configured properly so sales reps work the leads most likely to close.' },
-              { icon: RefreshCw, title: 'Data Migration', desc: 'Clean migration from Salesforce, Pipedrive, Zoho, spreadsheets, or any other source. Deduplication, field mapping, association preservation, and historical activity import where the source supports it.' },
+              { icon: Settings, title: 'Portal Setup & Onboarding', desc: 'A scope can cover account settings, roles, permissions, teams, default properties, currency, sending domains, branding, and security controls.' },
+              { icon: Layers, title: 'Pipeline Design', desc: 'Pipeline design can cover stages, entry and exit criteria, required fields, ownership, forecasting categories, and separate motions where the process requires them.' },
+              { icon: Zap, title: 'Workflow Automation', desc: 'Approved workflows may cover assignment, notifications, tasks, lifecycle transitions, stage automation, suppression, and lead nurturing.' },
+              { icon: BarChart3, title: 'Custom Reporting', desc: 'Dashboard definitions can cover pipeline movement, response time, activity, attribution, conversion, and forecasting where the underlying data supports them.' },
+              { icon: Mail, title: 'Email & Sequences', desc: 'A scope may include sales templates, nurture sequences, re-engagement, booking flows, consent rules, and email configuration supported by the licensed tier.' },
+              { icon: Link2, title: 'Integrations', desc: 'Website, accounting, calling, email, calendar, scheduling, and marketing connections are assessed using native integrations, middleware, or APIs.' },
+              { icon: Users, title: 'Lead Scoring', desc: 'Fit and engagement scoring can be designed around explicit criteria, with predictive features considered only when the HubSpot tier and data support them.' },
+              { icon: RefreshCw, title: 'Data Migration', desc: 'Migration can include source inventory, deduplication rules, field mapping, test imports, association checks, validation, and rollback planning.' },
             ].map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-xl border shadow-sm">
                 <item.icon className="w-8 h-8 text-orange-600 mb-3" />
@@ -139,18 +139,18 @@ export default function HubSpotConsulting() {
       {/* HubSpot Hubs */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Every Hub. Every Tier.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Match the Scope to the Hub and Tier</h2>
           <p className="text-lg text-gray-600 mb-8">
-            HubSpot has multiple Hubs and tiers, and each one has its own configuration quirks. We work across all of them.
+            HubSpot has multiple Hubs and tiers, each with different capabilities and configuration requirements. Platform fit is confirmed during discovery.
           </p>
           <div className="grid md:grid-cols-3 gap-4">
             {[
-              { name: 'Sales Hub', desc: 'Pipelines, deal automation, sequences, meeting links, quotes, forecasting, and rep performance dashboards. Starter through Enterprise.' },
-              { name: 'Marketing Hub', desc: 'Forms, landing pages, email campaigns, workflows, lead scoring, attribution reporting, and ABM. Starter through Enterprise.' },
-              { name: 'Service Hub', desc: 'Tickets, SLAs, knowledge base, customer feedback surveys, and service automation. Starter through Enterprise.' },
-              { name: 'Operations Hub', desc: 'Data sync, programmable automation, custom code workflows, and data quality automation. Starter through Enterprise.' },
-              { name: 'CMS Hub', desc: 'Website themes, smart content, dynamic pages, and CRM-powered web experiences. Starter through Enterprise.' },
-              { name: 'Commerce Hub', desc: 'Invoicing, payments, subscriptions, and B2B commerce workflows. Setup, configuration, and reporting.' },
+              { name: 'Sales Hub', desc: 'Pipelines, automation, sequences, meetings, quotes, forecasting, and sales dashboards. Feature availability depends on tier.' },
+              { name: 'Marketing Hub', desc: 'Forms, landing pages, email, workflows, scoring, attribution, and campaign reporting. Feature availability depends on tier.' },
+              { name: 'Service Hub', desc: 'Tickets, SLAs, knowledge base, feedback, and service automation. Feature availability depends on tier.' },
+              { name: 'Operations Hub', desc: 'Data sync, automation, custom-code workflows, and data-quality tools. Feature availability depends on tier.' },
+              { name: 'Content Hub', desc: 'Website themes, landing pages, smart content, and CRM-connected web experiences. Feature availability depends on tier.' },
+              { name: 'Commerce Hub', desc: 'Quotes, invoices, payments, subscriptions, and commerce reporting where account and regional availability support them.' },
             ].map((item, i) => (
               <div key={i} className="bg-white p-5 rounded-xl border">
                 <h3 className="font-semibold text-gray-900 mb-2">{item.name}</h3>
@@ -166,13 +166,13 @@ export default function HubSpotConsulting() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How We Work</h2>
           <p className="text-lg text-gray-600 mb-8">
-            We use a three-phase process for every HubSpot engagement. It is structured, predictable, and fast.
+            Our standard proposal uses three controlled phases, with dependencies and acceptance criteria documented before work starts.
           </p>
           <div className="space-y-8">
             {[
-              { step: '01', title: 'HubSpot Audit (Week 1)', desc: 'We review your current HubSpot setup — portal settings, pipelines, workflows, data quality, properties, integrations, and reports. Using AI, we scan your entire database for quality issues and your workflows for logic conflicts. You receive a detailed audit report showing what is working, what is broken, and what is missing, with prioritized recommendations.' },
-              { step: '02', title: 'Strategy & Configuration (Week 2-3)', desc: 'Based on the audit and your business goals, we design and build the optimal HubSpot configuration. Pipelines, properties, automation, templates, dashboards, integrations, and lead scoring — all customized to your process. Migration and deduplication happen here. You see incremental progress every few days, not just at the end.' },
-              { step: '03', title: 'Training & Launch (Week 3-4)', desc: 'Your team gets role-based training with their actual data. Sales reps learn deal management, sequences, and meeting links. Marketers learn workflows and lists. Managers learn dashboards and forecasting. Admins learn ongoing maintenance. We monitor adoption for two weeks post-launch and adjust based on real usage.' },
+              { step: '01', title: 'Audit & Scope', desc: 'We review the agreed portal areas, document current-state risks, and identify the data, workflows, reports, and integrations that need deeper access. No production change is made during discovery.' },
+              { step: '02', title: 'Configuration & Validation', desc: 'Approved pipelines, properties, automation, templates, dashboards, integrations, or migration tasks are built in priority order and checked against written acceptance criteria.' },
+              { step: '03', title: 'Training & Handoff', desc: 'Role-based training, documentation, launch support, and any post-launch monitoring included in the proposal are completed before handoff.' },
             ].map((item, i) => (
               <div key={i} className="flex gap-6">
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center flex-shrink-0">
@@ -188,23 +188,23 @@ export default function HubSpotConsulting() {
         </div>
       </section>
 
-      {/* Pricing */}
+      {/* Scope */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Timeline and Investment</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Scope and Delivery Plan</h2>
           <p className="text-lg text-gray-600 mb-8">
-            All projects are priced before we start. No hourly billing, no scope changes mid-project.
+            Projects use written pricing and scope before work starts. Any requested change is documented with its impact before implementation continues.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-2xl border shadow-sm">
               <Clock className="w-10 h-10 text-orange-600 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">2 to 4 Weeks</h3>
-              <p className="text-gray-600">From audit to launch. AI-accelerated delivery means you are not waiting months to see results. Most teams have a working pipeline by the end of week two.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Timing After Discovery</h3>
+              <p className="text-gray-600">The delivery plan is confirmed after data, licensing, integrations, stakeholder availability, testing, and approval dependencies are understood.</p>
             </div>
             <div className="bg-white p-8 rounded-2xl border shadow-sm">
               <DollarSign className="w-10 h-10 text-orange-600 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">From $1,500 CAD</h3>
-              <p className="text-gray-600">Fixed pricing. No hourly billing, no change orders. The investment is agreed in writing before we start. Most full implementations land between $2,500 and $8,000.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Written Commercial Proposal</h3>
+              <p className="text-gray-600">The proposal confirms the scope, exclusions, dependencies, approval points, commercial terms, and change-control process before work begins.</p>
             </div>
           </div>
         </div>
@@ -213,18 +213,18 @@ export default function HubSpotConsulting() {
       {/* Why Us */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Emergent Logic for HubSpot</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Emergent Logic Brings to HubSpot Work</h2>
           <p className="text-lg text-gray-600 mb-8">
-            We are HubSpot specialists, but we are also platform-agnostic — which means our advice is built around your business, not a partnership tier.
+            Emergent Logic is listed in HubSpot&apos;s public Solutions Directory while retaining a cross-platform view of CRM fit and scope.
           </p>
           <div className="space-y-3">
             {[
-              'Senior HubSpot consultants with deep CRM experience',
-              'We also work with Salesforce and Zoho — so we give honest recommendations, not vendor-locked advice',
-              'AI-powered audit identifies every issue in your portal before we touch anything',
-              'Training is built into every engagement — not an upsell',
-              'Fixed pricing with no surprises and no hourly billing',
-              'Two weeks of post-launch support included in every project',
+              'Direct delivery with written scope, testing, and acceptance criteria',
+              'Cross-platform fit discussions across HubSpot, Salesforce, and Zoho with relevant partner relationships disclosed',
+              'AI-assisted checks help surface configuration, data, and workflow risks before approved changes begin',
+              'Training, documentation, and support are included when defined in the written scope',
+              'Fixed-price options with change control before out-of-scope work begins',
+              'HubSpot Solutions Partner status stated without invented tiers, certifications, reviews, or results',
               'Based in Surrey, BC — serving Greater Vancouver and businesses across Canada',
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
@@ -242,13 +242,13 @@ export default function HubSpotConsulting() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
           <div className="space-y-6">
             {[
-              { q: 'How long does a HubSpot implementation take?', a: 'Most of our HubSpot projects are delivered in 2 to 4 weeks from kickoff to launch. Larger or multi-Hub builds can take 5 to 6 weeks. The timeline is committed in writing before the project starts.' },
+              { q: 'How long does a HubSpot implementation take?', a: 'Timing depends on data, licensing, integrations, stakeholder availability, testing, and acceptance criteria. The proposed delivery plan and dependencies are documented before work starts.' },
               { q: 'Which HubSpot tier do I need?', a: 'It depends on what you are trying to accomplish. Sales Hub Starter works for small teams that need a basic pipeline and sequences. Sales Hub Professional is the sweet spot for most growing teams that need workflows and custom reporting. Enterprise is required for predictive scoring, advanced permissions, and large-scale ABM. We help you make the call during the discovery audit so you do not overpay or underbuy.' },
-              { q: 'Can you fix a portal someone else built?', a: 'Yes — and we do this often. We audit the existing setup, document what is there, identify what is broken or unused, and rebuild what needs rebuilding. We do not start from scratch unless absolutely necessary.' },
-              { q: 'Do you handle data migrations into HubSpot?', a: 'Yes. We migrate from Salesforce, Pipedrive, Zoho, Monday, Excel, Google Sheets, and most legacy CRMs. Migration includes deduplication, field mapping, association preservation, and validation. We do not move dirty data into a clean system.' },
-              { q: 'Do you train our team on HubSpot?', a: 'Yes. Training is included in every engagement. We deliver role-based sessions for sales, marketing, service, and admin users using your real data. We record the sessions and leave behind written documentation for new hires.' },
-              { q: 'What if our needs change after launch?', a: 'Two weeks of post-launch support is included. After that, you can either run HubSpot yourself with the documentation we leave behind, or work with us on a monthly basis for ongoing optimization, new workflows, and reporting changes.' },
-              { q: 'Are you a HubSpot Solutions Partner?', a: 'We work closely with the HubSpot ecosystem and have the technical depth of a partner-tier agency, but we deliberately stay vendor-neutral so we can also recommend Salesforce or Zoho when those are a better fit. You get senior expertise without the vendor bias.' },
+              { q: 'Can you fix a portal someone else built?', a: 'Yes. The first step is an audit of the existing setup, followed by documentation of what is active, broken, unused, or risky. The proposal then identifies what can be retained and what needs controlled rebuilding.' },
+              { q: 'Do you handle data migrations into HubSpot?', a: 'A migration scope can cover Salesforce, Pipedrive, Zoho, Monday, spreadsheets, and other exportable sources. The exact plan depends on available fields, associations, activities, API access, and validation requirements.' },
+              { q: 'Do you train our team on HubSpot?', a: 'Role-based training and written documentation can be included for sales, marketing, service, and admin users. The audience, data access, recordings, and handoff materials are confirmed in the proposal.' },
+              { q: 'What if our needs change after launch?', a: 'The proposal defines the post-launch support window. New workflows, reporting changes, or ongoing administration are scoped separately when they fall outside the agreed work.' },
+              { q: 'Are you a HubSpot Solutions Partner?', a: 'Yes. Emergent Logic Consulting is listed in HubSpot’s public Solutions Directory as a Solutions Partner. We do not claim a tier, accreditation, certification, review history, or client result beyond what the directory and our own public evidence support.' },
             ].map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-xl border">
                 <h3 className="font-bold text-gray-900 mb-2">{item.q}</h3>
@@ -318,13 +318,13 @@ export default function HubSpotConsulting() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Get More Out of HubSpot</h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Book a free HubSpot audit. We will review your portal, identify what is working and what is not, and tell you exactly what it would take to fix it. No obligation, no pitch.
+            Request a HubSpot consultation to review the visible symptoms, likely risks, and information needed for a practical audit or implementation scope. No production changes are made during discovery.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <TrackedCTA ctaName="Book a Free Strategy Call - HubSpot Footer" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation - HubSpot Footer" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-orange-900 hover:bg-orange-100 font-semibold px-8">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -334,7 +334,7 @@ export default function HubSpotConsulting() {
               </Button>
             </Link>
           </div>
-          <p className="text-white/60 text-sm mt-6">Prefer email? <Link href="/contact" className="underline hover:text-white">Send us a message</Link> and we will get back to you within 24 hours.</p>
+          <p className="text-white/60 text-sm mt-6">Prefer email? <Link href="/contact" className="underline hover:text-white">Send us a message</Link>. Requests are reviewed on business days.</p>
         </div>
       </section>
 

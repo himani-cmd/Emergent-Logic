@@ -61,11 +61,11 @@ export default function HubspotVsSalesforce() {
             
             <div className="prose prose-lg max-w-none mt-8">
               <p className="lead text-xl text-gray-600">
-                Choosing a CRM is one of the most important technology decisions a growing business can make. Get it right and your sales team closes more deals with less effort. Get it wrong and you have an expensive system nobody uses.
+                A CRM decision shapes how a growing business captures leads, assigns work, records activity, and reports on the sales process. Platform fit matters, but implementation and ownership matter too.
               </p>
               
               <p>
-                HubSpot and Salesforce are the two most popular CRM platforms in Canada — and for good reason. Both are powerful, well-supported, and built for scale. But they are very different products designed for very different businesses.
+                HubSpot and Salesforce are widely considered CRM options in Canada. They use different product, configuration, and administration models, so the right shortlist depends on operating requirements.
               </p>
               
               <div className="bg-violet-50 border-l-4 border-violet-500 p-6 my-8 rounded-r-lg">
@@ -73,16 +73,16 @@ export default function HubspotVsSalesforce() {
                   <AlertCircle className="w-5 h-5" /> Key Takeaway
                 </h4>
                 <p className="text-violet-800 mb-0">
-                  Bottom line up front: HubSpot is the better fit for most Canadian SMBs (under 200 employees). Salesforce is better for complex enterprise sales processes or businesses that need deep custom development.
+                  Bottom line up front: evaluate HubSpot when the process is relatively standardized and marketing-sales coordination matters. Evaluate Salesforce when the operating model requires deeper customization, architecture, or governance.
                 </p>
               </div>
               
               <h2>The Core Difference</h2>
               <p>
-                <strong>HubSpot</strong> was built for growing businesses. It is designed to be used out of the box with minimal technical setup. The free tier is genuinely useful, and the paid tiers scale predictably.
+                <strong>HubSpot</strong> offers a comparatively approachable starting experience for common marketing, sales, and service workflows. Verify which current products, seats, contacts, limits, and onboarding requirements your scope needs.
               </p>
               <p>
-                <strong>Salesforce</strong> was built for enterprise. It is the most customizable CRM on the planet — which also makes it the most complex. It can do almost anything, but it often requires a certified Salesforce developer to configure and maintain it.
+                <strong>Salesforce</strong> supports deeply customized sales and service operations. That flexibility can also increase configuration, governance, testing, and administration requirements.
               </p>
               
               <h2>Feature Comparison</h2>
@@ -96,23 +96,23 @@ export default function HubspotVsSalesforce() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr><td className="p-3 border">Ease of setup</td><td className="p-3 border">Fast (days–weeks)</td><td className="p-3 border">Complex (weeks–months)</td></tr>
-                    <tr><td className="p-3 border">Starting price (CAD)</td><td className="p-3 border">Free – $65/mo</td><td className="p-3 border">~$40/user/mo (no free tier)</td></tr>
-                    <tr><td className="p-3 border">Built-in marketing tools</td><td className="p-3 border">Yes — fully integrated</td><td className="p-3 border">Requires add-ons</td></tr>
-                    <tr><td className="p-3 border">Customization</td><td className="p-3 border">Good for most needs</td><td className="p-3 border">Virtually unlimited</td></tr>
-                    <tr><td className="p-3 border">Best for</td><td className="p-3 border">SMBs, startups, agencies</td><td className="p-3 border">Enterprise, complex sales</td></tr>
-                    <tr><td className="p-3 border">Implementation time</td><td className="p-3 border">2–4 weeks</td><td className="p-3 border">2–6 months</td></tr>
+                    <tr><td className="p-3 border">Ease of setup</td><td className="p-3 border">Often lighter for standard processes</td><td className="p-3 border">Often heavier for customized processes</td></tr>
+                    <tr><td className="p-3 border">Commercial model</td><td className="p-3 border">Product, seat, and contact tiers; verify current quote</td><td className="p-3 border">Edition, seat, cloud, and add-on costs; verify current quote</td></tr>
+                    <tr><td className="p-3 border">Marketing scope</td><td className="p-3 border">Connected product family; required hubs vary</td><td className="p-3 border">Products and integrations vary by scope</td></tr>
+                    <tr><td className="p-3 border">Customization</td><td className="p-3 border">Strong fit for standardized processes</td><td className="p-3 border">Supports deeper custom architecture</td></tr>
+                    <tr><td className="p-3 border">Evaluate when</td><td className="p-3 border">Usability and marketing-sales coordination lead</td><td className="p-3 border">Complex process and governance lead</td></tr>
+                    <tr><td className="p-3 border">Implementation timing</td><td className="p-3 border">Depends on migration, automation, integrations, and adoption</td><td className="p-3 border">Depends on architecture, migration, integrations, and governance</td></tr>
                   </tbody>
                 </table>
               </div>
               
               <h2>When to Choose HubSpot</h2>
               <ul>
-                <li>You are a small to mid-sized business (under 200 employees)</li>
+                <li>Your sales process is reasonably standardized</li>
                 <li>You want marketing and sales in one platform without additional integrations</li>
-                <li>You need to be up and running quickly — within weeks, not months</li>
+                <li>You want a relatively approachable starting experience</li>
                 <li>Your team is not highly technical and you want something intuitive</li>
-                <li>You want predictable, transparent pricing</li>
+                <li>You are prepared to verify how product, seat, contact, and onboarding costs change with scope</li>
               </ul>
               
               <h2>When to Choose Salesforce</h2>
@@ -125,21 +125,21 @@ export default function HubspotVsSalesforce() {
               </ul>
               
               <div className="bg-amber-50 border-l-4 border-amber-500 p-6 my-8 rounded-r-lg">
-                <h4 className="font-bold text-amber-900 mb-2">Cost Reality Check</h4>
+                <h4 className="font-bold text-amber-900 mb-2">Total-Cost Check</h4>
                 <p className="text-amber-800 mb-0">
-                  For most Canadian SMBs, the total cost of a HubSpot implementation is 40 to 70 percent lower than an equivalent Salesforce implementation — when you factor in setup, training, and ongoing administration.
+                  Compare the current vendor quote plus implementation, migration, integrations, training, administration, governance, and expected change. Licence price alone is not a reliable total-cost comparison.
                 </p>
               </div>
               
-              <h2>Our Recommendation for Canadian Businesses</h2>
+              <h2>A Practical Recommendation Process</h2>
               <p>
-                If you are a growing Canadian business with a sales team of 2 to 50 people, HubSpot is almost certainly the right choice. It is faster to implement, easier to use, and the integrated marketing tools mean you can build your entire revenue system in one platform.
+                Test the shortlist against one real lead-to-revenue workflow. Include users, data, permissions, integrations, reporting, exception handling, administration, and the full commercial package.
               </p>
               <p>
-                Not sure which one is right for your business? Emergent Logic offers free 30-minute strategy calls to help you decide — with no pressure and no sales pitch.
+                Not sure which one fits your operating requirements? Use a CRM consultation to compare the process, data, integration, administration, and governance requirements before selecting a platform.
               </p>
               <p>
-                Need help with <Link href="/crm-implementation" className="text-violet-600 hover:underline">CRM implementation in Surrey, BC</Link>? We handle the entire process from selection to training.
+                Need help defining a <Link href="/services/crm-implementation" className="text-violet-600 hover:underline">CRM implementation scope in Surrey, BC</Link>? Start with the process and evidence needed for a responsible decision.
               </p>
             </div>
             
@@ -147,11 +147,11 @@ export default function HubspotVsSalesforce() {
             <div className="mt-12 p-8 bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl text-white">
               <h3 className="text-2xl font-bold mb-4">Ready to get started?</h3>
               <p className="text-white/80 mb-6">
-                Not sure which CRM is right for your business? Book a free 30-minute strategy call with Emergent Logic and we will give you a straight answer.
+                Describe the process and constraints the CRM needs to support. We will use the consultation to identify the decision that needs evidence next.
               </p>
               <Link href="/contact">
                 <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
             </div>

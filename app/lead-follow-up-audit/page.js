@@ -66,12 +66,12 @@ const relatedResources = [
     text: 'Why faster response depends on ownership, workflow, and visibility after inquiry capture.',
   },
   {
-    title: 'Website Leads to CRM Case Study',
+    title: 'Website Leads to CRM Implementation Pattern',
     href: '/case-studies/website-leads-to-crm-follow-up-system',
     text: 'A representative pattern for turning website inquiries into structured follow-up.',
   },
   {
-    title: 'Mortgage Lead Follow-Up Case Study',
+    title: 'Mortgage Lead Follow-Up Implementation Pattern',
     href: '/case-studies/mortgage-lead-follow-up-system',
     text: 'A representative pattern for applications, renewals, refinances, documents, and follow-up.',
   },

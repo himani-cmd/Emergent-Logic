@@ -20,14 +20,14 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Case Study: Safe HubSpot CRM Cleanup',
+  title: 'Implementation Pattern: Safe HubSpot CRM Cleanup',
   description:
     'How to safely audit, clean, and rebuild HubSpot CRM data, lifecycle stages, workflows, and reporting without breaking sales operations.',
   alternates: {
     canonical: 'https://www.emergent-logic.ca/case-studies/hubspot-crm-cleanup-safe-implementation',
   },
   openGraph: {
-    title: 'Representative Case Study: Safe HubSpot CRM Cleanup | Emergent Logic',
+    title: 'Implementation Pattern: Safe HubSpot CRM Cleanup | Emergent Logic',
     description:
       'How to clean HubSpot CRM safely: audit first, preserve records, stage changes, rebuild lifecycle logic, and add automation guardrails.',
     url: 'https://www.emergent-logic.ca/case-studies/hubspot-crm-cleanup-safe-implementation',
@@ -96,7 +96,7 @@ const safeguards = [
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Representative Case Study: Safe HubSpot CRM Cleanup and Workflow Rebuild',
+  headline: 'Implementation Pattern: Safe HubSpot CRM Cleanup and Workflow Rebuild',
   description: metadata.description,
   image: 'https://www.emergent-logic.ca/og-image.png',
   author: {
@@ -125,7 +125,7 @@ export default function HubSpotCRMCleanupSafeImplementationCaseStudy() {
           <div className="max-w-4xl mx-auto">
             <Breadcrumbs
               items={[
-                { label: 'Case Studies', href: '/case-studies' },
+                { label: 'Implementation Patterns', href: '/case-studies' },
                 {
                   label: 'Safe HubSpot CRM Cleanup',
                   href: '/case-studies/hubspot-crm-cleanup-safe-implementation',
@@ -140,7 +140,7 @@ export default function HubSpotCRMCleanupSafeImplementationCaseStudy() {
               Safe HubSpot CRM Cleanup and Workflow Rebuild
             </h1>
             <p className="text-xl text-gray-600 mb-6">
-              This representative case study shows the way we approach a messy HubSpot portal: protect the existing sales operation first, clean the data in controlled steps, then rebuild workflows and reporting on top of a trustworthy CRM foundation.
+              This implementation pattern shows the way we approach a messy HubSpot portal: protect the existing sales operation first, clean the data in controlled steps, then rebuild workflows and reporting on top of a trustworthy CRM foundation.
             </p>
             <p className="text-sm text-gray-500 mb-8">
               Note: this is a method-based implementation example, not a fabricated client result. It reflects the cleanup and implementation pattern Emergent Logic uses when evaluating HubSpot CRM work.
@@ -148,7 +148,7 @@ export default function HubSpotCRMCleanupSafeImplementationCaseStudy() {
 
             <ShareButtons
               url="https://www.emergent-logic.ca/case-studies/hubspot-crm-cleanup-safe-implementation"
-              title="Representative Case Study: Safe HubSpot CRM Cleanup"
+              title="Implementation Pattern: Safe HubSpot CRM Cleanup"
             />
 
             <div className="grid md:grid-cols-3 gap-4 my-10">

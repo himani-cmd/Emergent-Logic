@@ -90,10 +90,10 @@ export default function ImmigrationConsultantCrmCanada() {
             We help immigration consultants organize consultation intake, website forms, WhatsApp, email, and follow-up into one CRM workflow. The goal is simple: fewer missed inquiries, clearer ownership, and better visibility from first message to retained client.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                 <Button size="lg" className="w-full bg-white text-emerald-950 hover:bg-emerald-100 font-semibold px-8 sm:w-auto">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -159,7 +159,7 @@ export default function ImmigrationConsultantCrmCanada() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Related resources</h2>
           <div className="grid md:grid-cols-3 gap-4">
             <Link href="/blog/crm-automation-for-immigration-consultants" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-emerald-800">Immigration CRM automation guide</p><p className="text-sm text-gray-600 mt-1">How intake, reminders, and follow-up workflows should fit together.</p></Link>
-            <Link href="/case-studies/immigration-consultation-intake-automation" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-emerald-800">Immigration intake case study</p><p className="text-sm text-gray-600 mt-1">A practical implementation pattern for forms, calls, WhatsApp, CRM routing, and follow-up.</p></Link>
+            <Link href="/case-studies/immigration-consultation-intake-automation" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-emerald-800">Immigration intake implementation pattern</p><p className="text-sm text-gray-600 mt-1">A practical implementation pattern for forms, calls, WhatsApp, CRM routing, and follow-up.</p></Link>
             <Link href="/services/crm-implementation" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-emerald-800">CRM implementation</p><p className="text-sm text-gray-600 mt-1">Set up HubSpot, Salesforce, or Zoho properly.</p></Link>
             <Link href="/lead-follow-up-audit" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-emerald-800">5-point consultation audit</p><p className="text-sm text-gray-600 mt-1">A practical review of one intake path.</p></Link>
           </div>
@@ -184,13 +184,13 @@ export default function ImmigrationConsultantCrmCanada() {
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h2 className="text-3xl font-bold mb-4">Want cleaner consultation intake?</h2>
           <p className="text-white/75 mb-8">We can review your forms, WhatsApp/email workflow, CRM routing, and reporting in one focused strategy call.</p>
-          <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
+          <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
             <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-white text-emerald-950 hover:bg-emerald-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button>
+              <Button size="lg" className="bg-white text-emerald-950 hover:bg-emerald-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button>
             </a>
           </TrackedCTA>
           <Link href="/lead-follow-up-audit" className="inline-flex mt-4 text-emerald-100 hover:text-white underline underline-offset-4">
-            Or request a free 5-point consultation follow-up audit
+            Or request a 5-point consultation follow-up audit
           </Link>
         </div>
       </section>

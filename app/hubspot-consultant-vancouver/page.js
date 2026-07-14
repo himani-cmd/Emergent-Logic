@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, MapPin, Zap, BarChart3, Globe, Settings } from 'lucide-react';
 
 export const metadata = {
-  title: 'HubSpot Consultant Vancouver | CRM Setup & Cleanup',
+  title: 'HubSpot Consultant Vancouver | Cleanup',
   description: 'HubSpot consulting in Vancouver for CRM setup, cleanup, workflows, reporting, integrations, and practical team adoption.',
   alternates: { canonical: 'https://www.emergent-logic.ca/hubspot-consultant-vancouver' },
   openGraph: {
@@ -21,12 +21,12 @@ export const metadata = {
 };
 
 const services = [
-  { title: 'HubSpot CRM Setup', description: 'Complete CRM configuration: pipelines, deal stages, contact properties, email templates, and custom dashboards tailored to your Vancouver business.' },
-  { title: 'Marketing Hub Automation', description: 'Lead nurturing workflows, email sequences, lead scoring, A/B testing, and campaign attribution — all automated.' },
-  { title: 'Sales Hub Configuration', description: 'Meeting scheduling, email tracking, deal pipelines, quotes, and sales analytics to supercharge your team\'s productivity.' },
-  { title: 'HubSpot CMS Development', description: 'Custom website themes, landing pages, and blog templates built on HubSpot CMS — fully integrated with your CRM.' },
-  { title: 'Service Hub Setup', description: 'Ticketing, knowledge base, customer portal, and feedback surveys to deliver exceptional customer experience.' },
-  { title: 'Migration & Integration', description: 'Seamless migration from Salesforce, Mailchimp, or any CRM. We integrate HubSpot with your entire tech stack.' },
+  { title: 'HubSpot CRM Setup', description: 'A written scope can cover pipelines, deal stages, contact properties, templates, permissions, and decision-ready dashboards.' },
+  { title: 'Marketing Hub Automation', description: 'Workflow design for lead nurturing, email sequences, scoring, testing, suppression, and campaign attribution.' },
+  { title: 'Sales Hub Configuration', description: 'Configuration can cover meetings, email tracking, deal pipelines, quotes, ownership, tasks, and sales reporting.' },
+  { title: 'HubSpot CMS Development', description: 'Landing pages, blog templates, forms, and CRM-connected website components can be scoped where the HubSpot tier supports them.' },
+  { title: 'Service Hub Setup', description: 'Ticketing, knowledge-base, customer-portal, feedback, and service-automation requirements can be assessed and configured by scope.' },
+  { title: 'Migration & Integration', description: 'Migration starts with source inventory, field mapping, test imports, validation, rollback planning, and approval before production changes.' },
 ];
 
 const hubs = [
@@ -38,11 +38,11 @@ const hubs = [
 
 const reasons = [
   'Local presence — we serve Metro Vancouver from our Surrey, BC office',
-  'All-in-one expertise: CRM, Marketing Hub, Sales Hub, CMS, and Service Hub',
-  'AI-accelerated delivery: shorter implementation cycles without skipping process design',
-  'We build revenue systems, not just databases',
+  'Listed in HubSpot’s public Solutions Directory as a Solutions Partner',
+  'AI-assisted analysis with human review before high-impact changes',
+  'Process, ownership, and reporting rules are defined before automation',
   'Practical scope and transparent estimates before work starts',
-  'Ongoing support and optimization after launch',
+  'Testing, training, and post-launch support are defined in the proposal',
 ];
 
 const leakSignals = [
@@ -66,8 +66,8 @@ const leakSignals = [
 
 const faqs = [
   { q: 'How much does HubSpot implementation cost in Vancouver?', a: 'HubSpot CRM is free to start, but a useful implementation depends on the scope: pipelines, properties, workflows, reporting, migration, integrations, and training. We review the setup first, then give a clear estimate before work starts.' },
-  { q: 'What HubSpot Hubs do you implement?', a: 'We implement all HubSpot Hubs: CRM, Sales Hub, Marketing Hub, Service Hub, CMS Hub, and Operations Hub. Most Vancouver businesses start with CRM + Marketing Hub.' },
-  { q: 'Can you migrate us from Salesforce to HubSpot?', a: 'Yes. We handle Salesforce-to-HubSpot migrations regularly. We clean, map, and migrate your data with zero loss — and train your team on the new platform.' },
+  { q: 'Which HubSpot Hubs can a scope cover?', a: 'A scope may involve CRM, Sales Hub, Marketing Hub, Service Hub, Content Hub, or Operations Hub, subject to the licensed tier and confirmed requirements. We document platform fit before proposing implementation.' },
+  { q: 'Can you migrate us from Salesforce to HubSpot?', a: 'A Salesforce-to-HubSpot migration can be scoped when the source data and target requirements are understood. The plan covers backups, field mapping, test imports, validation, rollback, approval, and role-based training.' },
 ];
 
 export default function HubspotConsultantVancouver() {
@@ -78,7 +78,7 @@ export default function HubspotConsultantVancouver() {
       <section className="overflow-hidden pt-32 pb-16 bg-gradient-to-br from-violet-900 via-indigo-900 to-purple-900">
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[
-            { label: 'Services', href: '/services' },
+            { label: 'Services', href: '/#services' },
             { label: 'HubSpot Consultant Vancouver', href: '/hubspot-consultant-vancouver' },
           ]} />
           <div className="flex items-center gap-2 text-violet-300 mb-4"><MapPin className="w-5 h-5 flex-shrink-0" /><span>Vancouver & Metro Vancouver</span></div>
@@ -89,8 +89,8 @@ export default function HubspotConsultantVancouver() {
             Emergent Logic helps Vancouver and Metro Vancouver teams set up, clean up, and improve HubSpot. We connect pipelines, workflows, reporting, integrations, and lead follow-up into a system the team can use every day.
           </p>
           <div className="flex max-w-3xl flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto"><Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
-            <Link href="/marketing-automation" className="w-full sm:w-auto"><Button size="lg" className="w-full border border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white sm:w-auto">Marketing Automation Services</Button></Link>
+            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto"><Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
+            <Link href="/services/marketing-automation" className="w-full sm:w-auto"><Button size="lg" className="w-full border border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white sm:w-auto">Marketing Automation Services</Button></Link>
           </div>
         </div>
       </section>
@@ -108,7 +108,7 @@ export default function HubspotConsultantVancouver() {
 
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Why Vancouver businesses choose us for HubSpot</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Why Vancouver teams consider Emergent Logic for HubSpot</h2>
           <ul className="space-y-4 max-w-3xl mb-12">
             {reasons.map((reason, i) => (
               <li key={i} className="flex items-start gap-3"><CheckCircle className="w-6 h-6 text-violet-500 flex-shrink-0" /><span className="text-gray-700">{reason}</span></li>
@@ -160,7 +160,7 @@ export default function HubspotConsultantVancouver() {
           <p className="text-gray-600 mb-4">Start here: <Link href="/blog/hubspot-consultant-vancouver" className="text-violet-600 hover:underline">Why Businesses Search for a HubSpot Consultant in Vancouver</Link> — what to look for and how to avoid a messy setup.</p>
           <p className="text-gray-600 mb-4">Read our comparison: <Link href="/blog/hubspot-vs-salesforce-canada" className="text-violet-600 hover:underline">HubSpot vs Salesforce: Which CRM is Right for Your Canadian Business?</Link></p>
           <p className="text-gray-600 mb-4">Learn how automation transforms your pipeline: <Link href="/blog/what-is-marketing-automation-small-business" className="text-violet-600 hover:underline">What is Marketing Automation and Does Your Business Need It?</Link></p>
-          <p className="text-gray-600">For the full scope, pricing, and timeline of how we work, see our <Link href="/services/hubspot-consulting" className="text-violet-600 hover:underline">HubSpot consulting service page</Link>.</p>
+          <p className="text-gray-600">For the work areas, controls, and discovery approach, see our <Link href="/services/hubspot-consulting" className="text-violet-600 hover:underline">HubSpot consulting service page</Link>. Scope, price, and timing are confirmed after discovery.</p>
         </div>
       </section>
 
@@ -177,7 +177,7 @@ export default function HubspotConsultantVancouver() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to get started with HubSpot?</h2>
           <p className="text-xl text-white/80 mb-8">Book a free 30-minute strategy call. We will map out your HubSpot implementation and show you exactly what is possible.</p>
-          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
         </div>
       </section>
 

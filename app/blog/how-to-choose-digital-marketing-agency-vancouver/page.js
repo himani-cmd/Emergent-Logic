@@ -90,8 +90,8 @@ export default function ChooseDigitalAgency() {
             
             <div className="mt-12 p-8 bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl text-white">
               <h3 className="text-2xl font-bold mb-4">Ready to get started?</h3>
-              <p className="text-white/80 mb-6">Want to see if Emergent Logic is the right fit? Book a free 30-minute strategy call — no obligation, no sales pressure.</p>
-              <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+              <p className="text-white/80 mb-6">Describe the CRM or follow-up problem you are trying to solve. We will use the consultation to determine whether the work fits our scope.</p>
+              <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
             </div>
           </div>
         </div>

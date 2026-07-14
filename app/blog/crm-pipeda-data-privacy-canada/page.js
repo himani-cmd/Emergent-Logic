@@ -26,7 +26,7 @@ export default function CrmPipedaPrivacy() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="flex items-center gap-2 text-indigo-300 text-sm mb-4"><Link href="/blog" className="hover:text-white">Blog</Link><span>/</span><span>Compliance</span></div>
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">CRM and PIPEDA: What Canadian Businesses Need to Know About Data Privacy in 2026</h1>
-          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Emergent Logic Team</span><span>•</span><span>May 2026</span><span>•</span><span>10 min read</span></div>
+          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Himani Kharbanda</span><span>•</span><span>May 2026</span><span>•</span><span>10 min read</span></div>
         </div>
       </section>
 
@@ -83,12 +83,12 @@ export default function CrmPipedaPrivacy() {
           </div>
           <div className="bg-white border rounded-xl p-6 shadow-sm">
             <h3 className="font-bold text-gray-800 mb-2">Call Recording</h3>
-            <p className="text-gray-600">If your CRM records calls for AI analysis or training, consent requirements apply. In Canada, at least one party must consent. Best practice: inform the other party at the start of every recorded call.</p>
+            <p className="text-gray-600">If your CRM records or analyzes calls, notice, consent, telemarketing, privacy, and contractual requirements may apply. Confirm the intended workflow with qualified Canadian privacy counsel and provide clear notice before recording or analysis begins.</p>
           </div>
         </div>
 
         <h2 className="text-3xl font-bold text-[#1E3A5F] mb-6">BC-Specific Considerations (PIPA)</h2>
-        <p className="text-gray-600 mb-12">British Columbia has its own Personal Information Protection Act (PIPA), which is substantially similar to PIPEDA but has differences in breach notification requirements and specific consent provisions. If your business is based in BC — as many of our clients are — ensure your CRM practices comply with both PIPEDA and PIPA. When in doubt, apply the stricter standard.</p>
+        <p className="text-gray-600 mb-12">British Columbia has its own Personal Information Protection Act (PIPA), which is substantially similar to PIPEDA but has differences in breach notification requirements and specific consent provisions. If your business is based in BC, assess which federal and provincial privacy requirements apply to your CRM practices and obtain qualified legal advice for your specific situation.</p>
 
         <h2 className="text-3xl font-bold text-[#1E3A5F] mb-6">Your CRM Data Privacy Audit Checklist</h2>
         <div className="bg-gray-50 rounded-2xl p-8 mb-12 border">

@@ -130,7 +130,7 @@ export default function Post() {
               <div className="bg-violet-50 border-l-4 border-violet-500 p-6 my-8 rounded-r-lg">
                 <h4 className="font-bold text-violet-900 mb-2 flex items-center gap-2"><AlertCircle className="w-5 h-5" /> Not sure which one you need?</h4>
                 <p className="text-violet-800 mb-3">If you are unsure whether your situation calls for consulting, implementation, or both, book a free 30-minute strategy call. We will give you an honest read on where you are and what the right next step looks like.</p>
-                <Link href="/contact"><Button className="bg-violet-600 hover:bg-violet-700">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+                <Link href="/contact"><Button className="bg-violet-600 hover:bg-violet-700">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
               </div>
 
               <h2>What to Look For Before You Hire</h2>
@@ -165,7 +165,7 @@ export default function Post() {
 
               <h2>Where to Go From Here</h2>
               <p>
-                If you already know what you want and are looking for execution, our <Link href="/services/crm-implementation" className="text-violet-600 hover:underline">CRM implementation</Link> page details what we deliver, on what timeline, at what price. If you have an existing CRM that needs assessment and rework, the <Link href="/services/crm-cleanup" className="text-violet-600 hover:underline">CRM cleanup</Link> page is the right starting point. If you are specifically considering HubSpot, the <Link href="/services/hubspot-consulting" className="text-violet-600 hover:underline">HubSpot consulting</Link> page goes deeper. And if your project involves connecting the CRM to several other tools in your stack, the <Link href="/services/crm-integration" className="text-violet-600 hover:underline">CRM integration</Link> page covers that work.
+                If you already know what you want and are looking for execution, our <Link href="/services/crm-implementation" className="text-violet-600 hover:underline">CRM implementation</Link> page explains the work areas and delivery controls. Scope, price, and timing are confirmed after discovery. If you have an existing CRM that needs assessment and rework, the <Link href="/services/crm-cleanup" className="text-violet-600 hover:underline">CRM cleanup</Link> page is the right starting point. If you are specifically considering HubSpot, the <Link href="/services/hubspot-consulting" className="text-violet-600 hover:underline">HubSpot consulting</Link> page goes deeper. And if your project involves connecting the CRM to several other tools in your stack, the <Link href="/services/crm-integration" className="text-violet-600 hover:underline">CRM integration</Link> page covers that work.
               </p>
 
               <p>
@@ -180,7 +180,7 @@ export default function Post() {
             <div className="mt-12 p-8 bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl text-white">
               <h3 className="text-2xl font-bold mb-4">Not sure if you need consulting, implementation, or both?</h3>
               <p className="text-white/80 mb-6">Book a free 30-minute strategy call. We will look at where you are, recommend the right shape of engagement, and you decide if we are the right fit.</p>
-              <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+              <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
             </div>
 
             <div className="mt-12">

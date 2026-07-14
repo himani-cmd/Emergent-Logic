@@ -89,10 +89,10 @@ export default function PropertyManagementCrmConsultingCanada() {
             We help property management companies route owner inquiries, rental evaluation forms, referrals, and website leads into a CRM workflow your team can actually follow. Cleaner intake, faster follow-up, clearer reporting.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-blue-950 hover:bg-blue-100 font-semibold px-8">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -158,7 +158,7 @@ export default function PropertyManagementCrmConsultingCanada() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Related resources</h2>
           <div className="grid md:grid-cols-3 gap-4">
             <Link href="/blog/property-management-lead-follow-up-crm" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-blue-800">Property management follow-up guide</p><p className="text-sm text-gray-600 mt-1">Why CRM routing matters after the inquiry.</p></Link>
-            <Link href="/case-studies/property-management-rental-inquiry-routing" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-blue-800">Property management routing case study</p><p className="text-sm text-gray-600 mt-1">A practical implementation pattern for owner inquiries, rental evaluations, and referrals.</p></Link>
+            <Link href="/case-studies/property-management-rental-inquiry-routing" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-blue-800">Property management routing implementation pattern</p><p className="text-sm text-gray-600 mt-1">A practical implementation pattern for owner inquiries, rental evaluations, and referrals.</p></Link>
             <Link href="/services/crm-implementation" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-blue-800">CRM implementation</p><p className="text-sm text-gray-600 mt-1">Pipelines, automation, dashboards, and training.</p></Link>
             <Link href="/lead-follow-up-audit" className="block bg-white border rounded-xl p-5 hover:shadow-md transition-shadow"><p className="font-semibold text-blue-800">5-point lead follow-up audit</p><p className="text-sm text-gray-600 mt-1">A practical review of one owner inquiry path.</p></Link>
           </div>
@@ -183,9 +183,9 @@ export default function PropertyManagementCrmConsultingCanada() {
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h2 className="text-3xl font-bold mb-4">Want cleaner owner inquiry follow-up?</h2>
           <p className="text-white/75 mb-8">We can review your website forms, inbox flow, CRM routing, and reporting in one focused strategy call.</p>
-          <TrackedCTA ctaName="Book a Free Strategy Call" destination="calendly">
+          <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
             <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-white text-blue-950 hover:bg-blue-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button>
+              <Button size="lg" className="bg-white text-blue-950 hover:bg-blue-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button>
             </a>
           </TrackedCTA>
           <Link href="/lead-follow-up-audit" className="inline-flex mt-4 text-blue-100 hover:text-white underline underline-offset-4">

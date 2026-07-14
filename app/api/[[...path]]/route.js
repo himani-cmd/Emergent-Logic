@@ -40,10 +40,14 @@ async function getDb() {
 }
 
 // Admin credentials (in production, store hashed in DB)
-const ADMIN_USERNAME = process.env.ADMIN_USERNAME || 'admin';
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'emergent2026';
+const ADMIN_USERNAME = process.env.ADMIN_USERNAME;
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
 
 function verifyAdmin(request) {
+  if (!ADMIN_USERNAME || !ADMIN_PASSWORD) {
+    return null;
+  }
+
   const authHeader = request.headers.get('authorization');
   if (!authHeader || !authHeader.startsWith('Basic ')) {
     return null;
@@ -98,7 +102,7 @@ export async function OPTIONS() {
 }
 
 export async function GET(request, { params }) {
-  const path = params?.path || [];
+  const { path = [] } = await params;
   const pathString = path.join('/');
   
   try {
@@ -193,7 +197,7 @@ export async function GET(request, { params }) {
 }
 
 export async function POST(request, { params }) {
-  const path = params?.path || [];
+  const { path = [] } = await params;
   const pathString = path.join('/');
   
   try {
@@ -214,9 +218,18 @@ export async function POST(request, { params }) {
     
     // POST /api/contact — server-side validation, honeypot, n8n forward, GA4 fires only on 2xx
     if (pathString === 'contact') {
+      const contactStartedAt = Date.now();
+
       // 1) Honeypot — silently accept and discard bot submissions
       // Field names: "website" (legacy) or "hp_field" (current). If filled, treat as bot.
       if ((body.website && body.website.trim() !== '') || (body.hp_field && body.hp_field.trim() !== '')) {
+        console.log(JSON.stringify({
+          level: 'info',
+          msg: 'contact_submission',
+          route: '/api/contact',
+          outcome: 'bot_discarded',
+          ms: Date.now() - contactStartedAt,
+        }));
         // Return success-looking response to avoid signaling honeypot trip to bots
         return NextResponse.json(
           { id: uuidv4(), accepted: true },
@@ -230,6 +243,21 @@ export async function POST(request, { params }) {
       const email = (body.email || '').toString().trim();
       const phone = (body.phone || '').toString().trim();
       const message = (body.message || '').toString().trim();
+      const cleanCampaignValue = (value) => String(value || '')
+        .replace(/[\u0000-\u001F\u007F]/g, '')
+        .trim()
+        .slice(0, 120);
+      const landingPageCandidate = String(body.landing_page || '').trim();
+      const attribution = {
+        utm_source: cleanCampaignValue(body.utm_source),
+        utm_medium: cleanCampaignValue(body.utm_medium),
+        utm_campaign: cleanCampaignValue(body.utm_campaign),
+        utm_content: cleanCampaignValue(body.utm_content),
+        utm_term: cleanCampaignValue(body.utm_term),
+        landing_page: landingPageCandidate.startsWith('/')
+          ? landingPageCandidate.replace(/[\u0000-\u001F\u007F]/g, '').slice(0, 200)
+          : '',
+      };
 
       const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       const errors = [];
@@ -240,6 +268,14 @@ export async function POST(request, { params }) {
       if (message.length > 5000) errors.push('message');
 
       if (errors.length > 0) {
+        console.warn(JSON.stringify({
+          level: 'warning',
+          msg: 'contact_submission',
+          route: '/api/contact',
+          outcome: 'validation_rejected',
+          invalid_field_count: errors.length,
+          ms: Date.now() - contactStartedAt,
+        }));
         return NextResponse.json(
           { error: 'Validation failed', fields: errors },
           { status: 400, headers: corsHeaders() }
@@ -255,6 +291,7 @@ export async function POST(request, { params }) {
         phone,
         message,
         source: 'website_contact_form',
+        ...attribution,
         created_at: new Date().toISOString()
       };
       let persistedLocally = false;
@@ -306,11 +343,28 @@ export async function POST(request, { params }) {
       }
 
       if (!persistedLocally && !forwardedToN8n) {
+        console.error(JSON.stringify({
+          level: 'error',
+          msg: 'contact_submission',
+          route: '/api/contact',
+          outcome: 'destination_unavailable',
+          ms: Date.now() - contactStartedAt,
+        }));
         return NextResponse.json(
           { error: 'Submission temporarily unavailable. Please try again shortly.' },
           { status: 503, headers: corsHeaders() }
         );
       }
+
+      console.log(JSON.stringify({
+        level: 'info',
+        msg: 'contact_submission',
+        route: '/api/contact',
+        outcome: 'accepted',
+        crm_forwarded: forwardedToN8n,
+        backup_persisted: persistedLocally,
+        ms: Date.now() - contactStartedAt,
+      }));
 
       const { _id, ...sanitized } = contactSubmission;
       return NextResponse.json(sanitized, { status: 201, headers: corsHeaders() });
@@ -363,7 +417,7 @@ export async function POST(request, { params }) {
 }
 
 export async function DELETE(request, { params }) {
-  const path = params?.path || [];
+  const { path = [] } = await params;
   const pathString = path.join('/');
   
   try {

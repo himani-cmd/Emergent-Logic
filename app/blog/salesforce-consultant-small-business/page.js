@@ -159,7 +159,7 @@ export default function SalesforceConsultantSmallBusiness() {
                 Small business Salesforce work can range widely depending on scope. A focused cleanup or admin sprint may be a few thousand dollars. A full implementation with migration, automation, reporting, and training can be more.
               </p>
               <p>
-                At Emergent Logic, Salesforce consulting starts from <strong>$3,500 CAD</strong> for focused projects. Larger implementations are scoped after discovery so the price reflects the actual workload, not a generic agency package.
+                Emergent Logic confirms pricing only after discovery. The written proposal defines the requested Salesforce scope, exclusions, dependencies, approval points, and commercial terms before work begins.
               </p>
 
               <h2>What to Ask Before Hiring a Salesforce Consultant</h2>

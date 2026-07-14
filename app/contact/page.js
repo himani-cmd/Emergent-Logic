@@ -12,25 +12,52 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
-import { Mail, MapPin, Clock, Send, CheckCircle, Calendar, Ear, Target, FileText, DollarSign, ThumbsUp, Phone } from 'lucide-react';
+import { Mail, MapPin, Clock, Send, CheckCircle, Calendar, Ear, Target, FileText, ShieldCheck, ThumbsUp, Phone } from 'lucide-react';
 
 const expectations = [
-  { icon: Ear, text: 'We listen to your business challenges' },
-  { icon: Target, text: 'We recommend the right CRM solution' },
-  { icon: FileText, text: 'We give you a clear project scope' },
-  { icon: DollarSign, text: 'We provide an exact price quote' },
-  { icon: ThumbsUp, text: 'You decide if we are the right fit' },
+  { icon: Ear, text: 'Clarify the operating problem' },
+  { icon: Target, text: 'Identify the affected process' },
+  { icon: ShieldCheck, text: 'Confirm constraints and risks' },
+  { icon: FileText, text: 'Define a practical next step' },
+  { icon: ThumbsUp, text: 'Decide whether to proceed' },
 ];
 
 const voiceSummaryStorageKey = 'emergent_logic_voice_consultation_summary';
 const voiceSummaryEventName = 'emergent-logic-voice-summary-ready';
+const emptyContactFields = {
+  first_name: '',
+  last_name: '',
+  email: '',
+  phone: '',
+  message: '',
+  hp_field: '',
+  utm_source: '',
+  utm_medium: '',
+  utm_campaign: '',
+  utm_content: '',
+  utm_term: '',
+  landing_page: '',
+};
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({ first_name: '', last_name: '', email: '', phone: '', message: '', hp_field: '' });
+  const [formData, setFormData] = useState(emptyContactFields);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const cleanCampaignValue = (value) => String(value || '').replace(/[\u0000-\u001F\u007F]/g, '').trim().slice(0, 120);
+
+    setFormData((current) => ({
+      ...current,
+      utm_source: cleanCampaignValue(params.get('utm_source')),
+      utm_medium: cleanCampaignValue(params.get('utm_medium')),
+      utm_campaign: cleanCampaignValue(params.get('utm_campaign')),
+      utm_content: cleanCampaignValue(params.get('utm_content')),
+      utm_term: cleanCampaignValue(params.get('utm_term')),
+      landing_page: window.location.pathname.slice(0, 200),
+    }));
+
     function readVoiceSummary() {
       try {
         const stored = sessionStorage.getItem(voiceSummaryStorageKey);
@@ -78,14 +105,22 @@ export default function ContactPage() {
       });
       if (response.ok) {
         // Confirmed server-side success — only now fire GA4 lead event
-        toast.success('Message sent! We\'ll get back to you within 24 hours.');
+        toast.success('Message sent. We will review it on the next business day.');
         trackLeadGeneration({
           formName: 'contact_form',
           location: '/contact',
           leadSource: 'website_contact_page',
         });
         setSubmitted(true);
-        setFormData({ first_name: '', last_name: '', email: '', phone: '', message: '', hp_field: '' });
+        setFormData((current) => ({
+          ...current,
+          first_name: '',
+          last_name: '',
+          email: '',
+          phone: '',
+          message: '',
+          hp_field: '',
+        }));
       } else {
         toast.error('Failed to send message. Please try again.');
       }
@@ -104,7 +139,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <Badge className="mb-4 bg-white/10 text-white border-white/20">Contact Us</Badge>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Let's Talk CRM</h1>
-          <p className="text-xl text-white/70 max-w-3xl">Greater Vancouver's CRM and marketing automation experts. Book a free strategy call or send us a message.</p>
+          <p className="text-xl text-white/70 max-w-3xl">Describe the CRM, lead-routing, reporting, or automation problem you want reviewed.</p>
         </div>
       </section>
 
@@ -116,8 +151,8 @@ export default function ContactPage() {
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center mx-auto mb-4">
                 <Calendar className="w-8 h-8 text-white" />
               </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">Book a Free 30-Minute Strategy Call</h2>
-              <p className="text-xl text-gray-600">No obligation. No sales pressure. Just a straight conversation about your goals and how we can help.</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-2">Book a 30-Minute CRM Consultation</h2>
+              <p className="text-xl text-gray-600">A focused conversation about the current process, the affected system, and a practical next step.</p>
             </div>
             
             {/* What to expect */}
@@ -135,12 +170,20 @@ export default function ContactPage() {
             
             {/* Calendly Embed */}
             <div className="bg-gray-50 rounded-2xl p-4">
+              <a
+                href="https://calendly.com/emergent-logic/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex min-h-12 w-full items-center justify-center rounded-md bg-violet-600 px-4 py-3 text-center font-medium text-white hover:bg-violet-700 md:hidden"
+              >
+                Open the scheduling calendar
+              </a>
               <iframe
                 src="https://calendly.com/emergent-logic/30min?hide_gdpr_banner=1"
                 width="100%"
                 height="700"
                 frameBorder="0"
-                className="rounded-xl"
+                className="hidden rounded-xl md:block"
                 title="Schedule a call with Emergent Logic"
               ></iframe>
             </div>
@@ -153,7 +196,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-2">Or Send Us a Message</h2>
-            <p className="text-gray-600">Prefer email? Fill out the form and we'll get back to you within 24 hours.</p>
+            <p className="text-gray-600">Prefer email? Share a concise description and we will review it on the next business day.</p>
           </div>
           
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -194,7 +237,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Response Time</h4>
-                    <p className="text-gray-600">Within 24 hours on business days</p>
+                    <p className="text-gray-600">Requests are reviewed on business days</p>
                   </div>
                 </div>
               </div>
@@ -203,7 +246,7 @@ export default function ContactPage() {
             <Card className="border-0 shadow-xl">
               <CardHeader>
                 <CardTitle>Send us a message</CardTitle>
-                <CardDescription>We'll get back to you within 24 hours.</CardDescription>
+                <CardDescription>Describe the process, system, and result you want reviewed.</CardDescription>
               </CardHeader>
               <CardContent>
                 {submitted ? (
@@ -212,7 +255,7 @@ export default function ContactPage() {
                       <CheckCircle className="w-8 h-8 text-green-600" />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Message Sent!</h3>
-                    <p className="text-gray-600">We'll get back to you within 24 hours.</p>
+                    <p className="text-gray-600">Your request is ready for human review.</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-4">
@@ -222,12 +265,12 @@ export default function ContactPage() {
                       <input type="text" id="hp_field" name="hp_field" tabIndex={-1} autoComplete="off" value={formData.hp_field} onChange={(e) => setFormData({ ...formData, hp_field: e.target.value })} />
                     </div>
                     <div className="grid grid-cols-2 gap-4">
-                      <div><Label htmlFor="first_name">First Name</Label><Input id="first_name" value={formData.first_name} onChange={(e) => setFormData({ ...formData, first_name: e.target.value })} required className="mt-1" /></div>
-                      <div><Label htmlFor="last_name">Last Name</Label><Input id="last_name" value={formData.last_name} onChange={(e) => setFormData({ ...formData, last_name: e.target.value })} required className="mt-1" /></div>
+                      <div><Label htmlFor="first_name">First Name</Label><Input id="first_name" name="first_name" autoComplete="given-name" value={formData.first_name} onChange={(e) => setFormData({ ...formData, first_name: e.target.value })} required className="mt-1" /></div>
+                      <div><Label htmlFor="last_name">Last Name</Label><Input id="last_name" name="last_name" autoComplete="family-name" value={formData.last_name} onChange={(e) => setFormData({ ...formData, last_name: e.target.value })} required className="mt-1" /></div>
                     </div>
-                    <div><Label htmlFor="email">Email</Label><Input id="email" type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} required className="mt-1" /></div>
-                    <div><Label htmlFor="phone">Phone</Label><Input id="phone" type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} className="mt-1" /></div>
-                    <div><Label htmlFor="message">Message</Label><Textarea id="message" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} rows={4} className="mt-1" placeholder="Tell us about your project..." /></div>
+                    <div><Label htmlFor="email">Email</Label><Input id="email" name="email" type="email" autoComplete="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} required className="mt-1" /></div>
+                    <div><Label htmlFor="phone">Phone</Label><Input id="phone" name="phone" type="tel" autoComplete="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} className="mt-1" /></div>
+                    <div><Label htmlFor="message">Message</Label><Textarea id="message" name="message" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} rows={4} className="mt-1" placeholder="Tell us about your project..." /></div>
                     <Button type="submit" className="w-full bg-violet-600 hover:bg-violet-700" disabled={isSubmitting}>
                       {isSubmitting ? 'Sending...' : 'Send Message'} <Send className="ml-2 w-4 h-4" />
                     </Button>

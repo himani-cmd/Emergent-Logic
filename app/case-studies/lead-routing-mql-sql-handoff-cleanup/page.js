@@ -21,16 +21,16 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Lead Routing Cleanup Case Study',
+  title: 'Lead Routing Cleanup Implementation Pattern',
   description:
     'See how a messy CRM handoff between marketing and sales can be cleaned up with lifecycle stages, routing rules, dashboards, and follow-up ownership.',
   alternates: {
     canonical: 'https://www.emergent-logic.ca/case-studies/lead-routing-mql-sql-handoff-cleanup',
   },
   openGraph: {
-    title: 'Representative Case Study: Lead Routing and MQL-to-SQL Handoff Cleanup',
+    title: 'Implementation Pattern: Lead Routing and MQL-to-SQL Handoff Cleanup',
     description:
-      'A practical CRM cleanup case study showing how lead routing, lifecycle stages, ownership, and follow-up visibility can reduce quiet revenue leakage.',
+      'A practical CRM cleanup implementation pattern showing how lead routing, lifecycle stages, ownership, and follow-up visibility can reduce quiet revenue leakage.',
     url: 'https://www.emergent-logic.ca/case-studies/lead-routing-mql-sql-handoff-cleanup',
     type: 'article',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
@@ -98,7 +98,7 @@ const expectedOutcomes = [
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Representative Case Study: Lead Routing and MQL-to-SQL Handoff Cleanup',
+  headline: 'Implementation Pattern: Lead Routing and MQL-to-SQL Handoff Cleanup',
   description: metadata.description,
   image: 'https://www.emergent-logic.ca/og-image.png',
   author: {
@@ -127,7 +127,7 @@ export default function LeadRoutingMqlSqlHandoffCleanupCaseStudy() {
           <div className="max-w-4xl mx-auto">
             <Breadcrumbs
               items={[
-                { label: 'Case Studies', href: '/case-studies' },
+                { label: 'Implementation Patterns', href: '/case-studies' },
                 {
                   label: 'Lead Routing Cleanup',
                   href: '/case-studies/lead-routing-mql-sql-handoff-cleanup',
@@ -142,7 +142,7 @@ export default function LeadRoutingMqlSqlHandoffCleanupCaseStudy() {
               Lead Routing and MQL-to-SQL Handoff Cleanup
             </h1>
             <p className="text-xl text-gray-600 mb-6">
-              Lead routing usually does not break loudly. It leaks quietly. This representative case study shows how a messy CRM handoff between marketing and sales can be cleaned up with lifecycle stages, routing rules, dashboards, and follow-up ownership.
+              Lead routing usually does not break loudly. It leaks quietly. This implementation pattern shows how a messy CRM handoff between marketing and sales can be cleaned up with lifecycle stages, routing rules, dashboards, and follow-up ownership.
             </p>
             <p className="text-sm text-gray-500 mb-8">
               Note: this is a method-based implementation example, not a fabricated client result. It shows the operating system Emergent Logic recommends when leads enter a CRM but do not consistently turn into conversations.
@@ -150,7 +150,7 @@ export default function LeadRoutingMqlSqlHandoffCleanupCaseStudy() {
 
             <ShareButtons
               url="https://www.emergent-logic.ca/case-studies/lead-routing-mql-sql-handoff-cleanup"
-              title="Representative Case Study: Lead Routing and MQL-to-SQL Handoff Cleanup"
+              title="Implementation Pattern: Lead Routing and MQL-to-SQL Handoff Cleanup"
             />
 
             <div className="grid md:grid-cols-3 gap-4 my-10">

@@ -26,7 +26,7 @@ const process = [
   { step: '01', title: 'Discovery', description: 'We map your sales process, identify gaps, and understand your team\'s workflow before touching any software.' },
   { step: '02', title: 'Platform Selection', description: 'We recommend the CRM that fits your business size, complexity, and budget — with a clear explanation of why.' },
   { step: '03', title: 'Configuration', description: 'Pipelines, deal stages, custom fields, dashboards, and automations configured to match your exact process.' },
-  { step: '04', title: 'Data Migration', description: 'Clean migration from spreadsheets, your old CRM, or any other source. We validate every record.' },
+  { step: '04', title: 'Data Migration', description: 'Controlled migration from supported sources with backups, field mapping, test imports, validation, rollback, and approval.' },
   { step: '05', title: 'Integration', description: 'Connect your CRM to email, website, marketing automation, accounting, and every other tool in your stack.' },
   { step: '06', title: 'Training & Launch', description: 'Hands-on, role-specific training for your team. We make sure your CRM gets adopted — not ignored.' },
 ];
@@ -55,7 +55,7 @@ export default function CrmConsultantSurrey() {
       <section className="overflow-hidden pt-32 pb-16 bg-gradient-to-br from-violet-900 via-indigo-900 to-purple-900">
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[
-            { label: 'Services', href: '/services' },
+            { label: 'Services', href: '/#services' },
             { label: 'CRM Consultant Surrey', href: '/crm-consultant-surrey-bc' },
           ]} />
           <div className="flex items-center gap-2 text-violet-300 mb-4"><MapPin className="w-5 h-5" /><span>Surrey, BC</span></div>
@@ -64,8 +64,8 @@ export default function CrmConsultantSurrey() {
             Practical CRM consulting for Surrey businesses that need cleaner data, clearer pipelines, reliable follow-up, useful reporting, or a better implementation plan. We work across leading CRM platforms and define the scope, migration, workflows, integrations, and training before delivery begins.
           </p>
           <div className="flex max-w-3xl flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <Link href="/contact" className="w-full sm:w-auto"><Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
-            <Link href="/crm-implementation" className="w-full sm:w-auto"><Button size="lg" variant="outline" className="w-full !border-white/40 !bg-transparent !text-white hover:!bg-white/10 hover:!text-white sm:w-auto">Full CRM Services</Button></Link>
+            <Link href="/contact" className="w-full sm:w-auto"><Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+            <Link href="/services/crm-implementation" className="w-full sm:w-auto"><Button size="lg" variant="outline" className="w-full !border-white/40 !bg-transparent !text-white hover:!bg-white/10 hover:!text-white sm:w-auto">Full CRM Services</Button></Link>
           </div>
         </div>
       </section>
@@ -130,7 +130,7 @@ export default function CrmConsultantSurrey() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to find the right CRM for your Surrey business?</h2>
           <p className="text-xl text-white/80 mb-8">Book a free 30-minute strategy call. We will assess your needs and recommend the right CRM platform — no obligation, no sales pitch.</p>
-          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
         </div>
       </section>
 

@@ -133,7 +133,7 @@ export default function PropertyManagementLeadFollowUpCrm() {
               </p>
 
               <p>
-                We also documented this as a <Link href="/case-studies/property-management-rental-inquiry-routing" className="text-blue-700 hover:underline">representative property management rental inquiry routing case study</Link>, showing how owner inquiries, rental evaluations, referrals, tenant messages, and proposal follow-up can be separated into cleaner CRM views.
+                We also documented this as a <Link href="/case-studies/property-management-rental-inquiry-routing" className="text-blue-700 hover:underline">representative property management rental inquiry routing pattern</Link>, showing how owner inquiries, rental evaluations, referrals, tenant messages, and proposal follow-up can be separated into cleaner CRM views.
               </p>
 
               <p>

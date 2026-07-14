@@ -22,14 +22,14 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Website Leads to CRM Case Study',
+  title: 'Website Leads to CRM Implementation Pattern',
   description:
     'How website forms, lead capture, CRM routing, owner assignment, follow-up tasks, and reporting keep inquiries from disappearing.',
   alternates: {
     canonical: 'https://www.emergent-logic.ca/case-studies/website-leads-to-crm-follow-up-system',
   },
   openGraph: {
-    title: 'Representative Case Study: Website Leads to CRM Follow-Up | Emergent Logic',
+    title: 'Implementation Pattern: Website Leads to CRM Follow-Up | Emergent Logic',
     description:
       'Most businesses do not have a lead problem. They have a follow-up problem. See how website leads should move into CRM with ownership, routing, tasks, and reporting.',
     url: 'https://www.emergent-logic.ca/case-studies/website-leads-to-crm-follow-up-system',
@@ -100,7 +100,7 @@ const failureModes = [
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Representative Case Study: Website Leads to CRM Follow-Up System',
+  headline: 'Implementation Pattern: Website Leads to CRM Follow-Up System',
   description: metadata.description,
   image: 'https://www.emergent-logic.ca/og-image.png',
   author: {
@@ -129,7 +129,7 @@ export default function WebsiteLeadsToCRMFollowUpSystemCaseStudy() {
           <div className="max-w-4xl mx-auto">
             <Breadcrumbs
               items={[
-                { label: 'Case Studies', href: '/case-studies' },
+                { label: 'Implementation Patterns', href: '/case-studies' },
                 {
                   label: 'Website Leads to CRM Follow-Up',
                   href: '/case-studies/website-leads-to-crm-follow-up-system',
@@ -144,7 +144,7 @@ export default function WebsiteLeadsToCRMFollowUpSystemCaseStudy() {
               Website Leads to CRM Follow-Up System
             </h1>
             <p className="text-xl text-gray-600 mb-6">
-              Most businesses do not have a lead problem. They have a follow-up problem. This representative case study shows how a website inquiry should move into CRM with source tracking, owner assignment, next actions, and reporting.
+              Most businesses do not have a lead problem. They have a follow-up problem. This implementation pattern shows how a website inquiry should move into CRM with source tracking, owner assignment, next actions, and reporting.
             </p>
             <p className="text-sm text-gray-500 mb-8">
               Note: this is a method-based implementation example, not a fabricated client result. It shows the operating system Emergent Logic recommends behind lead capture websites and CRM implementation projects.
@@ -152,7 +152,7 @@ export default function WebsiteLeadsToCRMFollowUpSystemCaseStudy() {
 
             <ShareButtons
               url="https://www.emergent-logic.ca/case-studies/website-leads-to-crm-follow-up-system"
-              title="Representative Case Study: Website Leads to CRM Follow-Up System"
+              title="Implementation Pattern: Website Leads to CRM Follow-Up System"
             />
 
             <div className="grid md:grid-cols-3 gap-4 my-10">

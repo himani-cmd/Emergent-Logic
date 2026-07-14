@@ -11,36 +11,36 @@ import { ArrowRight, CheckCircle, Clock, DollarSign, Settings } from 'lucide-rea
 
 export const metadata = {
   title: 'HubSpot Consulting Cost Guide',
-  description: 'Learn what HubSpot consulting costs for small businesses, from cleanup and setup to workflows, reporting, migration, and ongoing support.',
+  description: 'Learn how HubSpot consulting is scoped for small businesses, from cleanup and setup to workflows, reporting, migration, and ongoing support.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/hubspot-consulting-cost-guide' },
   openGraph: {
     title: 'HubSpot Consulting Cost Guide | Small Business Pricing',
-    description: 'A practical guide to HubSpot consulting costs for cleanup, implementation, automation, reporting, migration, and monthly support.',
+    description: 'A practical guide to the factors that shape HubSpot consulting cost for cleanup, implementation, automation, reporting, migration, and support.',
     url: 'https://www.emergent-logic.ca/blog/hubspot-consulting-cost-guide',
     type: 'article',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
 };
 
-const pricing = [
+const engagementShapes = [
   {
     item: 'HubSpot audit or cleanup review',
-    range: '$300-$750',
-    notes: 'Best when the business needs a clear list of data, pipeline, workflow, and reporting issues before rebuilding.',
+    scope: 'Diagnostic scope',
+    notes: 'Useful when the business needs a clear list of data, pipeline, workflow, and reporting issues before rebuilding.',
   },
   {
     item: 'Small HubSpot cleanup',
-    range: '$750-$1,500',
+    scope: 'Bounded remediation',
     notes: 'Useful for duplicates, lifecycle stages, properties, owners, lists, simple reporting, and basic workflow fixes.',
   },
   {
     item: 'HubSpot implementation',
-    range: '$1,500-$5,000+',
+    scope: 'Configured system',
     notes: 'Covers pipeline setup, forms, lead routing, properties, reporting, workflows, and team handoff.',
   },
   {
     item: 'Ongoing HubSpot admin support',
-    range: '$500-$2,000/mo',
+    scope: 'Operating support',
     notes: 'For teams that need workflow changes, reporting support, cleanup, training, and monthly optimization.',
   },
 ];
@@ -91,7 +91,7 @@ export default function HubSpotConsultingCostGuide() {
 
             <div className="prose prose-lg max-w-none mt-8">
               <p className="lead text-xl text-gray-600">
-                HubSpot consulting for small businesses can range from a few hundred dollars for a focused audit to several thousand dollars for implementation, cleanup, workflows, and reporting.
+                HubSpot consulting cost depends on the condition of the portal, the business process being changed, and the amount of cleanup, configuration, testing, and handoff required.
               </p>
 
               <p>
@@ -101,18 +101,18 @@ export default function HubSpotConsultingCostGuide() {
               <div className="bg-orange-50 border-l-4 border-orange-500 p-6 my-8 rounded-r-lg">
                 <h4 className="font-bold text-orange-900 mb-2">Short answer</h4>
                 <p className="text-orange-900 mb-0">
-                  Expect $750-$1,500 for smaller cleanup work, $1,500-$5,000+ for implementation, and $500-$2,000/month if you need ongoing HubSpot admin support.
+                  A responsible quote follows a portal review or discovery. Cleanup, implementation, and ongoing administration have different risk, access, testing, and documentation requirements.
                 </p>
               </div>
 
-              <h2>Typical HubSpot Consulting Price Ranges</h2>
+              <h2>Common HubSpot Consulting Engagement Shapes</h2>
               <div className="not-prose grid gap-4 my-8">
-                {pricing.map((row) => (
+                {engagementShapes.map((row) => (
                   <Card key={row.item}>
                     <CardHeader className="pb-2">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                         <CardTitle className="text-xl">{row.item}</CardTitle>
-                        <span className="text-2xl font-bold text-orange-700">{row.range}</span>
+                        <span className="text-lg font-bold text-orange-700">{row.scope}</span>
                       </div>
                     </CardHeader>
                     <CardContent>

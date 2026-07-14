@@ -84,7 +84,7 @@ export default function Post() {
 
               <h3>1. Duplicate Contacts</h3>
               <p>
-                Duplicates are the biggest single failure mode. The same person exists as two or three records with slightly different emails or capitalizations. Your automation sends each one its own version of the welcome sequence. Your sales team gets routed to one record while marketing is nurturing another. Your reporting double-counts pipeline. Every CRM platform we have worked with — HubSpot, Salesforce, Zoho — has variations of this issue at scale, and none of them deduplicate aggressively enough on their own.
+                Duplicate records are a common failure mode. The same person exists as two or three records with slightly different emails or capitalizations. Automation sends each one its own version of the welcome sequence. Sales gets routed to one record while marketing nurtures another. Reporting double-counts pipeline. HubSpot, Salesforce, and Zoho all require deliberate matching, merge, and data-governance rules as databases grow.
               </p>
 
               <h3>2. Inconsistent Lifecycle Stages</h3>
@@ -110,7 +110,7 @@ export default function Post() {
               <div className="bg-violet-50 border-l-4 border-violet-500 p-6 my-8 rounded-r-lg">
                 <h4 className="font-bold text-violet-900 mb-2 flex items-center gap-2"><AlertCircle className="w-5 h-5" /> Not sure if your CRM is automation-ready?</h4>
                 <p className="text-violet-800 mb-3">Book a free 30-minute strategy call. We will look at where your data is, give you an honest read on whether automation should come next or cleanup should come first, and you decide what to do from there.</p>
-                <Link href="/contact"><Button className="bg-violet-600 hover:bg-violet-700">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+                <Link href="/contact"><Button className="bg-violet-600 hover:bg-violet-700">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
               </div>
 
               <h2>How to Know Whether You Need Cleanup First</h2>
@@ -141,17 +141,17 @@ export default function Post() {
 
               <h2>Where to Go From Here</h2>
               <p>
-                If you suspect cleanup needs to come first, our <Link href="/services/crm-cleanup" className="text-violet-600 hover:underline">CRM cleanup</Link> page details what we audit, what we fix, and what timelines look like. If your CRM is not yet implemented and you are trying to do everything at once, the <Link href="/services/crm-implementation" className="text-violet-600 hover:underline">CRM implementation</Link> overview is a better starting point. And if integrations across your stack are part of the problem — incomplete source data, broken handoffs between tools, or <Link href="/blog/hubspot-salesforce-sync-cleanup" className="text-violet-600 hover:underline">HubSpot Salesforce sync cleanup</Link> — the <Link href="/services/crm-integration" className="text-violet-600 hover:underline">CRM integration</Link> page covers that work.
+                If you suspect cleanup needs to come first, our <Link href="/services/crm-cleanup" className="text-violet-600 hover:underline">CRM cleanup</Link> page explains the review areas and delivery controls. Scope and timing are confirmed after discovery. If your CRM is not yet implemented and you are trying to do everything at once, the <Link href="/services/crm-implementation" className="text-violet-600 hover:underline">CRM implementation</Link> overview is a better starting point. And if integrations across your stack are part of the problem — incomplete source data, broken handoffs between tools, or <Link href="/blog/hubspot-salesforce-sync-cleanup" className="text-violet-600 hover:underline">HubSpot Salesforce sync cleanup</Link> — the <Link href="/services/crm-integration" className="text-violet-600 hover:underline">CRM integration</Link> page covers that work.
               </p>
               <p>
-                For Fraser Valley teams specifically, the way we work with <Link href="/crm-consultant-langley" className="text-violet-600 hover:underline">CRM consulting clients in Langley</Link> follows the same pattern: clean the data first, then build the automation layer on top.
+                For Fraser Valley teams, <Link href="/crm-consultant-langley" className="text-violet-600 hover:underline">CRM consulting in Langley</Link> follows the same practical sequence: clean the data first, then build the automation layer on top.
               </p>
             </div>
 
             <div className="mt-12 p-8 bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl text-white">
               <h3 className="text-2xl font-bold mb-4">Get an honest read on your CRM before automating</h3>
               <p className="text-white/80 mb-6">Book a free 30-minute strategy call. We will tell you whether cleanup, implementation, or automation is the right next step for your business.</p>
-              <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+              <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
             </div>
 
             <div className="mt-12">

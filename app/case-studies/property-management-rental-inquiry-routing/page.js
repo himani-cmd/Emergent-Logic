@@ -20,14 +20,14 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Property Management Routing Case Study',
+  title: 'Property Management Inquiry Routing',
   description:
     'How property managers can route owner inquiries, rental evaluations, referrals, and website leads into a clear CRM follow-up workflow.',
   alternates: {
     canonical: 'https://www.emergent-logic.ca/case-studies/property-management-rental-inquiry-routing',
   },
   openGraph: {
-    title: 'Representative Case Study: Property Management Rental Inquiry Routing | Emergent Logic',
+    title: 'Implementation Pattern: Property Management Rental Inquiry Routing | Emergent Logic',
     description:
       'How property management companies can turn scattered owner inquiries, rental evaluations, referrals, and website leads into CRM ownership, follow-up tasks, and reporting.',
     url: 'https://www.emergent-logic.ca/case-studies/property-management-rental-inquiry-routing',
@@ -95,7 +95,7 @@ const safeguards = [
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Representative Case Study: Property Management Rental Inquiry Routing',
+  headline: 'Implementation Pattern: Property Management Rental Inquiry Routing',
   description: metadata.description,
   image: 'https://www.emergent-logic.ca/og-image.png',
   author: {
@@ -124,7 +124,7 @@ export default function PropertyManagementRentalInquiryRoutingCaseStudy() {
           <div className="max-w-4xl mx-auto">
             <Breadcrumbs
               items={[
-                { label: 'Case Studies', href: '/case-studies' },
+                { label: 'Implementation Patterns', href: '/case-studies' },
                 {
                   label: 'Property Management Rental Inquiry Routing',
                   href: '/case-studies/property-management-rental-inquiry-routing',
@@ -147,7 +147,7 @@ export default function PropertyManagementRentalInquiryRoutingCaseStudy() {
 
             <ShareButtons
               url="https://www.emergent-logic.ca/case-studies/property-management-rental-inquiry-routing"
-              title="Representative Case Study: Property Management Rental Inquiry Routing"
+              title="Implementation Pattern: Property Management Rental Inquiry Routing"
             />
 
             <div className="grid md:grid-cols-3 gap-4 my-10">

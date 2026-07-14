@@ -145,10 +145,10 @@ export default function AIChatbotAutomationService() {
             We build AI chatbot workflows that qualify website visitors, capture clean lead data, summarize conversations, route inquiries to the right person, and trigger follow-up tasks. The chatbot is not the strategy. The CRM handoff is.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <TrackedCTA ctaName="Book a Free Strategy Call - AI Chatbot Hero" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation - AI Chatbot Hero" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-cyan-950 hover:bg-cyan-100 font-semibold px-8">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -159,10 +159,10 @@ export default function AIChatbotAutomationService() {
             </Link>
           </div>
           <div className="mt-8 flex flex-wrap gap-6 text-white/70 text-sm">
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-200" /> 2 to 4 week build</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-200" /> Scope-based delivery plan</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-200" /> CRM-connected by default</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-200" /> Human-review guardrails</div>
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-200" /> From $1,500</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-200" /> Written proposal after discovery</div>
           </div>
         </div>
       </section>
@@ -239,7 +239,7 @@ export default function AIChatbotAutomationService() {
 
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Timeline and Investment</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Scope and Delivery Plan</h2>
           <p className="text-lg text-gray-600 mb-8">
             Chatbot projects are scoped around the workflow complexity, CRM platform, and number of routing paths.
           </p>
@@ -247,18 +247,18 @@ export default function AIChatbotAutomationService() {
             <Card className="border bg-white">
               <CardContent className="p-8">
                 <Clock className="w-10 h-10 text-cyan-700 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">2 to 4 Weeks</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Timing After Discovery</h3>
                 <p className="text-gray-600">
-                  A focused chatbot and CRM handoff can usually launch in 2 to 4 weeks. More complex routing, multi-language flows, or multiple CRM pipelines may take longer.
+                  The delivery plan is confirmed after conversation paths, CRM fields, routing, languages, escalation rules, testing, and approval requirements are understood.
                 </p>
               </CardContent>
             </Card>
             <Card className="border bg-white">
               <CardContent className="p-8">
                 <Bot className="w-10 h-10 text-cyan-700 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">From $1,500 CAD</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Written Commercial Proposal</h3>
                 <p className="text-gray-600">
-                  Simple chatbot-to-CRM flows start at $1,500. More advanced builds with multiple workflows, custom integrations, and reporting are scoped after discovery.
+                  The proposal confirms the channels, workflows, CRM handoff, integrations, reporting, exclusions, acceptance checks, and commercial terms.
                 </p>
               </CardContent>
             </Card>
@@ -301,11 +301,11 @@ export default function AIChatbotAutomationService() {
               <p className="text-gray-600 text-sm">Connect chatbot, CRM, email, forms, and reporting</p>
             </Link>
             <Link href="/case-studies/ai-revenue-operations-engine" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-cyan-700">AI Revenue Operations Case Study</p>
+              <p className="font-medium text-cyan-700">AI Revenue Operations Internal Build</p>
               <p className="text-gray-600 text-sm">How AI-assisted growth systems can stay human-reviewed</p>
             </Link>
             <Link href="/case-studies/website-leads-to-crm-follow-up-system" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-cyan-700">Website Leads to CRM Case Study</p>
+              <p className="font-medium text-cyan-700">Website Leads to CRM Implementation Pattern</p>
               <p className="text-gray-600 text-sm">How lead capture becomes actionable CRM follow-up</p>
             </Link>
             <Link href="/lead-follow-up-audit" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
@@ -326,7 +326,7 @@ export default function AIChatbotAutomationService() {
             <TrackedCTA ctaName="Book Free Strategy Call - AI Chatbot Footer" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-cyan-950 hover:bg-cyan-100 font-semibold px-8">
-                  Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </TrackedCTA>

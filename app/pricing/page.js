@@ -118,7 +118,7 @@ const faqs = [
   },
   {
     q: 'Can we start with a smaller project first?',
-    a: 'Yes. Many clients should start with one workflow, one lead source, one cleanup sprint, or one CRM audit before committing to a full implementation.',
+    a: 'Yes. Many teams should start with one workflow, one lead source, one cleanup sprint, or one CRM audit before committing to a full implementation.',
   },
   {
     q: 'Why not publish one exact price for every implementation?',
@@ -173,10 +173,10 @@ export default function PricingPage() {
             We do not believe every CRM project should be forced into a public package. Some work is clean and fixed-scope. Some work needs discovery first. The right model depends on your data, workflows, integrations, and how clear the outcome is.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <TrackedCTA ctaName="Book a Free Strategy Call - Pricing Hero" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation - Pricing Hero" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                 <Button size="lg" className="w-full bg-white text-[#1E3A5F] hover:bg-indigo-50 sm:w-auto">
-                  Book a Free Strategy Call <ArrowRight className="ml-2 h-5 w-5" />
+                  Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
             </TrackedCTA>
@@ -332,10 +332,10 @@ export default function PricingPage() {
             Send us the situation or book a call. We will tell you whether it should be fixed-scope, phased, or broken into a small first sprint.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-            <TrackedCTA ctaName="Book a Free Strategy Call - Pricing Footer" destination="calendly">
+            <TrackedCTA ctaName="Book a CRM Consultation - Pricing Footer" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-[#1E3A5F] hover:bg-indigo-50">
-                  Book a Free Strategy Call <ArrowRight className="ml-2 h-5 w-5" />
+                  Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
             </TrackedCTA>

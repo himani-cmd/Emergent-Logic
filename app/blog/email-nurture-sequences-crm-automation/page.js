@@ -26,16 +26,16 @@ export default function NurtureSequences() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">Part 2 of 3 — Marketing Automation Playbook</div>
           <div className="flex items-center gap-2 text-indigo-300 text-sm mb-4"><Link href="/blog" className="hover:text-white">Blog</Link><span>/</span><span>Email Nurture</span></div>
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Email Nurture Sequences That Convert: CRM Automation Playbook</h1>
-          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Emergent Logic Team</span><span>•</span><span>July 2026</span><span>•</span><span>8 min read</span></div>
+          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Email Nurture Sequences: CRM Automation Playbook</h1>
+          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Himani Kharbanda</span><span>•</span><span>July 2026</span><span>•</span><span>8 min read</span></div>
         </div>
       </section>
 
       <article className="container mx-auto px-4 max-w-4xl py-12">
-        <p className="text-xl text-gray-700 leading-relaxed mb-12">You have <Link href="/blog/lead-scoring-model-crm-guide" className="text-[#6366F1] hover:underline">scored your leads</Link>. The 80% not ready to buy still represent future revenue — if you stay in front of them. Most nurture sequences are terrible: too salesy, too generic, or too infrequent. Here is how to build sequences that actually convert.</p>
+        <p className="text-xl text-gray-700 leading-relaxed mb-12">You have <Link href="/blog/lead-scoring-model-crm-guide" className="text-[#6366F1] hover:underline">scored your leads</Link>. Some qualified prospects will not be ready for a direct sales conversation. A useful nurture sequence should respond to that context with relevant education, clear consent controls, and measured follow-up.</p>
 
         <h2 className="text-3xl font-bold text-[#1E3A5F] mb-6">The Nurture Sequence Framework</h2>
-        <p className="text-gray-600 mb-6">A 3-phase, 8-email structure over 6 weeks:</p>
+        <p className="text-gray-600 mb-6">An example three-phase, eight-message structure to test against your own buying cycle:</p>
 
         {/* Timeline Visual */}
         <div className="bg-gray-50 rounded-2xl p-8 mb-12 border">
@@ -78,29 +78,29 @@ export default function NurtureSequences() {
           </div>
         </div>
 
-        <h2 className="text-3xl font-bold text-[#1E3A5F] mb-6">Timing and Frequency by Business Type</h2>
+        <h2 className="text-3xl font-bold text-[#1E3A5F] mb-6">How to Choose Timing and Frequency</h2>
         <div className="overflow-x-auto mb-8">
           <table className="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-lg">
-            <thead><tr className="bg-[#1E3A5F] text-white"><th className="px-4 py-3 text-left">Business Type</th><th className="px-4 py-3 text-center">Frequency</th><th className="px-4 py-3 text-center">Total Duration</th></tr></thead>
+            <thead><tr className="bg-[#1E3A5F] text-white"><th className="px-4 py-3 text-left">Business Context</th><th className="px-4 py-3 text-left">Starting Approach</th><th className="px-4 py-3 text-left">What to Measure</th></tr></thead>
             <tbody>
-              <tr className="border-b"><td className="px-4 py-3">B2B Services</td><td className="px-4 py-3 text-center">Every 3-7 days</td><td className="px-4 py-3 text-center">8 emails / 6 weeks</td></tr>
-              <tr className="border-b bg-gray-50"><td className="px-4 py-3">B2B SaaS</td><td className="px-4 py-3 text-center">Every 2-4 days</td><td className="px-4 py-3 text-center">8 emails / 3-4 weeks</td></tr>
-              <tr><td className="px-4 py-3">High-Ticket Consulting</td><td className="px-4 py-3 text-center">Every 5-7 days</td><td className="px-4 py-3 text-center">8 emails / 8 weeks</td></tr>
+              <tr className="border-b"><td className="px-4 py-3">B2B services</td><td className="px-4 py-3">Leave room for the buyer to evaluate each useful message.</td><td className="px-4 py-3">Qualified replies, unsubscribes, and booked conversations</td></tr>
+              <tr className="border-b bg-gray-50"><td className="px-4 py-3">B2B software</td><td className="px-4 py-3">Use behaviour-triggered education around the product journey.</td><td className="px-4 py-3">Activation, product engagement, and reply quality</td></tr>
+              <tr><td className="px-4 py-3">Consulting</td><td className="px-4 py-3">Use a lower-frequency sequence built around diagnosis and trust.</td><td className="px-4 py-3">Relevant replies, objections, and consultation requests</td></tr>
             </tbody>
           </table>
         </div>
         <div className="bg-indigo-50 border-l-4 border-[#6366F1] p-4 rounded-r-xl mb-12">
-          <p className="text-gray-700"><strong>Golden rule:</strong> If open rates drop below 15% or unsubscribes exceed 1%, adjust your timing and content immediately.</p>
+          <p className="text-gray-700"><strong>Operating rule:</strong> Establish your own baseline, monitor unsubscribes and complaints, and slow or stop the sequence when relevance declines.</p>
         </div>
 
         <h2 className="text-3xl font-bold text-[#1E3A5F] mb-6">Subject Line Framework</h2>
         <p className="text-gray-600 mb-4">Four patterns that drive opens:</p>
         <div className="grid md:grid-cols-2 gap-4 mb-12">
           {[
-            { type: 'Question', example: '"Is your CRM actually helping your sales team?"', rate: '25-35% open rate' },
-            { type: 'Number/Data', example: '"3 reasons your CRM implementation might fail"', rate: '20-30% open rate' },
-            { type: 'Curiosity Gap', example: '"The CRM mistake that cost one company $200K"', rate: '25-35% open rate' },
-            { type: 'Direct Value', example: '"Free template: CRM ROI calculator"', rate: '20-30% open rate' },
+            { type: 'Question', example: '"Is your CRM actually helping your sales team?"', rate: 'Test against your baseline' },
+            { type: 'Number/Data', example: '"3 reasons your CRM implementation might fail"', rate: 'Use only verified numbers' },
+            { type: 'Specific problem', example: '"Where CRM handoffs commonly break"', rate: 'Test against your baseline' },
+            { type: 'Direct value', example: '"CRM ROI scenario calculator"', rate: 'Measure qualified replies' },
           ].map((item, i) => (
             <div key={i} className="bg-white border rounded-xl p-5 shadow-sm">
               <h4 className="font-bold text-gray-800 mb-1">{item.type}</h4>
@@ -120,8 +120,8 @@ export default function NurtureSequences() {
         {/* CTA */}
         <div className="bg-gradient-to-br from-[#1E3A5F] to-[#6366F1] rounded-2xl p-8 md:p-12 text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Need help building nurture sequences in your CRM?</h2>
-          <p className="text-indigo-200 mb-8">Book a free 30-minute strategy call and we will map out your ideal nurture flow.</p>
-          <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-[#1E3A5F] hover:bg-indigo-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
+          <p className="text-indigo-200 mb-8">Describe the audience, trigger, CRM state, and follow-up gap. We will use the consultation to identify a practical nurture scope.</p>
+          <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-[#1E3A5F] hover:bg-indigo-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
         </div>
 
         {/* Series Nav */}

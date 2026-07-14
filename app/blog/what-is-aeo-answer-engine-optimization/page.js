@@ -76,13 +76,13 @@ export default function WhatIsAEO() {
                 <li>Earn citations and mentions: AI systems prefer content that is referenced by other authoritative sources</li>
               </ul>
               
-              <p>Emergent Logic is one of the few agencies in Canada offering SEO, AEO, and GEO as an integrated service. Learn more about our <Link href="/digital-marketing" className="text-violet-600 hover:underline">digital marketing services</Link>.</p>
+              <p>Emergent Logic publishes practical CRM and automation guidance for Canadian service businesses. Explore our <Link href="/blog" className="text-violet-600 hover:underline">CRM operations resources</Link>.</p>
             </div>
             
             <div className="mt-12 p-8 bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl text-white">
               <h3 className="text-2xl font-bold mb-4">Ready to get started?</h3>
               <p className="text-white/80 mb-6">Want to make sure your business is visible in AI search results? Book a free strategy call.</p>
-              <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+              <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
             </div>
           </div>
         </div>

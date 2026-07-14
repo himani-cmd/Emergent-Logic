@@ -30,10 +30,10 @@ export default function AICRMAudit() {
           <p className="text-xl text-white/80 mb-10 max-w-3xl mx-auto">
             We use AI to analyze your CRM in hours — not weeks. Get a detailed report showing exactly what is working, what is broken, and what you are missing. HubSpot, Salesforce, or Zoho.
           </p>
-          <TrackedCTA ctaName="Book Your Free CRM Audit" destination="calendly">
+          <TrackedCTA ctaName="Request a CRM Review" destination="calendly">
             <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100 px-8 py-6 text-lg font-semibold">
-                Book Your Free CRM Audit <ArrowRight className="w-5 h-5 ml-2" />
+                Request a CRM Review <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </a>
           </TrackedCTA>
@@ -45,7 +45,7 @@ export default function AICRMAudit() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Most CRMs Are Not Working</h2>
           <p className="text-lg text-gray-600 mb-4">
-            We have audited hundreds of CRM systems across Canada. The same problems show up again and again:
+            Our source-linked review of 100 public CRM work requests found the same operational problems appearing repeatedly:
           </p>
           <div className="grid md:grid-cols-2 gap-4 mb-8">
             {[
@@ -104,7 +104,7 @@ export default function AICRMAudit() {
           <div className="space-y-4">
             {[
               { title: 'CRM Health Score', desc: 'An overall score (out of 100) showing how well your CRM is configured and being used. Broken down by data quality, automation, reporting, and adoption.' },
-              { title: 'Issue Inventory', desc: 'Every problem identified — duplicates, broken workflows, missing automation, data gaps, integration failures. Each issue categorized by severity and business impact.' },
+              { title: 'Issue Inventory', desc: 'Findings within the agreed audit scope — such as duplicates, broken workflows, missing automation, data gaps, and integration failures — categorized by severity and business impact.' },
               { title: 'Prioritized Action Plan', desc: 'A step-by-step plan showing what to fix first based on business impact. Quick wins identified separately from larger projects.' },
               { title: 'Cost and Timeline Estimate', desc: 'If you choose to work with us, you get a fixed-price quote for the recommended fixes. No obligation — the audit and recommendations are yours to keep regardless.' },
             ].map((item, i) => (
@@ -147,17 +147,17 @@ export default function AICRMAudit() {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-br from-violet-600 to-indigo-700">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Get Your Free CRM Audit</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Request a Practical CRM Review</h2>
           <p className="text-xl text-white/80 mb-4 max-w-2xl mx-auto">
-            Book a free 30-minute call. We will assess your CRM, identify the biggest problems, and deliver a prioritized action plan. No obligation. No sales pressure.
+            Use a 30-minute consultation to describe the current process, identify the affected system, and decide whether a bounded review is the right next step.
           </p>
           <p className="text-white/60 mb-8 max-w-xl mx-auto text-sm">
             Available for businesses using HubSpot, Salesforce, or Zoho with 10 or more employees.
           </p>
-          <TrackedCTA ctaName="Book Your Free CRM Audit" destination="calendly">
+          <TrackedCTA ctaName="Request a Practical CRM Review" destination="calendly">
             <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100 px-8 py-6 text-lg font-semibold">
-                Book Your Free CRM Audit <ArrowRight className="w-5 h-5 ml-2" />
+                Request a CRM Review <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </a>
           </TrackedCTA>

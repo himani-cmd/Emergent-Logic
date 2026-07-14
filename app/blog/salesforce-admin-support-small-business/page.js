@@ -182,7 +182,7 @@ export default function SalesforceAdminSupportSmallBusiness() {
               </p>
 
               <p>
-                Emergent Logic offers <Link href="/services/salesforce-consulting" className="text-blue-700 hover:underline">Salesforce consulting and managed admin support</Link> for teams that need senior CRM help without turning every change into a giant agency project. We also stay vendor-neutral, so if your team would be better served by HubSpot or Zoho, we will say that clearly.
+                Emergent Logic offers <Link href="/services/salesforce-consulting" className="text-blue-700 hover:underline">Salesforce consulting and managed admin support</Link> for teams that need bounded CRM help without turning every change into a giant agency project. We also stay vendor-neutral, so if your team would be better served by HubSpot or Zoho, we will say that clearly.
               </p>
 
               <h2>What a first month can look like</h2>

@@ -1,9 +1,8 @@
 const baseUrl = 'https://www.emergent-logic.ca';
-const lastmod = '2026-07-10';
+const lastmod = '2026-07-14';
 
 const urls = [
   ['', 'weekly', '1.0'],
-  ['/services', 'monthly', '0.9'],
   ['/pricing', 'monthly', '0.9'],
   ['/about', 'monthly', '0.8'],
   ['/contact', 'monthly', '0.9'],
@@ -47,6 +46,7 @@ const urls = [
   ['/services/hubspot-consulting', 'monthly', '0.9'],
   ['/hubspot-workflow-cleanup', 'monthly', '0.9'],
   ['/services/crm-cleanup', 'monthly', '0.9'],
+  ['/services/crm-revops-transition-sprint', 'monthly', '0.9'],
   ['/services/marketing-automation', 'monthly', '0.8'],
   ['/services/lead-capture-websites', 'monthly', '0.8'],
   ['/website-leads-to-crm-implementation', 'monthly', '0.9'],
@@ -55,10 +55,6 @@ const urls = [
   ['/services/crm-integration', 'monthly', '0.8'],
   ['/services/salesforce-consulting', 'monthly', '0.9'],
   ['/salesforce-admin-support-canada-us', 'monthly', '0.9'],
-  ['/crm-implementation', 'monthly', '0.7'],
-  ['/marketing-automation', 'monthly', '0.7'],
-  ['/web-development', 'monthly', '0.7'],
-  ['/digital-marketing', 'monthly', '0.7'],
   ['/salesforce-consultant-surrey-bc', 'monthly', '0.9'],
   ['/hubspot-consultant-surrey-bc', 'monthly', '0.9'],
   ['/crm-implementation-canada', 'monthly', '0.9'],
