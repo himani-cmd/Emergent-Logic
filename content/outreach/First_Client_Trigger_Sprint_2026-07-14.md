@@ -2,7 +2,7 @@
 
 Prepared: 2026-07-14
 Public sender: Himani Kharbanda
-Status: Draft-only. No messages or emails sent.
+Status: Four connection requests sent without notes. No emails or follow-ups sent.
 
 ## Objective
 
@@ -30,6 +30,7 @@ Start five credible conversations with companies that have publicly described an
 - Source: https://job-boards.greenhouse.io/evismart/jobs/4227171009
 - Leadership source: https://www.evismart.com/our-team
 - Verified: 2026-07-14
+- Execution status: Connection request sent without a note on 2026-07-14. LinkedIn Premium was declined.
 
 Connection note:
 
@@ -51,6 +52,7 @@ If Paolo says yes:
 - Source: https://jobs.ashbyhq.com/Humanly/ec8571cc-35bf-45fa-81ba-01e9af693c35
 - Company context: https://www.humanly.io/blog/humanly-raises-25m-series-b-ai-hiring-platform
 - Verified: 2026-07-14
+- Execution status: Connection request sent without a note on 2026-07-14.
 
 Connection note:
 
@@ -68,6 +70,7 @@ Follow-up after acceptance:
 - Source: https://job-boards.greenhouse.io/practicebetter/jobs/5200757008
 - Company source: https://practicebetter.io/about-us
 - Verified: 2026-07-14
+- Execution status: Connection request sent without a note on 2026-07-14.
 
 Connection note:
 
@@ -86,6 +89,7 @@ Follow-up after acceptance:
 - Source: https://jobs.ashbyhq.com/hiive/3379a00b-d885-4e23-9286-9fc82be46647
 - Leadership source: https://www.hiive.com/our-story
 - Verified: 2026-07-14
+- Execution status: Connection request sent without a note on 2026-07-14.
 
 Connection note:
 
