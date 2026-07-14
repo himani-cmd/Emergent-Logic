@@ -48,16 +48,27 @@ The immediate strategy is therefore trigger-based outreach: contact a named deci
 - The CanCorr thread remains a closed no-fit outcome after Mahna confirmed that a CRM is already in place.
 - The publication audit found one reply from TechiesBuzz asking for a budget. It is disqualified; no payment or reply is recommended.
 
+## HubSpot Community Monitor
+
+- The n8n workflow `EL | HubSpot Community Opportunity Monitor` is active in Himani's project: `voDtjbQfoxFc6oI2`.
+- It watches Himani's HubSpot Community notification emails every five minutes, extracts direct Community thread URLs, suppresses duplicate threads, and logs outcomes in `EL HubSpot Community Opportunity Queue`.
+- GPT-5.4 mini scores only CRM, RevOps, workflow, routing, reporting, data-quality, and integration questions. A score of 75 or higher is required before Bhavuk receives a review alert.
+- Replies are review-only. The workflow has no Community posting action and removes drafts containing promotional, booking, contact, or company-pitch language.
+- Every eligible draft must retain `AI-assisted draft, reviewed and verified before posting.` Himani must verify the live thread and current HubSpot documentation before posting.
+- End-to-end QA passed for a qualified thread, an Ideas-post rejection, Gmail delivery from `himani@emergent-logic.ca`, and duplicate suppression. The temporary QA rows and helper workflows were removed or archived.
+- Himani's Gmail contained no incoming HubSpot Community notification in the prior 30 days. The one-time remaining setup is to subscribe Himani to the relevant CRM, RevOps, workflow, data, and integration boards while signed in to HubSpot Community.
+
 ## Next Human Actions
 
-1. By July 18, register Himani for HubSpot Community Connection Day using Vancouver or Surrey and CRM operations, routing, reporting, data quality, or workflow governance as the matching challenge. No registration has been made yet.
-2. Monday, from Himani's LinkedIn profile, send David Buck, Katie Berg, Chris Essex, Jessica Maffetore, and Troy Thibodeau connection requests without notes if free notes are unavailable.
-3. Stop after those five. Tuesday is capped at Aviv Canaani, Taylor Wolfe, Dan Wardle, Jay Carpenter, and Jason Robinson. Hold Rich Scott for Wednesday and monitor all trigger batches for acceptances.
-4. Approve the $60 plus GST Surrey Summer Sizzle ticket only if Himani can attend on July 23 and use the event qualification playbook. No purchase has been made.
-5. Do not attach the EviSmart or SafeBreach briefs until the relevant person accepts and asks to see the note.
-6. Review the 12 publication follow-up drafts from Himani's account. Do not reply from Bhavuk's mailbox, and do not send to TechiesBuzz.
-7. In Bhavuk's logged-in Upwork account, search the exact title `Sales Operations & CRM Consultant - Setup and Process Design` and apply only if every hard gate passes.
-8. Record connection accepted, reply, asset requested, problem disclosed, meeting requested, and meeting booked. Do not count impressions or message sends as revenue progress.
+1. While signed in as Himani, subscribe to the relevant HubSpot Community CRM, RevOps, workflow, data, and integration boards so the active monitor can receive new-thread notifications.
+2. By July 18, register Himani for HubSpot Community Connection Day using Vancouver or Surrey and CRM operations, routing, reporting, data quality, or workflow governance as the matching challenge. No registration has been made yet.
+3. Monday, from Himani's LinkedIn profile, send David Buck, Katie Berg, Chris Essex, Jessica Maffetore, and Troy Thibodeau connection requests without notes if free notes are unavailable.
+4. Stop after those five. Tuesday is capped at Aviv Canaani, Taylor Wolfe, Dan Wardle, Jay Carpenter, and Jason Robinson. Hold Rich Scott for Wednesday and monitor all trigger batches for acceptances.
+5. Approve the $60 plus GST Surrey Summer Sizzle ticket only if Himani can attend on July 23 and use the event qualification playbook. No purchase has been made.
+6. Do not attach the EviSmart or SafeBreach briefs until the relevant person accepts and asks to see the note.
+7. Review the 12 publication follow-up drafts from Himani's account. Do not reply from Bhavuk's mailbox, and do not send to TechiesBuzz.
+8. In Bhavuk's logged-in Upwork account, search the exact title `Sales Operations & CRM Consultant - Setup and Process Design` and apply only if every hard gate passes.
+9. Record connection accepted, reply, asset requested, problem disclosed, meeting requested, and meeting booked. Do not count impressions or message sends as revenue progress.
 
 ## Success Threshold
 
