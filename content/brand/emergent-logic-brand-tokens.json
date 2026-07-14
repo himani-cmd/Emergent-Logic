@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "name": "Emergent Logic Brand System",
+    "version": "1.2",
+    "effective_date": "2026-07-14",
+    "owner": "Himani Kharbanda",
+    "status": "authoritative"
+  },
+  "identity": {
+    "brand_name": "Emergent Logic",
+    "public_person": "Himani Kharbanda",
+    "public_title": "Founder & CEO",
+    "pronouns": "she/her",
+    "email": "himani@emergent-logic.ca",
+    "phone": "778-652-6271",
+    "website": "https://www.emergent-logic.ca",
+    "location": "Surrey, BC",
+    "service_area": "Canada",
+    "official_tagline": "AI-Accelerated Solutions. Human-Centered Results.",
+    "primary_descriptor": "AI-accelerated CRM consulting",
+    "service_line": "CRM implementation, cleanup, automation, and lead capture systems",
+    "campaign_line": "Find the leak. Fix the flow."
+  },
+  "logos": {
+    "official_dark_square": "content/brand/assets/emergent_logic_dark_square_1080.png",
+    "official_primary_dark": "content/brand/assets/emergent_logic_primary_logo_dark_500.png",
+    "approved_master_count": 2,
+    "manifest": "content/brand/APPROVED_LOGO_MANIFEST.md",
+    "derivative_policy": "Uniform resize or unchanged placement only; preserve aspect ratio and artwork.",
+    "official_wordmark": "EMERGENT LOGIC",
+    "official_tagline": "AI-Accelerated Solutions. Human-Centered Results.",
+    "clear_space_ratio": 0.25,
+    "minimum_digital_square_lockup_px": 160,
+    "minimum_print_square_lockup_mm": 42
+  },
+  "colors": {
+    "brand_navy": {
+      "hex": "#1E3A5F",
+      "rgb": [30, 58, 95],
+      "role": "Brand anchor, dark surfaces, headings"
+    },
+    "signal_indigo": {
+      "hex": "#6366F1",
+      "rgb": [99, 102, 241],
+      "role": "Logo nodes, diagrams, large accents"
+    },
+    "action_indigo": {
+      "hex": "#4B37C8",
+      "rgb": [75, 55, 200],
+      "role": "Accessible buttons, links, active states"
+    },
+    "deep_ink": {
+      "hex": "#101828",
+      "rgb": [16, 24, 40],
+      "role": "Primary text"
+    },
+    "muted_slate": {
+      "hex": "#667085",
+      "rgb": [102, 112, 133],
+      "role": "Secondary text"
+    },
+    "soft_indigo": {
+      "hex": "#EEF2FF",
+      "rgb": [238, 242, 255],
+      "role": "Tinted panels and diagrams"
+    },
+    "paper": {
+      "hex": "#FBFBFF",
+      "rgb": [251, 251, 255],
+      "role": "Primary light background"
+    },
+    "line": {
+      "hex": "#DFE3F5",
+      "rgb": [223, 227, 245],
+      "role": "Borders and dividers"
+    },
+    "white": {
+      "hex": "#FFFFFF",
+      "rgb": [255, 255, 255],
+      "role": "Reverse text and clean surfaces"
+    },
+    "process_teal": {
+      "hex": "#0F766E",
+      "rgb": [15, 118, 110],
+      "role": "Verified, complete, and process signals"
+    },
+    "alert_coral": {
+      "hex": "#D95D39",
+      "rgb": [217, 93, 57],
+      "role": "Risk, bottleneck, and attention signals"
+    }
+  },
+  "typography": {
+    "primary_family": "Inter",
+    "fallback_stack": "Arial, Helvetica, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
+    "letter_spacing": 0,
+    "weights": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "extra_bold": 800
+    },
+    "web_scale_px": {
+      "display": {"size": 48, "line_height": 56},
+      "h1": {"size": 40, "line_height": 48},
+      "h2": {"size": 30, "line_height": 38},
+      "h3": {"size": 22, "line_height": 30},
+      "body": {"size": 16, "line_height": 26},
+      "small": {"size": 14, "line_height": 22},
+      "label": {"size": 12, "line_height": 16}
+    },
+    "document_scale_pt": {
+      "cover": {"size": 32, "line_height": 38},
+      "section": {"size": 18, "line_height": 23},
+      "subsection": {"size": 13, "line_height": 17},
+      "body": {"size": 10, "line_height": 15},
+      "caption": {"size": 8, "line_height": 11}
+    }
+  },
+  "shape": {
+    "card_radius_px": 8,
+    "button_radius_px": 8,
+    "pill_usage": "Short status labels only",
+    "shadow_usage": "One subtle shadow level for elevation; never on logos"
+  },
+  "formats": {
+    "linkedin_portrait": {"width": 1080, "height": 1350, "safe_margin": 80},
+    "social_square": {"width": 1080, "height": 1080, "safe_margin": 72},
+    "open_graph": {"width": 1200, "height": 630, "safe_margin": 64},
+    "document_letter_portrait": {"width_in": 8.5, "height_in": 11, "minimum_margin_in": 0.5},
+    "document_letter_landscape": {"width_in": 11, "height_in": 8.5, "minimum_margin_in": 0.5}
+  },
+  "governance": {
+    "sole_public_person": "Himani Kharbanda",
+    "approval_owner": "Himani Kharbanda",
+    "other_personal_identities_allowed": false,
+    "client_logos_require_permission": true,
+    "fabricated_client_metrics_allowed": false,
+    "guaranteed_outcomes_allowed": false,
+    "legacy_violet_variants_are_canonical": false,
+    "temporary_el_roundel_allowed": false,
+    "symbol_only_logo_allowed": false,
+    "unlisted_logo_master_allowed": false,
+    "logo_reconstruction_allowed": false
+  }
+}

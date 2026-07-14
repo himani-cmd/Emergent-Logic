@@ -70,7 +70,9 @@ const jsonLd = {
     name: 'Emergent Logic',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://www.emergent-logic.ca/logo.png',
+      url: 'https://www.emergent-logic.ca/brand/emergent-logic-primary-logo-dark-500.png',
+      width: 500,
+      height: 500,
     },
   },
   datePublished: '2026-06-29',

@@ -46,6 +46,7 @@ const jsonLd = {
       jobTitle: 'Founder and CEO',
       worksFor: { '@id': organizationId },
       url: 'https://www.emergent-logic.ca/about',
+      sameAs: ['https://www.linkedin.com/in/himani-kharbanda-6a520979/'],
       description: 'Founder of Emergent Logic, a Surrey, BC CRM consulting firm focused on CRM implementation, cleanup, automation, lead capture systems, and AI-assisted delivery for growing businesses.',
       knowsAbout: [
         'CRM implementation',
@@ -64,11 +65,12 @@ const jsonLd = {
       url: 'https://www.emergent-logic.ca',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://www.emergent-logic.ca/el-logo-512.png',
-        width: 512,
-        height: 512,
+        url: 'https://www.emergent-logic.ca/brand/emergent-logic-primary-logo-dark-500.png',
+        width: 500,
+        height: 500,
       },
       image: 'https://www.emergent-logic.ca/og-image.png',
+      sameAs: ['https://www.instagram.com/emergentlogiccrm/'],
       description: 'AI-accelerated CRM implementation, cleanup, automation, and lead capture systems for Canadian businesses.',
       foundingDate: '2026',
       founder: { '@id': founderId },
@@ -209,7 +211,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <meta name="theme-color" content="#7c3aed" />
+        <meta name="theme-color" content="#1E3A5F" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
       <body className="antialiased">
