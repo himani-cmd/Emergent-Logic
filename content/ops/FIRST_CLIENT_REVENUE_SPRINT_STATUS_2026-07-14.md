@@ -25,6 +25,8 @@ The immediate strategy is therefore trigger-based outreach: contact a named deci
 - Aviv Canaani is held as the first next-day reserve rather than a sixth Monday request.
 - A public-source SafeBreach continuity brief is ready at `output/pdf/SAFEBREACH_PUBLIC_MARKETING_OPS_BRIDGE_BRIEF_2026-07-14.pdf`.
 - The 16 July 4 publication submissions were reconciled in `content/seo/Guest_Publication_Followup_Sprint_2026-07-14.md`: 12 unanswered email routes, three unanswered form routes, and one disqualified paid-placement reply.
+- A revenue-filtered event plan is ready in `content/outreach/FIRST_CLIENT_NETWORKING_EVENT_SHORTLIST_2026-07-14.md`. HubSpot Community Connection Day is the priority no-fee opportunity; Surrey Summer Sizzle is the priority paid local event at $60 plus GST.
+- NextGEN Business Summit is excluded at its current $210 general ticket price. Vancouver Tech Days remains on watch until its ticket price is visible.
 - No follow-up, email, attachment, or proposal was sent.
 - No email address was guessed and no generic inbox was used.
 
@@ -46,12 +48,14 @@ The immediate strategy is therefore trigger-based outreach: contact a named deci
 
 ## Next Human Actions
 
-1. Monday, from Himani's LinkedIn profile, send David Buck, Katie Berg, Chris Essex, Jessica Maffetore, and Troy Thibodeau connection requests without notes if free notes are unavailable.
-2. Stop after those five. Hold Aviv Canaani for the next working day and monitor both trigger batches for acceptances.
-3. Do not attach the EviSmart or SafeBreach briefs until the relevant person accepts and asks to see the note.
-4. Review the 12 publication follow-up drafts from Himani's account. Do not reply from Bhavuk's mailbox, and do not send to TechiesBuzz.
-5. In Bhavuk's logged-in Upwork account, search the exact title `Sales Operations & CRM Consultant - Setup and Process Design` and apply only if every hard gate passes.
-6. Record connection accepted, reply, asset requested, problem disclosed, meeting requested, and meeting booked. Do not count impressions or message sends as revenue progress.
+1. By July 18, register Himani for HubSpot Community Connection Day using Vancouver or Surrey and CRM operations, routing, reporting, data quality, or workflow governance as the matching challenge. No registration has been made yet.
+2. Monday, from Himani's LinkedIn profile, send David Buck, Katie Berg, Chris Essex, Jessica Maffetore, and Troy Thibodeau connection requests without notes if free notes are unavailable.
+3. Stop after those five. Hold Aviv Canaani for the next working day and monitor both trigger batches for acceptances.
+4. Approve the $60 plus GST Surrey Summer Sizzle ticket only if Himani can attend on July 23 and use the event qualification playbook. No purchase has been made.
+5. Do not attach the EviSmart or SafeBreach briefs until the relevant person accepts and asks to see the note.
+6. Review the 12 publication follow-up drafts from Himani's account. Do not reply from Bhavuk's mailbox, and do not send to TechiesBuzz.
+7. In Bhavuk's logged-in Upwork account, search the exact title `Sales Operations & CRM Consultant - Setup and Process Design` and apply only if every hard gate passes.
+8. Record connection accepted, reply, asset requested, problem disclosed, meeting requested, and meeting booked. Do not count impressions or message sends as revenue progress.
 
 ## Success Threshold
 
