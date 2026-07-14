@@ -1,6 +1,6 @@
+import Image from 'next/image';
 import Link from 'next/link';
-import HexLogo from '@/components/HexLogo';
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 
 const servicesLinks = [
   { name: 'CRM Implementation', href: '/services/crm-implementation' },
@@ -33,18 +33,42 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div>
-            <Link href="/" className="flex items-center gap-2.5 mb-4">
-              <HexLogo size={36} variant="default" className="flex-shrink-0" />
-              <div className="flex flex-col leading-tight">
-                <span className="text-lg font-bold">Emergent Logic</span>
-                <span className="text-xs text-violet-400">AI-Accelerated CRM Consulting</span>
-              </div>
+            <Link href="/" className="inline-block mb-4" aria-label="Emergent Logic home">
+              <Image
+                src="/brand/emergent-logic-primary-logo-dark-500.png"
+                alt="Emergent Logic"
+                width={180}
+                height={180}
+                className="h-[180px] w-[180px]"
+              />
             </Link>
             <p className="text-gray-400 mb-4">AI-accelerated CRM implementation for Greater Vancouver businesses.</p>
             <div className="space-y-2 text-gray-400 text-sm">
               <div className="flex items-center gap-2"><MapPin className="w-4 h-4 text-violet-400" />Surrey, BC, Canada</div>
               <div className="flex items-center gap-2"><Mail className="w-4 h-4 text-violet-400" /><a href="mailto:info@emergent-logic.ca" className="hover:text-violet-400">info@emergent-logic.ca</a></div>
               <div className="flex items-center gap-2"><Phone className="w-4 h-4 text-violet-400" /><a href="tel:+17786526271" className="hover:text-violet-400">778-652-6271</a></div>
+            </div>
+            <div className="mt-5 flex items-center gap-2" aria-label="Emergent Logic social profiles">
+              <a
+                href="https://www.instagram.com/emergentlogiccrm/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-gray-700 text-gray-300 transition-colors hover:border-violet-400 hover:text-violet-300"
+                aria-label="Emergent Logic on Instagram"
+                title="Instagram"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/himani-kharbanda-6a520979/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-gray-700 text-gray-300 transition-colors hover:border-violet-400 hover:text-violet-300"
+                aria-label="Himani Kharbanda on LinkedIn"
+                title="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
             </div>
           </div>
 

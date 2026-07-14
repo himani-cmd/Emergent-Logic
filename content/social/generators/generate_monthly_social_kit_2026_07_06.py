@@ -12,7 +12,7 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parents[3]
 PUBLIC_DIR = ROOT / "public" / "social-assets" / "monthly-2026-07"
 CONTENT_DIR = ROOT / "content" / "social"
-LOGO_PATH = ROOT / "public" / "el-logo-256.png"
+LOGO_PATH = ROOT / "content" / "brand" / "assets" / "emergent_logic_primary_logo_dark_500.png"
 
 BRAND = {
     "navy": "#17233f",
@@ -89,12 +89,10 @@ def rounded_rect(draw: ImageDraw.ImageDraw, box: tuple[int, int, int, int], radi
 
 
 def draw_logo(draw: ImageDraw.ImageDraw, canvas: Image.Image, x: int, y: int, size: int) -> None:
-    if LOGO_PATH.exists():
-        logo = Image.open(LOGO_PATH).convert("RGBA").resize((size, size))
-        canvas.alpha_composite(logo, (x, y))
-    else:
-        rounded_rect(draw, (x, y, x + size, y + size), 18, BRAND["indigo"])
-        draw.text((x + size / 2, y + size / 2), "EL", font=font(max(16, size // 3), "bold"), fill=BRAND["white"], anchor="mm")
+    if not LOGO_PATH.exists():
+        raise FileNotFoundError(f"Approved logo master is missing: {LOGO_PATH}")
+    logo = Image.open(LOGO_PATH).convert("RGBA").resize((size, size), Image.Resampling.LANCZOS)
+    canvas.alpha_composite(logo, (x, y))
 
 
 def draw_background(draw: ImageDraw.ImageDraw, w: int, h: int) -> None:
@@ -161,12 +159,12 @@ def draw_checklist(draw: ImageDraw.ImageDraw, x: int, y: int, w: int, scale: flo
 def draw_stack(draw: ImageDraw.ImageDraw, x: int, y: int, w: int, scale: float = 1.0) -> None:
     labels = [("Data layer", "clean fields"), ("Workflow layer", "safe automation"), ("Revenue layer", "clear next steps")]
     for idx, (title, note) in enumerate(labels):
-        top = y + idx * int(76 * scale)
+        top = y + idx * int(98 * scale)
         inset = idx * int(22 * scale)
         fill = [BRAND["white"], "#f7f8ff", BRAND["lavender"]][idx]
-        rounded_rect(draw, (x + inset, top, x + w - inset, top + int(96 * scale)), int(28 * scale), fill, BRAND["line"], 2)
-        draw.text((x + inset + 30, top + 24), title, font=font(int(23 * scale), "bold"), fill=BRAND["navy"])
-        draw.text((x + inset + 30, top + 57), note, font=font(int(18 * scale)), fill=BRAND["muted"])
+        rounded_rect(draw, (x + inset, top, x + w - inset, top + int(90 * scale)), int(26 * scale), fill, BRAND["line"], 2)
+        draw.text((x + inset + 30, top + 18), title, font=font(int(23 * scale), "bold"), fill=BRAND["navy"])
+        draw.text((x + inset + 30, top + 52), note, font=font(int(18 * scale)), fill=BRAND["muted"])
 
 
 def draw_signal_panel(draw: ImageDraw.ImageDraw, x: int, y: int, w: int, scale: float = 1.0) -> None:
@@ -201,17 +199,15 @@ def render_card(post: Post, variant: str, size: tuple[int, int]) -> Path:
     draw_background(draw, w, h)
 
     margin = 72 if w >= 1080 else 56
-    draw_logo(draw, img, margin, 58, 56)
-    draw.text((margin + 74, 63), "EMERGENT LOGIC", font=font(25, "bold"), fill=BRAND["indigo"])
-    draw.text((margin + 74, 95), "AI-accelerated CRM + automation systems", font=font(21), fill=BRAND["muted"])
+    draw_logo(draw, img, margin, 18, 160)
 
     badge = post.theme.upper()
     badge_w = draw.textbbox((0, 0), badge, font=font(20, "bold"))[2] + 44
-    rounded_rect(draw, (margin, 165, margin + badge_w, 215), 25, BRAND["lavender"], BRAND["line"], 1)
-    draw.text((margin + 22, 179), badge, font=font(20, "bold"), fill=BRAND["indigo_dark"])
+    rounded_rect(draw, (margin, 196, margin + badge_w, 246), 25, BRAND["lavender"], BRAND["line"], 1)
+    draw.text((margin + 22, 210), badge, font=font(20, "bold"), fill=BRAND["indigo_dark"])
 
     headline_size = 66 if variant == "portrait" else 58
-    headline_y = 250
+    headline_y = 278
     y = draw_wrapped(draw, post.headline, (margin, headline_y), w - margin * 2, BRAND["ink"], headline_size, "bold", 16)
     y += 22
     y = draw_wrapped(draw, post.subline, (margin, y), w - margin * 2 - 20, BRAND["muted"], 34 if variant == "portrait" else 31, "regular", 12)

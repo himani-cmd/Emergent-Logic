@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import HexLogo from '@/components/HexLogo';
 import { trackCTAClick } from '@/lib/analytics';
 import { Button } from '@/components/ui/button';
 import { Menu, X, ChevronDown, Database, Settings, Wrench } from 'lucide-react';
@@ -40,20 +39,18 @@ export default function Navbar() {
     setServicesOpen(false);
   }, [pathname]);
 
-  const navBg = scrolled || !isHome ? 'bg-white/95 backdrop-blur-md shadow-sm border-b' : 'bg-transparent';
+  const navBg = scrolled || !isHome ? 'bg-white shadow-sm border-b' : 'bg-transparent';
   const textColor = scrolled || !isHome ? 'text-gray-700 hover:text-violet-600' : 'text-white/90 hover:text-white';
   const logoColor = scrolled || !isHome ? 'text-gray-900' : 'text-white';
-  const logoVariant = scrolled || !isHome ? 'light' : 'default';
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${navBg}`}>
+    <nav className={`fixed top-0 w-full z-50 ${navBg}`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5">
-            <HexLogo size={36} variant={logoVariant} className="flex-shrink-0" />
+          {/* The approved artwork is not legible at navbar size, so use live brand text. */}
+          <Link href="/" className="flex items-center" aria-label="Emergent Logic home">
             <div className="flex flex-col leading-tight">
-              <span className={`text-lg font-bold ${logoColor} tracking-tight`}>Emergent Logic</span>
+              <span className={`text-lg font-bold ${logoColor}`}>Emergent Logic</span>
               <span className={`text-[10px] font-medium ${scrolled || !isHome ? 'text-violet-600' : 'text-violet-300'}`}>AI-Accelerated CRM Consulting</span>
             </div>
           </Link>
