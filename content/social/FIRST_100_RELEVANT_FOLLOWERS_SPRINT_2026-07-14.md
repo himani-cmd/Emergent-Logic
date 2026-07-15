@@ -37,9 +37,10 @@ Revenue scorecard:
   posts receiving 1-5 organic impressions each.
 - Seven qualified LinkedIn Page invitations were sent. The balance is 43 of 50,
   with the next refill shown as August 1, 2026.
-- The live Social Queue contains a six-post evidence-led revenue sequence.
-- Day 1 is approved for browser publication while LinkedIn OAuth remains
-  unavailable.
+- The live Social Queue contains evidence-led revenue-sequence drafts, but no
+  row is currently publishable. Research-image rows remain held behind the
+  website-release approval gate, and other evidence-led rows remain review-only
+  with blank publish dates.
 - Instagram and Facebook are approved but blocked because the Meta credential
   does not return the Emergent Logic Facebook Page and Instagram Business account.
 - `Emergent Logic Social Agent v1` is inactive. Keep it inactive until credentials,
@@ -107,7 +108,8 @@ Only these logo masters may be used:
 
 ## First Seven Posts
 
-Use the approved `revenue-sequence-*` rows in the live Social Queue:
+Use the `revenue-sequence-*` rows in the live Social Queue only after each row
+has a clean publishable status and the website-release gate is cleared:
 
 1. Himani: 2026 CRM demand research launch, using the published Cleanup Demand
    Report as the evidence asset while framing the findings around implementation,

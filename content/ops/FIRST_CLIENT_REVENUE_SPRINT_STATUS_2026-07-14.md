@@ -1,6 +1,6 @@
 # First Client Revenue Sprint Status
 
-Updated: 2026-07-14
+Updated: 2026-07-14 22:22 PDT
 Owner: Emergent Logic
 Public personal identity: Himani Kharbanda
 Upwork identity: Bhavuk Sood
@@ -41,6 +41,9 @@ The immediate strategy is therefore trigger-based outreach: contact a named deci
 
 ## Inbox Review
 
+- 22:22 PDT revenue-operations check: no official Upwork alert mail, no new buyer or referral mail, no new genuine booking signal, and Gmail still has zero drafts.
+- Production health check: the live homepage, `/crm-consultant-vancouver`, `/research/2026-crm-cleanup-demand-report`, and `/research/2026-crm-cleanup-demand-report/sources` all returned HTTP 200. The homepage, Vancouver page, and report page include the `Ask our AI consultant` launcher plus contact or Calendly conversion paths. No changed production outage was found.
+- Local preview health check: `http://127.0.0.1:3012` was restarted and the homepage, Vancouver page, report page, and report sources route all returned HTTP 200. The local worktree preview hides the voice launcher because its local `.env` does not enable the feature and no local OpenAI API key is present; do not create or modify `.env` for this.
 - No qualified inbound lead was waiting in the connected Emergent Logic Gmail inbox as of 8:00 PM PDT on 2026-07-14. The only later inbox item was the controlled HubSpot Community review alert already documented below.
 - Staples reported that the July 11 print order is ready for pickup. This is an operational item, not a lead.
 - The HubSpot partner-program thread is closed for now because no no-cost evaluation or fee waiver is available. Bhavuk already replied that Emergent Logic will revisit after client revenue.
@@ -63,7 +66,7 @@ The immediate strategy is therefore trigger-based outreach: contact a named deci
 ## Social Growth Sprint
 
 - The 30-day operating plan is in `content/social/FIRST_100_RELEVANT_FOLLOWERS_SPRINT_2026-07-14.md`. The target is 100 relevant followers across the LinkedIn Page and Instagram, with qualified conversations and consultation requests as the real success measures.
-- The live Social Queue already contains six approved evidence-led sequence rows. The Day 1 Himani research post was revised to explain that the demand spans implementation, migration, automation, reporting, integrations, and ownership rules; it is approved for browser publication while LinkedIn OAuth remains unavailable. The Instagram and Facebook rows are blocked because Meta does not return the Emergent Logic Page and Instagram Business account.
+- The live Social Queue has no currently publishable rows. Research-image rows remain held behind the website-release approval gate, and other evidence-led rows remain review-only with blank publish dates. Do not publish until the row status and website-release gate are both clean.
 - `Emergent Logic Social Agent v1` is inactive. Do not activate it until the verified accounts, channel routing, profile setup, and one test post are confirmed.
 - Use only `emergent_logic_primary_logo_dark_500.png` and `emergent_logic_dark_square_1080.png`. Do not buy followers, use engagement pods, mass-comment, or publish from a fictional identity.
 - Signed-in audit: Instagram has zero followers, one following, and one post. The approved primary logo is live. The implementation-led 121-character bio was entered and Instagram's Submit action was activated; final public verification remains pending because the Mac display slept immediately afterward at critically low battery. The website link remains unavailable in Instagram's desktop editor. The LinkedIn Page has one follower, 37 search appearances for July 7-13, and four recent posts with 1-5 impressions.
@@ -73,7 +76,7 @@ The immediate strategy is therefore trigger-based outreach: contact a named deci
 ## Next Human Actions
 
 1. While signed in as Himani, subscribe to the relevant HubSpot Community CRM, RevOps, workflow, data, and integration boards so the active monitor can receive new-thread notifications.
-2. Publish the approved Day 1 research post from Himani's LinkedIn profile, then record the live URL and unlock the remaining social sequence. Reconnect LinkedIn and Meta OAuth separately so scheduled publishing can resume.
+2. Review the website release preview and use the exact approval phrase `APPROVE WEBSITE RELEASE` only when ready. After the release gate and social-row status are clean, publish the Day 1 research post from Himani's LinkedIn profile, then record the live URL and unlock the remaining social sequence. Reconnect LinkedIn and Meta OAuth separately so scheduled publishing can resume.
 3. By July 18, register Himani for HubSpot Community Connection Day using Vancouver or Surrey and CRM operations, routing, reporting, data quality, or workflow governance as the matching challenge. No registration has been made yet.
 4. Monday, from Himani's LinkedIn profile, send David Buck, Katie Berg, Chris Essex, Jessica Maffetore, and Troy Thibodeau connection requests without notes if free notes are unavailable.
 5. Stop after those five. Tuesday is capped at Aviv Canaani, Taylor Wolfe, Dan Wardle, Jay Carpenter, and Jason Robinson. Hold Rich Scott for Wednesday and monitor all trigger batches for acceptances.
