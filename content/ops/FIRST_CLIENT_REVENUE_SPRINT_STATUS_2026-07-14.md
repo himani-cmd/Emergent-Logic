@@ -54,7 +54,9 @@ The immediate strategy is therefore trigger-based outreach: contact a named deci
 - It watches Himani's HubSpot Community notification emails every five minutes, extracts direct Community thread URLs, suppresses duplicate threads, and logs outcomes in `EL HubSpot Community Opportunity Queue`.
 - GPT-5.4 mini scores only CRM, RevOps, workflow, routing, reporting, data-quality, and integration questions. A score of 75 or higher is required before Bhavuk receives a review alert.
 - Replies are review-only. The workflow has no Community posting action and removes drafts containing promotional, booking, contact, or company-pitch language.
+- Review alerts now show both a clickable live-thread link and the full thread URL, require checking all existing answers before posting, and label controlled QA alerts `[TEST - DO NOT POST]`.
 - Every eligible draft must retain `AI-assisted draft, reviewed and verified before posting.` Himani must verify the live thread and current HubSpot documentation before posting.
+- Blind auto-posting remains disabled: the Community feed blocks n8n's server-side verification, no supported Community posting API has been established, and HubSpot requires AI-assisted answers to be accuracy-checked before posting.
 - End-to-end QA passed for a qualified thread, an Ideas-post rejection, Gmail delivery from `himani@emergent-logic.ca`, and duplicate suppression. The temporary QA rows and helper workflows were removed or archived.
 - Himani's Gmail contained no incoming HubSpot Community notification in the prior 30 days. The one-time remaining setup is to subscribe Himani to the relevant CRM, RevOps, workflow, data, and integration boards while signed in to HubSpot Community.
 
