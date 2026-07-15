@@ -3,14 +3,19 @@
 Prepared: 2026-07-14  
 Public identity: Himani Kharbanda and Emergent Logic only  
 Channels: Himani LinkedIn, Emergent Logic LinkedIn Page, Instagram  
-Primary outcome: qualified conversations and meetings, not vanity reach
+Primary outcome: qualified CRM implementation conversations and meetings, not vanity reach
 
 ## Objective
 
 Earn the next 100 relevant followers across the Emergent Logic LinkedIn Page
 and Instagram within 30 days. This is a target, not a guarantee. Followers
 should be Canadian founders, sales leaders, RevOps, marketing operations, CRM
-admins, HubSpot users, Salesforce users, or credible referral partners.
+admins, HubSpot users, Salesforce users, or credible implementation referral
+partners.
+
+Position Emergent Logic as a CRM implementation consultancy first. Cleanup,
+lead routing, reporting, integrations, and automation are delivery capabilities
+and useful entry projects, not the limits of the offer.
 
 Revenue scorecard:
 
@@ -23,15 +28,18 @@ Revenue scorecard:
 ## Current State
 
 - Instagram `@emergentlogiccrm` was verified while signed in with zero followers,
-  one following, one post, an empty bio, no website link, and no avatar on
-  2026-07-14.
+  one following, and one post on 2026-07-14. The approved primary logo and an
+  initial CRM bio were added. The implementation-led revision was submitted and
+  still needs final public verification; Instagram desktop does not expose the
+  website-link editor.
 - The LinkedIn Page was verified at `linkedin.com/company/emergent-logic-ca`
   with one follower, 37 search appearances from July 7-13, and four recent
   posts receiving 1-5 organic impressions each.
-- All 50 free LinkedIn Page invitation credits were available, with the next
-  refill shown as August 1, 2026.
+- Seven qualified LinkedIn Page invitations were sent. The balance is 43 of 50,
+  with the next refill shown as August 1, 2026.
 - The live Social Queue contains a six-post evidence-led revenue sequence.
-- Day 1 is approved but blocked by LinkedIn OAuth reconnect.
+- Day 1 is approved for browser publication while LinkedIn OAuth remains
+  unavailable.
 - Instagram and Facebook are approved but blocked because the Meta credential
   does not return the Emergent Logic Facebook Page and Instagram Business account.
 - `Emergent Logic Social Agent v1` is inactive. Keep it inactive until credentials,
@@ -39,10 +47,13 @@ Revenue scorecard:
 
 ## Non-Negotiable Setup
 
-1. Complete Instagram with the approved name, category, bio, website link, and
-   `content/brand/assets/emergent_logic_primary_logo_dark_500.png`.
-2. Verify the LinkedIn Page About fields, industry, company size, location,
-   website, and approved logo.
+1. Verify that Instagram retained the submitted bio: `CRM implementation,
+   cleanup and automation for growing teams. HubSpot, Salesforce and practical
+   AI workflows. Surrey, BC.` Add the website link from Instagram mobile when
+   available.
+2. The LinkedIn Page positioning is live and verified: `CRM implementation,
+   cleanup, lead routing, reporting and practical automation for growing teams.`
+   Continue using this service hierarchy in the About fields and future posts.
 3. Record each channel's canonical URL and current follower count.
 4. Reconnect LinkedIn and Meta OAuth under Himani's Emergent Logic accounts.
 5. Run one channel-specific test before activating any scheduled publisher.
@@ -57,8 +68,8 @@ The first qualified LinkedIn Page invitation batch is:
 - Arun Koshiya - owner and head of administration
 - Dhaval Diyora - co-founder and CEO
 
-Send only this batch first. Review follower acceptance and profile quality before
-using more invitation credits.
+This first batch was sent on 2026-07-14. Review follower acceptance and profile
+quality before using more invitation credits.
 
 Only these logo masters may be used:
 
@@ -98,7 +109,9 @@ Only these logo masters may be used:
 
 Use the approved `revenue-sequence-*` rows in the live Social Queue:
 
-1. Himani: 2026 CRM Cleanup Demand Report launch.
+1. Himani: 2026 CRM demand research launch, using the published Cleanup Demand
+   Report as the evidence asset while framing the findings around implementation,
+   migration, automation, reporting, and operational ownership.
 2. Emergent Logic Page: evidence summary after Himani's post is verified live.
 3. Himani: transparent methodology and source-table follow-up.
 4. Instagram: speed-to-lead visual with the Instagram-specific UTM link.
