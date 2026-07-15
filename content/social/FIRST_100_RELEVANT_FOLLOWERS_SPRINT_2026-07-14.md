@@ -22,9 +22,14 @@ Revenue scorecard:
 
 ## Current State
 
-- Instagram `@emergentlogiccrm` publicly showed zero followers, one following,
-  one post, an empty bio, no website link, and no visible avatar on 2026-07-14.
-- The LinkedIn Page baseline and canonical URL still need signed-in verification.
+- Instagram `@emergentlogiccrm` was verified while signed in with zero followers,
+  one following, one post, an empty bio, no website link, and no avatar on
+  2026-07-14.
+- The LinkedIn Page was verified at `linkedin.com/company/emergent-logic-ca`
+  with one follower, 37 search appearances from July 7-13, and four recent
+  posts receiving 1-5 organic impressions each.
+- All 50 free LinkedIn Page invitation credits were available, with the next
+  refill shown as August 1, 2026.
 - The live Social Queue contains a six-post evidence-led revenue sequence.
 - Day 1 is approved but blocked by LinkedIn OAuth reconnect.
 - Instagram and Facebook are approved but blocked because the Meta credential
@@ -41,6 +46,19 @@ Revenue scorecard:
 3. Record each channel's canonical URL and current follower count.
 4. Reconnect LinkedIn and Meta OAuth under Himani's Emergent Logic accounts.
 5. Run one channel-specific test before activating any scheduled publisher.
+
+The first qualified LinkedIn Page invitation batch is:
+
+- Venkatesu Anantha - digital transformation and fintech consultant
+- Vikas Singh - finance, real estate, and former founder
+- Julie Laliberte - CRM, email marketing, and Salesforce administration
+- Manoj Kumar - managing director in real estate
+- Jamie Armstrong - head of sales
+- Arun Koshiya - owner and head of administration
+- Dhaval Diyora - co-founder and CEO
+
+Send only this batch first. Review follower acceptance and profile quality before
+using more invitation credits.
 
 Only these logo masters may be used:
 
@@ -112,4 +130,3 @@ and alert on comments. The Himani browser session is used to verify profiles,
 read full Community threads, inspect existing answers, and perform actions that
 the APIs do not support. Public replies and comments must remain accurate,
 specific, and attributable to Himani; no fictional employee or AI persona is used.
-

@@ -66,6 +66,8 @@ The immediate strategy is therefore trigger-based outreach: contact a named deci
 - The live Social Queue already contains six approved evidence-led sequence rows. The Day 1 Himani research post is blocked by LinkedIn OAuth reconnect; the Instagram and Facebook rows are blocked because Meta does not return the Emergent Logic Page and Instagram Business account.
 - `Emergent Logic Social Agent v1` is inactive. Do not activate it until the verified accounts, channel routing, profile setup, and one test post are confirmed.
 - Use only `emergent_logic_primary_logo_dark_500.png` and `emergent_logic_dark_square_1080.png`. Do not buy followers, use engagement pods, mass-comment, or publish from a fictional identity.
+- Signed-in audit: Instagram has zero followers, one following, one post, no avatar, no bio, and no website link. The LinkedIn Page has one follower, 37 search appearances for July 7-13, four recent posts with 1-5 impressions, and 50 available invitation credits.
+- The first seven-person LinkedIn Page invite batch is documented in the follower sprint. No invitations from that batch have been sent yet.
 
 ## Next Human Actions
 
