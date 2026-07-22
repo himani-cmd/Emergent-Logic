@@ -150,7 +150,7 @@ export default function CrmConnectedFormsBestPractices() {
 
               <h2>Where Automation Fits</h2>
               <p>
-                Once the form is connected properly, automation can help with confirmation emails, internal alerts, follow-up reminders, lead scoring, CRM tasks, and reporting updates. This is where <Link href="/services/ai-automation-consulting" className="text-emerald-700 hover:underline">AI automation consulting</Link> can be useful, but only after the data path is reliable.
+                Once the form is connected properly, automation can help with confirmation emails, internal alerts, follow-up reminders, lead scoring, CRM tasks, and reporting updates. This is where <Link href="/services/ai-automation-consulting" className="text-emerald-700 hover:underline">AI automation consulting</Link> can be useful, but only after the data path is reliable. The same control pattern also applies when a team needs to move <Link href="/solutions/email-and-call-notes-to-crm" className="text-emerald-700 hover:underline">email and call notes into the CRM</Link>.
               </p>
 
               <h2>Common Mistakes</h2>

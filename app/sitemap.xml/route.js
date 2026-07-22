@@ -1,5 +1,5 @@
 const baseUrl = 'https://www.emergent-logic.ca';
-const lastmod = '2026-07-14';
+const lastmod = '2026-07-21';
 
 const urls = [
   ['', 'weekly', '1.0'],
@@ -50,6 +50,7 @@ const urls = [
   ['/services/marketing-automation', 'monthly', '0.8'],
   ['/services/lead-capture-websites', 'monthly', '0.8'],
   ['/website-leads-to-crm-implementation', 'monthly', '0.9'],
+  ['/solutions/email-and-call-notes-to-crm', 'monthly', '0.9'],
   ['/services/ai-chatbot-automation', 'monthly', '0.8'],
   ['/services/ai-automation-consulting', 'monthly', '0.8'],
   ['/services/crm-integration', 'monthly', '0.8'],

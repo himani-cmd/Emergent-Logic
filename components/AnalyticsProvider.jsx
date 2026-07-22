@@ -3,7 +3,12 @@
 import Script from 'next/script';
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { GA_MEASUREMENT_ID, trackPhoneClick, trackEmailClick } from '@/lib/analytics';
+import {
+  GA_MEASUREMENT_ID,
+  trackConsultationBookingStarted,
+  trackEmailClick,
+  trackPhoneClick,
+} from '@/lib/analytics';
 
 export default function AnalyticsProvider({ children }) {
   const pathname = usePathname();
@@ -47,6 +52,19 @@ export default function AnalyticsProvider({ children }) {
         trackEmailClick({
           location: pathname,
         });
+      }
+
+      // A click to Calendly is a booking start, not a confirmed appointment.
+      try {
+        const destination = new URL(href, window.location.origin);
+        if (
+          destination.hostname === 'calendly.com' ||
+          destination.hostname.endsWith('.calendly.com')
+        ) {
+          trackConsultationBookingStarted({ location: pathname });
+        }
+      } catch {
+        // Ignore malformed or non-navigation href values.
       }
     }
 

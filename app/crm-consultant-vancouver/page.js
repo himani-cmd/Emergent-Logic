@@ -268,6 +268,9 @@ export default function CrmConsultantVancouver() {
             <p className="text-lg text-gray-600">
               If you already know the platform or problem area, these pages go deeper into the specific work.
             </p>
+            <p className="mt-3 text-gray-600">
+              For a focused small-business use case, see how approved <Link href="/solutions/email-and-call-notes-to-crm" className="font-medium text-violet-700 hover:underline">email and call notes can enter a CRM</Link> with identity and exception controls.
+            </p>
           </div>
           <div className="grid max-w-6xl gap-4 md:grid-cols-2 lg:grid-cols-4">
             <Link href="/hubspot-consultant-vancouver" className="block rounded-xl border bg-white p-5 transition-shadow hover:shadow-md">
