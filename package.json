@@ -6,9 +6,10 @@
         "dev": "NODE_OPTIONS='--max-old-space-size=512' next dev --hostname 0.0.0.0 --port 3000",
         "dev:no-reload": "next dev --hostname 0.0.0.0 --port 3000",
         "dev:webpack": "next dev --hostname 0.0.0.0 --port 3000",
-        "build": "npm run audit:claims && npm run audit:source-security && next build && npm run audit:browser-secrets",
+        "build": "npm run audit:claims && npm run audit:source-security && npm run audit:conversion-events && next build && npm run audit:browser-secrets",
         "audit:claims": "node scripts/verify-credibility-claims.mjs",
         "audit:source-security": "node scripts/verify-source-security.mjs",
+        "audit:conversion-events": "node scripts/verify-conversion-events.mjs",
         "audit:browser-secrets": "node scripts/verify-browser-secrets.mjs",
         "start": "next start"
     },

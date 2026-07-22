@@ -327,6 +327,10 @@ export default function MarketingAutomation() {
               <p className="font-medium text-violet-600">Lead Routing Implementation Pattern</p>
               <p className="text-gray-600 text-sm">A practical MQL-to-SQL handoff pattern for lifecycle stages, owners, and exception dashboards.</p>
             </Link>
+            <Link href="/solutions/email-and-call-notes-to-crm" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Email and Call Notes to CRM</p>
+              <p className="text-gray-600 text-sm">A small-business workflow for creating contacts and preserving approved conversation notes.</p>
+            </Link>
             <Link href="/blog/why-hubspot-workflows-break" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Why HubSpot Workflows Break</p>
               <p className="text-gray-600 text-sm">Workflow automation usually fails when lifecycle stages, owners, and enrollment rules are unclear.</p>

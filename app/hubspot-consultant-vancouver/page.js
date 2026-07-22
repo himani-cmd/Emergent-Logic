@@ -161,6 +161,7 @@ export default function HubspotConsultantVancouver() {
           <p className="text-gray-600 mb-4">Read our comparison: <Link href="/blog/hubspot-vs-salesforce-canada" className="text-violet-600 hover:underline">HubSpot vs Salesforce: Which CRM is Right for Your Canadian Business?</Link></p>
           <p className="text-gray-600 mb-4">Learn how automation transforms your pipeline: <Link href="/blog/what-is-marketing-automation-small-business" className="text-violet-600 hover:underline">What is Marketing Automation and Does Your Business Need It?</Link></p>
           <p className="text-gray-600">For the work areas, controls, and discovery approach, see our <Link href="/services/hubspot-consulting" className="text-violet-600 hover:underline">HubSpot consulting service page</Link>. Scope, price, and timing are confirmed after discovery.</p>
+          <p className="mt-4 text-gray-600">Need email and call notes connected to the CRM? See the <Link href="/solutions/email-and-call-notes-to-crm" className="text-violet-600 hover:underline">email and call notes workflow</Link>.</p>
         </div>
       </section>
 
