@@ -33,7 +33,7 @@ export default function SalesforceVsHubspotVsZoho() {
           </div>
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Salesforce vs. HubSpot vs. Zoho: An Honest Comparison for Canadian Businesses (2026)</h1>
           <div className="flex items-center gap-4 text-indigo-200 text-sm">
-            <span>By Himani Kharbanda</span>
+            <span>By Emergent Logic</span>
             <span>•</span>
             <span>March 2026</span>
             <span>•</span>
