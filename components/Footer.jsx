@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Instagram, Mail, MapPin, Phone } from 'lucide-react';
 
 const servicesLinks = [
   { name: 'CRM Implementation', href: '/services/crm-implementation' },
@@ -58,16 +58,6 @@ export default function Footer() {
                 title="Instagram"
               >
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/himani-kharbanda-6a520979/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-gray-700 text-gray-300 transition-colors hover:border-violet-400 hover:text-violet-300"
-                aria-label="Himani Kharbanda on LinkedIn"
-                title="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
               </a>
             </div>
           </div>

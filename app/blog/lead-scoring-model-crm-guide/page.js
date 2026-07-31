@@ -27,7 +27,7 @@ export default function LeadScoringGuide() {
           <div className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">Part 1 of 3 — Marketing Automation Playbook</div>
           <div className="flex items-center gap-2 text-indigo-300 text-sm mb-4"><Link href="/blog" className="hover:text-white">Blog</Link><span>/</span><span>Lead Scoring</span></div>
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">How to Build a Lead Scoring Model in Your CRM (Step-by-Step Guide)</h1>
-          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Himani Kharbanda</span><span>•</span><span>June 2026</span><span>•</span><span>9 min read</span></div>
+          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Emergent Logic</span><span>•</span><span>June 2026</span><span>•</span><span>9 min read</span></div>
         </div>
       </section>
 

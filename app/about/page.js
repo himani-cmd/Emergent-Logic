@@ -9,11 +9,11 @@ import { Zap, Search, DollarSign, MapPin, Link2, RefreshCw, ArrowRight, Sparkles
 
 export const metadata = {
   title: 'About Us | CRM Consultants Vancouver BC',
-  description: 'Surrey-based CRM consulting firm led by Himani Kharbanda. Practical HubSpot, Salesforce, Zoho, lead-routing, and automation support.',
+  description: 'Surrey-based CRM consulting firm providing practical HubSpot, Salesforce, Zoho, lead-routing, and automation support.',
   alternates: { canonical: 'https://www.emergent-logic.ca/about' },
   openGraph: {
     title: 'About Us | CRM Consultants Vancouver BC | Emergent Logic',
-    description: 'Surrey-based CRM consulting firm led by Himani Kharbanda, serving Greater Vancouver and Canadian businesses.',
+    description: 'Surrey-based CRM consulting firm serving Greater Vancouver and Canadian businesses.',
     url: 'https://www.emergent-logic.ca/about',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -39,7 +39,7 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen">
       <Navbar />
-      
+
       <section className="pt-32 pb-16 bg-gradient-to-br from-violet-900 via-indigo-900 to-purple-900">
         <div className="container mx-auto px-4">
           <Badge className="mb-4 bg-white/10 text-white border-white/20">About Us</Badge>
@@ -48,36 +48,25 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Founder Section */}
+      {/* Company Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8 items-start">
-              <div className="md:col-span-1">
-                <div className="aspect-square rounded-2xl bg-gradient-to-br from-violet-100 to-indigo-100 flex items-center justify-center">
-                  <div className="w-32 h-32 rounded-full bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center">
-                    <span className="text-5xl font-bold text-white">H</span>
-                  </div>
+            <Badge className="mb-2 bg-violet-100 text-violet-700">Our Company</Badge>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">CRM systems built around real operating work</h2>
+            <div className="prose prose-lg text-gray-600 space-y-4 max-w-none">
+              <p>Emergent Logic is a Surrey, BC-based CRM consulting firm focused on implementation, cleanup, lead routing, reporting, integrations, and practical automation.</p>
+              <p>The firm helps growing businesses turn fragmented CRM and inquiry processes into clear, documented operating systems with defined ownership and visible next steps.</p>
+              <p>AI accelerates research, analysis, documentation, and repeatable checks while approvals and high-impact decisions remain with people.</p>
+              <p>Our methods are supported by source-linked research, transparent service definitions, representative system designs, and documented guardrails.</p>
+              <p className="text-violet-600 font-medium">Based in Surrey, BC, Canada.</p>
+            </div>
+            <div className="flex flex-wrap gap-3 mt-6">
+              {credentials.map((cred, i) => (
+                <div key={i} className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-gray-700">
+                  <cred.icon className="w-4 h-4 text-violet-600" />{cred.label}
                 </div>
-              </div>
-              <div className="md:col-span-2">
-                <Badge className="mb-2 bg-violet-100 text-violet-700">Founder & CEO</Badge>
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">Himani Kharbanda</h2>
-                <div className="prose prose-lg text-gray-600 space-y-4">
-                  <p>Himani Kharbanda is the Founder and CEO of Emergent Logic, a Surrey, BC-based CRM consulting firm focused on implementation, cleanup, lead routing, reporting, and automation.</p>
-                  <p>She founded Emergent Logic to make structured CRM operations more accessible to growing businesses that need practical scope and direct accountability.</p>
-                  <p>The firm uses AI to accelerate research, analysis, documentation, and repeatable checks while keeping approvals and high-impact decisions with people.</p>
-                  <p>Emergent Logic is building its methods in public through source-linked research, transparent service definitions, representative system designs, and documented guardrails.</p>
-                  <p className="text-violet-600 font-medium">Based in Surrey, BC, Canada.</p>
-                </div>
-                <div className="flex flex-wrap gap-3 mt-6">
-                  {credentials.map((cred, i) => (
-                    <div key={i} className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-gray-700">
-                      <cred.icon className="w-4 h-4 text-violet-600" />{cred.label}
-                    </div>
-                  ))}
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

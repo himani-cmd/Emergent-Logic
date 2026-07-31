@@ -26,7 +26,7 @@ export default function AiCrmStrategyGuide() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="flex items-center gap-2 text-indigo-300 text-sm mb-4"><Link href="/blog" className="hover:text-white">Blog</Link><span>/</span><span>AI & CRM</span></div>
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">How to Use AI to Accelerate Your CRM Strategy (Without Replacing Your Team)</h1>
-          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Himani Kharbanda</span><span>•</span><span>April 2026</span><span>•</span><span>12 min read</span></div>
+          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Emergent Logic</span><span>•</span><span>April 2026</span><span>•</span><span>12 min read</span></div>
         </div>
       </section>
 

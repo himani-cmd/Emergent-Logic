@@ -27,7 +27,7 @@ export default function CampaignAttribution() {
           <div className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">Part 3 of 3 — Marketing Automation Playbook</div>
           <div className="flex items-center gap-2 text-indigo-300 text-sm mb-4"><Link href="/blog" className="hover:text-white">Blog</Link><span>/</span><span>Attribution</span></div>
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Campaign Attribution in Your CRM: How to Prove Marketing ROI</h1>
-          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Himani Kharbanda</span><span>•</span><span>July 2026</span><span>•</span><span>9 min read</span></div>
+          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Emergent Logic</span><span>•</span><span>July 2026</span><span>•</span><span>9 min read</span></div>
         </div>
       </section>
 
