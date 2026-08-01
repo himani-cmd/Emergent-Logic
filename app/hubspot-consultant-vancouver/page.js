@@ -9,12 +9,12 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, MapPin, Zap, BarChart3, Globe, Settings } from 'lucide-react';
 
 export const metadata = {
-  title: 'HubSpot Consultant Vancouver | Cleanup',
-  description: 'HubSpot consulting in Vancouver for CRM setup, cleanup, workflows, reporting, integrations, and practical team adoption.',
+  title: 'HubSpot Consultant Vancouver | CRM Setup',
+  description: 'HubSpot consulting for Vancouver teams that need CRM setup, cleanup, migration, workflows, reporting, integrations, and practical adoption support.',
   alternates: { canonical: 'https://www.emergent-logic.ca/hubspot-consultant-vancouver' },
   openGraph: {
     title: 'HubSpot Consultant Vancouver | Emergent Logic',
-    description: 'HubSpot consulting in Vancouver for CRM setup, cleanup, workflows, reporting, integrations, and team adoption.',
+    description: 'HubSpot consulting for Vancouver teams that need CRM setup, cleanup, migration, workflows, reporting, integrations, and adoption support.',
     url: 'https://www.emergent-logic.ca/hubspot-consultant-vancouver',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -70,9 +70,37 @@ const faqs = [
   { q: 'Can you migrate us from Salesforce to HubSpot?', a: 'A Salesforce-to-HubSpot migration can be scoped when the source data and target requirements are understood. The plan covers backups, field mapping, test imports, validation, rollback, approval, and role-based training.' },
 ];
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://www.emergent-logic.ca/hubspot-consultant-vancouver#service',
+      name: 'HubSpot Consulting in Vancouver',
+      serviceType: 'HubSpot CRM setup, cleanup, migration, automation, integration, reporting, and training consulting',
+      provider: { '@id': 'https://www.emergent-logic.ca/#organization' },
+      url: 'https://www.emergent-logic.ca/hubspot-consultant-vancouver',
+      areaServed: [
+        { '@type': 'City', name: 'Vancouver' },
+        { '@type': 'AdministrativeArea', name: 'Metro Vancouver' },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': 'https://www.emergent-logic.ca/hubspot-consultant-vancouver#faq',
+      mainEntity: faqs.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: { '@type': 'Answer', text: item.a },
+      })),
+    },
+  ],
+};
+
 export default function HubspotConsultantVancouver() {
   return (
     <main className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
       
       <section className="overflow-hidden pt-32 pb-16 bg-gradient-to-br from-violet-900 via-indigo-900 to-purple-900">
@@ -83,10 +111,10 @@ export default function HubspotConsultantVancouver() {
           ]} />
           <div className="flex items-center gap-2 text-violet-300 mb-4"><MapPin className="w-5 h-5 flex-shrink-0" /><span>Vancouver & Metro Vancouver</span></div>
           <h1 className="max-w-4xl break-words text-4xl font-bold leading-tight tracking-tight text-white mb-4 md:text-5xl lg:text-6xl">
-            HubSpot consultant in Vancouver for CRM setup and cleanup
+            HubSpot consultant in Vancouver for setup, cleanup and automation
           </h1>
           <p className="max-w-3xl text-lg leading-relaxed text-white/75 mb-8 md:text-xl">
-            Emergent Logic helps Vancouver and Metro Vancouver teams set up, clean up, and improve HubSpot. We connect pipelines, workflows, reporting, integrations, and lead follow-up into a system the team can use every day.
+            Emergent Logic helps Vancouver and Metro Vancouver teams implement, clean up, migrate, and improve HubSpot. The work can connect pipelines, lifecycle stages, workflows, reporting, integrations, and lead follow-up into one documented operating system.
           </p>
           <div className="flex max-w-3xl flex-col gap-4 sm:flex-row sm:flex-wrap">
             <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto"><Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
@@ -157,7 +185,8 @@ export default function HubspotConsultantVancouver() {
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Not sure if HubSpot is right?</h2>
           <p className="text-gray-600 mb-4">Need broader CRM help before choosing a platform? See our <Link href="/crm-consultant-vancouver" className="text-violet-600 hover:underline">CRM consultant Vancouver</Link> page for cleanup, routing, reporting, and integration support.</p>
-          <p className="text-gray-600 mb-4">Start here: <Link href="/blog/hubspot-consultant-vancouver" className="text-violet-600 hover:underline">Why Businesses Search for a HubSpot Consultant in Vancouver</Link> — what to look for and how to avoid a messy setup.</p>
+          <p className="text-gray-600 mb-4">Start here: <Link href="/blog/hubspot-consultant-vancouver" className="text-violet-600 hover:underline">how to evaluate a HubSpot consultant in Vancouver</Link>, including what to review before changing a live portal.</p>
+          <p className="text-gray-600 mb-4">Moving from spreadsheets? Use the <Link href="/blog/excel-to-crm-migration-repeat-order-businesses" className="text-violet-600 hover:underline">Excel-to-CRM migration checklist for repeat-order businesses</Link> to map customers, products, order cadence, ownership, and follow-up before choosing a platform.</p>
           <p className="text-gray-600 mb-4">Read our comparison: <Link href="/blog/hubspot-vs-salesforce-canada" className="text-violet-600 hover:underline">HubSpot vs Salesforce: Which CRM is Right for Your Canadian Business?</Link></p>
           <p className="text-gray-600 mb-4">Learn how automation transforms your pipeline: <Link href="/blog/what-is-marketing-automation-small-business" className="text-violet-600 hover:underline">What is Marketing Automation and Does Your Business Need It?</Link></p>
           <p className="text-gray-600">For the work areas, controls, and discovery approach, see our <Link href="/services/hubspot-consulting" className="text-violet-600 hover:underline">HubSpot consulting service page</Link>. Scope, price, and timing are confirmed after discovery.</p>
@@ -177,7 +206,7 @@ export default function HubspotConsultantVancouver() {
       <section className="py-16 bg-gradient-to-br from-violet-600 to-indigo-700">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to get started with HubSpot?</h2>
-          <p className="text-xl text-white/80 mb-8">Book a free 30-minute strategy call. We will map out your HubSpot implementation and show you exactly what is possible.</p>
+          <p className="text-xl text-white/80 mb-8">Book a 30-minute CRM consultation to review the current portal, the operating problem, and the information needed for a practical scope.</p>
           <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
         </div>
       </section>

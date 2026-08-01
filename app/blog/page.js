@@ -20,6 +20,14 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'excel-to-crm-migration-repeat-order-businesses',
+    title: 'Excel-to-CRM Migration Checklist for Repeat-Order Businesses',
+    excerpt: 'Plan customer, product, order-cadence, ownership, and follow-up data before moving a repeat-order sales process from spreadsheets into a CRM.',
+    category: 'CRM Migration',
+    readTime: '11 min read',
+    featured: true,
+  },
+  {
     slug: 'crm-lead-routing-mql-sql-handoff',
     title: 'Why Lead Routing Breaks Between MQL and SQL',
     excerpt: 'Learn why CRM lead routing breaks between marketing and sales, and how lifecycle stages, ownership rules, and dashboards fix follow-up leaks.',
