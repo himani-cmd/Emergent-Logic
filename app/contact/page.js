@@ -1,10 +1,10 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
-import { trackLeadGeneration } from '@/lib/analytics';
+import { trackCalendlyEvent, trackLeadGeneration } from '@/lib/analytics';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -43,6 +43,28 @@ export default function ContactPage() {
   const [formData, setFormData] = useState(emptyContactFields);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const trackedCalendlyEvents = useRef(new Set());
+
+  useEffect(() => {
+    const calendlyEventMap = {
+      'calendly.profile_page_viewed': 'consultation_booking_widget_viewed',
+      'calendly.date_and_time_selected': 'consultation_booking_time_selected',
+      'calendly.event_scheduled': 'consultation_booking_completed',
+    };
+
+    function handleCalendlyMessage(event) {
+      if (event.origin !== 'https://calendly.com') return;
+
+      const analyticsEventName = calendlyEventMap[event.data?.event];
+      if (!analyticsEventName || trackedCalendlyEvents.current.has(analyticsEventName)) return;
+
+      trackedCalendlyEvents.current.add(analyticsEventName);
+      trackCalendlyEvent(analyticsEventName, { location: '/contact' });
+    }
+
+    window.addEventListener('message', handleCalendlyMessage);
+    return () => window.removeEventListener('message', handleCalendlyMessage);
+  }, []);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -144,7 +166,7 @@ export default function ContactPage() {
       </section>
 
       {/* Calendly Section */}
-      <section className="py-16 bg-white">
+      <section id="booking" className="scroll-mt-24 py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
