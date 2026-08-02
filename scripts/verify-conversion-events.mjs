@@ -22,6 +22,14 @@ const checks = [
     message: 'Calendly links must emit consultation_booking_started.',
   },
   {
+    passed:
+      analytics.includes("'consultation_booking_completed'") &&
+      contact.includes("'calendly.event_scheduled': 'consultation_booking_completed'") &&
+      contact.includes("event.origin !== 'https://calendly.com'") &&
+      contact.includes('trackedCalendlyEvents'),
+    message: 'A verified, deduplicated Calendly embed completion must emit consultation_booking_completed.',
+  },
+  {
     passed: !analytics.includes("trackEvent('appointment_booked'") && !provider.includes('appointment_booked'),
     message: 'An external Calendly click must not be recorded as a confirmed appointment.',
   },
@@ -29,7 +37,8 @@ const checks = [
     passed:
       !analytics.includes('transcript:') &&
       !analytics.includes('email_address:') &&
-      !analytics.includes('phone_number:'),
+      !analytics.includes('phone_number:') &&
+      !contact.includes('event.data?.payload'),
     message: 'Analytics helpers must not include consultation content or contact details.',
   },
 ];
