@@ -7,13 +7,13 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Target, Mail, BarChart3, Workflow, Filter, Send, Clock, DollarSign, Check, AlertTriangle, Zap, Database } from 'lucide-react';
 
 export const metadata = {
-  title: 'Marketing Automation Services Canada',
-  description: 'CRM-first marketing automation: lead scoring, nurture sequences, attribution, and sales handoff for HubSpot, Salesforce, and Zoho.',
+  title: 'CRM Marketing Automation Services in Canada',
+  description: 'Marketing automation services for HubSpot, Salesforce, and Zoho: lead scoring, nurture, attribution, and sales handoff built on a trusted CRM foundation.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/marketing-automation' },
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'Marketing Automation | Emergent Logic',
-    description: 'CRM-first marketing automation: lead scoring, nurture sequences, and attribution that actually closes the loop on revenue.',
+    title: 'CRM Marketing Automation Services in Canada | Emergent Logic',
+    description: 'CRM-first marketing automation services for lead scoring, nurture, attribution, and sales handoff across HubSpot, Salesforce, and Zoho.',
     url: 'https://www.emergent-logic.ca/services/marketing-automation',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -38,9 +38,65 @@ const readinessSignals = [
   },
 ];
 
+const faqs = [
+  {
+    q: 'Do I need a CRM in place before we start?',
+    a: 'This service assumes a CRM with usable contact data, lifecycle definitions, ownership, and consent rules. If the foundation is not ready, the first scope may be a focused CRM cleanup or implementation instead.',
+  },
+  {
+    q: 'Which CRMs can you build automation in?',
+    a: 'HubSpot, Salesforce, and Zoho are the primary platforms offered. The approach depends on the licensed products, permissions, data model, and confirmed workflow requirements.',
+  },
+  {
+    q: 'How is this different from hiring a marketing agency?',
+    a: 'This service focuses on the operating system underneath campaigns: segmentation, scoring, attribution, routing, and CRM workflow logic. Campaign execution can be scoped separately or handled by an existing marketing team.',
+  },
+  {
+    q: 'Can email copy be included?',
+    a: 'Yes. Nurture and sales-assist copy can be included when subject-matter input, consent rules, review ownership, and the approval process are defined in the written scope.',
+  },
+  {
+    q: 'What about paid ads and SEO?',
+    a: 'This engagement focuses on the CRM and measurement infrastructure underneath campaigns, including UTM capture, attribution, conversion tracking, and lead routing. Campaign management is a separate scope.',
+  },
+  {
+    q: 'When should we expect measurable results?',
+    a: 'Lead-response time and workflow completion can be measured soon after launch. Pipeline and revenue impact depends on traffic quality, sales-cycle length, list size, offer, and team adoption, so baselines and review windows are agreed before claims are made.',
+  },
+  {
+    q: 'Is this a substitute for hiring a marketer?',
+    a: 'No. The service builds and improves the automation system. The business still needs an owner for campaign planning, content, offers, and performance decisions.',
+  },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://www.emergent-logic.ca/services/marketing-automation#service',
+      name: 'CRM Marketing Automation Services',
+      serviceType: 'Marketing automation strategy, CRM workflows, lead scoring, nurture, attribution, and sales handoff consulting',
+      provider: { '@id': 'https://www.emergent-logic.ca/#organization' },
+      url: 'https://www.emergent-logic.ca/services/marketing-automation',
+      areaServed: { '@type': 'Country', name: 'Canada' },
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': 'https://www.emergent-logic.ca/services/marketing-automation#faq',
+      mainEntity: faqs.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: { '@type': 'Answer', text: item.a },
+      })),
+    },
+  ],
+};
+
 export default function MarketingAutomation() {
   return (
     <main className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
 
       {/* Hero */}
@@ -51,10 +107,10 @@ export default function MarketingAutomation() {
           </div>
           <div className="inline-block px-3 py-1 rounded-full bg-white/10 text-purple-200 text-xs font-medium mb-4">Supporting service</div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Marketing Automation That Closes the Loop on Revenue
+            CRM Marketing Automation Services for Canadian Teams
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
-            Lead scoring, nurture sequences, campaign attribution, and lead handoff built directly on top of your CRM, with clear ownership, testing, and human review for high-impact actions.
+            Connect lead scoring, nurture sequences, campaign attribution, and sales handoff to your CRM with clear ownership, documented testing, and human review for high-impact actions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
@@ -74,7 +130,7 @@ export default function MarketingAutomation() {
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-purple-300" /> Scope-based delivery plan</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-purple-300" /> Clear scope before build</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-purple-300" /> CRM-native automation</div>
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-purple-300" /> Attribution included</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-purple-300" /> Attribution requirements mapped</div>
           </div>
         </div>
       </section>
@@ -87,7 +143,7 @@ export default function MarketingAutomation() {
             <div>
               <h2 className="text-xl font-bold text-purple-900 mb-2">Marketing automation is only as good as the CRM beneath it.</h2>
               <p className="text-purple-900/80">
-                If your contacts are duplicated, your lifecycle stages are inconsistent, and your sales process is not mapped in your CRM, then automating on top of it just speeds up the chaos. That is why we always start with the CRM. If your CRM is not in good shape, we will tell you that during the discovery call — and we will recommend a <Link href="/services/crm-cleanup" className="underline font-medium">CRM Cleanup</Link> or <Link href="/services/crm-implementation" className="underline font-medium">CRM Implementation</Link> first.
+                If your contacts are duplicated, lifecycle stages are inconsistent, or the sales process is not mapped, automating on top of the CRM can amplify the problem. We start by checking that foundation and may recommend a <Link href="/services/crm-cleanup" className="underline font-medium">CRM Cleanup</Link> or <Link href="/services/crm-implementation" className="underline font-medium">CRM Implementation</Link> before workflow buildout.
               </p>
             </div>
           </div>
@@ -123,15 +179,15 @@ export default function MarketingAutomation() {
       {/* What Is Marketing Automation */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Marketing Automation Actually Means</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What CRM Marketing Automation Services Include</h2>
           <p className="text-lg text-gray-600 mb-4">
-            Marketing automation is not a tool. It is a system of rules, sequences, and triggers that move people from "interested" to "customer" without your team having to remember every follow-up. Done well, it scales your sales motion. Done poorly, it spams your list and erodes trust.
+            Marketing automation is a system of rules, sequences, and triggers that helps a team manage follow-up consistently. It should support the sales process without hiding ownership, consent, exceptions, or decisions that still need human review.
           </p>
           <p className="text-lg text-gray-600 mb-4">
-            For most growing Canadian businesses, automation lives inside the CRM — HubSpot, Salesforce, or Zoho — not in a separate marketing tool. That is intentional. When automation lives in the same system as your deals, your reps see the full context, marketing sees what closes, and leadership sees the actual ROI of every campaign.
+            For many growing Canadian businesses, the CRM is the source of truth while HubSpot, Salesforce, Zoho, and approved integrations carry out the automation. That keeps contact history, deal context, campaign sources, and handoff status connected.
           </p>
           <p className="text-lg text-gray-600">
-            We design and build that system. The lead scoring model that surfaces the right leads. The nurture sequences that keep deals warm between conversations. The attribution that finally answers "which campaigns made us money?" And the handoff workflows that stop leads from falling through the cracks between marketing and sales.
+            A written scope can cover lead scoring, nurture sequences, source capture, attribution definitions, routing, handoff, exception reporting, and documentation. The exact build depends on the CRM, licensed features, data quality, consent requirements, and the operating process your team approves.
           </p>
         </div>
       </section>
@@ -145,10 +201,10 @@ export default function MarketingAutomation() {
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { icon: Target, title: 'Lead Scoring', desc: 'A fit-and-engagement model that surfaces the right leads at the right time. Demographics, firmographics, page visits, email engagement, and intent signals — weighted by what actually correlates with closed deals in your business.' },
+              { icon: Target, title: 'Lead Scoring', desc: 'A fit-and-engagement model based on approved lifecycle definitions and available evidence. Demographics, firmographics, page visits, email engagement, and intent signals can be weighted when the underlying data supports them.' },
               { icon: Mail, title: 'Email Nurture Sequences', desc: 'Multi-step, branching email flows that warm leads between calls. Educational content, social proof, objection handling, and re-engagement — all triggered by behaviour and timed around your sales cycle.' },
               { icon: BarChart3, title: 'Campaign Attribution', desc: 'First-touch, last-touch, and multi-touch models that answer "which campaigns drove revenue?" UTM strategy, deal source tracking, and dashboards that connect marketing spend to closed-won.' },
-              { icon: Workflow, title: 'Lead Handoff Workflows', desc: 'Automated lead routing, ownership rules, SLA enforcement, and stage transitions. Marketing-qualified leads land on the right rep within minutes — not days — with full context.' },
+              { icon: Workflow, title: 'Lead Handoff Workflows', desc: 'Lead routing, ownership rules, SLA monitoring, stage transitions, and exception views help time-sensitive leads reach the right owner with the agreed context.' },
             ].map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-xl border shadow-sm">
                 <item.icon className="w-8 h-8 text-purple-600 mb-3" />
@@ -195,16 +251,16 @@ export default function MarketingAutomation() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Is Included</h2>
           <p className="text-lg text-gray-600 mb-8">
-            A typical marketing automation engagement covers the full system from data into deals.
+            A marketing automation engagement can cover the full path from contact data to sales handoff, or focus on the highest-priority system boundary first.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { icon: Filter, title: 'Lead Scoring Model', desc: 'Fit and engagement scoring tied to your ideal customer profile, with thresholds for marketing-qualified and sales-qualified leads. Built natively in HubSpot, Salesforce, or Zoho.' },
-              { icon: Send, title: 'Nurture Sequences', desc: 'Three to five core sequences: welcome, educational nurture, sales-assist, re-engagement, and customer onboarding. Each fully written, segmented, and tested before launch.' },
-              { icon: Workflow, title: 'Routing & Handoff Workflows', desc: 'Lead assignment by territory, account size, or product interest. SLA timers, escalation paths, and notifications so MQL handoff happens in minutes, not days.' },
-              { icon: BarChart3, title: 'Attribution Setup', desc: 'UTM strategy, source tracking, attribution model selection, and reporting dashboards. We close the loop between marketing and revenue once and for all.' },
-              { icon: Mail, title: 'Email Templates & Sequences', desc: 'Sales-assist email templates and meeting booking flows for reps. Every touchpoint branded, tested for deliverability, and tracked.' },
-              { icon: Target, title: 'Segmentation & Lists', desc: 'Smart list architecture, suppression rules, and re-engagement segments. Your list stays clean and your sender reputation stays high.' },
+              { icon: Send, title: 'Nurture Sequences', desc: 'Welcome, educational nurture, sales-assist, re-engagement, or onboarding sequences can be written, segmented, reviewed, and tested when included in the scope.' },
+              { icon: Workflow, title: 'Routing & Handoff Workflows', desc: 'Lead assignment by territory, account size, or product interest, with agreed SLA timers, escalation paths, notifications, and exception handling.' },
+              { icon: BarChart3, title: 'Attribution Setup', desc: 'UTM strategy, source tracking, attribution definitions, and reporting dashboards with documented sources, assumptions, and known limitations.' },
+              { icon: Mail, title: 'Email Templates & Sequences', desc: 'Sales-assist email templates and meeting-booking flows configured for the approved brand, consent model, review process, and measurement plan.' },
+              { icon: Target, title: 'Segmentation & Lists', desc: 'List architecture, suppression rules, consent handling, and re-engagement segments designed to support relevance and sender-reputation controls.' },
             ].map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-xl border shadow-sm">
                 <item.icon className="w-8 h-8 text-purple-600 mb-3" />
@@ -225,9 +281,9 @@ export default function MarketingAutomation() {
           </p>
           <div className="space-y-8">
             {[
-              { step: '01', title: 'CRM Health Check & Strategy (Week 1)', desc: 'We audit your CRM data, review your existing automation, and map your funnel from first touch to closed-won. If the CRM foundation is not solid, we flag it before we build. You receive a written automation strategy with prioritized workflows and KPIs.' },
-              { step: '02', title: 'Build (Week 2-3)', desc: 'We build the lead scoring model, write and configure the nurture sequences, set up routing and SLA workflows, and wire up attribution reporting. Everything is tested with real contact data before it goes live.' },
-              { step: '03', title: 'Launch & Tune (Week 3-4)', desc: 'We go live with sales and marketing aligned on the new playbook. For the first two weeks, we monitor scoring accuracy, sequence performance, and handoff timing — then tune based on real data. Documentation and admin training included.' },
+              { step: '01', title: 'CRM Health Check & Strategy', desc: 'We review the agreed CRM data, existing automation, and funnel from first touch to closed-won. If the foundation is not ready, we flag it before build work. The output is a prioritized workflow and measurement plan.' },
+              { step: '02', title: 'Controlled Build', desc: 'Approved scoring, nurture, routing, handoff, and attribution components are configured in reviewable steps. Test records and agreed acceptance checks are used before production activation.' },
+              { step: '03', title: 'Launch, Verify & Hand Over', desc: 'Approved workflows are launched with monitoring, exception checks, documentation, and training defined in the proposal. Any ongoing tuning period is confirmed in the written scope.' },
             ].map((item, i) => (
               <div key={i} className="flex gap-6">
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-fuchsia-600 flex items-center justify-center flex-shrink-0">
@@ -270,15 +326,15 @@ export default function MarketingAutomation() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Emergent Logic for Marketing Automation</h2>
           <p className="text-lg text-gray-600 mb-8">
-            We are CRM consultants who do automation, not a marketing agency that dabbles in CRM. The difference shows in every workflow we build.
+            We approach marketing automation as a CRM operating-system project: define the data, ownership, consent, handoff, measurement, and exception rules before activating workflows.
           </p>
           <div className="space-y-3">
             {[
-              'Automation built natively in your CRM — no separate marketing tool that drifts out of sync',
+              'CRM treated as the source of truth, with each approved integration and system boundary documented',
               'Lead scoring designed around approved lifecycle definitions and available evidence, not a generic template',
-              'Sales and marketing alignment built in: shared dashboards, agreed handoff thresholds, SLA tracking',
+              'Sales and marketing alignment supported by agreed handoff thresholds, ownership, and SLA reporting',
               'Attribution reporting with documented sources, definitions, and known limitations',
-              'Multi-platform: HubSpot, Salesforce, Zoho — we recommend the right tool for your business',
+              'HubSpot, Salesforce, and Zoho options assessed against licensed features and operating requirements',
               'Post-launch tuning included only when defined in the written scope',
               'Based in Surrey, BC — serving Greater Vancouver and businesses across Canada',
             ].map((item, i) => (
@@ -296,15 +352,7 @@ export default function MarketingAutomation() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
           <div className="space-y-6">
-            {[
-              { q: 'Do I need a CRM in place before we start?', a: 'Yes. Marketing automation only works on a properly configured CRM. If your CRM is not implemented or has serious data issues, we will recommend a CRM Cleanup or Implementation first — otherwise the automation will inherit and amplify those problems.' },
-              { q: 'What CRMs do you build automation in?', a: 'HubSpot, Salesforce, and Zoho are the primary platforms offered. The exact approach depends on the products and permissions in your stack, including HubSpot workflows, Salesforce Flow or Account Engagement, and Zoho CRM workflows.' },
-              { q: 'How is this different from hiring a marketing agency?', a: 'A traditional marketing agency runs campaigns. We build the system underneath the campaigns — the scoring, sequences, attribution, and handoff workflows that turn campaigns into closed deals. We work alongside your existing agency or in-house marketing team, not as a replacement.' },
-              { q: 'Do you write the email copy?', a: 'Yes. Email copy for nurture sequences and sales templates is included. We work with your subject matter experts to capture voice and positioning, then write, format, and test every email before launch.' },
-              { q: 'What about ad campaigns and SEO?', a: 'We do not run paid media or SEO campaigns ourselves. We build the infrastructure that makes those campaigns measurable: UTM strategy, attribution, conversion tracking, and lead routing. Our work makes your existing marketing investment substantially more measurable and easier to optimize.' },
-              { q: 'How quickly do you see results?', a: 'Operational results (faster lead handoff, higher engagement rates) usually start to show in the first month. Revenue impact (higher conversion to closed-won) typically becomes visible over the following quarter as the scoring model and sequences accumulate data and the sales cycle plays out.' },
-              { q: 'Is this a substitute for hiring a marketer?', a: 'No. We build the automation system. Someone in your business still needs to plan campaigns, create content, and review performance. We can recommend marketers and content partners we trust if you do not have those resources in-house.' },
-            ].map((item, i) => (
+            {faqs.map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-xl border">
                 <h3 className="font-bold text-gray-900 mb-2">{item.q}</h3>
                 <p className="text-gray-600">{item.a}</p>
@@ -319,6 +367,10 @@ export default function MarketingAutomation() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Related Reading</h3>
           <div className="grid md:grid-cols-2 gap-4">
+            <Link href="/blog/excel-to-crm-migration-repeat-order-businesses" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-purple-700">Excel-to-CRM Migration for Repeat-Order Businesses</p>
+              <p className="text-gray-600 text-sm">Map customer, product, reorder, ownership, and follow-up data before automating the next action.</p>
+            </Link>
             <Link href="/blog/marketing-automation-needs-crm-cleanup" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Why Marketing Automation Fails Without Cleanup First</p>
               <p className="text-gray-600 text-sm">Automation multiplies whatever is already there. How to know whether your CRM is automation-ready.</p>
@@ -367,9 +419,9 @@ export default function MarketingAutomation() {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-br from-purple-600 to-fuchsia-700">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Build Automation That Closes Deals</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Build Marketing Automation Your Team Can Operate</h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Book a free 30-minute strategy call. We will look at your CRM, your funnel, and your current automation, and walk you through exactly where the highest-leverage improvements are.
+            Book a free 30-minute strategy call to review your CRM, funnel, current automation, and the system boundary that deserves attention first.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <TrackedCTA ctaName="Book Free Strategy Call - Marketing Automation Footer" destination="calendly">
