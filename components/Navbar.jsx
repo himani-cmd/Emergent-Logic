@@ -85,23 +85,30 @@ export default function Navbar() {
               </Link>
             ))}
 
-            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="ml-2"
-              onClick={() => trackCTAClick({ ctaName: 'Book a Call', location: 'navbar', destination: 'calendly' })}>
-              <Button size="sm" className="bg-violet-600 hover:bg-violet-700 text-white font-semibold px-4">
+            <Button asChild size="sm" className="ml-2 bg-violet-600 px-4 font-semibold text-white hover:bg-violet-700">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"
+                onClick={() => trackCTAClick({ ctaName: 'Book a Call', location: 'navbar', destination: 'calendly' })}>
                 Book a Call
-              </Button>
-            </a>
+              </a>
+            </Button>
           </div>
 
           {/* Mobile Toggle */}
-          <button onClick={() => setMobileOpen(!mobileOpen)} className={`md:hidden p-2 ${scrolled || !isHome ? 'text-gray-700' : 'text-white'}`}>
+          <button
+            type="button"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className={`md:hidden p-2 ${scrolled || !isHome ? 'text-gray-700' : 'text-white'}`}
+            aria-label={mobileOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-navigation-menu"
+          >
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {mobileOpen && (
-          <div className="md:hidden bg-white rounded-xl shadow-xl border mt-2 p-4 space-y-1">
+          <div id="mobile-navigation-menu" className="md:hidden bg-white rounded-xl shadow-xl border mt-2 p-4 space-y-1">
             <Link href="/" className="block px-3 py-2 rounded-lg text-gray-700 hover:bg-violet-50 font-medium">Home</Link>
 
             <div className="px-3 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wider">Services</div>
@@ -116,10 +123,12 @@ export default function Navbar() {
               <Link key={i} href={link.href} className="block px-3 py-2 rounded-lg text-gray-700 hover:bg-violet-50 font-medium">{link.title}</Link>
             ))}
 
-            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="block mt-2"
-              onClick={() => trackCTAClick({ ctaName: 'Book a Call', location: 'navbar_mobile', destination: 'calendly' })}>
-              <Button className="w-full bg-violet-600 hover:bg-violet-700">Book a Call</Button>
-            </a>
+            <Button asChild className="mt-2 w-full bg-violet-600 hover:bg-violet-700">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"
+                onClick={() => trackCTAClick({ ctaName: 'Book a Call', location: 'navbar_mobile', destination: 'calendly' })}>
+                Book a Call
+              </a>
+            </Button>
           </div>
         )}
       </div>

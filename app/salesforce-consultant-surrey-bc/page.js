@@ -26,22 +26,22 @@ const services = [
   { title: 'Salesforce Service Cloud', description: 'Case management, knowledge base, and customer portal setup for service-oriented businesses in the Surrey area.' },
   { title: 'HubSpot CRM Implementation', description: 'Full CRM setup including pipelines, automation, email sequences, and reporting. Ideal for growing Surrey SMBs.' },
   { title: 'HubSpot Marketing Hub', description: 'Marketing automation, lead nurturing, landing pages, and email campaigns — all connected to your CRM.' },
-  { title: 'Data Migration', description: 'Clean migration from spreadsheets, legacy CRMs, or other systems into Salesforce or HubSpot. No data left behind.' },
-  { title: 'Training & Adoption', description: 'Hands-on, role-specific training so your team actually uses the CRM. We are local in Surrey for in-person sessions.' },
+  { title: 'Data Migration', description: 'Controlled migration from supported spreadsheets, legacy CRMs, or other systems with mapping, test imports, validation, and approval.' },
+  { title: 'Training & Adoption', description: 'Role-specific training and documented handoff can be included, with any in-person requirement confirmed during discovery.' },
 ];
 
 const reasons = [
   'We are based in Surrey — with remote delivery for Canadian and US teams',
   'Senior CRM implementation experience across Salesforce, HubSpot, and Zoho',
-  'AI-accelerated delivery helps shorten implementation and cleanup timelines',
-  'We implement both Salesforce AND HubSpot — we recommend what fits, not what pays us more',
+  'AI-assisted analysis and documentation with human approval before production changes',
+  'Salesforce and HubSpot requirements are compared against process, governance, integration, and administration needs',
   'Clear fixed-scope projects instead of open-ended agency retainers',
   'Free 30-minute strategy call with no obligation or sales pressure',
 ];
 
 const faqs = [
   { q: 'How much does a Salesforce consultant cost in Surrey, BC?', a: 'Salesforce consulting costs depend on whether you need cleanup, optimization, migration, or a new implementation. Emergent Logic scopes projects up front so you understand the likely budget before work begins.' },
-  { q: 'How long does Salesforce implementation take?', a: 'Focused Salesforce cleanup and optimization projects can often move in weeks. New implementations usually take longer depending on data migration, custom objects, automation, and integrations.' },
+  { q: 'How long does Salesforce implementation take?', a: 'Timing depends on the agreed scope, data condition, custom objects, automation, integrations, stakeholder availability, and acceptance criteria. The delivery plan and dependencies are documented before work begins.' },
   { q: 'Do you also implement HubSpot?', a: 'Yes. Emergent Logic implements both Salesforce and HubSpot. We recommend the right platform based on your business needs, not our preferences. Many Surrey businesses choose HubSpot for its ease of use and integrated marketing tools.' },
 ];
 
@@ -90,7 +90,7 @@ export default function SalesforceConsultantSurrey() {
           <Breadcrumbs items={[
             { label: 'Services', href: '/#services' },
             { label: 'Salesforce Consultant Surrey', href: '/salesforce-consultant-surrey-bc' },
-          ]} />
+          ]} tone="dark" />
           <div className="flex items-center gap-2 text-violet-300 mb-4">
             <MapPin className="w-5 h-5" />
             <span>Surrey, BC</span>
@@ -103,9 +103,13 @@ export default function SalesforceConsultantSurrey() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
-              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto"><Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
+              <Button asChild size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">
+                <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" /></a>
+              </Button>
             </TrackedCTA>
-            <Link href="/services/crm-implementation" className="w-full sm:w-auto"><Button size="lg" variant="outline" className="w-full border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white sm:w-auto">View CRM Services</Button></Link>
+            <Button asChild size="lg" variant="outline" className="w-full border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white sm:w-auto">
+              <Link href="/services/crm-implementation">View CRM Services</Link>
+            </Button>
           </div>
           <div className="grid grid-cols-3 gap-6 max-w-2xl">
             <div className="text-center"><div className="flex items-center justify-center gap-2 text-white mb-1"><Award className="w-5 h-5 text-violet-400" /><span className="text-3xl font-bold">3</span></div><div className="text-white/60 text-sm">CRM Platforms</div></div>
@@ -154,14 +158,16 @@ export default function SalesforceConsultantSurrey() {
       {/* FAQ */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Salesforce Consulting FAQ — Surrey, BC</h2>
-          <div className="space-y-6 max-w-3xl">
-            {faqs.map((faq, i) => (
-              <Card key={i} className="border-0 shadow-lg">
-                <CardHeader><CardTitle className="text-lg">{faq.q}</CardTitle></CardHeader>
-                <CardContent><p className="text-gray-600">{faq.a}</p></CardContent>
-              </Card>
-            ))}
+          <div className="mx-auto max-w-4xl">
+            <h2 className="mb-8 text-3xl font-bold text-gray-900">Salesforce Consulting FAQ — Surrey, BC</h2>
+            <div className="space-y-6">
+              {faqs.map((faq) => (
+                <Card key={faq.q} className="border-0 shadow-lg">
+                  <CardHeader><CardTitle className="text-lg">{faq.q}</CardTitle></CardHeader>
+                  <CardContent><p className="text-gray-600">{faq.a}</p></CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -171,7 +177,11 @@ export default function SalesforceConsultantSurrey() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to talk Salesforce or HubSpot?</h2>
           <p className="text-xl text-white/80 mb-8">Book a free 30-minute strategy call. We will assess your CRM needs and recommend the right path — no obligation, no sales pitch.</p>
-          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+          <TrackedCTA ctaName="Surrey Salesforce Final Consultation" destination="/contact">
+            <Button asChild size="lg" className="bg-white text-violet-900 hover:bg-violet-100">
+              <Link href="/contact">Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" /></Link>
+            </Button>
+          </TrackedCTA>
         </div>
       </section>
 

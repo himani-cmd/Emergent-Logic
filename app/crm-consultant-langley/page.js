@@ -258,18 +258,18 @@ export default function CrmConsultantLangley() {
           </p>
           <div className="flex max-w-3xl flex-col gap-4 sm:flex-row sm:flex-wrap">
             <TrackedCTA ctaName="Langley CRM Lead Follow-Up Audit" destination="/lead-follow-up-audit">
-              <Link href="/lead-follow-up-audit" className="w-full sm:w-auto">
-                <Button size="lg" className="w-full bg-white text-[#1E3A5F] hover:bg-[#EEF2FF] sm:w-auto">
+              <Button asChild size="lg" className="w-full bg-white text-[#1E3A5F] hover:bg-[#EEF2FF] sm:w-auto">
+                <Link href="/lead-follow-up-audit">
                   Get a Free 5-Point Audit <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </TrackedCTA>
             <TrackedCTA ctaName="Langley CRM Consultation" destination="calendly">
-              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                <Button size="lg" className="w-full border border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white sm:w-auto">
+              <Button asChild size="lg" className="w-full border border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white sm:w-auto">
+                <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                   Book a CRM Consultation
-                </Button>
-              </a>
+                </a>
+              </Button>
             </TrackedCTA>
           </div>
         </div>
@@ -351,11 +351,11 @@ export default function CrmConsultantLangley() {
               Send one public contact form, consultation page, demo request or inquiry flow. Emergent Logic will review the visible path and return a practical five-point note. No CRM credentials are needed for this first review.
             </p>
             <TrackedCTA ctaName="Langley CRM Diagnostic Section" destination="/lead-follow-up-audit">
-              <Link href="/lead-follow-up-audit">
-                <Button className="bg-[#4B37C8] text-white hover:bg-[#3925A8]">
+              <Button asChild className="bg-[#4B37C8] text-white hover:bg-[#3925A8]">
+                <Link href="/lead-follow-up-audit">
                   Review the Free Audit <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </TrackedCTA>
           </div>
         </div>
@@ -492,14 +492,16 @@ export default function CrmConsultantLangley() {
 
       <section className="border-t border-[#D0D5DD] bg-white py-16">
         <div className="container mx-auto px-4">
-          <h2 className="mb-8 text-3xl font-bold text-[#101828]">CRM Consultant Langley FAQ</h2>
-          <div className="max-w-4xl divide-y divide-[#D0D5DD] border-y border-[#D0D5DD]">
-            {faqs.map((faq) => (
-              <article key={faq.q} className="py-6">
-                <h3 className="mb-3 text-xl font-bold text-[#101828]">{faq.q}</h3>
-                <p className="leading-relaxed text-[#475467]">{faq.a}</p>
-              </article>
-            ))}
+          <div className="mx-auto max-w-4xl">
+            <h2 className="mb-8 text-3xl font-bold text-[#101828]">CRM Consultant Langley FAQ</h2>
+            <div className="divide-y divide-[#D0D5DD] border-y border-[#D0D5DD]">
+              {faqs.map((faq) => (
+                <article key={faq.q} className="py-6">
+                  <h3 className="mb-3 text-xl font-bold text-[#101828]">{faq.q}</h3>
+                  <p className="leading-relaxed text-[#475467]">{faq.a}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -511,11 +513,11 @@ export default function CrmConsultantLangley() {
             Use a 30-minute consultation to describe the current process, affected system and business priority. Access, scope, timing and commercial terms are handled only after fit is established and a written proposal is agreed.
           </p>
           <TrackedCTA ctaName="Langley CRM Final Consultation" destination="calendly">
-            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-white text-[#1E3A5F] hover:bg-[#EEF2FF]">
+            <Button asChild size="lg" className="bg-white text-[#1E3A5F] hover:bg-[#EEF2FF]">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </a>
+              </a>
+            </Button>
           </TrackedCTA>
           <p className="mt-5 text-sm text-white/60">Page reviewed August 2026.</p>
         </div>

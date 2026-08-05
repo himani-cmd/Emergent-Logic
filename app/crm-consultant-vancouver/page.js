@@ -131,18 +131,18 @@ export default function CrmConsultantVancouver() {
           </p>
           <div className="flex max-w-3xl flex-col gap-4 sm:flex-row sm:flex-wrap">
             <TrackedCTA ctaName="Vancouver CRM Free Follow-Up Audit" destination="/lead-follow-up-audit">
-              <Link href="/lead-follow-up-audit" className="w-full sm:w-auto">
-                <Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">
+              <Button asChild size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">
+                <Link href="/lead-follow-up-audit">
                   Get a Free 5-Point Audit <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </TrackedCTA>
             <TrackedCTA ctaName="Vancouver CRM Review Call" destination="calendly">
-              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                <Button size="lg" className="w-full border border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white sm:w-auto">
+              <Button asChild size="lg" className="w-full border border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white sm:w-auto">
+                <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                   Book a CRM Review
-                </Button>
-              </a>
+                </a>
+              </Button>
             </TrackedCTA>
           </div>
         </div>
@@ -183,11 +183,11 @@ export default function CrmConsultantVancouver() {
               Send us one contact form, consultation request, demo flow, or inquiry page. We will review the visible follow-up path and return a practical five-point note. No CRM access is needed for the first review.
             </p>
             <TrackedCTA ctaName="Vancouver CRM Audit Section" destination="/lead-follow-up-audit">
-              <Link href="/lead-follow-up-audit">
-                <Button size="lg" className="bg-violet-700 text-white hover:bg-violet-800">
+              <Button asChild size="lg" className="bg-violet-700 text-white hover:bg-violet-800">
+                <Link href="/lead-follow-up-audit">
                   See the Free Audit <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </TrackedCTA>
           </div>
           <div className="border-l-4 border-violet-600 bg-white px-6 py-7 shadow-sm">
@@ -295,18 +295,20 @@ export default function CrmConsultantVancouver() {
 
       <section className="bg-white py-16">
         <div className="container mx-auto px-4">
-          <h2 className="mb-8 text-3xl font-bold text-gray-900">CRM Consultant Vancouver FAQ</h2>
-          <div className="max-w-3xl space-y-6">
-            {faqs.map((faq) => (
-              <Card key={faq.q} className="border-0 shadow-lg">
-                <CardHeader>
-                  <CardTitle className="text-lg">{faq.q}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">{faq.a}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="mx-auto max-w-4xl">
+            <h2 className="mb-8 text-3xl font-bold text-gray-900">CRM Consultant Vancouver FAQ</h2>
+            <div className="space-y-6">
+              {faqs.map((faq) => (
+                <Card key={faq.q} className="border-0 shadow-lg">
+                  <CardHeader>
+                    <CardTitle className="text-lg">{faq.q}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600">{faq.a}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -317,11 +319,13 @@ export default function CrmConsultantVancouver() {
           <p className="mx-auto mb-8 max-w-3xl text-xl text-white/80">
             Book a short CRM review. We will identify the likely cleanup, implementation, integration, or reporting sprint before recommending next steps.
           </p>
-          <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">
-              Book a CRM Review <ArrowRight className="ml-2 h-5 w-5" />
+          <TrackedCTA ctaName="Vancouver CRM Final Review" destination="calendly">
+            <Button asChild size="lg" className="bg-white text-violet-900 hover:bg-violet-100">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
+                Book a CRM Review <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
             </Button>
-          </a>
+          </TrackedCTA>
         </div>
       </section>
 
