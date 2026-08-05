@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import TrackedCTA from '@/components/TrackedCTA';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, MapPin, Zap, BarChart3, Settings, RefreshCw } from 'lucide-react';
@@ -24,7 +25,7 @@ const services = [
   { icon: Settings, title: 'HubSpot CRM Setup', desc: 'Portal settings, users, permissions, properties, lifecycle stages, pipelines, task queues, and meeting links configured around your actual sales process.' },
   { icon: Zap, title: 'Workflow Automation', desc: 'Lead assignment, follow-up reminders, MQL handoff, internal notifications, deal stage automation, nurture workflows, and re-engagement sequences.' },
   { icon: BarChart3, title: 'Reporting & Dashboards', desc: 'Pipeline, revenue, activity, campaign attribution, and source reporting that your founder, sales lead, and marketing team can trust.' },
-  { icon: RefreshCw, title: 'Migration & Cleanup', desc: 'Clean migration from spreadsheets, Salesforce, Pipedrive, Zoho, or legacy tools with deduplication, field mapping, and data quality checks.' },
+  { icon: RefreshCw, title: 'Migration & Cleanup', desc: 'Controlled migration from supported spreadsheets, CRMs, or legacy tools with deduplication, field mapping, test imports, and data quality checks.' },
 ];
 
 const faqs = [
@@ -74,15 +75,21 @@ export default function HubSpotConsultantSurrey() {
           <Breadcrumbs items={[
             { label: 'Services', href: '/#services' },
             { label: 'HubSpot Consultant Surrey', href: '/hubspot-consultant-surrey-bc' },
-          ]} />
+          ]} tone="dark" />
           <div className="flex items-center gap-2 text-orange-200 mb-4"><MapPin className="w-5 h-5" /><span>Surrey, BC</span></div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">HubSpot Consultant in Surrey, BC</h1>
           <p className="text-xl text-white/75 max-w-3xl mb-8">
             We help Surrey and Greater Vancouver businesses set up HubSpot properly: CRM structure, Sales Hub, Marketing Hub, workflows, reporting, cleanup, and training. The goal is not more software. The goal is cleaner follow-up, better visibility, and a CRM your team actually uses.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-orange-900 hover:bg-orange-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
-            <Link href="/services/hubspot-consulting"><Button size="lg" variant="outline" className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white">View HubSpot Services</Button></Link>
+            <TrackedCTA ctaName="Surrey HubSpot Consultation" destination="calendly">
+              <Button asChild size="lg" className="bg-white text-orange-900 hover:bg-orange-100">
+                <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" /></a>
+              </Button>
+            </TrackedCTA>
+            <Button asChild size="lg" variant="outline" className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white">
+              <Link href="/services/hubspot-consulting">View HubSpot Services</Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -122,7 +129,7 @@ export default function HubSpotConsultantSurrey() {
               'Your forms, emails, deals, and reports are not connected cleanly',
               'Sales and marketing disagree on lead quality or ownership',
               'You need a local, practical HubSpot consultant without generic agency fluff',
-              'You want fixed-scope implementation, cleanup, and training in weeks, not months',
+              'You want implementation, cleanup, and training defined in a clear written scope',
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3"><CheckCircle className="w-6 h-6 text-orange-600 flex-shrink-0 mt-0.5" /><p className="text-gray-700">{item}</p></div>
             ))}

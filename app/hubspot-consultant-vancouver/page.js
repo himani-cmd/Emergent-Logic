@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import TrackedCTA from '@/components/TrackedCTA';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -108,7 +109,7 @@ export default function HubspotConsultantVancouver() {
           <Breadcrumbs items={[
             { label: 'Services', href: '/#services' },
             { label: 'HubSpot Consultant Vancouver', href: '/hubspot-consultant-vancouver' },
-          ]} />
+          ]} tone="dark" />
           <div className="flex items-center gap-2 text-violet-300 mb-4"><MapPin className="w-5 h-5 flex-shrink-0" /><span>Vancouver & Metro Vancouver</span></div>
           <h1 className="max-w-4xl break-words text-4xl font-bold leading-tight tracking-tight text-white mb-4 md:text-5xl lg:text-6xl">
             HubSpot consultant in Vancouver for setup, cleanup and automation
@@ -117,8 +118,14 @@ export default function HubspotConsultantVancouver() {
             Emergent Logic helps Vancouver and Metro Vancouver teams implement, clean up, migrate, and improve HubSpot. The work can connect pipelines, lifecycle stages, workflows, reporting, integrations, and lead follow-up into one documented operating system.
           </p>
           <div className="flex max-w-3xl flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto"><Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
-            <Link href="/services/marketing-automation" className="w-full sm:w-auto"><Button size="lg" className="w-full border border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white sm:w-auto">Marketing Automation Services</Button></Link>
+            <TrackedCTA ctaName="Vancouver HubSpot Consultation" destination="calendly">
+              <Button asChild size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">
+                <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" /></a>
+              </Button>
+            </TrackedCTA>
+            <Button asChild size="lg" className="w-full border border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white sm:w-auto">
+              <Link href="/services/marketing-automation">Marketing Automation Services</Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -196,9 +203,11 @@ export default function HubspotConsultantVancouver() {
 
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">HubSpot Consulting FAQ — Vancouver, BC</h2>
-          <div className="space-y-6 max-w-3xl">
-            {faqs.map((faq, i) => (<Card key={i} className="border-0 shadow-lg"><CardHeader><CardTitle className="text-lg">{faq.q}</CardTitle></CardHeader><CardContent><p className="text-gray-600">{faq.a}</p></CardContent></Card>))}
+          <div className="mx-auto max-w-4xl">
+            <h2 className="mb-8 text-3xl font-bold text-gray-900">HubSpot Consulting FAQ — Vancouver, BC</h2>
+            <div className="space-y-6">
+              {faqs.map((faq) => (<Card key={faq.q} className="border-0 shadow-lg"><CardHeader><CardTitle className="text-lg">{faq.q}</CardTitle></CardHeader><CardContent><p className="text-gray-600">{faq.a}</p></CardContent></Card>))}
+            </div>
           </div>
         </div>
       </section>
@@ -207,7 +216,11 @@ export default function HubspotConsultantVancouver() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to get started with HubSpot?</h2>
           <p className="text-xl text-white/80 mb-8">Book a 30-minute CRM consultation to review the current portal, the operating problem, and the information needed for a practical scope.</p>
-          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+          <TrackedCTA ctaName="Vancouver HubSpot Final Consultation" destination="/contact">
+            <Button asChild size="lg" className="bg-white text-violet-900 hover:bg-violet-100">
+              <Link href="/contact">Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" /></Link>
+            </Button>
+          </TrackedCTA>
         </div>
       </section>
 

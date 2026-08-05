@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import TrackedCTA from '@/components/TrackedCTA';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -47,9 +48,21 @@ const faqs = [
   { q: 'How long does a CRM implementation take?', a: 'Timing depends on data volume, integrations, stakeholder availability, testing, and acceptance criteria. The delivery plan and dependencies are documented before work begins.' },
 ];
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  '@id': 'https://www.emergent-logic.ca/crm-consultant-coquitlam#faq',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+};
+
 export default function CrmConsultantCoquitlam() {
   return (
     <main className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
       
       <section className="overflow-hidden pt-32 pb-16 bg-gradient-to-br from-violet-900 via-indigo-900 to-purple-900">
@@ -57,15 +70,21 @@ export default function CrmConsultantCoquitlam() {
           <Breadcrumbs items={[
             { label: 'Services', href: '/#services' },
             { label: 'CRM Consultant Coquitlam', href: '/crm-consultant-coquitlam' },
-          ]} />
+          ]} tone="dark" />
           <div className="flex items-center gap-2 text-violet-300 mb-4"><MapPin className="w-5 h-5" /><span>Coquitlam, BC</span></div>
           <h1 className="max-w-4xl break-words text-4xl md:text-5xl font-bold leading-tight text-white mb-4">CRM Consultant in Coquitlam, BC</h1>
           <p className="text-lg md:text-xl leading-relaxed text-white/75 max-w-3xl mb-8">
             CRM implementation, cleanup, and automation planning for Coquitlam and Tri-Cities businesses using HubSpot, Salesforce, or Zoho. Each proposal defines the scope, price, delivery plan, dependencies, and approval boundaries.
           </p>
           <div className="flex max-w-3xl flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto"><Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
-            <Link href="/#services" className="w-full sm:w-auto"><Button size="lg" variant="outline" className="w-full !border-white/40 !bg-transparent !text-white hover:!bg-white/10 hover:!text-white sm:w-auto">View All Services</Button></Link>
+            <TrackedCTA ctaName="Coquitlam CRM Consultation" destination="calendly">
+              <Button asChild size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">
+                <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" /></a>
+              </Button>
+            </TrackedCTA>
+            <Button asChild size="lg" variant="outline" className="w-full !border-white/40 !bg-transparent !text-white hover:!bg-white/10 hover:!text-white sm:w-auto">
+              <Link href="/#services">View All Services</Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -105,9 +124,11 @@ export default function CrmConsultantCoquitlam() {
 
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">CRM Consulting FAQ — Coquitlam, BC</h2>
-          <div className="space-y-6 max-w-3xl">
-            {faqs.map((faq, i) => (<Card key={i} className="border-0 shadow-lg"><CardHeader><CardTitle className="text-lg">{faq.q}</CardTitle></CardHeader><CardContent><p className="text-gray-600">{faq.a}</p></CardContent></Card>))}
+          <div className="mx-auto max-w-4xl">
+            <h2 className="mb-8 text-3xl font-bold text-gray-900">CRM Consulting FAQ — Coquitlam, BC</h2>
+            <div className="space-y-6">
+              {faqs.map((faq) => (<Card key={faq.q} className="border-0 shadow-lg"><CardHeader><CardTitle className="text-lg">{faq.q}</CardTitle></CardHeader><CardContent><p className="text-gray-600">{faq.a}</p></CardContent></Card>))}
+            </div>
           </div>
         </div>
       </section>
@@ -136,7 +157,11 @@ export default function CrmConsultantCoquitlam() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to find the right CRM for your Coquitlam business?</h2>
           <p className="text-xl text-white/80 mb-8">Book a free 30-minute strategy call. We will assess your needs and recommend the right CRM platform — no obligation, no sales pitch.</p>
-          <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
+          <TrackedCTA ctaName="Coquitlam CRM Final Consultation" destination="calendly">
+            <Button asChild size="lg" className="bg-white text-violet-900 hover:bg-violet-100">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" /></a>
+            </Button>
+          </TrackedCTA>
         </div>
       </section>
 

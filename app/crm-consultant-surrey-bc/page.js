@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import TrackedCTA from '@/components/TrackedCTA';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -27,8 +28,8 @@ const process = [
   { step: '02', title: 'Platform Selection', description: 'We recommend the CRM that fits your business size, complexity, and budget — with a clear explanation of why.' },
   { step: '03', title: 'Configuration', description: 'Pipelines, deal stages, custom fields, dashboards, and automations configured to match your exact process.' },
   { step: '04', title: 'Data Migration', description: 'Controlled migration from supported sources with backups, field mapping, test imports, validation, rollback, and approval.' },
-  { step: '05', title: 'Integration', description: 'Connect your CRM to email, website, marketing automation, accounting, and every other tool in your stack.' },
-  { step: '06', title: 'Training & Launch', description: 'Hands-on, role-specific training for your team. We make sure your CRM gets adopted — not ignored.' },
+  { step: '05', title: 'Integration', description: 'Connect supported email, website, marketing automation, accounting, and operating tools after technical fit is confirmed.' },
+  { step: '06', title: 'Training & Launch', description: 'Role-specific training, acceptance checks, and documentation can be included so the team has a clear operating handoff.' },
 ];
 
 const reasons = [
@@ -43,13 +44,25 @@ const reasons = [
 const faqs = [
   { q: 'Which CRM is best for small businesses in Surrey, BC?', a: 'The right CRM depends on your sales process, number of users, reporting needs, integrations, and internal capacity. HubSpot can suit teams that want an approachable sales and marketing platform, while Salesforce is often considered when deeper customization and governance are required.' },
   { q: 'How much does CRM consulting cost in Surrey?', a: 'Cost depends on the number of users, data condition, workflows, integrations, and training required. We first identify the specific backlog or implementation scope, then provide a clear estimate before work begins.' },
-  { q: 'Do you offer CRM training?', a: 'Yes. Every CRM implementation includes role-specific training for your team. We are local in Surrey, so we can provide in-person training sessions when needed.' },
+  { q: 'Do you offer CRM training?', a: 'Training and adoption support can be included in the written scope. Emergent Logic is based in Surrey, and any in-person requirement is confirmed during discovery.' },
   { q: 'Can you help us switch from one CRM to another?', a: 'Yes. We can assess data sources, clean and map records, run a controlled migration, and reconcile the result before launch. The migration plan and validation steps are agreed before records are moved.' },
 ];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  '@id': 'https://www.emergent-logic.ca/crm-consultant-surrey-bc#faq',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+};
 
 export default function CrmConsultantSurrey() {
   return (
     <main className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
       
       <section className="overflow-hidden pt-32 pb-16 bg-gradient-to-br from-violet-900 via-indigo-900 to-purple-900">
@@ -57,15 +70,21 @@ export default function CrmConsultantSurrey() {
           <Breadcrumbs items={[
             { label: 'Services', href: '/#services' },
             { label: 'CRM Consultant Surrey', href: '/crm-consultant-surrey-bc' },
-          ]} />
+          ]} tone="dark" />
           <div className="flex items-center gap-2 text-violet-300 mb-4"><MapPin className="w-5 h-5" /><span>Surrey, BC</span></div>
           <h1 className="max-w-4xl break-words text-4xl md:text-5xl font-bold leading-tight text-white mb-4">CRM Consultant in Surrey, BC</h1>
           <p className="text-lg md:text-xl leading-relaxed text-white/75 max-w-3xl mb-8">
             Practical CRM consulting for Surrey businesses that need cleaner data, clearer pipelines, reliable follow-up, useful reporting, or a better implementation plan. We work across leading CRM platforms and define the scope, migration, workflows, integrations, and training before delivery begins.
           </p>
           <div className="flex max-w-3xl flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <Link href="/contact" className="w-full sm:w-auto"><Button size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
-            <Link href="/services/crm-implementation" className="w-full sm:w-auto"><Button size="lg" variant="outline" className="w-full !border-white/40 !bg-transparent !text-white hover:!bg-white/10 hover:!text-white sm:w-auto">Full CRM Services</Button></Link>
+            <TrackedCTA ctaName="Surrey CRM Consultation" destination="/contact">
+              <Button asChild size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">
+                <Link href="/contact">Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" /></Link>
+              </Button>
+            </TrackedCTA>
+            <Button asChild size="lg" variant="outline" className="w-full !border-white/40 !bg-transparent !text-white hover:!bg-white/10 hover:!text-white sm:w-auto">
+              <Link href="/services/crm-implementation">Full CRM Services</Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -119,9 +138,11 @@ export default function CrmConsultantSurrey() {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">CRM Consulting FAQ — Surrey, BC</h2>
-          <div className="space-y-6 max-w-3xl">
-            {faqs.map((faq, i) => (<Card key={i} className="border-0 shadow-lg"><CardHeader><CardTitle className="text-lg">{faq.q}</CardTitle></CardHeader><CardContent><p className="text-gray-600">{faq.a}</p></CardContent></Card>))}
+          <div className="mx-auto max-w-4xl">
+            <h2 className="mb-8 text-3xl font-bold text-gray-900">CRM Consulting FAQ — Surrey, BC</h2>
+            <div className="space-y-6">
+              {faqs.map((faq) => (<Card key={faq.q} className="border-0 shadow-lg"><CardHeader><CardTitle className="text-lg">{faq.q}</CardTitle></CardHeader><CardContent><p className="text-gray-600">{faq.a}</p></CardContent></Card>))}
+            </div>
           </div>
         </div>
       </section>
@@ -130,7 +151,11 @@ export default function CrmConsultantSurrey() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to find the right CRM for your Surrey business?</h2>
           <p className="text-xl text-white/80 mb-8">Book a free 30-minute strategy call. We will assess your needs and recommend the right CRM platform — no obligation, no sales pitch.</p>
-          <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+          <TrackedCTA ctaName="Surrey CRM Final Consultation" destination="/contact">
+            <Button asChild size="lg" className="bg-white text-violet-900 hover:bg-violet-100">
+              <Link href="/contact">Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" /></Link>
+            </Button>
+          </TrackedCTA>
         </div>
       </section>
 
