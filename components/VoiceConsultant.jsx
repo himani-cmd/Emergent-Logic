@@ -573,9 +573,9 @@ export default function VoiceConsultant({ enabled = false }) {
   if (!enabled) return null;
 
   return (
-    <div className="fixed bottom-4 right-4 z-[60] flex w-[calc(100vw-2rem)] max-w-sm flex-col items-end gap-3 sm:bottom-5 sm:right-5 sm:w-auto">
+    <div className="pointer-events-none fixed bottom-4 right-4 z-[60] flex w-[calc(100vw-2rem)] max-w-sm flex-col items-end gap-3 sm:bottom-5 sm:right-5 sm:w-auto">
       {promptVisible && !panelOpen ? (
-        <div className="w-full max-w-xs rounded-lg border border-indigo-100 bg-white p-3 text-left shadow-xl shadow-indigo-950/10 motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2">
+        <div className="pointer-events-auto w-full max-w-xs rounded-lg border border-indigo-100 bg-white p-3 text-left shadow-xl shadow-indigo-950/10 motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2">
           <div className="flex items-start gap-3">
             <div className="mt-0.5 rounded-md bg-indigo-50 p-1.5 text-indigo-600">
               <Sparkles className="h-4 w-4" aria-hidden="true" />
@@ -608,7 +608,7 @@ export default function VoiceConsultant({ enabled = false }) {
           role="dialog"
           aria-labelledby="voice-consultant-title"
           aria-describedby="voice-consultant-description"
-          className="w-full overflow-hidden rounded-lg border border-white/10 bg-slate-950 text-white shadow-2xl shadow-indigo-950/30 sm:w-[24rem]"
+          className="pointer-events-auto w-full overflow-hidden rounded-lg border border-white/10 bg-slate-950 text-white shadow-2xl shadow-indigo-950/30 sm:w-[24rem]"
         >
           <div className="border-b border-white/10 bg-gradient-to-r from-slate-950 via-indigo-950 to-slate-900 p-4">
             <div className="flex items-start justify-between gap-4">
@@ -737,7 +737,7 @@ export default function VoiceConsultant({ enabled = false }) {
           type="button"
           onClick={openPanel}
           onKeyDown={handleOpenKeyDown}
-          className="inline-flex items-center gap-2 rounded-lg border border-indigo-200 bg-white px-4 py-3 text-sm font-semibold text-slate-950 shadow-xl shadow-indigo-950/10 transition hover:border-indigo-300 hover:bg-indigo-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 motion-reduce:transition-none"
+          className="pointer-events-auto inline-flex items-center gap-2 rounded-lg border border-indigo-200 bg-white px-4 py-3 text-sm font-semibold text-slate-950 shadow-xl shadow-indigo-950/10 transition hover:border-indigo-300 hover:bg-indigo-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 motion-reduce:transition-none"
           aria-haspopup="dialog"
           aria-expanded={panelOpen}
         >

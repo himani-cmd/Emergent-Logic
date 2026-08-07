@@ -31,7 +31,7 @@ export default function CookieConsent() {
   if (!showBanner) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 p-4">
+    <div className="fixed bottom-0 left-0 right-0 z-[70] p-4">
       <div className="container mx-auto">
         <div className="bg-white rounded-2xl shadow-2xl border p-6 max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
