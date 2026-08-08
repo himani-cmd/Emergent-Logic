@@ -5,10 +5,12 @@ import CookieConsent from '@/components/CookieConsent';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ShareButtons from '@/components/ShareButtons';
 import CRMReadinessAssessment from '@/components/CRMReadinessAssessment';
+import WorkbookDownload from '@/components/WorkbookDownload';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Boxes, CalendarClock, CheckCircle2, Database, Repeat2, Users } from 'lucide-react';
 
 const pageUrl = 'https://www.emergent-logic.ca/blog/excel-to-crm-migration-repeat-order-businesses';
+const workbookUrl = 'https://www.emergent-logic.ca/resources/emergent_logic_excel_to_crm_implementation_workbook.xlsx';
 
 export const metadata = {
   title: 'Excel-to-CRM Migration Checklist',
@@ -77,10 +79,26 @@ const jsonLd = {
       headline: 'Excel-to-CRM Migration Checklist for Repeat-Order Businesses',
       description: metadata.description,
       datePublished: '2026-07-31',
-      dateModified: '2026-07-31',
+      dateModified: '2026-08-08',
       author: { '@type': 'Organization', '@id': 'https://www.emergent-logic.ca/#organization', name: 'Emergent Logic' },
       publisher: { '@id': 'https://www.emergent-logic.ca/#organization' },
       mainEntityOfPage: pageUrl,
+      hasPart: { '@id': `${pageUrl}#workbook` },
+    },
+    {
+      '@type': 'DigitalDocument',
+      '@id': `${pageUrl}#workbook`,
+      name: 'Excel-to-CRM Implementation Workbook',
+      description: 'A seven-sheet XLSX template for CRM field mapping, data cleanup, duplicate rules, test-import evidence, acceptance checks, and repeat-order follow-up planning.',
+      encodingFormat: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+      contentUrl: workbookUrl,
+      isAccessibleForFree: true,
+      inLanguage: 'en-CA',
+      datePublished: '2026-08-08',
+      author: { '@id': 'https://www.emergent-logic.ca/#organization' },
+      publisher: { '@id': 'https://www.emergent-logic.ca/#organization' },
+      learningResourceType: 'Implementation template',
+      about: ['CRM migration', 'Data mapping', 'Duplicate management', 'User acceptance testing', 'Repeat-order follow-up'],
     },
     {
       '@type': 'FAQPage',
@@ -195,6 +213,8 @@ export default function ExcelToCRMMigrationGuide() {
               </li>
             ))}
           </ol>
+
+          <WorkbookDownload />
 
           <CRMReadinessAssessment />
 

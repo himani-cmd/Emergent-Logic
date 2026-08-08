@@ -5,10 +5,12 @@ const root = process.cwd();
 const analyticsPath = path.join(root, 'lib', 'analytics.js');
 const providerPath = path.join(root, 'components', 'AnalyticsProvider.jsx');
 const contactPath = path.join(root, 'app', 'contact', 'page.js');
+const workbookPath = path.join(root, 'components', 'WorkbookDownload.jsx');
 
 const analytics = fs.readFileSync(analyticsPath, 'utf8');
 const provider = fs.readFileSync(providerPath, 'utf8');
 const contact = fs.readFileSync(contactPath, 'utf8');
+const workbookDownload = fs.readFileSync(workbookPath, 'utf8');
 
 const checks = [
   {
@@ -40,6 +42,15 @@ const checks = [
       !analytics.includes('phone_number:') &&
       !contact.includes('event.data?.payload'),
     message: 'Analytics helpers must not include consultation content or contact details.',
+  },
+  {
+    passed:
+      analytics.includes("trackEvent('resource_download'") &&
+      workbookDownload.includes('trackResourceDownload') &&
+      workbookDownload.includes("resourceType: 'xlsx'") &&
+      !workbookDownload.includes('email_address') &&
+      !workbookDownload.includes('phone_number'),
+    message: 'Workbook downloads must emit a non-PII resource_download event.',
   },
 ];
 
