@@ -14,11 +14,11 @@ const workbookUrl = 'https://www.emergent-logic.ca/resources/emergent_logic_exce
 
 export const metadata = {
   title: 'Excel-to-CRM Migration Checklist',
-  description: 'A practical Excel-to-CRM migration checklist for distributors and repeat-order businesses: customer data, products, reorder timing, ownership, reports, and platform fit.',
+  description: 'Excel-to-CRM migration checklist and free workbook for field mapping, duplicates, test imports, reorder timing, ownership, and acceptance checks.',
   alternates: { canonical: pageUrl },
   openGraph: {
     title: 'Excel-to-CRM Migration Checklist for Repeat-Order Businesses',
-    description: 'Plan customer, product, reorder, ownership, and follow-up data before moving a repeat-order sales process from spreadsheets into a CRM.',
+    description: 'Excel-to-CRM migration checklist and free workbook for field mapping, duplicates, test imports, reorder timing, ownership, and acceptance checks.',
     url: pageUrl,
     type: 'article',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
@@ -129,12 +129,12 @@ export default function ExcelToCRMMigrationGuide() {
             Excel-to-CRM migration checklist for repeat-order businesses
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
-            A CRM should help a distributor or repeat-order business see who buys what, when follow-up is due, who owns the relationship, and what happened next. This guide maps the decisions that should be made before spreadsheet data is imported or reminders are automated.
+            A CRM should help a distributor or repeat-order business see who buys what, when follow-up is due, who owns the relationship, and what happened next. This guide and free seven-sheet workbook map the decisions that should be made before spreadsheet data is imported or reminders are automated.
           </p>
           <div className="mt-7 flex flex-wrap items-center gap-4 text-sm text-slate-300">
             <span>By Emergent Logic</span>
             <span aria-hidden="true">|</span>
-            <span>Updated July 31, 2026</span>
+            <time dateTime="2026-08-08">Updated August 8, 2026</time>
             <span aria-hidden="true">|</span>
             <span>11 min read</span>
           </div>

@@ -426,8 +426,8 @@ export default function CrmConsultantVancouver() {
               {
                 href: '/blog/excel-to-crm-migration-repeat-order-businesses',
                 icon: Database,
-                title: 'Excel-to-CRM Migration Guide',
-                description: 'A buyer-intent guide for repeat-order businesses planning a controlled move.',
+                title: 'Excel-to-CRM Migration Guide and Workbook',
+                description: 'A practical checklist and free seven-sheet workbook for repeat-order businesses planning a controlled move.',
               },
               {
                 href: '/blog/crm-consultant-near-me',
