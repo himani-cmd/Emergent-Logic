@@ -1,5 +1,17 @@
 const baseUrl = 'https://www.emergent-logic.ca';
-const lastmod = '2026-07-31';
+const defaultLastmod = '2026-07-31';
+
+const lastmodByPath = {
+  '/blog/excel-to-crm-migration-repeat-order-businesses': '2026-08-08',
+  '/crm-consultant-vancouver': '2026-08-06',
+  '/crm-consultant-surrey-bc': '2026-08-05',
+  '/crm-consultant-abbotsford': '2026-08-05',
+  '/crm-consultant-langley': '2026-08-05',
+  '/crm-consultant-coquitlam': '2026-08-05',
+  '/hubspot-consultant-vancouver': '2026-08-05',
+  '/hubspot-consultant-surrey-bc': '2026-08-05',
+  '/salesforce-consultant-surrey-bc': '2026-08-05',
+};
 
 const urls = [
   ['', 'weekly', '1.0'],
@@ -99,7 +111,7 @@ export async function GET() {
 ${urls
   .map(([path, changefreq, priority]) => `  <url>
     <loc>${baseUrl}${path}</loc>
-    <lastmod>${lastmod}</lastmod>
+    <lastmod>${lastmodByPath[path] ?? defaultLastmod}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>`)

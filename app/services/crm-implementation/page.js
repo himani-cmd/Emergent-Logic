@@ -363,8 +363,8 @@ export default function CRMImplementation() {
           <h3 className="text-xl font-bold text-gray-800 mb-4">Related Reading</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
             <Link href="/blog/excel-to-crm-migration-repeat-order-businesses" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-violet-600">Excel-to-CRM Migration Checklist</p>
-              <p className="text-gray-600 text-sm">A practical plan for repeat-order businesses moving customer and order follow-up out of spreadsheets.</p>
+              <p className="font-medium text-violet-600">Excel-to-CRM Migration Checklist and Workbook</p>
+              <p className="text-gray-600 text-sm">A free seven-sheet planning workbook for field mapping, cleanup, test imports, acceptance, and repeat-order follow-up.</p>
             </Link>
             <Link href="/blog/crm-consultant-vs-implementation-partner-canada" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM Consultant vs Implementation Partner</p>

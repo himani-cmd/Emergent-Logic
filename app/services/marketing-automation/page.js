@@ -368,8 +368,8 @@ export default function MarketingAutomation() {
           <h3 className="text-xl font-bold text-gray-800 mb-4">Related Reading</h3>
           <div className="grid md:grid-cols-2 gap-4">
             <Link href="/blog/excel-to-crm-migration-repeat-order-businesses" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-purple-700">Excel-to-CRM Migration for Repeat-Order Businesses</p>
-              <p className="text-gray-600 text-sm">Map customer, product, reorder, ownership, and follow-up data before automating the next action.</p>
+              <p className="font-medium text-purple-700">Excel-to-CRM Migration Checklist and Workbook</p>
+              <p className="text-gray-600 text-sm">Use the free seven-sheet workbook to map customer, field, duplicate, test-import, reorder, ownership, and acceptance rules before automating the next action.</p>
             </Link>
             <Link href="/blog/marketing-automation-needs-crm-cleanup" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Why Marketing Automation Fails Without Cleanup First</p>
