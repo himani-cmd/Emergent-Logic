@@ -225,6 +225,9 @@ export default function CRMIntegration() {
           <p className="text-lg text-gray-600 mb-8">
             We treat integrations as part of the CRM operating design, with field mapping, error handling, ownership, and runbook requirements included in the scope.
           </p>
+          <p className="text-lg text-gray-600 mb-8">
+            U.S. teams can review the broader <Link href="/services/remote-crm-implementation" className="font-medium text-pink-700 underline underline-offset-4 hover:text-pink-900">remote CRM implementation and integration</Link> delivery path, including lead routing, migration controls, validation, and documented handoff from Canada.
+          </p>
           <div className="space-y-3">
             {[
               'CRM-native thinking: every integration designed around the CRM as the source of truth',

@@ -2,6 +2,7 @@ const baseUrl = 'https://www.emergent-logic.ca';
 const defaultLastmod = '2026-07-31';
 
 const lastmodByPath = {
+  '/services/remote-crm-implementation': '2026-08-11',
   '/blog/excel-to-crm-migration-repeat-order-businesses': '2026-08-08',
   '/crm-consultant-vancouver': '2026-08-06',
   '/crm-consultant-surrey-bc': '2026-08-05',
@@ -56,6 +57,7 @@ const urls = [
   ['/blog/immigration-consultation-follow-up-crm', 'monthly', '0.8'],
   ['/blog/property-management-lead-follow-up-crm', 'monthly', '0.8'],
   ['/services/crm-implementation', 'monthly', '0.9'],
+  ['/services/remote-crm-implementation', 'monthly', '0.9'],
   ['/services/hubspot-consulting', 'monthly', '0.9'],
   ['/hubspot-workflow-cleanup', 'monthly', '0.9'],
   ['/services/crm-cleanup', 'monthly', '0.9'],
