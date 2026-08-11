@@ -123,7 +123,7 @@ export default function SalesforceConsulting() {
             Salesforce is usually the right choice when you need deep customization (custom objects, complex relationships, granular permissions), when you have a large or distributed sales team that needs strict process governance, when you sell into regulated industries with heavy reporting requirements, or when you need to scale into thousands of users and complex territory management.
           </p>
           <p className="text-lg text-gray-600 mb-4">
-            We also support US-based teams remotely. The work is the same: clean data, clear sales stages, reliable lead routing, Flow automation that is easy to maintain, and reporting that leadership can trust. Local presence matters for Surrey and Vancouver clients, but Salesforce delivery does not need to be limited by geography.
+            We also support U.S.-based teams remotely. The work is the same: clean data, clear sales stages, reliable lead routing, Flow automation that is easy to maintain, and reporting that leadership can trust. The broader <Link href="/services/remote-crm-implementation" className="text-blue-700 hover:underline">remote CRM implementation</Link> page explains the Canada-based delivery path and cross-platform fit review.
           </p>
           <p className="text-lg text-gray-600">
             It may not be the right choice when the sales process is straightforward, the team is small, and platform depth would add unnecessary administration. In those cases HubSpot or Zoho may be a better fit. Discovery includes that platform-fit discussion before a scope is proposed.
