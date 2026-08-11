@@ -299,7 +299,8 @@ export async function POST(request, { params }) {
 
       // 4) Server-to-server forward to n8n -> HubSpot (env-gated)
       // HubSpot is the primary lead destination, so do this before the backup DB write.
-      const n8nUrl = process.env.N8N_CONTACT_WEBHOOK_URL;
+      const n8nUrl = process.env.N8N_CONTACT_WEBHOOK_URL_V2
+        || 'https://emergent-logic.app.n8n.cloud/webhook/contact-form-v2';
       if (n8nUrl) {
         let timeout;
         try {
