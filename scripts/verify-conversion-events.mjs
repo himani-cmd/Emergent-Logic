@@ -25,6 +25,14 @@ const checks = [
   },
   {
     passed:
+      provider.includes('window.dataLayer = window.dataLayer || []') &&
+      provider.includes('window.gtag =') &&
+      provider.includes('window.__emergentGa4Initialized') &&
+      !provider.includes('<Script id="ga4-init"'),
+    message: 'Consent must initialize the GA4 queue in client code before conversion events fire.',
+  },
+  {
+    passed:
       analytics.includes("'consultation_booking_completed'") &&
       contact.includes("'calendly.event_scheduled': 'consultation_booking_completed'") &&
       contact.includes("event.origin !== 'https://calendly.com'") &&

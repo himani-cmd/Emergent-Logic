@@ -25,7 +25,19 @@ export default function AnalyticsProvider({ children }) {
   }, []);
 
   useEffect(() => {
-    if (!analyticsEnabled || typeof window.gtag !== 'function') return;
+    if (!analyticsEnabled) return;
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag =
+      window.gtag ||
+      function gtag() {
+        window.dataLayer.push(arguments);
+      };
+
+    if (!window.__emergentGa4Initialized) {
+      window.gtag('js', new Date());
+      window.__emergentGa4Initialized = true;
+    }
 
     window.gtag('config', GA_MEASUREMENT_ID, {
       page_path: pathname,
@@ -75,23 +87,10 @@ export default function AnalyticsProvider({ children }) {
   return (
     <>
       {analyticsEnabled && (
-        <>
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-            strategy="afterInteractive"
-          />
-          <Script id="ga4-init" strategy="afterInteractive">
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${GA_MEASUREMENT_ID}', {
-                page_path: window.location.pathname,
-              });
-              window.gtag = gtag;
-            `}
-          </Script>
-        </>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
       )}
       {children}
     </>
