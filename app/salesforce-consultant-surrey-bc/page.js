@@ -7,7 +7,7 @@ import TrackedCTA from '@/components/TrackedCTA';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle, MapPin, Award, Clock, Percent } from 'lucide-react';
+import { ArrowRight, CheckCircle, MapPin, Settings, FileCheck, Route } from 'lucide-react';
 
 export const metadata = {
   title: 'Salesforce Consultant Surrey BC',
@@ -22,27 +22,27 @@ export const metadata = {
 };
 
 const services = [
-  { title: 'Salesforce Sales Cloud', description: 'Pipeline management, lead tracking, opportunity forecasting, and custom dashboards for your Surrey-based sales team.' },
-  { title: 'Salesforce Service Cloud', description: 'Case management, knowledge base, and customer portal setup for service-oriented businesses in the Surrey area.' },
-  { title: 'HubSpot CRM Implementation', description: 'Full CRM setup including pipelines, automation, email sequences, and reporting. Ideal for growing Surrey SMBs.' },
-  { title: 'HubSpot Marketing Hub', description: 'Marketing automation, lead nurturing, landing pages, and email campaigns — all connected to your CRM.' },
+  { title: 'Salesforce configuration', description: 'Sales-process mapping, fields, pipeline stages, ownership, page layouts, validation, and reporting requirements within the agreed scope.' },
+  { title: 'Sales Cloud improvement', description: 'Lead, account, contact, opportunity, activity, pipeline, and dashboard configuration based on the operating process discovered.' },
+  { title: 'Workflow and automation review', description: 'Existing rules, flows, notifications, tasks, and handoffs can be assessed before approved changes are configured.' },
+  { title: 'Reporting and pipeline visibility', description: 'Report and dashboard requirements can be defined around the fields and stage discipline the team can maintain.' },
   { title: 'Data Migration', description: 'Controlled migration from supported spreadsheets, legacy CRMs, or other systems with mapping, test imports, validation, and approval.' },
   { title: 'Training & Adoption', description: 'Role-specific training and documented handoff can be included, with any in-person requirement confirmed during discovery.' },
 ];
 
 const reasons = [
   'We are based in Surrey — with remote delivery for Canadian and US teams',
-  'Senior CRM implementation experience across Salesforce, HubSpot, and Zoho',
+  'Business requirements, data, configuration, reporting, testing, and handoff are treated as one controlled scope',
   'AI-assisted analysis and documentation with human approval before production changes',
   'Salesforce and HubSpot requirements are compared against process, governance, integration, and administration needs',
-  'Clear fixed-scope projects instead of open-ended agency retainers',
-  'Free 30-minute strategy call with no obligation or sales pressure',
+  'Commercial terms, dependencies, exclusions, and acceptance checks are documented before implementation',
+  'A consultation is used to determine whether the requested Salesforce work is a practical fit',
 ];
 
 const faqs = [
   { q: 'How much does a Salesforce consultant cost in Surrey, BC?', a: 'Salesforce consulting costs depend on whether you need cleanup, optimization, migration, or a new implementation. Emergent Logic scopes projects up front so you understand the likely budget before work begins.' },
   { q: 'How long does Salesforce implementation take?', a: 'Timing depends on the agreed scope, data condition, custom objects, automation, integrations, stakeholder availability, and acceptance criteria. The delivery plan and dependencies are documented before work begins.' },
-  { q: 'Do you also implement HubSpot?', a: 'Yes. Emergent Logic implements both Salesforce and HubSpot. We recommend the right platform based on your business needs, not our preferences. Many Surrey businesses choose HubSpot for its ease of use and integrated marketing tools.' },
+  { q: 'Can you compare Salesforce with HubSpot?', a: 'Yes. A platform-fit review can compare process complexity, administration capacity, data, integrations, reporting, licensing, and governance requirements before a recommendation is made.' },
 ];
 
 const jsonLd = {
@@ -51,8 +51,9 @@ const jsonLd = {
     {
       '@type': 'Service',
       '@id': 'https://www.emergent-logic.ca/salesforce-consultant-surrey-bc#service',
-      name: 'Salesforce Consultant Surrey BC',
-      serviceType: 'Salesforce consulting, CRM implementation, CRM cleanup, workflow automation, reporting, and training',
+      name: 'Salesforce Consultant in Surrey BC',
+      description: 'Discovery-led Salesforce configuration, cleanup, workflow, reporting, migration, and handoff planning for Surrey and Greater Vancouver businesses.',
+      serviceType: 'Salesforce consulting, configuration, cleanup, workflow review, reporting, migration planning, and training',
       provider: { '@id': 'https://www.emergent-logic.ca/#organization' },
       url: 'https://www.emergent-logic.ca/salesforce-consultant-surrey-bc',
       areaServed: [
@@ -96,10 +97,10 @@ export default function SalesforceConsultantSurrey() {
             <span>Surrey, BC</span>
           </div>
           <h1 className="max-w-4xl break-words text-4xl font-bold leading-tight tracking-tight text-white mb-4 md:text-5xl">
-            Salesforce & HubSpot Consultant in Surrey, BC
+            Salesforce Consultant in Surrey, BC
           </h1>
           <p className="max-w-3xl text-lg leading-relaxed text-white/75 mb-8 md:text-xl">
-            Looking for a Salesforce consultant in Surrey, BC? Emergent Logic helps growing teams clean up, implement, and improve CRM systems across Salesforce, HubSpot, and Zoho. We use AI-assisted delivery to move faster while keeping the strategy and quality control human-led.
+            Emergent Logic helps growing teams assess, configure, clean up, and improve Salesforce around their sales process, data, ownership, reporting, and integration requirements. Scope and production changes are confirmed after discovery.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
@@ -111,10 +112,10 @@ export default function SalesforceConsultantSurrey() {
               <Link href="/services/crm-implementation">View CRM Services</Link>
             </Button>
           </div>
-          <div className="grid grid-cols-3 gap-6 max-w-2xl">
-            <div className="text-center"><div className="flex items-center justify-center gap-2 text-white mb-1"><Award className="w-5 h-5 text-violet-400" /><span className="text-3xl font-bold">3</span></div><div className="text-white/60 text-sm">CRM Platforms</div></div>
-            <div className="text-center"><div className="flex items-center justify-center gap-2 text-white mb-1"><Clock className="w-5 h-5 text-violet-400" /><span className="text-3xl font-bold">Weeks</span></div><div className="text-white/60 text-sm">Focused Sprints</div></div>
-            <div className="text-center"><div className="flex items-center justify-center gap-2 text-white mb-1"><Percent className="w-5 h-5 text-violet-400" /><span className="text-3xl font-bold">Fixed</span></div><div className="text-white/60 text-sm">Scope Options</div></div>
+          <div className="grid max-w-3xl gap-4 text-sm text-white/75 sm:grid-cols-3">
+            <div className="flex items-center gap-3 border-t border-white/15 pt-4"><Settings className="h-5 w-5 text-violet-300" /><span>Configuration aligned to process</span></div>
+            <div className="flex items-center gap-3 border-t border-white/15 pt-4"><Route className="h-5 w-5 text-violet-300" /><span>Workflow and routing controls</span></div>
+            <div className="flex items-center gap-3 border-t border-white/15 pt-4"><FileCheck className="h-5 w-5 text-violet-300" /><span>Written testing and handoff</span></div>
           </div>
         </div>
       </section>
@@ -149,8 +150,8 @@ export default function SalesforceConsultantSurrey() {
       {/* Related Links */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Not sure which CRM is right?</h2>
-          <p className="text-gray-600 mb-4">Read our detailed comparison to help you decide: <Link href="/blog/hubspot-vs-salesforce-canada" className="text-violet-600 hover:underline">HubSpot vs Salesforce: Which CRM is Right for Your Canadian Business?</Link></p>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Not sure whether to repair or replace the CRM?</h2>
+          <p className="text-gray-600 mb-4">Start with the <Link href="/services/crm-relaunch" className="text-violet-600 hover:underline">CRM relaunch decision path</Link>, or compare <Link href="/blog/hubspot-vs-salesforce-canada" className="text-violet-600 hover:underline">HubSpot and Salesforce requirements</Link>.</p>
           <p className="text-gray-600">Or learn more about our full <Link href="/services/salesforce-consulting" className="text-violet-600 hover:underline">Salesforce consulting service</Link> and <Link href="/services/crm-implementation" className="text-violet-600 hover:underline">CRM implementation services</Link>.</p>
         </div>
       </section>
@@ -175,8 +176,8 @@ export default function SalesforceConsultantSurrey() {
       {/* CTA */}
       <section className="py-16 bg-gradient-to-br from-violet-600 to-indigo-700">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Ready to talk Salesforce or HubSpot?</h2>
-          <p className="text-xl text-white/80 mb-8">Book a free 30-minute strategy call. We will assess your CRM needs and recommend the right path — no obligation, no sales pitch.</p>
+          <h2 className="text-3xl font-bold text-white mb-4">Bring the Salesforce problem, not a predetermined scope</h2>
+          <p className="text-xl text-white/80 mb-8">Use a consultation to explain the current process, affected configuration, data, integrations, and decision you need to make.</p>
           <TrackedCTA ctaName="Surrey Salesforce Final Consultation" destination="/contact">
             <Button asChild size="lg" className="bg-white text-violet-900 hover:bg-violet-100">
               <Link href="/contact">Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" /></Link>

@@ -23,6 +23,12 @@ const blockedPatterns = [
   { label: 'unsupported fixed timeline and price claim', pattern: /\bon what timeline, at what price\b/i },
   { label: 'unsupported published timeline claim', pattern: /\bwhat timelines look like\b/i },
   { label: 'unsupported seniority claim', pattern: /\bsenior CRM help\b/i },
+  { label: 'unsupported multi-platform seniority claim', pattern: /\bsenior CRM implementation experience\b/i },
+  { label: 'unsupported zero-loss migration claim', pattern: /\b(?:no data left behind|zero loss)\b/i },
+  { label: 'unsupported audit-speed claim', pattern: /\banaly[sz]e your CRM in hours\b/i },
+  { label: 'unsupported 24-to-48-hour audit claim', pattern: /\b24 to 48 hours\b/i },
+  { label: 'unsupported universal audit-score claim', pattern: /\bscore \(out of 100\)\b/i },
+  { label: 'unsupported accelerated-timeline claim', pattern: /\bshorten implementation and cleanup timelines\b/i },
   { label: 'representative work labelled as a case study', pattern: /\bCase Study\b/ },
 ];
 

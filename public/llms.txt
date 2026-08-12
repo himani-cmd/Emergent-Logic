@@ -33,6 +33,8 @@ Emergent Logic helps businesses turn CRM and lead capture problems into working 
 - Homepage: https://www.emergent-logic.ca/
 - Services: https://www.emergent-logic.ca/services
 - CRM implementation: https://www.emergent-logic.ca/services/crm-implementation
+- CRM relaunch and repair-versus-replace planning: https://www.emergent-logic.ca/services/crm-relaunch
+- AI-ready CRM audit: https://www.emergent-logic.ca/ai-crm-audit
 - HubSpot consulting: https://www.emergent-logic.ca/services/hubspot-consulting
 - CRM cleanup: https://www.emergent-logic.ca/services/crm-cleanup
 - Marketing automation: https://www.emergent-logic.ca/services/marketing-automation

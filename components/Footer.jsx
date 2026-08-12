@@ -6,6 +6,7 @@ const servicesLinks = [
   { name: 'CRM Implementation', href: '/services/crm-implementation' },
   { name: 'HubSpot Consulting', href: '/services/hubspot-consulting' },
   { name: 'CRM Cleanup', href: '/services/crm-cleanup' },
+  { name: 'CRM Relaunch', href: '/services/crm-relaunch' },
   { name: 'Marketing Automation', href: '/services/marketing-automation' },
   { name: 'Lead Capture Websites', href: '/services/lead-capture-websites' },
   { name: 'AI Chatbot Automation', href: '/services/ai-chatbot-automation' },
@@ -42,7 +43,7 @@ export default function Footer() {
                 className="h-[180px] w-[180px]"
               />
             </Link>
-            <p className="text-gray-400 mb-4">AI-accelerated CRM implementation for Greater Vancouver businesses.</p>
+            <p className="text-gray-400 mb-4">CRM implementation, integration, and automation for Greater Vancouver businesses.</p>
             <div className="space-y-2 text-gray-400 text-sm">
               <div className="flex items-center gap-2"><MapPin className="w-4 h-4 text-violet-400" />Surrey, BC, Canada</div>
               <div className="flex items-center gap-2"><Mail className="w-4 h-4 text-violet-400" /><a href="mailto:info@emergent-logic.ca" className="hover:text-violet-400">info@emergent-logic.ca</a></div>
