@@ -3,14 +3,25 @@
 import { Download, FileSpreadsheet } from 'lucide-react';
 import { trackResourceDownload } from '@/lib/analytics';
 
-const workbookUrl = '/resources/emergent_logic_excel_to_crm_implementation_workbook.xlsx';
+const defaultWorkbook = {
+  href: '/resources/emergent_logic_excel_to_crm_implementation_workbook.xlsx',
+  resourceName: 'excel_to_crm_implementation_workbook',
+  location: 'excel_to_crm_migration_guide',
+  eyebrow: 'FREE IMPLEMENTATION WORKBOOK',
+  title: 'Map and test the migration before touching production',
+  description: 'Download the seven-sheet Excel workbook for field mapping, data cleanup, duplicate rules, test-import evidence, acceptance checks, and repeat-order follow-up planning.',
+  note: 'XLSX template. Example rows are illustrative and contain no client data.',
+  cta: 'Download workbook',
+};
 
-export default function WorkbookDownload() {
+export default function WorkbookDownload({ workbook = {} }) {
+  const content = { ...defaultWorkbook, ...workbook };
+
   function handleDownload() {
     trackResourceDownload({
-      resourceName: 'excel_to_crm_implementation_workbook',
+      resourceName: content.resourceName,
       resourceType: 'xlsx',
-      location: 'excel_to_crm_migration_guide',
+      location: content.location,
     });
   }
 
@@ -22,25 +33,25 @@ export default function WorkbookDownload() {
             <FileSpreadsheet className="h-6 w-6" aria-hidden="true" />
           </span>
           <div>
-            <p className="text-sm font-semibold text-[#4B37C8]">FREE IMPLEMENTATION WORKBOOK</p>
+            <p className="text-sm font-semibold text-[#4B37C8]">{content.eyebrow}</p>
             <h2 id="workbook-download-heading" className="mt-2 text-2xl font-bold text-[#101828]">
-              Map and test the migration before touching production
+              {content.title}
             </h2>
             <p className="mt-3 max-w-3xl leading-7 text-[#667085]">
-              Download the seven-sheet Excel workbook for field mapping, data cleanup, duplicate rules, test-import evidence, acceptance checks, and repeat-order follow-up planning.
+              {content.description}
             </p>
-            <p className="mt-3 text-sm text-[#667085]">XLSX template. Example rows are illustrative and contain no client data.</p>
+            <p className="mt-3 text-sm text-[#667085]">{content.note}</p>
           </div>
         </div>
 
         <a
-          href={workbookUrl}
+          href={content.href}
           download
           onClick={handleDownload}
           className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-[#4B37C8] px-5 py-3 font-semibold text-white hover:bg-[#3F2EAA] focus:outline-none focus:ring-2 focus:ring-[#4B37C8] focus:ring-offset-2"
         >
           <Download className="h-5 w-5" aria-hidden="true" />
-          Download workbook
+          {content.cta}
         </a>
       </div>
     </section>

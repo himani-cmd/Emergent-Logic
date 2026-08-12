@@ -2,6 +2,7 @@ const baseUrl = 'https://www.emergent-logic.ca';
 const defaultLastmod = '2026-07-31';
 
 const lastmodByPath = {
+  '/blog/salesforce-to-hubspot-migration-checklist': '2026-08-11',
   '/services/remote-crm-implementation': '2026-08-11',
   '/services/crm-relaunch': '2026-08-11',
   '/ai-crm-audit': '2026-08-11',
@@ -36,6 +37,7 @@ const urls = [
   ['/ai-crm-audit', 'monthly', '0.8'],
   ['/lead-follow-up-audit', 'monthly', '0.8'],
   ['/blog', 'weekly', '0.9'],
+  ['/blog/salesforce-to-hubspot-migration-checklist', 'monthly', '0.9'],
   ['/blog/excel-to-crm-migration-repeat-order-businesses', 'monthly', '0.9'],
   ['/blog/ai-automation-consulting-pricing', 'monthly', '0.8'],
   ['/blog/hubspot-consulting-cost-guide', 'monthly', '0.8'],

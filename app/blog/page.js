@@ -20,6 +20,14 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'salesforce-to-hubspot-migration-checklist',
+    title: 'Salesforce to HubSpot Migration: A Decision and QA Checklist',
+    excerpt: 'Decide whether to migrate, coexist, or repair; then map objects, fields, owners, history, automation, testing, cutover, and rollback with a free workbook.',
+    category: 'CRM Migration',
+    readTime: '13 min read',
+    featured: true,
+  },
+  {
     slug: 'excel-to-crm-migration-repeat-order-businesses',
     title: 'Excel-to-CRM Migration Checklist for Repeat-Order Businesses',
     excerpt: 'Plan customer, product, order-cadence, ownership, and follow-up data before moving a repeat-order sales process from spreadsheets into a CRM.',
