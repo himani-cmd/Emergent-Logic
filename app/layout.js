@@ -51,7 +51,7 @@ const jsonLd = {
       },
       image: 'https://www.emergent-logic.ca/og-image.png',
       sameAs: ['https://www.instagram.com/emergentlogiccrm/'],
-      description: 'AI-accelerated CRM implementation, cleanup, automation, and lead capture systems for Canadian businesses.',
+      description: 'CRM implementation, integration, automation, cleanup, and lead capture systems for Canadian businesses.',
       foundingDate: '2026',
       telephone: '+1-778-652-6271',
       email: 'info@emergent-logic.ca',

@@ -51,7 +51,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center" aria-label="Emergent Logic home">
             <div className="flex flex-col leading-tight">
               <span className={`text-lg font-bold ${logoColor}`}>Emergent Logic</span>
-              <span className={`text-[10px] font-medium ${scrolled || !isHome ? 'text-violet-600' : 'text-violet-300'}`}>AI-Accelerated CRM Consulting</span>
+              <span className={`text-[10px] font-medium ${scrolled || !isHome ? 'text-violet-600' : 'text-violet-300'}`}>CRM Implementation, Integration &amp; Automation</span>
             </div>
           </Link>
 

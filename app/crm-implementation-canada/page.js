@@ -14,7 +14,7 @@ export const metadata = {
   robots: { index: true, follow: true },
   openGraph: {
     title: 'CRM Implementation Canada | Emergent Logic',
-    description: 'AI-accelerated CRM implementation for Canadian SMBs using HubSpot, Salesforce, or Zoho.',
+    description: 'CRM implementation, integration, and automation for Canadian SMBs using HubSpot, Salesforce, or Zoho.',
     url: 'https://www.emergent-logic.ca/crm-implementation-canada',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
