@@ -246,7 +246,7 @@ export async function POST(request, { params }) {
       const cleanCampaignValue = (value) => String(value || '')
         .replace(/[\u0000-\u001F\u007F]/g, '')
         .trim()
-        .slice(0, 120);
+        .slice(0, 160);
       const landingPageCandidate = String(body.landing_page || '').trim();
       const attribution = {
         utm_source: cleanCampaignValue(body.utm_source),
@@ -254,6 +254,9 @@ export async function POST(request, { params }) {
         utm_campaign: cleanCampaignValue(body.utm_campaign),
         utm_content: cleanCampaignValue(body.utm_content),
         utm_term: cleanCampaignValue(body.utm_term),
+        gclid: cleanCampaignValue(body.gclid),
+        gbraid: cleanCampaignValue(body.gbraid),
+        wbraid: cleanCampaignValue(body.wbraid),
         landing_page: landingPageCandidate.startsWith('/')
           ? landingPageCandidate.replace(/[\u0000-\u001F\u007F]/g, '').slice(0, 200)
           : '',
