@@ -315,6 +315,9 @@ export default function SalesforceToHubSpotMigrationChecklist() {
             <p className="mt-3 max-w-3xl leading-7 text-slate-200">
               Emergent Logic can help Canadian and US businesses assess whether to migrate, coexist, or repair; map the data and automation; and define test, cutover, rollback, and handoff controls.
             </p>
+            <p className="mt-3 max-w-3xl leading-7 text-slate-200">
+              Before selecting outside help, use the <Link href="/crm-implementation-method" className="font-semibold text-white underline decoration-white/50 underline-offset-4 hover:decoration-white">CRM implementation partner evaluation framework</Link> to compare delivery boundaries, data controls, testing, change control, and handoff.
+            </p>
             <Link href="/contact#booking" className="mt-6 inline-flex">
               <Button size="lg" className="bg-[#4F46E5] text-white hover:bg-[#4338CA]">
                 Scope a controlled CRM migration <ArrowRight className="ml-2 h-5 w-5" />

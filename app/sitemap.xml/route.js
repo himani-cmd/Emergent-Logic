@@ -2,7 +2,7 @@ const baseUrl = 'https://www.emergent-logic.ca';
 const defaultLastmod = '2026-07-31';
 
 const lastmodByPath = {
-  '/crm-implementation-method': '2026-08-12',
+  '/crm-implementation-method': '2026-08-13',
   '/hubspot-admin-support-canada-us': '2026-08-12',
   '/blog/salesforce-to-hubspot-migration-checklist': '2026-08-11',
   '/services/remote-crm-implementation': '2026-08-11',
