@@ -6,11 +6,15 @@ const analyticsPath = path.join(root, 'lib', 'analytics.js');
 const providerPath = path.join(root, 'components', 'AnalyticsProvider.jsx');
 const contactPath = path.join(root, 'app', 'contact', 'page.js');
 const workbookPath = path.join(root, 'components', 'WorkbookDownload.jsx');
+const hubspotFormPath = path.join(root, 'components', 'HubSpotImplementationLeadForm.jsx');
+const apiPath = path.join(root, 'app', 'api', '[[...path]]', 'route.js');
 
 const analytics = fs.readFileSync(analyticsPath, 'utf8');
 const provider = fs.readFileSync(providerPath, 'utf8');
 const contact = fs.readFileSync(contactPath, 'utf8');
 const workbookDownload = fs.readFileSync(workbookPath, 'utf8');
+const hubspotForm = fs.readFileSync(hubspotFormPath, 'utf8');
+const api = fs.readFileSync(apiPath, 'utf8');
 
 const checks = [
   {
@@ -42,6 +46,19 @@ const checks = [
   {
     passed: !analytics.includes("trackEvent('appointment_booked'") && !provider.includes('appointment_booked'),
     message: 'An external Calendly click must not be recorded as a confirmed appointment.',
+  },
+  {
+    passed:
+      hubspotForm.includes("formName: 'hubspot_implementation_form'") &&
+      hubspotForm.includes('trackLeadGeneration'),
+    message: 'The HubSpot paid landing form must emit generate_lead only after an accepted response.',
+  },
+  {
+    passed:
+      ['gclid', 'gbraid', 'wbraid'].every((field) =>
+        hubspotForm.includes(field) && api.includes(`${field}: cleanCampaignValue`)
+      ),
+    message: 'The HubSpot landing page must preserve Google click identifiers through the server receipt.',
   },
   {
     passed:
