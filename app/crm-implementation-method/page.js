@@ -5,17 +5,17 @@ import CookieConsent from '@/components/CookieConsent';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import TrackedCTA from '@/components/TrackedCTA';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle2, ClipboardList, Database, FileCheck2, Flag, GitPullRequest, ShieldCheck } from 'lucide-react';
+import { AlertTriangle, ArrowRight, BadgeCheck, CheckCircle2, ClipboardList, Database, FileCheck2, Flag, GitPullRequest, ShieldCheck } from 'lucide-react';
 
 const pageUrl = 'https://www.emergent-logic.ca/crm-implementation-method';
 
 export const metadata = {
-  title: 'CRM Implementation Method',
-  description: 'A controlled CRM implementation method for discovery, data, configuration, integrations, UAT, cutover, training, and client handoff.',
+  title: 'How to Choose a CRM Implementation Partner',
+  description: 'Evaluate CRM implementation partners by scope, data, integrations, UAT, change control, training, handoff, and post-launch ownership.',
   alternates: { canonical: pageUrl },
   openGraph: {
-    title: 'CRM Implementation Method | Emergent Logic',
-    description: 'See how Emergent Logic makes CRM scope, assumptions, testing, exceptions, cutover, and handoff visible.',
+    title: 'How to Choose a CRM Implementation Partner | Emergent Logic',
+    description: 'Use a practical evaluation framework, then see how Emergent Logic controls CRM scope, data, testing, cutover, and handoff.',
     url: pageUrl,
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -69,7 +69,51 @@ const gates = [
   ['Handoff gate', 'Documentation, access, training, backlog, and ongoing ownership are accepted by the client.'],
 ];
 
+const partnerCriteria = [
+  ['Process before platform', 'The partner should understand how leads, customers, handoffs, approvals, and reporting work before prescribing a product or configuration.'],
+  ['Hands-on delivery boundary', 'Confirm whether the engagement includes configuration, migration, integrations, testing, training, and launch support or stops at recommendations.'],
+  ['Data controls', 'Ask how source backups, field mapping, duplicates, ownership, consent, reconciliation, and rollback will be handled.'],
+  ['End-to-end testing', 'A screen demonstration is not UAT. Representative users should test real business scenarios, failure paths, permissions, alerts, and reports against acceptance criteria.'],
+  ['Visible change control', 'New assumptions, dependencies, exceptions, and scope changes should be recorded before they become surprise work or production risk.'],
+  ['Client ownership', 'Admin access, documentation, decision records, training, unresolved issues, and support boundaries should remain visible and transferable.'],
+];
+
+const selectionQuestions = [
+  'What business process will you map before configuring the CRM?',
+  'What is included, excluded, assumed, and dependent on another vendor or licence?',
+  'How will you assess and reconcile our existing customer data before migration?',
+  'Which integrations and lead paths will be tested from source to final owner?',
+  'Who defines acceptance criteria, runs UAT, and approves exceptions?',
+  'How are new requests estimated and approved after the work begins?',
+  'What access, documentation, training, and administration will we own at handoff?',
+  'What post-launch support is available, and what remains our responsibility?',
+];
+
+const warningSigns = [
+  'A platform is recommended before the operating problem and current systems are understood.',
+  'Migration is promised without reviewing representative data, duplicates, mappings, or ownership rules.',
+  'Testing means a consultant demonstration rather than user acceptance against written scenarios.',
+  'Production access, change authority, rollback, and escalation ownership are left informal.',
+  'Documentation, training, admin ownership, and post-launch support are vague or treated as optional extras at the end.',
+];
+
 const faqs = [
+  {
+    q: 'How do I choose a CRM implementation partner?',
+    a: 'Choose a partner that can connect business process, data, configuration, integrations, user acceptance testing, launch controls, training, and client ownership. Ask for clear inclusions, exclusions, assumptions, acceptance criteria, change control, and handoff responsibilities before work begins.',
+  },
+  {
+    q: 'What is the difference between a CRM consultant and a CRM implementation partner?',
+    a: 'A consultant may focus on assessment and recommendations. An implementation partner may also configure the CRM, migrate data, connect systems, support testing, prepare launch, train users, and document handoff. Titles vary, so confirm the actual delivery boundary in writing.',
+  },
+  {
+    q: 'What should a growing company look for in a CRM implementation partner?',
+    a: 'Look for process-first discovery, practical platform fit, controlled data migration, end-to-end testing, user adoption support, transparent change control, decision-ready reporting, and a handoff that leaves the company in control of its system.',
+  },
+  {
+    q: 'What should a professional services firm ask about?',
+    a: 'Ask how the CRM will represent companies, people, referrals, service lines, opportunities or engagements, handoffs, follow-up, permissions, and management reporting. The partner should show how those relationships and decisions will be tested without forcing the firm into a generic product pipeline.',
+  },
   {
     q: 'Does every CRM implementation follow the same timeline?',
     a: 'No. Timing depends on the systems, data, integrations, automation, permissions, testing, stakeholders, and operating risk in scope. The method is consistent; the work is sized after discovery.',
@@ -133,10 +177,10 @@ export default function CRMImplementationMethod() {
           ]} />
           <p className="mt-5 text-sm font-semibold text-[#9FB4FF]">THE EMERGENT LOGIC METHOD</p>
           <h1 className="mt-3 max-w-5xl text-4xl font-bold leading-tight md:text-6xl">
-            CRM implementation with visible decisions, tests, and handoff
+            How to choose a CRM implementation partner and control the work
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200 md:text-xl">
-            We make the operating problem, data rules, build decisions, acceptance checks, exceptions, cutover controls, and client ownership visible before production changes are accepted.
+            A strong partner should make the operating problem, data rules, delivery boundary, build decisions, acceptance checks, exceptions, cutover controls, and client ownership visible before production changes are accepted.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <TrackedCTA ctaName="Book a CRM Consultation - Implementation Method Hero" destination="calendly">
@@ -152,6 +196,65 @@ export default function CRMImplementationMethod() {
           </div>
         </div>
       </header>
+
+      <section className="border-b border-slate-200 py-20">
+        <div className="container mx-auto max-w-6xl px-4">
+          <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
+            <div>
+              <p className="text-sm font-semibold text-indigo-700">PARTNER EVALUATION FRAMEWORK</p>
+              <h2 className="mt-3 text-3xl font-bold text-slate-950 md:text-4xl">What growing companies should look for</h2>
+              <p className="mt-5 text-lg leading-8 text-slate-600">
+                The right partner does more than install software. They turn operating decisions into a bounded build, test the paths the business depends on, and leave the team able to own what goes live.
+              </p>
+              <p className="mt-4 leading-7 text-slate-600">
+                This is an evaluation framework, not a vendor ranking. Use it to compare proposals and uncover delivery risk before making a commitment.
+              </p>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {partnerCriteria.map(([name, detail]) => (
+                <section key={name} className="rounded-lg border border-slate-200 p-5">
+                  <BadgeCheck className="h-6 w-6 text-indigo-700" aria-hidden="true" />
+                  <h3 className="mt-4 font-bold text-slate-950">{name}</h3>
+                  <p className="mt-2 leading-7 text-slate-600">{detail}</p>
+                </section>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-slate-50 py-20">
+        <div className="container mx-auto grid max-w-6xl gap-10 px-4 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">Eight questions to ask before you sign</h2>
+            <p className="mt-4 text-lg leading-8 text-slate-600">
+              A useful answer names the owner, artifact, decision, or test involved. General assurances are not a substitute for a delivery boundary.
+            </p>
+            <ol className="mt-8 space-y-4">
+              {selectionQuestions.map((question, index) => (
+                <li key={question} className="flex gap-4">
+                  <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-indigo-700 text-sm font-bold text-white">{index + 1}</span>
+                  <p className="pt-1 leading-7 text-slate-700">{question}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
+          <aside className="border-l-4 border-amber-500 bg-white p-7 sm:p-9">
+            <div className="flex items-center gap-3">
+              <AlertTriangle className="h-7 w-7 text-amber-700" aria-hidden="true" />
+              <h2 className="text-2xl font-bold text-slate-950">Warning signs in a CRM proposal</h2>
+            </div>
+            <div className="mt-7 space-y-5">
+              {warningSigns.map((warning) => (
+                <div key={warning} className="flex items-start gap-3">
+                  <span className="mt-3 h-2 w-2 flex-shrink-0 rounded-full bg-amber-600" aria-hidden="true" />
+                  <p className="leading-7 text-slate-700">{warning}</p>
+                </div>
+              ))}
+            </div>
+          </aside>
+        </div>
+      </section>
 
       <section className="py-20">
         <div className="container mx-auto max-w-6xl px-4">

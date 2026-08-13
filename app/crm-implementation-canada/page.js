@@ -144,7 +144,7 @@ export default function CRMImplementationCanada() {
           <div className="grid md:grid-cols-3 gap-4">
             <Link href="/services/crm-implementation" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-violet-700">CRM Implementation Service</p><p className="text-sm text-gray-600">Detailed scope, timeline, and pricing</p></Link>
             <Link href="/blog/what-is-crm-implementation-canada" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-violet-700">CRM Implementation Guide</p><p className="text-sm text-gray-600">Step-by-step explanation for Canada</p></Link>
-            <Link href="/contact" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-violet-700">Contact Emergent Logic</p><p className="text-sm text-gray-600">Ask about your implementation</p></Link>
+            <Link href="/crm-implementation-method" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-violet-700">Choose an Implementation Partner</p><p className="text-sm text-gray-600">Evaluation criteria, questions, warning signs, and delivery controls</p></Link>
           </div>
         </div>
       </section>
