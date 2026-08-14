@@ -20,13 +20,13 @@ import TrackedCTA from '@/components/TrackedCTA';
 const pageUrl = 'https://www.emergent-logic.ca/hubspot-implementation';
 
 export const metadata = {
-  title: 'HubSpot Implementation Partner Canada',
-  description: 'HubSpot implementation, cleanup, migration, workflows, reporting, integrations, testing, training, and documented handoff for Canadian growing teams.',
+  title: 'HubSpot Rollout Completion & Implementation Canada',
+  description: 'Finish an in-progress HubSpot rollout or start a controlled implementation with documented decisions, pilot testing, reporting validation, training, and handoff.',
   alternates: { canonical: pageUrl },
   robots: { index: false, follow: true },
   openGraph: {
-    title: 'HubSpot Implementation | Emergent Logic',
-    description: 'Make every lead, owner, workflow, and next step visible in HubSpot before the system is handed over.',
+    title: 'HubSpot Rollout Completion | Emergent Logic',
+    description: 'Review what is built, close the open decisions, validate the pilot, and prepare a controlled HubSpot production rollout.',
     url: pageUrl,
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -41,6 +41,10 @@ const operatingLayers = [
 
 const paths = [
   {
+    title: 'Finish an in-progress rollout',
+    text: 'Review the current build, close open decisions, prepare representative pilot scenarios, resolve blockers, and document the production acceptance path.',
+  },
+  {
     title: 'New HubSpot implementation',
     text: 'Translate the actual sales and follow-up process into pipelines, properties, permissions, routing, reporting, and an acceptance plan.',
   },
@@ -49,7 +53,7 @@ const paths = [
     text: 'Inventory old fields and workflows, resolve conflicting definitions, simplify automation, and relaunch the portal with documented ownership.',
   },
   {
-    title: 'Migration and integration',
+    title: 'Migration or integration',
     text: 'Map source data and system boundaries, test imports and sync logic, reconcile results, and record the approved cutover path.',
   },
 ];
@@ -71,6 +75,10 @@ const failureSignals = [
 ];
 
 const faqs = [
+  {
+    q: 'Can you finish a HubSpot implementation that is already underway?',
+    a: 'Yes. The first review can inventory what is built, identify unresolved operating decisions, check pilot readiness, and document the next bounded work package. A restart is not assumed.',
+  },
   {
     q: 'Is Emergent Logic a HubSpot Solutions Partner?',
     a: 'Yes. Emergent Logic is listed in HubSpot’s public Solutions Directory as a Solutions Partner. The specific HubSpot tier, features, and services required for an engagement are still confirmed during discovery.',
@@ -113,17 +121,19 @@ export default function HubSpotImplementationPage() {
       <header className="overflow-hidden bg-[#0D1A2B] pb-16 pt-12 text-white sm:pb-20 sm:pt-16">
         <div className="container mx-auto grid max-w-6xl items-center gap-12 px-4 lg:grid-cols-[1.08fr_0.92fr]">
           <div>
-            <p className="text-xs font-semibold leading-5 text-[#A9B8FF] sm:text-sm">HUBSPOT IMPLEMENTATION FOR CANADIAN GROWING TEAMS</p>
+            <p className="text-xs font-semibold leading-5 text-[#A9B8FF] sm:text-sm">HUBSPOT ROLLOUT COMPLETION AND IMPLEMENTATION</p>
             <h1 className="mt-4 max-w-3xl break-words text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
-              Make HubSpot show every lead, owner and next step
+              Finish the HubSpot rollout with the decisions, testing and handoff documented
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">
-              Emergent Logic maps the operating process, configures HubSpot, cleans and migrates data, builds controlled workflows and reporting, then validates the system before handoff.
+              Emergent Logic reviews what is already built, closes operating gaps, supports a representative pilot, validates reporting and automation, and records what must pass before production release.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a href="#implementation-review" className="inline-flex min-h-12 items-center justify-center bg-[#4B37C8] px-6 py-3 font-semibold text-white hover:bg-[#38289F]">
-                Request an implementation review <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
-              </a>
+              <TrackedCTA ctaName="HubSpot Landing Page Rollout Review" destination="#implementation-review">
+                <a href="#implementation-review" className="inline-flex min-h-12 items-center justify-center bg-[#4B37C8] px-6 py-3 font-semibold text-white hover:bg-[#38289F]">
+                  Request a rollout review <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+                </a>
+              </TrackedCTA>
               <TrackedCTA ctaName="HubSpot Landing Page Book Consultation" destination="calendly">
                 <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center border border-white/40 px-6 py-3 font-semibold text-white hover:bg-white/10">
                   Book a 30-minute consultation
@@ -131,7 +141,7 @@ export default function HubSpotImplementationPage() {
               </TrackedCTA>
             </div>
             <div className="mt-8 grid gap-3 text-sm text-slate-300 sm:grid-cols-2">
-              {['Listed HubSpot Solutions Partner', 'Surrey-based, serving Canada', 'Acceptance checks before handoff', 'Client-controlled documentation'].map((item) => (
+              {['Listed HubSpot Solutions Partner', 'In-progress or new implementations', 'Pilot and acceptance checks', 'Client-controlled documentation'].map((item) => (
                 <span key={item} className="inline-flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-400" aria-hidden="true" />{item}</span>
               ))}
             </div>
@@ -140,8 +150,8 @@ export default function HubSpotImplementationPage() {
           <div className="border border-white/15 bg-[#14263E] p-5 shadow-2xl sm:p-7" aria-label="HubSpot operating system map">
             <div className="flex items-start justify-between gap-6 border-b border-white/10 pb-5">
               <div>
-                <p className="text-xs font-semibold text-[#A9B8FF]">IMPLEMENTATION BLUEPRINT</p>
-                <h2 className="mt-2 text-xl font-bold">One operating line from inquiry to decision</h2>
+                <p className="text-xs font-semibold text-[#A9B8FF]">ROLLOUT CONTROL LINE</p>
+                <h2 className="mt-2 text-xl font-bold">One operating line from current build to accepted release</h2>
               </div>
               <LayoutDashboard className="h-8 w-8 flex-shrink-0 text-[#A9B8FF]" aria-hidden="true" />
             </div>
@@ -181,10 +191,10 @@ export default function HubSpotImplementationPage() {
         <div className="container mx-auto max-w-6xl px-4">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold text-indigo-700">THREE IMPLEMENTATION PATHS</p>
-            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Start with the situation you actually have</h2>
-            <p className="mt-4 text-lg leading-8 text-slate-600">HubSpot is not assumed to need a rebuild. Discovery can recommend a new implementation, a focused cleanup, a migration, or no platform change.</p>
+            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Start with the portal you actually have</h2>
+            <p className="mt-4 text-lg leading-8 text-slate-600">A partly built portal is not assumed to need a restart. The review identifies which decisions, tests, fixes, or integrations are required for the next responsible release.</p>
           </div>
-          <div className="mt-10 grid gap-5 lg:grid-cols-3">
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {paths.map((item, index) => (
               <article key={item.title} className="border border-slate-200 bg-white p-6 shadow-sm">
                 <p className="text-sm font-bold text-indigo-700">0{index + 1}</p>
@@ -192,6 +202,46 @@ export default function HubSpotImplementationPage() {
                 <p className="mt-3 leading-7 text-slate-600">{item.text}</p>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-slate-200 bg-[#FBFBFF] py-16 sm:py-20">
+        <div className="container mx-auto grid max-w-6xl gap-10 px-4 lg:grid-cols-2">
+          <div>
+            <p className="text-sm font-semibold text-indigo-700">USEFUL REVIEW INPUTS</p>
+            <h2 className="mt-3 text-3xl font-bold">Bring the evidence your team already has</h2>
+            <ul className="mt-7 space-y-4 text-slate-700">
+              {[
+                'Current build register, configuration inventory, or project notes',
+                'Open decisions, blockers, dependencies, and known defects',
+                'The pilot users, scenarios, reports, and integrations that matter most',
+                'The production outcome and internal ownership model the team needs',
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-indigo-700" aria-hidden="true" />
+                  <span className="leading-7">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="border-l-4 border-[#0F766E] pl-6 sm:pl-8">
+            <p className="text-sm font-semibold text-[#0F766E]">REVIEW OUTPUT</p>
+            <h2 className="mt-3 text-3xl font-bold">Leave with a bounded next decision</h2>
+            <p className="mt-5 text-lg leading-8 text-slate-700">A useful review separates complete work from open work and records the safest next package before configuration continues.</p>
+            <ul className="mt-7 space-y-3 text-slate-700">
+              {[
+                'Confirmed current-state inventory',
+                'Prioritized decisions and dependencies',
+                'Pilot and acceptance evidence requirements',
+                'A written next work package for separate approval',
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <FileCheck2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#0F766E]" aria-hidden="true" />
+                  <span className="leading-7">{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
@@ -273,8 +323,8 @@ export default function HubSpotImplementationPage() {
         <div className="container mx-auto grid max-w-6xl gap-10 px-4 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
           <div className="lg:sticky lg:top-8">
             <p className="text-sm font-semibold text-indigo-700">NEXT STEP</p>
-            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Request a HubSpot implementation review</h2>
-            <p className="mt-5 text-lg leading-8 text-slate-600">Tell us what is changing, what is unreliable, and what the team needs from HubSpot. Emergent Logic will confirm whether a focused review is the right next step.</p>
+            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Request a HubSpot rollout review</h2>
+            <p className="mt-5 text-lg leading-8 text-slate-600">Tell us what is built, what remains uncertain, and what the next release needs to accomplish. Emergent Logic will confirm whether a focused review is the right next step.</p>
             <div className="mt-8 border-l-4 border-[#0F766E] pl-5">
               <p className="font-semibold text-slate-950">No scope is implied by the form.</p>
               <p className="mt-2 leading-7 text-slate-600">Price, timing, access, dependencies, and included services are confirmed only in a written proposal.</p>
@@ -305,9 +355,11 @@ export default function HubSpotImplementationPage() {
             <p className="text-sm font-semibold text-[#A9B8FF]">EMERGENT LOGIC</p>
             <p className="mt-2 max-w-xl text-lg text-slate-200">CRM implementation, integration, and automation from Surrey, BC, serving Canadian growing teams.</p>
           </div>
-          <a href="#implementation-review" className="inline-flex min-h-12 items-center justify-center bg-white px-6 py-3 font-semibold text-[#1E3A5F] hover:bg-[#EEF2FF]">
-            Request a review <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
-          </a>
+          <TrackedCTA ctaName="HubSpot Landing Page Final Rollout Review" destination="#implementation-review">
+            <a href="#implementation-review" className="inline-flex min-h-12 items-center justify-center bg-white px-6 py-3 font-semibold text-[#1E3A5F] hover:bg-[#EEF2FF]">
+              Request a rollout review <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+            </a>
+          </TrackedCTA>
         </div>
       </section>
 
