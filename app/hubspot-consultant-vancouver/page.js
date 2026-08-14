@@ -149,14 +149,16 @@ export default function HubspotConsultantVancouver() {
             A HubSpot consultant can help a Vancouver team start a clean implementation or finish one that is already underway. Emergent Logic reviews the current portal, closes operating gaps, tests the agreed configuration, and documents the path from pilot to production.
           </p>
           <div className="flex max-w-3xl flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <TrackedCTA ctaName="Vancouver HubSpot Consultation" destination="calendly">
+            <TrackedCTA ctaName="Vancouver HubSpot Rollout Review" destination="/hubspot-implementation#implementation-review">
               <Button asChild size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">
-                <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" /></a>
+                <Link href="/hubspot-implementation#implementation-review">Request a HubSpot Rollout Review <ArrowRight className="ml-2 h-5 w-5" /></Link>
               </Button>
             </TrackedCTA>
-            <Button asChild size="lg" className="w-full border border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white sm:w-auto">
-              <Link href="/services/marketing-automation">Marketing Automation Services</Link>
-            </Button>
+            <TrackedCTA ctaName="Vancouver HubSpot Consultation" destination="calendly">
+              <Button asChild size="lg" className="w-full border border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white sm:w-auto">
+                <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">Book a 30-Minute Consultation</a>
+              </Button>
+            </TrackedCTA>
           </div>
         </div>
       </section>
@@ -234,9 +236,9 @@ export default function HubspotConsultantVancouver() {
             <div className="border-l-4 border-violet-500 bg-white p-6 shadow-sm">
               <h3 className="text-xl font-bold text-gray-900">Need a second set of eyes on the build?</h3>
               <p className="mt-3 text-gray-600">Bring the current build register, unresolved decisions, and the outcome you need from the next release. Discovery is used to confirm fit and the information required for a responsible scope.</p>
-              <TrackedCTA ctaName="Vancouver HubSpot Rollout Review" destination="calendly">
+              <TrackedCTA ctaName="Vancouver HubSpot Rollout Review Detail" destination="/hubspot-implementation#implementation-review">
                 <Button asChild className="mt-6 bg-violet-700 text-white hover:bg-violet-800">
-                  <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">Discuss the HubSpot Rollout <ArrowRight className="ml-2 h-4 w-4" /></a>
+                  <Link href="/hubspot-implementation#implementation-review">Request a Rollout Review <ArrowRight className="ml-2 h-4 w-4" /></Link>
                 </Button>
               </TrackedCTA>
             </div>
@@ -300,9 +302,9 @@ export default function HubspotConsultantVancouver() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to get started with HubSpot?</h2>
           <p className="text-xl text-white/80 mb-8">Book a 30-minute CRM consultation to review the current portal, the operating problem, and the information needed for a practical scope.</p>
-          <TrackedCTA ctaName="Vancouver HubSpot Final Consultation" destination="/contact">
+          <TrackedCTA ctaName="Vancouver HubSpot Final Rollout Review" destination="/hubspot-implementation#implementation-review">
             <Button asChild size="lg" className="bg-white text-violet-900 hover:bg-violet-100">
-              <Link href="/contact">Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" /></Link>
+              <Link href="/hubspot-implementation#implementation-review">Request a HubSpot Rollout Review <ArrowRight className="ml-2 h-5 w-5" /></Link>
             </Button>
           </TrackedCTA>
         </div>

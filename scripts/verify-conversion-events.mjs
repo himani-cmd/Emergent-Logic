@@ -55,6 +55,18 @@ const checks = [
   },
   {
     passed:
+      analytics.includes("'lead_form_started'") &&
+      analytics.includes("'lead_form_submit_attempted'") &&
+      analytics.includes("'lead_form_error'") &&
+      hubspotForm.includes("trackLeadFormEvent('lead_form_started'") &&
+      hubspotForm.includes("trackLeadFormEvent('lead_form_submit_attempted'") &&
+      hubspotForm.includes("trackLeadFormEvent('lead_form_error'") &&
+      !analytics.includes('field_value') &&
+      !analytics.includes('form_email'),
+    message: 'The HubSpot paid landing form must expose a PII-free start, submit-attempt, and error funnel.',
+  },
+  {
+    passed:
       ['gclid', 'gbraid', 'wbraid'].every((field) =>
         hubspotForm.includes(field) && api.includes(`${field}: cleanCampaignValue`)
       ),
