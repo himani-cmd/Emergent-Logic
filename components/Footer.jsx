@@ -26,6 +26,7 @@ const companyLinks = [
 ];
 
 const locations = ['Surrey', 'Abbotsford', 'Langley', 'Coquitlam', 'Port Coquitlam', 'Burnaby', 'Richmond', 'Vancouver'];
+const googleBusinessProfileMapUrl = 'https://www.google.com/maps/search/?api=1&query=Emergent%20Logic%20Consulting&query_place_id=ChIJc3FCXsGbsQwRDXMYESadpec';
 
 export default function Footer() {
   return (
@@ -45,7 +46,18 @@ export default function Footer() {
             </Link>
             <p className="text-gray-400 mb-4">CRM implementation, integration, and automation for Greater Vancouver businesses.</p>
             <div className="space-y-2 text-gray-400 text-sm">
-              <div className="flex items-center gap-2"><MapPin className="w-4 h-4 text-violet-400" />Surrey, BC, Canada</div>
+              <div className="flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-violet-400" />
+                <a
+                  href={googleBusinessProfileMapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-violet-400"
+                  aria-label="Emergent Logic service area on Google Maps"
+                >
+                  Surrey, BC, Canada
+                </a>
+              </div>
               <div className="flex items-center gap-2"><Mail className="w-4 h-4 text-violet-400" /><a href="mailto:info@emergent-logic.ca" className="hover:text-violet-400">info@emergent-logic.ca</a></div>
               <div className="flex items-center gap-2"><Phone className="w-4 h-4 text-violet-400" /><a href="tel:+17786526271" className="hover:text-violet-400">778-652-6271</a></div>
             </div>

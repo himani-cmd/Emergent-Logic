@@ -34,6 +34,7 @@ export const metadata = {
 };
 
 const organizationId = 'https://www.emergent-logic.ca/#organization';
+const googleBusinessProfileMapUrl = 'https://www.google.com/maps/search/?api=1&query=Emergent%20Logic%20Consulting&query_place_id=ChIJc3FCXsGbsQwRDXMYESadpec';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -51,10 +52,24 @@ const jsonLd = {
       },
       image: 'https://www.emergent-logic.ca/og-image.png',
       sameAs: ['https://www.instagram.com/emergentlogiccrm/'],
+      hasMap: googleBusinessProfileMapUrl,
+      identifier: {
+        '@type': 'PropertyValue',
+        propertyID: 'Google Place ID',
+        value: 'ChIJc3FCXsGbsQwRDXMYESadpec',
+      },
       description: 'CRM implementation, integration, automation, cleanup, and lead capture systems for Canadian businesses.',
       foundingDate: '2026',
       telephone: '+1-778-652-6271',
       email: 'info@emergent-logic.ca',
+      contactPoint: {
+        '@type': 'ContactPoint',
+        contactType: 'sales and customer support',
+        telephone: '+1-778-652-6271',
+        email: 'info@emergent-logic.ca',
+        areaServed: 'CA',
+        availableLanguage: ['English'],
+      },
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'Surrey',
