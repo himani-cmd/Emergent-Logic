@@ -10,12 +10,12 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, MapPin, Zap, BarChart3, Globe, Settings } from 'lucide-react';
 
 export const metadata = {
-  title: 'HubSpot Consultant Vancouver | CRM Setup',
-  description: 'HubSpot consulting for Vancouver teams that need CRM setup, cleanup, migration, workflows, reporting, integrations, and practical adoption support.',
+  title: 'HubSpot Consultant Vancouver | Rollout Help',
+  description: 'HubSpot consulting in Vancouver for setup, cleanup, migration, workflows, reporting, integrations, and finishing an in-progress rollout.',
   alternates: { canonical: 'https://www.emergent-logic.ca/hubspot-consultant-vancouver' },
   openGraph: {
     title: 'HubSpot Consultant Vancouver | Emergent Logic',
-    description: 'HubSpot consulting for Vancouver teams that need CRM setup, cleanup, migration, workflows, reporting, integrations, and adoption support.',
+    description: 'HubSpot consulting in Vancouver for setup, cleanup, migration, workflows, reporting, integrations, and finishing an in-progress rollout.',
     url: 'https://www.emergent-logic.ca/hubspot-consultant-vancouver',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -65,10 +65,41 @@ const leakSignals = [
   },
 ];
 
+const rolloutGates = [
+  {
+    step: '01',
+    title: 'Confirm what is already built',
+    description: 'Inventory pipelines, properties, workflows, reports, integrations, permissions, documentation, and unresolved decisions before recommending more configuration.'
+  },
+  {
+    step: '02',
+    title: 'Close the operating decisions',
+    description: 'Define stage entry and exit rules, ownership, exceptions, required fields, lifecycle definitions, and reporting logic so the portal reflects how the team actually works.'
+  },
+  {
+    step: '03',
+    title: 'Test with representative users',
+    description: 'Use controlled records and realistic scenarios to test data entry, automation, alerts, handoffs, permissions, dashboards, and exception paths before a wider release.'
+  },
+  {
+    step: '04',
+    title: 'Set production acceptance gates',
+    description: 'Document what must pass, who approves it, which dependencies remain, and how affected processes will be restored if a production change behaves unexpectedly.'
+  },
+  {
+    step: '05',
+    title: 'Release, train, and stabilize',
+    description: 'Move approved configuration into production, train users around their roles, record open issues, and leave the internal owner with usable documentation and a support path.'
+  },
+];
+
 const faqs = [
-  { q: 'How much does HubSpot implementation cost in Vancouver?', a: 'HubSpot CRM is free to start, but a useful implementation depends on the scope: pipelines, properties, workflows, reporting, migration, integrations, and training. We review the setup first, then give a clear estimate before work starts.' },
+  { q: 'How much does HubSpot implementation cost in Vancouver?', a: 'Implementation cost depends on the confirmed scope: pipelines, properties, workflows, reporting, migration, integrations, testing, training, and support. The current portal and requirements are reviewed first, then the work and estimate are documented before delivery starts.' },
   { q: 'Which HubSpot Hubs can a scope cover?', a: 'A scope may involve CRM, Sales Hub, Marketing Hub, Service Hub, Content Hub, or Operations Hub, subject to the licensed tier and confirmed requirements. We document platform fit before proposing implementation.' },
   { q: 'Can you migrate us from Salesforce to HubSpot?', a: 'A Salesforce-to-HubSpot migration can be scoped when the source data and target requirements are understood. The plan covers backups, field mapping, test imports, validation, rollback, approval, and role-based training.' },
+  { q: 'Can a consultant finish an existing HubSpot implementation?', a: 'Yes. An existing HubSpot build can be reviewed without automatically starting over. The first step is to inventory what is live, what is incomplete, which decisions remain open, and which risks could affect a pilot or production release. The next work package is then agreed in writing.' },
+  { q: 'What should a HubSpot pilot test before production?', a: 'A useful pilot tests realistic records, user permissions, required fields, automation, alerts, ownership, handoffs, reports, integrations, exception paths, and acceptance criteria with representative users. Production release should follow recorded approval rather than a configuration-only check.' },
+  { q: 'Can HubSpot support be divided into smaller work packages?', a: 'Where the work can be separated safely, it can be proposed as bounded work packages with the objective, dependencies, estimate, acceptance criteria, and approval boundary written before delivery. The engagement model is confirmed during discovery.' },
 ];
 
 const jsonLd = {
@@ -115,7 +146,7 @@ export default function HubspotConsultantVancouver() {
             HubSpot consultant in Vancouver for setup, cleanup and automation
           </h1>
           <p className="max-w-3xl text-lg leading-relaxed text-white/75 mb-8 md:text-xl">
-            Emergent Logic helps Vancouver and Metro Vancouver teams implement, clean up, migrate, and improve HubSpot. The work can connect pipelines, lifecycle stages, workflows, reporting, integrations, and lead follow-up into one documented operating system.
+            A HubSpot consultant can help a Vancouver team start a clean implementation or finish one that is already underway. Emergent Logic reviews the current portal, closes operating gaps, tests the agreed configuration, and documents the path from pilot to production.
           </p>
           <div className="flex max-w-3xl flex-col gap-4 sm:flex-row sm:flex-wrap">
             <TrackedCTA ctaName="Vancouver HubSpot Consultation" destination="calendly">
@@ -161,6 +192,58 @@ export default function HubspotConsultantVancouver() {
         </div>
       </section>
 
+      <section id="finish-hubspot-rollout" className="border-y border-violet-100 bg-violet-50/60 py-16 scroll-mt-24">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl">
+            <Badge className="mb-4 bg-white text-violet-700 hover:bg-white">Pilot-to-production framework</Badge>
+            <h2 className="mb-4 text-3xl font-bold text-gray-900">Already partway through a HubSpot rollout? Finish it without restarting by default.</h2>
+            <p className="mb-4 text-lg text-gray-700">
+              A partially built HubSpot portal needs a controlled review before it needs more configuration. The useful question is not “what else can HubSpot do?” It is “what must be true for this team to test, approve, and operate the system with confidence?”
+            </p>
+            <p className="text-sm font-medium text-violet-800">Last reviewed August 13, 2026 · Added pilot-to-production guidance based on current buyer questions.</p>
+          </div>
+
+          <ol className="mt-10 grid gap-0 border border-violet-200 bg-white lg:grid-cols-5">
+            {rolloutGates.map((gate, index) => (
+              <li key={gate.step} className={`p-6 ${index < rolloutGates.length - 1 ? 'border-b border-violet-100 lg:border-b-0 lg:border-r' : ''}`}>
+                <span className="text-sm font-bold text-violet-600">{gate.step}</span>
+                <h3 className="mt-3 text-lg font-semibold text-gray-900">{gate.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-gray-600">{gate.description}</p>
+              </li>
+            ))}
+          </ol>
+
+          <div className="mt-10 grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900">What a useful first review should produce</h3>
+              <ul className="mt-5 space-y-3">
+                {[
+                  'A confirmed inventory of what is live, incomplete, duplicated, or undocumented',
+                  'An open-decision and dependency register with clear owners',
+                  'Pilot scenarios, acceptance criteria, and evidence requirements',
+                  'A prioritized next work package with scope boundaries and an estimate',
+                  'Production risks, rollback considerations, training needs, and handoff requirements',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-gray-700">
+                    <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-violet-600" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="border-l-4 border-violet-500 bg-white p-6 shadow-sm">
+              <h3 className="text-xl font-bold text-gray-900">Need a second set of eyes on the build?</h3>
+              <p className="mt-3 text-gray-600">Bring the current build register, unresolved decisions, and the outcome you need from the next release. Discovery is used to confirm fit and the information required for a responsible scope.</p>
+              <TrackedCTA ctaName="Vancouver HubSpot Rollout Review" destination="calendly">
+                <Button asChild className="mt-6 bg-violet-700 text-white hover:bg-violet-800">
+                  <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">Discuss the HubSpot Rollout <ArrowRight className="ml-2 h-4 w-4" /></a>
+                </Button>
+              </TrackedCTA>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mb-10">
@@ -193,6 +276,7 @@ export default function HubspotConsultantVancouver() {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Not sure if HubSpot is right?</h2>
           <p className="text-gray-600 mb-4">Need broader CRM help before choosing a platform? See our <Link href="/crm-consultant-vancouver" className="text-violet-600 hover:underline">CRM consultant Vancouver</Link> page for cleanup, routing, reporting, and integration support.</p>
           <p className="text-gray-600 mb-4">Start here: <Link href="/blog/hubspot-consultant-vancouver" className="text-violet-600 hover:underline">how to evaluate a HubSpot consultant in Vancouver</Link>, including what to review before changing a live portal.</p>
+          <p className="text-gray-600 mb-4">For a reusable implementation control model, review the <Link href="/crm-implementation-method" className="text-violet-600 hover:underline">CRM implementation method</Link> covering decisions, testing, acceptance, release, and handoff.</p>
           <p className="text-gray-600 mb-4">Moving from spreadsheets? Use the <Link href="/blog/excel-to-crm-migration-repeat-order-businesses" className="text-violet-600 hover:underline">Excel-to-CRM migration checklist and free workbook</Link> to map customers, products, order cadence, ownership, and follow-up before choosing a platform.</p>
           <p className="text-gray-600 mb-4">Read our comparison: <Link href="/blog/hubspot-vs-salesforce-canada" className="text-violet-600 hover:underline">HubSpot vs Salesforce: Which CRM is Right for Your Canadian Business?</Link></p>
           <p className="text-gray-600 mb-4">Learn how automation transforms your pipeline: <Link href="/blog/what-is-marketing-automation-small-business" className="text-violet-600 hover:underline">What is Marketing Automation and Does Your Business Need It?</Link></p>
