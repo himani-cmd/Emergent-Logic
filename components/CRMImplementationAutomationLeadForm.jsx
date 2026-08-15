@@ -19,23 +19,23 @@ const initialForm = {
   gclid: '',
   gbraid: '',
   wbraid: '',
-  landing_page: '/hubspot-implementation',
+  landing_page: '/crm-implementation-automation',
 };
 
 function cleanAttributionValue(value) {
   return String(value || '').replace(/[\u0000-\u001F\u007F]/g, '').trim().slice(0, 160);
 }
 
-export default function HubSpotImplementationLeadForm() {
+export default function CRMImplementationAutomationLeadForm() {
   const [formData, setFormData] = useState(initialForm);
   const [status, setStatus] = useState('idle');
   const [errorMessage, setErrorMessage] = useState('');
   const formStartTracked = useRef(false);
 
   const formAnalytics = {
-    formName: 'hubspot_implementation_form',
-    location: '/hubspot-implementation',
-    leadSource: 'hubspot_implementation_landing_page',
+    formName: 'crm_implementation_automation_form',
+    location: '/crm-implementation-automation',
+    leadSource: 'crm_implementation_automation_landing_page',
   };
 
   useEffect(() => {
@@ -73,7 +73,7 @@ export default function HubSpotImplementationLeadForm() {
 
     const qualificationContext = [
       `Company: ${formData.company.trim()}`,
-      `HubSpot implementation need: ${formData.project_summary.trim()}`,
+      `CRM, automation, or integration need: ${formData.project_summary.trim()}`,
     ].join('\n');
 
     try {
@@ -115,18 +115,18 @@ export default function HubSpotImplementationLeadForm() {
     return (
       <div className="flex min-h-[30rem] flex-col justify-center border border-emerald-200 bg-emerald-50 p-7 sm:p-9" role="status">
         <CheckCircle2 className="h-10 w-10 text-emerald-700" aria-hidden="true" />
-        <h3 className="mt-5 text-2xl font-bold text-slate-950">HubSpot implementation request received</h3>
+        <h3 className="mt-5 text-2xl font-bold text-slate-950">CRM and automation request received</h3>
         <p className="mt-3 leading-7 text-slate-700">
-          Emergent Logic will review the requested HubSpot products, CMS work, data, and integrations before responding. Scope, timing, access, and platform decisions are confirmed separately.
+          Emergent Logic will review the CRM, automation, data, and integration requirements before responding. Scope, timing, access, and platform decisions are confirmed separately.
         </p>
       </div>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit} onFocusCapture={trackFormStart} className="border border-slate-200 bg-white p-6 shadow-sm sm:p-8" aria-labelledby="hubspot-form-title">
-      <p className="text-sm font-semibold text-indigo-700">HUBSPOT IMPLEMENTATION REVIEW</p>
-      <h3 id="hubspot-form-title" className="mt-2 text-2xl font-bold text-slate-950">Tell us what HubSpot needs to do</h3>
+    <form onSubmit={handleSubmit} onFocusCapture={trackFormStart} className="border border-slate-200 bg-white p-6 shadow-sm sm:p-8" aria-labelledby="crm-automation-form-title">
+      <p className="text-sm font-semibold text-indigo-700">CRM AND AUTOMATION REVIEW</p>
+      <h3 id="crm-automation-form-title" className="mt-2 text-2xl font-bold text-slate-950">Tell us what needs to work</h3>
       <p className="mt-3 leading-7 text-slate-600">Five fields are enough for a fit review. Scope, access, timing, and commercial terms are confirmed separately.</p>
 
       <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -151,8 +151,8 @@ export default function HubSpotImplementationLeadForm() {
       </label>
 
       <label className="mt-4 block text-sm font-semibold text-slate-800">
-        What do you need to implement?
-        <textarea name="project_summary" value={formData.project_summary} onChange={updateField} required maxLength={4200} rows={5} className="mt-2 w-full resize-y border border-slate-300 px-3 py-3 text-base font-normal outline-none focus:border-indigo-600 focus:ring-2 focus:ring-indigo-100" placeholder="For example: implement Sales Hub and Content Hub, customize the CMS, migrate data, or connect HubSpot with other business systems." />
+        What do you need to implement or connect?
+        <textarea name="project_summary" value={formData.project_summary} onChange={updateField} required maxLength={4200} rows={5} className="mt-2 w-full resize-y border border-slate-300 px-3 py-3 text-base font-normal outline-none focus:border-indigo-600 focus:ring-2 focus:ring-indigo-100" placeholder="For example: implement a CRM, connect website forms, build lead nurture, migrate data, or integrate business systems." />
       </label>
 
       <div className="absolute -left-[10000px] top-auto h-px w-px overflow-hidden" aria-hidden="true">
@@ -162,7 +162,7 @@ export default function HubSpotImplementationLeadForm() {
       {status === 'error' && <p className="mt-4 text-sm font-medium text-red-700" role="alert">{errorMessage}</p>}
 
       <button type="submit" disabled={status === 'submitting'} className="mt-6 inline-flex min-h-12 w-full items-center justify-center bg-[#4B37C8] px-5 py-3 font-semibold text-white transition-colors hover:bg-[#38289F] disabled:cursor-not-allowed disabled:opacity-70">
-        {status === 'submitting' ? <><Loader2 className="mr-2 h-5 w-5 animate-spin" aria-hidden="true" />Submitting request</> : 'Request an implementation review'}
+        {status === 'submitting' ? <><Loader2 className="mr-2 h-5 w-5 animate-spin" aria-hidden="true" />Submitting request</> : 'Request a CRM and automation review'}
       </button>
       <p className="mt-3 text-xs leading-5 text-slate-500">By submitting, you agree that Emergent Logic may respond to this request. Review our <a href="/privacy" className="underline hover:text-slate-800">privacy policy</a>.</p>
     </form>

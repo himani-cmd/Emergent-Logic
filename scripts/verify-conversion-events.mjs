@@ -7,6 +7,7 @@ const providerPath = path.join(root, 'components', 'AnalyticsProvider.jsx');
 const contactPath = path.join(root, 'app', 'contact', 'page.js');
 const workbookPath = path.join(root, 'components', 'WorkbookDownload.jsx');
 const hubspotFormPath = path.join(root, 'components', 'HubSpotImplementationLeadForm.jsx');
+const crmAutomationFormPath = path.join(root, 'components', 'CRMImplementationAutomationLeadForm.jsx');
 const apiPath = path.join(root, 'app', 'api', '[[...path]]', 'route.js');
 
 const analytics = fs.readFileSync(analyticsPath, 'utf8');
@@ -14,6 +15,7 @@ const provider = fs.readFileSync(providerPath, 'utf8');
 const contact = fs.readFileSync(contactPath, 'utf8');
 const workbookDownload = fs.readFileSync(workbookPath, 'utf8');
 const hubspotForm = fs.readFileSync(hubspotFormPath, 'utf8');
+const crmAutomationForm = fs.readFileSync(crmAutomationFormPath, 'utf8');
 const api = fs.readFileSync(apiPath, 'utf8');
 
 const checks = [
@@ -55,6 +57,12 @@ const checks = [
   },
   {
     passed:
+      crmAutomationForm.includes("formName: 'crm_implementation_automation_form'") &&
+      crmAutomationForm.includes('trackLeadGeneration'),
+    message: 'The CRM and automation paid landing form must emit generate_lead only after an accepted response.',
+  },
+  {
+    passed:
       analytics.includes("'lead_form_started'") &&
       analytics.includes("'lead_form_submit_attempted'") &&
       analytics.includes("'lead_form_error'") &&
@@ -67,10 +75,26 @@ const checks = [
   },
   {
     passed:
+      crmAutomationForm.includes("trackLeadFormEvent('lead_form_started'") &&
+      crmAutomationForm.includes("trackLeadFormEvent('lead_form_submit_attempted'") &&
+      crmAutomationForm.includes("trackLeadFormEvent('lead_form_error'") &&
+      !crmAutomationForm.includes('email_address') &&
+      !crmAutomationForm.includes('phone_number'),
+    message: 'The CRM and automation paid landing form must expose a PII-free start, submit-attempt, and error funnel.',
+  },
+  {
+    passed:
       ['gclid', 'gbraid', 'wbraid'].every((field) =>
         hubspotForm.includes(field) && api.includes(`${field}: cleanCampaignValue`)
       ),
     message: 'The HubSpot landing page must preserve Google click identifiers through the server receipt.',
+  },
+  {
+    passed:
+      ['gclid', 'gbraid', 'wbraid'].every((field) =>
+        crmAutomationForm.includes(field) && api.includes(`${field}: cleanCampaignValue`)
+      ),
+    message: 'The CRM and automation landing page must preserve Google click identifiers through the server receipt.',
   },
   {
     passed:
