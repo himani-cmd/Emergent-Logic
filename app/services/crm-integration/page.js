@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Link2, Database, Phone, Mail, Calendar, FileText, Globe, Zap, RefreshCw, Clock, DollarSign, Check, AlertTriangle } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Integration Services Canada',
-  description: 'Connect your CRM to website forms, email, phone, accounting, and marketing tools. HubSpot, Salesforce, Zoho, Zapier, Make, and APIs.',
+  title: 'CRM Integration Services | Zapier & Make',
+  description: 'CRM integration services for HubSpot, Salesforce, and Zoho using native connectors, Zapier, Make, n8n, webhooks, and APIs.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/crm-integration' },
   robots: { index: true, follow: true },
   openGraph: {
@@ -19,9 +19,43 @@ export const metadata = {
   },
 };
 
+const faqs = [
+  { q: 'Do I need a CRM in place before an integration project?', a: 'The integration needs a defined CRM or system of record, usable data, and clear ownership rules. If those foundations are not ready, the first scope may focus on CRM implementation or cleanup.' },
+  { q: 'Should we use a native integration, Zapier, Make, n8n, or custom code?', a: 'The choice depends on connector coverage, data volume, transformation logic, latency, monitoring, security, and internal support capacity. Technical discovery is used to confirm the smallest maintainable approach that meets the requirement.' },
+  { q: 'Can you review an existing CRM integration?', a: 'Yes. A review can inventory current connectors, triggers, field mappings, credentials, failure paths, duplicate controls, and documentation before a repair or replacement is proposed.' },
+  { q: 'How are errors and sync failures handled?', a: 'The agreed design can include validation, retries, logging, alerts, exception ownership, and a recovery runbook. The exact controls depend on the platform and the operational impact of a failed sync.' },
+  { q: 'What CRMs and tools can be integrated?', a: 'Work can involve HubSpot, Salesforce, Zoho, supported native connectors, Zapier, Make, n8n, webhooks, or REST APIs. Exact platform and connector fit is confirmed during discovery rather than assumed.' },
+  { q: 'Is ongoing monitoring included?', a: 'Monitoring and support are defined in the written scope. The proposal states the included stabilization period, ownership after handoff, and any optional ongoing support before work begins.' },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://www.emergent-logic.ca/services/crm-integration#service',
+      name: 'CRM Integration Services',
+      serviceType: 'CRM integration architecture, implementation, testing, error handling, and documented handoff',
+      provider: { '@id': 'https://www.emergent-logic.ca/#organization' },
+      url: 'https://www.emergent-logic.ca/services/crm-integration',
+      areaServed: { '@type': 'Country', name: 'Canada' },
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': 'https://www.emergent-logic.ca/services/crm-integration#faq',
+      mainEntity: faqs.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: { '@type': 'Answer', text: item.a },
+      })),
+    },
+  ],
+};
+
 export default function CRMIntegration() {
   return (
     <main className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
 
       {/* Hero */}
@@ -31,7 +65,7 @@ export default function CRMIntegration() {
             <Link href="/" className="hover:text-white">Home</Link> / <Link href="/#services" className="hover:text-white">Services</Link> / <span className="text-white">CRM Integration</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Connect Your CRM to the Rest of Your Stack
+            CRM Integration Services for a Connected Operating Stack
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
             Your CRM should not be an island. We connect HubSpot, Salesforce, and Zoho to your accounting software, phone system, website, calendar, email, and marketing tools &mdash; so data flows where it needs to and your team stops copying records between tabs.
@@ -95,7 +129,7 @@ export default function CRMIntegration() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Common Integrations We Build</h2>
           <p className="text-lg text-gray-600 mb-8">
-            These are the systems we connect most often. If yours is not on this list, we likely still know how to wire it &mdash; ask us during the discovery call.
+            These are representative integration categories. Exact connector, API, security, and licensing fit is confirmed during discovery.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {[
@@ -127,8 +161,8 @@ export default function CRMIntegration() {
           </p>
           <div className="space-y-6">
             {[
-              { title: 'Native Integrations', desc: 'When the CRM has a native connector to the target system, we use it. Native integrations are usually faster, cheaper to maintain, and easier for your team to manage. HubSpot, Salesforce, and Zoho all have strong native marketplaces &mdash; we know which connectors are reliable and which are not.' },
-              { title: 'Middleware (Zapier, Make, n8n, Tray)', desc: 'For most SMB use cases, middleware platforms hit the sweet spot of speed, flexibility, and cost. We build production-grade automations with proper error handling, retry logic, and logging &mdash; not the fragile Zaps that break the moment something changes upstream.' },
+              { title: 'Native Integrations', desc: 'A native connector can be appropriate when it covers the required objects, fields, sync direction, error visibility, and access controls. Connector limits and ownership are reviewed before selection.' },
+              { title: 'Middleware (Zapier, Make, n8n, Tray)', desc: 'Middleware can support multi-step workflows and transformations without a custom application. The design still needs validation, duplicate controls, retries, logging, alerts, and a named owner.' },
               { title: 'Custom API Integrations', desc: 'When neither native nor middleware fits &mdash; usually because of complex business logic, high data volume, or real-time requirements &mdash; we build custom integrations against the CRM API directly. These are scoped carefully and documented so they survive team changes.' },
             ].map((item, i) => (
               <div key={i} className="bg-gray-50 p-6 rounded-xl border">
@@ -174,13 +208,13 @@ export default function CRMIntegration() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Process</h2>
           <p className="text-lg text-gray-600 mb-8">
-            Three phases. Same methodology we use for every CRM project, applied to integrations.
+            Three controlled phases, with timing confirmed after the systems and dependencies are reviewed.
           </p>
           <div className="space-y-8">
             {[
-              { step: '01', title: 'Discovery & Architecture (Week 1)', desc: 'We map the systems involved, the data that should flow between them, the direction of sync, and the source of truth for each field. You get a written architecture document showing exactly how the integration will behave before any code or Zaps are built.' },
-              { step: '02', title: 'Build & Test (Week 1-2)', desc: 'We build the integration using the right approach (native, middleware, or custom). Every flow is tested against real records, with edge cases like duplicate handling, error retries, and rollback. Nothing goes live until it has passed against live data.' },
-              { step: '03', title: 'Launch & Document (Week 2-3)', desc: 'We launch with monitoring in place. You receive a written runbook covering what each integration does, how to monitor it, and what to do when something breaks. Your team gets a walkthrough so they can self-serve common issues.' },
+              { step: '01', title: 'Discovery & Architecture', desc: 'Map the systems, required data flow, sync direction, system of record, dependencies, access requirements, and exception ownership before selecting the implementation path.' },
+              { step: '02', title: 'Build & Test', desc: 'Configure the approved native, middleware, or custom path and test representative records, field mappings, duplicate handling, retries, alerts, permissions, and recovery steps.' },
+              { step: '03', title: 'Release & Document', desc: 'Release only after the agreed acceptance checks pass. Document the integration, monitoring route, known limits, recovery procedure, and ownership after handoff.' },
             ].map((item, i) => (
               <div key={i} className="flex gap-6">
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center flex-shrink-0">
@@ -232,9 +266,9 @@ export default function CRMIntegration() {
             {[
               'CRM-native thinking: every integration designed around the CRM as the source of truth',
               'Right tool for the job: native, middleware, or custom &mdash; we pick what fits, not what we sell',
-              'Production-grade automations with error handling, retries, and logging &mdash; not fragile Zaps',
-              'Written architecture and runbook documents handed over with every integration',
-              'Multi-platform: HubSpot, Salesforce, Zoho, plus the dozens of systems they connect to',
+              'Error handling, retries, logging, and alerting defined according to operational risk',
+              'Architecture and runbook deliverables defined in the written scope',
+              'Platform fit confirmed across HubSpot, Salesforce, Zoho, and supported connected systems',
               'Scope and commercial terms confirmed before work starts',
               'Based in Surrey, BC — serving Greater Vancouver and businesses across Canada',
             ].map((item, i) => (
@@ -252,15 +286,7 @@ export default function CRMIntegration() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
           <div className="space-y-6">
-            {[
-              { q: 'Do I need a CRM in place to work with you on integrations?', a: 'Yes. We build integrations as an extension of CRM strategy, not as standalone wiring projects. If your CRM is not implemented or has serious data issues, we will recommend a CRM Implementation or Cleanup first.' },
-              { q: 'Should we use native integrations, Zapier, or custom code?', a: 'It depends. Native is best when the connector is reliable and covers your needs. Middleware (Zapier, Make, n8n) is best for most SMB workflows. Custom is best when you have high data volumes, complex transformations, or real-time requirements. We recommend the right approach during discovery, not before.' },
-              { q: 'Can you fix integrations someone else built?', a: 'Yes. We audit existing Zaps, native connectors, and custom code, identify what is broken or fragile, and rebuild only what needs rebuilding. We do not start over unless the existing setup is structurally beyond repair.' },
-              { q: 'How do you handle errors and sync failures?', a: 'Every integration we build includes error handling, retry logic where appropriate, and logging. When a sync fails, the right person gets notified, and the runbook tells them what to check. Sync failures should never be silent.' },
-              { q: 'Do you provide ongoing support?', a: 'Two weeks of post-launch support is included. After that, you can either run the integrations yourself with the runbook we leave behind, or engage us monthly for ongoing monitoring, updates, and new connections.' },
-              { q: 'What CRMs and tools do you support?', a: 'Integration work can use native connectors, Zapier, Make, n8n, or REST APIs around HubSpot, Salesforce, Zoho, and other business tools. Exact platform fit is confirmed during discovery rather than assumed.' },
-              { q: 'Will the integrations break when CRM platforms update their APIs?', a: 'Native and well-built middleware integrations generally survive vendor updates with minor adjustments. Custom integrations may need maintenance when an API version is deprecated. We document API versions and dependencies in the runbook so you know what to watch for.' },
-            ].map((item, i) => (
+            {faqs.map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-xl border">
                 <h3 className="font-bold text-gray-900 mb-2">{item.q}</h3>
                 <p className="text-gray-600">{item.a}</p>
@@ -313,7 +339,7 @@ export default function CRMIntegration() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Get Your Stack Working Together</h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Book a free 30-minute strategy call. We will look at your current stack, identify the integration gaps, and tell you exactly what it would take to close them.
+            Book a 30-minute consultation to review the systems involved, the operating problem, and the information needed to confirm a responsible integration scope.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <TrackedCTA ctaName="Book a CRM Consultation - Integration Footer" destination="calendly">

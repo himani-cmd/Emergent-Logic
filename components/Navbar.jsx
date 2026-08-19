@@ -5,12 +5,14 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { trackCTAClick } from '@/lib/analytics';
 import { Button } from '@/components/ui/button';
-import { Menu, X, ChevronDown, Database, Settings, Wrench } from 'lucide-react';
+import { Menu, X, ChevronDown, Database, Settings, Wrench, Link2, Workflow } from 'lucide-react';
 
 const services = [
   { title: 'CRM Implementation', href: '/services/crm-implementation', icon: Database },
   { title: 'HubSpot Consulting', href: '/services/hubspot-consulting', icon: Settings },
   { title: 'CRM Cleanup', href: '/services/crm-cleanup', icon: Wrench },
+  { title: 'CRM Integration', href: '/services/crm-integration', icon: Link2 },
+  { title: 'Marketing Automation', href: '/services/marketing-automation', icon: Workflow },
 ];
 
 const navLinks = [
