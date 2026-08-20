@@ -9,7 +9,7 @@ const lastmodByPath = {
   '/hubspot-admin-support-canada-us': '2026-08-12',
   '/blog/salesforce-to-hubspot-migration-checklist': '2026-08-11',
   '/services/remote-crm-implementation': '2026-08-11',
-  '/services/crm-relaunch': '2026-08-11',
+  '/services/crm-relaunch': '2026-08-19',
   '/ai-crm-audit': '2026-08-11',
   '/salesforce-consultant-surrey-bc': '2026-08-11',
   '/blog/excel-to-crm-migration-repeat-order-businesses': '2026-08-08',
@@ -18,7 +18,7 @@ const lastmodByPath = {
   '/crm-consultant-abbotsford': '2026-08-19',
   '/crm-consultant-langley': '2026-08-05',
   '/crm-consultant-coquitlam': '2026-08-19',
-  '/hubspot-consultant-vancouver': '2026-08-13',
+  '/hubspot-consultant-vancouver': '2026-08-19',
   '/hubspot-consultant-surrey-bc': '2026-08-05',
 };
 

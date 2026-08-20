@@ -93,6 +93,16 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     {
+      '@type': 'WebPage',
+      '@id': 'https://www.emergent-logic.ca/services/crm-relaunch#webpage',
+      url: 'https://www.emergent-logic.ca/services/crm-relaunch',
+      name: 'CRM Relaunch Services Canada',
+      description: metadata.description,
+      dateModified: '2026-08-19',
+      isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
+      about: { '@id': 'https://www.emergent-logic.ca/services/crm-relaunch#service' },
+    },
+    {
       '@type': 'Service',
       '@id': 'https://www.emergent-logic.ca/services/crm-relaunch#service',
       name: 'CRM Relaunch Services Canada',
@@ -161,10 +171,12 @@ export default function CRMRelaunch() {
 
       <section className="bg-white py-20">
         <div className="container mx-auto max-w-5xl px-4">
-          <h2 className="mb-4 text-3xl font-bold text-gray-950 md:text-4xl">Four possible decisions, one evidence base</h2>
+          <p className="mb-3 text-sm font-semibold text-violet-700">Last reviewed August 19, 2026</p>
+          <h2 className="mb-4 text-3xl font-bold text-gray-950 md:text-4xl">Can an underused CRM be relaunched instead of replaced?</h2>
           <p className="mb-10 max-w-3xl text-lg text-gray-600">
-            Replacement is not the default. Each option should be compared against the same process, data, reporting, integration, governance, cost, and change requirements.
+            Often, yes. The responsible first step is a diagnostic that separates platform limitations from configuration, data, ownership, workflow, reporting, integration and adoption problems. Replacement is not the default; retain, repair, simplify, integrate and replace options should be compared against the same requirements and implementation risks.
           </p>
+          <h3 className="mb-6 text-2xl font-bold text-gray-950">Four possible decisions from the same evidence base</h3>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {decisions.map((decision) => (
               <article key={decision.title} className="rounded-lg border border-gray-200 bg-gray-50 p-6">
