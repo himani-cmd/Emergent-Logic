@@ -33,7 +33,7 @@ const services = [
 const hubs = [
   { icon: Zap, name: 'Marketing Hub', desc: 'Automation & nurturing' },
   { icon: BarChart3, name: 'Sales Hub', desc: 'Pipeline & forecasting' },
-  { icon: Globe, name: 'CMS Hub', desc: 'Websites & landing pages' },
+  { icon: Globe, name: 'Content Hub', desc: 'Websites & landing pages' },
   { icon: Settings, name: 'Operations Hub', desc: 'Data sync & workflows' },
 ];
 
@@ -94,6 +94,7 @@ const rolloutGates = [
 ];
 
 const faqs = [
+  { q: 'How should a growing company choose a HubSpot implementation consultant?', a: 'Compare consultants on requirements discovery, portal and data assessment, configuration depth, migration controls, integration design, testing, training, documentation, production approval, and post-launch ownership. Ask them to make assumptions, exclusions, dependencies, acceptance checks, and licence requirements visible before implementation begins.' },
   { q: 'How much does HubSpot implementation cost in Vancouver?', a: 'Implementation cost depends on the confirmed scope: pipelines, properties, workflows, reporting, migration, integrations, testing, training, and support. The current portal and requirements are reviewed first, then the work and estimate are documented before delivery starts.' },
   { q: 'Which HubSpot Hubs can a scope cover?', a: 'A scope may involve CRM, Sales Hub, Marketing Hub, Service Hub, Content Hub, or Operations Hub, subject to the licensed tier and confirmed requirements. We document platform fit before proposing implementation.' },
   { q: 'Can you migrate us from Salesforce to HubSpot?', a: 'A Salesforce-to-HubSpot migration can be scoped when the source data and target requirements are understood. The plan covers backups, field mapping, test imports, validation, rollback, approval, and role-based training.' },
@@ -105,6 +106,16 @@ const faqs = [
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://www.emergent-logic.ca/hubspot-consultant-vancouver#webpage',
+      url: 'https://www.emergent-logic.ca/hubspot-consultant-vancouver',
+      name: 'HubSpot Consultant Vancouver',
+      description: metadata.description,
+      dateModified: '2026-08-19',
+      isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
+      about: { '@id': 'https://www.emergent-logic.ca/hubspot-consultant-vancouver#service' },
+    },
     {
       '@type': 'Service',
       '@id': 'https://www.emergent-logic.ca/hubspot-consultant-vancouver#service',
@@ -163,6 +174,29 @@ export default function HubspotConsultantVancouver() {
         </div>
       </section>
 
+      <section className="border-b border-violet-100 bg-white py-16">
+        <div className="container mx-auto max-w-4xl px-4">
+          <p className="mb-3 text-sm font-semibold text-violet-700">Last reviewed August 19, 2026</p>
+          <h2 className="mb-4 text-3xl font-bold text-gray-900">How should a Vancouver team choose a HubSpot implementation consultant?</h2>
+          <p className="mb-6 text-lg leading-8 text-gray-700">Choose a consultant who can translate the operating process into lifecycle rules, ownership, pipelines, permissions, automation, reporting and documented acceptance checks. Platform familiarity matters, but the engagement should also control migration, integrations, testing, training, production approval and handoff.</p>
+          <div className="grid gap-4 md:grid-cols-2">
+            {[
+              'Reviews the current portal, licences, data and unresolved decisions before proposing changes',
+              'Documents assumptions, exclusions, dependencies and client responsibilities',
+              'Tests representative records, workflows, permissions and exception paths',
+              'Defines migration reconciliation, integration recovery and production approval',
+              'Builds dashboards from agreed definitions and trustworthy source fields',
+              'Leaves role-specific training, admin documentation and clear ownership',
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-3 border border-violet-100 bg-violet-50/50 p-4">
+                <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-violet-600" />
+                <p className="text-gray-700">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">HubSpot services for Vancouver businesses</h2>
@@ -202,7 +236,7 @@ export default function HubspotConsultantVancouver() {
             <p className="mb-4 text-lg text-gray-700">
               A partially built HubSpot portal needs a controlled review before it needs more configuration. The useful question is not “what else can HubSpot do?” It is “what must be true for this team to test, approve, and operate the system with confidence?”
             </p>
-            <p className="text-sm font-medium text-violet-800">Last reviewed August 13, 2026 · Added pilot-to-production guidance based on current buyer questions.</p>
+            <p className="text-sm font-medium text-violet-800">Pilot-to-production guidance for an existing HubSpot rollout.</p>
           </div>
 
           <ol className="mt-10 grid gap-0 border border-violet-200 bg-white lg:grid-cols-5">

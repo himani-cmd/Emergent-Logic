@@ -29,10 +29,14 @@ const included = [
 ];
 
 const faqs = [
-  { q: 'Which CRM should we implement?', a: 'For many Canadian SMBs, HubSpot is the fastest path to value. Salesforce is better for deeper customization, larger teams, or complex governance. Zoho can be a strong budget-conscious option. We recommend based on fit, not vendor preference.' },
+  { q: 'Which CRM should we implement?', a: 'The right CRM depends on the sales process, users, permissions, reporting, integrations, data, governance, budget, and internal ownership. HubSpot, Salesforce, Zoho, and other supported platforms should be compared against written requirements rather than selected from a generic ranking.' },
   { q: 'How long does CRM implementation take?', a: 'Timing depends on data volume, integrations, stakeholder availability, testing, and acceptance criteria. The delivery plan and dependencies are documented before work begins.' },
-  { q: 'Do you migrate data from spreadsheets or an old CRM?', a: 'Yes. We migrate from spreadsheets, HubSpot, Salesforce, Zoho, Pipedrive, Monday, and other tools. Cleanup and field mapping are part of the implementation plan.' },
+  { q: 'Do you migrate data from spreadsheets or an old CRM?', a: 'Migration can be scoped after the source data, associations, history, ownership, quality, and target requirements are understood. Field mapping, test imports, reconciliation, rollback considerations, and acceptance checks should be agreed before the final cutover.' },
   { q: 'Do you support businesses outside BC?', a: 'Yes. Emergent Logic is based in Surrey, BC and supports businesses across Canada. CRM implementation can be delivered remotely with working sessions, screen shares, and documented handoff.' },
+  { q: 'What should a growing company look for in a CRM implementation partner?', a: 'Look for a partner who starts with the operating process, defines data and ownership rules, documents scope and dependencies, tests representative scenarios, plans migration and rollback, trains the people who will use the system, and leaves a clear handoff. Platform familiarity matters, but accountable delivery controls matter too.' },
+  { q: 'Can one CRM implementation scope include setup, migration, automation, reporting, and training?', a: 'Yes, when those workstreams can be bounded responsibly. A written scope can connect CRM configuration, data migration, integrations, workflow automation, dashboards, testing, role-specific training, and documented handoff. The confirmed systems, licences, data, stakeholders, and acceptance criteria determine what is included.' },
+  { q: 'Can an underused CRM be customized and relaunched instead of replaced?', a: 'Often the first responsible step is a diagnostic review rather than a replacement. The review can identify useful configuration, data problems, lifecycle gaps, permissions, routing, workflows, reports, integrations, and adoption barriers, then support a retain, repair, simplify, or replace decision.' },
+  { q: 'Can you build CRM dashboards around our sales process?', a: 'Dashboard work begins with the decisions each role needs to make and the source fields required to support them. Pipeline, activity, follow-up, source, conversion, forecast, and exception reporting can be scoped after definitions and data quality are confirmed.' },
 ];
 
 const jsonLd = {
@@ -46,6 +50,16 @@ const jsonLd = {
       provider: { '@id': 'https://www.emergent-logic.ca/#organization' },
       url: 'https://www.emergent-logic.ca/crm-implementation-canada',
       areaServed: { '@type': 'Country', name: 'Canada' },
+    },
+    {
+      '@type': 'WebPage',
+      '@id': 'https://www.emergent-logic.ca/crm-implementation-canada#webpage',
+      url: 'https://www.emergent-logic.ca/crm-implementation-canada',
+      name: 'CRM Implementation Canada',
+      description: metadata.description,
+      dateModified: '2026-08-19',
+      about: { '@id': 'https://www.emergent-logic.ca/crm-implementation-canada#service' },
+      isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
     },
     {
       '@type': 'FAQPage',
@@ -74,7 +88,7 @@ export default function CRMImplementationCanada() {
           <div className="flex items-center gap-2 text-violet-200 mb-4"><CheckCircle className="w-5 h-5" /><span>HubSpot, Salesforce, Zoho</span></div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">CRM Implementation for Canadian Businesses</h1>
           <p className="text-xl text-white/75 max-w-3xl mb-8">
-            We implement HubSpot, Salesforce, and Zoho for Canadian SMBs that need cleaner follow-up, better pipeline visibility, and a system their team will actually use. Strategy, setup, migration, automation, reporting, and training are handled in one fixed-scope project.
+            Emergent Logic helps Canadian small and growing businesses plan and implement supported CRM systems around clear ownership, follow-up, reporting, migration, automation, testing, training, and documented handoff. The written scope reflects the confirmed platform, data, integrations, users, and operating requirements.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
@@ -85,7 +99,11 @@ export default function CRMImplementationCanada() {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Implementation is not just installing software</h2>
+          <p className="mb-3 text-sm font-semibold text-violet-700">Last reviewed August 19, 2026</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">What does end-to-end CRM implementation include?</h2>
+          <p className="text-lg text-gray-700 mb-4">
+            End-to-end CRM implementation connects process design, platform configuration, data migration, integrations, automation, reporting, testing, training, and handoff. The objective is not simply to install software; it is to give each qualified inquiry a clear owner, next action, and reliable place in the operating record.
+          </p>
           <p className="text-lg text-gray-600 mb-4">
             A CRM only works when it reflects how your team sells, follows up, reports, and hands work between people. Default pipelines and generic templates usually create extra admin work instead of clarity.
           </p>
@@ -111,15 +129,18 @@ export default function CRMImplementationCanada() {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Who this is for</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">How should a Canadian company choose a CRM implementation partner?</h2>
+          <p className="mb-8 text-lg leading-8 text-gray-600">
+            Compare partners on how they handle requirements, data ownership, migration, integrations, testing, adoption, documentation, and production approval. A useful proposal should make assumptions, exclusions, dependencies, acceptance checks, and the client&apos;s responsibilities visible before work begins.
+          </p>
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              'Founders moving from spreadsheets to a real sales system',
-              'Sales teams that need pipeline visibility and consistent follow-up',
-              'Marketing teams that need forms, campaigns, and CRM handoff connected',
-              'Businesses switching from one CRM to another',
-              'Teams with a stalled implementation that needs to be finished properly',
-              'Companies that want fixed-scope delivery instead of open-ended hourly consulting',
+              'Requirements and ownership are documented before configuration',
+              'Migration includes mapping, test imports, reconciliation, and acceptance',
+              'Integrations define source systems, retries, errors, and recovery ownership',
+              'Dashboards are tied to agreed decisions and trustworthy source fields',
+              'Representative users test realistic scenarios before production release',
+              'Training, documentation, access, open issues, and support boundaries are handed over',
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3 bg-violet-50 border border-violet-100 p-4 rounded-xl"><CheckCircle className="w-5 h-5 text-violet-700 flex-shrink-0 mt-0.5" /><p className="text-gray-700">{item}</p></div>
             ))}
