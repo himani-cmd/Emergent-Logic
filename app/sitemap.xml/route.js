@@ -3,7 +3,7 @@ const defaultLastmod = '2026-07-31';
 
 const lastmodByPath = {
   '/services/crm-integration': '2026-08-19',
-  '/services/marketing-automation': '2026-08-14',
+  '/services/marketing-automation': '2026-08-19',
   '/hubspot-implementation': '2026-08-14',
   '/crm-implementation-method': '2026-08-13',
   '/hubspot-admin-support-canada-us': '2026-08-12',
@@ -15,9 +15,9 @@ const lastmodByPath = {
   '/blog/excel-to-crm-migration-repeat-order-businesses': '2026-08-08',
   '/crm-consultant-vancouver': '2026-08-06',
   '/crm-consultant-surrey-bc': '2026-08-05',
-  '/crm-consultant-abbotsford': '2026-08-05',
+  '/crm-consultant-abbotsford': '2026-08-19',
   '/crm-consultant-langley': '2026-08-05',
-  '/crm-consultant-coquitlam': '2026-08-05',
+  '/crm-consultant-coquitlam': '2026-08-19',
   '/hubspot-consultant-vancouver': '2026-08-13',
   '/hubspot-consultant-surrey-bc': '2026-08-05',
 };

@@ -4,7 +4,6 @@ import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import TrackedCTA from '@/components/TrackedCTA';
-import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, MapPin } from 'lucide-react';
@@ -33,7 +32,7 @@ const services = [
 ];
 
 const reasons = [
-  'Local CRM consulting firm serving Coquitlam, Port Coquitlam, and the Tri-Cities',
+  'CRM consulting available for Coquitlam, Port Coquitlam, Port Moody and the Tri-Cities',
   'Multi-platform planning across HubSpot, Salesforce, and Zoho',
   'AI-assisted audits and documentation with human approval for production changes',
   'Written scope, price, dependencies, and acceptance criteria before work starts',
@@ -42,7 +41,7 @@ const reasons = [
 ];
 
 const faqs = [
-  { q: 'Which CRM is best for Coquitlam businesses?', a: 'For most Coquitlam and Tri-Cities SMBs, HubSpot or Zoho CRM are excellent choices — they are fast to implement and easy to adopt. Larger businesses with complex needs often benefit from Salesforce. We recommend based on your needs.' },
+  { q: 'Which CRM is best for a Coquitlam business?', a: 'The responsible choice depends on the sales and service process, users, data, reporting, integrations, permissions, budget and internal administration. HubSpot, Salesforce, Zoho and other supported options should be compared against written requirements rather than a generic local ranking.' },
   { q: 'How much does CRM consulting cost in Coquitlam?', a: 'Pricing is confirmed after discovery. The written proposal defines deliverables, exclusions, dependencies, approval points, and the commercial terms before work begins.' },
   { q: 'Do you serve Port Coquitlam and Port Moody as well?', a: 'Yes. We serve the entire Tri-Cities area — Coquitlam, Port Coquitlam, and Port Moody — as well as the broader Greater Vancouver region including Surrey, Burnaby, and Richmond.' },
   { q: 'How long does a CRM implementation take?', a: 'Timing depends on data volume, integrations, stakeholder availability, testing, and acceptance criteria. The delivery plan and dependencies are documented before work begins.' },
@@ -50,13 +49,39 @@ const faqs = [
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  '@id': 'https://www.emergent-logic.ca/crm-consultant-coquitlam#faq',
-  mainEntity: faqs.map((faq) => ({
-    '@type': 'Question',
-    name: faq.q,
-    acceptedAnswer: { '@type': 'Answer', text: faq.a },
-  })),
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://www.emergent-logic.ca/crm-consultant-coquitlam#webpage',
+      url: 'https://www.emergent-logic.ca/crm-consultant-coquitlam',
+      name: 'CRM Consultant Coquitlam BC',
+      description: metadata.description,
+      dateModified: '2026-08-19',
+      isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
+      about: { '@id': 'https://www.emergent-logic.ca/crm-consultant-coquitlam#service' },
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://www.emergent-logic.ca/crm-consultant-coquitlam#service',
+      name: 'CRM Consulting in Coquitlam and the Tri-Cities',
+      serviceType: 'Local CRM implementation, cleanup, reporting, integration and automation planning',
+      provider: { '@id': 'https://www.emergent-logic.ca/#organization' },
+      areaServed: [
+        { '@type': 'City', name: 'Coquitlam' },
+        { '@type': 'City', name: 'Port Coquitlam' },
+        { '@type': 'City', name: 'Port Moody' },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': 'https://www.emergent-logic.ca/crm-consultant-coquitlam#faq',
+      mainEntity: faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.q,
+        acceptedAnswer: { '@type': 'Answer', text: faq.a },
+      })),
+    },
+  ],
 };
 
 export default function CrmConsultantCoquitlam() {
@@ -90,8 +115,12 @@ export default function CrmConsultantCoquitlam() {
       </section>
 
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">CRM platforms we implement in Coquitlam</h2>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <p className="mb-3 text-sm font-semibold text-violet-700">Last reviewed August 19, 2026</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">What does a CRM consultant help a Coquitlam business fix?</h2>
+          <p className="text-lg text-gray-700 mb-4">A Coquitlam CRM engagement can address unclear lead ownership, inconsistent follow-up, unreliable pipeline data, disconnected forms, weak reporting, migration risk and workflows the team no longer trusts. The work should begin with the operating process and evidence, then define which configuration, cleanup, integration or training changes are justified.</p>
+          <p className="text-gray-600 mb-8">For a national implementation-partner comparison, use the <Link href="/crm-implementation-canada" className="font-medium text-violet-700 hover:underline">CRM implementation Canada guide</Link>. This page is specifically for Coquitlam, Port Coquitlam and Port Moody service intent.</p>
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">CRM platforms assessed for Tri-Cities projects</h3>
           <p className="text-gray-600 mb-8">We compare platforms against the operating process, data, reporting, administration, budget, and integration requirements discussed during discovery.</p>
           <div className="flex flex-wrap gap-4">
             {platforms.map((platform, i) => (<div key={i} className="px-6 py-3 bg-gray-50 rounded-xl border font-medium text-gray-700">{platform}</div>))}
@@ -156,7 +185,7 @@ export default function CrmConsultantCoquitlam() {
       <section className="py-16 bg-gradient-to-br from-violet-600 to-indigo-700">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to find the right CRM for your Coquitlam business?</h2>
-          <p className="text-xl text-white/80 mb-8">Book a free 30-minute strategy call. We will assess your needs and recommend the right CRM platform — no obligation, no sales pitch.</p>
+          <p className="text-xl text-white/80 mb-8">Use a 30-minute consultation to discuss the current CRM, operating problem, affected users and the evidence needed before a responsible scope can be proposed.</p>
           <TrackedCTA ctaName="Coquitlam CRM Final Consultation" destination="calendly">
             <Button asChild size="lg" className="bg-white text-violet-900 hover:bg-violet-100">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">Book a CRM Consultation <ArrowRight className="ml-2 h-5 w-5" /></a>
