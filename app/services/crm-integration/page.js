@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Link2, Database, Phone, Mail, Calendar, FileText, Globe, Zap, RefreshCw, Clock, DollarSign, Check, AlertTriangle } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Integration Services | Zapier & Make',
-  description: 'CRM integration services for HubSpot, Salesforce, and Zoho using native connectors, Zapier, Make, n8n, webhooks, and APIs.',
+  title: 'CRM Integration Services | Zapier, Make & Manychat',
+  description: 'CRM integration services using Zapier, Make, Manychat, Lofty, n8n, native connectors, webhooks, and APIs for maintainable lead and data flows.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/crm-integration' },
   robots: { index: true, follow: true },
   openGraph: {
@@ -24,7 +24,9 @@ const faqs = [
   { q: 'Should we use a native integration, Zapier, Make, n8n, or custom code?', a: 'The choice depends on connector coverage, data volume, transformation logic, latency, monitoring, security, and internal support capacity. Technical discovery is used to confirm the smallest maintainable approach that meets the requirement.' },
   { q: 'Can you review an existing CRM integration?', a: 'Yes. A review can inventory current connectors, triggers, field mappings, credentials, failure paths, duplicate controls, and documentation before a repair or replacement is proposed.' },
   { q: 'How are errors and sync failures handled?', a: 'The agreed design can include validation, retries, logging, alerts, exception ownership, and a recovery runbook. The exact controls depend on the platform and the operational impact of a failed sync.' },
-  { q: 'What CRMs and tools can be integrated?', a: 'Work can involve HubSpot, Salesforce, Zoho, supported native connectors, Zapier, Make, n8n, webhooks, or REST APIs. Exact platform and connector fit is confirmed during discovery rather than assumed.' },
+  { q: 'What CRMs and tools can be integrated?', a: 'Work can involve HubSpot, Salesforce, Zoho, Lofty, Manychat, supported native connectors, Zapier, Make, n8n, webhooks, or REST APIs. Exact platform, licence, connector, and data-access fit is confirmed during discovery rather than assumed.' },
+  { q: 'Can Manychat leads be connected to a CRM?', a: 'Manychat can pass approved lead data to supported CRMs through native connections, Zapier, or HTTPS requests on eligible plans. The design should define consent, identity matching, ownership, duplicate handling, and the follow-up action before activation.' },
+  { q: 'Can Lofty connect to other systems through Zapier?', a: 'Lofty supports defined Zapier triggers and actions, but its official guidance says Zapier is not a general two-way sync. The required lead or transaction workflow must be checked against current supported actions, account-level access, duplicate rules, and API limits.' },
   { q: 'Is ongoing monitoring included?', a: 'Monitoring and support are defined in the written scope. The proposal states the included stabilization period, ownership after handoff, and any optional ongoing support before work begins.' },
 ];
 
@@ -166,6 +168,29 @@ export default function CRMIntegration() {
               { title: 'Custom API Integrations', desc: 'When neither native nor middleware fits &mdash; usually because of complex business logic, high data volume, or real-time requirements &mdash; we build custom integrations against the CRM API directly. These are scoped carefully and documented so they survive team changes.' },
             ].map((item, i) => (
               <div key={i} className="bg-gray-50 p-6 rounded-xl border">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-gray-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Platform fit */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Zapier, Make, Manychat, or Lofty: Where Each Fits</h2>
+          <p className="text-lg text-gray-600 mb-8">
+            These tools solve different parts of the operating stack. Selection follows the workflow, connector limits, data sensitivity, failure handling, and the team that will own the system after launch.
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              { title: 'Zapier implementation', desc: 'Useful for supported app-to-app workflows, filters, paths, delays, and lightweight lead routing. We define the trigger, deduplication key, failure alert, task usage, and owner before publishing a Zap.' },
+              { title: 'Make automation', desc: 'Useful when a visual scenario needs branching, transformation, iteration, webhooks, or more involved orchestration. Scenarios still need rate-limit controls, error handlers, monitoring, and a recovery runbook.' },
+              { title: 'Manychat to CRM', desc: 'Useful for approved Instagram, Messenger, WhatsApp, or other supported conversational journeys that hand qualified data into the CRM. Consent, channel rules, identity matching, and human handoff remain part of the design.' },
+              { title: 'Lofty CRM integration', desc: 'Useful for real-estate lead and transaction workflows when current Lofty triggers, actions, Smart Plans, Zapier support, or API access cover the requirement. We do not describe a one-way Zap as a complete two-way sync.' },
+            ].map((item) => (
+              <div key={item.title} className="bg-white p-6 rounded-xl border shadow-sm">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-gray-600">{item.desc}</p>
               </div>

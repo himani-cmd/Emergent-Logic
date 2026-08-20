@@ -10,6 +10,9 @@ import {
   trackPhoneClick,
 } from '@/lib/analytics';
 
+const CLARITY_PROJECT_ID =
+  process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID || 'y55xz9616k';
+
 export default function AnalyticsProvider({ children }) {
   const pathname = usePathname();
   const [analyticsEnabled, setAnalyticsEnabled] = useState(false);
@@ -42,6 +45,16 @@ export default function AnalyticsProvider({ children }) {
     window.gtag('config', GA_MEASUREMENT_ID, {
       page_path: pathname,
     });
+
+    if (CLARITY_PROJECT_ID) {
+      window.clarity =
+        window.clarity ||
+        function clarity() {
+          (window.clarity.q = window.clarity.q || []).push(arguments);
+        };
+      window.clarity('consent');
+      window.clarity('set', 'page_path', pathname);
+    }
   }, [analyticsEnabled, pathname]);
 
   // Track phone and email clicks globally via event delegation
@@ -89,6 +102,13 @@ export default function AnalyticsProvider({ children }) {
       {analyticsEnabled && (
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+      )}
+      {analyticsEnabled && CLARITY_PROJECT_ID && (
+        <Script
+          id="microsoft-clarity"
+          src={`https://www.clarity.ms/tag/${CLARITY_PROJECT_ID}`}
           strategy="afterInteractive"
         />
       )}
