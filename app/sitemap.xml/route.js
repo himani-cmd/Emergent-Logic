@@ -38,6 +38,7 @@ const urls = [
   ['/case-studies/real-estate-lead-routing-long-cycle-nurture', 'monthly', '0.8'],
   ['/case-studies/property-management-rental-inquiry-routing', 'monthly', '0.8'],
   ['/resources/crm-automation-diagrams', 'monthly', '0.8'],
+  ['/resources/crm-integration-platform-selection-workbook', 'monthly', '0.8'],
   ['/research/2026-crm-cleanup-demand-report', 'monthly', '0.9'],
   ['/ai-crm-audit', 'monthly', '0.8'],
   ['/lead-follow-up-audit', 'monthly', '0.8'],

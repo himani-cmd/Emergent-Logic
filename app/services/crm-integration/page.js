@@ -326,6 +326,10 @@ export default function CRMIntegration() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Related Reading</h3>
           <div className="grid md:grid-cols-2 gap-4">
+            <Link href="/resources/crm-integration-platform-selection-workbook" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">CRM Integration Platform Selection Workbook</p>
+              <p className="text-gray-600 text-sm">Score a workflow and compare native features, low-code automation, iPaaS, and custom APIs.</p>
+            </Link>
             <Link href="/blog/marketing-automation-needs-crm-cleanup" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Why Marketing Automation Fails Without Cleanup First</p>
               <p className="text-gray-600 text-sm">How broken source data and inconsistent fields sink even well-built integrations.</p>
