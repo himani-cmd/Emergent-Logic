@@ -390,7 +390,7 @@ def build_identity(c: canvas.Canvas):
     c.line(66, 332, 244, 332)
     details = [
         "himani@emergent-logic.ca",
-        "778-652-6271",
+        "778-486-2331",
         "Surrey, BC | Serving Canada",
         "emergent-logic.ca",
     ]

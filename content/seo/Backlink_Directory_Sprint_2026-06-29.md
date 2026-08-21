@@ -5,7 +5,7 @@ Goal: build safe, relevant external citations for Emergent Logic without using s
 
 ## Submission Rules
 
-- Use one consistent NAP: Emergent Logic, Surrey, BC, Canada, info@emergent-logic.ca, 778-652-6271.
+- Use one consistent NAP: Emergent Logic, Surrey, BC, Canada, info@emergent-logic.ca, 778-486-2331.
 - Use the primary URL: https://www.emergent-logic.ca/
 - Use service URLs only when the directory allows deep service links.
 - Avoid low-quality directories that auto-publish unrelated casino, adult, crypto, or scraped listings.

@@ -547,7 +547,7 @@ function LocalTrustSection() {
             ))}
           </div>
           <p className="text-gray-500 text-sm">
-            Call us at <a href="tel:+17786526271" className="text-violet-600 hover:underline font-medium">778-652-6271</a> or email <a href="mailto:info@emergent-logic.ca" className="text-violet-600 hover:underline font-medium">info@emergent-logic.ca</a>
+            Call us at <a href="tel:+17784862331" className="text-violet-600 hover:underline font-medium">778-486-2331</a> or email <a href="mailto:info@emergent-logic.ca" className="text-violet-600 hover:underline font-medium">info@emergent-logic.ca</a>
           </p>
         </div>
       </div>

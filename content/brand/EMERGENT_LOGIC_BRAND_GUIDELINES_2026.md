@@ -70,7 +70,7 @@ Canonical identity block:
 Himani Kharbanda
 Founder & CEO, Emergent Logic
 himani@emergent-logic.ca
-778-652-6271
+778-486-2331
 Surrey, BC | Serving Canada
 https://www.emergent-logic.ca
 ```

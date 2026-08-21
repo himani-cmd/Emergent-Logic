@@ -240,7 +240,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                    <a href="tel:+17786526271" className="text-violet-600 hover:underline">778-652-6271</a>
+                    <a href="tel:+17784862331" className="text-violet-600 hover:underline">778-486-2331</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
