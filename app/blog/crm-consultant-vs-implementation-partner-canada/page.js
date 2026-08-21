@@ -56,6 +56,8 @@ export default function Post() {
               <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 9 min read</span>
             </div>
 
+            <p className="text-sm text-gray-500 mb-8">Reviewed by Emergent Logic on August 20, 2026.</p>
+
             <ShareButtons url="https://www.emergent-logic.ca/blog/crm-consultant-vs-implementation-partner-canada" title="CRM Consultant vs Implementation Partner" />
 
             <div className="prose prose-lg max-w-none mt-8">
@@ -63,8 +65,15 @@ export default function Post() {
                 When a Canadian SMB starts looking for help with their CRM, they run into two labels almost immediately. CRM consultant. CRM implementation partner. Sometimes the same firm uses both interchangeably. Sometimes they describe very different services. And depending on your stage, one is much more useful than the other.
               </p>
 
+              <div className="not-prose my-8 rounded-lg border border-violet-200 bg-violet-50 p-6">
+                <h2 className="text-xl font-semibold text-gray-900 mb-2">What should a growing company look for in a CRM implementation partner?</h2>
+                <p className="text-gray-700">
+                  Look for a partner that can map the sales process before configuring software, define ownership and reporting rules, plan migration and integrations, test changes before launch, train the people who will operate the CRM, and document the final system. The proposal should separate confirmed scope, assumptions, dependencies, acceptance criteria, and optional support.
+                </p>
+              </div>
+
               <p>
-                This article is the honest read on what those two roles actually look like in practice, when each is the right call, and what Canadian SMBs should look for before signing anything. If you want the full service breakdown after this, the <Link href="/services/crm-implementation" className="text-violet-600 hover:underline">CRM implementation</Link> page covers our scope and pricing in detail.
+                This article is the honest read on what those two roles actually look like in practice, when each is the right call, and what Canadian SMBs should look for before signing anything. If you want the service breakdown after this, the <Link href="/services/crm-implementation" className="text-violet-600 hover:underline">CRM implementation</Link> page explains the implementation scope and process.
               </p>
 
               <h2>The Two Roles, Stated Plainly</h2>
