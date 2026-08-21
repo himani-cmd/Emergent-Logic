@@ -40,13 +40,14 @@ const checks = [
   {
     passed:
       provider.includes('NEXT_PUBLIC_CLARITY_PROJECT_ID') &&
-      provider.includes('analyticsEnabled && CLARITY_PROJECT_ID') &&
+      provider.includes("ANALYTICS_HOSTNAMES.has(window.location.hostname)") &&
+      provider.includes('analyticsEnabled && measurementHostEnabled && CLARITY_PROJECT_ID') &&
       provider.includes("window.clarity('consent')") &&
       analytics.includes("window.clarity('event', eventName)") &&
       !analytics.includes("window.clarity('identify'") &&
       !analytics.includes("window.clarity('set', 'email'") &&
       !analytics.includes("window.clarity('set', 'phone'"),
-    message: 'Microsoft Clarity must remain consent-gated and receive PII-free event names only.',
+    message: 'Microsoft Clarity must remain consent-gated, production-host-only, and receive PII-free event names only.',
   },
   {
     passed:
