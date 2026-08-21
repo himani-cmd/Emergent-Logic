@@ -12,12 +12,21 @@ import {
 
 const CLARITY_PROJECT_ID =
   process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID || 'y55xz9616k';
+const ANALYTICS_HOSTNAMES = new Set([
+  'emergent-logic.ca',
+  'www.emergent-logic.ca',
+]);
 
 export default function AnalyticsProvider({ children }) {
   const pathname = usePathname();
   const [analyticsEnabled, setAnalyticsEnabled] = useState(false);
+  const [measurementHostEnabled, setMeasurementHostEnabled] = useState(false);
 
   useEffect(() => {
+    setMeasurementHostEnabled(
+      ANALYTICS_HOSTNAMES.has(window.location.hostname)
+    );
+
     const syncConsent = () => {
       setAnalyticsEnabled(localStorage.getItem('cookieConsent') === 'accepted');
     };
@@ -28,7 +37,7 @@ export default function AnalyticsProvider({ children }) {
   }, []);
 
   useEffect(() => {
-    if (!analyticsEnabled) return;
+    if (!analyticsEnabled || !measurementHostEnabled) return;
 
     window.dataLayer = window.dataLayer || [];
     window.gtag =
@@ -55,7 +64,7 @@ export default function AnalyticsProvider({ children }) {
       window.clarity('consent');
       window.clarity('set', 'page_path', pathname);
     }
-  }, [analyticsEnabled, pathname]);
+  }, [analyticsEnabled, measurementHostEnabled, pathname]);
 
   // Track phone and email clicks globally via event delegation
   useEffect(() => {
@@ -99,13 +108,13 @@ export default function AnalyticsProvider({ children }) {
 
   return (
     <>
-      {analyticsEnabled && (
+      {analyticsEnabled && measurementHostEnabled && (
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"
         />
       )}
-      {analyticsEnabled && CLARITY_PROJECT_ID && (
+      {analyticsEnabled && measurementHostEnabled && CLARITY_PROJECT_ID && (
         <Script
           id="microsoft-clarity"
           src={`https://www.clarity.ms/tag/${CLARITY_PROJECT_ID}`}
