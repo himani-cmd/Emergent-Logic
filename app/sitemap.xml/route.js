@@ -3,7 +3,8 @@ const defaultLastmod = '2026-07-31';
 
 const lastmodByPath = {
   '/services/crm-integration': '2026-08-19',
-  '/services/marketing-automation': '2026-08-19',
+  '/services/marketing-automation': '2026-08-21',
+  '/blog/marketing-automation-needs-crm-cleanup': '2026-08-21',
   '/hubspot-implementation': '2026-08-14',
   '/crm-implementation-method': '2026-08-13',
   '/hubspot-admin-support-canada-us': '2026-08-12',
