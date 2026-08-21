@@ -59,7 +59,7 @@ export default function Footer() {
                 </a>
               </div>
               <div className="flex items-center gap-2"><Mail className="w-4 h-4 text-violet-400" /><a href="mailto:info@emergent-logic.ca" className="hover:text-violet-400">info@emergent-logic.ca</a></div>
-              <div className="flex items-center gap-2"><Phone className="w-4 h-4 text-violet-400" /><a href="tel:+17786526271" className="hover:text-violet-400">778-652-6271</a></div>
+              <div className="flex items-center gap-2"><Phone className="w-4 h-4 text-violet-400" /><a href="tel:+17784862331" className="hover:text-violet-400">778-486-2331</a></div>
             </div>
             <div className="mt-5 flex items-center gap-2" aria-label="Emergent Logic social profiles">
               <a

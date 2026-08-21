@@ -110,8 +110,8 @@ export default function CRMImplementationAutomationPage() {
             <span className="max-w-full text-[11px] font-medium leading-4 text-[#A9B8FF]">CRM Implementation, Integration &amp; Automation</span>
           </Link>
           <TrackedCTA ctaName="CRM Automation Landing Page Header Call" destination="phone">
-            <a href="tel:+17786526271" className="inline-flex min-h-10 w-full items-center justify-center border border-white/35 px-4 text-sm font-semibold text-white hover:bg-white/10 sm:w-auto">
-              <Phone className="mr-2 h-4 w-4" aria-hidden="true" /> Call 778-652-6271
+            <a href="tel:+17784862331" className="inline-flex min-h-10 w-full items-center justify-center border border-white/35 px-4 text-sm font-semibold text-white hover:bg-white/10 sm:w-auto">
+              <Phone className="mr-2 h-4 w-4" aria-hidden="true" /> Call 778-486-2331
             </a>
           </TrackedCTA>
         </div>
