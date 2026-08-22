@@ -139,6 +139,9 @@ export default function CrmFreelancerVsConsultingFirm() {
             <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-300">
               The CRM/RevOps Transition Backlog Sprint maps one system boundary, ownership gaps, controls, and a prioritized backlog before implementation commitments are made.
             </p>
+            <p className="mx-auto mt-4 max-w-2xl text-slate-300">
+              Vancouver teams comparing vendor-neutral CRM support can also review the <Link href="/crm-consultant-vancouver" className="font-semibold text-white underline underline-offset-4">CRM consultant Vancouver guide</Link>.
+            </p>
             <Link href="/services/crm-revops-transition-sprint" className="mt-8 inline-block">
               <Button size="lg" className="bg-white text-slate-950 hover:bg-indigo-50">
                 Review the sprint <ArrowRight className="ml-2 h-5 w-5" />

@@ -149,7 +149,7 @@ const jsonLd = {
       name: 'CRM Consultant Vancouver | Implementation & Cleanup',
       description: metadata.description,
       inLanguage: 'en-CA',
-      dateModified: '2026-08-06',
+      dateModified: '2026-08-22',
       isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
       about: { '@id': `${canonicalUrl}#service` },
       primaryImageOfPage: {

@@ -53,7 +53,7 @@ const jsonLd = {
       name: 'CRM Integration Platform Selection Workbook',
       description: 'A practical CRM integration decision workbook for scoring workflows, comparing integration approaches, and documenting launch controls.',
       datePublished: '2026-08-20',
-      dateModified: '2026-08-20',
+      dateModified: '2026-08-22',
       isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
       about: { '@id': `${canonical}#workbook` },
     },
@@ -140,6 +140,9 @@ export default function CRMIntegrationPlatformSelectionWorkbook() {
             </p>
             <p className="mt-4 text-lg leading-8 text-[#475467]">
               The platform is only one decision. A production-ready integration also needs a system of record, matching rules, an exception owner, alerts, acceptance tests, rollback, and documented handoff.
+            </p>
+            <p className="mt-4 text-lg leading-8 text-[#475467]">
+              When the workflow includes lead scoring, nurture, attribution, or sales handoff, review the broader <Link href="/services/marketing-automation" className="font-semibold text-[#4B37C8] hover:underline">marketing automation services</Link> operating model before choosing a connector.
             </p>
           </div>
           <div className="border-l-4 border-[#0F766E] bg-[#F3FAF8] p-6 md:p-8">

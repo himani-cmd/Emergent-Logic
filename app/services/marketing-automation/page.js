@@ -78,7 +78,7 @@ const jsonLd = {
       url: 'https://www.emergent-logic.ca/services/marketing-automation',
       name: 'Marketing Automation Services Canada',
       description: metadata.description,
-      dateModified: '2026-08-19',
+      dateModified: '2026-08-22',
       isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
       about: { '@id': 'https://www.emergent-logic.ca/services/marketing-automation#service' },
     },
@@ -148,7 +148,7 @@ export default function MarketingAutomation() {
       {/* CRM-first positioning callout */}
       <section className="py-12 bg-purple-50 border-b border-purple-100">
         <div className="container mx-auto px-4 max-w-4xl">
-          <p className="mb-4 text-sm font-semibold text-purple-700">Last reviewed August 19, 2026</p>
+          <p className="mb-4 text-sm font-semibold text-purple-700">Last reviewed August 22, 2026</p>
           <div className="flex items-start gap-4">
             <Database className="w-8 h-8 text-purple-700 flex-shrink-0 mt-1" />
             <div>
@@ -165,7 +165,7 @@ export default function MarketingAutomation() {
         <div className="container mx-auto max-w-4xl px-4">
           <h2 className="mb-4 text-3xl font-bold text-gray-900">What does a marketing automation agency or consultant actually implement?</h2>
           <p className="mb-4 text-lg text-gray-700">A marketing automation implementation connects consented lead capture, segmentation, lifecycle rules, scoring, nurture, ownership, routing, attribution, exception handling and sales follow-up inside a trusted CRM. The output should be a tested operating workflow with named owners and measurable handoffs, not simply more scheduled email.</p>
-          <p className="text-gray-600">Emergent Logic focuses on this CRM and workflow layer. Media buying, ongoing campaign management and content production are separate services or remain with the client&apos;s existing marketing team. Companies comparing a broader national CRM partner can also review the <Link href="/crm-implementation-canada" className="font-medium text-purple-700 hover:underline">CRM implementation Canada guide</Link>.</p>
+          <p className="text-gray-600">Emergent Logic focuses on this CRM and workflow layer. Media buying, ongoing campaign management and content production are separate services or remain with the client&apos;s existing marketing team. Companies comparing a broader national CRM partner can review the <Link href="/crm-implementation-canada" className="font-medium text-purple-700 hover:underline">CRM implementation Canada guide</Link>; teams seeking vendor-neutral local guidance can use the <Link href="/crm-consultant-vancouver" className="font-medium text-purple-700 hover:underline">CRM consultant Vancouver guide</Link>.</p>
         </div>
       </section>
 
@@ -409,6 +409,14 @@ export default function MarketingAutomation() {
             <Link href="/blog/crm-consultant-vs-implementation-partner-canada" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM Consultant vs Implementation Partner</p>
               <p className="text-gray-600 text-sm">The two roles explained, and why the cleanest engagements combine both.</p>
+            </Link>
+            <Link href="/resources/crm-integration-platform-selection-workbook" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">CRM Integration Platform Selection Workbook</p>
+              <p className="text-gray-600 text-sm">Score the workflow, compare integration approaches, and document ownership, exceptions, testing, and handoff.</p>
+            </Link>
+            <Link href="/crm-consultant-vancouver" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">CRM Consultant Vancouver</p>
+              <p className="text-gray-600 text-sm">Vendor-neutral CRM selection, implementation, cleanup, reporting, and follow-up guidance for Vancouver teams.</p>
             </Link>
           </div>
         </div>

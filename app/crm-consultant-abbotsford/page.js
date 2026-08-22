@@ -56,7 +56,7 @@ const jsonLd = {
       url: 'https://www.emergent-logic.ca/crm-consultant-abbotsford',
       name: 'CRM Consultant Abbotsford BC',
       description: metadata.description,
-      dateModified: '2026-08-19',
+      dateModified: '2026-08-22',
       isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
       about: { '@id': 'https://www.emergent-logic.ca/crm-consultant-abbotsford#service' },
     },
@@ -115,10 +115,10 @@ export default function CrmConsultantAbbotsford() {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <p className="mb-3 text-sm font-semibold text-violet-700">Last reviewed August 19, 2026</p>
+          <p className="mb-3 text-sm font-semibold text-violet-700">Last reviewed August 22, 2026</p>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What does a CRM consultant help an Abbotsford business fix?</h2>
           <p className="text-lg text-gray-700 mb-4">An Abbotsford CRM engagement can address leads split across inboxes and spreadsheets, unclear ownership, inconsistent follow-up, unreliable reports, migration risk and manual handoffs between sales, service and operations. The scope should reflect the actual workflow, data and people responsible for the next action.</p>
-          <p className="text-gray-600 mb-8">For broad Canadian partner selection, use the <Link href="/crm-implementation-canada" className="font-medium text-violet-700 hover:underline">CRM implementation Canada guide</Link>. This page is specifically for Abbotsford and Fraser Valley service intent.</p>
+          <p className="text-gray-600 mb-8">For broad Canadian partner selection, use the <Link href="/crm-implementation-canada" className="font-medium text-violet-700 hover:underline">CRM implementation Canada guide</Link>. For Vancouver-specific vendor-neutral guidance, use the <Link href="/crm-consultant-vancouver" className="font-medium text-violet-700 hover:underline">CRM consultant Vancouver page</Link>. This page is specifically for Abbotsford and Fraser Valley service intent.</p>
           <h3 className="text-2xl font-bold text-gray-900 mb-4">CRM platforms assessed for Fraser Valley projects</h3>
           <p className="text-gray-600 mb-8">We compare platforms against the operating process, data, reporting, administration, budget, and integration requirements discussed during discovery.</p>
           <div className="flex flex-wrap gap-4">

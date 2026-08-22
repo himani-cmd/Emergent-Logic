@@ -327,6 +327,10 @@ export default function SalesforceConsulting() {
               <p className="font-medium text-violet-600">Local Salesforce Consultant</p>
               <p className="text-gray-600 text-sm">Salesforce consulting for Surrey and Greater Vancouver</p>
             </Link>
+            <Link href="/crm-consultant-vancouver" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">CRM Consultant Vancouver</p>
+              <p className="text-gray-600 text-sm">Vendor-neutral CRM selection and implementation guidance for Vancouver teams</p>
+            </Link>
             <Link href="/blog/salesforce-consultant-small-business" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Salesforce for Small Business</p>
               <p className="text-gray-600 text-sm">When a small team should hire a Salesforce consultant</p>
