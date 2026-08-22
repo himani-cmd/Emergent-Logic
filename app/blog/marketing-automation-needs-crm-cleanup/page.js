@@ -11,11 +11,11 @@ import { ArrowRight, Clock, MapPin, AlertCircle } from 'lucide-react';
 
 export const metadata = {
   title: 'CRM Cleanup Before Marketing Automation',
-  description: 'Marketing automation fails when the CRM underneath it is messy. Learn why CRM cleanup should come first and what to fix before automating.',
+  description: 'Check CRM data, lifecycle stages, ownership, consent, routing, and source tracking before activating marketing automation workflows.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/marketing-automation-needs-crm-cleanup' },
   openGraph: {
     title: 'CRM Cleanup Before Marketing Automation | Emergent Logic',
-    description: 'Marketing automation fails when the CRM underneath it is messy. Learn why CRM cleanup should come first and what to fix before automating.',
+    description: 'Check CRM data, lifecycle stages, ownership, consent, routing, and source tracking before activating marketing automation workflows.',
     url: 'https://www.emergent-logic.ca/blog/marketing-automation-needs-crm-cleanup',
     type: 'article',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
@@ -23,7 +23,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'CRM Cleanup Before Marketing Automation | Emergent Logic',
-    description: 'Marketing automation fails when the CRM underneath it is messy. Learn why CRM cleanup should come first and what to fix before automating.',
+    description: 'Check CRM data, lifecycle stages, ownership, consent, routing, and source tracking before activating marketing automation workflows.',
     images: ['https://www.emergent-logic.ca/og-image.png'],
   },
 };
@@ -34,9 +34,22 @@ const relatedPosts = [
   { title: 'Email Nurture Sequences That Convert', href: '/blog/email-nurture-sequences-crm-automation' },
 ];
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://www.emergent-logic.ca/blog/marketing-automation-needs-crm-cleanup#webpage',
+  url: 'https://www.emergent-logic.ca/blog/marketing-automation-needs-crm-cleanup',
+  name: 'CRM Cleanup Before Marketing Automation',
+  description: metadata.description,
+  dateModified: '2026-08-21',
+  isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
+  author: { '@id': 'https://www.emergent-logic.ca/#organization' },
+};
+
 export default function Post() {
   return (
     <main className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
       <article className="pt-32 pb-16">
         <div className="container mx-auto px-4">
@@ -56,31 +69,33 @@ export default function Post() {
               <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 8 min read</span>
             </div>
 
+            <p className="mb-6 text-sm font-semibold text-violet-700">Last reviewed August 21, 2026</p>
+
             <ShareButtons url="https://www.emergent-logic.ca/blog/marketing-automation-needs-crm-cleanup" title="Marketing Automation Needs CRM Cleanup First" />
 
             <div className="prose prose-lg max-w-none mt-8">
               <p className="lead text-xl text-gray-600">
-                Marketing automation is a force multiplier. The problem is that it multiplies whatever is already there. If your CRM is in good shape, automation makes a good system faster. If your CRM is a mess, automation makes the mess faster.
+                Marketing automation applies rules to CRM records. If those records contain duplicate people, inconsistent lifecycle stages, missing owners, incomplete consent, or unreliable source data, workflows can send the wrong message, create the wrong task, route a lead incorrectly, or produce reports the team cannot trust.
               </p>
 
               <p>
-                We see this pattern almost every week. A team buys a marketing automation tool, plugs it into a CRM that has not been audited in years, and assumes the new tool will fix things. Six weeks later, leads are getting double-emailed, the wrong people are getting nurture sequences, sales is being notified about contacts that already closed, and the reporting numbers do not match what is in the pipeline. The automation did not fail. The foundation did.
+                Cleanup should confirm the data, ownership, consent, routing, suppression, and reporting rules before automation is activated. This does not mean every CRM needs a rebuild. It means the fields and decisions used by each workflow need an agreed source of truth and a testable expected result.
               </p>
 
               <p>
-                This article walks through why marketing automation depends so heavily on a clean CRM, what the most common cleanup gaps are, and how to know whether your data is in shape to automate. The deeper service detail is on our <Link href="/services/crm-cleanup" className="text-violet-600 hover:underline">CRM cleanup page</Link> if you want to skip ahead.
+                This article explains why marketing automation depends on a controlled CRM foundation, which cleanup gaps can affect workflow behaviour, and how to review readiness before activation. The deeper service detail is on our <Link href="/services/crm-cleanup" className="text-violet-600 hover:underline">CRM cleanup page</Link> if you want to skip ahead.
               </p>
 
               <h2>What Marketing Automation Actually Touches</h2>
               <p>
-                When you turn on a meaningful automation stack, you are connecting workflows to almost every record in your CRM. Lead scoring runs against contact and company properties. Nurture sequences fire based on lifecycle stage. Lead routing depends on owner, region, and segment fields. Email sends pull from segmentation built on dozens of properties at once. Attribution reporting reads from source, campaign, and deal data going back months.
+                Automation workflows can read or update contact, company, and deal records. Lead scoring uses approved properties. Nurture enrollment may use lifecycle stage. Routing can depend on owner, region, or segment. Attribution reporting may use source, campaign, and deal data. Each dependency needs a defined source, owner, and expected value.
               </p>
 
               <p>
-                Every one of those mechanisms assumes the underlying data is consistent. If lifecycle stages are inconsistent across contacts, your nurture logic fires for the wrong people. If contact owners are missing or stale, lead routing routes to no one. If source data is missing, attribution reports show ghosts. The automation runs exactly as designed. It just runs against bad inputs.
+                Each mechanism depends on the quality of the fields it uses. Inconsistent lifecycle stages can enroll the wrong audience. Missing or stale owners can leave a routed lead without an active recipient. Incomplete source data can make attribution reports misleading even when the workflow itself runs as configured.
               </p>
 
-              <h2>The Five Cleanup Gaps That Sink Automation</h2>
+              <h2>Five CRM Cleanup Gaps That Can Undermine Automation</h2>
 
               <h3>1. Duplicate Contacts</h3>
               <p>
@@ -89,59 +104,59 @@ export default function Post() {
 
               <h3>2. Inconsistent Lifecycle Stages</h3>
               <p>
-                Lifecycle stage is the most important field for any automation system, and it is almost always the field with the worst hygiene. Some contacts are stuck at "Lead" from two years ago. Others moved to "Customer" but never moved back to "Evangelist" or whatever the next stage is. Some never had a lifecycle stage set in the first place. Automation built on inconsistent lifecycle data will send wrong-stage emails for months before anyone notices.
+                Lifecycle stage often controls enrollment, suppression, scoring, handoff, and reporting. If stages do not match the documented sales process, a workflow can enroll the wrong audience or update a record at the wrong time. Define each stage, its owner, and the conditions for entering or leaving it before using the field in automation.
               </p>
 
               <h3>3. Missing or Wrong Owners</h3>
               <p>
-                Lead routing assumes every contact has the correct owner. In real CRMs, ownership ages out. Reps leave, territories shift, accounts get reassigned but contacts do not. When a marketing automation rule says "notify the contact owner," and the contact owner is an inactive user, nothing happens. The lead sits.
+                Lead routing assumes each eligible record has the correct active owner. Roles change, territories move, and account ownership can diverge from contact or deal ownership. A workflow that notifies an inactive or incorrect owner may run successfully while the required follow-up remains unassigned.
               </p>
 
               <h3>4. Empty Source and UTM Data</h3>
               <p>
-                Attribution reporting is one of the most useful outcomes of marketing automation. It is also the one most often broken by data hygiene. If your contacts do not have source data captured properly — UTM parameters, original source, campaign association — then no attribution model will produce numbers you can trust. Cleanup includes backfilling source data wherever possible and tightening the capture going forward.
+                Attribution reporting depends on consistent source definitions and available inputs. If contacts do not have reliable UTM parameters, original source, or campaign associations, the model will have material gaps. Cleanup can document current coverage, determine whether any backfill is defensible, and tighten future capture without inventing missing history.
               </p>
 
               <h3>5. Stale Email Addresses</h3>
               <p>
-                Sending marketing emails to bad addresses is not just wasted effort. It actively damages your sender reputation, increases your spam complaint rate, and pulls your future deliverability down. Any meaningful automation rollout should start by suppressing or removing addresses that have hard-bounced, been inactive for a year or more, or that come from companies that no longer exist.
+                Sending to hard-bounced, unsubscribed, invalid, or otherwise ineligible addresses creates delivery and compliance risk. Before adding nurture volume, document suppression rules, consent status, retention requirements, and the process for handling bounces and complaints. Do not delete or reclassify records without an approved data rule.
               </p>
 
               <div className="bg-violet-50 border-l-4 border-violet-500 p-6 my-8 rounded-r-lg">
                 <h4 className="font-bold text-violet-900 mb-2 flex items-center gap-2"><AlertCircle className="w-5 h-5" /> Not sure if your CRM is automation-ready?</h4>
-                <p className="text-violet-800 mb-3">Book a free 30-minute strategy call. We will look at where your data is, give you an honest read on whether automation should come next or cleanup should come first, and you decide what to do from there.</p>
+                <p className="text-violet-800 mb-3">A consultation can identify whether the immediate scope is cleanup, implementation, or automation. The decision depends on the CRM condition, workflow requirements, access, consent rules, and acceptance checks.</p>
                 <Link href="/contact"><Button className="bg-violet-600 hover:bg-violet-700">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
               </div>
 
               <h2>How to Know Whether You Need Cleanup First</h2>
               <p>
-                A few quick checks will tell you most of what you need to know.
+                A short readiness review can surface the fields and decisions that require attention before activation.
               </p>
 
               <ul>
-                <li><strong>Run a duplicate report.</strong> If more than a few percent of your contact base appears in duplicates, automation will misfire on every one of them.</li>
-                <li><strong>Count unowned active contacts.</strong> Any active contact without an owner is a routing failure waiting to happen.</li>
+                <li><strong>Run a duplicate review.</strong> Identify duplicate people, companies, and deals, then define the matching and merge rules before a workflow uses those records.</li>
+                <li><strong>Count unowned active contacts.</strong> Confirm whether each eligible record has an active owner and a visible next step.</li>
                 <li><strong>Audit your lifecycle stage distribution.</strong> If the shape looks wrong — too many leads, almost no customers, or a giant cluster stuck at one stage — your downstream automations will inherit that.</li>
-                <li><strong>Check email bounce rates.</strong> If recent campaigns have shown elevated bounce rates, your list needs hygiene before you scale email volume.</li>
-                <li><strong>Look at source data coverage.</strong> If most of your contacts are missing original source or campaign attribution, your reporting cannot be trusted.</li>
+                <li><strong>Review email eligibility.</strong> Check bounces, unsubscribes, complaints, consent, suppression rules, and the platform guidance that applies before increasing email volume.</li>
+                <li><strong>Look at source data coverage.</strong> If required original-source or campaign fields are materially incomplete, document the reporting limitation before using attribution outputs.</li>
               </ul>
 
               <p>
-                If two or more of those checks come back rough, cleanup should come first. The good news is that cleanup is one of the highest-leverage projects a business can run, and it usually pays for itself within a quarter through reduced CRM seat costs, better deliverability, and faster sales follow-up.
+                If these checks expose material gaps, resolve the required data and ownership rules before activating dependent workflows. Cleanup may reduce avoidable rework and make follow-up or reporting easier to operate, but any operational or commercial effect should be measured against a documented baseline rather than assumed in advance.
               </p>
 
               <h2>The Right Sequence</h2>
               <p>
-                The pattern we recommend is consistent across HubSpot, Salesforce, and Zoho. First, get the CRM data into a clean, trustworthy state. Then build the automation layer on top. Then keep tuning the automation as new data flows in.
+                A practical sequence applies across HubSpot, Salesforce, and Zoho: confirm the data and operating rules, build the approved automation layer, test expected and exception paths, then monitor the workflow against the agreed baseline.
               </p>
 
               <p>
-                For most teams that means a focused cleanup engagement before the automation work begins. For some teams, the right move is to do both in sequence with the same partner, so cleanup data informs how automation gets designed. If you are already on a properly configured CRM and your data is in decent shape, you can move straight to <Link href="/services/marketing-automation" className="text-violet-600 hover:underline">marketing automation</Link> without the cleanup phase.
+                The resulting scope may be a focused cleanup, a controlled cleanup-and-automation sequence, or direct <Link href="/services/marketing-automation" className="text-violet-600 hover:underline">marketing automation</Link> when the required data and operating rules already pass review. The decision should follow discovery, not a default package.
               </p>
 
               <h2>Where to Go From Here</h2>
               <p>
-                If you suspect cleanup needs to come first, our <Link href="/services/crm-cleanup" className="text-violet-600 hover:underline">CRM cleanup</Link> page explains the review areas and delivery controls. Scope and timing are confirmed after discovery. If your CRM is not yet implemented and you are trying to do everything at once, the <Link href="/services/crm-implementation" className="text-violet-600 hover:underline">CRM implementation</Link> overview is a better starting point. And if integrations across your stack are part of the problem — incomplete source data, broken handoffs between tools, or <Link href="/blog/hubspot-salesforce-sync-cleanup" className="text-violet-600 hover:underline">HubSpot Salesforce sync cleanup</Link> — the <Link href="/services/crm-integration" className="text-violet-600 hover:underline">CRM integration</Link> page covers that work.
+                If you suspect cleanup needs to come first, our <Link href="/services/crm-cleanup" className="text-violet-600 hover:underline">CRM cleanup</Link> page explains the review areas and delivery controls. The <Link href="/blog/excel-to-crm-migration-repeat-order-businesses" className="text-violet-600 hover:underline">Excel-to-CRM checklist and workbook</Link> provides an owned worksheet for fields, duplicates, ownership, test imports, and acceptance rules. If your CRM is not yet implemented and you are trying to do everything at once, the <Link href="/services/crm-implementation" className="text-violet-600 hover:underline">CRM implementation</Link> overview is a better starting point. And if integrations across your stack are part of the problem — incomplete source data, broken handoffs between tools, or <Link href="/blog/hubspot-salesforce-sync-cleanup" className="text-violet-600 hover:underline">HubSpot Salesforce sync cleanup</Link> — the <Link href="/services/crm-integration" className="text-violet-600 hover:underline">CRM integration</Link> page covers that work.
               </p>
               <p>
                 For Fraser Valley teams, <Link href="/crm-consultant-langley" className="text-violet-600 hover:underline">CRM consulting in Langley</Link> follows the same practical sequence: clean the data first, then build the automation layer on top.
@@ -149,8 +164,8 @@ export default function Post() {
             </div>
 
             <div className="mt-12 p-8 bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl text-white">
-              <h3 className="text-2xl font-bold mb-4">Get an honest read on your CRM before automating</h3>
-              <p className="text-white/80 mb-6">Book a free 30-minute strategy call. We will tell you whether cleanup, implementation, or automation is the right next step for your business.</p>
+              <h3 className="text-2xl font-bold mb-4">Review the CRM foundation before automating</h3>
+              <p className="text-white/80 mb-6">Book a consultation to identify whether the immediate need is cleanup, implementation, or a controlled automation scope.</p>
               <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
             </div>
 

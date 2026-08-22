@@ -179,7 +179,7 @@ export default function MarketingAutomation() {
             Before You Automate, Make Sure the CRM Can Be Trusted
           </h2>
           <p className="text-lg text-gray-600 mb-5">
-            Most marketing automation problems are not email problems. They are CRM problems wearing an email costume. A workflow can only make good decisions if the contact data, lifecycle stages, owners, sources, and deal context underneath it are reliable.
+            A marketing automation problem may begin in the CRM rather than the email itself. Workflow decisions depend on reliable contact data, lifecycle stages, ownership, source fields, and deal context.
           </p>
           <p className="text-lg text-gray-600 mb-8">
             This is why our marketing automation projects start with a practical readiness check. If the foundation is clean, we build. If it is not, we recommend a focused <Link href="/services/crm-cleanup" className="text-purple-700 hover:underline font-medium">CRM cleanup</Link> first, or a cleaner <Link href="/services/crm-implementation" className="text-purple-700 hover:underline font-medium">CRM implementation</Link> if the existing setup cannot support the funnel.
@@ -238,18 +238,18 @@ export default function MarketingAutomation() {
       {/* Common Mistakes */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Most Marketing Automation Fails</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Marketing Automation Breaks</h2>
           <p className="text-lg text-gray-600 mb-8">
-            Self-built automation often fails in predictable ways when lifecycle stages, ownership, source data, and exception paths are not defined first.
+            Automation becomes harder to operate when lifecycle stages, ownership, source data, and exception paths are not defined first.
           </p>
           <div className="space-y-4">
             {[
-              { title: 'Automation built on a broken CRM', desc: 'Lifecycle stages are inconsistent, contacts are duplicated, lead sources are missing. Automation built on this foundation just amplifies the noise. Fix the CRM first, then automate.' },
-              { title: 'Volume over relevance', desc: 'Sending more emails to more contacts is not a strategy. Tight segmentation, behaviour-based triggers, and ruthless list hygiene beat blast emails every time.' },
-              { title: 'No scoring threshold for handoff', desc: 'Leads either go to sales the moment they fill a form (too early, low close rate) or never (lost in the funnel). A scored handoff threshold solves both problems.' },
-              { title: 'No attribution model', desc: 'Marketing reports clicks. Sales reports closed deals. Nobody connects the two. Without attribution, every campaign decision is a guess.' },
-              { title: 'No re-engagement plan', desc: 'Most leads are not ready when they first opt in. If you do not have a re-engagement workflow that brings them back at the right moment, a large share of pipeline goes quiet by default.' },
-              { title: 'Set and forget', desc: 'Automation is not a one-time build. Sequences need to be tested, scoring needs to be tuned, and workflows need to evolve as the business does. Without ongoing review, automation rots.' },
+              { title: 'Automation built on an uncontrolled CRM', desc: 'Inconsistent lifecycle stages, duplicate contacts, and missing lead sources can affect enrollment, routing, and reporting. Review the fields each workflow depends on before activation.' },
+              { title: 'Volume over relevance', desc: 'Higher send volume increases the need for clear consent, segmentation, suppression, and sender-reputation controls. A large list is not evidence that every record should enter the same workflow.' },
+              { title: 'No scoring threshold for handoff', desc: 'A handoff can trigger before required fields are complete, or fail to trigger because no approved threshold exists. Define the conditions, owner, next step, and exception path before activation.' },
+              { title: 'No attribution model', desc: 'Marketing and sales reports can use different source and revenue definitions. Document the model, available inputs, and known limits before using attribution to guide a decision.' },
+              { title: 'No re-engagement plan', desc: 'Some consented leads are not ready for a sales conversation when they first enter the CRM. Define whether they should be suppressed, nurtured, reviewed, or returned to a human owner.' },
+              { title: 'No operating review', desc: 'Automation is not a one-time build. Test sequences and exception paths, review scoring against agreed criteria, and update workflows when the underlying process changes.' },
             ].map((item, i) => (
               <div key={i} className="bg-red-50 border border-red-200 rounded-xl p-5">
                 <div className="flex items-start gap-3">
@@ -296,7 +296,7 @@ export default function MarketingAutomation() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Process</h2>
           <p className="text-lg text-gray-600 mb-8">
-            Three phases. Same methodology we use for every CRM project, applied to the automation layer.
+            A three-phase operating model keeps workflow decisions, production activation, and handoff reviewable.
           </p>
           <div className="space-y-8">
             {[
@@ -404,7 +404,7 @@ export default function MarketingAutomation() {
             </Link>
             <Link href="/blog/why-hubspot-workflows-break" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Why HubSpot Workflows Break</p>
-              <p className="text-gray-600 text-sm">Workflow automation usually fails when lifecycle stages, owners, and enrollment rules are unclear.</p>
+              <p className="text-gray-600 text-sm">Workflow behaviour becomes unpredictable when lifecycle stages, owners, and enrollment rules are unclear.</p>
             </Link>
             <Link href="/blog/crm-consultant-vs-implementation-partner-canada" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM Consultant vs Implementation Partner</p>
@@ -440,10 +440,10 @@ export default function MarketingAutomation() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Build Marketing Automation Your Team Can Operate</h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Book a free 30-minute strategy call to review your CRM, funnel, current automation, and the system boundary that deserves attention first.
+            Book a consultation to review your CRM, funnel, current automation, and the system boundary that deserves attention first.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <TrackedCTA ctaName="Book Free Strategy Call - Marketing Automation Footer" destination="calendly">
+            <TrackedCTA ctaName="Book CRM Consultation - Marketing Automation Footer" destination="calendly">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-purple-900 hover:bg-purple-100 font-semibold px-8">
                   Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
