@@ -6,12 +6,12 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, ArrowLeft, CheckCircle, XCircle, AlertTriangle, ExternalLink } from 'lucide-react';
 
 export const metadata = {
-  title: 'Salesforce vs HubSpot vs Zoho: Canada 2026',
-  description: 'Which CRM fits your Canadian business? Compare Salesforce, HubSpot, and Zoho on operating fit, cost drivers, governance, and implementation requirements.',
+  title: 'Salesforce vs HubSpot for Mid-Sized Canadian Companies',
+  description: 'Compare Salesforce and HubSpot for a mid-sized Canadian company, including administration, governance, integrations, cost drivers, and where Zoho fits.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/salesforce-vs-hubspot-vs-zoho-canada-2026' },
   openGraph: {
-    title: 'Salesforce vs HubSpot vs Zoho: Canada 2026 | Emergent Logic',
-    description: 'Which CRM fits your Canadian business? Compare Salesforce, HubSpot, and Zoho on operating fit, cost drivers, governance, and implementation requirements.',
+    title: 'Salesforce vs HubSpot for Mid-Sized Canadian Companies | Emergent Logic',
+    description: 'Compare Salesforce and HubSpot for a mid-sized Canadian company, including administration, governance, integrations, cost drivers, and where Zoho fits.',
     url: 'https://www.emergent-logic.ca/blog/salesforce-vs-hubspot-vs-zoho-canada-2026',
     type: 'article',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
@@ -31,11 +31,11 @@ export default function SalesforceVsHubspotVsZoho() {
             <span>/</span>
             <span>CRM Comparison</span>
           </div>
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Salesforce vs. HubSpot vs. Zoho: An Honest Comparison for Canadian Businesses (2026)</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Salesforce vs. HubSpot for a Mid-Sized Canadian Company: Where Zoho Fits</h1>
           <div className="flex items-center gap-4 text-indigo-200 text-sm">
             <span>By Emergent Logic</span>
             <span>•</span>
-            <span>March 2026</span>
+            <span>Last reviewed August 22, 2026</span>
             <span>•</span>
             <span>15 min read</span>
           </div>
@@ -45,7 +45,8 @@ export default function SalesforceVsHubspotVsZoho() {
       <article className="container mx-auto px-4 max-w-4xl py-12">
         {/* Intro */}
         <div className="prose prose-lg max-w-none mb-12">
-          <p className="text-xl text-gray-700 leading-relaxed">CRM comparisons often start with feature lists. A better decision starts with the sales process, administrative capacity, data requirements, integrations, and governance the system must support.</p>
+          <h2 className="text-3xl font-bold text-[#1E3A5F]">Should a mid-sized Canadian company choose Salesforce or HubSpot?</h2>
+          <p className="text-xl text-gray-700 leading-relaxed">For a mid-sized Canadian company, Salesforce is often the stronger candidate for complex processes and governance, while HubSpot is often easier to evaluate when marketing and sales need a connected operating surface with lighter administration. Zoho can suit cost-conscious teams prepared for hands-on configuration. Confirm the choice through written requirements, current pricing and a scoped test.</p>
           <p className="text-lg text-gray-600">This is a vendor-neutral framework for the question <em>"which CRM should we choose?"</em> There are no affiliate links. The comparison focuses on fit, administration, process complexity, and implementation requirements.</p>
         </div>
 

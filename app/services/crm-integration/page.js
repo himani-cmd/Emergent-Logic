@@ -338,6 +338,10 @@ export default function CRMIntegration() {
               <p className="font-medium text-violet-600">CRM Consultant vs Implementation Partner</p>
               <p className="text-gray-600 text-sm">When you need strategy, when you need execution, and when you need both.</p>
             </Link>
+            <Link href="/crm-consultant-vancouver" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">CRM Consultant Vancouver</p>
+              <p className="text-gray-600 text-sm">Vendor-neutral CRM selection, cleanup, reporting, and implementation guidance for Vancouver teams.</p>
+            </Link>
           </div>
         </div>
       </section>

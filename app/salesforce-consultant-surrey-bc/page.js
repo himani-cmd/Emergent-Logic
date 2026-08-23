@@ -152,6 +152,7 @@ export default function SalesforceConsultantSurrey() {
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Not sure whether to repair or replace the CRM?</h2>
           <p className="text-gray-600 mb-4">Start with the <Link href="/services/crm-relaunch" className="text-violet-600 hover:underline">CRM relaunch decision path</Link>, or compare <Link href="/blog/hubspot-vs-salesforce-canada" className="text-violet-600 hover:underline">HubSpot and Salesforce requirements</Link>.</p>
+          <p className="text-gray-600 mb-4">For vendor-neutral CRM selection, cleanup, and implementation guidance across Metro Vancouver, use the <Link href="/crm-consultant-vancouver" className="text-violet-600 hover:underline">CRM consultant Vancouver guide</Link>.</p>
           <p className="text-gray-600">Or learn more about our full <Link href="/services/salesforce-consulting" className="text-violet-600 hover:underline">Salesforce consulting service</Link> and <Link href="/services/crm-implementation" className="text-violet-600 hover:underline">CRM implementation services</Link>.</p>
         </div>
       </section>

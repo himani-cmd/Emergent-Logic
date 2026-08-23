@@ -56,7 +56,7 @@ const jsonLd = {
       url: 'https://www.emergent-logic.ca/crm-consultant-coquitlam',
       name: 'CRM Consultant Coquitlam BC',
       description: metadata.description,
-      dateModified: '2026-08-19',
+      dateModified: '2026-08-22',
       isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
       about: { '@id': 'https://www.emergent-logic.ca/crm-consultant-coquitlam#service' },
     },
@@ -116,10 +116,10 @@ export default function CrmConsultantCoquitlam() {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <p className="mb-3 text-sm font-semibold text-violet-700">Last reviewed August 19, 2026</p>
+          <p className="mb-3 text-sm font-semibold text-violet-700">Last reviewed August 22, 2026</p>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What does a CRM consultant help a Coquitlam business fix?</h2>
           <p className="text-lg text-gray-700 mb-4">A Coquitlam CRM engagement can address unclear lead ownership, inconsistent follow-up, unreliable pipeline data, disconnected forms, weak reporting, migration risk and workflows the team no longer trusts. The work should begin with the operating process and evidence, then define which configuration, cleanup, integration or training changes are justified.</p>
-          <p className="text-gray-600 mb-8">For a national implementation-partner comparison, use the <Link href="/crm-implementation-canada" className="font-medium text-violet-700 hover:underline">CRM implementation Canada guide</Link>. This page is specifically for Coquitlam, Port Coquitlam and Port Moody service intent.</p>
+          <p className="text-gray-600 mb-8">For a national implementation-partner comparison, use the <Link href="/crm-implementation-canada" className="font-medium text-violet-700 hover:underline">CRM implementation Canada guide</Link>. For broader Vancouver and Metro Vancouver guidance, use the <Link href="/crm-consultant-vancouver" className="font-medium text-violet-700 hover:underline">CRM consultant Vancouver page</Link>. This page is specifically for Coquitlam, Port Coquitlam and Port Moody service intent.</p>
           <h3 className="text-2xl font-bold text-gray-900 mb-4">CRM platforms assessed for Tri-Cities projects</h3>
           <p className="text-gray-600 mb-8">We compare platforms against the operating process, data, reporting, administration, budget, and integration requirements discussed during discovery.</p>
           <div className="flex flex-wrap gap-4">

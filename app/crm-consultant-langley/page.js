@@ -169,7 +169,7 @@ const jsonLd = {
       name: 'CRM Consultant Langley | Implementation & Cleanup',
       description: metadata.description,
       inLanguage: 'en-CA',
-      dateModified: '2026-08-04',
+      dateModified: '2026-08-22',
       isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
       about: { '@id': `${canonicalUrl}#service` },
       primaryImageOfPage: {
@@ -472,6 +472,12 @@ export default function CrmConsultantLangley() {
                 icon: MapPin,
                 title: 'CRM Consultant Near Me Guide',
                 description: 'Questions to ask before choosing local CRM support.',
+              },
+              {
+                href: '/crm-consultant-vancouver',
+                icon: MapPin,
+                title: 'CRM Consultant Vancouver',
+                description: 'Vendor-neutral CRM consulting guidance for Vancouver and Metro Vancouver teams.',
               },
               {
                 href: '/contact',
