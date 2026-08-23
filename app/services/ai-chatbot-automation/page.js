@@ -20,13 +20,13 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'AI Chatbot Automation Canada',
+  title: 'AI Chatbot Consulting Vancouver | CRM Automation',
   description:
-    'AI chatbot automation for service businesses. Qualify website visitors, capture clean lead data, route inquiries into your CRM, and trigger follow-up tasks.',
+    'AI chatbot consulting for Vancouver service businesses. Qualify website visitors, capture clean lead data, route inquiries into your CRM, and trigger follow-up tasks.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/ai-chatbot-automation' },
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'AI Chatbot Automation | Emergent Logic',
+    title: 'AI Chatbot Consulting Vancouver | Emergent Logic',
     description:
       'CRM-connected AI chatbots that qualify leads, summarize conversations, route inquiries, and trigger follow-up without creating another disconnected inbox.',
     url: 'https://www.emergent-logic.ca/services/ai-chatbot-automation',
@@ -111,17 +111,32 @@ const faqs = [
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'AI Chatbot Automation',
-  serviceType: 'AI chatbot lead qualification and CRM automation',
-  provider: {
-    '@type': 'Organization',
-    name: 'Emergent Logic',
-    url: 'https://www.emergent-logic.ca/',
-  },
-  areaServed: 'Canada',
-  url: 'https://www.emergent-logic.ca/services/ai-chatbot-automation',
-  description: metadata.description,
+  '@graph': [
+    {
+      '@type': 'Service',
+      name: 'AI Chatbot Consulting Vancouver',
+      serviceType: 'AI chatbot consulting, lead qualification, and CRM automation',
+      provider: {
+        '@type': 'Organization',
+        name: 'Emergent Logic',
+        url: 'https://www.emergent-logic.ca/',
+      },
+      areaServed: [
+        { '@type': 'City', name: 'Vancouver' },
+        { '@type': 'Country', name: 'Canada' },
+      ],
+      url: 'https://www.emergent-logic.ca/services/ai-chatbot-automation',
+      description: metadata.description,
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: { '@type': 'Answer', text: item.a },
+      })),
+    },
+  ],
 };
 
 export default function AIChatbotAutomationService() {
@@ -139,10 +154,10 @@ export default function AIChatbotAutomationService() {
             Supporting service
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            AI Chatbots That Feed Your CRM
+            AI Chatbot Consulting for Vancouver Businesses
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
-            We build AI chatbot workflows that qualify website visitors, capture clean lead data, summarize conversations, route inquiries to the right person, and trigger follow-up tasks. The chatbot is not the strategy. The CRM handoff is.
+            Emergent Logic designs CRM-connected AI chatbot workflows for Vancouver service businesses. We help qualify website visitors, capture structured lead data, summarize conversations, route inquiries, and create follow-up tasks so your team receives useful context—not another disconnected inbox.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <TrackedCTA ctaName="Book a CRM Consultation - AI Chatbot Hero" destination="calendly">

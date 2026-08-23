@@ -20,13 +20,13 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'AI Automation Consulting Canada',
+  title: 'AI & Business Automation Consulting Canada',
   description:
-    'AI automation consulting for n8n, CRM workflows, Gmail drafts, approval gates, lead routing, reporting, and human-reviewed operations.',
+    'AI and business automation consulting for Canadian teams. Improve CRM workflows, lead routing, reporting, and repetitive operations with human-reviewed automation.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/ai-automation-consulting' },
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'AI Automation Consulting | Emergent Logic',
+    title: 'AI & Business Automation Consulting | Emergent Logic',
     description:
       'AI workflow automation connected to CRM, Gmail, Google Sheets, HubSpot, Salesforce, n8n, and human approval gates.',
     url: 'https://www.emergent-logic.ca/services/ai-automation-consulting',
@@ -119,17 +119,29 @@ const faqs = [
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'AI Automation Consulting',
-  serviceType: 'AI workflow automation, n8n automation, and CRM automation consulting',
-  provider: {
-    '@type': 'Organization',
-    name: 'Emergent Logic',
-    url: 'https://www.emergent-logic.ca/',
-  },
-  areaServed: 'Canada',
-  url: 'https://www.emergent-logic.ca/services/ai-automation-consulting',
-  description: metadata.description,
+  '@graph': [
+    {
+      '@type': 'Service',
+      name: 'AI and Business Automation Consulting',
+      serviceType: 'AI automation consulting and business process automation consulting',
+      provider: {
+        '@type': 'Organization',
+        name: 'Emergent Logic',
+        url: 'https://www.emergent-logic.ca/',
+      },
+      areaServed: 'Canada',
+      url: 'https://www.emergent-logic.ca/services/ai-automation-consulting',
+      description: metadata.description,
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: { '@type': 'Answer', text: item.a },
+      })),
+    },
+  ],
 };
 
 export default function AIAutomationConsultingService() {
@@ -147,10 +159,10 @@ export default function AIAutomationConsultingService() {
             Supporting service
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            AI Automation Consulting for Real Business Workflows
+            AI and Business Automation Consulting
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
-            We design and build AI-assisted workflows that connect CRM, Gmail, Google Sheets, website forms, n8n, HubSpot, Salesforce, and human review. The goal is not automation theater. The goal is cleaner handoffs, faster follow-up, and fewer manual loops.
+            Emergent Logic helps Canadian businesses identify, design, and implement practical AI and process automation. We connect CRM, email, forms, reporting, and tools such as n8n with human approval gates—reducing repetitive work while keeping important decisions under your team’s control.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <TrackedCTA ctaName="Book a CRM Consultation - AI Automation Hero" destination="calendly">
