@@ -24,7 +24,7 @@ import {
 const canonicalUrl = 'https://www.emergent-logic.ca/crm-consultant-vancouver';
 
 export const metadata = {
-  title: 'CRM Consultant Vancouver | Implementation',
+  title: 'CRM Consultant Vancouver | HubSpot & Salesforce',
   description: 'Vancouver CRM consultant for HubSpot, Salesforce and Zoho implementation, cleanup, migration, lead routing, reporting and team adoption.',
   alternates: {
     canonical: canonicalUrl,
@@ -146,7 +146,7 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': `${canonicalUrl}#webpage`,
       url: canonicalUrl,
-      name: 'CRM Consultant Vancouver | Implementation & Cleanup',
+      name: 'CRM Consultant Vancouver | HubSpot & Salesforce',
       description: metadata.description,
       inLanguage: 'en-CA',
       dateModified: '2026-08-22',

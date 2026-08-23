@@ -12,15 +12,17 @@ const lastmodByPath = {
   '/services/remote-crm-implementation': '2026-08-11',
   '/services/crm-relaunch': '2026-08-19',
   '/ai-crm-audit': '2026-08-11',
+  '/lead-follow-up-audit': '2026-08-23',
   '/salesforce-consultant-surrey-bc': '2026-08-11',
   '/blog/excel-to-crm-migration-repeat-order-businesses': '2026-08-08',
-  '/crm-consultant-vancouver': '2026-08-06',
+  '/crm-consultant-vancouver': '2026-08-23',
   '/crm-consultant-surrey-bc': '2026-08-05',
   '/crm-consultant-abbotsford': '2026-08-19',
   '/crm-consultant-langley': '2026-08-05',
   '/crm-consultant-coquitlam': '2026-08-19',
   '/hubspot-consultant-vancouver': '2026-08-19',
   '/hubspot-consultant-surrey-bc': '2026-08-05',
+  '/blog/salesforce-vs-hubspot-vs-zoho-canada-2026': '2026-08-23',
 };
 
 const urls = [

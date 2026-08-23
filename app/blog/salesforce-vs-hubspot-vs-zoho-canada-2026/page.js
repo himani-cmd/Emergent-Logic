@@ -18,10 +18,64 @@ export const metadata = {
   },
 };
 
+const canonicalUrl = 'https://www.emergent-logic.ca/blog/salesforce-vs-hubspot-vs-zoho-canada-2026';
+
+const faqs = [
+  {
+    q: 'Is Salesforce or HubSpot better for a mid-sized Canadian company?',
+    a: 'Salesforce is usually the stronger candidate when complex permissions, custom processes, governance, or connected enterprise operations are central requirements. HubSpot is often easier to evaluate when marketing and sales want a connected operating surface with lighter administration. The final choice should be tested against written requirements.',
+  },
+  {
+    q: 'When should a Canadian company consider Zoho CRM?',
+    a: 'Zoho CRM can be worth evaluating when budget, a broad application suite, and hands-on configuration fit the team. Test the required automation, reporting, integration, and administration path rather than choosing it on licence price alone.',
+  },
+  {
+    q: 'What costs should be compared beyond CRM licence fees?',
+    a: 'Compare implementation, data migration, integrations, administration, governance, reporting, training, support, required add-ons, and the cost of future changes. Current vendor pricing should be verified directly before a decision.',
+  },
+  {
+    q: 'Should a company choose a CRM for its AI features?',
+    a: 'AI features should be evaluated inside a defined workflow, but they should not determine the CRM choice alone. Data quality, permissions, human review, process fit, operating ownership, and commercial access are necessary for reliable use.',
+  },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      '@id': `${canonicalUrl}#article`,
+      headline: 'Salesforce vs. HubSpot for a Mid-Sized Canadian Company: Where Zoho Fits',
+      description: metadata.description,
+      url: canonicalUrl,
+      dateModified: '2026-08-23',
+      inLanguage: 'en-CA',
+      author: { '@type': 'Organization', name: 'Emergent Logic', url: 'https://www.emergent-logic.ca/' },
+      publisher: { '@id': 'https://www.emergent-logic.ca/#organization' },
+      about: [
+        { '@type': 'SoftwareApplication', name: 'Salesforce' },
+        { '@type': 'SoftwareApplication', name: 'HubSpot' },
+        { '@type': 'SoftwareApplication', name: 'Zoho CRM' },
+      ],
+      mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${canonicalUrl}#faq`,
+      mainEntity: faqs.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: { '@type': 'Answer', text: item.a },
+      })),
+    },
+  ],
+};
+
 export default function SalesforceVsHubspotVsZoho() {
   return (
     <main className="min-h-screen">
       <Navbar />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* Hero */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-[#1E3A5F] via-indigo-900 to-[#6366F1]">
@@ -35,7 +89,7 @@ export default function SalesforceVsHubspotVsZoho() {
           <div className="flex items-center gap-4 text-indigo-200 text-sm">
             <span>By Emergent Logic</span>
             <span>•</span>
-            <span>Last reviewed August 22, 2026</span>
+            <span>Last reviewed August 23, 2026</span>
             <span>•</span>
             <span>15 min read</span>
           </div>
@@ -287,6 +341,18 @@ export default function SalesforceVsHubspotVsZoho() {
           </ul>
         </div>
 
+        <section className="mb-12" aria-labelledby="crm-comparison-faq">
+          <h2 id="crm-comparison-faq" className="text-3xl font-bold text-[#1E3A5F] mb-6">Salesforce, HubSpot and Zoho comparison FAQ</h2>
+          <div className="space-y-5">
+            {faqs.map((item) => (
+              <article key={item.q} className="rounded-xl border bg-gray-50 p-6">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">{item.q}</h3>
+                <p className="text-gray-600 leading-relaxed">{item.a}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
         {/* CTA */}
         <div className="bg-gradient-to-br from-[#1E3A5F] to-[#6366F1] rounded-2xl p-8 md:p-12 text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Not sure which CRM is right for your business?</h2>
@@ -306,7 +372,11 @@ export default function SalesforceVsHubspotVsZoho() {
         {/* Related Posts */}
         <div className="border-t pt-8">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Continue Reading</h3>
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-3 gap-4">
+            <Link href="/crm-consultant-vancouver" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-[#6366F1]">Vancouver CRM consulting</p>
+              <p className="text-gray-800">Compare the platform decision with implementation, cleanup, routing, and reporting requirements.</p>
+            </Link>
             <Link href="/blog/ai-crm-strategy-guide-2026" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-[#6366F1]">Next →</p>
               <p className="text-gray-800">How to Use AI to Accelerate Your CRM Strategy</p>
