@@ -22,7 +22,7 @@ import {
 export const metadata = {
   title: 'AI Chatbot Consulting Vancouver | CRM Automation',
   description:
-    'AI chatbot consulting for Vancouver service businesses. Qualify website visitors, capture clean lead data, route inquiries into your CRM, and trigger follow-up tasks.',
+    'AI chatbot consulting for Vancouver service businesses. Qualify website visitors, capture lead data, route inquiries into CRM and trigger follow-up tasks.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/ai-chatbot-automation' },
   robots: { index: true, follow: true },
   openGraph: {
@@ -159,19 +159,22 @@ export default function AIChatbotAutomationService() {
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
             Emergent Logic designs CRM-connected AI chatbot workflows for Vancouver service businesses. We help qualify website visitors, capture structured lead data, summarize conversations, route inquiries, and create follow-up tasks so your team receives useful context—not another disconnected inbox.
           </p>
+          <p className="text-sm text-cyan-100/70 mb-6">Reviewed August 23, 2026</p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <TrackedCTA ctaName="Book a CRM Consultation - AI Chatbot Hero" destination="calendly">
-              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
+            <TrackedCTA ctaName="Free CRM Workflow Assessment - AI Chatbot Hero" destination="lead-follow-up-audit">
+              <Link href="/lead-follow-up-audit">
                 <Button size="lg" className="bg-white text-cyan-950 hover:bg-cyan-100 font-semibold px-8">
-                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
+                  Free CRM Workflow Assessment <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </Link>
+            </TrackedCTA>
+            <TrackedCTA ctaName="Book a CRM Consultation - AI Chatbot Hero Secondary" destination="calendly">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
+                  Book a CRM Consultation
                 </Button>
               </a>
             </TrackedCTA>
-            <Link href="/blog/ai-chatbot-lead-qualification-crm">
-              <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
-                Read the Chatbot CRM Guide
-              </Button>
-            </Link>
           </div>
           <div className="mt-8 flex flex-wrap gap-6 text-white/70 text-sm">
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-200" /> Scope-based delivery plan</div>
@@ -335,21 +338,23 @@ export default function AIChatbotAutomationService() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Want an AI Chatbot That Actually Moves Leads Forward?</h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Book a free 30-minute strategy call. We will look at your website, CRM, and follow-up process, then tell you whether chatbot automation is the right next move.
+            Start with a free five-point assessment of one website inquiry path. We will identify the ownership, CRM status, next-action, and reporting gaps before recommending chatbot automation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <TrackedCTA ctaName="Book Free Strategy Call - AI Chatbot Footer" destination="calendly">
-              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
+            <TrackedCTA ctaName="Free CRM Workflow Assessment - AI Chatbot Footer" destination="lead-follow-up-audit">
+              <Link href="/lead-follow-up-audit">
                 <Button size="lg" className="bg-white text-cyan-950 hover:bg-cyan-100 font-semibold px-8">
-                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
+                  Free CRM Workflow Assessment <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </Link>
+            </TrackedCTA>
+            <TrackedCTA ctaName="Book a CRM Consultation - AI Chatbot Footer Secondary" destination="calendly">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
+                  Book a CRM Consultation
                 </Button>
               </a>
             </TrackedCTA>
-            <Link href="/lead-follow-up-audit">
-              <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
-                Try Lead Follow-Up Audit
-              </Button>
-            </Link>
           </div>
         </div>
       </section>
