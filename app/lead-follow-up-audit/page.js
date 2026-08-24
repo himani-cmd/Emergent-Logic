@@ -54,6 +54,21 @@ const fits = [
   'Small service businesses using forms, inboxes, spreadsheets, or an underused CRM',
 ];
 
+const sampleFindings = [
+  {
+    label: 'Inquiry path',
+    finding: 'A consultation form sends a notification email, but the public path does not show whether a CRM record or source value is created.',
+  },
+  {
+    label: 'Ownership risk',
+    finding: 'The next owner is unclear, so a shared inbox or manual handoff could delay the first response.',
+  },
+  {
+    label: 'First fix to verify',
+    finding: 'Define one owner, one lead status, one follow-up task, and one seven-day outcome before adding more automation.',
+  },
+];
+
 const relatedResources = [
   {
     title: 'Website Leads to CRM Implementation',
@@ -197,6 +212,28 @@ export default function LeadFollowUpAuditPage() {
               <p className="text-sm text-gray-600">
                 No CRM access is needed for this first review.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-indigo-100 bg-indigo-50/50 py-16">
+        <div className="container mx-auto max-w-5xl px-4">
+          <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+            <div>
+              <Badge className="mb-4 border-indigo-200 bg-white text-indigo-800">Illustrative sample</Badge>
+              <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">What a 5-point audit note can look like</h2>
+              <p className="leading-relaxed text-gray-600">
+                This example shows the level of detail in the free review. It is not a client result and does not claim that a specific business has these issues.
+              </p>
+            </div>
+            <div className="divide-y divide-gray-200 rounded-lg border border-gray-200 bg-white">
+              {sampleFindings.map((item) => (
+                <div key={item.label} className="p-5">
+                  <h3 className="font-semibold text-indigo-800">{item.label}</h3>
+                  <p className="mt-2 leading-relaxed text-gray-600">{item.finding}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

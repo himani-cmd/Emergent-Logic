@@ -304,6 +304,19 @@ export default function AICRMAudit() {
               <p className="mt-2 text-sm text-gray-600">Plan field mapping, cleanup, test imports, validation, and handoff.</p>
             </Link>
           </div>
+          <div className="mt-8 flex flex-col gap-4 rounded-lg border border-emerald-200 bg-emerald-50 p-6 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <h3 className="font-semibold text-gray-950">Not ready for a scoped CRM audit?</h3>
+              <p className="mt-1 text-sm leading-relaxed text-gray-600">
+                Start with a free review of one visible website inquiry path. No CRM access is needed for the first review.
+              </p>
+            </div>
+            <TrackedCTA ctaName="AI Audit Free Lead Follow-Up Audit" destination="/lead-follow-up-audit">
+              <Button asChild variant="outline" className="shrink-0 border-emerald-700 text-emerald-800 hover:bg-emerald-100">
+                <Link href="/lead-follow-up-audit">See the free 5-point audit</Link>
+              </Button>
+            </TrackedCTA>
+          </div>
         </div>
       </section>
 

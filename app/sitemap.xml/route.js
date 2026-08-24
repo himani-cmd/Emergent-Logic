@@ -14,8 +14,8 @@ const lastmodByPath = {
   '/blog/salesforce-to-hubspot-migration-checklist': '2026-08-11',
   '/services/remote-crm-implementation': '2026-08-11',
   '/services/crm-relaunch': '2026-08-19',
-  '/ai-crm-audit': '2026-08-11',
-  '/lead-follow-up-audit': '2026-08-23',
+  '/ai-crm-audit': '2026-08-24',
+  '/lead-follow-up-audit': '2026-08-24',
   '/salesforce-consultant-surrey-bc': '2026-08-11',
   '/blog/excel-to-crm-migration-repeat-order-businesses': '2026-08-08',
   '/crm-consultant-vancouver': '2026-08-23',
@@ -25,7 +25,7 @@ const lastmodByPath = {
   '/crm-consultant-coquitlam': '2026-08-19',
   '/hubspot-consultant-vancouver': '2026-08-19',
   '/hubspot-consultant-surrey-bc': '2026-08-05',
-  '/blog/salesforce-vs-hubspot-vs-zoho-canada-2026': '2026-08-23',
+  '/blog/salesforce-vs-hubspot-vs-zoho-canada-2026': '2026-08-24',
 };
 
 const urls = [
