@@ -2,7 +2,8 @@ const baseUrl = 'https://www.emergent-logic.ca';
 const defaultLastmod = '2026-07-31';
 
 const lastmodByPath = {
-  '/services/crm-integration': '2026-08-19',
+  '/services/crm-integration': '2026-08-23',
+  '/services/crm-cleanup': '2026-08-23',
   '/services/ai-automation-consulting': '2026-08-23',
   '/services/ai-chatbot-automation': '2026-08-23',
   '/services/marketing-automation': '2026-08-21',

@@ -72,19 +72,22 @@ export default function CRMIntegration() {
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
             Your CRM should not be an island. We connect HubSpot, Salesforce, and Zoho to your accounting software, phone system, website, calendar, email, and marketing tools &mdash; so data flows where it needs to and your team stops copying records between tabs.
           </p>
+          <p className="mb-6 text-sm font-semibold text-pink-200">Reviewed August 23, 2026</p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
-              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
+            <TrackedCTA ctaName="Free CRM Workflow Assessment - Integration Hero" destination="lead-follow-up-audit">
+              <Link href="/lead-follow-up-audit">
                 <Button size="lg" className="bg-white text-pink-900 hover:bg-pink-100 font-semibold px-8">
-                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
+                  Free CRM Workflow Assessment <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </Link>
+            </TrackedCTA>
+            <TrackedCTA ctaName="Book a CRM Consultation - Integration Hero Secondary" destination="calendly">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
+                  Book a CRM Consultation
                 </Button>
               </a>
             </TrackedCTA>
-            <Link href="/ai-crm-audit">
-              <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
-                Try Our AI CRM Audit
-              </Button>
-            </Link>
           </div>
           <div className="mt-8 flex flex-wrap gap-6 text-white/70 text-sm">
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-pink-300" /> Scope-based delivery plan</div>
@@ -372,21 +375,23 @@ export default function CRMIntegration() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Get Your Stack Working Together</h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Book a 30-minute consultation to review the systems involved, the operating problem, and the information needed to confirm a responsible integration scope.
+            Start with the free CRM Workflow Assessment to identify lead-capture and handoff gaps, then book a consultation to confirm the systems and requirements for a responsible integration scope.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <TrackedCTA ctaName="Book a CRM Consultation - Integration Footer" destination="calendly">
-              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
+            <TrackedCTA ctaName="Free CRM Workflow Assessment - Integration Footer" destination="lead-follow-up-audit">
+              <Link href="/lead-follow-up-audit">
                 <Button size="lg" className="bg-white text-pink-900 hover:bg-pink-100 font-semibold px-8">
-                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
+                  Free CRM Workflow Assessment <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </Link>
+            </TrackedCTA>
+            <TrackedCTA ctaName="Book a CRM Consultation - Integration Footer Secondary" destination="calendly">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
+                  Book a CRM Consultation
                 </Button>
               </a>
             </TrackedCTA>
-            <Link href="/ai-crm-audit">
-              <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
-                Try Our AI CRM Audit
-              </Button>
-            </Link>
           </div>
           <p className="text-white/60 text-sm mt-6">Prefer email? <Link href="/contact" className="underline hover:text-white">Send us a message</Link>. Requests are reviewed on business days.</p>
         </div>
