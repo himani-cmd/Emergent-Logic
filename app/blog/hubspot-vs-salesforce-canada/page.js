@@ -141,6 +141,9 @@ export default function HubspotVsSalesforce() {
               <p>
                 Need help defining a <Link href="/services/crm-implementation" className="text-violet-600 hover:underline">CRM implementation scope in Surrey, BC</Link>? Start with the process and evidence needed for a responsible decision.
               </p>
+              <p>
+                Evaluating a larger operating model or adding Zoho to the shortlist? Use the <Link href="/blog/salesforce-vs-hubspot-vs-zoho-canada-2026" className="text-violet-600 hover:underline">Salesforce vs HubSpot guide for mid-sized Canadian companies</Link> to compare administration, governance, integrations, and cost drivers.
+              </p>
             </div>
             
             {/* CTA */}

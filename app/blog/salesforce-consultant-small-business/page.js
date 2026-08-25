@@ -144,7 +144,7 @@ export default function SalesforceConsultantSmallBusiness() {
                 Here is the honest part: Salesforce is not always the right CRM for a small business. If your sales process is simple, your team is small, and you need a fast launch, HubSpot or Zoho may be easier to manage.
               </p>
               <p>
-                The right CRM depends on process complexity, team size, budget, admin capacity, reporting needs, and integration requirements. If you are still choosing between platforms, start with our <Link href="/blog/hubspot-vs-salesforce-canada" className="text-blue-700 hover:underline">HubSpot vs Salesforce comparison</Link>.
+                The right CRM depends on process complexity, team size, budget, admin capacity, reporting needs, and integration requirements. If you are still choosing between platforms, use our <Link href="/blog/salesforce-vs-hubspot-vs-zoho-canada-2026" className="text-blue-700 hover:underline">Salesforce vs HubSpot comparison, including where Zoho fits</Link>.
               </p>
 
               <div className="bg-amber-50 border-l-4 border-amber-500 p-6 my-8 rounded-r-lg">

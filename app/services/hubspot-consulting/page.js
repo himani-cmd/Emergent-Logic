@@ -309,9 +309,9 @@ export default function HubSpotConsulting() {
               <p className="font-medium text-violet-600">CRM Cleanup</p>
               <p className="text-gray-600 text-sm">Fix messy data and broken workflows</p>
             </Link>
-            <Link href="/blog/hubspot-vs-salesforce-canada" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-violet-600">HubSpot vs Salesforce</p>
-              <p className="text-gray-600 text-sm">Which CRM is right for your business</p>
+            <Link href="/blog/salesforce-vs-hubspot-vs-zoho-canada-2026" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Salesforce vs HubSpot</p>
+              <p className="text-gray-600 text-sm">Compare administration, governance, integrations, cost drivers, and where Zoho fits</p>
             </Link>
           </div>
         </div>
