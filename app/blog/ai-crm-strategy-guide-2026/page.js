@@ -181,10 +181,10 @@ export default function AiCrmStrategyGuide() {
         {/* CTA */}
         <div className="bg-gradient-to-br from-[#1E3A5F] to-[#6366F1] rounded-2xl p-8 md:p-12 text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Ready to add AI to your CRM the right way?</h2>
-          <p className="text-indigo-200 mb-8 max-w-2xl mx-auto">Request a consultation to review one workflow, the available data, and a practical pilot boundary.</p>
-          <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" className="bg-white text-[#1E3A5F] hover:bg-indigo-100">Request a Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button>
-          </a>
+          <p className="text-indigo-200 mb-8 max-w-2xl mx-auto">Review the data, ownership, workflows, reporting, and integrations that an AI use case would depend on before planning implementation.</p>
+          <Link href="/ai-crm-audit">
+            <Button size="lg" className="bg-white text-[#1E3A5F] hover:bg-indigo-100">Review AI CRM Readiness <ArrowRight className="w-5 h-5 ml-2" /></Button>
+          </Link>
         </div>
 
         <div className="bg-gray-50 rounded-xl p-6 border mb-12">

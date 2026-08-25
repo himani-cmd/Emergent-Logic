@@ -7,7 +7,9 @@ const lastmodByPath = {
   '/services/ai-automation-consulting': '2026-08-23',
   '/services/ai-chatbot-automation': '2026-08-23',
   '/services/marketing-automation': '2026-08-21',
-  '/blog/marketing-automation-needs-crm-cleanup': '2026-08-21',
+  '/services/hubspot-consulting': '2026-08-24',
+  '/services/salesforce-consulting': '2026-08-24',
+  '/blog/marketing-automation-needs-crm-cleanup': '2026-08-24',
   '/hubspot-implementation': '2026-08-14',
   '/crm-implementation-method': '2026-08-13',
   '/hubspot-admin-support-canada-us': '2026-08-12',
@@ -23,9 +25,13 @@ const lastmodByPath = {
   '/crm-consultant-abbotsford': '2026-08-19',
   '/crm-consultant-langley': '2026-08-05',
   '/crm-consultant-coquitlam': '2026-08-19',
-  '/hubspot-consultant-vancouver': '2026-08-19',
+  '/hubspot-consultant-vancouver': '2026-08-24',
   '/hubspot-consultant-surrey-bc': '2026-08-05',
   '/blog/salesforce-vs-hubspot-vs-zoho-canada-2026': '2026-08-24',
+  '/blog/hubspot-vs-salesforce-canada': '2026-08-24',
+  '/blog/hubspot-vs-salesforce-for-smb': '2026-08-24',
+  '/blog/salesforce-consultant-small-business': '2026-08-24',
+  '/blog/ai-crm-strategy-guide-2026': '2026-08-24',
 };
 
 const urls = [
