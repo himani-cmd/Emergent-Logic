@@ -8,7 +8,7 @@ import { ArrowRight, CheckCircle, Cloud, Layers, Zap, BarChart3, Shield, Users, 
 
 export const metadata = {
   title: 'Salesforce Consultant Canada',
-  description: 'Process-first Salesforce consulting for Canadian teams, with selected remote engagements: CRM cleanup, workflow design, reporting, training, and documented handoff.',
+  description: 'Process-first Salesforce consulting for Canadian teams: CRM cleanup, workflow design, reporting, training, and documented handoff.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/salesforce-consulting' },
   robots: { index: true, follow: true },
   openGraph: {
@@ -310,6 +310,10 @@ export default function SalesforceConsulting() {
             <Link href="/services/hubspot-consulting" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">HubSpot Consulting</p>
               <p className="text-gray-600 text-sm">Often a better fit for smaller sales teams</p>
+            </Link>
+            <Link href="/blog/salesforce-vs-hubspot-vs-zoho-canada-2026" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">Salesforce vs HubSpot</p>
+              <p className="text-gray-600 text-sm">Compare platform fit, administration, governance, integrations, and where Zoho fits</p>
             </Link>
             <Link href="/blog/salesforce-admin-support-small-business" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Salesforce Admin Support</p>

@@ -190,6 +190,9 @@ export default function HubSpotVsSalesforceForSmb() {
               <p>
                 HubSpot vs Salesforce is not a brand decision. It is an operating decision. Pick the CRM your team can maintain, trust, and use consistently. Then implement only the processes that help sales, marketing, and leadership see what is actually happening.
               </p>
+              <p>
+                If the business has a more complex operating model or Zoho is also being considered, continue with the <Link href="/blog/salesforce-vs-hubspot-vs-zoho-canada-2026" className="text-slate-700 hover:underline">Salesforce vs HubSpot guide for mid-sized Canadian companies</Link>.
+              </p>
             </div>
 
             <div className="mt-12 p-8 bg-gradient-to-br from-slate-800 to-blue-900 rounded-2xl text-white">

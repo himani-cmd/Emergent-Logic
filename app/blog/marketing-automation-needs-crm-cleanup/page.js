@@ -124,8 +124,8 @@ export default function Post() {
 
               <div className="bg-violet-50 border-l-4 border-violet-500 p-6 my-8 rounded-r-lg">
                 <h4 className="font-bold text-violet-900 mb-2 flex items-center gap-2"><AlertCircle className="w-5 h-5" /> Not sure if your CRM is automation-ready?</h4>
-                <p className="text-violet-800 mb-3">A consultation can identify whether the immediate scope is cleanup, implementation, or automation. The decision depends on the CRM condition, workflow requirements, access, consent rules, and acceptance checks.</p>
-                <Link href="/contact"><Button className="bg-violet-600 hover:bg-violet-700">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+                <p className="text-violet-800 mb-3">An AI-ready CRM audit can document the data, ownership, workflow, reporting, and integration dependencies before automation is scoped.</p>
+                <Link href="/ai-crm-audit"><Button className="bg-violet-600 hover:bg-violet-700">Review AI CRM Readiness <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
               </div>
 
               <h2>How to Know Whether You Need Cleanup First</h2>
