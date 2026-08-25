@@ -48,7 +48,7 @@ const jsonLd = {
       headline: 'Salesforce vs. HubSpot for a Mid-Sized Canadian Company: Where Zoho Fits',
       description: metadata.description,
       url: canonicalUrl,
-      dateModified: '2026-08-23',
+      dateModified: '2026-08-24',
       inLanguage: 'en-CA',
       author: { '@type': 'Organization', name: 'Emergent Logic', url: 'https://www.emergent-logic.ca/' },
       publisher: { '@id': 'https://www.emergent-logic.ca/#organization' },
@@ -89,7 +89,7 @@ export default function SalesforceVsHubspotVsZoho() {
           <div className="flex items-center gap-4 text-indigo-200 text-sm">
             <span>By Emergent Logic</span>
             <span>•</span>
-            <span>Last reviewed August 23, 2026</span>
+            <span>Last reviewed August 24, 2026</span>
             <span>•</span>
             <span>15 min read</span>
           </div>
@@ -361,6 +361,9 @@ export default function SalesforceVsHubspotVsZoho() {
             <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-white text-[#1E3A5F] hover:bg-indigo-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button>
             </a>
+            <Button asChild size="lg" variant="outline" className="border-white/40 bg-transparent text-white hover:bg-white/10 hover:text-white">
+              <Link href="/lead-follow-up-audit">Start with a free lead follow-up audit</Link>
+            </Button>
           </div>
         </div>
 
