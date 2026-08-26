@@ -5,6 +5,8 @@ import { v4 as uuidv4 } from 'uuid';
 // MongoDB connection
 const mongoUrl = process.env.MONGO_URL;
 const dbName = process.env.DB_NAME || 'emergent_logic';
+const mongoConnectTimeoutMs = 4000;
+const contactPersistenceTimeoutMs = 6000;
 
 let client = null;
 let db = null;
@@ -19,6 +21,10 @@ async function getDb() {
   }
 
   const nextClient = new MongoClient(mongoUrl, {
+    connectTimeoutMS: mongoConnectTimeoutMs,
+    serverSelectionTimeoutMS: mongoConnectTimeoutMs,
+    socketTimeoutMS: contactPersistenceTimeoutMs,
+    maxPoolSize: 5,
     serverApi: {
       version: ServerApiVersion.v1,
       strict: true,
@@ -148,13 +154,30 @@ export async function GET(request, { params }) {
       const username = verifyAdmin(request);
       if (!username) return unauthorizedResponse();
       
-      const database = await getDb();
-      const submissions = await database.collection('contact_submissions')
-        .find({}, { projection: { _id: 0 } })
-        .sort({ created_at: -1 })
-        .limit(500)
-        .toArray();
-      return NextResponse.json(submissions, { headers: corsHeaders() });
+      try {
+        const submissions = await withTimeout(
+          (async () => {
+            const database = await getDb();
+            return database.collection('contact_submissions')
+              .find({}, { projection: { _id: 0 } })
+              .sort({ created_at: -1 })
+              .limit(500)
+              .toArray();
+          })(),
+          contactPersistenceTimeoutMs,
+          'Contact storage read'
+        );
+        return NextResponse.json(submissions, { headers: corsHeaders() });
+      } catch (storageError) {
+        console.error('Contact storage read failed:', storageError);
+        return NextResponse.json(
+          {
+            error: 'Contact storage is temporarily unavailable',
+            code: 'CONTACT_STORE_UNAVAILABLE',
+          },
+          { status: 503, headers: corsHeaders() }
+        );
+      }
     }
     
     // GET /api/admin/content/{page}
@@ -190,7 +213,7 @@ export async function GET(request, { params }) {
   } catch (error) {
     console.error('API Error:', error);
     return NextResponse.json(
-      { error: 'Internal server error', details: error.message },
+      { error: 'Internal server error' },
       { status: 500, headers: corsHeaders() }
     );
   }
@@ -297,21 +320,19 @@ export async function POST(request, { params }) {
         ...attribution,
         created_at: new Date().toISOString()
       };
-      let persistedLocally = false;
-      let forwardedToN8n = false;
-
-      // 4) Server-to-server forward to n8n -> HubSpot (env-gated)
-      // HubSpot is the primary lead destination, so do this before the backup DB write.
+      // 4) Forward to n8n -> HubSpot and write the admin backup in parallel.
+      // Either destination can accept the lead, while neither blocks the other.
       const n8nUrl = process.env.N8N_CONTACT_WEBHOOK_URL_V2
         || 'https://emergent-logic.app.n8n.cloud/webhook/contact-form-v2';
-      if (n8nUrl) {
+      const forwardToN8n = async () => {
+        if (!n8nUrl) return false;
+
         let timeout;
         try {
           const forwardHeaders = { 'Content-Type': 'application/json' };
           if (process.env.N8N_WEBHOOK_TOKEN) {
-            forwardHeaders['Authorization'] = `Bearer ${process.env.N8N_WEBHOOK_TOKEN}`;
+            forwardHeaders.Authorization = `Bearer ${process.env.N8N_WEBHOOK_TOKEN}`;
           }
-          // Fire-and-forget but await briefly so we can capture failure
           const controller = new AbortController();
           timeout = setTimeout(() => controller.abort(), 5000);
           const n8nRes = await fetch(n8nUrl, {
@@ -322,29 +343,38 @@ export async function POST(request, { params }) {
           });
           if (!n8nRes.ok) {
             console.error('n8n forward non-2xx:', n8nRes.status);
-          } else {
-            forwardedToN8n = true;
+            return false;
           }
+          return true;
         } catch (n8nErr) {
           console.error('n8n forward error:', n8nErr.message);
+          return false;
         } finally {
           clearTimeout(timeout);
         }
-      }
+      };
 
-      try {
-        await withTimeout(
-          (async () => {
-            const database = await getDb();
-            await database.collection('contact_submissions').insertOne(contactSubmission);
-          })(),
-          1500,
-          'Local contact persistence'
-        );
-        persistedLocally = true;
-      } catch (mongoErr) {
-        console.error('Local contact persistence failed:', mongoErr);
-      }
+      const persistLocally = async () => {
+        try {
+          await withTimeout(
+            (async () => {
+              const database = await getDb();
+              await database.collection('contact_submissions').insertOne(contactSubmission);
+            })(),
+            contactPersistenceTimeoutMs,
+            'Local contact persistence'
+          );
+          return true;
+        } catch (mongoErr) {
+          console.error('Local contact persistence failed:', mongoErr);
+          return false;
+        }
+      };
+
+      const [forwardedToN8n, persistedLocally] = await Promise.all([
+        forwardToN8n(),
+        persistLocally(),
+      ]);
 
       if (!persistedLocally && !forwardedToN8n) {
         console.error(JSON.stringify({
@@ -414,7 +444,7 @@ export async function POST(request, { params }) {
   } catch (error) {
     console.error('API Error:', error);
     return NextResponse.json(
-      { error: 'Internal server error', details: error.message },
+      { error: 'Internal server error' },
       { status: 500, headers: corsHeaders() }
     );
   }
@@ -455,7 +485,7 @@ export async function DELETE(request, { params }) {
   } catch (error) {
     console.error('API Error:', error);
     return NextResponse.json(
-      { error: 'Internal server error', details: error.message },
+      { error: 'Internal server error' },
       { status: 500, headers: corsHeaders() }
     );
   }

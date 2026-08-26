@@ -30,7 +30,7 @@ import {
 } from '@/components/ui/alert-dialog';
 import {
   Sparkles, Lock, LogOut, Users, Mail, Phone, Calendar,
-  Trash2, RefreshCw, ArrowLeft, Shield, Eye, EyeOff
+  Trash2, RefreshCw, ArrowLeft, Shield, Eye, EyeOff, AlertCircle
 } from 'lucide-react';
 
 export default function AdminPage() {
@@ -41,6 +41,7 @@ export default function AdminPage() {
   const [credentials, setCredentials] = useState({ username: '', password: '' });
   const [contacts, setContacts] = useState([]);
   const [loadingContacts, setLoadingContacts] = useState(false);
+  const [contactsError, setContactsError] = useState('');
 
   // Check if already authenticated
   useEffect(() => {
@@ -100,25 +101,37 @@ export default function AdminPage() {
     localStorage.removeItem('adminAuth');
     setIsAuthenticated(false);
     setContacts([]);
+    setContactsError('');
     setCredentials({ username: '', password: '' });
     toast.success('Logged out successfully');
   };
 
   const fetchContacts = async (authToken) => {
     setLoadingContacts(true);
+    setContactsError('');
     const token = authToken || localStorage.getItem('adminAuth');
     
     try {
       const response = await fetch('/api/admin/contacts', {
-        headers: { 'Authorization': `Basic ${token}` }
+        headers: { 'Authorization': `Basic ${token}` },
+        signal: AbortSignal.timeout(8000),
       });
 
-      if (response.ok) {
-        const data = await response.json();
-        setContacts(data);
+      if (response.status === 401) {
+        localStorage.removeItem('adminAuth');
+        setIsAuthenticated(false);
+        toast.error('Your admin session has expired.');
+        return;
       }
+
+      if (!response.ok) throw new Error('Contact storage request failed');
+
+      const data = await response.json();
+      if (!Array.isArray(data)) throw new Error('Unexpected contact response');
+      setContacts(data);
     } catch (error) {
-      toast.error('Failed to fetch contacts');
+      setContactsError('Contact storage is temporarily unavailable. Do not treat these counts as zero. Check the notification inbox or CRM while the connection is restored.');
+      toast.error('Contact storage is unavailable');
     } finally {
       setLoadingContacts(false);
     }
@@ -250,7 +263,7 @@ export default function AdminPage() {
               <Users className="w-5 h-5 text-violet-600" />
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold">{contacts.length}</div>
+              <div className="text-3xl font-bold">{contactsError ? '—' : contacts.length}</div>
             </CardContent>
           </Card>
           <Card>
@@ -260,7 +273,7 @@ export default function AdminPage() {
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold">
-                {contacts.filter(c => {
+                {contactsError ? '—' : contacts.filter(c => {
                   const date = new Date(c.created_at);
                   const now = new Date();
                   return date.getMonth() === now.getMonth() && date.getFullYear() === now.getFullYear();
@@ -275,7 +288,7 @@ export default function AdminPage() {
             </CardHeader>
             <CardContent>
               <div className="text-lg font-semibold truncate">
-                {contacts[0]?.email || 'No contacts yet'}
+                {contactsError ? 'Unavailable' : contacts[0]?.email || 'No contacts yet'}
               </div>
             </CardContent>
           </Card>
@@ -294,7 +307,26 @@ export default function AdminPage() {
             </Button>
           </CardHeader>
           <CardContent>
-            {contacts.length === 0 ? (
+            {loadingContacts && contacts.length === 0 ? (
+              <div className="text-center py-12 text-gray-500" role="status">
+                <RefreshCw className="w-10 h-10 mx-auto mb-4 animate-spin opacity-60" />
+                <p>Loading contact submissions...</p>
+              </div>
+            ) : contactsError ? (
+              <div className="rounded-md border border-red-200 bg-red-50 p-5 text-red-900" role="alert">
+                <div className="flex items-start gap-3">
+                  <AlertCircle className="mt-0.5 h-5 w-5 flex-none" />
+                  <div>
+                    <p className="font-semibold">Contact data unavailable</p>
+                    <p className="mt-1 text-sm text-red-800">{contactsError}</p>
+                    <Button variant="outline" className="mt-4 bg-white" onClick={() => fetchContacts()} disabled={loadingContacts}>
+                      <RefreshCw className={`w-4 h-4 mr-2 ${loadingContacts ? 'animate-spin' : ''}`} />
+                      Try again
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            ) : contacts.length === 0 ? (
               <div className="text-center py-12 text-gray-500">
                 <Users className="w-12 h-12 mx-auto mb-4 opacity-50" />
                 <p>No contact submissions yet</p>
