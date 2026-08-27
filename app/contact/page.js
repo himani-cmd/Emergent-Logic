@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
-import { trackCalendlyEvent, trackLeadGeneration } from '@/lib/analytics';
+import { trackCalendlyEvent, trackLeadFormEvent, trackLeadGeneration } from '@/lib/analytics';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -24,6 +24,7 @@ const expectations = [
 
 const voiceSummaryStorageKey = 'emergent_logic_voice_consultation_summary';
 const voiceSummaryEventName = 'emergent-logic-voice-summary-ready';
+const attributionStorageKey = 'emergent_logic_first_touch_attribution';
 const emptyContactFields = {
   first_name: '',
   last_name: '',
@@ -36,7 +37,12 @@ const emptyContactFields = {
   utm_campaign: '',
   utm_content: '',
   utm_term: '',
+  gclid: '',
+  gbraid: '',
+  wbraid: '',
   landing_page: '',
+  initial_landing_page: '',
+  referrer_host: '',
 };
 
 export default function ContactPage() {
@@ -44,6 +50,7 @@ export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const trackedCalendlyEvents = useRef(new Set());
+  const formStarted = useRef(false);
 
   useEffect(() => {
     const calendlyEventMap = {
@@ -70,14 +77,45 @@ export default function ContactPage() {
     const params = new URLSearchParams(window.location.search);
     const cleanCampaignValue = (value) => String(value || '').replace(/[\u0000-\u001F\u007F]/g, '').trim().slice(0, 120);
 
+    function getFirstTouchAttribution() {
+      try {
+        const stored = sessionStorage.getItem(attributionStorageKey);
+        if (stored) return JSON.parse(stored);
+
+        let referrerHost = '';
+        try {
+          referrerHost = document.referrer ? new URL(document.referrer).hostname.slice(0, 120) : '';
+        } catch {
+          referrerHost = '';
+        }
+
+        return {
+          initial_landing_page: window.location.pathname.slice(0, 200),
+          referrer_host: referrerHost,
+        };
+      } catch {
+        return {
+          initial_landing_page: window.location.pathname.slice(0, 200),
+          referrer_host: '',
+        };
+      }
+    }
+
+    const firstTouch = getFirstTouchAttribution();
+
     setFormData((current) => ({
       ...current,
-      utm_source: cleanCampaignValue(params.get('utm_source')),
-      utm_medium: cleanCampaignValue(params.get('utm_medium')),
-      utm_campaign: cleanCampaignValue(params.get('utm_campaign')),
-      utm_content: cleanCampaignValue(params.get('utm_content')),
-      utm_term: cleanCampaignValue(params.get('utm_term')),
+      utm_source: cleanCampaignValue(params.get('utm_source') || firstTouch.utm_source),
+      utm_medium: cleanCampaignValue(params.get('utm_medium') || firstTouch.utm_medium),
+      utm_campaign: cleanCampaignValue(params.get('utm_campaign') || firstTouch.utm_campaign),
+      utm_content: cleanCampaignValue(params.get('utm_content') || firstTouch.utm_content),
+      utm_term: cleanCampaignValue(params.get('utm_term') || firstTouch.utm_term),
+      gclid: cleanCampaignValue(params.get('gclid') || firstTouch.gclid),
+      gbraid: cleanCampaignValue(params.get('gbraid') || firstTouch.gbraid),
+      wbraid: cleanCampaignValue(params.get('wbraid') || firstTouch.wbraid),
       landing_page: window.location.pathname.slice(0, 200),
+      initial_landing_page: cleanCampaignValue(firstTouch.initial_landing_page),
+      referrer_host: cleanCampaignValue(firstTouch.referrer_host),
     }));
 
     function readVoiceSummary() {
@@ -119,6 +157,11 @@ export default function ContactPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    trackLeadFormEvent('lead_form_submit_attempted', {
+      formName: 'contact_form',
+      location: '/contact',
+      leadSource: 'website_contact_page',
+    });
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -132,6 +175,8 @@ export default function ContactPage() {
           formName: 'contact_form',
           location: '/contact',
           leadSource: 'website_contact_page',
+          initialLandingPage: formData.initial_landing_page,
+          referrerHost: formData.referrer_host,
         });
         setSubmitted(true);
         setFormData((current) => ({
@@ -144,9 +189,21 @@ export default function ContactPage() {
           hp_field: '',
         }));
       } else {
+        trackLeadFormEvent('lead_form_error', {
+          formName: 'contact_form',
+          location: '/contact',
+          leadSource: 'website_contact_page',
+          reason: `http_${response.status}`,
+        });
         toast.error('Failed to send message. Please try again.');
       }
     } catch (error) {
+      trackLeadFormEvent('lead_form_error', {
+        formName: 'contact_form',
+        location: '/contact',
+        leadSource: 'website_contact_page',
+        reason: 'network_error',
+      });
       toast.error('An error occurred. Please try again.');
     } finally {
       setIsSubmitting(false);
@@ -217,8 +274,8 @@ export default function ContactPage() {
       <section id="contact-form" className="py-16 bg-gray-50 scroll-mt-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">Or Send Us a Message</h2>
-            <p className="text-gray-600">Prefer email? Share a concise description and we will review it on the next business day.</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">Request a Free CRM Workflow Assessment</h2>
+            <p className="text-gray-600">Share one CRM, lead-routing, reporting, or automation problem. We will review the visible workflow and reply with a practical next step on the next business day.</p>
           </div>
           
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -267,8 +324,8 @@ export default function ContactPage() {
 
             <Card className="border-0 shadow-xl">
               <CardHeader>
-                <CardTitle>Send us a message</CardTitle>
-                <CardDescription>Describe the process, system, and result you want reviewed.</CardDescription>
+                <CardTitle>Request your workflow assessment</CardTitle>
+                <CardDescription>Describe the process, system, and result you want reviewed. No CRM credentials are needed.</CardDescription>
               </CardHeader>
               <CardContent>
                 {submitted ? (
@@ -280,7 +337,19 @@ export default function ContactPage() {
                     <p className="text-gray-600">Your request is ready for human review.</p>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-4">
+                  <form
+                    onSubmit={handleSubmit}
+                    onFocus={() => {
+                      if (formStarted.current) return;
+                      formStarted.current = true;
+                      trackLeadFormEvent('lead_form_started', {
+                        formName: 'contact_form',
+                        location: '/contact',
+                        leadSource: 'website_contact_page',
+                      });
+                    }}
+                    className="space-y-4"
+                  >
                     {/* Honeypot — hidden from humans, visible to bots. Do not remove. */}
                     <div aria-hidden="true" style={{ position: 'absolute', left: '-10000px', top: 'auto', width: '1px', height: '1px', overflow: 'hidden' }}>
                       <label htmlFor="hp_field">Leave this field blank</label>
@@ -291,11 +360,12 @@ export default function ContactPage() {
                       <div><Label htmlFor="last_name">Last Name</Label><Input id="last_name" name="last_name" autoComplete="family-name" value={formData.last_name} onChange={(e) => setFormData({ ...formData, last_name: e.target.value })} required className="mt-1" /></div>
                     </div>
                     <div><Label htmlFor="email">Email</Label><Input id="email" name="email" type="email" autoComplete="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} required className="mt-1" /></div>
-                    <div><Label htmlFor="phone">Phone</Label><Input id="phone" name="phone" type="tel" autoComplete="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} className="mt-1" /></div>
-                    <div><Label htmlFor="message">Message</Label><Textarea id="message" name="message" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} rows={4} className="mt-1" placeholder="Tell us about your project..." /></div>
+                    <div><Label htmlFor="phone">Phone <span className="font-normal text-gray-500">(optional)</span></Label><Input id="phone" name="phone" type="tel" autoComplete="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} className="mt-1" /></div>
+                    <div><Label htmlFor="message">What should we review?</Label><Textarea id="message" name="message" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} rows={4} className="mt-1" placeholder="Example: Website inquiries reach our inbox, but ownership and follow-up are not visible in the CRM." /></div>
                     <Button type="submit" className="w-full bg-violet-600 hover:bg-violet-700" disabled={isSubmitting}>
-                      {isSubmitting ? 'Sending...' : 'Send Message'} <Send className="ml-2 w-4 h-4" />
+                      {isSubmitting ? 'Sending...' : 'Request My Free Assessment'} <Send className="ml-2 w-4 h-4" />
                     </Button>
+                    <p className="text-center text-xs text-gray-500">Human-reviewed. No credentials required. Phone is optional.</p>
                   </form>
                 )}
               </CardContent>
