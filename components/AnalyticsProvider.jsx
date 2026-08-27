@@ -16,6 +16,17 @@ const ANALYTICS_HOSTNAMES = new Set([
   'emergent-logic.ca',
   'www.emergent-logic.ca',
 ]);
+const ATTRIBUTION_STORAGE_KEY = 'emergent_logic_first_touch_attribution';
+const CAMPAIGN_FIELDS = [
+  'utm_source',
+  'utm_medium',
+  'utm_campaign',
+  'utm_content',
+  'utm_term',
+  'gclid',
+  'gbraid',
+  'wbraid',
+];
 
 export default function AnalyticsProvider({ children }) {
   const pathname = usePathname();
@@ -23,6 +34,40 @@ export default function AnalyticsProvider({ children }) {
   const [measurementHostEnabled, setMeasurementHostEnabled] = useState(false);
 
   useEffect(() => {
+    // Preserve first-touch acquisition before internal navigation strips the
+    // original landing page and campaign parameters. Store no full URLs or PII.
+    try {
+      if (!sessionStorage.getItem(ATTRIBUTION_STORAGE_KEY)) {
+        const params = new URLSearchParams(window.location.search);
+        let referrerHost = '';
+
+        try {
+          const candidate = document.referrer
+            ? new URL(document.referrer).hostname.toLowerCase()
+            : '';
+          referrerHost = ANALYTICS_HOSTNAMES.has(candidate) ? '' : candidate.slice(0, 120);
+        } catch {
+          referrerHost = '';
+        }
+
+        const firstTouch = {
+          initial_landing_page: window.location.pathname.slice(0, 200),
+          referrer_host: referrerHost,
+        };
+
+        CAMPAIGN_FIELDS.forEach((field) => {
+          firstTouch[field] = String(params.get(field) || '')
+            .replace(/[\u0000-\u001F\u007F]/g, '')
+            .trim()
+            .slice(0, 120);
+        });
+
+        sessionStorage.setItem(ATTRIBUTION_STORAGE_KEY, JSON.stringify(firstTouch));
+      }
+    } catch {
+      // Attribution storage is best-effort and must never block the site.
+    }
+
     setMeasurementHostEnabled(
       ANALYTICS_HOSTNAMES.has(window.location.hostname)
     );

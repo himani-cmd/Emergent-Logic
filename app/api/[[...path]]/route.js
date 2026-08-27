@@ -271,6 +271,8 @@ export async function POST(request, { params }) {
         .trim()
         .slice(0, 160);
       const landingPageCandidate = String(body.landing_page || '').trim();
+      const initialLandingPageCandidate = String(body.initial_landing_page || '').trim();
+      const referrerHostCandidate = String(body.referrer_host || '').trim().toLowerCase();
       const attribution = {
         utm_source: cleanCampaignValue(body.utm_source),
         utm_medium: cleanCampaignValue(body.utm_medium),
@@ -282,6 +284,12 @@ export async function POST(request, { params }) {
         wbraid: cleanCampaignValue(body.wbraid),
         landing_page: landingPageCandidate.startsWith('/')
           ? landingPageCandidate.replace(/[\u0000-\u001F\u007F]/g, '').slice(0, 200)
+          : '',
+        initial_landing_page: initialLandingPageCandidate.startsWith('/')
+          ? initialLandingPageCandidate.replace(/[\u0000-\u001F\u007F]/g, '').slice(0, 200)
+          : '',
+        referrer_host: /^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)*[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$/i.test(referrerHostCandidate)
+          ? referrerHostCandidate.slice(0, 160)
           : '',
       };
 
