@@ -110,6 +110,20 @@ const checks = [
   },
   {
     passed:
+      provider.includes("'emergent_logic_first_touch_attribution'") &&
+      provider.includes('initial_landing_page: window.location.pathname') &&
+      provider.includes("'gclid'") &&
+      contact.includes('sessionStorage.getItem(attributionStorageKey)') &&
+      contact.includes('initial_landing_page: cleanCampaignValue(firstTouch.initial_landing_page)') &&
+      ['gclid', 'gbraid', 'wbraid'].every((field) =>
+        contact.includes(`${field}: cleanCampaignValue`) && api.includes(`${field}: cleanCampaignValue`)
+      ) &&
+      api.includes('initial_landing_page: initialLandingPageCandidate') &&
+      api.includes('referrer_host:'),
+    message: 'The contact lead receipt must preserve PII-safe first-touch attribution and click identifiers.',
+  },
+  {
+    passed:
       !analytics.includes('transcript:') &&
       !analytics.includes('email_address:') &&
       !analytics.includes('phone_number:') &&
