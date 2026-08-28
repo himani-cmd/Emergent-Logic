@@ -51,7 +51,10 @@ const jsonLd = {
         height: 500,
       },
       image: 'https://www.emergent-logic.ca/og-image.png',
-      sameAs: ['https://www.instagram.com/emergentlogiccrm/'],
+      sameAs: [
+        'https://www.instagram.com/emergentlogiccrm/',
+        'https://www.linkedin.com/company/emergent-logic-consulting/',
+      ],
       hasMap: googleBusinessProfileMapUrl,
       identifier: {
         '@type': 'PropertyValue',
