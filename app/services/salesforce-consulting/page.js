@@ -33,6 +33,16 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     {
+      '@type': 'WebPage',
+      '@id': 'https://www.emergent-logic.ca/services/salesforce-consulting#webpage',
+      url: 'https://www.emergent-logic.ca/services/salesforce-consulting',
+      name: 'Salesforce Consultant Canada',
+      description: metadata.description,
+      dateModified: '2026-08-28',
+      isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
+      about: { '@id': 'https://www.emergent-logic.ca/services/salesforce-consulting#service' },
+    },
+    {
       '@type': 'Service',
       '@id': 'https://www.emergent-logic.ca/services/salesforce-consulting#service',
       name: 'Salesforce Consulting',
@@ -82,19 +92,22 @@ export default function SalesforceConsulting() {
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
             Process-first Salesforce consulting for teams in Surrey, Greater Vancouver, across Canada, and selected remote engagements. Work begins with system fit, ownership, data, workflow, reporting, testing, and acceptance requirements before production changes.
           </p>
+          <p className="mb-6 text-sm font-semibold text-blue-200">Reviewed August 28, 2026</p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
-              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+            <TrackedCTA ctaName="Free CRM Workflow Assessment - Salesforce Hero" destination="lead-follow-up-audit">
+              <Link href="/lead-follow-up-audit" className="w-full sm:w-auto">
                 <Button size="lg" className="w-full bg-white text-blue-900 hover:bg-blue-100 font-semibold px-8 sm:w-auto">
-                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
+                  Free CRM Workflow Assessment <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </Link>
+            </TrackedCTA>
+            <TrackedCTA ctaName="Book a CRM Consultation - Salesforce Hero Secondary" destination="calendly">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8 sm:w-auto">
+                  Book a CRM Consultation
                 </Button>
               </a>
             </TrackedCTA>
-            <Link href="/ai-crm-audit" className="w-full sm:w-auto">
-              <Button size="lg" className="w-full bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8 sm:w-auto">
-                Try Our AI CRM Audit
-              </Button>
-            </Link>
           </div>
           <div className="mt-8 flex flex-wrap gap-6 text-white/70 text-sm">
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> Scope-based delivery plan</div>
@@ -102,6 +115,18 @@ export default function SalesforceConsulting() {
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> Platform and licensed features fit-checked</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-300" /> Based in Surrey, serving Canada and selected remote engagements</div>
           </div>
+        </div>
+      </section>
+
+      <section className="border-b border-blue-100 bg-blue-50 py-16">
+        <div className="container mx-auto max-w-4xl px-4">
+          <h2 className="mb-4 text-3xl font-bold text-gray-900">What does a Salesforce consultant help with?</h2>
+          <p className="mb-4 text-lg text-gray-700">
+            A Salesforce consultant helps a business decide what to configure, clean, automate, integrate, report on, and document in Salesforce. A responsible engagement starts by mapping the sales process, data, ownership, permissions, integrations, and acceptance checks before changing the production org.
+          </p>
+          <p className="text-gray-600">
+            Emergent Logic supports scoped implementation, cleanup, workflow, reporting, integration planning, training, and handoff for Canadian teams when the requirements fit documented capability. Teams needing a smaller ongoing scope can review <Link href="/salesforce-admin-support-canada-us" className="font-medium text-blue-700 hover:underline">Salesforce admin support</Link>; teams still comparing platforms can start with the <Link href="/services/crm-implementation" className="font-medium text-blue-700 hover:underline">CRM implementation service</Link>.
+          </p>
         </div>
       </section>
 
@@ -352,21 +377,23 @@ export default function SalesforceConsulting() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Plan the Next Salesforce Step</h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Book a 30-minute CRM consultation to discuss the operating process, current system, constraints, and the smallest useful next step. Any scope, timing, commercial terms, or access requirements are confirmed separately in writing.
+            Start with a free five-point review of one lead-capture or follow-up path. If the findings point to a Salesforce project, book a consultation to confirm the operating process, system constraints, and smallest useful next step.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <TrackedCTA ctaName="Book a CRM Consultation - Salesforce Footer" destination="calendly">
-              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
+            <TrackedCTA ctaName="Free CRM Workflow Assessment - Salesforce Footer" destination="lead-follow-up-audit">
+              <Link href="/lead-follow-up-audit">
                 <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-100 font-semibold px-8">
-                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
+                  Free CRM Workflow Assessment <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </Link>
+            </TrackedCTA>
+            <TrackedCTA ctaName="Book a CRM Consultation - Salesforce Footer Secondary" destination="calendly">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
+                  Book a CRM Consultation
                 </Button>
               </a>
             </TrackedCTA>
-            <Link href="/ai-crm-audit">
-              <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
-                Try Our AI CRM Audit
-              </Button>
-            </Link>
           </div>
         </div>
       </section>

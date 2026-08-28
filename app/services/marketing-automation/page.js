@@ -78,7 +78,7 @@ const jsonLd = {
       url: 'https://www.emergent-logic.ca/services/marketing-automation',
       name: 'Marketing Automation Services Canada',
       description: metadata.description,
-      dateModified: '2026-08-22',
+      dateModified: '2026-08-28',
       isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
       about: { '@id': 'https://www.emergent-logic.ca/services/marketing-automation#service' },
     },
@@ -123,18 +123,20 @@ export default function MarketingAutomation() {
             Connect lead scoring, nurture sequences, campaign attribution, and sales handoff to your CRM with clear ownership, documented testing, and human review for high-impact actions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <TrackedCTA ctaName="Book a CRM Consultation" destination="calendly">
-              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
+            <TrackedCTA ctaName="Free CRM Workflow Assessment - Marketing Automation Hero" destination="lead-follow-up-audit">
+              <Link href="/lead-follow-up-audit">
                 <Button size="lg" className="bg-white text-purple-900 hover:bg-purple-100 font-semibold px-8">
-                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
+                  Free CRM Workflow Assessment <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </Link>
+            </TrackedCTA>
+            <TrackedCTA ctaName="Book a CRM Consultation - Marketing Automation Hero Secondary" destination="calendly">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
+                  Book a CRM Consultation
                 </Button>
               </a>
             </TrackedCTA>
-            <Link href="/ai-crm-audit">
-              <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
-                Try Our AI CRM Audit
-              </Button>
-            </Link>
           </div>
           <div className="mt-8 flex flex-wrap gap-6 text-white/70 text-sm">
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-purple-300" /> Scope-based delivery plan</div>
@@ -148,7 +150,7 @@ export default function MarketingAutomation() {
       {/* CRM-first positioning callout */}
       <section className="py-12 bg-purple-50 border-b border-purple-100">
         <div className="container mx-auto px-4 max-w-4xl">
-          <p className="mb-4 text-sm font-semibold text-purple-700">Last reviewed August 22, 2026</p>
+          <p className="mb-4 text-sm font-semibold text-purple-700">Reviewed August 28, 2026</p>
           <div className="flex items-start gap-4">
             <Database className="w-8 h-8 text-purple-700 flex-shrink-0 mt-1" />
             <div>
@@ -448,21 +450,23 @@ export default function MarketingAutomation() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Build Marketing Automation Your Team Can Operate</h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Book a consultation to review your CRM, funnel, current automation, and the system boundary that deserves attention first.
+            Start with a free five-point review of one lead-capture or follow-up path. If the evidence supports a deeper automation project, book a consultation to confirm the systems, requirements, and responsible next step.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <TrackedCTA ctaName="Book CRM Consultation - Marketing Automation Footer" destination="calendly">
-              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
+            <TrackedCTA ctaName="Free CRM Workflow Assessment - Marketing Automation Footer" destination="lead-follow-up-audit">
+              <Link href="/lead-follow-up-audit">
                 <Button size="lg" className="bg-white text-purple-900 hover:bg-purple-100 font-semibold px-8">
-                  Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" />
+                  Free CRM Workflow Assessment <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </Link>
+            </TrackedCTA>
+            <TrackedCTA ctaName="Book a CRM Consultation - Marketing Automation Footer Secondary" destination="calendly">
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
+                  Book a CRM Consultation
                 </Button>
               </a>
             </TrackedCTA>
-            <Link href="/ai-crm-audit">
-              <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
-                Try Our AI CRM Audit
-              </Button>
-            </Link>
           </div>
           <p className="text-white/60 text-sm mt-6">Prefer email? <Link href="/contact" className="underline hover:text-white">Send us a message</Link>. Requests are reviewed on business days.</p>
         </div>
