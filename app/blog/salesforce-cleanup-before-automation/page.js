@@ -125,6 +125,9 @@ export default function SalesforceCleanupBeforeAutomation() {
               <p>
                 We also documented this approach as a <Link href="/case-studies/salesforce-cleanup-before-automation" className="text-blue-700 hover:underline">representative Salesforce cleanup pattern</Link>, showing how objects, fields, ownership, reports, permissions, and Flow readiness fit together before automation work starts.
               </p>
+              <p>
+                If your team is assessing AI access through Claude or another MCP-aware client, use the <Link href="/resources/salesforce-in-claude-readiness-checklist" className="text-blue-700 hover:underline">Salesforce in Claude readiness checklist</Link> to separate data readiness, inherited user permissions, governed writes, acceptance tests and rollback evidence.
+              </p>
 
               <h2>Reporting Cleanup Comes Before Dashboard Automation</h2>
               <p>

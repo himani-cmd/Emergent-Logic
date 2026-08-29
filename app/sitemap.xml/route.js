@@ -32,6 +32,7 @@ const lastmodByPath = {
   '/blog/hubspot-vs-salesforce-for-smb': '2026-08-24',
   '/blog/salesforce-consultant-small-business': '2026-08-24',
   '/blog/ai-crm-strategy-guide-2026': '2026-08-24',
+  '/resources/salesforce-in-claude-readiness-checklist': '2026-08-28',
 };
 
 const urls = [
@@ -51,6 +52,7 @@ const urls = [
   ['/case-studies/property-management-rental-inquiry-routing', 'monthly', '0.8'],
   ['/resources/crm-automation-diagrams', 'monthly', '0.8'],
   ['/resources/crm-integration-platform-selection-workbook', 'monthly', '0.8'],
+  ['/resources/salesforce-in-claude-readiness-checklist', 'monthly', '0.8'],
   ['/research/2026-crm-cleanup-demand-report', 'monthly', '0.9'],
   ['/ai-crm-audit', 'monthly', '0.8'],
   ['/lead-follow-up-audit', 'monthly', '0.8'],
