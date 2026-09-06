@@ -219,7 +219,7 @@ const faqItems = [
   },
   {
     q: 'Is Salesforce in Claude generally available?',
-    a: 'Not according to the official material reviewed on August 28, 2026. Salesforce says selected pilot customers have access and plans an open beta in September 2026. The separate Claude connector directory labels Salesforce as beta, but that listing does not establish general availability.',
+    a: 'Not according to the official material reviewed on September 6, 2026. Salesforce says selected pilot customers have access and plans an open beta in September 2026. The separate Claude connector directory labels Salesforce as beta, but that listing does not establish general availability.',
     source: officialSources[0],
   },
   {
@@ -239,7 +239,7 @@ const jsonLd = {
       name: 'Salesforce in Claude Readiness Checklist: Data, Permissions and Governed AI Actions',
       description: metadata.description,
       dateCreated: '2026-08-28',
-      dateModified: '2026-08-28',
+      dateModified: '2026-09-06',
       author: { '@id': 'https://www.emergent-logic.ca/#organization' },
       isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
       mainEntity: { '@id': `${canonical}#scorecard` },
@@ -294,11 +294,13 @@ export default function SalesforceInClaudeReadinessChecklist() {
             <a href="#scorecard" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-white px-6 py-3 font-semibold text-[#1E3A5F] hover:bg-[#EEF2FF]">
               Start the five-point scorecard <ArrowRight className="h-5 w-5" />
             </a>
+            <TrackedCTA ctaName="Salesforce in Claude Readiness - Hero Assessment" destination="lead-follow-up-audit">
             <Link href="/lead-follow-up-audit" className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/40 px-6 py-3 font-semibold text-white hover:bg-white/10">
               Request a Free CRM Workflow Assessment
             </Link>
+            </TrackedCTA>
           </div>
-          <p className="mt-5 text-sm leading-6 text-[#CBD5E1]">Reviewed August 28, 2026 · Salesforce describes selected pilot access and a planned September 2026 open beta · Product details may change</p>
+          <p className="mt-5 text-sm leading-6 text-[#CBD5E1]">Reviewed September 6, 2026 · Salesforce describes selected pilot access and a planned September 2026 open beta · Product details may change</p>
         </div>
       </section>
 

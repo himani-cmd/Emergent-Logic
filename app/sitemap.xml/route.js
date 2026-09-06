@@ -32,7 +32,7 @@ const lastmodByPath = {
   '/blog/hubspot-vs-salesforce-for-smb': '2026-08-24',
   '/blog/salesforce-consultant-small-business': '2026-08-24',
   '/blog/ai-crm-strategy-guide-2026': '2026-08-24',
-  '/resources/salesforce-in-claude-readiness-checklist': '2026-08-28',
+  '/resources/salesforce-in-claude-readiness-checklist': '2026-09-06',
 };
 
 const urls = [
