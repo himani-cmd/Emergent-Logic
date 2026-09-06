@@ -159,6 +159,9 @@ export default function SalesforceConsulting() {
           <p className="text-lg text-gray-600 mb-8">
             A Salesforce scope can cover configuration, data, automation, reporting, integration, and training where the requirements fit documented capability. Deliverables and exclusions are written before work starts.
           </p>
+          <p className="mb-8 text-lg text-gray-600">
+            Teams evaluating connected AI actions can use the <Link href="/resources/salesforce-in-claude-readiness-checklist" className="font-semibold text-blue-700 hover:underline">Salesforce in Claude readiness checklist</Link> to review data quality, user permissions, workflow ownership, human approval, acceptance evidence and rollback before enabling broader access.
+          </p>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { icon: Cloud, title: 'Configuration Planning', desc: 'Map the sales process, ownership, stages, required data, access boundaries, and licensed features before configuration work begins.' },
