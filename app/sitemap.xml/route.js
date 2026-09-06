@@ -2,6 +2,7 @@ const baseUrl = 'https://www.emergent-logic.ca';
 const defaultLastmod = '2026-07-31';
 
 const lastmodByPath = {
+  '/services/gohighlevel-implementation': '2026-09-06',
   '/services/crm-integration': '2026-08-23',
   '/services/crm-cleanup': '2026-08-23',
   '/services/ai-automation-consulting': '2026-08-23',
@@ -36,6 +37,7 @@ const lastmodByPath = {
 };
 
 const urls = [
+  ['/services/gohighlevel-implementation', 'monthly', '0.8'],
   ['', 'weekly', '1.0'],
   ['/pricing', 'monthly', '0.9'],
   ['/about', 'monthly', '0.8'],

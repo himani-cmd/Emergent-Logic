@@ -147,6 +147,8 @@ export default function MarketingAutomation() {
         </div>
       </section>
 
+      <section className="border-b border-purple-100 bg-white py-8"><div className="container mx-auto max-w-4xl px-4"><p className="leading-7 text-gray-600">For a HighLevel-specific setup or repair, review <Link href="/services/gohighlevel-implementation" className="font-semibold text-purple-700 hover:underline">GoHighLevel implementation and automation support</Link>. The platform-neutral CRM and measurement approach below remains the starting point for other systems.</p></div></section>
+
       {/* CRM-first positioning callout */}
       <section className="py-12 bg-purple-50 border-b border-purple-100">
         <div className="container mx-auto px-4 max-w-4xl">
