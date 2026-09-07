@@ -56,8 +56,8 @@ export default function CRMCleanup() {
           <div className="mt-8 flex flex-wrap gap-6 text-white/70 text-sm">
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-300" /> Read-only assessment first</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-300" /> Written proposal after discovery</div>
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-300" /> Full audit report included</div>
-            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-300" /> Maintenance playbook delivered</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-300" /> Audit deliverables defined in your proposal</div>
+            <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-300" /> Training and handoff scoped before work</div>
           </div>
         </div>
       </section>
