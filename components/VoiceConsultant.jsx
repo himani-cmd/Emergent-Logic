@@ -573,7 +573,7 @@ export default function VoiceConsultant({ enabled = false }) {
   if (!enabled) return null;
 
   return (
-    <div className="pointer-events-none fixed bottom-4 right-4 z-[60] flex w-[calc(100vw-2rem)] max-w-sm flex-col items-end gap-3 sm:bottom-5 sm:right-5 sm:w-auto">
+    <div className="pointer-events-none fixed bottom-4 right-4 z-[60] flex w-[calc(100vw-2rem)] max-w-sm flex-col items-end gap-3 sm:bottom-5 sm:right-5 sm:w-auto [@media(max-height:600px)]:static [@media(max-height:600px)]:w-full [@media(max-height:600px)]:max-w-none [@media(max-height:600px)]:px-4 [@media(max-height:600px)]:py-4">
       {promptVisible && !panelOpen ? (
         <div className="pointer-events-auto w-full max-w-xs rounded-lg border border-indigo-100 bg-white p-3 text-left shadow-xl shadow-indigo-950/10 motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2">
           <div className="flex items-start gap-3">
