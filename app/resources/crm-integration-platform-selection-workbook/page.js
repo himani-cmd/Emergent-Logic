@@ -1,3 +1,4 @@
+import WorkflowVisual from '@/components/WorkflowVisual';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -174,6 +175,14 @@ export default function CRMIntegrationPlatformSelectionWorkbook() {
           </div>
         </div>
       </section>
+
+
+      <WorkflowVisual id="workflow-visual-workbook" desktop="crm_integration_workbook_workflow_preview_v01" mobile="crm_integration_workbook_workflow_detail_v01" alt="CRM integration workbook with example workflow inputs, risk score, recommended integration route and discovery notes." caption="A preview of the actual workbook using labelled example inputs. Open the workbook for the full scoring sheet.">
+          <p>Workbook example inputs — not client results. These scores suggest routes to investigate, not vendor recommendations.</p>
+          <ul className="list-disc space-y-2 pl-6"><li>Website lead to CRM: score 20; low-code automation.</li><li>CRM to finance system: score 57; governed iPaaS or custom integration.</li><li>Messenger qualification to CRM: score 37; visual automation with controls.</li></ul>
+          <p>Website lead to CRM, row 5 example: business impact 5, complexity 2, volume 2, sensitivity 2, real-time need 4 and owner readiness 4 (each on a 1–5 scale). Bidirectional sync 0 and custom transformation 0 (each 0 or 1). Risk score: 20. Suggested route: low-code automation.</p>
+          <p>Confirm source fields, duplicate rule, routing, consent and alerting. Decision owner: not entered in the example. The mobile image reformats these same inputs for reading; the full editable workbook remains available through the existing download links.</p>
+      </WorkflowVisual>
 
       <section className="border-y border-[#DFE3F5] bg-white py-16 md:py-20">
         <div className="container mx-auto max-w-6xl px-4">
