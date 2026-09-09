@@ -1,3 +1,4 @@
+import WorkflowVisual from '@/components/WorkflowVisual';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -375,6 +376,13 @@ export default function SalesforceInClaudeReadinessChecklist() {
           <p className="mt-8 leading-7 text-[#667085]">If data trust is the blocker, use the <Link href="/blog/salesforce-cleanup-before-automation" className="font-semibold text-[#4B37C8] hover:underline">Salesforce cleanup before automation guide</Link> before expanding access or workflow scope.</p>
         </div>
       </section>
+
+
+      <WorkflowVisual id="workflow-visual-claude" desktop="salesforce_claude_approval_boundary_v01" mobile="salesforce_claude_approval_boundary_mobile_v01" alt="Governance model separating Salesforce access permissions from business approval before an AI action, followed by execution and audit checks." caption="Separate technical permission from the business approval required before an AI action.">
+          <p>Illustrative workflow — not a client implementation. This is a recommended governance model, not an official product architecture or a claim that vendor tools universally enforce business approval.</p>
+          <ol className="list-decimal space-y-2 pl-6"><li>User request: define the bounded intent.</li><li>Access checks: authenticate and enforce permissions.</li><li>Proposed action: make scope and impact visible.</li><li>Human approval: obtain required business approval.</li><li>Execute: act only within the approved scope.</li><li>Audit and reconcile: record and check the outcome.</li></ol>
+          <p>Denied access or missing required approval means stop. Do not bypass either boundary.</p>
+      </WorkflowVisual>
 
       <section className="border-y border-[#DFE3F5] bg-white py-16 md:py-20">
         <div className="container mx-auto max-w-6xl px-4">
