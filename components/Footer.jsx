@@ -5,6 +5,7 @@ import { Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 const servicesLinks = [
   { name: 'CRM Implementation', href: '/services/crm-implementation' },
   { name: 'HubSpot Consulting', href: '/services/hubspot-consulting' },
+  { name: 'GoHighLevel Implementation & Automation', href: '/services/gohighlevel-implementation' },
   { name: 'CRM Cleanup', href: '/services/crm-cleanup' },
   { name: 'CRM Relaunch', href: '/services/crm-relaunch' },
   { name: 'Marketing Automation', href: '/services/marketing-automation' },

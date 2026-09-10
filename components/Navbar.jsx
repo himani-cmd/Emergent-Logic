@@ -10,6 +10,7 @@ import { Menu, X, ChevronDown, Database, Settings, Wrench, Link2, Workflow } fro
 const services = [
   { title: 'CRM Implementation', href: '/services/crm-implementation', icon: Database },
   { title: 'HubSpot Consulting', href: '/services/hubspot-consulting', icon: Settings },
+  { title: 'GoHighLevel Implementation & Automation', href: '/services/gohighlevel-implementation', icon: Workflow },
   { title: 'CRM Cleanup', href: '/services/crm-cleanup', icon: Wrench },
   { title: 'CRM Integration', href: '/services/crm-integration', icon: Link2 },
   { title: 'Marketing Automation', href: '/services/marketing-automation', icon: Workflow },
@@ -110,7 +111,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {mobileOpen && (
-          <div id="mobile-navigation-menu" className="md:hidden bg-white rounded-xl shadow-xl border mt-2 p-4 space-y-1">
+          <div id="mobile-navigation-menu" className="md:hidden max-h-[calc(100dvh-5rem)] overflow-y-auto bg-white rounded-xl shadow-xl border mt-2 p-4 space-y-1">
             <Link href="/" className="block px-3 py-2 rounded-lg text-gray-700 hover:bg-violet-50 font-medium">Home</Link>
 
             <div className="px-3 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wider">Services</div>
