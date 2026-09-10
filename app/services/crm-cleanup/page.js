@@ -41,7 +41,7 @@ export default function CRMCleanup() {
             <TrackedCTA ctaName="Free CRM Workflow Assessment - Cleanup Hero" destination="lead-follow-up-audit">
               <Link href="/lead-follow-up-audit">
                 <Button size="lg" className="bg-white text-emerald-900 hover:bg-emerald-100 font-semibold px-8">
-                  Free CRM Workflow Assessment <ArrowRight className="w-5 h-5 ml-2" />
+                  Free Lead Follow-Up Audit <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
             </TrackedCTA>
@@ -53,6 +53,7 @@ export default function CRMCleanup() {
               </a>
             </TrackedCTA>
           </div>
+          <p className="mt-4 text-sm text-white/80">The free audit reviews one visible website inquiry path. No CRM access is needed; a full CRM cleanup assessment is scoped separately.</p>
           <div className="mt-8 flex flex-wrap gap-6 text-white/70 text-sm">
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-300" /> Read-only assessment first</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-300" /> Written proposal after discovery</div>
@@ -81,7 +82,7 @@ export default function CRMCleanup() {
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { icon: AlertTriangle, title: 'Duplicate Contacts', desc: 'The same person appears 3, 5, or 10 times with slight variations. Every duplicate inflates your metrics, confuses your sales team, and wastes your email credits — and HubSpot charges you per contact.', color: 'red' },
+              { icon: AlertTriangle, title: 'Duplicate Contacts', desc: 'Duplicate records can split activity history, confuse ownership and distort reporting. In HubSpot subscriptions that use marketing contacts, contacts marked as marketing count toward the paid contact tier; non-marketing contacts do not.', color: 'red' },
               { icon: Database, title: 'Bad Data Quality', desc: 'Missing fields, outdated information, wrong formats, incomplete records, invalid emails. Your CRM is only as useful as the data inside it — and right now, your data is unreliable.', color: 'orange' },
               { icon: Zap, title: 'Broken Workflows', desc: 'Automations that trigger at the wrong time, send to the wrong people, or do not fire at all. Workflows built on outdated logic that nobody remembers creating, layered on top of each other.', color: 'yellow' },
               { icon: BarChart3, title: 'Unreliable Reports', desc: 'Dashboards that show numbers nobody trusts. Pipeline forecasts that are well off the mark. Revenue reports that do not match your accounting. If you cannot trust the data, you cannot make decisions.', color: 'purple' },
@@ -353,7 +354,7 @@ export default function CRMCleanup() {
             <TrackedCTA ctaName="Free CRM Workflow Assessment - Cleanup Footer" destination="lead-follow-up-audit">
               <Link href="/lead-follow-up-audit">
                 <Button size="lg" className="bg-white text-emerald-900 hover:bg-emerald-100 font-semibold px-8">
-                  Free CRM Workflow Assessment <ArrowRight className="w-5 h-5 ml-2" />
+                  Free Lead Follow-Up Audit <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
             </TrackedCTA>
