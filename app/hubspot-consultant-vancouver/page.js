@@ -10,12 +10,12 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, MapPin, Zap, BarChart3, Globe, Settings } from 'lucide-react';
 
 export const metadata = {
-  title: 'HubSpot Consultant Vancouver | Rollout Help',
-  description: 'HubSpot consulting in Vancouver for setup, cleanup, migration, workflows, reporting, integrations, and finishing an in-progress rollout.',
+  title: 'HubSpot Consultant Vancouver | Setup & Implementation',
+  description: 'HubSpot consultant for Vancouver teams. Get help with implementation, cleanup, migration and workflows. Discuss a new setup or unfinished rollout.',
   alternates: { canonical: 'https://www.emergent-logic.ca/hubspot-consultant-vancouver' },
   openGraph: {
     title: 'HubSpot Consultant Vancouver | Emergent Logic',
-    description: 'HubSpot consulting in Vancouver for setup, cleanup, migration, workflows, reporting, integrations, and finishing an in-progress rollout.',
+    description: 'HubSpot consultant for Vancouver teams. Get help with implementation, cleanup, migration and workflows. Discuss a new setup or unfinished rollout.',
     url: 'https://www.emergent-logic.ca/hubspot-consultant-vancouver',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -94,6 +94,7 @@ const rolloutGates = [
 ];
 
 const faqs = [
+  { q: 'Do we need HubSpot implementation or ongoing admin support?', a: 'Implementation establishes or changes the operating model: pipelines, lifecycle stages, data migration, integrations and user adoption. Ongoing admin support maintains an agreed setup through record hygiene, permissions, reports and bounded configuration changes. If the existing setup is incomplete, review the outstanding decisions before choosing either scope.' },
   { q: 'How should a growing company choose a HubSpot implementation consultant?', a: 'Compare consultants on requirements discovery, portal and data assessment, configuration depth, migration controls, integration design, testing, training, documentation, production approval, and post-launch ownership. Ask them to make assumptions, exclusions, dependencies, acceptance checks, and licence requirements visible before implementation begins.' },
   { q: 'How much does HubSpot implementation cost in Vancouver?', a: 'Implementation cost depends on the confirmed scope: pipelines, properties, workflows, reporting, migration, integrations, testing, training, and support. The current portal and requirements are reviewed first, then the work and estimate are documented before delivery starts.' },
   { q: 'Which HubSpot Hubs can a scope cover?', a: 'A scope may involve CRM, Sales Hub, Marketing Hub, Service Hub, Content Hub, or Operations Hub, subject to the licensed tier and confirmed requirements. We document platform fit before proposing implementation.' },
@@ -112,7 +113,7 @@ const jsonLd = {
       url: 'https://www.emergent-logic.ca/hubspot-consultant-vancouver',
       name: 'HubSpot Consultant Vancouver',
       description: metadata.description,
-      dateModified: '2026-08-19',
+      dateModified: '2026-09-09',
       isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
       about: { '@id': 'https://www.emergent-logic.ca/hubspot-consultant-vancouver#service' },
     },
@@ -176,7 +177,7 @@ export default function HubspotConsultantVancouver() {
 
       <section className="border-b border-violet-100 bg-white py-16">
         <div className="container mx-auto max-w-4xl px-4">
-          <p className="mb-3 text-sm font-semibold text-violet-700">Last reviewed August 19, 2026</p>
+          <p className="mb-3 text-sm font-semibold text-violet-700">Last reviewed September 9, 2026</p>
           <h2 className="mb-4 text-3xl font-bold text-gray-900">How should a Vancouver team choose a HubSpot implementation consultant?</h2>
           <p className="mb-6 text-lg leading-8 text-gray-700">Choose a consultant who can translate the operating process into lifecycle rules, ownership, pipelines, permissions, automation, reporting and documented acceptance checks. Platform familiarity matters, but the engagement should also control migration, integrations, testing, training, production approval and handoff.</p>
           <div className="grid gap-4 md:grid-cols-2">
@@ -194,6 +195,15 @@ export default function HubspotConsultantVancouver() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="border-b border-violet-100 bg-violet-50/50 py-12" aria-labelledby="hubspot-first-review">
+        <div className="container mx-auto max-w-4xl px-4">
+          <h2 id="hubspot-first-review" className="mb-4 text-3xl font-bold text-gray-900">What should your first HubSpot review cover?</h2>
+          <p className="mb-4 leading-relaxed text-gray-700">Start with one real process: how an enquiry becomes an assigned contact, a qualified opportunity and a visible next action. Identify the source field, owner, pipeline stage, workflow and report involved. That gives the review a concrete starting point.</p>
+          <p className="mb-4 leading-relaxed text-gray-700">Bring your HubSpot edition, the Hubs you use, the teams affected and a list of connected systems. Configuration options depend on your licences and requirements. Access and any production changes are agreed separately; do not send passwords or customer records through the enquiry form.</p>
+          <p className="leading-relaxed text-gray-700">If the core setup already works, read about <Link href="/blog/hubspot-admin-support-small-business" className="font-medium text-violet-700 hover:underline">ongoing HubSpot admin support</Link>. If qualification is the problem, use the <Link href="/blog/lead-scoring-model-crm-guide" className="font-medium text-violet-700 hover:underline">lead scoring guide</Link> to define the rules before adding automation.</p>
         </div>
       </section>
 
@@ -286,7 +296,7 @@ export default function HubspotConsultantVancouver() {
             <Badge className="mb-4 bg-violet-100 text-violet-700 hover:bg-violet-100">HubSpot cleanup signals</Badge>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">When HubSpot looks set up, but still leaks revenue</h2>
             <p className="text-lg text-gray-600 mb-4">
-              Most Vancouver teams do not need HubSpot rebuilt from scratch. They need the messy middle cleaned up: lifecycle rules, lead ownership, workflow logic, source tracking, and reporting. That is where the lost follow-up usually hides.
+              An existing HubSpot setup may need targeted changes rather than a rebuild. Reviewing lifecycle rules, lead ownership, workflow logic, source tracking and reporting helps establish which work is actually needed.
             </p>
             <p className="text-lg text-gray-600">
               Before we add more automation, we look for the points where the system stops giving the team a clear next step.

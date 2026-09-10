@@ -25,7 +25,7 @@ const canonicalUrl = 'https://www.emergent-logic.ca/crm-consultant-vancouver';
 
 export const metadata = {
   title: 'CRM Consultant Vancouver | HubSpot & Salesforce',
-  description: 'Vancouver CRM consultant for HubSpot, Salesforce and Zoho implementation, cleanup, migration, lead routing, reporting and team adoption.',
+  description: 'CRM consulting for Vancouver businesses: implementation, cleanup, migration and lead follow-up. Discuss your HubSpot or Salesforce project with Emergent Logic.',
   alternates: {
     canonical: canonicalUrl,
     languages: { 'en-CA': canonicalUrl },
@@ -98,6 +98,10 @@ const process = [
 
 const faqs = [
   {
+    q: 'What should we prepare for a CRM consultation?',
+    a: 'Bring the CRM name, the teams that use it, the main problem you want to fix and one example of a lead or customer handoff. A simple list of connected forms, inboxes and tools helps define the scope. Do not send passwords or customer records through the enquiry form; access requirements are agreed separately.',
+  },
+  {
     q: 'What does a CRM consultant in Vancouver help with?',
     a: 'A CRM consultant helps map your sales and service process into a usable system. That can include CRM selection, HubSpot or Salesforce setup, data cleanup, pipeline design, lead routing, reporting, integrations, migration planning, and team training.',
   },
@@ -149,7 +153,7 @@ const jsonLd = {
       name: 'CRM Consultant Vancouver | HubSpot & Salesforce',
       description: metadata.description,
       inLanguage: 'en-CA',
-      dateModified: '2026-08-22',
+      dateModified: '2026-09-09',
       isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
       about: { '@id': `${canonicalUrl}#service` },
       primaryImageOfPage: {
@@ -221,7 +225,7 @@ export default function CrmConsultantVancouver() {
             </TrackedCTA>
             <TrackedCTA ctaName="Vancouver CRM Lead Follow-Up Audit" destination="/lead-follow-up-audit">
               <Button asChild size="lg" className="w-full border border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white sm:w-auto">
-                <Link href="/lead-follow-up-audit">Get a Free 5-Point Audit</Link>
+                <Link href="/lead-follow-up-audit">Free Lead Follow-Up Audit</Link>
               </Button>
             </TrackedCTA>
           </div>
@@ -357,6 +361,15 @@ export default function CrmConsultantVancouver() {
           <p className="mt-4 text-sm text-[#667085]">
             This guide is directional. A platform recommendation is made only after the required workflow, data, integrations and administration model are understood.
           </p>
+        </div>
+      </section>
+
+      <section className="bg-white py-12" aria-labelledby="crm-scope-choice">
+        <div className="container mx-auto max-w-4xl px-4">
+          <h2 id="crm-scope-choice" className="mb-4 text-3xl font-bold text-[#101828]">Do you need CRM implementation, cleanup or integration?</h2>
+          <p className="mb-4 leading-relaxed text-[#475467]">Start with implementation when the team needs a shared process and a first CRM setup. Choose cleanup when the platform fits but records, stages or ownership are unreliable. Scope an integration when the problem is the handoff between otherwise usable systems.</p>
+          <p className="mb-4 leading-relaxed text-[#475467]">For example, if a website enquiry reaches an inbox but has no assigned owner, first check the capture and routing rules. A replacement CRM may not be necessary. This is an illustrative diagnostic example, not a client result.</p>
+          <p className="leading-relaxed text-[#475467]">Use our <Link href="/blog/what-is-crm-implementation-canada" className="font-medium text-violet-700 hover:underline">CRM implementation guide</Link> to understand the work involved, or the <Link href="/blog/crm-roi-calculator-business-case-2026" className="font-medium text-violet-700 hover:underline">CRM business-case worksheet</Link> to compare your own assumptions before committing to a project.</p>
         </div>
       </section>
 
