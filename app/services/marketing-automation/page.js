@@ -7,13 +7,13 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Target, Mail, BarChart3, Workflow, Filter, Send, Clock, DollarSign, Check, AlertTriangle, Zap, Database } from 'lucide-react';
 
 export const metadata = {
-  title: 'Marketing Automation Services Canada | CRM-First',
-  description: 'CRM-first marketing automation services in Canada for lead scoring, nurture, attribution, routing, sales handoff, testing, and documented ownership.',
+  title: 'Marketing Automation Services & Consulting Canada',
+  description: 'CRM-first marketing automation consulting and implementation in Canada for lead capture, scoring, nurture, routing, attribution, testing, and handoff.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/marketing-automation' },
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'CRM Marketing Automation Services in Canada | Emergent Logic',
-    description: 'CRM-first marketing automation services for lead scoring, nurture, attribution, and sales handoff across HubSpot, Salesforce, and Zoho.',
+    title: 'Marketing Automation Services & Consulting Canada | Emergent Logic',
+    description: 'CRM-first marketing automation consulting and implementation for lead capture, scoring, nurture, routing, attribution, and sales handoff.',
     url: 'https://www.emergent-logic.ca/services/marketing-automation',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -38,6 +38,52 @@ const readinessSignals = [
   },
 ];
 
+const firstWorkflowChecks = [
+  {
+    step: '01',
+    title: 'Choose one revenue-critical path',
+    desc: 'Start with a repeated path where delay or inconsistency matters, such as a website inquiry, consultation request, referral, renewal, or handoff. A bounded first workflow is easier to test and improve than automating the entire funnel at once.',
+  },
+  {
+    step: '02',
+    title: 'Name the trigger, owner, and next action',
+    desc: 'Document what starts the workflow, which records qualify, who owns the response, what should happen next, and when an exception needs human review. These decisions should exist before a platform is configured.',
+  },
+  {
+    step: '03',
+    title: 'Define success and failure evidence',
+    desc: 'Decide which events prove that the workflow ran, the inquiry reached the CRM, an owner accepted it, and a meaningful follow-up occurred. Also define the alerts or reports that expose failures instead of leaving them silent.',
+  },
+  {
+    step: '04',
+    title: 'Test before expanding',
+    desc: 'Use approved test records to verify enrollment, suppression, routing, notifications, reporting, and exception paths. Expand only after the first workflow behaves as expected and the team can operate it.',
+  },
+];
+
+const measurementChain = [
+  {
+    stage: 'Inquiry captured',
+    evidence: 'Successful form or booking event, original source, campaign context, consent status, and CRM record ID.',
+  },
+  {
+    stage: 'Ownership accepted',
+    evidence: 'Assigned owner, assignment time, next action, due time, and a visible exception when routing fails.',
+  },
+  {
+    stage: 'Human follow-up started',
+    evidence: 'First relevant call, email, meeting, or disposition recorded against the same contact or company.',
+  },
+  {
+    stage: 'Opportunity qualified',
+    evidence: 'Agreed qualification stage, reason, value range when available, and the next decision recorded in the CRM.',
+  },
+  {
+    stage: 'Revenue outcome recorded',
+    evidence: 'Closed outcome, recorded value, and the documented attribution model used to interpret the result.',
+  },
+];
+
 const faqs = [
   {
     q: 'Do I need a CRM in place before we start?',
@@ -50,6 +96,18 @@ const faqs = [
   {
     q: 'How is this different from hiring a marketing agency?',
     a: 'This service focuses on the operating system underneath campaigns: segmentation, scoring, attribution, routing, and CRM workflow logic. Campaign execution can be scoped separately or handled by an existing marketing team.',
+  },
+  {
+    q: 'What should a small or growing business automate first?',
+    a: 'Start with one repeated, revenue-relevant path that has a clear trigger, owner, next action, and measurable failure mode. A website inquiry or consultation request is often easier to test than a large multi-channel nurture program. Confirm the data, consent, routing, and acceptance checks before expanding.',
+  },
+  {
+    q: 'How much do marketing automation consulting services cost in Canada?',
+    a: 'Cost depends on the number of workflows, platforms, integrations, data quality, copy requirements, consent rules, testing, training, and support. Emergent Logic confirms the included work, dependencies, exclusions, acceptance checks, and commercial terms in a written proposal after discovery.',
+  },
+  {
+    q: 'How do we know whether marketing automation is producing qualified inquiries?',
+    a: 'Track one chain from source and successful inquiry capture through CRM ownership, first human follow-up, qualification, and the recorded opportunity outcome. Activity counts alone do not prove demand or revenue. The measurement plan should define each event, owner, source, and known attribution limit before launch.',
   },
   {
     q: 'Can email copy be included?',
@@ -78,7 +136,7 @@ const jsonLd = {
       url: 'https://www.emergent-logic.ca/services/marketing-automation',
       name: 'Marketing Automation Services Canada',
       description: metadata.description,
-      dateModified: '2026-08-28',
+      dateModified: '2026-09-13',
       isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
       about: { '@id': 'https://www.emergent-logic.ca/services/marketing-automation#service' },
     },
@@ -117,7 +175,7 @@ export default function MarketingAutomation() {
           </div>
           <div className="inline-block px-3 py-1 rounded-full bg-white/10 text-purple-200 text-xs font-medium mb-4">Supporting service</div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            CRM Marketing Automation Services for Canadian Teams
+            CRM Marketing Automation Services &amp; Consulting for Canadian Teams
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
             Connect lead scoring, nurture sequences, campaign attribution, and sales handoff to your CRM with clear ownership, documented testing, and human review for high-impact actions.
@@ -152,7 +210,7 @@ export default function MarketingAutomation() {
       {/* CRM-first positioning callout */}
       <section className="py-12 bg-purple-50 border-b border-purple-100">
         <div className="container mx-auto px-4 max-w-4xl">
-          <p className="mb-4 text-sm font-semibold text-purple-700">Reviewed August 28, 2026</p>
+          <p className="mb-4 text-sm font-semibold text-purple-700">Reviewed September 13, 2026</p>
           <div className="flex items-start gap-4">
             <Database className="w-8 h-8 text-purple-700 flex-shrink-0 mt-1" />
             <div>
@@ -170,6 +228,28 @@ export default function MarketingAutomation() {
           <h2 className="mb-4 text-3xl font-bold text-gray-900">What does a marketing automation agency or consultant actually implement?</h2>
           <p className="mb-4 text-lg text-gray-700">A marketing automation implementation connects consented lead capture, segmentation, lifecycle rules, scoring, nurture, ownership, routing, attribution, exception handling and sales follow-up inside a trusted CRM. The output should be a tested operating workflow with named owners and measurable handoffs, not simply more scheduled email.</p>
           <p className="text-gray-600">Emergent Logic focuses on this CRM and workflow layer. Media buying, ongoing campaign management and content production are separate services or remain with the client&apos;s existing marketing team. Companies comparing a broader national CRM partner can review the <Link href="/crm-implementation-canada" className="font-medium text-purple-700 hover:underline">CRM implementation Canada guide</Link>; teams seeking vendor-neutral local guidance can use the <Link href="/crm-consultant-vancouver" className="font-medium text-purple-700 hover:underline">CRM consultant Vancouver guide</Link>.</p>
+        </div>
+      </section>
+
+      <section className="border-b border-purple-100 bg-purple-50 py-20">
+        <div className="container mx-auto max-w-4xl px-4">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-purple-700">Before you buy or build</p>
+          <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">What should you automate first?</h2>
+          <p className="mb-8 text-lg text-gray-700">
+            The best first automation is a repeated, revenue-relevant workflow with a clear trigger, owner, next action, and measurable failure mode. Start with one path, prove that the data and handoff work, and then expand. This avoids paying to automate a process the team has not agreed how to operate.
+          </p>
+          <div className="grid gap-5 md:grid-cols-2">
+            {firstWorkflowChecks.map((item) => (
+              <div key={item.step} className="rounded-xl border border-purple-100 bg-white p-6 shadow-sm">
+                <p className="mb-2 text-sm font-semibold text-purple-700">STEP {item.step}</p>
+                <h3 className="mb-2 text-xl font-bold text-gray-900">{item.title}</h3>
+                <p className="text-gray-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-8 text-gray-600">
+            If you are still deciding whether the foundation is ready, use the <Link href="/blog/what-is-marketing-automation-small-business" className="font-medium text-purple-700 hover:underline">small-business marketing automation guide</Link> and the <Link href="/lead-follow-up-audit" className="font-medium text-purple-700 hover:underline">five-point lead follow-up audit</Link> before choosing a larger scope.
+          </p>
         </div>
       </section>
 
@@ -196,6 +276,37 @@ export default function MarketingAutomation() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="border-y border-purple-100 bg-white py-20">
+        <div className="container mx-auto max-w-4xl px-4">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-purple-700">Measurement plan</p>
+          <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">How marketing automation connects inquiries to revenue</h2>
+          <p className="mb-8 text-lg text-gray-700">
+            Marketing automation becomes commercially useful when one inquiry can be followed from its source to a CRM owner, a human response, a qualification decision, and an eventual outcome. Page views, sends, opens, and workflow enrollments are diagnostic signals; they are not qualified-lead or revenue evidence by themselves.
+          </p>
+          <div className="overflow-x-auto rounded-xl border border-gray-200">
+            <table className="w-full border-collapse bg-white text-left">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="border-b border-gray-200 px-5 py-4 font-semibold text-gray-900">Stage</th>
+                  <th className="border-b border-gray-200 px-5 py-4 font-semibold text-gray-900">Evidence to preserve</th>
+                </tr>
+              </thead>
+              <tbody>
+                {measurementChain.map((item) => (
+                  <tr key={item.stage}>
+                    <th scope="row" className="border-b border-gray-100 px-5 py-4 align-top font-semibold text-gray-900">{item.stage}</th>
+                    <td className="border-b border-gray-100 px-5 py-4 text-gray-600">{item.evidence}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-6 text-gray-600">
+            For the intake portion of this chain, review <Link href="/website-leads-to-crm-implementation" className="font-medium text-purple-700 hover:underline">website leads to CRM implementation</Link>. The written scope defines which events, CRM fields, reports, and review windows are included.
+          </p>
         </div>
       </section>
 
