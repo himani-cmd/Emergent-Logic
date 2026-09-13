@@ -7,7 +7,7 @@ const lastmodByPath = {
   '/services/crm-cleanup': '2026-08-23',
   '/services/ai-automation-consulting': '2026-08-23',
   '/services/ai-chatbot-automation': '2026-08-23',
-  '/services/marketing-automation': '2026-08-28',
+  '/services/marketing-automation': '2026-09-13',
   '/services/hubspot-consulting': '2026-08-24',
   '/services/salesforce-consulting': '2026-08-28',
   '/blog/marketing-automation-needs-crm-cleanup': '2026-08-24',
