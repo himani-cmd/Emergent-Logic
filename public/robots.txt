@@ -1,21 +1,41 @@
 User-agent: *
-Allow: /
 Disallow: /admin
 Disallow: /api/
 
 User-agent: GPTBot
-Allow: /
+Disallow: /admin
+Disallow: /api/
 
 User-agent: ChatGPT-User
-Allow: /
+Disallow: /admin
+Disallow: /api/
+
+User-agent: OAI-SearchBot
+Disallow: /admin
+Disallow: /api/
 
 User-agent: PerplexityBot
-Allow: /
+Disallow: /admin
+Disallow: /api/
+
+User-agent: Perplexity-User
+Disallow: /admin
+Disallow: /api/
 
 User-agent: ClaudeBot
-Allow: /
+Disallow: /admin
+Disallow: /api/
+
+User-agent: Claude-User
+Disallow: /admin
+Disallow: /api/
+
+User-agent: Claude-SearchBot
+Disallow: /admin
+Disallow: /api/
 
 User-agent: Google-Extended
-Allow: /
+Disallow: /admin
+Disallow: /api/
 
 Sitemap: https://www.emergent-logic.ca/sitemap.xml
