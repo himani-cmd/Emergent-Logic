@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import TrackedCTA from '@/components/TrackedCTA';
+import WorkflowVisual from '@/components/WorkflowVisual';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Link2, Database, Phone, Mail, Calendar, FileText, Globe, Zap, RefreshCw, Clock, DollarSign, Check, AlertTriangle } from 'lucide-react';
 
@@ -130,6 +131,13 @@ export default function CRMIntegration() {
       </section>
 
       {/* Common Integrations */}
+      <section className="border-y border-[#DFE3F5] bg-[#FBFBFF] py-12" aria-labelledby="implementation-or-integration">
+        <div className="container mx-auto max-w-4xl px-4">
+          <h2 id="implementation-or-integration" className="mb-4 text-3xl font-bold text-[#1E3A5F]">Do we need CRM implementation or integration?</h2>
+          <p className="leading-7 text-[#475467]">CRM implementation defines how the system should operate: records, stages, ownership, permissions and reporting. Integration moves agreed data between systems. If the CRM structure or data is unreliable, settle those decisions before connecting more tools. A project can include both, with separate requirements and acceptance checks. See our <Link href="/services/crm-implementation" className="font-semibold text-[#4B37C8] underline underline-offset-4">CRM implementation service</Link> for the foundation work.</p>
+        </div>
+      </section>
+
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Common Integrations We Build</h2>
@@ -164,6 +172,7 @@ export default function CRMIntegration() {
           <p className="text-lg text-gray-600 mb-8">
             We pick the right tool for the job. Cheaper is not always better, and custom is not always the answer.
           </p>
+          <p className="mb-8 leading-7 text-gray-600">Use the <Link href="/resources/crm-integration-platform-selection-workbook" className="font-semibold text-[#4B37C8] underline underline-offset-4">CRM integration platform selection workbook</Link> to document the systems, data direction, owner, failure impact and testing requirements before comparing a native connector, middleware or a custom integration.</p>
           <div className="space-y-6">
             {[
               { title: 'Native Integrations', desc: 'A native connector can be appropriate when it covers the required objects, fields, sync direction, error visibility, and access controls. Connector limits and ownership are reviewed before selection.' },
@@ -180,6 +189,13 @@ export default function CRMIntegration() {
       </section>
 
       {/* Platform fit */}
+      <WorkflowVisual id="integration-workbook-preview" desktop="crm_integration_workbook_workflow_preview_v01" mobile="crm_integration_workbook_workflow_detail_v01" alt="CRM integration workbook with example workflow inputs, risk score, recommended integration route and discovery notes." caption="Preview of the CRM integration platform selection workbook, populated with example inputs. The sample is not a client result or an assessment of your systems.">
+        <p>Workbook example inputs — not client results. Scores suggest routes to investigate, not vendor recommendations.</p>
+        <ul className="list-disc space-y-2 pl-6"><li>Website lead to CRM: score 20; low-code automation.</li><li>CRM to finance system: score 57; governed iPaaS or custom integration.</li><li>Messenger qualification to CRM: score 37; visual automation with controls.</li></ul>
+        <p>The mobile preview reformats the website lead example: business impact 5, complexity 2, volume 2, sensitivity 2, real-time need 4 and owner readiness 4, each on a 1–5 scale. Bidirectional sync and custom transformation are both 0. Its risk score is 20.</p>
+        <p><Link href="/resources/crm-integration-platform-selection-workbook" className="font-semibold text-[#4B37C8] underline underline-offset-4">Open the workbook resource</Link> to inspect the complete example, method and download.</p>
+      </WorkflowVisual>
+
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Zapier, Make, Manychat, or Lofty: Where Each Fits</h2>
