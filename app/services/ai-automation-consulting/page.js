@@ -318,6 +318,10 @@ export default function AIAutomationConsultingService() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Related Services and Resources</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Link href="/blog/ai-automation-consulting-pricing" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-700">AI Automation Consulting Pricing</p>
+              <p className="text-gray-600 text-sm">How workflow scope, integrations, testing, and support shape a written estimate</p>
+            </Link>
             <Link href="/case-studies/ai-revenue-operations-engine" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-700">AI Revenue Operations Internal Build</p>
               <p className="text-gray-600 text-sm">How a guarded AI growth system can connect CRM, outbound, SEO, and social</p>

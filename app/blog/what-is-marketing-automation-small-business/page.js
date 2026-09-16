@@ -79,6 +79,10 @@ export default function WhatIsMarketingAutomation() {
                   </tbody>
                 </table>
               </div>
+
+              <p>
+                If you are evaluating an all-in-one CRM and automation platform, review our <Link href="/services/gohighlevel-implementation" className="text-violet-600 hover:underline">GoHighLevel implementation and automation support</Link> for fit, migration controls, workflow setup, and testing.
+              </p>
               
               <h2>Is Your Business Ready for Marketing Automation?</h2>
               <p>Here are the signs you are ready:</p>
