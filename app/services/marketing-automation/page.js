@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import TrackedCTA from '@/components/TrackedCTA';
+import ServiceIllustration from '@/components/ServiceIllustration';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Target, Mail, BarChart3, Workflow, Filter, Send, Clock, DollarSign, Check, AlertTriangle, Zap, Database } from 'lucide-react';
 
@@ -254,6 +255,16 @@ export default function MarketingAutomation() {
       </section>
 
       {/* Automation readiness */}
+      <ServiceIllustration id="lead-handoff-illustration" asset="emergent_logic_handoff_v01" alt="Illustration of an enquiry moving to a CRM record, an assigned owner and a next action, with a separate review path." caption="Illustrative lead handoff: capture the enquiry, create or update the record, assign an owner and record the next action. An unresolved case needs a visible review path. This example shows a process, not a client result or a promise of revenue.">
+        <ol className="list-decimal space-y-2 pl-6">
+          <li><strong>Enquiry:</strong> preserve the request and its source.</li>
+          <li><strong>Record:</strong> create or update the correct CRM record using the agreed matching rules.</li>
+          <li><strong>Owner:</strong> assign responsibility for the response.</li>
+          <li><strong>Next action:</strong> record what should happen next and when.</li>
+        </ol>
+        <p><strong>Review:</strong> route unresolved ownership or data issues to a named person. A captured enquiry is not automatically a qualified opportunity.</p>
+      </ServiceIllustration>
+
       <section className="py-20 bg-white border-y border-purple-100">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 text-purple-700 text-sm font-medium mb-4">

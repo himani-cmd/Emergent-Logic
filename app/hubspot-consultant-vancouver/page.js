@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import TrackedCTA from '@/components/TrackedCTA';
+import ServiceIllustration from '@/components/ServiceIllustration';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -94,6 +95,7 @@ const rolloutGates = [
 ];
 
 const faqs = [
+  { q: 'What happens after I request a HubSpot implementation review?', a: 'Tell us which HubSpot products you use, what is already built and which process needs attention. We review the request to confirm fit and the information needed for discovery. Any portal access, configuration work, testing, training, price and timing are agreed in a written scope. Do not include passwords or customer records in the enquiry form.' },
   { q: 'Do we need HubSpot implementation or ongoing admin support?', a: 'Implementation establishes or changes the operating model: pipelines, lifecycle stages, data migration, integrations and user adoption. Ongoing admin support maintains an agreed setup through record hygiene, permissions, reports and bounded configuration changes. If the existing setup is incomplete, review the outstanding decisions before choosing either scope.' },
   { q: 'How should a growing company choose a HubSpot implementation consultant?', a: 'Compare consultants on requirements discovery, portal and data assessment, configuration depth, migration controls, integration design, testing, training, documentation, production approval, and post-launch ownership. Ask them to make assumptions, exclusions, dependencies, acceptance checks, and licence requirements visible before implementation begins.' },
   { q: 'How much does HubSpot implementation cost in Vancouver?', a: 'Implementation cost depends on the confirmed scope: pipelines, properties, workflows, reporting, migration, integrations, testing, training, and support. The current portal and requirements are reviewed first, then the work and estimate are documented before delivery starts.' },
@@ -204,6 +206,7 @@ export default function HubspotConsultantVancouver() {
           <p className="mb-4 leading-relaxed text-gray-700">Start with one real process: how an enquiry becomes an assigned contact, a qualified opportunity and a visible next action. Identify the source field, owner, pipeline stage, workflow and report involved. That gives the review a concrete starting point.</p>
           <p className="mb-4 leading-relaxed text-gray-700">Bring your HubSpot edition, the Hubs you use, the teams affected and a list of connected systems. Configuration options depend on your licences and requirements. Access and any production changes are agreed separately; do not send passwords or customer records through the enquiry form.</p>
           <p className="leading-relaxed text-gray-700">If the core setup already works, read about <Link href="/blog/hubspot-admin-support-small-business" className="font-medium text-violet-700 hover:underline">ongoing HubSpot admin support</Link>. If qualification is the problem, use the <Link href="/blog/lead-scoring-model-crm-guide" className="font-medium text-violet-700 hover:underline">lead scoring guide</Link> to define the rules before adding automation.</p>
+          <p className="mt-4 leading-relaxed text-gray-700">For the work areas and discovery approach, see our <Link href="/services/hubspot-consulting" className="font-medium text-violet-700 hover:underline">HubSpot consulting service</Link>. The review helps identify which parts of that service belong in your scope.</p>
         </div>
       </section>
 
@@ -237,6 +240,15 @@ export default function HubspotConsultantVancouver() {
           </div>
         </div>
       </section>
+
+      <ServiceIllustration id="implementation-method-illustration" asset="emergent_logic_implementation_v01" alt="Illustrative implementation sequence showing operating decisions, configuration, testing and handoff documentation." caption="An illustrated implementation method: agree the decisions, build the scoped configuration, test it and hand over the operating documentation. This is a method illustration, not a client result or a HubSpot interface.">
+        <ol className="list-decimal space-y-2 pl-6">
+          <li><strong>Decide:</strong> agree the process, data ownership and acceptance criteria.</li>
+          <li><strong>Build:</strong> configure the agreed records, permissions and workflows.</li>
+          <li><strong>Test:</strong> check representative scenarios, exceptions and open issues.</li>
+          <li><strong>Handoff:</strong> provide the documentation, training and support boundaries in the written scope.</li>
+        </ol>
+      </ServiceIllustration>
 
       <section id="finish-hubspot-rollout" className="border-y border-violet-100 bg-violet-50/60 py-16 scroll-mt-24">
         <div className="container mx-auto px-4">
@@ -326,7 +338,6 @@ export default function HubspotConsultantVancouver() {
           <p className="text-gray-600 mb-4">Moving from spreadsheets? Use the <Link href="/blog/excel-to-crm-migration-repeat-order-businesses" className="text-violet-600 hover:underline">Excel-to-CRM migration checklist and free workbook</Link> to map customers, products, order cadence, ownership, and follow-up before choosing a platform.</p>
           <p className="text-gray-600 mb-4">Compare platform fit: <Link href="/blog/salesforce-vs-hubspot-vs-zoho-canada-2026" className="text-violet-600 hover:underline">Salesforce vs HubSpot for a mid-sized Canadian company, including where Zoho fits</Link>.</p>
           <p className="text-gray-600 mb-4">Learn how automation transforms your pipeline: <Link href="/blog/what-is-marketing-automation-small-business" className="text-violet-600 hover:underline">What is Marketing Automation and Does Your Business Need It?</Link></p>
-          <p className="text-gray-600">For the work areas, controls, and discovery approach, see our <Link href="/services/hubspot-consulting" className="text-violet-600 hover:underline">HubSpot consulting service page</Link>. Scope, price, and timing are confirmed after discovery.</p>
           <p className="mt-4 text-gray-600">Need email and call notes connected to the CRM? See the <Link href="/solutions/email-and-call-notes-to-crm" className="text-violet-600 hover:underline">email and call notes workflow</Link>.</p>
         </div>
       </section>
