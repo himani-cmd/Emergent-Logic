@@ -11,12 +11,12 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, MapPin, Zap, BarChart3, Globe, Settings } from 'lucide-react';
 
 export const metadata = {
-  title: 'HubSpot Consultant Vancouver | Setup & Implementation',
-  description: 'HubSpot consultant for Vancouver teams. Get help with implementation, cleanup, migration and workflows. Discuss a new setup or unfinished rollout.',
+  title: 'HubSpot Consultant Vancouver | CRM Setup',
+  description: 'HubSpot consultant for Vancouver teams needing CRM setup, cleanup, migration, workflow repair, or help finishing an incomplete implementation.',
   alternates: { canonical: 'https://www.emergent-logic.ca/hubspot-consultant-vancouver' },
   openGraph: {
     title: 'HubSpot Consultant Vancouver | Emergent Logic',
-    description: 'HubSpot consultant for Vancouver teams. Get help with implementation, cleanup, migration and workflows. Discuss a new setup or unfinished rollout.',
+    description: 'HubSpot consultant for Vancouver teams needing CRM setup, cleanup, migration, workflow repair, or help finishing an incomplete implementation.',
     url: 'https://www.emergent-logic.ca/hubspot-consultant-vancouver',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -115,7 +115,7 @@ const jsonLd = {
       url: 'https://www.emergent-logic.ca/hubspot-consultant-vancouver',
       name: 'HubSpot Consultant Vancouver',
       description: metadata.description,
-      dateModified: '2026-09-09',
+      dateModified: '2026-09-16',
       isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
       about: { '@id': 'https://www.emergent-logic.ca/hubspot-consultant-vancouver#service' },
     },
@@ -179,7 +179,7 @@ export default function HubspotConsultantVancouver() {
 
       <section className="border-b border-violet-100 bg-white py-16">
         <div className="container mx-auto max-w-4xl px-4">
-          <p className="mb-3 text-sm font-semibold text-violet-700">Last reviewed September 9, 2026</p>
+          <p className="mb-3 text-sm font-semibold text-violet-700">Last reviewed September 16, 2026</p>
           <h2 className="mb-4 text-3xl font-bold text-gray-900">How should a Vancouver team choose a HubSpot implementation consultant?</h2>
           <p className="mb-6 text-lg leading-8 text-gray-700">Choose a consultant who can translate the operating process into lifecycle rules, ownership, pipelines, permissions, automation, reporting and documented acceptance checks. Platform familiarity matters, but the engagement should also control migration, integrations, testing, training, production approval and handoff.</p>
           <div className="grid gap-4 md:grid-cols-2">

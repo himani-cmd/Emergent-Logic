@@ -8,13 +8,13 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Link2, Database, Phone, Mail, Calendar, FileText, Globe, Zap, RefreshCw, Clock, DollarSign, Check, AlertTriangle } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Integration Services | Zapier, Make & Manychat',
-  description: 'CRM integration services using Zapier, Make, Manychat, Lofty, n8n, native connectors, webhooks, and APIs for maintainable lead and data flows.',
+  title: 'CRM Integration Services Canada',
+  description: 'CRM integration services for Canadian teams using Zapier, Make, n8n, native connectors, webhooks, and APIs, with mapping, testing, and failure handling.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/crm-integration' },
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'CRM Integration | Emergent Logic',
-    description: 'CRM-first integrations: connect HubSpot, Salesforce, or Zoho to the rest of your stack so data flows cleanly between systems.',
+    title: 'CRM Integration Services Canada | Emergent Logic',
+    description: 'Connect HubSpot, Salesforce, or Zoho to the rest of your stack with documented mapping, testing, and failure handling.',
     url: 'https://www.emergent-logic.ca/services/crm-integration',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -34,6 +34,16 @@ const faqs = [
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://www.emergent-logic.ca/services/crm-integration#webpage',
+      url: 'https://www.emergent-logic.ca/services/crm-integration',
+      name: 'CRM Integration Services Canada',
+      description: metadata.description,
+      dateModified: '2026-09-16',
+      isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
+      about: { '@id': 'https://www.emergent-logic.ca/services/crm-integration#service' },
+    },
     {
       '@type': 'Service',
       '@id': 'https://www.emergent-logic.ca/services/crm-integration#service',
@@ -68,12 +78,12 @@ export default function CRMIntegration() {
             <Link href="/" className="hover:text-white">Home</Link> / <Link href="/#services" className="hover:text-white">Services</Link> / <span className="text-white">CRM Integration</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            CRM Integration Services for a Connected Operating Stack
+            CRM Integration Services for Canadian Teams
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
             Your CRM should not be an island. We connect HubSpot, Salesforce, and Zoho to your accounting software, phone system, website, calendar, email, and marketing tools &mdash; so data flows where it needs to and your team stops copying records between tabs.
           </p>
-          <p className="mb-6 text-sm font-semibold text-pink-200">Reviewed August 23, 2026</p>
+          <p className="mb-6 text-sm font-semibold text-pink-200">Reviewed September 16, 2026</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <TrackedCTA ctaName="Free CRM Workflow Assessment - Integration Hero" destination="lead-follow-up-audit">
               <Link href="/lead-follow-up-audit">
@@ -117,9 +127,9 @@ export default function CRMIntegration() {
       {/* What Is CRM Integration */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What CRM Integration Actually Means</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What do CRM integration services include?</h2>
           <p className="text-lg text-gray-600 mb-4">
-            CRM integration is the work of getting your CRM to talk to every other system your business runs on. Your accounting software, your phone system, your scheduling tools, your email, your marketing platforms, your customer-facing website. Done well, you and your team stop noticing the seams &mdash; data shows up where it should, automatically.
+            CRM integration services connect a CRM to the systems a business already uses, such as its website, accounting software, phone system, calendars, email, and marketing tools. A maintainable integration defines the source of truth, field mapping, sync direction, duplicate controls, testing, alerts, and recovery steps before production activation.
           </p>
           <p className="text-lg text-gray-600 mb-4">
             Done poorly, integrations create more work than they save. Records duplicate across systems. Fields map incorrectly. Updates do not sync in the right direction. Reps lose trust in the data and start keeping personal spreadsheets again. The integration becomes the new bottleneck.
