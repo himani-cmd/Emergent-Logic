@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Wrench, AlertTriangle, Database, Zap, BarChart3, Users, Trash2, Clock, DollarSign, Check, X, Search, RefreshCw } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Cleanup Services Canada | Controlled Data Repair',
+  title: 'CRM Cleanup Services Canada',
   description: 'CRM cleanup services for HubSpot, Salesforce, and Zoho: audit duplicates, fields, workflows, and reporting before approved, controlled changes.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/crm-cleanup' },
   robots: { index: true, follow: true },
@@ -31,12 +31,12 @@ export default function CRMCleanup() {
             <Link href="/" className="hover:text-white">Home</Link> / <Link href="/#services" className="hover:text-white">Services</Link> / <span className="text-white">CRM Cleanup</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Turn a Messy CRM Into a Controlled Cleanup Plan
+            CRM Cleanup Services for Controlled Data Repair
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
             Duplicate contacts, broken workflows, unreliable reports, and fields nobody uses. We audit the CRM, document the risks, and complete approved cleanup work in controlled steps. Timing is confirmed after discovery.
           </p>
-          <p className="mb-6 text-sm font-semibold text-emerald-200">Reviewed August 23, 2026</p>
+          <p className="mb-6 text-sm font-semibold text-emerald-200">Reviewed September 16, 2026</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <TrackedCTA ctaName="Free CRM Workflow Assessment - Cleanup Hero" destination="lead-follow-up-audit">
               <Link href="/lead-follow-up-audit">
@@ -59,6 +59,15 @@ export default function CRMCleanup() {
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-300" /> Audit deliverables defined in your proposal</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-300" /> Training and handoff scoped before work</div>
           </div>
+        </div>
+      </section>
+
+      <section className="border-b border-emerald-100 bg-emerald-50/60 py-12" aria-labelledby="crm-cleanup-answer">
+        <div className="container mx-auto max-w-4xl px-4">
+          <h2 id="crm-cleanup-answer" className="mb-4 text-3xl font-bold text-gray-900">What do CRM cleanup services include?</h2>
+          <p className="text-lg leading-8 text-gray-700">
+            CRM cleanup services audit duplicates, incomplete or inconsistent fields, stale records, broken workflows, unreliable reports, and unsupported process rules. The work should begin with a backup and written risk map, then move through approved changes in controlled batches with validation, exception handling, and a maintenance plan.
+          </p>
         </div>
       </section>
 

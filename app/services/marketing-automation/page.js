@@ -8,13 +8,13 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Target, Mail, BarChart3, Workflow, Filter, Send, Clock, DollarSign, Check, AlertTriangle, Zap, Database } from 'lucide-react';
 
 export const metadata = {
-  title: 'Marketing Automation Services & Consulting Canada',
-  description: 'CRM-first marketing automation consulting and implementation in Canada for lead capture, scoring, nurture, routing, attribution, testing, and handoff.',
+  title: 'Marketing Automation Services Canada',
+  description: 'Marketing automation services for Canadian teams: connect CRM lead capture, scoring, nurture, routing, attribution, and sales follow-up in one tested workflow.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/marketing-automation' },
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'Marketing Automation Services & Consulting Canada | Emergent Logic',
-    description: 'CRM-first marketing automation consulting and implementation for lead capture, scoring, nurture, routing, attribution, and sales handoff.',
+    title: 'Marketing Automation Services Canada | Emergent Logic',
+    description: 'Connect CRM lead capture, scoring, nurture, routing, attribution, and sales follow-up in one tested marketing automation workflow.',
     url: 'https://www.emergent-logic.ca/services/marketing-automation',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -137,7 +137,7 @@ const jsonLd = {
       url: 'https://www.emergent-logic.ca/services/marketing-automation',
       name: 'Marketing Automation Services Canada',
       description: metadata.description,
-      dateModified: '2026-09-13',
+      dateModified: '2026-09-16',
       isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
       about: { '@id': 'https://www.emergent-logic.ca/services/marketing-automation#service' },
     },
@@ -176,7 +176,7 @@ export default function MarketingAutomation() {
           </div>
           <div className="inline-block px-3 py-1 rounded-full bg-white/10 text-purple-200 text-xs font-medium mb-4">Supporting service</div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            CRM Marketing Automation Services &amp; Consulting for Canadian Teams
+            Marketing Automation Services for Canadian Teams
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
             Connect lead scoring, nurture sequences, campaign attribution, and sales handoff to your CRM with clear ownership, documented testing, and human review for high-impact actions.
@@ -211,7 +211,7 @@ export default function MarketingAutomation() {
       {/* CRM-first positioning callout */}
       <section className="py-12 bg-purple-50 border-b border-purple-100">
         <div className="container mx-auto px-4 max-w-4xl">
-          <p className="mb-4 text-sm font-semibold text-purple-700">Reviewed September 13, 2026</p>
+          <p className="mb-4 text-sm font-semibold text-purple-700">Reviewed September 16, 2026</p>
           <div className="flex items-start gap-4">
             <Database className="w-8 h-8 text-purple-700 flex-shrink-0 mt-1" />
             <div>

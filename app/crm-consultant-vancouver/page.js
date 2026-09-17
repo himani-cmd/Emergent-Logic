@@ -24,8 +24,8 @@ import {
 const canonicalUrl = 'https://www.emergent-logic.ca/crm-consultant-vancouver';
 
 export const metadata = {
-  title: 'CRM Consultant Vancouver | HubSpot & Salesforce',
-  description: 'CRM consulting for Vancouver businesses: implementation, cleanup, migration and lead follow-up. Discuss your HubSpot or Salesforce project with Emergent Logic.',
+  title: 'CRM Consultant Vancouver | Setup & Cleanup',
+  description: 'CRM consultant for Vancouver businesses needing implementation, cleanup, migration, lead routing, reporting, or support across HubSpot, Salesforce, and Zoho.',
   alternates: {
     canonical: canonicalUrl,
     languages: { 'en-CA': canonicalUrl },
@@ -150,10 +150,10 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': `${canonicalUrl}#webpage`,
       url: canonicalUrl,
-      name: 'CRM Consultant Vancouver | HubSpot & Salesforce',
+      name: 'CRM Consultant Vancouver | Setup & Cleanup',
       description: metadata.description,
       inLanguage: 'en-CA',
-      dateModified: '2026-09-09',
+      dateModified: '2026-09-16',
       isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
       about: { '@id': `${canonicalUrl}#service` },
       primaryImageOfPage: {
@@ -236,6 +236,7 @@ export default function CrmConsultantVancouver() {
         <div className="container mx-auto grid gap-10 px-4 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div className="max-w-3xl">
             <Badge className="mb-4 bg-[#EEF2FF] text-[#4B37C8] hover:bg-[#EEF2FF]">Direct answer</Badge>
+            <p className="mb-3 text-sm font-semibold text-[#4B37C8]">Reviewed September 16, 2026</p>
             <h2 id="vancouver-crm-answer" className="mb-4 text-3xl font-bold text-[#101828]">What does a CRM consultant in Vancouver do?</h2>
             <p className="text-lg leading-relaxed text-[#475467]">
               A CRM consultant turns a business's sales, service and follow-up process into a system the team can operate consistently. That can mean selecting a CRM, cleaning unreliable data, configuring pipelines and fields, routing new leads, connecting supported tools, building useful reports and training the people responsible for the next action.
