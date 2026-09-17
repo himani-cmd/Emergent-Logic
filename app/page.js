@@ -546,6 +546,17 @@ function LocalTrustSection() {
               </Link>
             ))}
           </div>
+          <p className="text-gray-600 mb-6 max-w-3xl mx-auto">
+            Looking for local help? Compare our vendor-neutral{' '}
+            <Link href="/crm-consultant-vancouver" className="text-violet-700 hover:underline font-medium">
+              CRM consulting in Vancouver
+            </Link>{' '}
+            or review dedicated{' '}
+            <Link href="/hubspot-consultant-vancouver" className="text-violet-700 hover:underline font-medium">
+              HubSpot consulting in Vancouver
+            </Link>{' '}
+            for implementation, cleanup, migration, workflows, and reporting support.
+          </p>
           <p className="text-gray-500 text-sm">
             Call us at <a href="tel:+17784862331" className="text-violet-600 hover:underline font-medium">778-486-2331</a> or email <a href="mailto:info@emergent-logic.ca" className="text-violet-600 hover:underline font-medium">info@emergent-logic.ca</a>
           </p>
