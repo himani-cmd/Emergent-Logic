@@ -292,7 +292,11 @@ export default function HubSpotConsulting() {
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Related Services and Resources</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Link href="/hubspot-consultant-vancouver" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">HubSpot Consultant Vancouver</p>
+              <p className="text-gray-600 text-sm">Local HubSpot implementation, cleanup, migration, workflows, and reporting support</p>
+            </Link>
             <Link href="/hubspot-admin-support-canada-us" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">HubSpot Admin Support</p>
               <p className="text-gray-600 text-sm">Ongoing cleanup, workflows, forms, routing, reports, and documentation</p>
