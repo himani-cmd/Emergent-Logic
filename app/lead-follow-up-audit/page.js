@@ -169,8 +169,8 @@ export default function LeadFollowUpAuditPage() {
             We review one visible inquiry path on your website and send back practical notes on where leads can get missed after the first form submit, email, or consultation request.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <TrackedCTA ctaName="Request Lead Follow-Up Audit" destination="/contact">
-              <Link href="/contact#contact-form">
+            <TrackedCTA ctaName="Request Lead Follow-Up Audit" destination="/contact?request=lead-follow-up-audit#contact-form">
+              <Link href="/contact?request=lead-follow-up-audit#contact-form">
                 <Button size="lg" className="bg-white text-indigo-950 hover:bg-indigo-50 px-7 py-6 text-base font-semibold">
                   Request the free audit <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
@@ -333,8 +333,8 @@ export default function LeadFollowUpAuditPage() {
           <p className="text-lg text-white/80 mb-8">
             Send the URL and tell us which inquiry matters most. We will review it and send back a practical 5-point note.
           </p>
-          <TrackedCTA ctaName="Contact Lead Follow-Up Audit" destination="/contact">
-            <Link href="/contact#contact-form">
+          <TrackedCTA ctaName="Contact Lead Follow-Up Audit" destination="/contact?request=lead-follow-up-audit#contact-form">
+            <Link href="/contact?request=lead-follow-up-audit#contact-form">
               <Button size="lg" className="bg-white text-indigo-950 hover:bg-indigo-50 px-8 py-6 text-lg font-semibold">
                 Request the free audit <ArrowRight className="w-5 h-5 ml-2" />
               </Button>

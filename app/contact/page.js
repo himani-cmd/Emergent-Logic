@@ -25,6 +25,12 @@ const expectations = [
 const voiceSummaryStorageKey = 'emergent_logic_voice_consultation_summary';
 const voiceSummaryEventName = 'emergent-logic-voice-summary-ready';
 const attributionStorageKey = 'emergent_logic_first_touch_attribution';
+const leadFollowUpAuditRequest = 'lead-follow-up-audit';
+const leadFollowUpAuditPrompt = `Website or inquiry URL:
+
+What should happen after an inquiry:
+
+Where follow-up is unclear:`;
 const emptyContactFields = {
   first_name: '',
   last_name: '',
@@ -49,8 +55,21 @@ export default function ContactPage() {
   const [formData, setFormData] = useState(emptyContactFields);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [requestType, setRequestType] = useState('');
   const trackedCalendlyEvents = useRef(new Set());
   const formStarted = useRef(false);
+  const isLeadFollowUpAudit = requestType === leadFollowUpAuditRequest;
+  const formAnalytics = isLeadFollowUpAudit
+    ? {
+        formName: 'lead_follow_up_audit_form',
+        location: '/contact',
+        leadSource: 'lead_follow_up_audit_page',
+      }
+    : {
+        formName: 'contact_form',
+        location: '/contact',
+        leadSource: 'website_contact_page',
+      };
 
   useEffect(() => {
     const calendlyEventMap = {
@@ -75,7 +94,11 @@ export default function ContactPage() {
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
+    const requestedOffer = params.get('request') === leadFollowUpAuditRequest
+      ? leadFollowUpAuditRequest
+      : '';
     const cleanCampaignValue = (value) => String(value || '').replace(/[\u0000-\u001F\u007F]/g, '').trim().slice(0, 120);
+    setRequestType(requestedOffer);
 
     function getFirstTouchAttribution() {
       try {
@@ -113,9 +136,12 @@ export default function ContactPage() {
       gclid: cleanCampaignValue(params.get('gclid') || firstTouch.gclid),
       gbraid: cleanCampaignValue(params.get('gbraid') || firstTouch.gbraid),
       wbraid: cleanCampaignValue(params.get('wbraid') || firstTouch.wbraid),
-      landing_page: window.location.pathname.slice(0, 200),
+      landing_page: requestedOffer
+        ? `${window.location.pathname}?request=${requestedOffer}`.slice(0, 200)
+        : window.location.pathname.slice(0, 200),
       initial_landing_page: cleanCampaignValue(firstTouch.initial_landing_page),
       referrer_host: cleanCampaignValue(firstTouch.referrer_host),
+      message: requestedOffer && !current.message ? leadFollowUpAuditPrompt : current.message,
     }));
 
     function readVoiceSummary() {
@@ -157,24 +183,23 @@ export default function ContactPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    trackLeadFormEvent('lead_form_submit_attempted', {
-      formName: 'contact_form',
-      location: '/contact',
-      leadSource: 'website_contact_page',
-    });
+    trackLeadFormEvent('lead_form_submit_attempted', formAnalytics);
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
+        body: JSON.stringify({
+          ...formData,
+          message: isLeadFollowUpAudit
+            ? `Request type: Free 5-point lead follow-up audit\n\n${formData.message}`
+            : formData.message,
+        })
       });
       if (response.ok) {
         // Confirmed server-side success — only now fire GA4 lead event
         toast.success('Message sent. We will review it on the next business day.');
         trackLeadGeneration({
-          formName: 'contact_form',
-          location: '/contact',
-          leadSource: 'website_contact_page',
+          ...formAnalytics,
           initialLandingPage: formData.initial_landing_page,
           referrerHost: formData.referrer_host,
         });
@@ -190,18 +215,14 @@ export default function ContactPage() {
         }));
       } else {
         trackLeadFormEvent('lead_form_error', {
-          formName: 'contact_form',
-          location: '/contact',
-          leadSource: 'website_contact_page',
+          ...formAnalytics,
           reason: `http_${response.status}`,
         });
         toast.error('Failed to send message. Please try again.');
       }
     } catch (error) {
       trackLeadFormEvent('lead_form_error', {
-        formName: 'contact_form',
-        location: '/contact',
-        leadSource: 'website_contact_page',
+        ...formAnalytics,
         reason: 'network_error',
       });
       toast.error('An error occurred. Please try again.');
@@ -274,8 +295,14 @@ export default function ContactPage() {
       <section id="contact-form" className="py-16 bg-gray-50 scroll-mt-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">Request a Free CRM Workflow Assessment</h2>
-            <p className="text-gray-600">Share one CRM, lead-routing, reporting, or automation problem. We will review the visible workflow and reply with a practical next step on the next business day.</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">
+              {isLeadFollowUpAudit ? 'Request Your Free 5-Point Lead Follow-Up Audit' : 'Request a Free CRM Workflow Assessment'}
+            </h2>
+            <p className="text-gray-600">
+              {isLeadFollowUpAudit
+                ? 'Share one website URL or inquiry path. We will review its entry point, ownership, CRM status, next follow-up, and seven-day visibility.'
+                : 'Share one CRM, lead-routing, reporting, or automation problem. We will review the visible workflow and reply with a practical next step on the next business day.'}
+            </p>
           </div>
           
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -324,8 +351,12 @@ export default function ContactPage() {
 
             <Card className="border-0 shadow-xl">
               <CardHeader>
-                <CardTitle>Request your workflow assessment</CardTitle>
-                <CardDescription>Describe the process, system, and result you want reviewed. No CRM credentials are needed.</CardDescription>
+                <CardTitle>{isLeadFollowUpAudit ? 'Request your lead follow-up audit' : 'Request your workflow assessment'}</CardTitle>
+                <CardDescription>
+                  {isLeadFollowUpAudit
+                    ? 'Add the public URL and tell us what should happen after an inquiry. No CRM credentials are needed.'
+                    : 'Describe the process, system, and result you want reviewed. No CRM credentials are needed.'}
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 {submitted ? (
@@ -333,8 +364,10 @@ export default function ContactPage() {
                     <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
                       <CheckCircle className="w-8 h-8 text-green-600" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Message Sent!</h3>
-                    <p className="text-gray-600">Your request is ready for human review.</p>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Request received</h3>
+                    <p className="text-gray-600">
+                      {isLeadFollowUpAudit ? 'Your lead follow-up audit request is ready for human review.' : 'Your request is ready for human review.'}
+                    </p>
                   </div>
                 ) : (
                   <form
@@ -342,11 +375,7 @@ export default function ContactPage() {
                     onFocus={() => {
                       if (formStarted.current) return;
                       formStarted.current = true;
-                      trackLeadFormEvent('lead_form_started', {
-                        formName: 'contact_form',
-                        location: '/contact',
-                        leadSource: 'website_contact_page',
-                      });
+                      trackLeadFormEvent('lead_form_started', formAnalytics);
                     }}
                     className="space-y-4"
                   >
@@ -361,9 +390,22 @@ export default function ContactPage() {
                     </div>
                     <div><Label htmlFor="email">Email</Label><Input id="email" name="email" type="email" autoComplete="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} required className="mt-1" /></div>
                     <div><Label htmlFor="phone">Phone <span className="font-normal text-gray-500">(optional)</span></Label><Input id="phone" name="phone" type="tel" autoComplete="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} className="mt-1" /></div>
-                    <div><Label htmlFor="message">What should we review?</Label><Textarea id="message" name="message" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} rows={4} className="mt-1" placeholder="Example: Website inquiries reach our inbox, but ownership and follow-up are not visible in the CRM." /></div>
+                    <div>
+                      <Label htmlFor="message">{isLeadFollowUpAudit ? 'Which inquiry path should we audit?' : 'What should we review?'}</Label>
+                      <Textarea
+                        id="message"
+                        name="message"
+                        value={formData.message}
+                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                        rows={isLeadFollowUpAudit ? 7 : 4}
+                        className="mt-1"
+                        placeholder={isLeadFollowUpAudit
+                          ? leadFollowUpAuditPrompt
+                          : 'Example: Website inquiries reach our inbox, but ownership and follow-up are not visible in the CRM.'}
+                      />
+                    </div>
                     <Button type="submit" className="w-full bg-violet-600 hover:bg-violet-700" disabled={isSubmitting}>
-                      {isSubmitting ? 'Sending...' : 'Request My Free Assessment'} <Send className="ml-2 w-4 h-4" />
+                      {isSubmitting ? 'Sending...' : isLeadFollowUpAudit ? 'Request My Free 5-Point Audit' : 'Request My Free Assessment'} <Send className="ml-2 w-4 h-4" />
                     </Button>
                     <p className="text-center text-xs text-gray-500">Human-reviewed. No credentials required. Phone is optional.</p>
                   </form>
