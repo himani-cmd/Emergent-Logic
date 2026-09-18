@@ -58,6 +58,13 @@ function HeroSection() {
                 </Button>
               </Link>
             </TrackedCTA>
+            <TrackedCTA ctaName="Free Lead Follow-Up Audit - Homepage Hero" destination="lead-follow-up-audit">
+              <Link href="/lead-follow-up-audit">
+                <Button size="lg" className="bg-violet-500/20 border border-violet-300/50 text-white hover:bg-violet-500/30 px-8 py-6 text-lg font-semibold">
+                  Get a Free Lead Follow-Up Audit <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </Link>
+            </TrackedCTA>
           </div>
 
           {/* Trust Indicators */}
@@ -594,6 +601,13 @@ function FinalCTASection() {
             <Link href="/ai-crm-audit">
               <Button size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold">
                 Request a CRM Review
+              </Button>
+            </Link>
+          </TrackedCTA>
+          <TrackedCTA ctaName="Free Lead Follow-Up Audit - Homepage Footer" destination="lead-follow-up-audit">
+            <Link href="/lead-follow-up-audit">
+              <Button size="lg" className="bg-violet-500/20 border-2 border-violet-200/70 text-white hover:bg-violet-500/30 px-8 py-6 text-lg font-semibold">
+                Get a Free Lead Follow-Up Audit <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>
           </TrackedCTA>
