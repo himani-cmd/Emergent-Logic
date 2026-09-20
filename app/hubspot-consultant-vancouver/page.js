@@ -98,6 +98,7 @@ const faqs = [
   { q: 'What happens after I request a HubSpot implementation review?', a: 'Tell us which HubSpot products you use, what is already built and which process needs attention. We review the request to confirm fit and the information needed for discovery. Any portal access, configuration work, testing, training, price and timing are agreed in a written scope. Do not include passwords or customer records in the enquiry form.' },
   { q: 'Do we need HubSpot implementation or ongoing admin support?', a: 'Implementation establishes or changes the operating model: pipelines, lifecycle stages, data migration, integrations and user adoption. Ongoing admin support maintains an agreed setup through record hygiene, permissions, reports and bounded configuration changes. If the existing setup is incomplete, review the outstanding decisions before choosing either scope.' },
   { q: 'How should a growing company choose a HubSpot implementation consultant?', a: 'Compare consultants on requirements discovery, portal and data assessment, configuration depth, migration controls, integration design, testing, training, documentation, production approval, and post-launch ownership. Ask them to make assumptions, exclusions, dependencies, acceptance checks, and licence requirements visible before implementation begins.' },
+  { q: 'What happens in the first conversation?', a: 'Tell us which HubSpot products you use, the process that needs attention, and the systems connected to it. We discuss the outcome you need and identify what information is missing before estimating the work. Portal investigation and configuration are separate, scoped services.' },
   { q: 'How much does HubSpot implementation cost in Vancouver?', a: 'Implementation cost depends on the confirmed scope: pipelines, properties, workflows, reporting, migration, integrations, testing, training, and support. The current portal and requirements are reviewed first, then the work and estimate are documented before delivery starts.' },
   { q: 'Which HubSpot Hubs can a scope cover?', a: 'A scope may involve CRM, Sales Hub, Marketing Hub, Service Hub, Content Hub, or Operations Hub, subject to the licensed tier and confirmed requirements. We document platform fit before proposing implementation.' },
   { q: 'Can you migrate us from Salesforce to HubSpot?', a: 'A Salesforce-to-HubSpot migration can be scoped when the source data and target requirements are understood. The plan covers backups, field mapping, test imports, validation, rollback, approval, and role-based training.' },
@@ -160,20 +161,21 @@ export default function HubspotConsultantVancouver() {
             HubSpot consultant in Vancouver for setup, cleanup and automation
           </h1>
           <p className="max-w-3xl text-lg leading-relaxed text-white/75 mb-8 md:text-xl">
-            A HubSpot consultant can help a Vancouver team start a clean implementation or finish one that is already underway. Emergent Logic reviews the current portal, closes operating gaps, tests the agreed configuration, and documents the path from pilot to production.
+            HubSpot should help your team see who owns each lead and what happens next. Emergent Logic helps Vancouver businesses configure HubSpot, clean up data and workflows, connect systems, and complete unfinished implementations.
           </p>
           <div className="flex max-w-3xl flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <TrackedCTA ctaName="Vancouver HubSpot Rollout Review" destination="/hubspot-implementation#implementation-review">
+            <TrackedCTA ctaName="Vancouver HubSpot Project Discussion" destination="calendly">
               <Button asChild size="lg" className="w-full bg-white text-violet-900 hover:bg-violet-100 sm:w-auto">
-                <Link href="/hubspot-implementation#implementation-review">Request a HubSpot Rollout Review <ArrowRight className="ml-2 h-5 w-5" /></Link>
+                <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">Discuss Your HubSpot Project <ArrowRight className="ml-2 h-5 w-5" /></a>
               </Button>
             </TrackedCTA>
-            <TrackedCTA ctaName="Vancouver HubSpot Consultation" destination="calendly">
+            <TrackedCTA ctaName="Vancouver HubSpot Lead Audit" destination="/lead-follow-up-audit">
               <Button asChild size="lg" className="w-full border border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white sm:w-auto">
-                <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">Book a 30-Minute Consultation</a>
+                <Link href="/lead-follow-up-audit">See the Free Lead Follow-Up Audit</Link>
               </Button>
             </TrackedCTA>
           </div>
+          <p className="mt-4 max-w-3xl text-sm text-white/65">Start with the process that needs attention. For a first look at your public enquiry and follow-up path, use the free audit.</p>
         </div>
       </section>
 
@@ -209,6 +211,41 @@ export default function HubspotConsultantVancouver() {
           <p className="mt-4 leading-relaxed text-gray-700">For the work areas and discovery approach, see our <Link href="/services/hubspot-consulting" className="font-medium text-violet-700 hover:underline">HubSpot consulting service</Link>. The review helps identify which parts of that service belong in your scope.</p>
         </div>
       </section>
+
+      <section className="border-b border-violet-100 bg-white py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl">
+            <Badge className="mb-4 bg-violet-100 text-violet-700 hover:bg-violet-100">First decision</Badge>
+            <h2 className="mb-4 text-3xl font-bold text-gray-900">What do you need HubSpot to do better?</h2>
+            <p className="text-lg leading-8 text-gray-700">Start with the operating problem. A useful HubSpot scope should make the next step clear before any workflow, migration, or report is changed.</p>
+          </div>
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {[
+              {
+                title: 'Make lead follow-up clear',
+                description: 'Review how enquiries reach the CRM, who owns them, and what the team should do next.',
+              },
+              {
+                title: 'Make data and automation easier to trust',
+                description: 'Identify the lifecycle rules, duplicate records, workflow conditions, or reports that need attention.',
+              },
+              {
+                title: 'Finish a setup or connect another system',
+                description: 'Define what is already working, what is missing, and how the agreed changes will be tested and handed over.',
+              },
+            ].map((item) => (
+              <Card key={item.title} className="border border-violet-100 shadow-sm">
+                <CardHeader>
+                  <CardTitle className="text-lg text-gray-900">{item.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+           </div>
+         </div>
+       </section>
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -329,6 +366,57 @@ export default function HubspotConsultantVancouver() {
         </div>
       </section>
 
+      <section className="border-y border-violet-100 bg-violet-50/60 py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl">
+            <Badge className="mb-4 bg-white text-violet-700 hover:bg-white">Example output</Badge>
+            <h2 className="mb-4 text-3xl font-bold text-gray-900">What a useful HubSpot findings report can look like</h2>
+            <p className="text-sm font-semibold text-violet-800">Illustrative example using fictional conditions. Not a client result or a completed portal audit.</p>
+          </div>
+          <div className="mt-8 overflow-x-auto border border-violet-200 bg-white">
+            <table className="w-full min-w-[760px] text-left text-sm">
+              <thead className="bg-violet-100 text-violet-950">
+                <tr>
+                  <th className="p-4 font-semibold">Example condition</th>
+                  <th className="p-4 font-semibold">Why it matters</th>
+                  <th className="p-4 font-semibold">Proposed next action</th>
+                  <th className="p-4 font-semibold">Example acceptance check</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-violet-100 text-gray-700">
+                {[
+                  {
+                    condition: 'An enquiry has a source but no assigned owner',
+                    impact: 'The team cannot see who should follow up',
+                    action: 'Agree ownership and a fallback route before configuring assignment',
+                    check: 'An approved test record reaches the expected owner and a visible next action',
+                  },
+                  {
+                    condition: 'A nurture rule lacks a documented exclusion condition',
+                    impact: 'A contact could enter an unsuitable follow-up path',
+                    action: 'Define enrollment, exclusion, and exit rules with the campaign owner',
+                    check: 'Approved eligible and excluded test scenarios follow the agreed paths without sending live email',
+                  },
+                  {
+                    condition: 'An integration failure is visible only in a technical log',
+                    impact: 'An exception may remain unresolved',
+                    action: 'Define the exception owner and retry or reconciliation procedure',
+                    check: 'A controlled failure is visible to the responsible person and resolves without creating duplicate records',
+                  },
+                ].map((row) => (
+                  <tr key={row.condition}>
+                    <td className="p-4 align-top font-medium text-gray-900">{row.condition}</td>
+                    <td className="p-4 align-top">{row.impact}</td>
+                    <td className="p-4 align-top">{row.action}</td>
+                    <td className="p-4 align-top">{row.check}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Not sure if HubSpot is right?</h2>
@@ -357,9 +445,9 @@ export default function HubspotConsultantVancouver() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to get started with HubSpot?</h2>
           <p className="text-xl text-white/80 mb-8">Book a 30-minute CRM consultation to review the current portal, the operating problem, and the information needed for a practical scope.</p>
-          <TrackedCTA ctaName="Vancouver HubSpot Final Rollout Review" destination="/hubspot-implementation#implementation-review">
+          <TrackedCTA ctaName="Vancouver HubSpot Final Project Discussion" destination="calendly">
             <Button asChild size="lg" className="bg-white text-violet-900 hover:bg-violet-100">
-              <Link href="/hubspot-implementation#implementation-review">Request a HubSpot Rollout Review <ArrowRight className="ml-2 h-5 w-5" /></Link>
+              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">Discuss Your HubSpot Project <ArrowRight className="ml-2 h-5 w-5" /></a>
             </Button>
           </TrackedCTA>
         </div>
