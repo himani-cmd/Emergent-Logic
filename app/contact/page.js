@@ -26,11 +26,21 @@ const voiceSummaryStorageKey = 'emergent_logic_voice_consultation_summary';
 const voiceSummaryEventName = 'emergent-logic-voice-summary-ready';
 const attributionStorageKey = 'emergent_logic_first_touch_attribution';
 const leadFollowUpAuditRequest = 'lead-follow-up-audit';
+const crmCleanupFindingsReviewRequest = 'crm-cleanup-findings-review';
 const leadFollowUpAuditPrompt = `Website or inquiry URL:
 
 What should happen after an inquiry:
 
 Where follow-up is unclear:`;
+const crmCleanupFindingsReviewPrompt = `CRM and connected tools:
+
+What is breaking today (follow-up, ownership, reporting, segmentation, automation, or migration):
+
+Team or process owner:
+
+Active deadline or business impact:
+
+Do you want findings, implementation, or both?:`;
 const emptyContactFields = {
   first_name: '',
   last_name: '',
@@ -59,17 +69,24 @@ export default function ContactPage() {
   const trackedCalendlyEvents = useRef(new Set());
   const formStarted = useRef(false);
   const isLeadFollowUpAudit = requestType === leadFollowUpAuditRequest;
+  const isCrmCleanupFindingsReview = requestType === crmCleanupFindingsReviewRequest;
   const formAnalytics = isLeadFollowUpAudit
     ? {
         formName: 'lead_follow_up_audit_form',
         location: '/contact',
         leadSource: 'lead_follow_up_audit_page',
       }
-    : {
-        formName: 'contact_form',
-        location: '/contact',
-        leadSource: 'website_contact_page',
-      };
+    : isCrmCleanupFindingsReview
+      ? {
+          formName: 'crm_cleanup_findings_review_form',
+          location: '/contact',
+          leadSource: 'crm_cleanup_service_page',
+        }
+      : {
+          formName: 'contact_form',
+          location: '/contact',
+          leadSource: 'website_contact_page',
+        };
 
   useEffect(() => {
     const calendlyEventMap = {
@@ -94,8 +111,8 @@ export default function ContactPage() {
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const requestedOffer = params.get('request') === leadFollowUpAuditRequest
-      ? leadFollowUpAuditRequest
+    const requestedOffer = [leadFollowUpAuditRequest, crmCleanupFindingsReviewRequest].includes(params.get('request'))
+      ? params.get('request')
       : '';
     const cleanCampaignValue = (value) => String(value || '').replace(/[\u0000-\u001F\u007F]/g, '').trim().slice(0, 120);
     setRequestType(requestedOffer);
@@ -141,7 +158,11 @@ export default function ContactPage() {
         : window.location.pathname.slice(0, 200),
       initial_landing_page: cleanCampaignValue(firstTouch.initial_landing_page),
       referrer_host: cleanCampaignValue(firstTouch.referrer_host),
-      message: requestedOffer && !current.message ? leadFollowUpAuditPrompt : current.message,
+      message: requestedOffer && !current.message
+        ? requestedOffer === leadFollowUpAuditRequest
+          ? leadFollowUpAuditPrompt
+          : crmCleanupFindingsReviewPrompt
+        : current.message,
     }));
 
     function readVoiceSummary() {
@@ -192,7 +213,9 @@ export default function ContactPage() {
           ...formData,
           message: isLeadFollowUpAudit
             ? `Request type: Free 5-point lead follow-up audit\n\n${formData.message}`
-            : formData.message,
+            : isCrmCleanupFindingsReview
+              ? `Request type: CRM Cleanup Findings Review\n\n${formData.message}`
+              : formData.message,
         })
       });
       if (response.ok) {
@@ -296,12 +319,18 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-2">
-              {isLeadFollowUpAudit ? 'Request Your Free 5-Point Lead Follow-Up Audit' : 'Request a Free CRM Workflow Assessment'}
+              {isLeadFollowUpAudit
+                ? 'Request Your Free 5-Point Lead Follow-Up Audit'
+                : isCrmCleanupFindingsReview
+                  ? 'Request a CRM Cleanup Findings Review'
+                  : 'Request a Free CRM Workflow Assessment'}
             </h2>
             <p className="text-gray-600">
               {isLeadFollowUpAudit
                 ? 'Share one website URL or inquiry path. We will review its entry point, ownership, CRM status, next follow-up, and seven-day visibility.'
-                : 'Share one CRM, lead-routing, reporting, or automation problem. We will review the visible workflow and reply with a practical next step on the next business day.'}
+                : isCrmCleanupFindingsReview
+                  ? 'Describe one CRM process, what is breaking, the systems involved, and the decision you need to make. We will confirm whether an access-based findings review is the right next step.'
+                  : 'Share one CRM, lead-routing, reporting, or automation problem. We will review the visible workflow and reply with a practical next step on the next business day.'}
             </p>
           </div>
           
@@ -351,11 +380,13 @@ export default function ContactPage() {
 
             <Card className="border-0 shadow-xl">
               <CardHeader>
-                <CardTitle>{isLeadFollowUpAudit ? 'Request your lead follow-up audit' : 'Request your workflow assessment'}</CardTitle>
+                <CardTitle>{isLeadFollowUpAudit ? 'Request your lead follow-up audit' : isCrmCleanupFindingsReview ? 'Request your CRM cleanup findings review' : 'Request your workflow assessment'}</CardTitle>
                 <CardDescription>
                   {isLeadFollowUpAudit
                     ? 'Add the public URL and tell us what should happen after an inquiry. No CRM credentials are needed.'
-                    : 'Describe the process, system, and result you want reviewed. No CRM credentials are needed.'}
+                    : isCrmCleanupFindingsReview
+                      ? 'Share context only. Do not send passwords, exports, or customer records through this form.'
+                      : 'Describe the process, system, and result you want reviewed. No CRM credentials are needed.'}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -366,7 +397,7 @@ export default function ContactPage() {
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Request received</h3>
                     <p className="text-gray-600">
-                      {isLeadFollowUpAudit ? 'Your lead follow-up audit request is ready for human review.' : 'Your request is ready for human review.'}
+                      {isLeadFollowUpAudit ? 'Your lead follow-up audit request is ready for human review.' : isCrmCleanupFindingsReview ? 'Your CRM cleanup findings review request is ready for human review.' : 'Your request is ready for human review.'}
                     </p>
                   </div>
                 ) : (
@@ -391,21 +422,23 @@ export default function ContactPage() {
                     <div><Label htmlFor="email">Email</Label><Input id="email" name="email" type="email" autoComplete="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} required className="mt-1" /></div>
                     <div><Label htmlFor="phone">Phone <span className="font-normal text-gray-500">(optional)</span></Label><Input id="phone" name="phone" type="tel" autoComplete="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} className="mt-1" /></div>
                     <div>
-                      <Label htmlFor="message">{isLeadFollowUpAudit ? 'Which inquiry path should we audit?' : 'What should we review?'}</Label>
+                      <Label htmlFor="message">{isLeadFollowUpAudit ? 'Which inquiry path should we audit?' : isCrmCleanupFindingsReview ? 'Which CRM process should we review?' : 'What should we review?'}</Label>
                       <Textarea
                         id="message"
                         name="message"
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        rows={isLeadFollowUpAudit ? 7 : 4}
+                        rows={isLeadFollowUpAudit || isCrmCleanupFindingsReview ? 9 : 4}
                         className="mt-1"
                         placeholder={isLeadFollowUpAudit
                           ? leadFollowUpAuditPrompt
-                          : 'Example: Website inquiries reach our inbox, but ownership and follow-up are not visible in the CRM.'}
+                          : isCrmCleanupFindingsReview
+                            ? crmCleanupFindingsReviewPrompt
+                            : 'Example: Website inquiries reach our inbox, but ownership and follow-up are not visible in the CRM.'}
                       />
                     </div>
                     <Button type="submit" className="w-full bg-violet-600 hover:bg-violet-700" disabled={isSubmitting}>
-                      {isSubmitting ? 'Sending...' : isLeadFollowUpAudit ? 'Request My Free 5-Point Audit' : 'Request My Free Assessment'} <Send className="ml-2 w-4 h-4" />
+                      {isSubmitting ? 'Sending...' : isLeadFollowUpAudit ? 'Request My Free 5-Point Audit' : isCrmCleanupFindingsReview ? 'Request My Findings Review' : 'Request My Free Assessment'} <Send className="ml-2 w-4 h-4" />
                     </Button>
                     <p className="text-center text-xs text-gray-500">Human-reviewed. No credentials required. Phone is optional.</p>
                   </form>
