@@ -132,6 +132,14 @@ const checks = [
   },
   {
     passed:
+      contact.includes("const crmCleanupFindingsReviewRequest = 'crm-cleanup-findings-review'") &&
+      contact.includes("formName: 'crm_cleanup_findings_review_form'") &&
+      contact.includes("leadSource: 'crm_cleanup_service_page'") &&
+      contact.includes('Request type: CRM Cleanup Findings Review'),
+    message: 'The CRM cleanup findings-review route must preserve a distinct, PII-safe enquiry source and request type.',
+  },
+  {
+    passed:
       analytics.includes("trackEvent('resource_download'") &&
       workbookDownload.includes('trackResourceDownload') &&
       workbookDownload.includes("resourceType: 'xlsx'") &&

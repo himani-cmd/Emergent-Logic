@@ -6,6 +6,41 @@ import TrackedCTA from '@/components/TrackedCTA';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Wrench, AlertTriangle, Database, Zap, BarChart3, Users, Trash2, Clock, DollarSign, Check, X, Search, RefreshCw } from 'lucide-react';
 
+const cleanupFaqs = [
+  { q: 'What is a CRM Cleanup Findings Review?', a: 'It is a scoped, access-based diagnostic for one agreed CRM process. The review documents current-state findings, priorities, recommended controls, acceptance checks, and a scoped implementation estimate. It is separate from the free public lead follow-up audit.' },
+  { q: 'Will I lose any data during cleanup?', a: 'Cleanup is designed to minimize that risk. We agree on backup, rollback, merge, test, and approval procedures before changing production data. No deletion or irreversible merge is performed without written confirmation.' },
+  { q: 'How big does my database need to be?', a: 'Database size is only one factor. Cleanup is worth considering when duplicate records, missing owners, inconsistent fields, or unreliable reports are affecting follow-up and decision-making.' },
+  { q: 'Can you do a cleanup without rebuilding my workflows?', a: 'Yes. A data-only scope can cover approved deduplication and standardization without changing workflows or reports. Discovery determines whether automation is contributing to the data problem, but any additional work requires approval.' },
+  { q: 'How often should we do a CRM cleanup?', a: 'The review cadence depends on import volume, integrations, team changes, and governance. The maintenance plan can define weekly admin checks, quarterly reviews, and thresholds for a deeper audit.' },
+  { q: 'Do you train our team to maintain the CRM?', a: 'Training and a written data-hygiene guide can be included for the CRM owner or admin. The proposal defines the audience, materials, and maintenance responsibilities.' },
+  { q: 'What CRMs do you clean up?', a: 'HubSpot, Salesforce, and Zoho are the primary platforms offered. If you use another CRM, we will confirm fit during discovery rather than claim support we cannot verify.' },
+];
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://www.emergent-logic.ca/services/crm-cleanup#service',
+      name: 'CRM Cleanup Services',
+      serviceType: 'CRM cleanup and data quality review',
+      url: 'https://www.emergent-logic.ca/services/crm-cleanup',
+      provider: { '@id': 'https://www.emergent-logic.ca/#organization' },
+      areaServed: { '@type': 'Country', name: 'Canada' },
+      description: 'A controlled CRM cleanup service for reviewing duplicates, fields, workflows, ownership, reporting, and data-quality risks before approved production changes.',
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': 'https://www.emergent-logic.ca/services/crm-cleanup#faq',
+      mainEntity: cleanupFaqs.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: { '@type': 'Answer', text: item.a },
+      })),
+    },
+  ],
+};
+
 export const metadata = {
   title: 'CRM Cleanup Services Canada',
   description: 'CRM cleanup services for HubSpot, Salesforce, and Zoho: audit duplicates, fields, workflows, and reporting before approved, controlled changes.',
@@ -22,6 +57,7 @@ export const metadata = {
 export default function CRMCleanup() {
   return (
     <main className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <Navbar />
 
       {/* Hero */}
@@ -36,21 +72,21 @@ export default function CRMCleanup() {
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
             Duplicate contacts, broken workflows, unreliable reports, and fields nobody uses. We audit the CRM, document the risks, and complete approved cleanup work in controlled steps. Timing is confirmed after discovery.
           </p>
-          <p className="mb-6 text-sm font-semibold text-emerald-200">Reviewed September 16, 2026</p>
+          <p className="mb-6 text-sm font-semibold text-emerald-200">Reviewed September 21, 2026</p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <TrackedCTA ctaName="Free CRM Workflow Assessment - Cleanup Hero" destination="lead-follow-up-audit">
-              <Link href="/lead-follow-up-audit">
+            <TrackedCTA ctaName="Request CRM Cleanup Findings Review - Cleanup Hero" destination="contact-crm-cleanup-findings-review">
+              <Link href="/contact?request=crm-cleanup-findings-review#contact-form">
                 <Button size="lg" className="bg-white text-emerald-900 hover:bg-emerald-100 font-semibold px-8">
-                  Free CRM Workflow Assessment <ArrowRight className="w-5 h-5 ml-2" />
+                  Request a CRM Cleanup Findings Review <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
             </TrackedCTA>
-            <TrackedCTA ctaName="Book a CRM Consultation - Cleanup Hero Secondary" destination="calendly">
-              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
+            <TrackedCTA ctaName="Free 5-Point Lead Follow-Up Audit - Cleanup Hero Secondary" destination="lead-follow-up-audit">
+              <Link href="/lead-follow-up-audit">
                 <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
-                  Book a CRM Consultation
+                  Free 5-Point Lead Follow-Up Audit
                 </Button>
-              </a>
+              </Link>
             </TrackedCTA>
           </div>
           <div className="mt-8 flex flex-wrap gap-6 text-white/70 text-sm">
@@ -58,6 +94,67 @@ export default function CRMCleanup() {
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-300" /> Written proposal after discovery</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-300" /> Audit deliverables defined in your proposal</div>
             <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-300" /> Training and handoff scoped before work</div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white" aria-labelledby="findings-review">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+            <div>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700">Start with one agreed CRM process</p>
+              <h2 id="findings-review" className="text-3xl md:text-4xl font-bold text-gray-900 mb-5">What you receive from a CRM Cleanup Findings Review</h2>
+              <p className="text-lg leading-8 text-gray-600 mb-6">This is an access-based diagnostic for a defined CRM problem. It gives your team a decision-ready view of what is wrong, what should be fixed first, and what a controlled implementation would require. Scope and commercial terms are confirmed after the fit conversation.</p>
+              <div className="space-y-4">
+                {[
+                  ['Current-state findings', 'Evidence for one agreed process, including the records, fields, ownership, workflows, and reports affecting it.'],
+                  ['Prioritized issue and risk list', 'Problems ordered by operational impact, dependency, and change risk.'],
+                  ['Recommended cleanup sequence', 'A practical order of work with approval points before high-impact or production changes.'],
+                  ['Acceptance checks', 'Clear checks your team can use to verify the next implementation phase.'],
+                  ['Scoped implementation estimate', 'A written next-step recommendation based on the reviewed boundary, dependencies, and exclusions.'],
+                ].map(([title, description]) => (
+                  <div key={title} className="flex gap-3 rounded-xl border border-emerald-100 bg-emerald-50/50 p-4">
+                    <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-emerald-700" />
+                    <div><h3 className="font-bold text-gray-900">{title}</h3><p className="mt-1 text-gray-600">{description}</p></div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <aside className="rounded-2xl border border-gray-200 bg-gray-50 p-6 md:p-8" aria-labelledby="review-fit">
+              <h3 id="review-fit" className="text-2xl font-bold text-gray-900">A strong fit when</h3>
+              <ul className="mt-5 space-y-3 text-gray-700">
+                {[
+                  'Duplicate or incomplete records are disrupting follow-up.',
+                  'Ownership, lifecycle stages, or reporting no longer match the real process.',
+                  'Imports, forms, or integrations keep reintroducing data problems.',
+                  'Your team can name the affected process and an accountable owner.',
+                  'You want findings before approving production changes.',
+                ].map((item) => <li key={item} className="flex gap-3"><Check className="mt-0.5 h-5 w-5 flex-shrink-0 text-emerald-700" /><span>{item}</span></li>)}
+              </ul>
+              <h3 className="mt-8 text-xl font-bold text-gray-900">Share in your request</h3>
+              <p className="mt-2 text-gray-600">The CRM and connected tools, what is breaking, which team owns the process, any active deadline, and whether you want findings, implementation, or both.</p>
+              <TrackedCTA ctaName="Request CRM Cleanup Findings Review - Offer" destination="contact-crm-cleanup-findings-review">
+                <Link href="/contact?request=crm-cleanup-findings-review#contact-form" className="mt-6 inline-flex w-full">
+                  <Button size="lg" className="w-full bg-emerald-700 text-white hover:bg-emerald-800">Request the Findings Review <ArrowRight className="ml-2 h-5 w-5" /></Button>
+                </Link>
+              </TrackedCTA>
+              <p className="mt-3 text-xs leading-5 text-gray-500">Do not send passwords, exports, or customer records through the public form. Access needs are discussed after fit is confirmed.</p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-cyan-100 bg-cyan-50/60 py-12">
+        <div className="container mx-auto max-w-4xl px-4">
+          <div className="grid gap-5 md:grid-cols-[1fr_auto] md:items-center">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-cyan-800">Need a smaller public review?</p>
+              <h2 className="mt-2 text-2xl font-bold text-gray-900">Use the free 5-point lead follow-up audit</h2>
+              <p className="mt-2 text-gray-700">It reviews one public website or inquiry path: entry point, ownership, CRM status, next follow-up, and seven-day visibility. It does not include CRM access, record analysis, workflow inspection, or an unpaid portal audit.</p>
+            </div>
+            <TrackedCTA ctaName="Free 5-Point Lead Follow-Up Audit - Cleanup Boundary" destination="lead-follow-up-audit">
+              <Link href="/lead-follow-up-audit"><Button variant="outline" size="lg" className="border-cyan-700 text-cyan-900 hover:bg-cyan-100">Review the Free Audit</Button></Link>
+            </TrackedCTA>
           </div>
         </div>
       </section>
@@ -279,15 +376,7 @@ export default function CRMCleanup() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
           <div className="space-y-6">
-            {[
-              { q: 'Will I lose any data during cleanup?', a: 'Cleanup is designed to minimize that risk. We agree on backup, rollback, merge, test, and approval procedures before changing production data. No deletion or irreversible merge is performed without written confirmation.' },
-              { q: 'How big does my database need to be?', a: 'Database size is only one factor. Cleanup is worth considering when duplicate records, missing owners, inconsistent fields, or unreliable reports are affecting follow-up and decision-making.' },
-              { q: 'Can you do a cleanup without rebuilding my workflows?', a: 'Yes. A data-only scope can cover approved deduplication and standardization without changing workflows or reports. Discovery determines whether automation is contributing to the data problem, but any additional work requires approval.' },
-              { q: 'How often should we do a CRM cleanup?', a: 'The review cadence depends on import volume, integrations, team changes, and governance. The maintenance plan can define weekly admin checks, quarterly reviews, and thresholds for a deeper audit.' },
-              { q: 'Do you train our team to maintain the CRM?', a: 'Training and a written data-hygiene guide can be included for the CRM owner or admin. The proposal defines the audience, materials, and maintenance responsibilities.' },
-              { q: 'What CRMs do you clean up?', a: 'HubSpot, Salesforce, and Zoho are the primary platforms offered. If you use another CRM, we will confirm fit during discovery rather than claim support we cannot verify.' },
-              { q: 'How is this different from just hiring a freelancer to dedupe my contacts?', a: 'A freelancer can dedupe contacts. We do that and also fix the workflows, properties, pipelines, and reports that caused the data to get messy in the first place. Without addressing the root causes, the data drifts back within months. Our scope is structural cleanup, not surface-level cleanup.' },
-            ].map((item, i) => (
+            {cleanupFaqs.map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-xl border">
                 <h3 className="font-bold text-gray-900 mb-2">{item.q}</h3>
                 <p className="text-gray-600">{item.a}</p>
@@ -354,27 +443,27 @@ export default function CRMCleanup() {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-br from-emerald-600 to-teal-700">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Stop Working Around a Broken CRM</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Know What to Fix Before You Change the CRM</h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Start with the free CRM Workflow Assessment to review five lead-handling controls, then book a consultation if the findings justify a deeper cleanup scope. No production data is changed during the assessment.
+            Request a findings review for one defined CRM process. We will confirm fit, boundaries, and the evidence needed before any access or production work is proposed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <TrackedCTA ctaName="Free CRM Workflow Assessment - Cleanup Footer" destination="lead-follow-up-audit">
-              <Link href="/lead-follow-up-audit">
+            <TrackedCTA ctaName="Request CRM Cleanup Findings Review - Cleanup Footer" destination="contact-crm-cleanup-findings-review">
+              <Link href="/contact?request=crm-cleanup-findings-review#contact-form">
                 <Button size="lg" className="bg-white text-emerald-900 hover:bg-emerald-100 font-semibold px-8">
-                  Free CRM Workflow Assessment <ArrowRight className="w-5 h-5 ml-2" />
+                  Request a CRM Cleanup Findings Review <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
             </TrackedCTA>
-            <TrackedCTA ctaName="Book a CRM Consultation - Cleanup Footer Secondary" destination="calendly">
-              <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer">
+            <TrackedCTA ctaName="Free 5-Point Lead Follow-Up Audit - Cleanup Footer Secondary" destination="lead-follow-up-audit">
+              <Link href="/lead-follow-up-audit">
                 <Button size="lg" className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8">
-                  Book a CRM Consultation
+                  Free 5-Point Lead Follow-Up Audit
                 </Button>
-              </a>
+              </Link>
             </TrackedCTA>
           </div>
-          <p className="text-white/60 text-sm mt-6">Prefer email? <Link href="/contact" className="underline hover:text-white">Send us a message</Link>. Requests are reviewed on business days.</p>
+          <p className="text-white/60 text-sm mt-6">Do not send passwords, exports, or customer records through the public form. Requests are reviewed on business days.</p>
         </div>
       </section>
 
