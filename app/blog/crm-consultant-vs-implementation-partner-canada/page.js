@@ -62,7 +62,7 @@ export default function Post() {
 
             <div className="prose prose-lg max-w-none mt-8">
               <p className="lead text-xl text-gray-600">
-                When a Canadian SMB starts looking for help with their CRM, they run into two labels almost immediately. CRM consultant. CRM implementation partner. Sometimes the same firm uses both interchangeably. Sometimes they describe very different services. And depending on your stage, one is much more useful than the other.
+                A CRM advisory engagement helps you decide what to change. An implementation engagement delivers and tests agreed changes. The same provider may offer both, so compare written deliverables rather than job titles. If the problem is unclear, start with diagnosis; if requirements are agreed, confirm who will build, approve, test, and operate the system.
               </p>
 
               <div className="not-prose my-8 rounded-lg border border-violet-200 bg-violet-50 p-6">
@@ -88,6 +88,20 @@ export default function Post() {
               <p>
                 Plenty of firms do both. The mistake is assuming they are interchangeable. A pure consulting engagement leaves you with a great plan and no implementation. A pure implementation engagement assumes you already have a plan, and risks building something fast that does not fit your business if the strategy work was skipped.
               </p>
+
+              <div className="not-prose my-8 overflow-x-auto rounded-lg border border-gray-200">
+                <table className="w-full text-left text-sm">
+                  <thead className="bg-gray-50 text-gray-900">
+                    <tr><th className="p-3">Decision</th><th className="p-3">Advisory scope</th><th className="p-3">Implementation scope</th><th className="p-3">Evidence to request</th></tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200 text-gray-700">
+                    <tr><td className="p-3 font-medium">Business process</td><td className="p-3">Current-state review and target-state recommendations</td><td className="p-3">Configured stages, ownership, and operating rules</td><td className="p-3">Process map and acceptance criteria</td></tr>
+                    <tr><td className="p-3 font-medium">Data</td><td className="p-3">Data risks and migration approach</td><td className="p-3">Cleanup, mapping, migration, and reconciliation</td><td className="p-3">Field map and reconciliation result</td></tr>
+                    <tr><td className="p-3 font-medium">Automation</td><td className="p-3">Prioritized use cases and guardrails</td><td className="p-3">Workflows, alerts, and tested integrations</td><td className="p-3">Test cases and exception handling</td></tr>
+                    <tr><td className="p-3 font-medium">Handoff</td><td className="p-3">Decision record and delivery plan</td><td className="p-3">Training, documentation, and support plan</td><td className="p-3">Named owners and support terms</td></tr>
+                  </tbody>
+                </table>
+              </div>
 
               <h2>When You Need a Consultant</h2>
               <p>
@@ -123,23 +137,29 @@ export default function Post() {
                 In those situations the deliverable you actually need is a working CRM that your team uses on Monday morning. Strategic advice without delivery is not enough.
               </p>
 
-              <h2>Why Most Canadian SMBs Need Both — From the Same Team</h2>
+              <h2>When should you separate advice from delivery?</h2>
               <p>
-                The cleanest engagements we see for Canadian SMBs combine the two roles in one team. The reason is that the gap between strategy and implementation is where most projects get lost.
+                A phased engagement can be useful when the current process, data, or platform fit is still unclear. Start with a bounded assessment, document the decisions and acceptance criteria, then move into implementation when the requirements are agreed. A single team can deliver both phases, while separate specialists can work well when ownership and handoff controls are explicit.
               </p>
 
               <p>
-                A consultant who hands off to a separate implementation team often produces a plan that the build team has to renegotiate. The implementation team sees realities the consultant did not, and the plan gets revised mid-build. Costs grow. Timelines slip. The customer ends up paying for the planning twice.
+                Before signing, make the handoff—or the continuity between phases—visible in the statement of work. It should name the decision owner, delivery owner, approval points, testing responsibilities, and post-launch support.
               </p>
 
-              <p>
-                A team that consults and implements as one engagement avoids that handoff. The same people who recommend the platform and design the pipeline are the ones who configure the system and train the team. The strategic decisions and the execution decisions stay in the same hands, and the customer gets a coherent project from kickoff to launch.
-              </p>
+              <h2>What should you ask before signing?</h2>
+              <ol>
+                <li>Which decisions and deliverables are included, and which are excluded?</li>
+                <li>Who is accountable for the work, approvals, and ongoing operation?</li>
+                <li>What access and client inputs are required, and by when?</li>
+                <li>What testing, reconciliation, rollback, and acceptance steps are included?</li>
+                <li>How are new requirements priced and approved?</li>
+                <li>What training, documentation, and post-launch support are in scope?</li>
+              </ol>
 
               <div className="bg-violet-50 border-l-4 border-violet-500 p-6 my-8 rounded-r-lg">
                 <h4 className="font-bold text-violet-900 mb-2 flex items-center gap-2"><AlertCircle className="w-5 h-5" /> Not sure which one you need?</h4>
-                <p className="text-violet-800 mb-3">If you are unsure whether your situation calls for consulting, implementation, or both, book a free 30-minute strategy call. We will give you an honest read on where you are and what the right next step looks like.</p>
-                <Link href="/contact"><Button className="bg-violet-600 hover:bg-violet-700">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+                <p className="text-violet-800 mb-3">If you are unsure whether your situation calls for consulting, implementation, or both, discuss your CRM scope with a team that can separate diagnosis, delivery, and acceptance criteria.</p>
+                <Link href="/contact"><Button className="bg-violet-600 hover:bg-violet-700">Discuss Your CRM Scope <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
               </div>
 
               <h2>What to Look For Before You Hire</h2>
@@ -149,22 +169,22 @@ export default function Post() {
 
               <h3>Senior delivery, not pyramid staffing</h3>
               <p>
-                The person on your strategy call should be the person doing the work. Larger agencies sometimes use a senior partner to win the deal and then hand off to junior staff for delivery. For SMB-sized engagements, that is rarely a fit. Ask directly: who exactly is in our CRM portal during this project? If the answer is vague, that is informative.
+                Ask for the named roles that will handle discovery, configuration, approvals, testing, and support. The person on the strategy call may be different from the delivery lead; what matters is clear supervision, escalation, continuity, and access to the people doing the work.
               </p>
 
               <h3>Vendor-neutral platform advice</h3>
               <p>
-                A consultant or partner that only ever recommends one CRM platform is usually optimizing for their referral relationship. Real vendor neutrality means the firm can credibly walk you through HubSpot, Salesforce, and Zoho, and can articulate why each one might be the right fit depending on your context. Their recommendation should change based on your business, not on which platform pays them.
+                Ask how the recommendation was reached, which alternatives were considered, and whether the provider has commercial affiliations with a platform. Specialization can be useful, but it does not by itself prove fit or neutrality.
               </p>
 
               <h3>Fixed pricing with a written scope</h3>
               <p>
-                Hourly billing on CRM projects almost always creates misaligned incentives. A fixed price with a written scope means the partner has done enough discovery to know what they are committing to, and you know exactly what you are buying. Scope changes happen, but they should be the exception, not the operating model.
+                Fixed-price, capped time-and-materials, and phased arrangements can all work. Compare the written scope, reporting cadence, assumptions, change-approval process, and acceptance criteria so you can see how effort and risk will be managed.
               </p>
 
               <h3>Training and documentation included</h3>
               <p>
-                An implementation that ends at "the system is configured" is incomplete. Your team needs to know how to use it day to day, and you need written documentation so that future admins or new hires can pick up where the partner left off. Training should be in scope, not an upsell after launch.
+                Ask what training, documentation, and post-launch support are included. If your project raises privacy, security, or regulatory questions, confirm which specialist is responsible for that advice rather than assuming it is covered by CRM configuration.
               </p>
 
               <h3>Canadian operating context</h3>
@@ -174,22 +194,26 @@ export default function Post() {
 
               <h2>Where to Go From Here</h2>
               <p>
-                If you already know what you want and are looking for execution, our <Link href="/services/crm-implementation" className="text-violet-600 hover:underline">CRM implementation</Link> page explains the work areas and delivery controls. Scope, price, and timing are confirmed after discovery. If you have an existing CRM that needs assessment and rework, the <Link href="/services/crm-cleanup" className="text-violet-600 hover:underline">CRM cleanup</Link> page is the right starting point. If you are specifically considering HubSpot, the <Link href="/services/hubspot-consulting" className="text-violet-600 hover:underline">HubSpot consulting</Link> page goes deeper. And if your project involves connecting the CRM to several other tools in your stack, the <Link href="/services/crm-integration" className="text-violet-600 hover:underline">CRM integration</Link> page covers that work.
+                If you already know what you want and are looking for execution, our <Link href="/services/crm-implementation" className="text-violet-600 hover:underline">CRM implementation</Link> page explains the work areas and delivery controls. Review the <Link href="/crm-implementation-method" className="text-violet-600 hover:underline">implementation acceptance and handoff controls</Link> before comparing proposals. Scope, price, and timing are confirmed after discovery. If you have an existing CRM that needs assessment and rework, the <Link href="/services/crm-cleanup" className="text-violet-600 hover:underline">CRM cleanup</Link> page is the right starting point. If you are specifically considering HubSpot, the <Link href="/services/hubspot-consulting" className="text-violet-600 hover:underline">HubSpot consulting</Link> page goes deeper. And if your project involves connecting the CRM to several other tools in your stack, the <Link href="/services/crm-integration" className="text-violet-600 hover:underline">CRM integration</Link> page covers that work.
               </p>
 
               <p>
-                For most Canadian SMBs, the right shape of engagement is a team that does both — consulting and implementation as one continuous project. That is how we work, and it is why this site is structured the way it is. If your business is in the Greater Vancouver area, our <Link href="/crm-consultant-coquitlam" className="text-violet-600 hover:underline">CRM consultant Coquitlam</Link> page walks through what local engagements look like.
+                For many Canadian SMBs, a phased engagement that connects consulting and implementation can reduce ambiguity. If your business is in the Greater Vancouver area, our <Link href="/crm-consultant-coquitlam" className="text-violet-600 hover:underline">CRM consultant Coquitlam</Link> page walks through what local engagements look like.
               </p>
 
               <p>
                 If you are still in the early search stage, the guide to <Link href="/blog/crm-consultant-near-me" className="text-violet-600 hover:underline">what CRM consultant near me buyers are really looking for</Link> breaks down the local-search intent behind cleanup, implementation, lead routing, automation, and reporting support.
               </p>
+
+              <p>
+                Want a lower-commitment first step? The <Link href="/lead-follow-up-audit" className="text-violet-600 hover:underline">free five-point lead follow-up audit</Link> reviews one public inquiry path without CRM access; it is not a platform-selection or internal-system audit.
+              </p>
             </div>
 
             <div className="mt-12 p-8 bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl text-white">
               <h3 className="text-2xl font-bold mb-4">Not sure if you need consulting, implementation, or both?</h3>
-              <p className="text-white/80 mb-6">Book a free 30-minute strategy call. We will look at where you are, recommend the right shape of engagement, and you decide if we are the right fit.</p>
-              <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
+              <p className="text-white/80 mb-6">Tell us what is unclear, what is already decided, and what needs to work at launch. We can help define the next bounded step.</p>
+              <Link href="/contact"><Button size="lg" className="bg-white text-violet-900 hover:bg-violet-100">Discuss Your CRM Scope <ArrowRight className="w-5 h-5 ml-2" /></Button></Link>
             </div>
 
             <div className="mt-12">
