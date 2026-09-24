@@ -262,6 +262,32 @@ export default function CrmConsultantVancouver() {
         </div>
       </section>
 
+      <section className="border-y border-[#D0D5DD] bg-[#FBFBFF] py-12 md:py-16" aria-labelledby="vancouver-buyer-choice">
+        <div className="container mx-auto px-4">
+          <div className="mb-8 max-w-4xl">
+            <Badge className="mb-4 bg-white text-[#4B37C8] hover:bg-white">Buyer decision guide</Badge>
+            <h2 id="vancouver-buyer-choice" className="mb-4 text-3xl font-bold text-[#101828]">What should Vancouver buyers confirm before choosing a CRM consultant?</h2>
+            <p className="text-lg leading-relaxed text-[#475467]">Local search should answer a delivery question, not imply an office or outcome that has not been confirmed. Ask how the work will be delivered, who owns approvals, and what evidence you will receive before systems change.</p>
+          </div>
+          <div className="overflow-x-auto rounded-lg border border-[#D0D5DD] bg-white">
+            <table className="w-full min-w-[760px] border-collapse text-left">
+              <thead className="bg-[#1E3A5F] text-white">
+                <tr><th className="px-5 py-4 font-semibold">Question</th><th className="px-5 py-4 font-semibold">What to confirm</th><th className="px-5 py-4 font-semibold">Evidence to request</th></tr>
+              </thead>
+              <tbody>
+                {[
+                  ['Where will the work happen?', 'Calls, shared screens, documented sprints, or an agreed in-person session.', 'Delivery format, time-zone expectations, and any onsite assumptions.'],
+                  ['Who owns the next decision?', 'Named client and delivery owners for scope, access, testing, and approval.', 'Statement of work with responsibilities and escalation path.'],
+                  ['What happens before configuration?', 'Current-state review of process, data, integrations, and reporting needs.', 'Findings, assumptions, acceptance criteria, and change controls.'],
+                ].map(([question, confirmation, evidence]) => (
+                  <tr key={question} className="border-t border-[#D0D5DD] align-top"><td className="px-5 py-5 font-semibold text-[#101828]">{question}</td><td className="px-5 py-5 text-[#475467]">{confirmation}</td><td className="px-5 py-5 text-[#475467]">{evidence}</td></tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       <section className="border-y border-[#D0D5DD] bg-[#FBFBFF] py-16">
         <div className="container mx-auto px-4">
           <div className="mb-10 max-w-4xl">
