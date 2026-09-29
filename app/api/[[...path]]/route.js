@@ -175,7 +175,7 @@ export async function GET(request, { params }) {
             error: 'Contact storage is temporarily unavailable',
             code: 'CONTACT_STORE_UNAVAILABLE',
           },
-          { status: 500, headers: corsHeaders() }
+          { status: 503, headers: corsHeaders() }
         );
       }
     }
