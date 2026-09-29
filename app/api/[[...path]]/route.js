@@ -175,7 +175,7 @@ export async function GET(request, { params }) {
             error: 'Contact storage is temporarily unavailable',
             code: 'CONTACT_STORE_UNAVAILABLE',
           },
-          { status: 503, headers: corsHeaders() }
+          { status: 500, headers: corsHeaders() }
         );
       }
     }
@@ -391,12 +391,18 @@ export async function POST(request, { params }) {
         const cookieHeader = request.headers.get('cookie') || '';
         const hutk = cookieHeader.match(/(?:^|;\s*)hubspotutk=([^;]+)/)?.[1];
         const pageUri = attribution.landing_page || process.env.NEXT_PUBLIC_BASE_URL || 'https://www.emergent-logic.ca/contact';
+        const attributionLines = [
+          ['Lead source', 'website_contact_form'],
+          ['Landing page', attribution.landing_page],
+          ['UTM source', attribution.utm_source],
+          ['UTM medium', attribution.utm_medium],
+          ['UTM campaign', attribution.utm_campaign],
+          ['Referrer host', attribution.referrer_host],
+        ].filter(([, value]) => value !== '').map(([label, value]) => `${label}: ${value}`);
+        const hubspotMessage = [message, ...attributionLines].filter(Boolean).join('\n\n');
         const fields = [
           ['firstname', hubspotFirstName], ['lastname', hubspotLastName], ['email', email],
-          ['phone', phone], ['message', message], ['lead_source', 'website_contact_form'],
-          ['landing_page', attribution.landing_page], ['utm_source', attribution.utm_source],
-          ['utm_medium', attribution.utm_medium], ['utm_campaign', attribution.utm_campaign],
-          ['referrer_host', attribution.referrer_host],
+          ['phone', phone], ['message', hubspotMessage],
         ].filter(([, value]) => value !== '');
         const context = { pageUri, pageName: 'Emergent Logic contact form' };
         if (hutk) context.hutk = decodeURIComponent(hutk);
@@ -433,7 +439,7 @@ export async function POST(request, { params }) {
         }));
         return NextResponse.json(
           { error: 'Submission temporarily unavailable. Please try again shortly.' },
-          { status: 503, headers: corsHeaders() }
+          { status: 500, headers: corsHeaders() }
         );
       }
 
