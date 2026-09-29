@@ -239,13 +239,13 @@ export async function POST(request, { params }) {
       return NextResponse.json(sanitized, { status: 201, headers: corsHeaders() });
     }
     
-    // POST /api/contact — server-side validation, honeypot, n8n forward, GA4 fires only on 2xx
+    // POST /api/contact — server-side validation, Mongo backup, resilient CRM delivery
     if (pathString === 'contact') {
       const contactStartedAt = Date.now();
 
       // 1) Honeypot — silently accept and discard bot submissions
       // Field names: "website" (legacy) or "hp_field" (current). If filled, treat as bot.
-      if ((body.website && body.website.trim() !== '') || (body.hp_field && body.hp_field.trim() !== '')) {
+      if ((body.website && body.website.trim() !== '') || (body.hp_field && body.hp_field.trim() !== '') || (body.company_website && body.company_website.trim() !== '')) {
         console.log(JSON.stringify({
           level: 'info',
           msg: 'contact_submission',
@@ -328,8 +328,24 @@ export async function POST(request, { params }) {
         ...attribution,
         created_at: new Date().toISOString()
       };
-      // 4) Forward to n8n -> HubSpot and write the admin backup in parallel.
-      // Either destination can accept the lead, while neither blocks the other.
+      // 4) Persist the Mongo backup first. Delivery integrations are best-effort
+      // and must never make the contact request depend on n8n availability.
+      let persistedLocally = false;
+      try {
+        await withTimeout(
+          (async () => {
+            const database = await getDb();
+            await database.collection('contact_submissions').insertOne(contactSubmission);
+          })(),
+          contactPersistenceTimeoutMs,
+          'Local contact persistence'
+        );
+        persistedLocally = true;
+      } catch (mongoErr) {
+        console.error('Local contact persistence failed:', mongoErr?.message || 'unknown error');
+      }
+
+      // n8n remains a non-blocking fallback during the migration window.
       const n8nUrl = process.env.N8N_CONTACT_WEBHOOK_URL_V2
         || 'https://emergent-logic.app.n8n.cloud/webhook/contact-form-v2';
       const forwardToN8n = async () => {
@@ -342,7 +358,7 @@ export async function POST(request, { params }) {
             forwardHeaders.Authorization = `Bearer ${process.env.N8N_WEBHOOK_TOKEN}`;
           }
           const controller = new AbortController();
-          timeout = setTimeout(() => controller.abort(), 5000);
+          timeout = setTimeout(() => controller.abort(), 8000);
           const n8nRes = await fetch(n8nUrl, {
             method: 'POST',
             headers: forwardHeaders,
@@ -362,29 +378,52 @@ export async function POST(request, { params }) {
         }
       };
 
-      const persistLocally = async () => {
+      const submitToHubSpot = async () => {
+        const portalId = process.env.HUBSPOT_PORTAL_ID || '343136987';
+        const formGuid = process.env.HUBSPOT_CONTACT_FORM_GUID;
+        if (!formGuid) return false;
+        const fullName = String(body.name || `${firstName} ${lastName}`).trim();
+        const nameParts = fullName.split(/\s+/).filter(Boolean);
+        const hubspotFirstName = nameParts.shift() || firstName;
+        const hubspotLastName = nameParts.join(' ') || lastName;
+        const forwardedFor = request.headers.get('x-forwarded-for') || '';
+        const ipAddress = forwardedFor.split(',')[0].trim();
+        const cookieHeader = request.headers.get('cookie') || '';
+        const hutk = cookieHeader.match(/(?:^|;\s*)hubspotutk=([^;]+)/)?.[1];
+        const pageUri = attribution.landing_page || process.env.NEXT_PUBLIC_BASE_URL || 'https://www.emergent-logic.ca/contact';
+        const fields = [
+          ['firstname', hubspotFirstName], ['lastname', hubspotLastName], ['email', email],
+          ['phone', phone], ['message', message], ['lead_source', 'website_contact_form'],
+          ['landing_page', attribution.landing_page], ['utm_source', attribution.utm_source],
+          ['utm_medium', attribution.utm_medium], ['utm_campaign', attribution.utm_campaign],
+          ['referrer_host', attribution.referrer_host],
+        ].filter(([, value]) => value !== '');
+        const context = { pageUri, pageName: 'Emergent Logic contact form' };
+        if (hutk) context.hutk = decodeURIComponent(hutk);
+        if (ipAddress) context.ipAddress = ipAddress;
         try {
-          await withTimeout(
-            (async () => {
-              const database = await getDb();
-              await database.collection('contact_submissions').insertOne(contactSubmission);
-            })(),
-            contactPersistenceTimeoutMs,
-            'Local contact persistence'
-          );
+          const response = await fetch(`https://api.hsforms.com/submissions/v3/integration/submit/${encodeURIComponent(portalId)}/${encodeURIComponent(formGuid)}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ fields: fields.map(([name, value]) => ({ name, value })), context }),
+          });
+          if (!response.ok) {
+            console.error('HubSpot submit non-2xx:', response.status);
+            return false;
+          }
           return true;
-        } catch (mongoErr) {
-          console.error('Local contact persistence failed:', mongoErr);
+        } catch (error) {
+          console.error('HubSpot submit error:', error?.message || 'unknown error');
           return false;
         }
       };
 
-      const [forwardedToN8n, persistedLocally] = await Promise.all([
+      const [forwardedToN8n, submittedToHubSpot] = await Promise.allSettled([
         forwardToN8n(),
-        persistLocally(),
-      ]);
+        submitToHubSpot(),
+      ]).then(results => results.map(result => result.status === 'fulfilled' && result.value === true));
 
-      if (!persistedLocally && !forwardedToN8n) {
+      if (!persistedLocally && !submittedToHubSpot) {
         console.error(JSON.stringify({
           level: 'error',
           msg: 'contact_submission',
@@ -404,12 +443,13 @@ export async function POST(request, { params }) {
         route: '/api/contact',
         outcome: 'accepted',
         crm_forwarded: forwardedToN8n,
+        hubspot_submitted: submittedToHubSpot,
         backup_persisted: persistedLocally,
         ms: Date.now() - contactStartedAt,
       }));
 
       const { _id, ...sanitized } = contactSubmission;
-      return NextResponse.json(sanitized, { status: 201, headers: corsHeaders() });
+      return NextResponse.json(sanitized, { status: 200, headers: corsHeaders() });
     }
     
     // POST /api/admin/content
