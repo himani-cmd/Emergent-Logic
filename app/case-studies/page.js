@@ -31,6 +31,7 @@ export default function CaseStudiesPage() {
   return (
     <main className="min-h-screen">
       <Navbar />
+      <p className="mx-auto max-w-5xl px-4 pt-24 text-sm text-slate-600">Illustrative scenario based on common CRM and lead follow-up patterns. Not a specific client engagement.</p>
 
       <section className="pt-32 pb-20 bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950">
         <div className="container mx-auto px-4 max-w-5xl">
