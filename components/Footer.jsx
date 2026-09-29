@@ -20,7 +20,7 @@ const companyLinks = [
   { name: 'About Us', href: '/about' },
   { name: 'Pricing', href: '/pricing' },
   { name: 'Lead Follow-Up Audit', href: '/lead-follow-up-audit' },
-  { name: 'Methods', href: '/case-studies' },
+  { name: 'Example Scenarios', href: '/case-studies' },
   { name: 'Blog', href: '/blog' },
   { name: 'Contact', href: '/contact' },
   { name: 'Book a Call', href: 'https://calendly.com/emergent-logic/30min', external: true },

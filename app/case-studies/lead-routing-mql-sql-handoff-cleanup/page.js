@@ -119,6 +119,7 @@ const jsonLd = {
 export default function LeadRoutingMqlSqlHandoffCleanupCaseStudy() {
   return (
     <main className="min-h-screen">
+      <p className="mx-auto max-w-5xl px-4 pt-6 text-sm text-slate-600">Illustrative scenario based on common CRM and lead follow-up patterns. Not a specific client engagement.</p>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
 
