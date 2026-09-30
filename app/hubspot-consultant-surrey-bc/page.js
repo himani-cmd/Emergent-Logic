@@ -153,7 +153,7 @@ export default function HubSpotConsultantSurrey() {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Related resources</h2>
           <div className="grid md:grid-cols-3 gap-4">
             <Link href="/services/hubspot-consulting" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-orange-700">HubSpot Consulting</p><p className="text-sm text-gray-600">Service scope and delivery controls</p></Link>
-            <Link href="/blog/hubspot-consultant-vancouver" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-orange-700">HubSpot Consultant Vancouver</p><p className="text-sm text-gray-600">What to look for before hiring</p></Link>
+            <Link href="/hubspot-consultant-vancouver" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-orange-700">HubSpot consultant in Vancouver</p><p className="text-sm text-gray-600">What to look for before hiring</p></Link>
             <Link href="/contact" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-orange-700">Contact Emergent Logic</p><p className="text-sm text-gray-600">Prefer email? Send us a message</p></Link>
           </div>
         </div>

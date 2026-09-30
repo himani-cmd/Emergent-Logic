@@ -199,6 +199,29 @@ export default function HubspotConsultantVancouver() {
               </div>
             ))}
           </div>
+          <div className="mt-10 grid gap-8 md:grid-cols-2">
+            <div>
+              <h3 className="mb-3 text-xl font-semibold text-gray-900">Questions to ask before you hire</h3>
+              <ul className="list-disc space-y-2 pl-5 text-gray-700">
+                <li>Can they talk through your sales process, funnel stages, reporting needs and integration stack without looking anything up?</li>
+                <li>Will they put scope and price in writing before build work begins?</li>
+                <li>Is the person on the strategy call the same person working in your portal?</li>
+                <li>Is written documentation a standard deliverable rather than an upsell?</li>
+                <li>Will they tell you when Salesforce or Zoho would fit your business better than HubSpot?</li>
+                <li>Do they understand Canadian operating context: Canadian-dollar subscriptions, PIPEDA-aligned consent and data handling, sales tax in quoting, and Canadian accounting integrations?</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="mb-3 text-xl font-semibold text-gray-900">How to avoid a messy setup</h3>
+              <ul className="list-disc space-y-2 pl-5 text-gray-700">
+                <li>Map how the business actually sells before anyone changes portal settings.</li>
+                <li>Clean duplicates, missing fields and broken associations before migrating, not after.</li>
+                <li>Train each role on its daily work in the portal, not on every feature.</li>
+                <li>Choose the Hub and tier that match your sales motion; avoid buying Enterprise features nobody will use.</li>
+                <li>Name an owner, internal or fractional, for new properties, workflow changes and adoption after launch.</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -421,7 +444,6 @@ export default function HubspotConsultantVancouver() {
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Not sure if HubSpot is right?</h2>
           <p className="text-gray-600 mb-4">Need broader CRM help before choosing a platform? See our <Link href="/crm-consultant-vancouver" className="text-violet-600 hover:underline">CRM consultant Vancouver</Link> page for cleanup, routing, reporting, and integration support.</p>
-          <p className="text-gray-600 mb-4">Start here: <Link href="/blog/hubspot-consultant-vancouver" className="text-violet-600 hover:underline">how to evaluate a HubSpot consultant in Vancouver</Link>, including what to review before changing a live portal.</p>
           <p className="text-gray-600 mb-4">For a reusable implementation control model, review the <Link href="/crm-implementation-method" className="text-violet-600 hover:underline">CRM implementation method</Link> covering decisions, testing, acceptance, release, and handoff.</p>
           <p className="text-gray-600 mb-4">Moving from spreadsheets? Use the <Link href="/blog/excel-to-crm-migration-repeat-order-businesses" className="text-violet-600 hover:underline">Excel-to-CRM migration checklist and free workbook</Link> to map customers, products, order cadence, ownership, and follow-up before choosing a platform.</p>
           <p className="text-gray-600 mb-4">Compare platform fit: <Link href="/blog/salesforce-vs-hubspot-vs-zoho-canada-2026" className="text-violet-600 hover:underline">Salesforce vs HubSpot for a mid-sized Canadian company, including where Zoho fits</Link>.</p>

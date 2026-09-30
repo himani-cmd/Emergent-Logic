@@ -276,10 +276,6 @@ export default function HubSpotConsulting() {
               <p className="font-medium text-violet-600">HubSpot Workflow Cleanup</p>
               <p className="text-gray-600 text-sm">Workflow repair, enrollment logic, owner routing, lifecycle stages, and forms.</p>
             </Link>
-            <Link href="/blog/hubspot-consultant-vancouver" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-violet-600">Why Businesses Search for a HubSpot Consultant in Vancouver</p>
-              <p className="text-gray-600 text-sm">What a consultant should actually help with, and how to avoid a messy setup.</p>
-            </Link>
             <Link href="/blog/crm-consultant-vs-implementation-partner-canada" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM Consultant vs Implementation Partner</p>
               <p className="text-gray-600 text-sm">When each role makes sense, and why most SMBs need both from the same team.</p>
