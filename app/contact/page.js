@@ -48,6 +48,7 @@ const emptyContactFields = {
   phone: '',
   message: '',
   hp_field: '',
+  company_website: '',
   utm_source: '',
   utm_medium: '',
   utm_campaign: '',
@@ -235,6 +236,7 @@ export default function ContactPage() {
           phone: '',
           message: '',
           hp_field: '',
+          company_website: '',
         }));
       } else {
         trackLeadFormEvent('lead_form_error', {
@@ -412,8 +414,8 @@ export default function ContactPage() {
                   >
                     {/* Honeypot — hidden from humans, visible to bots. Do not remove. */}
                     <div aria-hidden="true" style={{ position: 'absolute', left: '-10000px', top: 'auto', width: '1px', height: '1px', overflow: 'hidden' }}>
-                      <label htmlFor="hp_field">Leave this field blank</label>
-                      <input type="text" id="hp_field" name="hp_field" tabIndex={-1} autoComplete="off" value={formData.hp_field} onChange={(e) => setFormData({ ...formData, hp_field: e.target.value })} />
+                      <label htmlFor="company_website">Leave this field blank</label>
+                      <input type="text" id="company_website" name="company_website" tabIndex={-1} autoComplete="off" value={formData.company_website} onChange={(e) => setFormData({ ...formData, company_website: e.target.value })} />
                     </div>
                     <div className="grid grid-cols-2 gap-4">
                       <div><Label htmlFor="first_name">First Name</Label><Input id="first_name" name="first_name" autoComplete="given-name" value={formData.first_name} onChange={(e) => setFormData({ ...formData, first_name: e.target.value })} required className="mt-1" /></div>

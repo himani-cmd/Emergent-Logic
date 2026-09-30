@@ -11,6 +11,7 @@ const initialForm = {
   company: '',
   project_summary: '',
   hp_field: '',
+  company_website: '',
   utm_source: '',
   utm_medium: '',
   utm_campaign: '',
@@ -156,7 +157,7 @@ export default function CRMImplementationAutomationLeadForm() {
       </label>
 
       <div className="absolute -left-[10000px] top-auto h-px w-px overflow-hidden" aria-hidden="true">
-        <label>Leave this field empty<input name="hp_field" value={formData.hp_field} onChange={updateField} tabIndex={-1} autoComplete="off" /></label>
+        <label>Leave this field empty<input name="company_website" value={formData.company_website} onChange={updateField} tabIndex={-1} autoComplete="off" /></label>
       </div>
 
       {status === 'error' && <p className="mt-4 text-sm font-medium text-red-700" role="alert">{errorMessage}</p>}
