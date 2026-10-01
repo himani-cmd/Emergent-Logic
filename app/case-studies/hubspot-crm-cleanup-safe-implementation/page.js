@@ -291,7 +291,7 @@ export default function HubSpotCRMCleanupSafeImplementationCaseStudy() {
             <div className="mt-10 flex items-center gap-3 text-gray-600">
               <RefreshCcw className="w-5 h-5 text-blue-700" />
               <p>
-                Related reading: <Link href="/blog/why-hubspot-workflows-break" className="text-blue-700 hover:underline">why HubSpot workflows break</Link> and <Link href="/blog/hubspot-admin-support-small-business" className="text-blue-700 hover:underline">HubSpot admin support for small businesses</Link>.
+                Related reading: <Link href="/blog/why-hubspot-workflows-break" className="text-blue-700 hover:underline">why HubSpot workflows break</Link> and <Link href="/hubspot-admin-support-canada-us" className="text-blue-700 hover:underline">HubSpot admin support</Link>.
               </p>
             </div>
           </div>

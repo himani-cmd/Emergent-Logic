@@ -2,6 +2,7 @@ const baseUrl = 'https://www.emergent-logic.ca';
 const defaultLastmod = '2026-07-31';
 
 const lastmodByPath = {
+  '/services/crm-implementation': '2026-10-01',
   '/services/gohighlevel-implementation': '2026-09-06',
   '/services/crm-integration': '2026-08-23',
   '/services/crm-cleanup': '2026-08-23',
@@ -12,7 +13,7 @@ const lastmodByPath = {
   '/services/salesforce-consulting': '2026-08-28',
   '/blog/marketing-automation-needs-crm-cleanup': '2026-08-24',
   '/crm-implementation-method': '2026-08-13',
-  '/hubspot-admin-support-canada-us': '2026-08-12',
+  '/hubspot-admin-support-canada-us': '2026-10-01',
   '/blog/salesforce-to-hubspot-migration-checklist': '2026-08-11',
   '/services/remote-crm-implementation': '2026-08-11',
   '/services/crm-relaunch': '2026-08-19',
@@ -72,7 +73,6 @@ const urls = [
   ['/blog/salesforce-admin-vs-consultant-small-business', 'monthly', '0.8'],
   ['/blog/hubspot-salesforce-sync-cleanup', 'monthly', '0.8'],
   ['/blog/real-estate-lead-follow-up-crm', 'monthly', '0.8'],
-  ['/blog/hubspot-admin-support-small-business', 'monthly', '0.8'],
   ['/blog/crm-automation-for-immigration-consultants', 'monthly', '0.8'],
   ['/blog/salesforce-admin-support-small-business', 'monthly', '0.8'],
   ['/blog/salesforce-consultant-near-me', 'monthly', '0.8'],
@@ -101,7 +101,6 @@ const urls = [
   ['/salesforce-admin-support-canada-us', 'monthly', '0.9'],
   ['/salesforce-consultant-surrey-bc', 'monthly', '0.9'],
   ['/hubspot-consultant-surrey-bc', 'monthly', '0.9'],
-  ['/crm-implementation-canada', 'monthly', '0.9'],
   ['/crm-cleanup-canada', 'monthly', '0.9'],
   ['/property-management-crm-consulting-canada', 'monthly', '0.9'],
   ['/immigration-consultant-crm-canada', 'monthly', '0.9'],
@@ -112,7 +111,6 @@ const urls = [
   ['/crm-consultant-langley', 'monthly', '0.9'],
   ['/crm-consultant-coquitlam', 'monthly', '0.9'],
   ['/blog/hubspot-vs-salesforce-canada', 'monthly', '0.8'],
-  ['/blog/what-is-crm-implementation-canada', 'monthly', '0.8'],
   ['/blog/what-is-marketing-automation-small-business', 'monthly', '0.8'],
   ['/blog/what-is-aeo-answer-engine-optimization', 'monthly', '0.8'],
   ['/blog/how-to-choose-digital-marketing-agency-vancouver', 'monthly', '0.8'],

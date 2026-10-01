@@ -228,7 +228,7 @@ export default function MarketingAutomation() {
         <div className="container mx-auto max-w-4xl px-4">
           <h2 className="mb-4 text-3xl font-bold text-gray-900">What does a marketing automation agency or consultant actually implement?</h2>
           <p className="mb-4 text-lg text-gray-700">A marketing automation implementation connects consented lead capture, segmentation, lifecycle rules, scoring, nurture, ownership, routing, attribution, exception handling and sales follow-up inside a trusted CRM. The output should be a tested operating workflow with named owners and measurable handoffs, not simply more scheduled email.</p>
-          <p className="text-gray-600">Emergent Logic focuses on this CRM and workflow layer. Media buying, ongoing campaign management and content production are separate services or remain with the client&apos;s existing marketing team. Companies comparing a broader national CRM partner can review the <Link href="/crm-implementation-canada" className="font-medium text-purple-700 hover:underline">CRM implementation Canada guide</Link>; teams seeking vendor-neutral local guidance can use the <Link href="/crm-consultant-vancouver" className="font-medium text-purple-700 hover:underline">CRM consultant Vancouver guide</Link>.</p>
+          <p className="text-gray-600">Emergent Logic focuses on this CRM and workflow layer. Media buying, ongoing campaign management and content production are separate services or remain with the client&apos;s existing marketing team. Teams seeking vendor-neutral local guidance can use the <Link href="/crm-consultant-vancouver" className="font-medium text-purple-700 hover:underline">CRM consultant Vancouver guide</Link>.</p>
         </div>
       </section>
 

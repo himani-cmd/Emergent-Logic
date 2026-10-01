@@ -246,6 +246,15 @@ export default function CRMImplementation() {
               </div>
             ))}
           </div>
+          <h3 className="text-xl font-bold text-gray-900 mt-12 mb-4">What happens at each stage</h3>
+          <ul className="space-y-3 text-gray-600 list-disc pl-6">
+            <li><strong className="text-gray-900">Audit &amp; Scope:</strong> discovery and process mapping cover how the sales process works today and where leads come from, and continue until the decisions and dependencies needed for a responsible scope are explicit. Platform selection follows, with a configuration plan that becomes the blueprint for the build.</li>
+            <li><strong className="text-gray-900">Build &amp; Test:</strong> existing data is profiled, cleaned, formatted, test-imported, and validated before migration. Pipelines, deal stages, custom fields, email templates, automation workflows, dashboards, and reports are configured to the plan, and the CRM is integrated with email, the website, the marketing platform, accounting software, and other tools in the stack.</li>
+            <li><strong className="text-gray-900">Launch &amp; Handoff:</strong> training, ownership, documentation, and a feedback loop drive adoption, because configuration alone does not create consistent use.</li>
+          </ul>
+          <p className="text-gray-600 mt-6">
+            If you are still comparing providers, read <Link href="/crm-implementation-method" className="text-violet-700 hover:underline font-medium">How to choose a CRM implementation partner</Link> for the discovery, build, acceptance, and handoff questions to ask before signing.
+          </p>
         </div>
       </section>
 
@@ -343,7 +352,7 @@ export default function CRMImplementation() {
           <div className="space-y-6">
             {[
               { q: 'Which CRM should I choose — HubSpot, Salesforce, or Zoho?', a: 'It depends on process complexity, administration capacity, data, integrations, reporting, and budget. Discovery compares the supported options and discloses relevant partner relationships before a recommendation is made.' },
-              { q: 'How long does CRM implementation actually take?', a: 'Timing depends on the number of pipelines, integrations, migration complexity, stakeholder availability, testing, and acceptance criteria. The proposed delivery plan and dependencies are documented before work starts.' },
+              { q: 'How long does CRM implementation actually take?', a: 'Timing depends on the number of pipelines, integrations, migration complexity, stakeholder availability, testing, and acceptance criteria. The proposed delivery plan and dependencies are documented before work starts. Data volume and quality matter too: more sources, duplicates, and relationships mean more cleanup and test imports before migration. Team size and the number of roles shape permissions, review cycles, and how much training is needed before launch.' },
               { q: 'What does CRM implementation cost in Canada?', a: 'Pricing is confirmed after discovery. The written proposal defines the deliverables, exclusions, dependencies, approval points, and commercial terms before work begins.' },
               { q: 'Will my team actually use the CRM after launch?', a: 'No consultant can guarantee adoption. The implementation is designed around daily user workflows and can include role-based training, usage checks, and a documented adoption plan to reduce avoidable friction.' },
               { q: 'Do you migrate data from our old CRM or spreadsheets?', a: 'Data migration can be included when scoped. The plan covers export, field mapping, deduplication, validation, test imports, rollback, and final approval before production migration.' },
@@ -404,10 +413,6 @@ export default function CRMImplementation() {
             <Link href="/crm-implementation-method" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Our CRM Implementation Method</p>
               <p className="text-gray-600 text-sm">Discovery, design, build, UAT, release, and client-handoff gates</p>
-            </Link>
-            <Link href="/crm-implementation-canada" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <p className="font-medium text-violet-600">CRM Implementation Canada</p>
-              <p className="text-gray-600 text-sm">National CRM setup page for Canadian SMBs</p>
             </Link>
             <Link href="/crm-consultant-langley" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM Consultant Langley</p>
