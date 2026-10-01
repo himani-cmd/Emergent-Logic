@@ -5,6 +5,7 @@ const redirects = {
   '/marketing-automation': '/services/marketing-automation',
   '/web-development': '/',
   '/digital-marketing': '/',
+  '/blog/hubspot-consultant-vancouver': '/hubspot-consultant-vancouver',
 };
 
 export function middleware(request) {
@@ -21,5 +22,5 @@ export function middleware(request) {
 }
 
 export const config = {
-  matcher: ['/crm-implementation', '/marketing-automation', '/web-development', '/digital-marketing'],
+  matcher: ['/crm-implementation', '/marketing-automation', '/web-development', '/digital-marketing', '/blog/hubspot-consultant-vancouver'],
 };

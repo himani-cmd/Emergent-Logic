@@ -231,13 +231,6 @@ const posts = [
     readTime: '8 min read',
   },
   {
-    slug: 'hubspot-consultant-vancouver',
-    title: 'Why Businesses Search for a HubSpot Consultant in Vancouver',
-    excerpt: 'What a HubSpot consultant should actually help with, when to hire one, and how to avoid a messy setup. The Vancouver context, and what Canadian SMBs should look for.',
-    category: 'HubSpot',
-    readTime: '8 min read',
-  },
-  {
     slug: 'marketing-automation-needs-crm-cleanup',
     title: 'Why Marketing Automation Fails Without CRM Cleanup First',
     excerpt: 'Automation multiplies whatever is already there. The five cleanup gaps that sink automation, and how to know whether your CRM is ready to automate.',
