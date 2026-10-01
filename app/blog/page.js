@@ -148,14 +148,6 @@ const posts = [
     featured: true,
   },
   {
-    slug: 'hubspot-admin-support-small-business',
-    title: 'HubSpot Admin Support for Small Businesses',
-    excerpt: 'Small businesses often need HubSpot admin support before they need a full-time RevOps hire. Learn what to outsource, what to keep internal, and when cleanup should come first.',
-    category: 'HubSpot',
-    readTime: '8 min read',
-    featured: true,
-  },
-  {
     slug: 'salesforce-admin-support-small-business',
     title: 'Salesforce Admin Support for Small Businesses',
     excerpt: 'Small businesses often need Salesforce admin support before they need a full-time admin. Learn what to outsource, what to keep internal, and when cleanup should come first.',
@@ -313,13 +305,6 @@ const posts = [
     excerpt: 'Comparing HubSpot and Salesforce for Canadian SMBs. Cost, features, and implementation time to help you choose.',
     category: 'CRM',
     readTime: '8 min read',
-  },
-  {
-    slug: 'what-is-crm-implementation-canada',
-    title: 'What is CRM Implementation? A Step-by-Step Guide for Canadian SMBs',
-    excerpt: 'Learn what CRM implementation involves, how long it takes, what it costs, and how to avoid the most common mistakes.',
-    category: 'CRM',
-    readTime: '9 min read',
   },
   {
     slug: 'what-is-marketing-automation-small-business',

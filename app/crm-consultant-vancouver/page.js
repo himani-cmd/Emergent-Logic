@@ -396,7 +396,7 @@ export default function CrmConsultantVancouver() {
           <h2 id="crm-scope-choice" className="mb-4 text-3xl font-bold text-[#101828]">Do you need CRM implementation, cleanup or integration?</h2>
           <p className="mb-4 leading-relaxed text-[#475467]">Start with implementation when the team needs a shared process and a first CRM setup. Choose cleanup when the platform fits but records, stages or ownership are unreliable. Scope an integration when the problem is the handoff between otherwise usable systems.</p>
           <p className="mb-4 leading-relaxed text-[#475467]">For example, if a website enquiry reaches an inbox but has no assigned owner, first check the capture and routing rules. A replacement CRM may not be necessary. This is an illustrative diagnostic example, not a client result.</p>
-          <p className="leading-relaxed text-[#475467]">Use our <Link href="/blog/what-is-crm-implementation-canada" className="font-medium text-violet-700 hover:underline">CRM implementation guide</Link> to understand the work involved, or the <Link href="/blog/crm-roi-calculator-business-case-2026" className="font-medium text-violet-700 hover:underline">CRM business-case worksheet</Link> to compare your own assumptions before committing to a project.</p>
+          <p className="leading-relaxed text-[#475467]">Use the <Link href="/blog/crm-roi-calculator-business-case-2026" className="font-medium text-violet-700 hover:underline">CRM business-case worksheet</Link> to compare your own assumptions before committing to a project.</p>
         </div>
       </section>
 

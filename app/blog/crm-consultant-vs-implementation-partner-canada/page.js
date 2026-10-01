@@ -30,7 +30,6 @@ export const metadata = {
 
 const relatedPosts = [
   { title: 'CRM Consultant Near Me: What Buyers Are Really Looking For', href: '/blog/crm-consultant-near-me' },
-  { title: 'What is CRM Implementation? A Step-by-Step Guide', href: '/blog/what-is-crm-implementation-canada' },
   { title: 'CRM Freelancer vs Consulting Firm', href: '/blog/crm-freelancer-vs-consulting-firm' },
 ];
 
