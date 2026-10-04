@@ -30,6 +30,12 @@ const supportAreas = [
   { icon: FileText, title: 'Documentation and handoff', text: 'Maintain property, workflow, report, integration, and change notes so the portal remains understandable and transferable.' },
 ];
 
+const outsourceFirst = [
+  'Integration checks for website forms, calendars, Gmail or Outlook, and sales tools that may be failing quietly.',
+  'Upkeep of lists, forms, landing pages, meeting links, inboxes, and inactive users.',
+  'Light training so sales and marketing understand what changed in the portal.',
+];
+
 const fitSignals = [
   'HubSpot is live, but nobody consistently owns administration.',
   'Users create workarounds because properties, stages, or views are confusing.',
@@ -133,6 +139,17 @@ export default function HubSpotAdminSupportCanadaUs() {
                 <p className="mt-3 leading-7 text-slate-600">{area.text}</p>
               </section>
             ))}
+          </div>
+          <div className="mt-12 max-w-4xl">
+            <h3 className="text-2xl font-bold text-slate-950">What to outsource first</h3>
+            <ul className="mt-5 list-disc space-y-3 pl-6 leading-7 text-slate-600">
+              {outsourceFirst.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <p className="mt-5 leading-7 text-slate-600">
+              Keep the process decisions internal: what counts as a qualified lead, how lifecycle stages work, which reports matter, who owns follow-up, and the customer experience you want. Outsourced admin translates those decisions into HubSpot configuration.
+            </p>
           </div>
         </div>
       </section>

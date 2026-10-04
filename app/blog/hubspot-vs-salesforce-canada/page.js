@@ -23,7 +23,6 @@ export const metadata = {
 };
 
 const relatedPosts = [
-  { title: 'What is CRM Implementation?', href: '/blog/what-is-crm-implementation-canada' },
   { title: 'What is Marketing Automation?', href: '/blog/what-is-marketing-automation-small-business' },
 ];
 

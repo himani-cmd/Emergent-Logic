@@ -201,7 +201,7 @@ export default function HubSpotConsultingCostGuide() {
                   { title: 'HubSpot Consulting', href: '/services/hubspot-consulting' },
                   { title: 'CRM Cleanup', href: '/services/crm-cleanup' },
                   { title: 'Why HubSpot Workflows Break', href: '/blog/why-hubspot-workflows-break' },
-                  { title: 'HubSpot Admin Support for Small Businesses', href: '/blog/hubspot-admin-support-small-business' },
+                  { title: 'HubSpot Admin Support', href: '/hubspot-admin-support-canada-us' },
                 ].map((post) => (
                   <Link key={post.href} href={post.href}>
                     <Card className="hover:shadow-lg transition-shadow cursor-pointer">
