@@ -11,6 +11,7 @@
         "audit:source-security": "node scripts/verify-source-security.mjs",
         "audit:conversion-events": "node scripts/verify-conversion-events.mjs",
         "audit:browser-secrets": "node scripts/verify-browser-secrets.mjs",
+        "indexnow": "node scripts/indexnow.mjs",
         "start": "next start"
     },
     "dependencies": {
