@@ -34,6 +34,7 @@ export const metadata = {
 };
 
 const organizationId = 'https://www.emergent-logic.ca/#organization';
+const namanId = 'https://www.emergent-logic.ca/#naman-kharbanda';
 const googleBusinessProfileMapUrl = 'https://www.google.com/maps/search/?api=1&query=Emergent%20Logic%20Consulting&query_place_id=ChIJc3FCXsGbsQwRDXMYESadpec';
 
 const jsonLd = {
@@ -55,6 +56,7 @@ const jsonLd = {
         'https://www.instagram.com/emergentlogiccrm/',
         'https://www.linkedin.com/company/emergent-logic-consulting/',
       ],
+      employee: { '@id': namanId },
       hasMap: googleBusinessProfileMapUrl,
       identifier: {
         '@type': 'PropertyValue',
@@ -187,6 +189,15 @@ const jsonLd = {
           },
         ],
       },
+    },
+    {
+      '@type': 'Person',
+      '@id': namanId,
+      name: 'Naman Kharbanda',
+      jobTitle: 'Digital Marketing Specialist',
+      worksFor: { '@id': organizationId },
+      image: 'https://www.emergent-logic.ca/images/team/naman-kharbanda-400.webp',
+      sameAs: ['https://www.linkedin.com/in/naman-kharbanda-33b049325/'],
     },
     {
       '@type': 'WebSite',

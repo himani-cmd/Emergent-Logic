@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import WhoYouWorkWith from '@/components/WhoYouWorkWith';
 import CookieConsent from '@/components/CookieConsent';
 import TrackedCTA from '@/components/TrackedCTA';
 import { Button } from '@/components/ui/button';
@@ -435,6 +436,8 @@ export default function CRMImplementation() {
       </section>
 
       {/* CTA */}
+      <WhoYouWorkWith />
+
       <section className="py-20 bg-gradient-to-br from-violet-600 to-indigo-700">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Get Your CRM Working?</h2>
