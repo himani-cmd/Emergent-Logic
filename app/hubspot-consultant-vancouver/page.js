@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import WhoYouWorkWith from '@/components/WhoYouWorkWith';
 import CookieConsent from '@/components/CookieConsent';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import TrackedCTA from '@/components/TrackedCTA';
@@ -462,6 +463,8 @@ export default function HubspotConsultantVancouver() {
           </div>
         </div>
       </section>
+
+      <WhoYouWorkWith />
 
       <section className="py-16 bg-gradient-to-br from-violet-600 to-indigo-700">
         <div className="container mx-auto px-4 text-center">

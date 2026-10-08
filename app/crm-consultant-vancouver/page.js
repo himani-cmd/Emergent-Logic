@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import WhoYouWorkWith from '@/components/WhoYouWorkWith';
 import CookieConsent from '@/components/CookieConsent';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import TrackedCTA from '@/components/TrackedCTA';
@@ -507,6 +508,8 @@ export default function CrmConsultantVancouver() {
           </div>
         </div>
       </section>
+
+      <WhoYouWorkWith />
 
       <section className="bg-[#1E3A5F] py-16 text-center text-white">
         <div className="container mx-auto px-4">

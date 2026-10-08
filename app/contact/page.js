@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import WhoYouWorkWith from '@/components/WhoYouWorkWith';
 import CookieConsent from '@/components/CookieConsent';
 import { trackCalendlyEvent, trackLeadFormEvent, trackLeadGeneration } from '@/lib/analytics';
 import { Badge } from '@/components/ui/badge';
@@ -450,6 +451,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      <WhoYouWorkWith compact />
 
       <Footer />
       <CookieConsent />
