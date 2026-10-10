@@ -194,7 +194,7 @@ const jsonLd = {
       '@type': 'Person',
       '@id': namanId,
       name: 'Naman Kharbanda',
-      jobTitle: 'Digital Marketing Specialist',
+      jobTitle: 'Consultant',
       worksFor: { '@id': organizationId },
       image: 'https://www.emergent-logic.ca/images/team/naman-kharbanda-400.webp',
       sameAs: ['https://www.linkedin.com/in/naman-kharbanda-33b049325/'],
