@@ -1,7 +1,7 @@
 import TrackedCTA from '@/components/TrackedCTA';
 
 const PHOTO = '/images/team/naman-kharbanda.webp';
-const PHOTO_ALT = 'Naman Kharbanda, Digital Marketing Specialist at Emergent Logic';
+const PHOTO_ALT = 'Naman Kharbanda, Consultant at Emergent Logic';
 
 export default function WhoYouWorkWith({ compact = false }) {
   if (compact) {
@@ -12,7 +12,7 @@ export default function WhoYouWorkWith({ compact = false }) {
             <img src={PHOTO} alt={PHOTO_ALT} width={400} height={400} loading="lazy" className="h-16 w-16 rounded-full object-cover shrink-0" />
             <div>
               <p className="font-semibold text-gray-900">Naman Kharbanda</p>
-              <p className="text-sm text-gray-600">Digital Marketing Specialist, Emergent Logic</p>
+              <p className="text-sm text-gray-600">Consultant, Emergent Logic</p>
               <p className="text-sm text-gray-600">Your point of contact. Human-led, AI-assisted.</p>
             </div>
           </div>
@@ -30,7 +30,7 @@ export default function WhoYouWorkWith({ compact = false }) {
             <img src={PHOTO} alt={PHOTO_ALT} width={400} height={400} loading="lazy" className="h-48 w-48 rounded-2xl object-cover shrink-0" />
             <div>
               <p className="text-xl font-semibold text-gray-900">Naman Kharbanda</p>
-              <p className="text-violet-700 font-medium mb-3">Digital Marketing Specialist, Emergent Logic</p>
+              <p className="text-violet-700 font-medium mb-3">Consultant, Emergent Logic</p>
               <p className="text-gray-600 mb-4">
                 Naman is the public point of contact for Emergent Logic clients, based in New Westminster, Greater Vancouver. He works with you on scoping, CRM setup, follow-up automation, reporting and training, and he is the person you talk to on the call and in the portal.
               </p>
