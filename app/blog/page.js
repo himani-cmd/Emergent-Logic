@@ -20,6 +20,14 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'gohighlevel-sms-canada-a2p-casl',
+    title: 'GoHighLevel Texting in Canada: A2P Registration, CASL Consent and a Setup Checklist',
+    excerpt: 'When Canadian numbers need A2P registration or verification in GoHighLevel, what CASL requires for text messages, and a consent and setup checklist.',
+    category: 'GoHighLevel',
+    readTime: '7 min read',
+    featured: true,
+  },
+  {
     slug: 'salesforce-to-hubspot-migration-checklist',
     title: 'Salesforce to HubSpot Migration: A Decision and QA Checklist',
     excerpt: 'Decide whether to migrate, coexist, or repair; then map objects, fields, owners, history, automation, testing, cutover, and rollback with a free workbook.',

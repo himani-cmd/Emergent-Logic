@@ -2,6 +2,7 @@ const baseUrl = 'https://www.emergent-logic.ca';
 const defaultLastmod = '2026-07-31';
 
 const lastmodByPath = {
+  '/blog/gohighlevel-sms-canada-a2p-casl': '2026-10-12',
   '/services/crm-implementation': '2026-10-01',
   '/services/gohighlevel-implementation': '2026-09-06',
   '/services/crm-integration': '2026-08-23',
@@ -59,6 +60,7 @@ const urls = [
   ['/ai-crm-audit', 'monthly', '0.8'],
   ['/lead-follow-up-audit', 'monthly', '0.8'],
   ['/blog', 'weekly', '0.9'],
+  ['/blog/gohighlevel-sms-canada-a2p-casl', 'monthly', '0.8'],
   ['/blog/salesforce-to-hubspot-migration-checklist', 'monthly', '0.9'],
   ['/blog/excel-to-crm-migration-repeat-order-businesses', 'monthly', '0.9'],
   ['/blog/ai-automation-consulting-pricing', 'monthly', '0.8'],
