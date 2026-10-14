@@ -35,6 +35,10 @@ const pricingModels = [
   {
     icon: FileSearch,
     name: 'Free Strategy Call',
+    href: 'https://calendly.com/emergent-logic/30min',
+    external: true,
+    cta: 'Book the free call',
+    destination: 'calendly',
     price: 'No-cost fit check',
     bestFor: 'Quick fit check before any paid work',
     description:
@@ -44,6 +48,9 @@ const pricingModels = [
   {
     icon: SlidersHorizontal,
     name: 'Fixed-Scope Sprint',
+    href: '/contact?request=fixed-scope-sprint',
+    cta: 'Ask about a sprint',
+    destination: 'contact',
     price: 'Scoped after review',
     bestFor: 'Clear, contained work',
     description:
@@ -53,6 +60,9 @@ const pricingModels = [
   {
     icon: Clock,
     name: 'Implementation Hours',
+    href: '/contact?request=implementation-hours',
+    cta: 'Ask about hours',
+    destination: 'contact',
     price: 'Hourly when scope is variable',
     bestFor: 'Variable CRM implementation work',
     description:
@@ -204,7 +214,10 @@ export default function PricingPage() {
           </div>
           <div className="mx-auto mt-10 grid max-w-6xl gap-6 lg:grid-cols-3">
             {pricingModels.map((model) => (
-              <div key={model.name} className="rounded-3xl border bg-white p-7 shadow-sm">
+              <div
+                key={model.name}
+                className="relative flex cursor-pointer flex-col rounded-3xl border bg-white p-7 shadow-sm transition-shadow hover:border-indigo-300 hover:shadow-md"
+              >
                 <model.icon className="mb-5 h-9 w-9 text-indigo-600" />
                 <h3 className="text-xl font-bold text-gray-900">{model.name}</h3>
                 <p className="mt-2 text-sm text-gray-500">Best for: {model.bestFor}</p>
@@ -218,6 +231,15 @@ export default function PricingPage() {
                     </li>
                   ))}
                 </ul>
+                <TrackedCTA ctaName={`${model.cta} - Pricing Card`} destination={model.destination}>
+                  <a
+                    href={model.href}
+                    {...(model.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                    className="mt-8 inline-flex items-center justify-center self-start rounded-md bg-[#1E3A5F] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 after:absolute after:inset-0 after:rounded-3xl after:content-['']"
+                  >
+                    {model.cta} <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
+                </TrackedCTA>
               </div>
             ))}
           </div>
