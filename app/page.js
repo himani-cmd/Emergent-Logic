@@ -66,6 +66,11 @@ function HeroSection() {
               </Link>
             </TrackedCTA>
           </div>
+          <p className="-mt-12 mb-16 text-white/80">
+            <Link href="/lead-follow-up-score" className="underline hover:text-white">
+              Or take the free 2-minute Lead Follow-Up Score &rarr;
+            </Link>
+          </p>
 
           {/* Trust Indicators */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
