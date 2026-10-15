@@ -168,6 +168,12 @@ export default function LeadFollowUpAuditPage() {
           <p className="text-xl text-white/80 max-w-3xl mb-8">
             We review one visible inquiry path on your website and send back practical notes on where leads can get missed after the first form submit, email, or consultation request.
           </p>
+          <p className="text-white/80 mb-6">
+            Want a quick read first?{' '}
+            <Link href="/lead-follow-up-score" className="underline hover:text-white">
+              Take the free 2-minute Lead Follow-Up Score &rarr;
+            </Link>
+          </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <TrackedCTA ctaName="Request Lead Follow-Up Audit" destination="/contact?request=lead-follow-up-audit#contact-form">
               <Link href="/contact?request=lead-follow-up-audit#contact-form">

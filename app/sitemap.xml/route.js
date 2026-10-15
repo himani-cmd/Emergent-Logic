@@ -59,6 +59,7 @@ const urls = [
   ['/research/2026-crm-cleanup-demand-report', 'monthly', '0.9'],
   ['/ai-crm-audit', 'monthly', '0.8'],
   ['/lead-follow-up-audit', 'monthly', '0.8'],
+  ['/lead-follow-up-score', 'monthly', '0.8'],
   ['/blog', 'weekly', '0.9'],
   ['/blog/gohighlevel-sms-canada-a2p-casl', 'monthly', '0.8'],
   ['/blog/salesforce-to-hubspot-migration-checklist', 'monthly', '0.9'],
