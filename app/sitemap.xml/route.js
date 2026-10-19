@@ -2,6 +2,7 @@ const baseUrl = 'https://www.emergent-logic.ca';
 const defaultLastmod = '2026-07-31';
 
 const lastmodByPath = {
+  '/case-studies/hubspot-email-health-b2b-equipment': '2026-10-19',
   '/blog/gohighlevel-sms-canada-a2p-casl': '2026-10-12',
   '/services/crm-implementation': '2026-10-01',
   '/services/gohighlevel-implementation': '2026-09-06',
@@ -44,6 +45,7 @@ const urls = [
   ['/about', 'monthly', '0.8'],
   ['/contact', 'monthly', '0.9'],
   ['/case-studies', 'monthly', '0.8'],
+  ['/case-studies/hubspot-email-health-b2b-equipment', 'monthly', '0.8'],
   ['/case-studies/ai-revenue-operations-engine', 'monthly', '0.8'],
   ['/case-studies/hubspot-crm-cleanup-safe-implementation', 'monthly', '0.8'],
   ['/case-studies/website-leads-to-crm-follow-up-system', 'monthly', '0.8'],

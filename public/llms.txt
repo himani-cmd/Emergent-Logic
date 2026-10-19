@@ -50,6 +50,7 @@ Emergent Logic helps businesses turn CRM and lead capture problems into working 
 - 2026 CRM Cleanup Demand Report: https://www.emergent-logic.ca/research/2026-crm-cleanup-demand-report
 - Example scenarios: https://www.emergent-logic.ca/case-studies
   These are illustrative CRM and lead follow-up patterns, not specific client engagements or client results.
+- Case study (client engagement, anonymised): How a Canadian B2B equipment company got its HubSpot email health back on track: https://www.emergent-logic.ca/case-studies/hubspot-email-health-b2b-equipment
 - Blog: https://www.emergent-logic.ca/blog
 - Contact: https://www.emergent-logic.ca/contact
 

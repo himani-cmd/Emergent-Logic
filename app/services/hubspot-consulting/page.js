@@ -264,6 +264,9 @@ export default function HubSpotConsulting() {
       <section className="py-12 bg-white border-t border-gray-100">
         <div className="container mx-auto px-4 max-w-4xl">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Related Reading</h3>
+          <p className="text-gray-700 mb-4">
+            Example: <Link href="/case-studies/hubspot-email-health-b2b-equipment" className="text-violet-600 hover:underline">how a Canadian B2B equipment company got its HubSpot email health back on track</Link>
+          </p>
           <div className="grid md:grid-cols-2 gap-4">
             <Link href="/blog/why-hubspot-workflows-break" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">Why HubSpot Workflows Break</p>

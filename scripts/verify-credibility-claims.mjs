@@ -32,6 +32,9 @@ const blockedPatterns = [
   { label: 'representative work labelled as a case study', pattern: /\bCase Study\b/ },
 ];
 
+// Real client engagement (anonymised, approved by Himani 2026-10-17): the "case study" label is accurate here.
+const realCaseStudyPages = new Set([path.join('case-studies', 'hubspot-email-health-b2b-equipment', 'page.js')]);
+
 const blogBlockedPatterns = [
   { label: 'unsupported publication analysis claim', pattern: /\bwe scanned (?:over )?\d/i },
   { label: 'unsupported email performance range', pattern: /\b\d+\s*(?:-|–|to)\s*\d+% open rate\b/i },
@@ -69,7 +72,9 @@ for (const filePath of await collectSourceFiles(appDir)) {
         ...blockedPatterns.filter(({ label }) => label !== 'representative work labelled as a case study'),
         ...blogBlockedPatterns,
       ]
-    : blockedPatterns;
+    : realCaseStudyPages.has(relativePath)
+      ? blockedPatterns.filter(({ label }) => label !== 'representative work labelled as a case study')
+      : blockedPatterns;
 
   lines.forEach((line, index) => {
     for (const check of checks) {
