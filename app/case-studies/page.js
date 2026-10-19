@@ -63,6 +63,29 @@ export default function CaseStudiesPage() {
             ))}
           </div>
 
+          <Card className="border-0 shadow-xl overflow-hidden mb-8">
+            <div className="grid lg:grid-cols-3">
+              <div className="lg:col-span-2 p-8">
+                <Badge className="mb-4 bg-emerald-100 text-emerald-800">Client engagement (anonymised)</Badge>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                  How a Canadian B2B equipment company got its HubSpot email health back on track
+                </h2>
+                <p className="text-gray-600 mb-6">
+                  HubSpot&apos;s email health score went from 3 out of 10 (&quot;Needs work&quot;) to 9 out of 10 in about a month. Click rate rose from about 1.4% to 3.7% (the 31 days to 18 October 2026, compared with the 31 days before).
+                </p>
+                <Link href="/case-studies/hubspot-email-health-b2b-equipment">
+                  <Button className="bg-blue-700 hover:bg-blue-800">
+                    Read the case study <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </Link>
+              </div>
+              <div className="bg-gradient-to-br from-emerald-900 to-slate-950 p-8 text-white flex flex-col justify-center">
+                <p className="text-sm uppercase tracking-widest text-emerald-200 mb-3">Platform</p>
+                <h3 className="text-2xl font-bold">HubSpot marketing email</h3>
+              </div>
+            </div>
+          </Card>
+
           <Card className="border-0 shadow-xl overflow-hidden">
             <div className="grid lg:grid-cols-3">
               <div className="lg:col-span-2 p-8">
