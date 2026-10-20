@@ -12,6 +12,7 @@ import {
 
 const CLARITY_PROJECT_ID =
   process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID || 'y55xz9616k';
+const HUBSPOT_PORTAL_ID = '343136987';
 const ANALYTICS_HOSTNAMES = new Set([
   'emergent-logic.ca',
   'www.emergent-logic.ca',
@@ -163,6 +164,13 @@ export default function AnalyticsProvider({ children }) {
         <Script
           id="microsoft-clarity"
           src={`https://www.clarity.ms/tag/${CLARITY_PROJECT_ID}`}
+          strategy="afterInteractive"
+        />
+      )}
+      {analyticsEnabled && measurementHostEnabled && (
+        <Script
+          id="hs-script-loader"
+          src={`https://js-na3.hs-scripts.com/${HUBSPOT_PORTAL_ID}.js`}
           strategy="afterInteractive"
         />
       )}

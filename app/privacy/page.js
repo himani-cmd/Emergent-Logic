@@ -33,6 +33,7 @@ export default function PrivacyPolicy() {
 
         <h2 className="text-2xl font-bold mb-4">3. Cookies</h2>
         <p className="text-gray-600 mb-6">Our website uses essential browser storage for website functionality. Optional analytics load only after you select Accept in the cookie banner. You can select Decline to keep optional analytics disabled.</p>
+        <p className="text-gray-600 mb-6">We also use HubSpot's tracking code, which sets cookies to understand how visitors use our site and to connect website visits to the enquiries you send us. You can block or delete cookies in your browser settings.</p>
 
         <h2 className="text-2xl font-bold mb-4">4. Third-Party Services</h2>
         <p className="text-gray-600 mb-6">We use Calendly for appointment scheduling, OpenAI for the optional AI voice consultation, Google Analytics for aggregate website measurement, and Microsoft Clarity for consented session recordings, heatmaps, and interaction diagnostics. Clarity is configured to receive operational event names rather than contact-form values or consultation content. These third-party services have their own privacy policies governing their processing of information.</p>
