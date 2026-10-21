@@ -8,12 +8,12 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Bot, CheckCircle, Database, LineChart, ShieldCheck, Workflow } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Implementation Patterns & Internal Build',
-  description: 'A documented Emergent Logic internal operating-system build and clearly labelled representative CRM implementation patterns.',
+  title: 'Case Studies',
+  description: 'CRM and HubSpot case studies from Emergent Logic in Surrey, BC, including an anonymised HubSpot email health engagement.',
   alternates: { canonical: 'https://www.emergent-logic.ca/case-studies' },
   openGraph: {
-    title: 'CRM Implementation Patterns & Internal Build | Emergent Logic',
-    description: 'Review a documented internal operating-system build and representative CRM implementation patterns without implied client results.',
+    title: 'Case Studies | Emergent Logic',
+    description: 'CRM and HubSpot case studies from Emergent Logic in Surrey, BC, including an anonymised HubSpot email health engagement.',
     url: 'https://www.emergent-logic.ca/case-studies',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
@@ -37,10 +37,10 @@ export default function CaseStudiesPage() {
         <div className="container mx-auto px-4 max-w-5xl">
           <Badge className="mb-4 bg-white/10 text-white border-white/20">Methods and Internal Build</Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            One Internal Build. Practical Implementation Patterns.
+            Case Studies
           </h1>
           <p className="text-xl text-white/75 max-w-3xl mb-8">
-            This library separates Emergent Logic&apos;s internal operating-system build from representative implementation patterns. Representative pages explain how a scope would be approached; they are not presented as completed client results.
+            Each card shows whether it is a client engagement or an illustrative scenario.
           </p>
           <Link href="/case-studies/ai-revenue-operations-engine">
             <Button size="lg" className="bg-white text-blue-950 hover:bg-blue-100 font-semibold px-8">

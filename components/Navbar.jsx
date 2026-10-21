@@ -19,7 +19,7 @@ const services = [
 const navLinks = [
   { title: 'Pricing', href: '/pricing' },
   { title: 'Blog', href: '/blog' },
-  { title: 'Example Scenarios', href: '/case-studies' },
+  { title: 'Case Studies', href: '/case-studies' },
   { title: 'About', href: '/about' },
   { title: 'Contact', href: '/contact' },
 ];
