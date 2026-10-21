@@ -35,6 +35,12 @@ const blockedPatterns = [
 // Real client engagement (anonymised, approved by Himani 2026-10-17): the "case study" label is accurate here.
 const realCaseStudyPages = new Set([path.join('case-studies', 'hubspot-email-health-b2b-equipment', 'page.js')]);
 
+// Illustrative pages under /case-studies must not call themselves a case study (any case, singular or plural).
+// The index page may use "Case Studies" (nav label, title, H1) and the link to the real engagement.
+const illustrativeCaseStudyPattern = { label: 'illustrative page uses case study wording', pattern: /\bcase stud(?:y|ies)\b/i };
+const caseStudiesIndexPage = path.join('case-studies', 'page.js');
+const caseStudiesIndexAllowed = /Case Studies|Read the case study|case studies from Emergent Logic/g;
+
 const blogBlockedPatterns = [
   { label: 'unsupported publication analysis claim', pattern: /\bwe scanned (?:over )?\d/i },
   { label: 'unsupported email performance range', pattern: /\b\d+\s*(?:-|–|to)\s*\d+% open rate\b/i },
@@ -76,7 +82,15 @@ for (const filePath of await collectSourceFiles(appDir)) {
       ? blockedPatterns.filter(({ label }) => label !== 'representative work labelled as a case study')
       : blockedPatterns;
 
+  const isIllustrativeCaseStudy = relativePath.startsWith(`case-studies${path.sep}`) && !realCaseStudyPages.has(relativePath);
+
   lines.forEach((line, index) => {
+    if (isIllustrativeCaseStudy) {
+      const scanned = relativePath === caseStudiesIndexPage ? line.replace(caseStudiesIndexAllowed, '') : line;
+      if (illustrativeCaseStudyPattern.pattern.test(scanned)) {
+        failures.push(`${path.relative(process.cwd(), filePath)}:${index + 1} ${illustrativeCaseStudyPattern.label}`);
+      }
+    }
     for (const check of checks) {
       if (check.pattern.test(line)) {
         failures.push(`${path.relative(process.cwd(), filePath)}:${index + 1} ${check.label}`);
