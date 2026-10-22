@@ -20,6 +20,14 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'crm-erp-integration-guide',
+    title: 'CRM ERP Integration: A Practical Guide for Manufacturers and Distributors',
+    excerpt: 'What to sync between a CRM and an ERP, native connectors vs middleware, and a step-by-step integration plan.',
+    category: 'CRM Integration',
+    readTime: '7 min read',
+    featured: false,
+  },
+  {
     slug: 'gohighlevel-sms-canada-a2p-casl',
     title: 'GoHighLevel Texting in Canada: A2P Registration, CASL Consent and a Setup Checklist',
     excerpt: 'When Canadian numbers need A2P registration or verification in GoHighLevel, what CASL requires for text messages, and a consent and setup checklist.',
