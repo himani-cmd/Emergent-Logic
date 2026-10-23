@@ -28,6 +28,8 @@ const faqs = [
   { q: 'What CRMs and tools can be integrated?', a: 'Work can involve HubSpot, Salesforce, Zoho, Lofty, Manychat, supported native connectors, Zapier, Make, n8n, webhooks, or REST APIs. Exact platform, licence, connector, and data-access fit is confirmed during discovery rather than assumed.' },
   { q: 'Can Manychat leads be connected to a CRM?', a: 'Manychat can pass approved lead data to supported CRMs through native connections, Zapier, or HTTPS requests on eligible plans. The design should define consent, identity matching, ownership, duplicate handling, and the follow-up action before activation.' },
   { q: 'Can Lofty connect to other systems through Zapier?', a: 'Lofty supports defined Zapier triggers and actions, but its official guidance says Zapier is not a general two-way sync. The required lead or transaction workflow must be checked against current supported actions, account-level access, duplicate rules, and API limits.' },
+  { q: 'Does HubSpot integrate with NetSuite?', a: 'Yes. HubSpot publishes a NetSuite integration that can sync contacts, companies, deals, products, orders and invoices one-way or two-way (HubSpot Knowledge Base, updated March 2026). Some setups also use middleware for extra rules. We help plan which records sync and who owns them.' },
+  { q: 'Can you connect our CRM to our ERP or accounting system?', a: 'Yes. We work with HubSpot, Salesforce, Zoho CRM, Odoo, GoHighLevel and other CRMs, using native connectors or tools like Zapier, Make, Celigo and Boomi. Scope and price are confirmed in a written quote after a free 30-minute call.' },
   { q: 'Is ongoing monitoring included?', a: 'Monitoring and support are defined in the written scope. The proposal states the included stabilization period, ownership after handoff, and any optional ongoing support before work begins.' },
 ];
 
@@ -40,7 +42,7 @@ const jsonLd = {
       url: 'https://www.emergent-logic.ca/services/crm-integration',
       name: 'CRM Integration Services Canada',
       description: metadata.description,
-      dateModified: '2026-09-16',
+      dateModified: '2026-10-22',
       isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
       about: { '@id': 'https://www.emergent-logic.ca/services/crm-integration#service' },
     },
@@ -83,6 +85,7 @@ export default function CRMIntegration() {
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
             Your CRM should not be an island. We connect HubSpot, Salesforce, and Zoho to your accounting software, phone system, website, calendar, email, and marketing tools &mdash; so data flows where it needs to and your team stops copying records between tabs.
           </p>
+          <p className="mb-6 text-lg text-white/80">Planning an ERP connection? Read our <Link href="/blog/crm-erp-integration-guide" className="underline font-medium">CRM ERP integration guide</Link>.</p>
           <p className="mb-6 text-sm font-semibold text-pink-200">Reviewed September 16, 2026</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <TrackedCTA ctaName="Free CRM Workflow Assessment - Integration Hero" destination="lead-follow-up-audit">
