@@ -79,7 +79,7 @@ export default function CRMImplementation() {
         </div>
       </section>
 
-      <section className="border-y border-violet-100 bg-white py-8"><div className="container mx-auto max-w-4xl px-4"><p className="leading-7 text-gray-600">Evaluating HighLevel specifically? Review our <Link href="/services/gohighlevel-implementation" className="font-semibold text-violet-700 hover:underline">GoHighLevel implementation and automation support</Link> for platform fit, pipeline setup, migration controls and acceptance checks.</p></div></section>
+      <section className="border-y border-violet-100 bg-white py-8"><div className="container mx-auto max-w-4xl px-4"><p className="leading-7 text-gray-600">Evaluating HighLevel specifically? Review our <Link href="/services/gohighlevel-implementation" className="font-semibold text-violet-700 hover:underline">GoHighLevel implementation and automation support</Link> for platform fit, pipeline setup, migration controls and acceptance checks. Manufacturer or distributor? See <Link href="/industries/manufacturing-distribution" className="font-semibold text-violet-700 hover:underline">CRM for manufacturers and distributors</Link>.</p></div></section>
 
       {/* Who Needs This */}
       <section className="py-20 bg-gray-50">
