@@ -85,7 +85,7 @@ export default function CRMIntegration() {
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
             Your CRM should not be an island. We connect HubSpot, Salesforce, and Zoho to your accounting software, phone system, website, calendar, email, and marketing tools &mdash; so data flows where it needs to and your team stops copying records between tabs.
           </p>
-          <p className="mb-6 text-lg text-white/80">Planning an ERP connection? Read our <Link href="/blog/crm-erp-integration-guide" className="underline font-medium">CRM ERP integration guide</Link>.</p>
+          <p className="mb-6 text-lg text-white/80">Planning an ERP connection? Read our <Link href="/blog/crm-erp-integration-guide" className="underline font-medium">CRM ERP integration guide</Link>. Manufacturer or distributor? See <Link href="/industries/manufacturing-distribution" className="underline font-medium">CRM for manufacturers and distributors</Link>.</p>
           <p className="mb-6 text-sm font-semibold text-pink-200">Reviewed September 16, 2026</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <TrackedCTA ctaName="Free CRM Workflow Assessment - Integration Hero" destination="lead-follow-up-audit">

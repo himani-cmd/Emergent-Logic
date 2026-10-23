@@ -120,7 +120,7 @@ export default function CrmErpIntegrationGuide() {
               </p>
 
               <p>
-                For manufacturers and distributors, a CRM ERP integration is often the difference between a CRM people trust and one they quietly ignore. If you&apos;re planning <Link href="/services/crm-implementation" className="text-cyan-700 hover:underline">CRM implementation for a manufacturing or distribution business</Link>, the ERP connection should be part of the plan from day one, not an afterthought.
+                For manufacturers and distributors, a CRM ERP integration is often the difference between a CRM people trust and one they quietly ignore. If you&apos;re planning <Link href="/industries/manufacturing-distribution" className="text-cyan-700 hover:underline">CRM for manufacturers and distributors</Link> (see also our <Link href="/services/crm-implementation" className="text-cyan-700 hover:underline">CRM implementation service</Link>), the ERP connection should be part of the plan from day one, not an afterthought.
               </p>
 
               <h2>What is CRM ERP integration?</h2>
