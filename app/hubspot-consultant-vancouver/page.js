@@ -102,6 +102,7 @@ const faqs = [
   { q: 'What happens in the first conversation?', a: 'Tell us which HubSpot products you use, the process that needs attention, and the systems connected to it. We discuss the outcome you need and identify what information is missing before estimating the work. Portal investigation and configuration are separate, scoped services.' },
   { q: 'How much does HubSpot implementation cost in Vancouver?', a: 'Implementation cost depends on the confirmed scope: pipelines, properties, workflows, reporting, migration, integrations, testing, training, and support. The current portal and requirements are reviewed first, then the work and estimate are documented before delivery starts.' },
   { q: 'Which HubSpot Hubs can a scope cover?', a: 'A scope may involve CRM, Sales Hub, Marketing Hub, Service Hub, Content Hub, or Operations Hub, subject to the licensed tier and confirmed requirements. We document platform fit before proposing implementation.' },
+  { q: 'Do you work with HubSpot teams outside Vancouver?', a: 'Yes. We are based in Surrey, BC and most HubSpot work is done remotely, so we work with teams across Canada and the US. Ongoing help is described on our HubSpot admin support page.', link: { text: 'HubSpot admin support', href: '/hubspot-admin-support-canada-us' } },
   { q: 'Can you migrate us from Salesforce to HubSpot?', a: 'A Salesforce-to-HubSpot migration can be scoped when the source data and target requirements are understood. The plan covers backups, field mapping, test imports, validation, rollback, approval, and role-based training.' },
   { q: 'Can a consultant finish an existing HubSpot implementation?', a: 'Yes. An existing HubSpot build can be reviewed without automatically starting over. The first step is to inventory what is live, what is incomplete, which decisions remain open, and which risks could affect a pilot or production release. The next work package is then agreed in writing.' },
   { q: 'What should a HubSpot pilot test before production?', a: 'A useful pilot tests realistic records, user permissions, required fields, automation, alerts, ownership, handoffs, reports, integrations, exception paths, and acceptance criteria with representative users. Production release should follow recorded approval rather than a configuration-only check.' },
@@ -117,7 +118,7 @@ const jsonLd = {
       url: 'https://www.emergent-logic.ca/hubspot-consultant-vancouver',
       name: 'HubSpot Consultant Vancouver',
       description: metadata.description,
-      dateModified: '2026-09-16',
+      dateModified: '2026-10-26',
       isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
       about: { '@id': 'https://www.emergent-logic.ca/hubspot-consultant-vancouver#service' },
     },
@@ -161,6 +162,9 @@ export default function HubspotConsultantVancouver() {
           <h1 className="max-w-4xl break-words text-4xl font-bold leading-tight tracking-tight text-white mb-4 md:text-5xl lg:text-6xl">
             HubSpot consultant in Vancouver for setup, cleanup and automation
           </h1>
+          <p className="max-w-3xl text-lg leading-relaxed text-white mb-4 md:text-xl">
+            Emergent Logic is a HubSpot consultant based in Surrey, BC, serving Vancouver and the Lower Mainland. We set up, clean up, migrate and run HubSpot for growing B2B teams: pipelines, workflows, lead routing, reporting and admin. We also work remotely with HubSpot teams across Canada and the US.
+          </p>
           <p className="max-w-3xl text-lg leading-relaxed text-white/75 mb-8 md:text-xl">
             HubSpot should help your team see who owns each lead and what happens next. Emergent Logic helps Vancouver businesses configure HubSpot, clean up data and workflows, connect systems, and complete unfinished implementations.
           </p>
@@ -182,7 +186,7 @@ export default function HubspotConsultantVancouver() {
 
       <section className="border-b border-violet-100 bg-white py-16">
         <div className="container mx-auto max-w-4xl px-4">
-          <p className="mb-3 text-sm font-semibold text-violet-700">Last reviewed September 16, 2026</p>
+          <p className="mb-3 text-sm font-semibold text-violet-700">Last reviewed October 26, 2026</p>
           <h2 className="mb-4 text-3xl font-bold text-gray-900">How should a Vancouver team choose a HubSpot implementation consultant?</h2>
           <p className="mb-6 text-lg leading-8 text-gray-700">Choose a consultant who can translate the operating process into lifecycle rules, ownership, pipelines, permissions, automation, reporting and documented acceptance checks. Platform familiarity matters, but the engagement should also control migration, integrations, testing, training, production approval and handoff.</p>
           <div className="grid gap-4 md:grid-cols-2">
@@ -232,7 +236,7 @@ export default function HubspotConsultantVancouver() {
           <p className="mb-4 leading-relaxed text-gray-700">Start with one real process: how an enquiry becomes an assigned contact, a qualified opportunity and a visible next action. Identify the source field, owner, pipeline stage, workflow and report involved. That gives the review a concrete starting point.</p>
           <p className="mb-4 leading-relaxed text-gray-700">Bring your HubSpot edition, the Hubs you use, the teams affected and a list of connected systems. Configuration options depend on your licences and requirements. Access and any production changes are agreed separately; do not send passwords or customer records through the enquiry form.</p>
           <p className="leading-relaxed text-gray-700">If the core setup already works, read about ongoing <Link href="/hubspot-admin-support-canada-us" className="font-medium text-violet-700 hover:underline">HubSpot admin support</Link>. If qualification is the problem, use the <Link href="/blog/lead-scoring-model-crm-guide" className="font-medium text-violet-700 hover:underline">lead scoring guide</Link> to define the rules before adding automation.</p>
-          <p className="mt-4 leading-relaxed text-gray-700">For the work areas and discovery approach, see our <Link href="/services/hubspot-consulting" className="font-medium text-violet-700 hover:underline">HubSpot consulting service</Link>. The review helps identify which parts of that service belong in your scope.</p>
+          <p className="mt-4 leading-relaxed text-gray-700">Based in Surrey? See our <Link href="/hubspot-consultant-surrey-bc" className="font-medium text-violet-700 hover:underline">HubSpot consultant in Surrey</Link> page. For the work areas and discovery approach, see our <Link href="/services/hubspot-consulting" className="font-medium text-violet-700 hover:underline">HubSpot consulting service</Link>. The review helps identify which parts of that service belong in your scope.</p>
         </div>
       </section>
 
@@ -396,6 +400,7 @@ export default function HubspotConsultantVancouver() {
             <Badge className="mb-4 bg-white text-violet-700 hover:bg-white">Example output</Badge>
             <h2 className="mb-4 text-3xl font-bold text-gray-900">What a useful HubSpot findings report can look like</h2>
             <p className="text-sm font-semibold text-violet-800">Illustrative example using fictional conditions. Not a client result or a completed portal audit.</p>
+            <p className="mt-3 text-gray-700">Example: <Link href="/case-studies/hubspot-email-health-b2b-equipment" className="font-medium text-violet-700 hover:underline">an anonymised HubSpot email-health engagement</Link>.</p>
           </div>
           <div className="mt-8 overflow-x-auto border border-violet-200 bg-white">
             <table className="w-full min-w-[760px] text-left text-sm">
@@ -458,7 +463,7 @@ export default function HubspotConsultantVancouver() {
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-8 text-3xl font-bold text-gray-900">HubSpot Consulting FAQ — Vancouver, BC</h2>
             <div className="space-y-6">
-              {faqs.map((faq) => (<Card key={faq.q} className="border-0 shadow-lg"><CardHeader><CardTitle className="text-lg">{faq.q}</CardTitle></CardHeader><CardContent><p className="text-gray-600">{faq.a}</p></CardContent></Card>))}
+              {faqs.map((faq) => (<Card key={faq.q} className="border-0 shadow-lg"><CardHeader><CardTitle className="text-lg">{faq.q}</CardTitle></CardHeader><CardContent><p className="text-gray-600">{faq.link ? <>{faq.a.split(faq.link.text)[0]}<Link href={faq.link.href} className="font-medium text-violet-700 hover:underline">{faq.link.text}</Link>{faq.a.split(faq.link.text)[1]}</> : faq.a}</p></CardContent></Card>))}
             </div>
           </div>
         </div>
