@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, XCircle, AlertTriangle, Zap, Brain, Users, BarChart3 } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'AI CRM Strategy: Accelerate Your Team',
@@ -26,7 +27,8 @@ export default function AiCrmStrategyGuide() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="flex items-center gap-2 text-indigo-300 text-sm mb-4"><Link href="/blog" className="hover:text-white">Blog</Link><span>/</span><span>AI & CRM</span></div>
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">How to Use AI to Accelerate Your CRM Strategy (Without Replacing Your Team)</h1>
-          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Emergent Logic</span><span>•</span><span>April 2026</span><span>•</span><span>12 min read</span></div>
+          <ArticleByline dark />
+          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>April 2026</span><span>•</span><span>12 min read</span></div>
         </div>
       </section>
 
@@ -204,6 +206,7 @@ export default function AiCrmStrategyGuide() {
             </Link>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
       <Footer />
       <CookieConsent />

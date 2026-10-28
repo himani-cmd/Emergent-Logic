@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, ArrowLeft, Target, TrendingUp, TrendingDown } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'Build a Lead Scoring Model in Your CRM',
@@ -27,7 +28,8 @@ export default function LeadScoringGuide() {
           <div className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">Part 1 of 3 — Marketing Automation Playbook</div>
           <div className="flex items-center gap-2 text-indigo-300 text-sm mb-4"><Link href="/blog" className="hover:text-white">Blog</Link><span>/</span><span>Lead Scoring</span></div>
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">How to Build a Lead Scoring Model in Your CRM (Step-by-Step Guide)</h1>
-          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Emergent Logic</span><span>•</span><span>June 2026</span><span>•</span><span>9 min read</span></div>
+          <ArticleByline dark />
+          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>June 2026</span><span>•</span><span>9 min read</span></div>
         </div>
       </section>
 
@@ -154,6 +156,7 @@ export default function LeadScoringGuide() {
             <Link href="/blog/email-nurture-sequences-crm-automation" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-[#6366F1]">Next in Series →</p><p className="text-gray-800">Email Nurture Sequences That Convert</p></Link>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
       <Footer />
       <CookieConsent />

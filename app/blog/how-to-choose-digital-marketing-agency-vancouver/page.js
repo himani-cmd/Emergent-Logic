@@ -7,6 +7,7 @@ import ShareButtons from '@/components/ShareButtons';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Clock, MapPin, AlertCircle, XCircle } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'Choose a Marketing Agency Vancouver',
@@ -35,6 +36,7 @@ export default function ChooseDigitalAgency() {
             
             <Badge className="mb-4">Marketing</Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">How to Choose a Digital Marketing Agency in Vancouver, BC</h1>
+            <ArticleByline />
             
             <div className="flex items-center gap-6 text-gray-600 mb-8">
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4" /> Surrey, BC</span>
@@ -95,6 +97,7 @@ export default function ChooseDigitalAgency() {
             </div>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
       <Footer />
       <CookieConsent />

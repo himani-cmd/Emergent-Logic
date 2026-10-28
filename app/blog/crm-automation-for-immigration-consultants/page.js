@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, FileText, MapPin, Workflow } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'CRM Automation for Immigration Consultants',
@@ -70,6 +71,7 @@ export default function CrmAutomationForImmigrationConsultants() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               CRM Automation for Immigration Consultants: What to Automate First
             </h1>
+            <ArticleByline />
 
             <div className="flex items-center gap-6 text-gray-600 mb-8 flex-wrap">
               <span className="flex items-center gap-2">
@@ -211,6 +213,7 @@ export default function CrmAutomationForImmigrationConsultants() {
             </div>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
 
       <Footer />

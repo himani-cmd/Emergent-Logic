@@ -8,6 +8,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Clock, MapPin, CheckCircle, AlertCircle } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'HubSpot vs Salesforce for Canadian SMBs',
@@ -43,6 +44,7 @@ export default function HubspotVsSalesforce() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               HubSpot vs Salesforce: Which CRM is Right for Your Canadian Business?
             </h1>
+            <ArticleByline />
             
             <div className="flex items-center gap-6 text-gray-600 mb-8">
               <span className="flex items-center gap-2">
@@ -175,6 +177,7 @@ export default function HubspotVsSalesforce() {
             </div>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
 
       <Footer />

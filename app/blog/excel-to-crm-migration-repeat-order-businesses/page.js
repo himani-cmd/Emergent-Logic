@@ -8,6 +8,7 @@ import CRMReadinessAssessment from '@/components/CRMReadinessAssessment';
 import WorkbookDownload from '@/components/WorkbookDownload';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Boxes, CalendarClock, CheckCircle2, Database, Repeat2, Users } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 const pageUrl = 'https://www.emergent-logic.ca/blog/excel-to-crm-migration-repeat-order-businesses';
 const workbookUrl = 'https://www.emergent-logic.ca/resources/emergent_logic_excel_to_crm_implementation_workbook.xlsx';
@@ -80,7 +81,7 @@ const jsonLd = {
       description: metadata.description,
       datePublished: '2026-07-31',
       dateModified: '2026-08-08',
-      author: { '@type': 'Organization', '@id': 'https://www.emergent-logic.ca/#organization', name: 'Emergent Logic' },
+      author: { '@id': 'https://www.emergent-logic.ca/#naman-kharbanda' },
       publisher: { '@id': 'https://www.emergent-logic.ca/#organization' },
       mainEntityOfPage: pageUrl,
       hasPart: { '@id': `${pageUrl}#workbook` },
@@ -128,12 +129,11 @@ export default function ExcelToCRMMigrationGuide() {
           <h1 className="mt-3 max-w-4xl text-4xl font-bold leading-tight md:text-5xl">
             Excel-to-CRM migration checklist for repeat-order businesses
           </h1>
+          <ArticleByline dark />
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
             A CRM should help a distributor or repeat-order business see who buys what, when follow-up is due, who owns the relationship, and what happened next. This guide and free seven-sheet workbook map the decisions that should be made before spreadsheet data is imported or reminders are automated.
           </p>
           <div className="mt-7 flex flex-wrap items-center gap-4 text-sm text-slate-300">
-            <span>By Emergent Logic</span>
-            <span aria-hidden="true">|</span>
             <time dateTime="2026-08-08">Updated August 8, 2026</time>
             <span aria-hidden="true">|</span>
             <span>11 min read</span>
@@ -289,6 +289,7 @@ export default function ExcelToCRMMigrationGuide() {
             </div>
           </section>
         </div>
+        <ArticleAuthorBox />
       </article>
 
       <Footer />

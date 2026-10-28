@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Bot, CheckCircle, Clock, DollarSign } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'AI Automation Consulting Pricing',
@@ -90,6 +91,7 @@ export default function AiAutomationConsultingPricing() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               AI Automation Consulting Pricing: How Scope Is Determined
             </h1>
+            <ArticleByline />
 
             <div className="flex items-center gap-6 text-gray-600 mb-8 flex-wrap">
               <span className="flex items-center gap-2">
@@ -269,6 +271,7 @@ export default function AiAutomationConsultingPricing() {
             </div>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
 
       <Footer />

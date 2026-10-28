@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, BarChart3, Target, TrendingUp, ExternalLink } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'Campaign Attribution: Prove Marketing ROI',
@@ -27,7 +28,8 @@ export default function CampaignAttribution() {
           <div className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">Part 3 of 3 — Marketing Automation Playbook</div>
           <div className="flex items-center gap-2 text-indigo-300 text-sm mb-4"><Link href="/blog" className="hover:text-white">Blog</Link><span>/</span><span>Attribution</span></div>
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Campaign Attribution in Your CRM: How to Prove Marketing ROI</h1>
-          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Emergent Logic</span><span>•</span><span>July 2026</span><span>•</span><span>9 min read</span></div>
+          <ArticleByline dark />
+          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>July 2026</span><span>•</span><span>9 min read</span></div>
         </div>
       </section>
 
@@ -132,6 +134,7 @@ export default function CampaignAttribution() {
             <Link href="/blog/crm-roi-calculator-business-case-2026" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-[#6366F1]">Related</p><p className="text-gray-800">CRM ROI Calculator & Business Case</p></Link>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
       <Footer />
       <CookieConsent />

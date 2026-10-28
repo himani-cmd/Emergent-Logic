@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, MousePointerClick } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'Website Leads Need CRM Routing',
@@ -54,6 +55,7 @@ export default function WebsiteLeadsToCrm() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Why Website Leads Do Not Turn Into Sales Without CRM Routing
             </h1>
+            <ArticleByline />
 
             <div className="flex items-center gap-6 text-gray-600 mb-8 flex-wrap">
               <span className="flex items-center gap-2">
@@ -187,6 +189,7 @@ export default function WebsiteLeadsToCrm() {
             </div>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
 
       <Footer />
