@@ -48,7 +48,7 @@ const jsonLd = {
       headline: 'Salesforce vs. HubSpot for a Mid-Sized Canadian Company: Where Zoho Fits',
       description: metadata.description,
       url: canonicalUrl,
-      dateModified: '2026-08-24',
+      dateModified: '2026-10-27',
       inLanguage: 'en-CA',
       author: { '@type': 'Organization', name: 'Emergent Logic', url: 'https://www.emergent-logic.ca/' },
       publisher: { '@id': 'https://www.emergent-logic.ca/#organization' },
@@ -86,10 +86,11 @@ export default function SalesforceVsHubspotVsZoho() {
             <span>CRM Comparison</span>
           </div>
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Salesforce vs. HubSpot for a Mid-Sized Canadian Company: Where Zoho Fits</h1>
+          <p className="text-lg md:text-xl text-white leading-relaxed mb-6 max-w-3xl">For a mid-sized Canadian company, Salesforce usually fits when processes, permissions and governance are complex and someone can own administration. HubSpot usually fits when marketing and sales want one connected system with lighter administration. Zoho can suit cost-conscious teams comfortable with hands-on configuration. Whichever you shortlist, test it against written requirements, current vendor pricing and a scoped prototype.</p>
           <div className="flex items-center gap-4 text-indigo-200 text-sm">
             <span>By Emergent Logic</span>
             <span>•</span>
-            <span>Last reviewed August 24, 2026</span>
+            <span>Last reviewed October 27, 2026</span>
             <span>•</span>
             <span>15 min read</span>
           </div>
@@ -210,6 +211,8 @@ export default function SalesforceVsHubspotVsZoho() {
             </tbody>
           </table>
         </div>
+
+        <p className="text-gray-600 mb-8">Example: <Link href="/case-studies/hubspot-email-health-b2b-equipment" className="text-[#6366F1] hover:underline font-medium">an anonymised HubSpot email-health engagement</Link>, where marketing emails sent through HubSpot were being filtered as spam or held back.</p>
 
         <h3 className="text-2xl font-bold text-[#1E3A5F] mb-4">Platform-Specific Cost Questions</h3>
         <div className="grid md:grid-cols-3 gap-6 mb-12">

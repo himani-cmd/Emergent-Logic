@@ -10,12 +10,12 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Bot, CheckCircle, Clock, DollarSign } from 'lucide-react';
 
 export const metadata = {
-  title: 'AI Automation Consulting Pricing',
-  description: 'Learn how AI automation consulting is scoped for small businesses, from simple workflows to CRM-connected systems, and what changes project cost.',
+  title: { absolute: 'AI Automation Consulting Pricing: What Drives the Cost' },
+  description: 'What changes the cost of AI automation consulting for a small business: scope, CRM connections, data cleanup and support. Fixed price or hourly, explained.',
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/ai-automation-consulting-pricing' },
   openGraph: {
-    title: 'AI Automation Consulting Pricing | Small Business Guide',
-    description: 'A practical scoping guide for small businesses comparing simple AI workflows, CRM-connected automations, ongoing support, and fixed-scope projects.',
+    title: 'AI Automation Consulting Pricing: What Drives the Cost',
+    description: 'What changes the cost of AI automation consulting for a small business: scope, CRM connections, data cleanup and support. Fixed price or hourly, explained.',
     url: 'https://www.emergent-logic.ca/blog/ai-automation-consulting-pricing',
     type: 'article',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
