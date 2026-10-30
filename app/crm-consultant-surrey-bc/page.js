@@ -11,17 +11,31 @@ import { ArrowRight, CheckCircle, MapPin } from 'lucide-react';
 
 export const metadata = {
   title: 'CRM Consultant Surrey BC',
-  description: 'CRM consulting in Surrey BC. Salesforce, HubSpot, NetSuite, Odoo implementation. AI-accelerated delivery. Free strategy call.',
+  description: 'CRM consultant in Surrey, BC. HubSpot, GoHighLevel, Salesforce, Zoho CRM and Odoo setup, cleanup and automation. Human-led, AI-assisted.',
   alternates: { canonical: 'https://www.emergent-logic.ca/crm-consultant-surrey-bc' },
   openGraph: {
     title: 'CRM Consultant Surrey BC | Emergent Logic',
-    description: 'CRM consulting in Surrey BC. Salesforce, HubSpot, NetSuite, Odoo implementation. AI-accelerated delivery.',
+    description: 'CRM consultant in Surrey, BC. HubSpot, GoHighLevel, Salesforce, Zoho CRM and Odoo setup, cleanup and automation. Human-led, AI-assisted.',
     url: 'https://www.emergent-logic.ca/crm-consultant-surrey-bc',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
 };
 
-const platforms = ['Salesforce', 'HubSpot', 'NetSuite', 'Odoo', 'Microsoft Dynamics', 'Zoho CRM', 'Pipedrive', 'Freshsales', 'Monday CRM', 'Copper', 'Insightly', 'Close CRM'];
+const platforms = [
+  { name: 'HubSpot', href: '/hubspot-consultant-surrey-bc' },
+  { name: 'GoHighLevel', href: '/services/gohighlevel-implementation' },
+  { name: 'Salesforce', href: '/salesforce-consultant-surrey-bc' },
+  { name: 'Zoho CRM', href: '/services/crm-implementation' },
+  { name: 'Odoo', href: '/services/crm-implementation' },
+  { name: 'NetSuite' },
+  { name: 'Microsoft Dynamics' },
+  { name: 'Pipedrive' },
+  { name: 'Freshsales' },
+  { name: 'Monday CRM' },
+  { name: 'Copper' },
+  { name: 'Insightly' },
+  { name: 'Close CRM' },
+];
 
 const process = [
   { step: '01', title: 'Discovery', description: 'We map your sales process, identify gaps, and understand your team\'s workflow before touching any software.' },
@@ -45,6 +59,9 @@ const faqs = [
   { q: 'Which CRM is best for small businesses in Surrey, BC?', a: 'The right CRM depends on your sales process, number of users, reporting needs, integrations, and internal capacity. HubSpot can suit teams that want an approachable sales and marketing platform, while Salesforce is often considered when deeper customization and governance are required.' },
   { q: 'How much does CRM consulting cost in Surrey?', a: 'Cost depends on the number of users, data condition, workflows, integrations, and training required. We first identify the specific backlog or implementation scope, then provide a clear estimate before work begins.' },
   { q: 'Do you offer CRM training?', a: 'Training and adoption support can be included in the written scope. Emergent Logic is based in Surrey, and any in-person requirement is confirmed during discovery.' },
+  { q: 'Do you set up Zoho CRM or GoHighLevel for Surrey businesses?', a: 'Yes. We implement and clean up Zoho CRM and GoHighLevel alongside HubSpot, Salesforce and Odoo. We confirm the best fit for your process, team and budget during discovery before a scope is proposed.' },
+  { q: 'Do you only work with businesses in Surrey?', a: 'No. Emergent Logic is based in Surrey, BC and serves the Lower Mainland and businesses across Canada. Most discovery, configuration, testing and training is delivered remotely through calls and shared screens.' },
+  { q: 'Should we clean up our CRM before adding automation?', a: 'In most cases yes. Automation built on duplicate, incomplete or outdated records tends to repeat those problems faster. A short cleanup first gives workflows reliable data to run on.' },
   { q: 'Can you help us switch from one CRM to another?', a: 'Yes. We can assess data sources, clean and map records, run a controlled migration, and reconcile the result before launch. The migration plan and validation steps are agreed before records are moved.' },
 ];
 
@@ -94,12 +111,37 @@ export default function CrmConsultantSurrey() {
           <h2 className="text-3xl font-bold text-gray-900 mb-4">CRM platforms we implement in Surrey</h2>
           <p className="text-gray-600 mb-8">We compare platforms against your process, team capacity, integration needs, and budget before recommending a direction.</p>
           <div className="flex flex-wrap gap-4">
-            {platforms.map((platform, i) => (<div key={i} className="px-6 py-3 bg-gray-50 rounded-xl border font-medium text-gray-700">{platform}</div>))}
+            {platforms.map((platform) => (platform.href
+              ? <Link key={platform.name} href={platform.href} className="px-6 py-3 bg-gray-50 rounded-xl border font-medium text-gray-700 hover:border-violet-300 hover:text-violet-900">{platform.name}</Link>
+              : <div key={platform.name} className="px-6 py-3 bg-gray-50 rounded-xl border font-medium text-gray-700">{platform.name}</div>))}
+          </div>
+          <p className="text-gray-600 mt-6">These are the platforms we most often implement and clean up, alongside the other CRMs your team already uses.</p>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl space-y-4 text-gray-700 leading-relaxed">
+            <h2 className="text-3xl font-bold text-gray-900">What does CRM implementation involve for a Surrey business?</h2>
+            <p>It starts with how your team sells and follows up today, not with software settings. We map the process, recommend a platform that fits your size and budget, then configure pipelines, deal stages, fields and dashboards to match how you actually work.</p>
+            <p>Existing records are moved with backups, field mapping, test imports and validation, so you keep the data you trust. Connections to your email, website forms and other tools are added once technical fit is confirmed, and your team is trained on the workflows they will use every day.</p>
+            <p>You get a written scope before work begins, with milestones and ownership agreed up front. For the full service, see <Link href="/services/crm-implementation" className="text-violet-700 underline underline-offset-4">CRM implementation</Link>.</p>
           </div>
         </div>
       </section>
 
       <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl space-y-4 text-gray-700 leading-relaxed">
+            <h2 className="text-3xl font-bold text-gray-900">Marketing automation and lead follow-up for Surrey teams</h2>
+            <p>A CRM only helps if new enquiries reach the right person quickly. We set up lead routing, follow-up tasks and reminders, and form-to-CRM capture so website and email enquiries land in the pipeline with an owner and a next step.</p>
+            <p>Automation is designed with human review before high-impact actions. Our <Link href="/services/marketing-automation" className="text-violet-700 underline underline-offset-4">marketing automation</Link> service covers the workflows, and the <Link href="/lead-follow-up-audit" className="text-violet-700 underline underline-offset-4">free Lead Follow-Up Audit</Link> shows where enquiries are slipping today. You can also check your own process with the <Link href="/lead-follow-up-score" className="text-violet-700 underline underline-offset-4">Lead Follow-Up Score</Link>.</p>
+            <p>If your CRM data is messy, we recommend a <Link href="/services/crm-cleanup" className="text-violet-700 underline underline-offset-4">CRM cleanup</Link> before adding automation, so workflows run on records you can trust.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Our CRM consulting process</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -118,7 +160,7 @@ export default function CrmConsultantSurrey() {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Why Surrey businesses choose a focused CRM partner</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Why Surrey businesses choose a focused CRM consultant</h2>
           <ul className="space-y-4 max-w-3xl">
             {reasons.map((reason, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle className="w-6 h-6 text-violet-500 flex-shrink-0" /><span className="text-gray-700">{reason}</span></li>))}
           </ul>
