@@ -116,7 +116,7 @@ const faqs = [
   },
   {
     q: 'Which CRM platforms do you support?',
-    a: 'HubSpot and Salesforce are the primary platforms offered. Zoho CRM and other tools can be assessed for fit before a scope is proposed. Platform selection depends on the workflow, data model, reporting, integrations, budget and internal administration capacity.',
+    a: 'We implement and clean up HubSpot, GoHighLevel, Salesforce, Zoho CRM and Odoo, and work with other CRMs your team already uses. Platform selection depends on the workflow, data model, reporting, integrations, budget and internal administration capacity.',
   },
   {
     q: 'Which CRM is best for a Vancouver small business?',
@@ -429,7 +429,7 @@ export default function CrmConsultantVancouver() {
           </div>
           <div className="space-y-4 text-lg leading-relaxed text-white/80">
             <p>
-              Emergent Logic is based in Surrey and serves Vancouver, Metro Vancouver and businesses across Canada. Most CRM discovery, configuration, testing and training can happen through calls, shared screens and documented review cycles.
+              Emergent Logic is based in <Link href="/crm-consultant-surrey-bc" className="underline underline-offset-4 hover:text-white">Surrey</Link> and serves Vancouver, Metro Vancouver and businesses across Canada. Most CRM discovery, configuration, testing and training can happen through calls, shared screens and documented review cycles.
             </p>
             <p>
               Local does not mean claiming a Vancouver office. It means working in the same time zone, understanding the constraints of Canadian small and growing businesses, and defining when an in-person session is actually useful.
@@ -524,7 +524,7 @@ export default function CrmConsultantVancouver() {
               </a>
             </Button>
           </TrackedCTA>
-          <p className="mt-5 text-sm text-white/60">Page reviewed August 2026.</p>
+          <p className="mt-5 text-sm text-white/60">Page reviewed September 16, 2026.</p>
         </div>
       </section>
 
