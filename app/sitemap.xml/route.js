@@ -32,7 +32,7 @@ const lastmodByPath = {
   '/crm-consultant-coquitlam': '2026-08-19',
   '/hubspot-consultant-vancouver': '2026-10-26',
   '/hubspot-consultant-surrey-bc': '2026-08-05',
-  '/blog/salesforce-vs-hubspot-vs-zoho-canada-2026': '2026-08-24',
+  '/blog/salesforce-vs-hubspot-vs-zoho-canada-2026': '2026-10-27',
   '/blog/hubspot-vs-salesforce-canada': '2026-08-24',
   '/blog/hubspot-vs-salesforce-for-smb': '2026-08-24',
   '/blog/salesforce-consultant-small-business': '2026-08-24',

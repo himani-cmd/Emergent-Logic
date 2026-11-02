@@ -40,7 +40,7 @@ function HeroSection() {
           </h1>
 
           <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-3xl">
-            We help Greater Vancouver businesses clean up and implement HubSpot, Salesforce, and Zoho with clear scope, direct delivery, and practical automation.
+            We help Greater Vancouver businesses clean up and implement HubSpot, GoHighLevel, Salesforce, Zoho, and Odoo with clear scope, direct delivery, and practical automation.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
@@ -75,7 +75,7 @@ function HeroSection() {
           {/* Trust Indicators */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { label: 'HubSpot, Salesforce & Zoho', value: 'Multi-platform', icon: Database },
+              { label: 'HubSpot, GoHighLevel, Salesforce, Zoho & Odoo', value: 'Multi-platform', icon: Database },
               { label: 'Human review before high-impact actions', value: 'Guarded automation', icon: ShieldCheck },
               { label: 'Methodology and source table published', value: 'Source-linked research', icon: Search },
               { label: 'Greater Vancouver, BC', value: 'Surrey-based', icon: MapPin },
