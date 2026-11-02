@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, TimerReset } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'Speed to Lead CRM Follow-Up',
@@ -69,11 +70,7 @@ const jsonLd = {
       headline: 'Speed to Lead: Why Fast Follow-Up Needs a CRM System',
       description: metadata.description,
       image: 'https://www.emergent-logic.ca/og-image.png',
-      author: {
-        '@type': 'Organization',
-        name: 'Emergent Logic',
-        url: 'https://www.emergent-logic.ca/',
-      },
+      author: { '@id': 'https://www.emergent-logic.ca/#naman-kharbanda' },
       publisher: { '@id': 'https://www.emergent-logic.ca/#organization' },
       mainEntityOfPage: 'https://www.emergent-logic.ca/blog/speed-to-lead-crm-follow-up-system',
       datePublished: '2026-06-28',
@@ -109,6 +106,7 @@ export default function SpeedToLeadCrmFollowUpSystem() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Speed to Lead: Why Fast Follow-Up Needs a CRM System
             </h1>
+            <ArticleByline />
 
             <div className="flex items-center gap-6 text-gray-600 mb-8 flex-wrap">
               <span className="flex items-center gap-2">
@@ -275,6 +273,7 @@ export default function SpeedToLeadCrmFollowUpSystem() {
             </div>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
 
       <Footer />

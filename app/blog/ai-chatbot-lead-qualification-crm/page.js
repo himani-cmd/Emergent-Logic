@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Bot, CheckCircle, Clock, MessageSquare } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'AI Chatbot Lead Qualification',
@@ -61,10 +62,7 @@ const jsonLd = {
   '@type': 'Article',
   headline: 'AI Chatbots for Lead Qualification Need CRM Integration',
   description: 'A practical guide to AI chatbot lead qualification, CRM routing, follow-up tasks, and reporting for service businesses.',
-  author: {
-    '@type': 'Organization',
-    name: 'Emergent Logic',
-  },
+  author: { '@id': 'https://www.emergent-logic.ca/#naman-kharbanda' },
   publisher: {
     '@type': 'Organization',
     name: 'Emergent Logic',
@@ -101,6 +99,7 @@ export default function AIChatbotLeadQualificationCRM() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               AI Chatbots for Lead Qualification Need CRM Integration
             </h1>
+            <ArticleByline />
 
             <div className="flex items-center gap-6 text-gray-600 mb-8 flex-wrap">
               <span className="flex items-center gap-2">
@@ -260,6 +259,7 @@ export default function AIChatbotLeadQualificationCRM() {
             </div>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
 
       <Footer />

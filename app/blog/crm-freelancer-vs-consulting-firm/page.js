@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, ClipboardCheck, ShieldCheck, Users } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'CRM Freelancer vs Consulting Firm',
@@ -60,6 +61,7 @@ export default function CrmFreelancerVsConsultingFirm() {
           <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
             CRM freelancer vs consulting firm: choose by scope and risk
           </h1>
+          <ArticleByline dark />
           <p className="mt-6 max-w-3xl text-xl leading-relaxed text-slate-300">
             The right choice is not the largest team or the lowest quote. It is the delivery model that matches the clarity, risk, ownership, and system boundaries of the work.
           </p>
@@ -149,6 +151,7 @@ export default function CrmFreelancerVsConsultingFirm() {
             </Link>
           </div>
         </section>
+        <ArticleAuthorBox />
       </article>
 
       <Footer />

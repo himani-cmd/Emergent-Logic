@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Clock, Link2 } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 const url = 'https://www.emergent-logic.ca/blog/crm-erp-integration-guide';
 const articleTitle = 'CRM ERP Integration: A Practical Guide for Manufacturers and Distributors';
@@ -71,7 +72,7 @@ const jsonLd = {
       dateModified: publishedDate,
       inLanguage: 'en-CA',
       mainEntityOfPage: url,
-      author: { '@type': 'Organization', name: 'Emergent Logic Consulting', url: 'https://www.emergent-logic.ca/' },
+      author: { '@id': 'https://www.emergent-logic.ca/#naman-kharbanda' },
       publisher: { '@type': 'Organization', name: 'Emergent Logic Consulting', url: 'https://www.emergent-logic.ca/' },
       about: ['CRM ERP integration', 'Manufacturing CRM', 'Distribution CRM'],
     },
@@ -105,9 +106,9 @@ export default function CrmErpIntegrationGuide() {
 
             <Badge className="mb-4 bg-cyan-100 text-cyan-800 border-cyan-200">CRM Integration</Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">{articleTitle}</h1>
+            <ArticleByline />
 
             <div className="flex items-center gap-6 text-gray-600 mb-8 flex-wrap">
-              <span>By Emergent Logic</span>
               <span>Updated October 22, 2026</span>
               <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 7 min read</span>
             </div>
@@ -228,6 +229,7 @@ export default function CrmErpIntegrationGuide() {
             </div>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
 
       <Footer />

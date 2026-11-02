@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, DollarSign, Settings } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'HubSpot Consulting Cost Guide',
@@ -71,6 +72,7 @@ export default function HubSpotConsultingCostGuide() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               HubSpot Consulting Cost Guide for Small Businesses
             </h1>
+            <ArticleByline />
 
             <div className="flex items-center gap-6 text-gray-600 mb-8 flex-wrap">
               <span className="flex items-center gap-2">
@@ -215,6 +217,7 @@ export default function HubSpotConsultingCostGuide() {
             </div>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
 
       <Footer />

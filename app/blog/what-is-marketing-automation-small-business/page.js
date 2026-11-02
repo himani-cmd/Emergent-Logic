@@ -8,6 +8,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Clock, MapPin, AlertCircle } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'What is Marketing Automation?',
@@ -36,6 +37,7 @@ export default function WhatIsMarketingAutomation() {
             
             <Badge className="mb-4">Marketing</Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">What is Marketing Automation and Does Your Business Need It?</h1>
+            <ArticleByline />
             
             <div className="flex items-center gap-6 text-gray-600 mb-8">
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4" /> Surrey, BC</span>
@@ -103,6 +105,7 @@ export default function WhatIsMarketingAutomation() {
             </div>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
       <Footer />
       <CookieConsent />

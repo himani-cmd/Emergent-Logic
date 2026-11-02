@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { AlertTriangle, ArrowRight, BarChart3, CheckCircle, Clock, GitBranch, Split } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'Lead Routing and MQL-to-SQL Handoff',
@@ -88,11 +89,7 @@ const jsonLd = {
       headline: 'Why Lead Routing Breaks Between MQL and SQL',
       description: metadata.description,
       image: 'https://www.emergent-logic.ca/og-image.png',
-      author: {
-        '@type': 'Organization',
-        name: 'Emergent Logic',
-        url: 'https://www.emergent-logic.ca/',
-      },
+      author: { '@id': 'https://www.emergent-logic.ca/#naman-kharbanda' },
       publisher: { '@id': 'https://www.emergent-logic.ca/#organization' },
       mainEntityOfPage: 'https://www.emergent-logic.ca/blog/crm-lead-routing-mql-sql-handoff',
       datePublished: '2026-07-04',
@@ -128,6 +125,7 @@ export default function CrmLeadRoutingMqlSqlHandoff() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Why Lead Routing Breaks Between MQL and SQL
             </h1>
+            <ArticleByline />
 
             <div className="flex items-center gap-6 text-gray-600 mb-8 flex-wrap">
               <span className="flex items-center gap-2">
@@ -309,6 +307,7 @@ export default function CrmLeadRoutingMqlSqlHandoff() {
             </div>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
 
       <Footer />

@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Shield, AlertTriangle, ExternalLink } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'CRM + PIPEDA: Data Privacy Guide 2026',
@@ -26,7 +27,8 @@ export default function CrmPipedaPrivacy() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="flex items-center gap-2 text-indigo-300 text-sm mb-4"><Link href="/blog" className="hover:text-white">Blog</Link><span>/</span><span>Compliance</span></div>
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">CRM and PIPEDA: What Canadian Businesses Need to Know About Data Privacy in 2026</h1>
-          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Emergent Logic</span><span>•</span><span>May 2026</span><span>•</span><span>10 min read</span></div>
+          <ArticleByline dark />
+          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>May 2026</span><span>•</span><span>10 min read</span></div>
         </div>
       </section>
 
@@ -138,6 +140,7 @@ export default function CrmPipedaPrivacy() {
             <Link href="/blog/lead-scoring-model-crm-guide" className="block bg-white border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-[#6366F1]">Next →</p><p className="text-gray-800">Build a Lead Scoring Model in Your CRM</p></Link>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
       <Footer />
       <CookieConsent />

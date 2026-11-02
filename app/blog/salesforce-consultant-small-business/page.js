@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, AlertCircle, CheckCircle, Clock, MapPin } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'Small Business Salesforce Consultant',
@@ -45,6 +46,7 @@ export default function SalesforceConsultantSmallBusiness() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               When Small Businesses Need a Salesforce Consultant
             </h1>
+            <ArticleByline />
 
             <div className="flex items-center gap-6 text-gray-600 mb-8 flex-wrap">
               <span className="flex items-center gap-2">
@@ -209,6 +211,7 @@ export default function SalesforceConsultantSmallBusiness() {
             </div>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
 
       <Footer />

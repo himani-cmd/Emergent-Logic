@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Building2, CheckCircle, Clock, MapPin } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'Property Management CRM Follow-Up',
@@ -63,6 +64,7 @@ export default function PropertyManagementLeadFollowUpCrm() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Property Management Lead Follow-Up: Why CRM Routing Matters
             </h1>
+            <ArticleByline />
 
             <div className="flex items-center gap-6 text-gray-600 mb-8 flex-wrap">
               <span className="flex items-center gap-2">
@@ -206,6 +208,7 @@ export default function PropertyManagementLeadFollowUpCrm() {
             </div>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
 
       <Footer />

@@ -7,6 +7,7 @@ import ShareButtons from '@/components/ShareButtons';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Clock, MapPin, AlertCircle } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'What is AEO? Answer Engine Optimization',
@@ -35,6 +36,7 @@ export default function WhatIsAEO() {
             
             <Badge className="mb-4">SEO</Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">What is AEO? Answer Engine Optimization Explained for 2026</h1>
+            <ArticleByline />
             
             <div className="flex items-center gap-6 text-gray-600 mb-8">
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4" /> Surrey, BC</span>
@@ -86,6 +88,7 @@ export default function WhatIsAEO() {
             </div>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
       <Footer />
       <CookieConsent />

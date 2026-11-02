@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, MapPin } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'CRM Consultant Near Me Guide',
@@ -68,11 +69,7 @@ const jsonLd = {
       headline: 'CRM Consultant Near Me: What Buyers Are Really Looking For',
       description: metadata.description,
       image: 'https://www.emergent-logic.ca/og-image.png',
-      author: {
-        '@type': 'Organization',
-        name: 'Emergent Logic',
-        url: 'https://www.emergent-logic.ca/',
-      },
+      author: { '@id': 'https://www.emergent-logic.ca/#naman-kharbanda' },
       publisher: { '@id': 'https://www.emergent-logic.ca/#organization' },
       mainEntityOfPage: 'https://www.emergent-logic.ca/blog/crm-consultant-near-me',
       datePublished: '2026-06-23',
@@ -108,6 +105,7 @@ export default function CrmConsultantNearMe() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               CRM Consultant Near Me: What Buyers Are Really Looking For
             </h1>
+            <ArticleByline />
 
             <div className="flex items-center gap-6 text-gray-600 mb-8 flex-wrap">
               <span className="flex items-center gap-2">
@@ -269,6 +267,7 @@ export default function CrmConsultantNearMe() {
             </div>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
 
       <Footer />

@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Clock, FileSearch } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: '5-Point Lead Follow-Up Audit',
@@ -60,11 +61,7 @@ const jsonLd = {
       headline: '5-Point Lead Follow-Up Audit Checklist',
       description: metadata.description,
       image: 'https://www.emergent-logic.ca/og-image.png',
-      author: {
-        '@type': 'Organization',
-        name: 'Emergent Logic',
-        url: 'https://www.emergent-logic.ca/',
-      },
+      author: { '@id': 'https://www.emergent-logic.ca/#naman-kharbanda' },
       publisher: { '@id': 'https://www.emergent-logic.ca/#organization' },
       mainEntityOfPage: 'https://www.emergent-logic.ca/blog/lead-follow-up-audit-checklist',
       datePublished: '2026-06-22',
@@ -100,6 +97,7 @@ export default function LeadFollowUpAuditChecklist() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               5-Point Lead Follow-Up Audit Checklist
             </h1>
+            <ArticleByline />
 
             <div className="flex items-center gap-6 text-gray-600 mb-8 flex-wrap">
               <span className="flex items-center gap-2">
@@ -249,6 +247,7 @@ export default function LeadFollowUpAuditChecklist() {
             </div>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
 
       <Footer />

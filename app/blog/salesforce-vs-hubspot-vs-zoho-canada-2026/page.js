@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, ArrowLeft, CheckCircle, XCircle, AlertTriangle, ExternalLink } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'Salesforce vs HubSpot for Mid-Sized Canadian Companies',
@@ -50,7 +51,7 @@ const jsonLd = {
       url: canonicalUrl,
       dateModified: '2026-10-27',
       inLanguage: 'en-CA',
-      author: { '@type': 'Organization', name: 'Emergent Logic', url: 'https://www.emergent-logic.ca/' },
+      author: { '@id': 'https://www.emergent-logic.ca/#naman-kharbanda' },
       publisher: { '@id': 'https://www.emergent-logic.ca/#organization' },
       about: [
         { '@type': 'SoftwareApplication', name: 'Salesforce' },
@@ -86,10 +87,9 @@ export default function SalesforceVsHubspotVsZoho() {
             <span>CRM Comparison</span>
           </div>
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Salesforce vs. HubSpot for a Mid-Sized Canadian Company: Where Zoho Fits</h1>
+          <ArticleByline dark />
           <p className="text-lg md:text-xl text-white leading-relaxed mb-6 max-w-3xl">For a mid-sized Canadian company, Salesforce usually fits when processes, permissions and governance are complex and someone can own administration. HubSpot usually fits when marketing and sales want one connected system with lighter administration. Zoho can suit cost-conscious teams comfortable with hands-on configuration. Whichever you shortlist, test it against written requirements, current vendor pricing and a scoped prototype.</p>
           <div className="flex items-center gap-4 text-indigo-200 text-sm">
-            <span>By Emergent Logic</span>
-            <span>•</span>
             <span>Last reviewed October 27, 2026</span>
             <span>•</span>
             <span>15 min read</span>
@@ -393,6 +393,7 @@ export default function SalesforceVsHubspotVsZoho() {
             </Link>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
 
       <Footer />

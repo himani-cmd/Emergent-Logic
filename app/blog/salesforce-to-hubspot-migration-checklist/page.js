@@ -7,6 +7,7 @@ import ShareButtons from '@/components/ShareButtons';
 import WorkbookDownload from '@/components/WorkbookDownload';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle2, Database, GitBranch, RotateCcw, ShieldCheck } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 const pageUrl = 'https://www.emergent-logic.ca/blog/salesforce-to-hubspot-migration-checklist';
 const workbookUrl = 'https://www.emergent-logic.ca/resources/emergent_logic_salesforce_to_hubspot_migration_workbook.xlsx';
@@ -94,7 +95,7 @@ const jsonLd = {
       description: metadata.description,
       datePublished: '2026-08-11',
       dateModified: '2026-08-11',
-      author: { '@type': 'Organization', '@id': 'https://www.emergent-logic.ca/#organization', name: 'Emergent Logic' },
+      author: { '@id': 'https://www.emergent-logic.ca/#naman-kharbanda' },
       publisher: { '@id': 'https://www.emergent-logic.ca/#organization' },
       mainEntityOfPage: pageUrl,
       hasPart: { '@id': `${pageUrl}#workbook` },
@@ -142,12 +143,11 @@ export default function SalesforceToHubSpotMigrationChecklist() {
           <h1 className="mt-3 max-w-4xl text-4xl font-bold leading-tight md:text-5xl">
             Salesforce to HubSpot migration: a decision and QA checklist
           </h1>
+          <ArticleByline dark />
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
             A Salesforce-to-HubSpot migration is not a CSV transfer. It is a controlled decision about which records, fields, activities, owners, associations, automations, files, and reporting logic must survive in the new system.
           </p>
           <div className="mt-7 flex flex-wrap items-center gap-4 text-sm text-slate-300">
-            <span>By Emergent Logic</span>
-            <span aria-hidden="true">|</span>
             <time dateTime="2026-08-11">Published August 11, 2026</time>
             <span aria-hidden="true">|</span>
             <span>13 min read</span>
@@ -351,6 +351,7 @@ export default function SalesforceToHubSpotMigrationChecklist() {
             </ul>
           </section>
         </div>
+        <ArticleAuthorBox />
       </article>
 
       <Footer />

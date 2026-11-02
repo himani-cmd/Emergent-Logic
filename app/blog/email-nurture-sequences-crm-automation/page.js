@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Mail, Clock, BarChart3 } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'Email Nurture Sequences That Convert',
@@ -27,7 +28,8 @@ export default function NurtureSequences() {
           <div className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">Part 2 of 3 — Marketing Automation Playbook</div>
           <div className="flex items-center gap-2 text-indigo-300 text-sm mb-4"><Link href="/blog" className="hover:text-white">Blog</Link><span>/</span><span>Email Nurture</span></div>
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Email Nurture Sequences: CRM Automation Playbook</h1>
-          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Emergent Logic</span><span>•</span><span>July 2026</span><span>•</span><span>8 min read</span></div>
+          <ArticleByline dark />
+          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>July 2026</span><span>•</span><span>8 min read</span></div>
         </div>
       </section>
 
@@ -133,6 +135,7 @@ export default function NurtureSequences() {
             <p><Link href="/blog/campaign-attribution-crm-marketing-roi" className="text-[#6366F1] hover:underline">Part 3: Campaign Attribution — Prove Marketing ROI →</Link></p>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
       <Footer />
       <CookieConsent />

@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, AlertTriangle, CheckCircle, Clock, MapPin } from 'lucide-react';
+import { ArticleByline, ArticleAuthorBox } from '@/components/ArticleByline';
 
 export const metadata = {
   title: 'Salesforce Cleanup Before Automation',
@@ -53,6 +54,7 @@ export default function SalesforceCleanupBeforeAutomation() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Why Salesforce Cleanup Matters Before Automation
             </h1>
+            <ArticleByline />
 
             <div className="flex items-center gap-6 text-gray-600 mb-8 flex-wrap">
               <span className="flex items-center gap-2">
@@ -194,6 +196,7 @@ export default function SalesforceCleanupBeforeAutomation() {
             </div>
           </div>
         </div>
+        <ArticleAuthorBox />
       </article>
 
       <Footer />
