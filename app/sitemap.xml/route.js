@@ -122,7 +122,6 @@ const urls = [
   ['/blog/hubspot-vs-salesforce-canada', 'monthly', '0.8'],
   ['/blog/what-is-marketing-automation-small-business', 'monthly', '0.8'],
   ['/blog/what-is-aeo-answer-engine-optimization', 'monthly', '0.8'],
-  ['/blog/how-to-choose-digital-marketing-agency-vancouver', 'monthly', '0.8'],
   ['/blog/salesforce-vs-hubspot-vs-zoho-canada-2026', 'monthly', '0.8'],
   ['/blog/ai-crm-strategy-guide-2026', 'monthly', '0.8'],
   ['/blog/crm-pipeda-data-privacy-canada', 'monthly', '0.8'],

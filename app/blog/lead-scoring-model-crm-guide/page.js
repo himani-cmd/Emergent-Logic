@@ -27,12 +27,12 @@ export default function LeadScoringGuide() {
           <div className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">Part 1 of 3 — Marketing Automation Playbook</div>
           <div className="flex items-center gap-2 text-indigo-300 text-sm mb-4"><Link href="/blog" className="hover:text-white">Blog</Link><span>/</span><span>Lead Scoring</span></div>
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">How to Build a Lead Scoring Model in Your CRM (Step-by-Step Guide)</h1>
-          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Emergent Logic</span><span>•</span><span>June 2026</span><span>•</span><span>9 min read</span></div>
+          <div className="flex items-center gap-4 text-indigo-200 text-sm"><span>By Emergent Logic</span><span>•</span><span>June 2026</span><span>•</span><span>Last reviewed November 3, 2026</span><span>•</span><span>9 min read</span></div>
         </div>
       </section>
 
       <article className="container mx-auto px-4 max-w-4xl py-12">
-        <p className="text-xl text-gray-700 leading-relaxed mb-8">Your sales team spends 65% of their time on leads that never convert. Lead scoring fixes this by telling reps exactly which leads deserve attention and which need more nurturing.</p>
+        <p className="text-xl text-gray-700 leading-relaxed mb-8">Lead scoring tells reps which leads deserve attention now and which need more nurturing.</p>
 
         <h2 className="text-3xl font-bold text-[#1E3A5F] mb-4">What Lead Scoring Does (And Does Not Do)</h2>
         <p className="text-gray-600 mb-4">Lead scoring uses two dimensions:</p>
@@ -88,6 +88,7 @@ export default function LeadScoringGuide() {
         <p className="text-gray-600 mb-12"><strong>Time decay is critical.</strong> A lead who visited your pricing page yesterday is far more valuable than one who visited 6 months ago. Implement score decay — reduce engagement points by 10-20% every 30 days of inactivity.</p>
 
         <h2 className="text-3xl font-bold text-[#1E3A5F] mb-4">Step 4 — Set Scoring Thresholds</h2>
+        <p className="text-sm text-gray-500 italic mb-3">Example distribution — your numbers will differ.</p>
         <div className="bg-gray-50 rounded-2xl p-8 mb-12 border">
           <div className="space-y-4">
             {[

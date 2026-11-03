@@ -11,6 +11,7 @@ import { ArrowRight, Clock, MapPin, AlertCircle, XCircle } from 'lucide-react';
 export const metadata = {
   title: 'Choose a Marketing Agency Vancouver',
   description: 'Looking for a digital marketing agency in Vancouver or Surrey BC? 7 questions to ask before you hire and red flags to watch out for.',
+  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.emergent-logic.ca/blog/how-to-choose-digital-marketing-agency-vancouver' },
   openGraph: {
     title: 'Choose a Marketing Agency Vancouver | Emergent Logic',
