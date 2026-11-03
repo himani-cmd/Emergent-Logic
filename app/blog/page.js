@@ -336,13 +336,6 @@ const posts = [
     category: 'SEO',
     readTime: '7 min read',
   },
-  {
-    slug: 'how-to-choose-digital-marketing-agency-vancouver',
-    title: 'How to Choose a Digital Marketing Agency in Vancouver, BC',
-    excerpt: '7 questions to ask before you hire a marketing agency — and the red flags to watch out for.',
-    category: 'Marketing',
-    readTime: '7 min read',
-  },
 ];
 
 export default function BlogIndex() {
