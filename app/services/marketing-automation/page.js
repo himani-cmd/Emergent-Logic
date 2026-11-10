@@ -8,13 +8,13 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Target, Mail, BarChart3, Workflow, Filter, Send, Clock, DollarSign, Check, AlertTriangle, Zap, Database } from 'lucide-react';
 
 export const metadata = {
-  title: 'Marketing Automation Services Canada',
-  description: 'Marketing automation services for Canadian teams: connect CRM lead capture, scoring, nurture, routing, attribution, and sales follow-up in one tested workflow.',
+  title: { absolute: 'Marketing Automation Services & Consultants in Canada' },
+  description: 'Marketing automation wired to your CRM: lead capture, scoring, nurture emails and sales handoff, built in HubSpot, Salesforce, Zoho or GoHighLevel.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/marketing-automation' },
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'Marketing Automation Services Canada | Emergent Logic',
-    description: 'Connect CRM lead capture, scoring, nurture, routing, attribution, and sales follow-up in one tested marketing automation workflow.',
+    title: 'Marketing Automation Services & Consultants in Canada',
+    description: 'Marketing automation wired to your CRM: lead capture, scoring, nurture emails and sales handoff, built in HubSpot, Salesforce, Zoho or GoHighLevel.',
     url: 'https://www.emergent-logic.ca/services/marketing-automation',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },

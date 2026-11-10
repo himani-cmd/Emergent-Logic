@@ -25,8 +25,8 @@ import {
 const canonicalUrl = 'https://www.emergent-logic.ca/crm-consultant-vancouver';
 
 export const metadata = {
-  title: 'CRM Consultant Vancouver | Setup & Cleanup',
-  description: 'CRM consultant for Vancouver businesses needing implementation, cleanup, migration, lead routing, reporting, or support across HubSpot, Salesforce, and Zoho.',
+  title: { absolute: 'CRM Consultant Vancouver: HubSpot, Salesforce, Zoho, Odoo' },
+  description: 'Vancouver CRM consultant for growing businesses. Choose, set up, migrate and connect HubSpot, Salesforce, Zoho, Odoo or GoHighLevel. Free 30-minute call.',
   alternates: {
     canonical: canonicalUrl,
     languages: { 'en-CA': canonicalUrl },
@@ -35,8 +35,8 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_CA',
-    title: 'CRM Consultant Vancouver | Emergent Logic',
-    description: 'CRM implementation, cleanup, migration, lead routing and reporting support for Vancouver businesses.',
+    title: 'CRM Consultant Vancouver: HubSpot, Salesforce, Zoho, Odoo',
+    description: 'Vancouver CRM consultant for growing businesses. Choose, set up, migrate and connect HubSpot, Salesforce, Zoho, Odoo or GoHighLevel. Free 30-minute call.',
     url: canonicalUrl,
     siteName: 'Emergent Logic',
     images: [{
@@ -48,8 +48,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CRM Consultant Vancouver | Emergent Logic',
-    description: 'CRM implementation, cleanup, migration, lead routing and reporting support for Vancouver businesses.',
+    title: 'CRM Consultant Vancouver: HubSpot, Salesforce, Zoho, Odoo',
+    description: 'Vancouver CRM consultant for growing businesses. Choose, set up, migrate and connect HubSpot, Salesforce, Zoho, Odoo or GoHighLevel. Free 30-minute call.',
     images: ['https://www.emergent-logic.ca/og-image.png'],
   },
 };

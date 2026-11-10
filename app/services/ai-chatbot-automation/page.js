@@ -20,15 +20,13 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'AI Chatbot Consulting Vancouver | CRM Automation',
-  description:
-    'AI chatbot consulting for Vancouver service businesses. Qualify website visitors, capture lead data, route inquiries into CRM and trigger follow-up tasks.',
+  title: { absolute: 'AI Chatbot Consulting Vancouver: Leads Into Your CRM' },
+  description: 'AI chatbot consulting for Vancouver businesses. Qualify website visitors, capture their details, route enquiries into your CRM and trigger follow-up tasks.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/ai-chatbot-automation' },
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'AI Chatbot Consulting Vancouver | Emergent Logic',
-    description:
-      'CRM-connected AI chatbots that qualify leads, summarize conversations, route inquiries, and trigger follow-up without creating another disconnected inbox.',
+    title: 'AI Chatbot Consulting Vancouver: Leads Into Your CRM',
+    description: 'AI chatbot consulting for Vancouver businesses. Qualify website visitors, capture their details, route enquiries into your CRM and trigger follow-up tasks.',
     url: 'https://www.emergent-logic.ca/services/ai-chatbot-automation',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },

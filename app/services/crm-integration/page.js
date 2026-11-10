@@ -8,13 +8,13 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Link2, Database, Phone, Mail, Calendar, FileText, Globe, Zap, RefreshCw, Clock, DollarSign, Check, AlertTriangle } from 'lucide-react';
 
 export const metadata = {
-  title: 'CRM Integration Services Canada',
-  description: 'CRM integration services for Canadian teams using Zapier, Make, n8n, native connectors, webhooks, and APIs, with mapping, testing, and failure handling.',
+  title: { absolute: 'CRM Integration Services: Zapier, Make, Celigo, Boomi' },
+  description: 'Connect your CRM to your ERP, accounting, forms and email. We build tested integrations with Zapier, Make, n8n, Celigo, Boomi, native connectors and APIs.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/crm-integration' },
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'CRM Integration Services Canada | Emergent Logic',
-    description: 'Connect HubSpot, Salesforce, or Zoho to the rest of your stack with documented mapping, testing, and failure handling.',
+    title: 'CRM Integration Services: Zapier, Make, Celigo, Boomi',
+    description: 'Connect your CRM to your ERP, accounting, forms and email. We build tested integrations with Zapier, Make, n8n, Celigo, Boomi, native connectors and APIs.',
     url: 'https://www.emergent-logic.ca/services/crm-integration',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
