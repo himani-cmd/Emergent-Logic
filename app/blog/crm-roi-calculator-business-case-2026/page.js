@@ -56,11 +56,21 @@ export default function CrmRoiCalculatorPage() {
           <p className="mt-6 max-w-3xl text-xl leading-relaxed text-slate-300">
             Model a scenario using your own numbers, show which inputs are measured or assumed, and keep the result separate from any promise of future performance.
           </p>
+          <p className="mt-4 text-sm text-indigo-200">Reviewed November 6, 2026</p>
           <div className="mt-8 flex flex-wrap gap-5 text-sm text-slate-300">
             <span className="inline-flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-indigo-300" /> No data stored</span>
             <span className="inline-flex items-center gap-2"><CheckCircle className="h-4 w-4 text-indigo-300" /> User-provided assumptions</span>
             <span className="inline-flex items-center gap-2"><CheckCircle className="h-4 w-4 text-indigo-300" /> No outcome guarantee</span>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-white pb-4 pt-12">
+        <div className="container mx-auto max-w-5xl px-4">
+          <h2 className="mb-4 text-3xl font-bold text-slate-950">How to calculate CRM ROI</h2>
+          <p className="max-w-3xl text-lg text-slate-600">
+            The calculator adds the extra revenue from a higher lead-to-customer rate to the value of administration hours saved, giving the annual benefit. Cost is implementation plus annual software and support. ROI is benefit minus cost, divided by cost. Every input is your own assumption, so the result is a scenario, not a forecast.
+          </p>
         </div>
       </section>
 

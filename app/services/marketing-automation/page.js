@@ -137,7 +137,7 @@ const jsonLd = {
       url: 'https://www.emergent-logic.ca/services/marketing-automation',
       name: 'Marketing Automation Services Canada',
       description: metadata.description,
-      dateModified: '2026-09-16',
+      dateModified: '2026-11-06',
       isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
       about: { '@id': 'https://www.emergent-logic.ca/services/marketing-automation#service' },
     },
@@ -178,6 +178,9 @@ export default function MarketingAutomation() {
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
             Marketing Automation Services for Canadian Teams
           </h1>
+          <p className="text-lg text-white/90 mb-6 max-w-3xl">
+            Emergent Logic is a marketing automation consultant based in Surrey, BC. We build lead capture, lead scoring, nurture emails, routing and sales handoff inside the CRM you already use — HubSpot, GoHighLevel, Salesforce, Zoho CRM or another CRM — for B2B teams across Canada and the US, then document it so your team can run it.
+          </p>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
             Connect lead scoring, nurture sequences, campaign attribution, and sales handoff to your CRM with clear ownership, documented testing, and human review for high-impact actions.
           </p>
@@ -211,7 +214,7 @@ export default function MarketingAutomation() {
       {/* CRM-first positioning callout */}
       <section className="py-12 bg-purple-50 border-b border-purple-100">
         <div className="container mx-auto px-4 max-w-4xl">
-          <p className="mb-4 text-sm font-semibold text-purple-700">Reviewed September 16, 2026</p>
+          <p className="mb-4 text-sm font-semibold text-purple-700">Reviewed November 6, 2026</p>
           <div className="flex items-start gap-4">
             <Database className="w-8 h-8 text-purple-700 flex-shrink-0 mt-1" />
             <div>
