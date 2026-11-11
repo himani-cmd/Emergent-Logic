@@ -625,6 +625,28 @@ function FinalCTASection() {
 // ─────────────────────────────────────────────
 // HOMEPAGE
 // ─────────────────────────────────────────────
+export const metadata = {
+  title: { absolute: 'CRM Implementation Consultants in Vancouver & Canada' },
+  description: 'We help growing B2B companies choose, set up and run the right CRM: HubSpot, Salesforce, Zoho, Odoo or GoHighLevel. Based in Surrey, BC. Book a free call.',
+  alternates: { canonical: 'https://www.emergent-logic.ca' },
+  robots: { index: true, follow: true },
+  openGraph: {
+    type: 'website',
+    locale: 'en_CA',
+    url: 'https://www.emergent-logic.ca',
+    siteName: 'Emergent Logic',
+    title: 'CRM Implementation Consultants in Vancouver & Canada',
+    description: 'We help growing B2B companies choose, set up and run the right CRM: HubSpot, Salesforce, Zoho, Odoo or GoHighLevel. Based in Surrey, BC. Book a free call.',
+    images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630, alt: 'Emergent Logic - CRM Implementation Vancouver BC' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'CRM Implementation Consultants in Vancouver & Canada',
+    description: 'We help growing B2B companies choose, set up and run the right CRM: HubSpot, Salesforce, Zoho, Odoo or GoHighLevel. Based in Surrey, BC. Book a free call.',
+    images: ['https://www.emergent-logic.ca/og-image.png'],
+  },
+};
+
 export default function Home() {
   return (
     <main className="min-h-screen">
