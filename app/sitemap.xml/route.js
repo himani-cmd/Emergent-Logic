@@ -4,6 +4,8 @@ const defaultLastmod = '2026-07-31';
 const lastmodByPath = {
   '/case-studies/hubspot-email-health-b2b-equipment': '2026-10-19',
   '/blog/gohighlevel-sms-canada-a2p-casl': '2026-10-12',
+  '/services': '2026-11-11',
+  '/industries': '2026-11-11',
   '/industries/manufacturing-distribution': '2026-10-23',
   '/blog/crm-erp-integration-guide': '2026-10-23',
   '/services/crm-integration': '2026-10-23',
@@ -89,6 +91,8 @@ const urls = [
   ['/blog/crm-lead-routing-mql-sql-handoff', 'monthly', '0.8'],
   ['/blog/immigration-consultation-follow-up-crm', 'monthly', '0.8'],
   ['/blog/property-management-lead-follow-up-crm', 'monthly', '0.8'],
+  ['/services', 'monthly', '0.9'],
+  ['/industries', 'monthly', '0.9'],
   ['/services/crm-implementation', 'monthly', '0.9'],
   ['/crm-implementation-method', 'monthly', '0.9'],
   ['/services/crm-relaunch', 'monthly', '0.9'],
