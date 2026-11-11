@@ -5,29 +5,37 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { trackCTAClick } from '@/lib/analytics';
 import { Button } from '@/components/ui/button';
-import { Menu, X, ChevronDown, Database, Settings, Wrench, Link2, Workflow } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
+import { navMenus } from '@/lib/siteNav';
 
-const services = [
-  { title: 'CRM Implementation', href: '/services/crm-implementation', icon: Database },
-  { title: 'HubSpot Consulting', href: '/services/hubspot-consulting', icon: Settings },
-  { title: 'GoHighLevel Implementation & Automation', href: '/services/gohighlevel-implementation', icon: Workflow },
-  { title: 'CRM Cleanup', href: '/services/crm-cleanup', icon: Wrench },
-  { title: 'CRM Integration', href: '/services/crm-integration', icon: Link2 },
-  { title: 'Marketing Automation', href: '/services/marketing-automation', icon: Workflow },
-];
-
-const navLinks = [
-  { title: 'Pricing', href: '/pricing' },
-  { title: 'Blog', href: '/blog' },
-  { title: 'Case Studies', href: '/case-studies' },
-  { title: 'About', href: '/about' },
-  { title: 'Contact', href: '/contact' },
-];
+function MenuLinks({ menu, linkClass, groupLabelClass }) {
+  if (menu.groups) {
+    return (
+      <>
+        {menu.groups.map((group) => (
+          <div key={group.title} className="mb-2">
+            <div className={groupLabelClass}>{group.title}</div>
+            {group.links.map((l) => (
+              <Link key={l.href} href={l.href} className={linkClass}>{l.title}</Link>
+            ))}
+          </div>
+        ))}
+        {menu.footer && (
+          <Link href={menu.footer.href} className={`${linkClass} font-semibold text-violet-700`}>{menu.footer.title}</Link>
+        )}
+      </>
+    );
+  }
+  return menu.links.map((l) => (
+    <Link key={l.href} href={l.href} className={linkClass}>{l.title}</Link>
+  ));
+}
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState(null);
+  const [mobileSection, setMobileSection] = useState(null);
   const pathname = usePathname();
   const isHome = pathname === '/';
 
@@ -39,8 +47,15 @@ export default function Navbar() {
 
   useEffect(() => {
     setMobileOpen(false);
-    setServicesOpen(false);
+    setOpenMenu(null);
+    setMobileSection(null);
   }, [pathname]);
+
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === 'Escape') setOpenMenu(null); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
 
   const navBg = scrolled || !isHome ? 'bg-white shadow-sm border-b' : 'bg-transparent';
   const textColor = scrolled || !isHome ? 'text-gray-700 hover:text-violet-600' : 'text-white/90 hover:text-white';
@@ -60,33 +75,37 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-1">
-            <Link href="/" className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${textColor}`}>Home</Link>
-
-            {/* Services Dropdown */}
-            <div className="relative"
-              onMouseEnter={() => setServicesOpen(true)}
-              onMouseLeave={() => setServicesOpen(false)}
-            >
-              <button className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1 ${textColor}`}>
-                Services <ChevronDown className={`w-4 h-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
-              </button>
-              {servicesOpen && (
-                <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-xl shadow-xl border p-2 z-50">
-                  {services.map((s, i) => (
-                    <Link key={i} href={s.href} className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-violet-50 transition-colors group">
-                      <s.icon className="w-5 h-5 text-violet-500 group-hover:text-violet-600" />
-                      <span className="text-gray-700 group-hover:text-violet-700 text-sm font-medium">{s.title}</span>
-                    </Link>
-                  ))}
+            {navMenus.map((menu) => {
+              const isOpen = openMenu === menu.key;
+              return (
+                <div key={menu.key} className="relative"
+                  onMouseEnter={() => setOpenMenu(menu.key)}
+                  onMouseLeave={() => setOpenMenu(null)}
+                  onBlur={(e) => { if (!e.currentTarget.contains(e.relatedTarget)) setOpenMenu(null); }}
+                >
+                  <button
+                    type="button"
+                    className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1 ${textColor}`}
+                    aria-expanded={isOpen}
+                    aria-controls={`menu-${menu.key}`}
+                    onClick={() => setOpenMenu(isOpen ? null : menu.key)}
+                  >
+                    {menu.title} <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  {isOpen && (
+                    <div id={`menu-${menu.key}`} className={`absolute top-full left-0 mt-1 bg-white rounded-xl shadow-xl border p-3 z-50 ${menu.groups ? 'w-[34rem] grid grid-cols-2 gap-x-4' : 'w-72'}`}>
+                      <MenuLinks
+                        menu={menu}
+                        linkClass="block px-3 py-1.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-violet-50 hover:text-violet-700"
+                        groupLabelClass="px-3 pt-1 pb-1 text-xs font-semibold uppercase tracking-wider text-gray-400"
+                      />
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
+              );
+            })}
 
-            {navLinks.map((link, i) => (
-              <Link key={i} href={link.href} className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${textColor}`}>
-                {link.title}
-              </Link>
-            ))}
+            <Link href="/about" className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${textColor}`}>About</Link>
 
             <Button asChild size="sm" className="ml-2 bg-violet-600 px-4 font-semibold text-white hover:bg-violet-700">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"
@@ -112,19 +131,33 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {mobileOpen && (
           <div id="mobile-navigation-menu" className="md:hidden max-h-[calc(100dvh-5rem)] overflow-y-auto bg-white rounded-xl shadow-xl border mt-2 p-4 space-y-1">
-            <Link href="/" className="block px-3 py-2 rounded-lg text-gray-700 hover:bg-violet-50 font-medium">Home</Link>
+            {navMenus.map((menu) => {
+              const isOpen = mobileSection === menu.key;
+              return (
+                <div key={menu.key}>
+                  <button
+                    type="button"
+                    className="flex w-full items-center justify-between px-3 py-2 rounded-lg text-gray-700 hover:bg-violet-50 font-medium"
+                    aria-expanded={isOpen}
+                    aria-controls={`mobile-menu-${menu.key}`}
+                    onClick={() => setMobileSection(isOpen ? null : menu.key)}
+                  >
+                    {menu.title} <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  {isOpen && (
+                    <div id={`mobile-menu-${menu.key}`} className="pl-3 pb-2">
+                      <MenuLinks
+                        menu={menu}
+                        linkClass="block px-3 py-1.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-violet-50"
+                        groupLabelClass="px-3 pt-2 text-xs font-semibold uppercase tracking-wider text-gray-400"
+                      />
+                    </div>
+                  )}
+                </div>
+              );
+            })}
 
-            <div className="px-3 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wider">Services</div>
-            {services.map((s, i) => (
-              <Link key={i} href={s.href} className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-violet-50">
-                <s.icon className="w-4 h-4 text-violet-500" />
-                <span className="text-gray-700 text-sm font-medium">{s.title}</span>
-              </Link>
-            ))}
-
-            {navLinks.map((link, i) => (
-              <Link key={i} href={link.href} className="block px-3 py-2 rounded-lg text-gray-700 hover:bg-violet-50 font-medium">{link.title}</Link>
-            ))}
+            <Link href="/about" className="block px-3 py-2 rounded-lg text-gray-700 hover:bg-violet-50 font-medium">About</Link>
 
             <Button asChild className="mt-2 w-full bg-violet-600 hover:bg-violet-700">
               <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"
