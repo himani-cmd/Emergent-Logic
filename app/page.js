@@ -51,13 +51,6 @@ function HeroSection() {
                 </Button>
               </a>
             </TrackedCTA>
-            <TrackedCTA ctaName="Request a CRM Review" destination="/ai-crm-audit">
-              <Link href="/ai-crm-audit">
-                <Button size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold">
-                  Request a CRM Review
-                </Button>
-              </Link>
-            </TrackedCTA>
             <TrackedCTA ctaName="Free Lead Follow-Up Audit - Homepage Hero" destination="lead-follow-up-audit">
               <Link href="/lead-follow-up-audit">
                 <Button size="lg" className="bg-violet-500/20 border border-violet-300/50 text-white hover:bg-violet-500/30 px-8 py-6 text-lg font-semibold">
