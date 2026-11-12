@@ -7,8 +7,10 @@ const lastmodByPath = {
   '/industries/manufacturing-distribution': '2026-10-23',
   '/blog/crm-erp-integration-guide': '2026-10-23',
   '/services/crm-integration': '2026-10-23',
-  '/services/crm-implementation': '2026-10-23',
+  '/services/crm-implementation': '2026-11-12',
   '/services/gohighlevel-implementation': '2026-09-06',
+  '/services/zoho-crm-implementation': '2026-11-12',
+  '/services/odoo-implementation': '2026-11-12',
   '/services/crm-cleanup': '2026-08-23',
   '/services/ai-automation-consulting': '2026-08-23',
   '/services/ai-chatbot-automation': '2026-08-23',
@@ -42,6 +44,8 @@ const lastmodByPath = {
 
 const urls = [
   ['/services/gohighlevel-implementation', 'monthly', '0.8'],
+  ['/services/zoho-crm-implementation', 'monthly', '0.8'],
+  ['/services/odoo-implementation', 'monthly', '0.8'],
   ['', 'weekly', '1.0'],
   ['/pricing', 'monthly', '0.9'],
   ['/about', 'monthly', '0.8'],

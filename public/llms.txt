@@ -18,6 +18,10 @@ Public identity: Emergent Logic organization only.
 - Salesforce admin support
 - AI chatbot and automation consulting
 
+## CRM platforms
+
+HubSpot, GoHighLevel, Salesforce, Zoho CRM and Odoo, plus middleware such as Zapier and Make. Emergent Logic can also work with other CRMs a team already uses.
+
 ## Ideal customers
 
 Emergent Logic works with small and mid-sized businesses that need cleaner CRM data, faster follow-up, better pipeline visibility, and practical sales or marketing workflows.
@@ -38,6 +42,8 @@ Emergent Logic helps businesses turn CRM and lead capture problems into working 
 - HubSpot consulting: https://www.emergent-logic.ca/services/hubspot-consulting
 - HubSpot consultant in Vancouver: https://www.emergent-logic.ca/hubspot-consultant-vancouver
 - CRM cleanup: https://www.emergent-logic.ca/services/crm-cleanup
+- Zoho CRM implementation: https://www.emergent-logic.ca/services/zoho-crm-implementation
+- Odoo CRM implementation: https://www.emergent-logic.ca/services/odoo-implementation
 - CRM for manufacturers and distributors (Canada and US): https://www.emergent-logic.ca/industries/manufacturing-distribution
 - Marketing automation: https://www.emergent-logic.ca/services/marketing-automation
 - Lead capture websites: https://www.emergent-logic.ca/services/lead-capture-websites
