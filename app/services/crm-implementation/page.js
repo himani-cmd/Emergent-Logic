@@ -71,7 +71,7 @@ export default function CRMImplementation() {
             CRM implementation affects whether ownership, follow-up, reporting, and exceptions are visible to the team. The work starts by documenting the operating process, then configuring and testing the approved system against that process.
           </p>
           <p className="text-lg text-gray-600 mb-4">
-            We offer HubSpot, Salesforce, and Zoho implementation for growing businesses across Canada. Each proposal maps the CRM to the sales process, team structure, scope, price, and delivery plan before work starts.
+            We implement HubSpot, GoHighLevel, Salesforce, <Link href="/services/zoho-crm-implementation" className="text-violet-700 underline hover:text-violet-900">Zoho CRM</Link> and <Link href="/services/odoo-implementation" className="text-violet-700 underline hover:text-violet-900">Odoo</Link>, and can work with other CRMs your team already uses. Each proposal maps the CRM to the sales process, team structure, scope, price, and delivery plan before work starts.
           </p>
           <p className="text-lg text-gray-600">
             What makes our approach different is that we build the strategy first and the software second. Anyone can drag fields around in HubSpot. Far fewer people can sit down with your sales leader, map out the way your business actually wins deals, and translate that into a CRM that mirrors reality. That is the work that makes a CRM stick.
@@ -353,6 +353,7 @@ export default function CRMImplementation() {
           <div className="space-y-6">
             {[
               { q: 'Which CRM should I choose — HubSpot, Salesforce, or Zoho?', a: 'It depends on process complexity, administration capacity, data, integrations, reporting, and budget. Discovery compares the supported options and discloses relevant partner relationships before a recommendation is made.' },
+              { q: 'Do you work with CRMs other than HubSpot?', a: 'Yes. Emergent Logic implements and cleans up HubSpot, GoHighLevel, Salesforce, Zoho CRM and Odoo, and can support other CRMs. We recommend the tool that fits the team, not the other way round.' },
               { q: 'How long does CRM implementation actually take?', a: 'Timing depends on the number of pipelines, integrations, migration complexity, stakeholder availability, testing, and acceptance criteria. The proposed delivery plan and dependencies are documented before work starts. Data volume and quality matter too: more sources, duplicates, and relationships mean more cleanup and test imports before migration. Team size and the number of roles shape permissions, review cycles, and how much training is needed before launch.' },
               { q: 'What does CRM implementation cost in Canada?', a: 'Pricing is confirmed after discovery. The written proposal defines the deliverables, exclusions, dependencies, approval points, and commercial terms before work begins.' },
               { q: 'Will my team actually use the CRM after launch?', a: 'No consultant can guarantee adoption. The implementation is designed around daily user workflows and can include role-based training, usage checks, and a documented adoption plan to reduce avoidable friction.' },
