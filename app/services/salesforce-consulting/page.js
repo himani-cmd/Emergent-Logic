@@ -3,12 +3,13 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import TrackedCTA from '@/components/TrackedCTA';
+import Credentials from '@/components/Credentials';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Cloud, Layers, Zap, BarChart3, Shield, Users, Briefcase, Clock, DollarSign, Check, AlertTriangle } from 'lucide-react';
 
 export const metadata = {
   title: 'Salesforce Consultant Canada',
-  description: 'Process-first Salesforce consulting for Canadian teams: CRM cleanup, workflow design, reporting, training, and documented handoff.',
+  description: 'Salesforce-certified, process-first Salesforce consulting for Canadian teams: CRM cleanup, workflow design, reporting, training, and documented handoff.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/salesforce-consulting' },
   robots: { index: true, follow: true },
   openGraph: {
@@ -90,7 +91,7 @@ export default function SalesforceConsulting() {
             Salesforce Consulting for Canadian Teams
           </h1>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
-            Process-first Salesforce consulting for teams in Surrey, Greater Vancouver, across Canada, and selected remote engagements. Work begins with system fit, ownership, data, workflow, reporting, testing, and acceptance requirements before production changes.
+            Process-first Salesforce consulting from a Salesforce-certified team (Administrator, Sales Cloud, Service Cloud, Marketing Cloud and Pardot certifications) for teams in Surrey, Greater Vancouver, across Canada, and selected remote engagements. Work begins with system fit, ownership, data, workflow, reporting, testing, and acceptance requirements before production changes.
           </p>
           <p className="mb-6 text-sm font-semibold text-blue-200">Reviewed August 28, 2026</p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -308,6 +309,8 @@ export default function SalesforceConsulting() {
           </div>
         </div>
       </section>
+
+      <Credentials />
 
       {/* FAQ */}
       <section className="py-20 bg-gray-50">

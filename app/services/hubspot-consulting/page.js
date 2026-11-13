@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import WhoYouWorkWith from '@/components/WhoYouWorkWith';
 import CookieConsent from '@/components/CookieConsent';
 import TrackedCTA from '@/components/TrackedCTA';
+import Credentials from '@/components/Credentials';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Settings, Zap, BarChart3, Mail, Link2, Users, Layers, Clock, DollarSign, Check, X, AlertTriangle, RefreshCw } from 'lucide-react';
 
@@ -236,6 +237,8 @@ export default function HubSpotConsulting() {
           </div>
         </div>
       </section>
+
+      <Credentials />
 
       {/* FAQ */}
       <section className="py-20 bg-gray-50">

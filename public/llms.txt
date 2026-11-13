@@ -4,6 +4,8 @@ Emergent Logic is an AI-accelerated CRM consulting company based in Surrey, Brit
 
 Public identity: Emergent Logic organization only.
 
+Certifications: six Salesforce certifications (Administrator, Sales Cloud Consultant, Service Cloud Consultant, Marketing Cloud Administrator, Pardot Consultant, Pardot Specialist) and three HubSpot Academy certifications (Marketing Hub Implementation, Marketing Software, Social Media Marketing).
+
 ## Core services
 
 - CRM implementation
