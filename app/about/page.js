@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhoYouWorkWith from '@/components/WhoYouWorkWith';
+import Credentials from '@/components/Credentials';
 import CookieConsent from '@/components/CookieConsent';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -99,6 +100,8 @@ export default function AboutPage() {
       </section>
 
       <WhoYouWorkWith />
+
+      <Credentials className="py-16 bg-gray-50" />
 
       <section className="py-16 bg-gradient-to-br from-violet-600 to-indigo-700">
         <div className="container mx-auto px-4 text-center">

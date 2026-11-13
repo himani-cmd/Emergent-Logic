@@ -2,6 +2,7 @@ import './globals.css';
 import { Toaster } from 'sonner';
 import AnalyticsProvider from '@/components/AnalyticsProvider';
 import VoiceConsultant from '@/components/VoiceConsultant';
+import { CERTIFICATIONS } from '@/components/Credentials';
 
 export const metadata = {
   metadataBase: new URL('https://www.emergent-logic.ca'),
@@ -64,6 +65,11 @@ const jsonLd = {
         value: 'ChIJc3FCXsGbsQwRDXMYESadpec',
       },
       description: 'CRM implementation, integration, automation, cleanup, and lead capture systems for Canadian businesses.',
+      hasCredential: CERTIFICATIONS.map((cert) => ({
+        '@type': 'EducationalOccupationalCredential',
+        name: cert.name,
+        recognizedBy: { '@type': 'Organization', name: cert.issuer },
+      })),
       foundingDate: '2026',
       telephone: '+1-778-486-2331',
       email: 'info@emergent-logic.ca',
