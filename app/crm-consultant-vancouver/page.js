@@ -389,6 +389,9 @@ export default function CrmConsultantVancouver() {
           <p className="mt-4 text-sm text-[#667085]">
             This guide is directional. A platform recommendation is made only after the required workflow, data, integrations and administration model are understood.
           </p>
+          <p className="mt-2 text-sm text-[#667085]">
+            Using or considering GoHighLevel? See <Link href="/gohighlevel-consultant-vancouver" className="font-semibold text-[#4B37C8] hover:underline">GoHighLevel consulting in Vancouver</Link>.
+          </p>
         </div>
       </section>
 

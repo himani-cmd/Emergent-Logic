@@ -83,6 +83,7 @@ export default function GoHighLevelImplementation() {
         <p className="mt-8 text-sm font-semibold text-[#BFD4FF]">CRM setup, integration and workflow repair</p>
         <h1 className="mt-4 max-w-4xl text-4xl font-bold leading-tight md:text-6xl">GoHighLevel Implementation and Automation Support</h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#E7ECF5]">Turn HighLevel into an operating system your team can understand, test and maintain. Emergent Logic helps service businesses and agencies structure pipelines, forms, calendars, workflows, messaging, data and integrations around the way leads actually move through the business.</p>
+        <p className="mt-4 max-w-3xl leading-7 text-[#CBD5E1]">In Metro Vancouver? See <Link href="/gohighlevel-consultant-vancouver" className="font-semibold text-white underline">GoHighLevel consulting in Vancouver</Link>.</p>
         <div className="mt-8"><AssessmentCTA location="Hero" /></div>
         <p className="mt-3 max-w-3xl text-sm leading-6 text-[#CBD5E1]">The free audit reviews one visible website inquiry path. Internal HighLevel portal diagnosis is scoped separately.</p>
         <p className="mt-5 max-w-3xl leading-7 text-[#CBD5E1]">Already using HighLevel? We can assess a broken or half-configured setup before recommending a rebuild.</p>
