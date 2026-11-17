@@ -48,6 +48,7 @@ const sources = [
 
 const relatedPosts = [
   { title: 'GoHighLevel Implementation and Automation Support', href: '/services/gohighlevel-implementation' },
+  { title: 'GoHighLevel Consultant in Vancouver', href: '/gohighlevel-consultant-vancouver' },
   { title: 'Free Lead Follow-Up Audit', href: '/lead-follow-up-audit' },
   { title: 'CRM and PIPEDA: Data Privacy for Canadian Businesses', href: '/blog/crm-pipeda-data-privacy-canada' },
 ];

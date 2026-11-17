@@ -449,6 +449,7 @@ export default function HubspotConsultantVancouver() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Not sure if HubSpot is right?</h2>
+          <p className="text-gray-600 mb-4">Considering GoHighLevel instead? See <Link href="/gohighlevel-consultant-vancouver" className="text-violet-600 hover:underline">GoHighLevel consulting in Vancouver</Link>.</p>
           <p className="text-gray-600 mb-4">Need broader CRM help before choosing a platform? See our <Link href="/crm-consultant-vancouver" className="text-violet-600 hover:underline">CRM consultant Vancouver</Link> page for cleanup, routing, reporting, and integration support.</p>
           <p className="text-gray-600 mb-4">For a reusable implementation control model, review the <Link href="/crm-implementation-method" className="text-violet-600 hover:underline">CRM implementation method</Link> covering decisions, testing, acceptance, release, and handoff.</p>
           <p className="text-gray-600 mb-4">Moving from spreadsheets? Use the <Link href="/blog/excel-to-crm-migration-repeat-order-businesses" className="text-violet-600 hover:underline">Excel-to-CRM migration checklist and free workbook</Link> to map customers, products, order cadence, ownership, and follow-up before choosing a platform.</p>
