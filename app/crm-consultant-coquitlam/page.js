@@ -33,7 +33,7 @@ const services = [
 
 const reasons = [
   'CRM consulting available for Coquitlam, Port Coquitlam, Port Moody and the Tri-Cities',
-  'Multi-platform planning across HubSpot, Salesforce, and Zoho',
+  'Multi-platform planning across HubSpot, Salesforce, Zoho CRM, Odoo, GoHighLevel and other CRMs',
   'AI-assisted audits and documentation with human approval for production changes',
   'Written scope, price, dependencies, and acceptance criteria before work starts',
   'Data migration, integration, and training available when included in the scope',
@@ -119,7 +119,7 @@ export default function CrmConsultantCoquitlam() {
           <p className="mb-3 text-sm font-semibold text-violet-700">Last reviewed August 22, 2026</p>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What does a CRM consultant help a Coquitlam business fix?</h2>
           <p className="text-lg text-gray-700 mb-4">A Coquitlam CRM engagement can address unclear lead ownership, inconsistent follow-up, unreliable pipeline data, disconnected forms, weak reporting, migration risk and workflows the team no longer trusts. The work should begin with the operating process and evidence, then define which configuration, cleanup, integration or training changes are justified.</p>
-          <p className="text-gray-600 mb-8">For broader Vancouver and Metro Vancouver guidance, use the <Link href="/crm-consultant-vancouver" className="font-medium text-violet-700 hover:underline">CRM consultant Vancouver page</Link>. This page is specifically for Coquitlam, Port Coquitlam and Port Moody service intent.</p>
+          <p className="text-gray-600 mb-8">For broader Vancouver and Metro Vancouver guidance, use the <Link href="/crm-consultant-vancouver" className="font-medium text-violet-700 hover:underline">CRM consultant Vancouver page</Link>. This page is specifically for Coquitlam, Port Coquitlam and Port Moody service intent. If Salesforce is already your CRM, see our <Link href="/services/salesforce-consulting" className="font-medium text-violet-700 hover:underline">Salesforce consulting</Link> page for admin support, cleanup and implementation.</p>
           <h3 className="text-2xl font-bold text-gray-900 mb-4">CRM platforms assessed for Tri-Cities projects</h3>
           <p className="text-gray-600 mb-8">We compare platforms against the operating process, data, reporting, administration, budget, and integration requirements discussed during discovery.</p>
           <div className="flex flex-wrap gap-4">

@@ -20,14 +20,38 @@ export const metadata = {
 };
 
 const faqItems = [
-  { q: 'Do I need Salesforce, or would HubSpot or Zoho work?', a: 'The right platform depends on the operating process, data model, access controls, integrations, reporting needs, team capacity, and licensed features. Discovery compares the requirements before a platform or scope is recommended.' },
+  { q: 'Do I need Salesforce, or would HubSpot or Zoho work?', a: 'The right platform depends on the operating process, data model, access controls, integrations, reporting needs, team capacity, and licensed features. Discovery compares the requirements before a platform or scope is recommended. We also work with GoHighLevel, Zoho CRM, Odoo and other CRMs, so the comparison is not limited to two options.' },
   { q: 'Which Salesforce edition do I need?', a: 'Edition fit depends on the features, API access, permissions, automation, reporting, and support requirements in the proposed operating model. We document the requirements and confirm current vendor limits before recommending an edition.' },
   { q: 'Can you migrate us to Salesforce from another CRM?', a: 'A migration scope can cover HubSpot, Pipedrive, Zoho, Monday, spreadsheets, and other exportable sources. The plan depends on available objects, fields, relationships, activities, API access, and validation requirements.' },
-  { q: 'Are you a Salesforce Consulting Partner?', a: 'No. Emergent Logic is not currently presented as a Salesforce Consulting Partner. Salesforce work is scoped only when the requirements fit our documented capability, and no Salesforce endorsement is implied.' },
+  { id: 'salesforce-partner', q: 'Are you a Salesforce Consulting Partner?', a: 'No. Emergent Logic is not currently presented as a Salesforce Consulting Partner. Salesforce work is scoped only when the requirements fit our documented capability, and no Salesforce endorsement is implied.' },
   { q: 'Do you do ongoing Salesforce admin work?', a: 'Follow-on Salesforce support can be considered when the request fits documented capability and access boundaries. Scope, response expectations, approvals, and commercial terms are confirmed in writing.' },
   { q: 'How do you handle custom development requests?', a: 'Custom-development requests are evaluated during discovery. The written scope identifies the implementation method, testing requirements, dependencies, exclusions, and whether a specialist is required before production access is approved.' },
   { q: 'What about PIPEDA and Canadian data residency?', a: 'Residency and compliance requirements depend on your Salesforce edition, architecture, contracts, and data. We can document technical controls such as permissions and field-level security, but legal and residency decisions should be confirmed with Salesforce and qualified privacy counsel.' },
+  {
+    q: 'How do I choose a Salesforce consultant in Canada?',
+    a: 'Ask for a written scope after discovery, and confirm who does the work and who you will talk to. Ask how changes are tested before they reach production, how admin ownership is handed over at the end, and whether the consultant will say when HubSpot, Zoho CRM, Odoo or GoHighLevel fits better. Also ask whether they are a Salesforce partner. We are not.',
+    link: { before: 'See our ', href: '#salesforce-partner', label: 'answer on Salesforce partner status', after: '.' },
+  },
+  {
+    q: 'Do you work with Salesforce teams in Vancouver and Surrey?',
+    a: 'Yes. Emergent Logic is based in Surrey, BC and supports Salesforce teams in Greater Vancouver and across Canada, mostly through calls, shared screens and documented review cycles, with in-person sessions agreed during discovery.',
+    link: { before: 'Local details are on our ', href: '/salesforce-consultant-surrey-bc', label: 'Salesforce consultant Surrey, BC page', after: '.' },
+  },
+  {
+    q: 'How much does a Salesforce consultant cost?',
+    a: 'Cost depends on objects, data, automation, integrations and governance, so it is set in a written proposal after discovery, with deliverables, exclusions and acceptance checks listed before work starts.',
+  },
 ];
+
+// Page-specific Twitter card that always mirrors the Open Graph title and description.
+metadata.twitter = {
+  card: 'summary_large_image',
+  title: metadata.openGraph.title,
+  description: metadata.openGraph.description,
+  images: ['https://www.emergent-logic.ca/og-image.png'],
+};
+
+const faqText = (item) => (item.link ? `${item.a} ${item.link.before}${item.link.label}${item.link.after}` : item.a);
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -67,7 +91,7 @@ const jsonLd = {
         name: item.q,
         acceptedAnswer: {
           '@type': 'Answer',
-          text: item.a,
+          text: faqText(item),
         },
       })),
     },
@@ -133,7 +157,7 @@ export default function SalesforceConsulting() {
       {/* When Salesforce */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">When Salesforce Is the Right CRM</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">When is Salesforce the right CRM?</h2>
           <p className="text-lg text-gray-600 mb-4">
             Salesforce is a serious platform for complex sales motions. It can also add cost and administration when the process does not need that depth. Discovery compares Salesforce with supported alternatives and discloses relevant partner relationships before a recommendation is made.
           </p>
@@ -144,7 +168,7 @@ export default function SalesforceConsulting() {
             Selected U.S.-based teams can be supported remotely when the scope, access, data, and delivery requirements fit. The broader <Link href="/services/remote-crm-implementation" className="text-blue-700 hover:underline">remote CRM implementation</Link> page explains the Canada-based delivery path and cross-platform fit review.
           </p>
           <p className="text-lg text-gray-600">
-            It may not be the right choice when the sales process is straightforward, the team is small, and platform depth would add unnecessary administration. In those cases HubSpot or Zoho may be a better fit. Discovery includes that platform-fit discussion before a scope is proposed.
+            It may not be the right choice when the sales process is straightforward, the team is small, and platform depth would add unnecessary administration. In those cases HubSpot, Zoho CRM, Odoo or GoHighLevel may be a better fit. Discovery includes that platform-fit discussion before a scope is proposed.
           </p>
           <p className="text-lg text-gray-600 mt-4">
             If you are comparing local options, our <Link href="/salesforce-consultant-surrey-bc" className="text-blue-700 hover:underline">Salesforce consultant Surrey, BC</Link> page explains how we support nearby teams with implementation, cleanup, and training.
@@ -155,7 +179,7 @@ export default function SalesforceConsulting() {
       {/* What We Do */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Salesforce Consulting Includes</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What does Salesforce consulting include?</h2>
           <p className="text-lg text-gray-600 mb-8">
             A Salesforce scope can cover configuration, data, automation, reporting, integration, and training where the requirements fit documented capability. Deliverables and exclusions are written before work starts.
           </p>
@@ -185,7 +209,7 @@ export default function SalesforceConsulting() {
       {/* Engagement Types */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Engagement Types</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What kinds of Salesforce projects do we take on?</h2>
           <p className="text-lg text-gray-600 mb-8">
             Salesforce support is available in three modes, depending on the current state of the system.
           </p>
@@ -207,7 +231,7 @@ export default function SalesforceConsulting() {
       {/* Common Mistakes */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Common Salesforce Mistakes</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What are the most common Salesforce mistakes?</h2>
           <p className="text-lg text-gray-600 mb-8">
             Most struggling Salesforce orgs share the same root causes.
           </p>
@@ -236,9 +260,9 @@ export default function SalesforceConsulting() {
       {/* Process */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Process</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How does a Salesforce engagement work?</h2>
           <p className="text-lg text-gray-600 mb-8">
-            Three phases. Same disciplined methodology we use across HubSpot and Zoho, applied to Salesforce.
+            Three phases. Same disciplined methodology we use across HubSpot, GoHighLevel, Zoho CRM and Odoo, applied to Salesforce.
           </p>
           <div className="space-y-8">
             {[
@@ -263,7 +287,7 @@ export default function SalesforceConsulting() {
       {/* Scope */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Scope and Delivery Plan</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How are Salesforce scope and cost decided?</h2>
           <p className="text-lg text-gray-600 mb-8">
             Salesforce scope varies substantially with data, objects, automation, integrations, and governance. The proposal documents price, dependencies, and acceptance criteria before work starts.
           </p>
@@ -285,14 +309,14 @@ export default function SalesforceConsulting() {
       {/* Why Us */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Emergent Logic for Salesforce</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why work with Emergent Logic on Salesforce?</h2>
           <p className="text-lg text-gray-600 mb-8">
             Our platform recommendation is based on the operating requirements discussed during discovery. No Salesforce partnership or endorsement is implied.
           </p>
           <div className="space-y-3">
             {[
               'Direct, cross-platform delivery with written scope, testing, and acceptance criteria',
-              'Cross-platform fit review across Salesforce, HubSpot, and Zoho with relevant partner relationships disclosed',
+              'Cross-platform fit review across Salesforce, HubSpot, GoHighLevel, Zoho CRM, Odoo and other CRMs, with any relevant partner relationships disclosed',
               'Implementation method selected after requirements, dependencies, and maintainability are understood',
               'Legacy automation reviewed with dependency, test, acceptance, and rollback controls',
               'Scoped delivery from discovery through documented handoff',
@@ -317,9 +341,16 @@ export default function SalesforceConsulting() {
             {[
               ...faqItems,
             ].map((item, i) => (
-              <div key={i} className="bg-white p-6 rounded-xl border">
+              <div key={i} id={item.id} className="bg-white p-6 rounded-xl border scroll-mt-24">
                 <h3 className="font-bold text-gray-900 mb-2">{item.q}</h3>
-                <p className="text-gray-600">{item.a}</p>
+                <p className="text-gray-600">
+                  {item.a}
+                  {item.link && (
+                    <>
+                      {' '}{item.link.before}<Link href={item.link.href} className="font-medium text-blue-700 hover:underline">{item.link.label}</Link>{item.link.after}
+                    </>
+                  )}
+                </p>
               </div>
             ))}
           </div>
