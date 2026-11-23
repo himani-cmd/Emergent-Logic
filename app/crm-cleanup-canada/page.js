@@ -9,16 +9,25 @@ import { ArrowRight, AlertTriangle, CheckCircle, Database, RefreshCw, BarChart3,
 
 export const metadata = {
   title: 'CRM Cleanup Canada',
-  description: 'CRM cleanup for HubSpot, Salesforce, and Zoho: deduplication, data quality audits, workflow repair, reporting cleanup, and hygiene rules.',
+  description: 'CRM cleanup for HubSpot, GoHighLevel, Salesforce, Zoho CRM, Odoo and other CRMs: deduplication, data audits, workflow repair and reporting.',
   alternates: { canonical: 'https://www.emergent-logic.ca/crm-cleanup-canada' },
   robots: { index: true, follow: true },
   openGraph: {
     title: 'CRM Cleanup Canada | Emergent Logic',
-    description: 'Fix duplicate records, bad CRM data, broken workflows, and unreliable reporting across HubSpot, Salesforce, and Zoho.',
+    description: 'Fix duplicates, bad data, broken workflows and unreliable reports in HubSpot, GoHighLevel, Salesforce, Zoho CRM, Odoo and other CRMs.',
     url: 'https://www.emergent-logic.ca/crm-cleanup-canada',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
 };
+
+metadata.twitter = {
+  card: 'summary_large_image',
+  title: metadata.openGraph.title,
+  description: metadata.openGraph.description,
+  images: ['https://www.emergent-logic.ca/og-image.png'],
+};
+
+const PIPEDA_URL = 'https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/';
 
 const cleanupAreas = [
   { icon: Database, title: 'Duplicate Records', desc: 'Find and merge duplicate contacts, companies, and deals while preserving notes, activity, associations, and history.' },
@@ -28,10 +37,21 @@ const cleanupAreas = [
 ];
 
 const faqs = [
-  { q: 'Which CRMs do you clean up?', a: 'We clean up HubSpot, Salesforce, Zoho, and spreadsheet-based CRM systems. We also help teams prepare data before migrating into a new CRM.' },
+  { q: 'Which CRMs do you clean up?', a: 'We clean up HubSpot, GoHighLevel, Salesforce, Zoho CRM and Odoo, plus other CRMs and spreadsheet-based systems after a fit check in discovery. We also help teams prepare data before migrating into a new CRM.' },
   { q: 'How long does CRM cleanup take?', a: 'Timing depends on database size, data quality, workflows, integrations, backups, testing, and approval requirements. The delivery plan and dependencies are documented before work starts.' },
   { q: 'Will records be deleted?', a: 'No records are deleted without approval. We start with an audit, show what we found, then clean using a logged and reversible process wherever the platform allows it.' },
   { q: 'Can CRM cleanup improve marketing results?', a: 'Yes. Cleaner data improves segmentation, email deliverability, lead scoring, campaign attribution, and sales handoff. Many automation problems are really data problems first.' },
+  { q: 'Do you clean up GoHighLevel and Odoo CRMs?', a: 'Yes. Cleanup on GoHighLevel and Odoo follows the same steps as on HubSpot, Salesforce or Zoho CRM: a read-only audit, a written risk map, then approved changes in small batches with a backup and a rollback approach. No certification or partner status is claimed for these platforms.' },
+  {
+    q: 'Do privacy rules affect CRM cleanup in Canada?',
+    a: 'They can. Federal PIPEDA applies to many private-sector organizations, and British Columbia, Alberta and Quebec have their own private-sector privacy laws that the federal government treats as substantially similar. Cleanup should keep consent and source fields intact and avoid moving personal data into unapproved tools. This is general information, not legal advice.',
+    node: (
+      <>
+        They can. Federal <a href={PIPEDA_URL} target="_blank" rel="noopener noreferrer" className="text-emerald-700 underline hover:text-emerald-900">PIPEDA</a> applies to many private-sector organizations, and British Columbia, Alberta and Quebec have their own private-sector privacy laws that the federal government treats as substantially similar. Cleanup should keep consent and source fields intact and avoid moving personal data into unapproved tools. This is general information, not legal advice.
+      </>
+    ),
+    more: { href: '/blog/crm-pipeda-data-privacy-canada', label: 'Read more: CRM data privacy and PIPEDA in Canada' },
+  },
 ];
 
 const jsonLd = {
@@ -70,10 +90,10 @@ export default function CRMCleanupCanada() {
             { label: 'Services', href: '/#services' },
             { label: 'CRM Cleanup Canada', href: '/crm-cleanup-canada' },
           ]} tone="dark" />
-          <div className="flex items-center gap-2 text-emerald-200 mb-4"><AlertTriangle className="w-5 h-5" /><span>HubSpot, Salesforce, Zoho</span></div>
+          <div className="flex items-center gap-2 text-emerald-200 mb-4"><AlertTriangle className="w-5 h-5" /><span>HubSpot, GoHighLevel, Salesforce, Zoho CRM, Odoo</span></div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">CRM Cleanup Services for Canadian Businesses</h1>
           <p className="text-xl text-white/75 max-w-3xl mb-8">
-            Duplicate records, stale contacts, broken workflows, unreliable reports, and fields nobody understands. We clean up HubSpot, Salesforce, and Zoho CRMs so sales and marketing teams can trust the system again.
+            Duplicate records, stale contacts, broken workflows, unreliable reports, and fields nobody understands. We clean up HubSpot, <Link href="/services/gohighlevel-implementation" className="text-white underline decoration-white/40 hover:decoration-white">GoHighLevel</Link>, Salesforce, Zoho CRM, Odoo and other CRMs so sales and marketing teams can trust the system again.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://calendly.com/emergent-logic/30min" target="_blank" rel="noopener noreferrer"><Button size="lg" className="bg-white text-emerald-900 hover:bg-emerald-100">Book a CRM Consultation <ArrowRight className="w-5 h-5 ml-2" /></Button></a>
@@ -84,7 +104,7 @@ export default function CRMCleanupCanada() {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Most CRM problems are data problems first</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Are most CRM problems really data problems?</h2>
           <p className="text-lg text-gray-600 mb-4">
             When reports are wrong, follow-ups are missed, or automation sends the wrong message, the root cause is often messy data. Duplicate records inflate contact counts. Missing fields break segmentation. Old workflows fire on records that should have been archived months ago.
           </p>
@@ -96,7 +116,7 @@ export default function CRMCleanupCanada() {
 
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">What CRM cleanup includes</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">What does CRM cleanup include?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {cleanupAreas.map((area, i) => (
               <Card key={i} className="border-0 shadow-lg">
@@ -110,7 +130,7 @@ export default function CRMCleanupCanada() {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Signs your CRM needs cleanup</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">What are the signs a CRM needs cleanup?</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {[
               'Sales reps maintain private spreadsheets because they do not trust the CRM',
@@ -131,7 +151,7 @@ export default function CRMCleanupCanada() {
           <h2 className="text-3xl font-bold text-gray-900 mb-8">CRM Cleanup FAQ</h2>
           <div className="space-y-6">
             {faqs.map((faq, i) => (
-              <Card key={i} className="border-0 shadow-lg"><CardHeader><CardTitle className="text-lg">{faq.q}</CardTitle></CardHeader><CardContent><p className="text-gray-600">{faq.a}</p></CardContent></Card>
+              <Card key={i} className="border-0 shadow-lg"><CardHeader><CardTitle className="text-lg">{faq.q}</CardTitle></CardHeader><CardContent><p className="text-gray-600">{faq.node || faq.a}</p>{faq.more && <p className="mt-3 text-sm"><Link href={faq.more.href} className="text-emerald-700 underline hover:text-emerald-900">{faq.more.label}</Link></p>}</CardContent></Card>
             ))}
           </div>
         </div>
@@ -144,6 +164,8 @@ export default function CRMCleanupCanada() {
             <Link href="/services/crm-cleanup" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-emerald-700">CRM Cleanup Service</p><p className="text-sm text-gray-600">Detailed cleanup scope and pricing</p></Link>
             <Link href="/blog/marketing-automation-needs-crm-cleanup" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-emerald-700">Automation Needs Clean Data</p><p className="text-sm text-gray-600">Why cleanup comes before workflows</p></Link>
             <Link href="/research/2026-crm-cleanup-demand-report" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-emerald-700">2026 CRM Cleanup Demand Report</p><p className="text-sm text-gray-600">Original analysis of 100 public CRM postings</p></Link>
+            <Link href="/hubspot-workflow-cleanup" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-emerald-700">HubSpot Workflow Cleanup</p><p className="text-sm text-gray-600">Repair automation before rebuilding</p></Link>
+            <Link href="/blog/salesforce-cleanup-before-automation" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow"><p className="font-medium text-emerald-700">Salesforce Cleanup Before Automation</p><p className="text-sm text-gray-600">Clean the data before building Flows</p></Link>
           </div>
         </div>
       </section>

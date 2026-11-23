@@ -21,6 +21,13 @@ export const metadata = {
   },
 };
 
+metadata.twitter = {
+  card: 'summary_large_image',
+  title: metadata.openGraph.title,
+  description: metadata.openGraph.description,
+  images: ['https://www.emergent-logic.ca/og-image.png'],
+};
+
 const cleanupAreas = [
   {
     icon: Workflow,
@@ -228,7 +235,7 @@ export default function HubSpotWorkflowCleanup() {
               Sometimes workflows should be rebuilt. But rebuilding should happen after the data model, lifecycle definitions, owner rules, forms, and reporting dependencies are clear. Otherwise, the rebuild can recreate the same operational problem with cleaner-looking workflow branches.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-gray-600">
-              If the issue is broader than workflows, we connect the cleanup to <Link href="/services/crm-cleanup" className="text-orange-700 hover:underline">CRM cleanup</Link>, <Link href="/services/hubspot-consulting" className="text-orange-700 hover:underline">HubSpot consulting</Link>, and <Link href="/services/marketing-automation" className="text-orange-700 hover:underline">marketing automation</Link> so the portal becomes easier to run after the first fix.
+              If the issue is broader than workflows, we connect the cleanup to <Link href="/services/crm-cleanup" className="text-orange-700 hover:underline">CRM cleanup</Link>, <Link href="/services/hubspot-consulting" className="text-orange-700 hover:underline">HubSpot consulting</Link>, and <Link href="/services/marketing-automation" className="text-orange-700 hover:underline">marketing automation</Link> so the portal becomes easier to run after the first fix. The same audit-first approach applies to <Link href="/crm-cleanup-canada" className="text-orange-700 hover:underline">CRM cleanup across Canada</Link>.
             </p>
           </div>
         </div>
