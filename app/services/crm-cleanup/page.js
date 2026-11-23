@@ -13,7 +13,7 @@ const cleanupFaqs = [
   { q: 'Can you do a cleanup without rebuilding my workflows?', a: 'Yes. A data-only scope can cover approved deduplication and standardization without changing workflows or reports. Discovery determines whether automation is contributing to the data problem, but any additional work requires approval.' },
   { q: 'How often should we do a CRM cleanup?', a: 'The review cadence depends on import volume, integrations, team changes, and governance. The maintenance plan can define weekly admin checks, quarterly reviews, and thresholds for a deeper audit.' },
   { q: 'Do you train our team to maintain the CRM?', a: 'Training and a written data-hygiene guide can be included for the CRM owner or admin. The proposal defines the audience, materials, and maintenance responsibilities.' },
-  { q: 'What CRMs do you clean up?', a: 'HubSpot, Salesforce, and Zoho are the primary platforms offered. If you use another CRM, we will confirm fit during discovery rather than claim support we cannot verify.' },
+  { q: 'What CRMs do you clean up?', a: 'HubSpot, GoHighLevel, Salesforce, Zoho CRM and Odoo. If you use another CRM, we confirm fit during discovery before any access is requested.' },
 ];
 
 const structuredData = {
@@ -43,15 +43,22 @@ const structuredData = {
 
 export const metadata = {
   title: 'CRM Cleanup Services Canada',
-  description: 'CRM cleanup services for HubSpot, Salesforce, and Zoho: audit duplicates, fields, workflows, and reporting before approved, controlled changes.',
+  description: 'CRM cleanup for HubSpot, GoHighLevel, Salesforce, Zoho CRM, Odoo and other CRMs: audit duplicates, fields, workflows and reports before changes.',
   alternates: { canonical: 'https://www.emergent-logic.ca/services/crm-cleanup' },
   robots: { index: true, follow: true },
   openGraph: {
     title: 'CRM Cleanup Services Canada | Emergent Logic',
-    description: 'Audit duplicates, fields, workflows, and reporting across HubSpot, Salesforce, and Zoho before approved, controlled cleanup changes.',
+    description: 'Audit duplicates, fields, workflows and reports in HubSpot, GoHighLevel, Salesforce, Zoho CRM, Odoo or other CRMs before controlled changes.',
     url: 'https://www.emergent-logic.ca/services/crm-cleanup',
     images: [{ url: 'https://www.emergent-logic.ca/og-image.png', width: 1200, height: 630 }],
   },
+};
+
+metadata.twitter = {
+  card: 'summary_large_image',
+  title: metadata.openGraph.title,
+  description: metadata.openGraph.description,
+  images: ['https://www.emergent-logic.ca/og-image.png'],
 };
 
 export default function CRMCleanup() {
@@ -72,7 +79,7 @@ export default function CRMCleanup() {
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
             Duplicate contacts, broken workflows, unreliable reports, and fields nobody uses. We audit the CRM, document the risks, and complete approved cleanup work in controlled steps. Timing is confirmed after discovery.
           </p>
-          <p className="mb-6 text-sm font-semibold text-emerald-200">Reviewed September 21, 2026</p>
+          <p className="mb-6 text-sm font-semibold text-emerald-200">Reviewed November 2026</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <TrackedCTA ctaName="Request CRM Cleanup Findings Review - Cleanup Hero" destination="contact-crm-cleanup-findings-review">
               <Link href="/contact?request=crm-cleanup-findings-review#contact-form">
@@ -171,7 +178,7 @@ export default function CRMCleanup() {
       {/* The Problem */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">The Messy CRM Problem</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why do CRMs get messy?</h2>
           <p className="text-lg text-gray-600 mb-4">
             Your CRM started clean. Contacts were organized, pipelines made sense, and reports showed real numbers. Then reality happened. Contacts were imported from multiple sources without deduplication. Fields were created and abandoned. Workflows were built on top of broken logic. New reps added properties their manager never approved. Data got stale.
           </p>
@@ -187,7 +194,7 @@ export default function CRMCleanup() {
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { icon: AlertTriangle, title: 'Duplicate Contacts', desc: 'The same person appears 3, 5, or 10 times with slight variations. Every duplicate inflates your metrics, confuses your sales team, and wastes your email credits — and HubSpot charges you per contact.', color: 'red' },
+              { icon: AlertTriangle, title: 'Duplicate Contacts', desc: 'The same person appears 3, 5, or 10 times with slight variations. Every duplicate inflates your metrics, confuses your sales team, and wastes your email credits — and on CRM plans priced by contact count, duplicates can raise the bill.', color: 'red' },
               { icon: Database, title: 'Bad Data Quality', desc: 'Missing fields, outdated information, wrong formats, incomplete records, invalid emails. Your CRM is only as useful as the data inside it — and right now, your data is unreliable.', color: 'orange' },
               { icon: Zap, title: 'Broken Workflows', desc: 'Automations that trigger at the wrong time, send to the wrong people, or do not fire at all. Workflows built on outdated logic that nobody remembers creating, layered on top of each other.', color: 'yellow' },
               { icon: BarChart3, title: 'Unreliable Reports', desc: 'Dashboards that show numbers nobody trusts. Pipeline forecasts that are well off the mark. Revenue reports that do not match your accounting. If you cannot trust the data, you cannot make decisions.', color: 'purple' },
@@ -242,7 +249,7 @@ export default function CRMCleanup() {
       {/* What We Do */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What CRM Cleanup Includes</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Which parts of the CRM can a cleanup cover?</h2>
           <p className="text-lg text-gray-600 mb-8">
             The scope can cover data, structure, automation, and reporting, but only the approved records, fields, workflows, and dashboards are changed.
           </p>
@@ -273,7 +280,7 @@ export default function CRMCleanup() {
       {/* AI-assisted review */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">AI-Assisted, Human-Controlled Review</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How is AI used in a CRM cleanup?</h2>
           <p className="text-lg text-gray-600 mb-4">
             Large datasets are difficult to review record by record. AI-assisted checks can group patterns, propose duplicate candidates, and flag anomalies so a human can review the highest-risk areas first.
           </p>
@@ -298,7 +305,7 @@ export default function CRMCleanup() {
       {/* Process */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Cleanup Process</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How does the CRM cleanup process work?</h2>
           <p className="text-lg text-gray-600 mb-8">
             Three phases, fully documented. You see the audit before any changes happen. Nothing is deleted without confirmation.
           </p>
@@ -325,7 +332,7 @@ export default function CRMCleanup() {
       {/* Scope */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Scope and Delivery Plan</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How are scope and timing set?</h2>
           <p className="text-lg text-gray-600 mb-8">
             CRM cleanup can reduce wasted sends, duplicate records, manual reconciliation, and reporting disputes. The business case depends on database size, platform costs, workflow complexity, and the value of missed follow-up.
           </p>
@@ -347,7 +354,7 @@ export default function CRMCleanup() {
       {/* Why Us */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Emergent Logic for CRM Cleanup</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why work with Emergent Logic on CRM cleanup?</h2>
           <p className="text-lg text-gray-600 mb-8">
             Cleanup should make the system easier to trust without creating new data, automation, or access risks.
           </p>
@@ -356,7 +363,7 @@ export default function CRMCleanup() {
               'AI-assisted checks support pattern finding without replacing human approval',
               'Written findings and limitations delivered before production changes',
               'Changes logged with a platform-appropriate rollback approach',
-              'HubSpot, Salesforce, and Zoho fit confirmed before access is requested',
+              <>HubSpot, <Link href="/services/gohighlevel-implementation" className="text-emerald-700 underline hover:text-emerald-900">GoHighLevel</Link>, Salesforce, Zoho CRM, Odoo or other CRM fit confirmed before access is requested</>,
               'Maintenance responsibilities documented when included in scope',
               'Scope and commercial terms confirmed before production changes',
               'Direct access to the people auditing, changing, and verifying your data',
@@ -422,7 +429,7 @@ export default function CRMCleanup() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             <Link href="/crm-cleanup-canada" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM Cleanup Canada</p>
-              <p className="text-gray-600 text-sm">National cleanup page for HubSpot, Salesforce, and Zoho</p>
+              <p className="text-gray-600 text-sm">National cleanup page for HubSpot, GoHighLevel, Salesforce, Zoho CRM, Odoo and other CRMs</p>
             </Link>
             <Link href="/services/crm-implementation" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM Implementation</p>
@@ -435,6 +442,10 @@ export default function CRMCleanup() {
             <Link href="/blog/crm-pipeda-data-privacy-canada" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
               <p className="font-medium text-violet-600">CRM and PIPEDA</p>
               <p className="text-gray-600 text-sm">Privacy compliance for Canadian CRMs</p>
+            </Link>
+            <Link href="/hubspot-workflow-cleanup" className="block bg-gray-50 border rounded-xl p-4 hover:shadow-md transition-shadow">
+              <p className="font-medium text-violet-600">HubSpot Workflow Cleanup</p>
+              <p className="text-gray-600 text-sm">Repair automation before rebuilding</p>
             </Link>
           </div>
         </div>
