@@ -92,11 +92,17 @@ const faqs = [
   },
   {
     q: 'Which CRMs can you build automation in?',
-    a: 'HubSpot, Salesforce, and Zoho are the primary platforms offered. The approach depends on the licensed products, permissions, data model, and confirmed workflow requirements.',
+    a: 'HubSpot, GoHighLevel, Salesforce, Zoho CRM, Odoo and other CRMs. The approach depends on the licensed products, permissions, data model, and confirmed workflow requirements.',
+    node: <>HubSpot, <Link href="/services/gohighlevel-implementation" className="text-purple-700 underline hover:text-purple-900">GoHighLevel</Link>, Salesforce, Zoho CRM, Odoo and other CRMs. The approach depends on the licensed products, permissions, data model, and confirmed workflow requirements.</>,
   },
   {
-    q: 'How is this different from hiring a marketing agency?',
-    a: 'This service focuses on the operating system underneath campaigns: segmentation, scoring, attribution, routing, and CRM workflow logic. Campaign execution can be scoped separately or handled by an existing marketing team.',
+    q: 'Do you work with teams in Vancouver and across Canada?',
+    a: 'Yes. Emergent Logic is based in Surrey, BC and works with teams in Greater Vancouver and the Lower Mainland, and remotely with businesses across Canada and the US. Local teams can also read the CRM consultant Vancouver guide.',
+    node: <>Yes. Emergent Logic is based in Surrey, BC and works with teams in Greater Vancouver and the Lower Mainland, and remotely with businesses across Canada and the US. Local teams can also read the <Link href="/crm-consultant-vancouver" className="text-purple-700 underline hover:text-purple-900">CRM consultant Vancouver guide</Link>.</>,
+  },
+  {
+    q: 'Is Emergent Logic a marketing automation agency?',
+    a: 'Emergent Logic is a CRM and marketing automation consultancy rather than a full-service marketing agency: we build the CRM workflows, scoring, routing and attribution that campaigns run on. This service focuses on the operating system underneath campaigns: segmentation, scoring, attribution, routing, and CRM workflow logic. Campaign execution can be scoped separately or handled by an existing marketing team.',
   },
   {
     q: 'What should a small or growing business automate first?',
@@ -137,7 +143,7 @@ const jsonLd = {
       url: 'https://www.emergent-logic.ca/services/marketing-automation',
       name: 'Marketing Automation Services Canada',
       description: metadata.description,
-      dateModified: '2026-11-06',
+      dateModified: '2026-11-26',
       isPartOf: { '@id': 'https://www.emergent-logic.ca/#website' },
       about: { '@id': 'https://www.emergent-logic.ca/services/marketing-automation#service' },
     },
@@ -179,7 +185,7 @@ export default function MarketingAutomation() {
             Marketing Automation Services for Canadian Teams
           </h1>
           <p className="text-lg text-white/90 mb-6 max-w-3xl">
-            Emergent Logic is a marketing automation consultant based in Surrey, BC. We build lead capture, lead scoring, nurture emails, routing and sales handoff inside the CRM you already use — HubSpot, GoHighLevel, Salesforce, Zoho CRM or another CRM — for B2B teams across Canada and the US, then document it so your team can run it.
+            Emergent Logic is a marketing automation consultant based in Surrey, BC. We build lead capture, lead scoring, nurture emails, routing and sales handoff inside the CRM you already use — HubSpot, GoHighLevel, Salesforce, Zoho CRM, Odoo or another CRM — for B2B teams across Canada and the US, then document it so your team can run it.
           </p>
           <p className="text-xl text-white/80 mb-8 max-w-3xl">
             Connect lead scoring, nurture sequences, campaign attribution, and sales handoff to your CRM with clear ownership, documented testing, and human review for high-impact actions.
@@ -214,11 +220,11 @@ export default function MarketingAutomation() {
       {/* CRM-first positioning callout */}
       <section className="py-12 bg-purple-50 border-b border-purple-100">
         <div className="container mx-auto px-4 max-w-4xl">
-          <p className="mb-4 text-sm font-semibold text-purple-700">Reviewed November 6, 2026</p>
+          <p className="mb-4 text-sm font-semibold text-purple-700">Reviewed November 26, 2026</p>
           <div className="flex items-start gap-4">
             <Database className="w-8 h-8 text-purple-700 flex-shrink-0 mt-1" />
             <div>
-              <h2 className="text-xl font-bold text-purple-900 mb-2">Marketing automation is only as good as the CRM beneath it.</h2>
+              <h2 className="text-xl font-bold text-purple-900 mb-2">Why does marketing automation depend on the CRM underneath it?</h2>
               <p className="text-purple-900/80">
                 If your contacts are duplicated, lifecycle stages are inconsistent, or the sales process is not mapped, automating on top of the CRM can amplify the problem. We start by checking that foundation and may recommend a <Link href="/services/crm-cleanup" className="underline font-medium">CRM Cleanup</Link> or <Link href="/services/crm-implementation" className="underline font-medium">CRM Implementation</Link> before workflow buildout.
               </p>
@@ -274,7 +280,7 @@ export default function MarketingAutomation() {
             <Zap className="w-4 h-4" /> Automation readiness
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Before You Automate, Make Sure the CRM Can Be Trusted
+            How do you know a CRM is ready for automation?
           </h2>
           <p className="text-lg text-gray-600 mb-5">
             A marketing automation problem may begin in the CRM rather than the email itself. Workflow decisions depend on reliable contact data, lifecycle stages, ownership, source fields, and deal context.
@@ -327,12 +333,12 @@ export default function MarketingAutomation() {
       {/* What Is Marketing Automation */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What CRM Marketing Automation Services Include</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What do CRM marketing automation services include?</h2>
           <p className="text-lg text-gray-600 mb-4">
             Marketing automation is a system of rules, sequences, and triggers that helps a team manage follow-up consistently. It should support the sales process without hiding ownership, consent, exceptions, or decisions that still need human review.
           </p>
           <p className="text-lg text-gray-600 mb-4">
-            For many growing Canadian businesses, the CRM is the source of truth while HubSpot, Salesforce, Zoho, and approved integrations carry out the automation. That keeps contact history, deal context, campaign sources, and handoff status connected.
+            For many growing Canadian businesses, the CRM is the source of truth — HubSpot, GoHighLevel, Salesforce, Zoho CRM, Odoo or another CRM — and its automation tools, plus approved integrations, carry out the workflows. That keeps contact history, deal context, campaign sources, and handoff status connected.
           </p>
           <p className="text-lg text-gray-600">
             A written scope can cover lead scoring, nurture sequences, source capture, attribution definitions, routing, handoff, exception reporting, and documentation. The exact build depends on the CRM, licensed features, data quality, consent requirements, and the operating process your team approves.
@@ -343,7 +349,7 @@ export default function MarketingAutomation() {
       {/* Pillars */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">The Four Pillars of Marketing Automation</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What are the four parts of a marketing automation system?</h2>
           <p className="text-lg text-gray-600 mb-8">
             The automation framework covers four foundational systems. A scope may include all four or focus on the one or two creating the largest operational gap.
           </p>
@@ -367,7 +373,7 @@ export default function MarketingAutomation() {
       {/* Common Mistakes */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Marketing Automation Breaks</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why does marketing automation break?</h2>
           <p className="text-lg text-gray-600 mb-8">
             Automation becomes harder to operate when lifecycle stages, ownership, source data, and exception paths are not defined first.
           </p>
@@ -397,13 +403,13 @@ export default function MarketingAutomation() {
       {/* What's Included */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Is Included</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What is included in a marketing automation engagement?</h2>
           <p className="text-lg text-gray-600 mb-8">
             A marketing automation engagement can cover the full path from contact data to sales handoff, or focus on the highest-priority system boundary first.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { icon: Filter, title: 'Lead Scoring Model', desc: 'Fit and engagement scoring tied to your ideal customer profile, with thresholds for marketing-qualified and sales-qualified leads. Built natively in HubSpot, Salesforce, or Zoho.' },
+              { icon: Filter, title: 'Lead Scoring Model', desc: 'Fit and engagement scoring tied to your ideal customer profile, with thresholds for marketing-qualified and sales-qualified leads. Built natively in the CRM you use — HubSpot, GoHighLevel, Salesforce, Zoho CRM, Odoo or another CRM — within its licensed features.' },
               { icon: Send, title: 'Nurture Sequences', desc: 'Welcome, educational nurture, sales-assist, re-engagement, or onboarding sequences can be written, segmented, reviewed, and tested when included in the scope.' },
               { icon: Workflow, title: 'Routing & Handoff Workflows', desc: 'Lead assignment by territory, account size, or product interest, with agreed SLA timers, escalation paths, notifications, and exception handling.' },
               { icon: BarChart3, title: 'Attribution Setup', desc: 'UTM strategy, source tracking, attribution definitions, and reporting dashboards with documented sources, assumptions, and known limitations.' },
@@ -423,7 +429,7 @@ export default function MarketingAutomation() {
       {/* Process */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Process</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How does a marketing automation project run?</h2>
           <p className="text-lg text-gray-600 mb-8">
             A three-phase operating model keeps workflow decisions, production activation, and handoff reviewable.
           </p>
@@ -450,7 +456,7 @@ export default function MarketingAutomation() {
       {/* Scope */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Scope and Delivery Plan</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How are scope, timing and cost confirmed?</h2>
           <p className="text-lg text-gray-600 mb-8">
             Scope, dependencies, approval boundaries, and commercial terms are confirmed in writing before work starts.
           </p>
@@ -472,7 +478,7 @@ export default function MarketingAutomation() {
       {/* Why Us */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Emergent Logic for Marketing Automation</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why choose a CRM-first marketing automation consultant?</h2>
           <p className="text-lg text-gray-600 mb-8">
             We approach marketing automation as a CRM operating-system project: define the data, ownership, consent, handoff, measurement, and exception rules before activating workflows.
           </p>
@@ -482,7 +488,7 @@ export default function MarketingAutomation() {
               'Lead scoring designed around approved lifecycle definitions and available evidence, not a generic template',
               'Sales and marketing alignment supported by agreed handoff thresholds, ownership, and SLA reporting',
               'Attribution reporting with documented sources, definitions, and known limitations',
-              'HubSpot, Salesforce, and Zoho options assessed against licensed features and operating requirements',
+              'HubSpot, GoHighLevel, Salesforce, Zoho CRM, Odoo and other CRM options assessed against licensed features and operating requirements',
               'Post-launch tuning included only when defined in the written scope',
               'Based in Surrey, BC — serving Greater Vancouver and businesses across Canada',
             ].map((item, i) => (
@@ -503,7 +509,7 @@ export default function MarketingAutomation() {
             {faqs.map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-xl border">
                 <h3 className="font-bold text-gray-900 mb-2">{item.q}</h3>
-                <p className="text-gray-600">{item.a}</p>
+                <p className="text-gray-600">{item.node || item.a}</p>
               </div>
             ))}
           </div>
